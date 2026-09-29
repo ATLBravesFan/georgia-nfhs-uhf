@@ -13,7 +13,7 @@ concurrency:
 jobs:
   diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 30
 
     steps:
       - name: Check out repository
@@ -24,16 +24,15 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Install dependencies
+      - name: Install Node dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Ensure ffprobe is available
+      - name: Install video and OCR tools
         run: |
-          if ! command -v ffprobe >/dev/null 2>&1; then
-            sudo apt-get update
-            sudo apt-get install -y ffmpeg
-          fi
-          ffprobe -version | head -n 1
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg tesseract-ocr
+          ffmpeg -version | head -n 1
+          tesseract --version | head -n 1
 
       - name: Run NFHS mapping diagnostic
         env:
