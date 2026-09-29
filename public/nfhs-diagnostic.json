@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T21:09:45.261Z",
+  "generated_at": "2026-09-29T21:13:27.986Z",
   "diagnostic_only": true,
   "modifies_epg": false,
   "purpose": "Compare NFHS event metadata plus provider-side EPG/details for the Clinch-Brantley target against a known Camden control.",
