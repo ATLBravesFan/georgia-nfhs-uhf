@@ -27,6 +27,14 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
+      - name: Ensure ffprobe is available
+        run: |
+          if ! command -v ffprobe >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+          ffprobe -version | head -n 1
+
       - name: Run NFHS mapping diagnostic
         env:
           XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
