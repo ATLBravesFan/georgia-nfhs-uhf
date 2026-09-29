@@ -328,7 +328,7 @@ async function main() {
 
     comparisons,
 
-    target_neighborhoods
+        target_neighborhoods: targetNeighborhoods
   };
 
   await fs.mkdir(
