@@ -1,1029 +1,395 @@
 {
-  "generated_at": "2026-09-29T23:15:07.122Z",
+  "generated_at": "2026-09-29T19:20:36.653-04:00",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": 11,
-  "purpose": "Test whether provider redirect/source identifiers correlate with identifier-like values in official NFHS broadcast metadata using known event-to-provider control pairs. Raw NFHS identifiers, provider source paths, playback URLs, and credentials are never written to this file.",
+  "diagnostic_version": 12,
+  "purpose": "Scan stale late-afternoon provider NFHS slots that are still carrying video, OCR one current video frame from each, and compare visible text against official Georgia NFHS events from 4 PM onward.",
+  "safety": {
+    "provider_connections_used_concurrently": 1,
+    "frames_saved_to_repository": false,
+    "public_events_json_modified": false
+  },
   "provider": {
     "category": "USA | NFHS Network",
-    "source_stream_count": 5000
+    "source_stream_count": 5000,
+    "stale_slots_tested": 247,
+    "active_stale_slots": 0
+  },
+  "official": {
+    "georgia_events_from_4pm": 29,
+    "events": [
+      {
+        "source": "GHSA",
+        "event_id": "gam12d7e3305b",
+        "text": "Varsity Girls Flag FootballVarsity Girls Flag FootballSep 29, 2026 | 8:00 PM UTCAthens, GA",
+        "eastern_start": "2026-09-29T16:00:00.000-04:00",
+        "publisher_name": "GHSA: Athens Academy, Athens, GA",
+        "city": "Athens",
+        "match_terms": [
+          "Athens Academy"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam2e937b88a4",
+        "text": "Varsity Girls VolleyballVarsity Girls VolleyballSep 29, 2026 | 8:30 PM UTCWaycross, GA",
+        "eastern_start": "2026-09-29T16:30:00.000-04:00",
+        "publisher_name": "GHSA: Ware County High School, Waycross, GA",
+        "city": "Waycross",
+        "match_terms": [
+          "Ware County High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam49bb3da339",
+        "text": "Middle School Boys FootballArmucheeSep 29, 2026 | 8:30 PM UTCRome, GA",
+        "eastern_start": "2026-09-29T16:30:00.000-04:00",
+        "publisher_name": "GHSA: Armuchee High School, Rome, GA",
+        "city": "Rome",
+        "match_terms": [
+          "Armuchee High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gamcc9219fd4b",
+        "text": "Junior Varsity Girls SoftballEast Coweta vs. WhitewaterSep 29, 2026 | 8:30 PM UTCFayetteville, GA",
+        "eastern_start": "2026-09-29T16:30:00.000-04:00",
+        "publisher_name": "GHSA: Whitewater High School, Fayetteville, GA",
+        "city": "Fayetteville",
+        "match_terms": [
+          "East Coweta",
+          "Whitewater",
+          "Whitewater High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam09811d652f",
+        "text": "Varsity Girls SoftballThomas County vs. CoffeeSep 29, 2026 | 8:45 PM UTCDouglas, GA",
+        "eastern_start": "2026-09-29T16:45:00.000-04:00",
+        "publisher_name": "GHSA: Coffee High School, Douglas, GA",
+        "city": "Douglas",
+        "match_terms": [
+          "Thomas County",
+          "Coffee",
+          "Coffee High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gamd4a59a96d4",
+        "text": "Varsity Girls VolleyballVarsity Girls VolleyballSep 29, 2026 | 8:45 PM UTCAugusta, GA",
+        "eastern_start": "2026-09-29T16:45:00.000-04:00",
+        "publisher_name": "GHSA: Davidson Fine Arts Magnet School, Augusta, GA",
+        "city": "Augusta",
+        "match_terms": [
+          "Davidson Fine Arts Magnet School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam2d977a8cb4",
+        "text": "Middle School Boys FootballTrionSep 29, 2026 | 8:50 PM UTCTrion, GA",
+        "eastern_start": "2026-09-29T16:50:00.000-04:00",
+        "publisher_name": "GHSA: Trion High School, Trion, GA",
+        "city": "Trion",
+        "match_terms": [
+          "Trion High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam0073e4fee3",
+        "text": "Varsity Girls VolleyballAppling County vs. StatesboroSep 29, 2026 | 9:00 PM UTCStatesboro, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "GHSA: Statesboro High School, Statesboro, GA",
+        "city": "Statesboro",
+        "match_terms": [
+          "Appling County",
+          "Statesboro",
+          "Statesboro High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam0a87368bc7",
+        "text": "Varsity Girls VolleyballElite Scholars Academy Royal Knights vs Coretta Scott King Eagles/Paideia SchoolSep 29, 2026 | 9:00 PM UTCJonesboro, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "GHSA: Elite Scholars Academy, Jonesboro, GA",
+        "city": "Jonesboro",
+        "match_terms": [
+          "Elite Scholars Academy Royal Knights",
+          "Coretta Scott King Eagles/Paideia School",
+          "Elite Scholars Academy"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam0b687e3eb5",
+        "text": "Varsity Girls Flag FootballWorth County vs. HawkinsvilleSep 29, 2026 | 9:00 PM UTCHawkinsville, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "GHSA: Hawkinsville High School, Hawkinsville, GA",
+        "city": "Hawkinsville",
+        "match_terms": [
+          "Worth County",
+          "Hawkinsville",
+          "Hawkinsville High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam161842179f",
+        "text": "Varsity Girls Flag FootballSt. Pius X vs. AlpharettaSep 29, 2026 | 11:30 PM UTCAlpharetta, GA",
+        "eastern_start": "2026-09-29T19:30:00.000-04:00",
+        "publisher_name": "GHSA: Alpharetta High School, Alpharetta, GA",
+        "city": "Alpharetta",
+        "match_terms": [
+          "St. Pius X",
+          "Alpharetta",
+          "Alpharetta High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam1baa3c4f35",
+        "text": "Varsity Girls VolleyballDecatur vs. ChambleeSep 29, 2026 | 11:30 PM UTCChamblee, GA",
+        "eastern_start": "2026-09-29T19:30:00.000-04:00",
+        "publisher_name": "GHSA: Chamblee Charter High School, Chamblee, GA",
+        "city": "Chamblee",
+        "match_terms": [
+          "Decatur",
+          "Chamblee",
+          "Chamblee Charter High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam501d3720fd",
+        "text": "Varsity Girls VolleyballHeritage vs. ShilohSep 29, 2026 | 11:30 PM UTCSnellville, GA",
+        "eastern_start": "2026-09-29T19:30:00.000-04:00",
+        "publisher_name": "GHSA: Shiloh High School, Snellville, GA",
+        "city": "Snellville",
+        "match_terms": [
+          "Heritage",
+          "Shiloh",
+          "Shiloh High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam5e40f36d8d",
+        "text": "Junior Varsity Girls Flag FootballDuluth vs. ParkviewSep 29, 2026 | 11:30 PM UTCLilburn, GA",
+        "eastern_start": "2026-09-29T19:30:00.000-04:00",
+        "publisher_name": "GHSA: Parkview High School, Lilburn, GA",
+        "city": "Lilburn",
+        "match_terms": [
+          "Duluth",
+          "Parkview",
+          "Parkview High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam3e0308212e",
+        "text": "Varsity Girls VolleyballCentral vs. MonticelloSep 30, 2026 | 12:00 AM UTCMonticello, GA",
+        "eastern_start": "2026-09-29T20:00:00.000-04:00",
+        "publisher_name": "GHSA: Jasper County High School, Monticello, GA",
+        "city": "Monticello",
+        "match_terms": [
+          "Central",
+          "Monticello",
+          "Jasper County High School"
+        ]
+      },
+      {
+        "source": "WATCH",
+        "event_id": "gam03da3f1f2e",
+        "text": "Varsity Girls Volleyball1:01:28Social Circle vs. Banks CountySep 29, 2026 | 10:00 PM UTCHOMER, GA",
+        "eastern_start": "2026-09-29T18:00:00.000-04:00",
+        "publisher_name": "GHSA: Banks County High School, Homer, GA",
+        "city": "HOMER",
+        "match_terms": [
+          "1:01:28Social Circle",
+          "Banks County",
+          "Banks County High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam94393a74e6",
+        "text": "Varsity Girls Flag Football1:01:24Beach vs. West ForsythSep 29, 2026 | 10:00 PM UTCSavannah, GA",
+        "eastern_start": "2026-09-29T18:00:00.000-04:00",
+        "publisher_name": "Savannah-Chatham County Public School District, Savannah, GA",
+        "city": "Savannah",
+        "match_terms": [
+          "1:01:24Beach",
+          "West Forsyth",
+          "Savannah-Chatham County Public School District"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam52b5764e5f",
+        "text": "Varsity Girls VolleyballBrooks County vs. Taylor CountySep 29, 2026 | 9:30 PM UTCButler, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "GHSA: Taylor County High School, Butler, GA",
+        "city": "Butler",
+        "match_terms": [
+          "Brooks County",
+          "Taylor County",
+          "Taylor County High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam83c2269dc5",
+        "text": "Junior Varsity Girls Volleyball1:31:28Tattnall Co. vs. VidaliaSep 29, 2026 | 9:30 PM UTCVidalia, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "GHSA: Vidalia High School, Vidalia, GA",
+        "city": "Vidalia",
+        "match_terms": [
+          "1:31:28Tattnall Co.",
+          "Vidalia",
+          "Vidalia High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gamb5ea9ee12a",
+        "text": "Varsity Girls VolleyballTherrell vs. Holy Innocents'Sep 29, 2026 | 9:30 PM UTCAtlanta, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "GHSA: Holy Innocents' Episcopal School, Atlanta, GA",
+        "city": "Atlanta",
+        "match_terms": [
+          "Therrell",
+          "Holy Innocents'",
+          "Holy Innocents' Episcopal School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gamc3d8cf5866",
+        "text": "Junior Varsity Girls Volleyball1:33:02Kell vs. CreekviewSep 29, 2026 | 9:30 PM UTCCanton, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "GHSA: Creekview High School, Canton, GA",
+        "city": "Canton",
+        "match_terms": [
+          "1:33:02Kell",
+          "Creekview",
+          "Creekview High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gamddfef103d5",
+        "text": "Varsity Girls VolleyballForest ParkSep 29, 2026 | 9:30 PM UTCForest Park, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "GHSA: Forest Park High School, Forest Park, GA",
+        "city": "Forest Park",
+        "match_terms": [
+          "Forest Park High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam31b747ec5d",
+        "text": "Junior Varsity Girls Volleyball1:30:32Riverwood vs. AlpharettaSep 29, 2026 | 9:00 PM UTCAlpharetta, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "GHSA: Alpharetta High School, Alpharetta, GA",
+        "city": "Alpharetta",
+        "match_terms": [
+          "1:30:32Riverwood",
+          "Alpharetta",
+          "Alpharetta High School"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam5469e8100f",
+        "text": "Varsity Girls Flag Football1:00:56Beach vs. SavannahSep 29, 2026 | 9:00 PM UTCSavannah, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "Savannah-Chatham County Public School District, Savannah, GA",
+        "city": "Savannah",
+        "match_terms": [
+          "1:00:56Beach",
+          "Savannah",
+          "Savannah-Chatham County Public School District"
+        ]
+      },
+      {
+        "source": "GHSA",
+        "event_id": "gam6028f95d27",
+        "text": "Varsity Girls Volleyball1:01:16Social Circle vs. Banks CountySep 29, 2026 | 9:00 PM UTCHOMER, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "GHSA: Banks County High School, Homer, GA",
+        "city": "HOMER",
+        "match_terms": [
+          "1:01:16Social Circle",
+          "Banks County",
+          "Banks County High School"
+        ]
+      },
+      {
+        "source": "GAPPS",
+        "event_id": "gamaf7cf471c1",
+        "text": "Junior Varsity Girls VolleyballJHA vs. WCASep 29, 2026 | 9:00 PM UTCWatkinsville, GA",
+        "eastern_start": "2026-09-29T17:00:00.000-04:00",
+        "publisher_name": "Westminster Christian Academy, Watkinsville, GA",
+        "city": "Watkinsville",
+        "match_terms": [
+          "JHA",
+          "WCA",
+          "Westminster Christian Academy"
+        ]
+      },
+      {
+        "source": "GAPPS",
+        "event_id": "gam28ba30f491",
+        "text": "Varsity Girls VolleyballJHA vs. WCASep 29, 2026 | 10:00 PM UTCWatkinsville, GA",
+        "eastern_start": "2026-09-29T18:00:00.000-04:00",
+        "publisher_name": "Westminster Christian Academy, Watkinsville, GA",
+        "city": "Watkinsville",
+        "match_terms": [
+          "JHA",
+          "WCA",
+          "Westminster Christian Academy"
+        ]
+      },
+      {
+        "source": "GAPPS",
+        "event_id": "gambb9d113e00",
+        "text": "Varsity Girls VolleyballNorth GA Tribe vs. Sugar HillSep 29, 2026 | 9:30 PM UTCSugar Hill, GA",
+        "eastern_start": "2026-09-29T17:30:00.000-04:00",
+        "publisher_name": "Sugar Hill Christian Academy, Sugar Hill, GA",
+        "city": "Sugar Hill",
+        "match_terms": [
+          "North GA Tribe",
+          "Sugar Hill",
+          "Sugar Hill Christian Academy"
+        ]
+      },
+      {
+        "source": "GAPPS",
+        "event_id": "gam297231f5aa",
+        "text": "Junior Varsity Girls Volleyball43:24North GA Tribe vs. Sugar HillSep 29, 2026 | 8:00 PM UTCSugar Hill, GA",
+        "eastern_start": "2026-09-29T16:00:00.000-04:00",
+        "publisher_name": "Sugar Hill Christian Academy, Sugar Hill, GA",
+        "city": "Sugar Hill",
+        "match_terms": [
+          "43:24North GA Tribe",
+          "Sugar Hill",
+          "Sugar Hill Christian Academy"
+        ]
+      }
+    ]
   },
   "summary": {
-    "controls_tested": 5,
-    "controls_with_source_correlation": 0,
-    "repeated_relationships": [],
-    "usable_repeated_relationship_found": false,
-    "next_step": "No repeated direct source identifier relationship was found across the known controls. Source-fingerprint matching is not a reliable mapping method with this provider."
+    "active_streams_with_frames": 0,
+    "streams_with_nonempty_ocr": 0,
+    "likely_georgia_matches": 0
   },
-  "controls": [
-    {
-      "label": "Long County vs St. Vincent's",
-      "event_id": "gam302604b4e5",
-      "provider_nfhs_number": 3455,
-      "provider_stream_found": true,
-      "stream_id": 2066857,
-      "provider_title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "official_identifier_fingerprints": [
-        {
-          "field_path": "publishers[0].broadcasts[0].key",
-          "fingerprint": "17701fdf55477831497d"
-        },
-        {
-          "field_path": "publishers[0].vods[0].headline",
-          "fingerprint": "0166a0728940933b7817"
-        },
-        {
-          "field_path": "publishers[0].vods[0].subheadline",
-          "fingerprint": "2ddc4e36f616037f2949"
-        },
-        {
-          "field_path": "publishers[0].vods[0].creator",
-          "fingerprint": "c0a521faf8e2cbb7b96a"
-        },
-        {
-          "field_path": "publishers[0].vods[0].updater",
-          "fingerprint": "7ad72210fda6372658b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].pixellot_event_id",
-          "fingerprint": "df14c29485aced796bf9"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.bottom_right.key",
-          "fingerprint": "9cfea2087e9aa5ed0687"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.bottom_right.screen_location",
-          "fingerprint": "57c5b9ea441b26f4f2e1"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_url",
-          "fingerprint": "a12065a0b74bb2a96d36"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_name",
-          "fingerprint": "18dc03aa0b4fb594c0fd"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].publisher_name_with_association",
-          "fingerprint": "7d60a963a6f84d7e539c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_key",
-          "fingerprint": "f8dd37befe1e5294d1b2"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].ingest_point",
-          "fingerprint": "4306efc2f91dc1dc6fa4"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_name_with_association",
-          "fingerprint": "dae7c65f6aa8d9386215"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_key",
-          "fingerprint": "eda6705cde94c32eba93"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_type",
-          "fingerprint": "8b1bff4caf4c8d73f878"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_slug",
-          "fingerprint": "95d610534116d7e03068"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_id",
-          "fingerprint": "7b2d22656c953f7a4fce"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_key",
-          "fingerprint": "88450bba57a43d0562fa"
-        },
-        {
-          "field_path": "publishers[0].vods[0].key",
-          "fingerprint": "91fbad844b78d3d14fd7"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_url",
-          "fingerprint": "c892d0959cd57ce7b56c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_key",
-          "fingerprint": "87d89239e9da7318a8a9"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.school_key",
-          "fingerprint": "cd1c4c09a3bec3e002c5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.city",
-          "fingerprint": "f7906b794aedf798cd6c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_time_zone",
-          "fingerprint": "acb2a3287bc63b603ced"
-        }
-      ],
-      "provider_redirect_chain": [
-        {
-          "hop": 0,
-          "status": 302,
-          "host": "amazing-onyx.net",
-          "next_host": "lb1.cdnbp.net",
-          "header_names": [
-            "alt-svc",
-            "cache-control",
-            "cf-cache-status",
-            "cf-ray",
-            "connection",
-            "content-type",
-            "date",
-            "location",
-            "nel",
-            "report-to",
-            "server",
-            "transfer-encoding"
-          ]
-        },
-        {
-          "hop": 1,
-          "host": "lb1.cdnbp.net",
-          "error": "This operation was aborted"
-        }
-      ],
-      "provider_source_fingerprints": [
-        {
-          "location": "path_segment",
-          "fingerprint": "b1d5aa42c10470a98465"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "dff5a4307cffef49170a"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "ec66e29af5f0c3d9f579"
-        },
-        {
-          "location": "header:alt-svc",
-          "fingerprint": "f2299ead734351c26961"
-        },
-        {
-          "location": "header:cache-control",
-          "fingerprint": "152af9a85d91bb21efa8"
-        },
-        {
-          "location": "header:cf-ray",
-          "fingerprint": "4676e69af4f097a4a74e"
-        },
-        {
-          "location": "header:connection",
-          "fingerprint": "ef4f616f9b068e6b527a"
-        },
-        {
-          "location": "header:content-type",
-          "fingerprint": "5e30ae15588f8f014141"
-        },
-        {
-          "location": "header:date",
-          "fingerprint": "b4f7a25018fa0b750ead"
-        },
-        {
-          "location": "header:location",
-          "fingerprint": "488181d8e68cdb582625"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "5a81337a2af7c243a23d"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "1c6eaf953aaf845881bc"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "2231fd3df3c9f22ba74f"
-        },
-        {
-          "location": "header:nel",
-          "fingerprint": "3e6a4053f9d7de153350"
-        },
-        {
-          "location": "header:report-to",
-          "fingerprint": "82580b7205b13cd7ba9e"
-        },
-        {
-          "location": "header:server",
-          "fingerprint": "738e22f0acab814cc0c6"
-        }
-      ],
-      "matches": [],
-      "correlation_found": false
-    },
-    {
-      "label": "Cary vs Holly Springs",
-      "event_id": "gam7a4d71b081",
-      "provider_nfhs_number": 3514,
-      "provider_stream_found": true,
-      "stream_id": 2066798,
-      "provider_title": "NFHS Network 3514: Cary High School vs. Holly Springs High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "official_identifier_fingerprints": [
-        {
-          "field_path": "publishers[0].broadcasts[0].key",
-          "fingerprint": "e4d69b06695d422aadf6"
-        },
-        {
-          "field_path": "publishers[0].vods[0].description",
-          "fingerprint": "0f79c30f85e3d2cc6b29"
-        },
-        {
-          "field_path": "publishers[0].vods[0].subheadline",
-          "fingerprint": "683d1dfac05220279966"
-        },
-        {
-          "field_path": "publishers[0].vods[0].creator",
-          "fingerprint": "e2ca6aec52558fcc0431"
-        },
-        {
-          "field_path": "publishers[0].vods[0].updater",
-          "fingerprint": "7ad72210fda6372658b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].pixellot_event_id",
-          "fingerprint": "efe3b2c8abc4980df6f9"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_url",
-          "fingerprint": "910b23055ce54eb37800"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_name",
-          "fingerprint": "f21ecdac6231406b83f5"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].publisher_name_with_association",
-          "fingerprint": "ea97649eac78f42b5a5c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_key",
-          "fingerprint": "e2affaa341fb2c372555"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].ingest_point",
-          "fingerprint": "4306efc2f91dc1dc6fa4"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_name_with_association",
-          "fingerprint": "4d9ffa325488191e7ab7"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_key",
-          "fingerprint": "5693f1fa216c1bc153b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_type",
-          "fingerprint": "8b1bff4caf4c8d73f878"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_slug",
-          "fingerprint": "37c425d4d12b01bcabcb"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_id",
-          "fingerprint": "c0a490472b1c9cb375e4"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_key",
-          "fingerprint": "ff7fab506a3e1dcd5e44"
-        },
-        {
-          "field_path": "publishers[0].vods[0].key",
-          "fingerprint": "7067d795a0c3483ebcab"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_url",
-          "fingerprint": "08a8425b0efa58d8bbca"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_key",
-          "fingerprint": "96ba2f00b8163a6f3466"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.school_key",
-          "fingerprint": "a7f0f7794e62041be3c8"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.city",
-          "fingerprint": "c130438ccae2d23ef17a"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_time_zone",
-          "fingerprint": "acb2a3287bc63b603ced"
-        }
-      ],
-      "provider_redirect_chain": [
-        {
-          "hop": 0,
-          "status": 302,
-          "host": "amazing-onyx.net",
-          "next_host": "lb1.cdnbp.net",
-          "header_names": [
-            "alt-svc",
-            "cache-control",
-            "cf-cache-status",
-            "cf-ray",
-            "connection",
-            "content-type",
-            "date",
-            "location",
-            "nel",
-            "report-to",
-            "server",
-            "transfer-encoding"
-          ]
-        },
-        {
-          "hop": 1,
-          "host": "lb1.cdnbp.net",
-          "error": "This operation was aborted"
-        }
-      ],
-      "provider_source_fingerprints": [
-        {
-          "location": "path_segment",
-          "fingerprint": "b1d5aa42c10470a98465"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "0292f01af64c8298fc65"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "4261869b511c1eef7764"
-        },
-        {
-          "location": "header:alt-svc",
-          "fingerprint": "f2299ead734351c26961"
-        },
-        {
-          "location": "header:cache-control",
-          "fingerprint": "152af9a85d91bb21efa8"
-        },
-        {
-          "location": "header:cf-ray",
-          "fingerprint": "ad7162c4ac3c13b7cfb6"
-        },
-        {
-          "location": "header:connection",
-          "fingerprint": "ef4f616f9b068e6b527a"
-        },
-        {
-          "location": "header:content-type",
-          "fingerprint": "5e30ae15588f8f014141"
-        },
-        {
-          "location": "header:date",
-          "fingerprint": "6324bcef1b8689d81354"
-        },
-        {
-          "location": "header:location",
-          "fingerprint": "18af59970064ee5e4a20"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "9cc6cfe3a470fd6ba223"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "29352b5169c235ef50df"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "dfc50bd90beb0b52e332"
-        },
-        {
-          "location": "header:nel",
-          "fingerprint": "3e6a4053f9d7de153350"
-        },
-        {
-          "location": "header:report-to",
-          "fingerprint": "df3b27a83b5861ab2c27"
-        },
-        {
-          "location": "header:server",
-          "fingerprint": "738e22f0acab814cc0c6"
-        }
-      ],
-      "matches": [],
-      "correlation_found": false
-    },
-    {
-      "label": "Sanderson vs Middle Creek",
-      "event_id": "gambb59c64f73",
-      "provider_nfhs_number": 3556,
-      "provider_stream_found": true,
-      "stream_id": 2066754,
-      "provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "official_identifier_fingerprints": [
-        {
-          "field_path": "publishers[0].broadcasts[0].key",
-          "fingerprint": "3e18242ede71e48d61f2"
-        },
-        {
-          "field_path": "publishers[0].vods[0].description",
-          "fingerprint": "0f79c30f85e3d2cc6b29"
-        },
-        {
-          "field_path": "publishers[0].vods[0].subheadline",
-          "fingerprint": "c8106acb3baa4b1569e4"
-        },
-        {
-          "field_path": "publishers[0].vods[0].creator",
-          "fingerprint": "bcc758bb8848a6bcf46d"
-        },
-        {
-          "field_path": "publishers[0].vods[0].updater",
-          "fingerprint": "7ad72210fda6372658b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].pixellot_event_id",
-          "fingerprint": "3c1b4eed19f3d2c2b753"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.top_left.key",
-          "fingerprint": "871d018254e9ae29bab2"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.top_left.screen_location",
-          "fingerprint": "3712c1aa88e8bfdb7dcb"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.bottom_right.key",
-          "fingerprint": "cc134e1b931fe1d059aa"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.bottom_right.screen_location",
-          "fingerprint": "57c5b9ea441b26f4f2e1"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_url",
-          "fingerprint": "de9dcd155ce190de2969"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_name",
-          "fingerprint": "1d996c7b36b421d35d54"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].publisher_name_with_association",
-          "fingerprint": "24e6add0e099bc94b190"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_key",
-          "fingerprint": "810f16735fd3b0977266"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].ingest_point",
-          "fingerprint": "4306efc2f91dc1dc6fa4"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_name_with_association",
-          "fingerprint": "3ac636387cc394500913"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_key",
-          "fingerprint": "8e028ee3c38ccaffcd50"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_type",
-          "fingerprint": "8b1bff4caf4c8d73f878"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_slug",
-          "fingerprint": "2541ecf5e86e7e257e03"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_id",
-          "fingerprint": "ae62dc27b6d701012877"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_key",
-          "fingerprint": "c04b1e6c144ffb2b4c72"
-        },
-        {
-          "field_path": "publishers[0].vods[0].key",
-          "fingerprint": "0a7c0d7d7c79d2170835"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_url",
-          "fingerprint": "308662964f4bc88102cc"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_key",
-          "fingerprint": "eb92b6339d169a00bb61"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.school_key",
-          "fingerprint": "499c66b8ee374c4966ea"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_time_zone",
-          "fingerprint": "acb2a3287bc63b603ced"
-        }
-      ],
-      "provider_redirect_chain": [
-        {
-          "hop": 0,
-          "status": 302,
-          "host": "amazing-onyx.net",
-          "next_host": "lb1.cdnbp.net",
-          "header_names": [
-            "alt-svc",
-            "cache-control",
-            "cf-cache-status",
-            "cf-ray",
-            "connection",
-            "content-type",
-            "date",
-            "location",
-            "nel",
-            "report-to",
-            "server",
-            "transfer-encoding"
-          ]
-        },
-        {
-          "hop": 1,
-          "host": "lb1.cdnbp.net",
-          "error": "This operation was aborted"
-        }
-      ],
-      "provider_source_fingerprints": [
-        {
-          "location": "path_segment",
-          "fingerprint": "b1d5aa42c10470a98465"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "c8beb6d1653e971c7f53"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "37e9e61a290bb2661ca0"
-        },
-        {
-          "location": "header:alt-svc",
-          "fingerprint": "f2299ead734351c26961"
-        },
-        {
-          "location": "header:cache-control",
-          "fingerprint": "152af9a85d91bb21efa8"
-        },
-        {
-          "location": "header:cf-ray",
-          "fingerprint": "51661b04c62ca200135c"
-        },
-        {
-          "location": "header:connection",
-          "fingerprint": "ef4f616f9b068e6b527a"
-        },
-        {
-          "location": "header:content-type",
-          "fingerprint": "5e30ae15588f8f014141"
-        },
-        {
-          "location": "header:date",
-          "fingerprint": "e0227bd62d4fd0b9d710"
-        },
-        {
-          "location": "header:location",
-          "fingerprint": "fd931bc770f4b40c1bda"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "6333942f6afd971bc64e"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "cb5d1c9aa4669c64a911"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "e8d15fb9d8978548350e"
-        },
-        {
-          "location": "header:nel",
-          "fingerprint": "3e6a4053f9d7de153350"
-        },
-        {
-          "location": "header:report-to",
-          "fingerprint": "19f95d1b22dd86f74766"
-        },
-        {
-          "location": "header:server",
-          "fingerprint": "738e22f0acab814cc0c6"
-        }
-      ],
-      "matches": [],
-      "correlation_found": false
-    },
-    {
-      "label": "Camden County vs Savannah Country Day",
-      "event_id": "gamd493cc6a81",
-      "provider_nfhs_number": 3572,
-      "provider_stream_found": true,
-      "stream_id": 2066737,
-      "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "official_identifier_fingerprints": [
-        {
-          "field_path": "publishers[0].broadcasts[0].key",
-          "fingerprint": "6e0be7cdc79c8dc49970"
-        },
-        {
-          "field_path": "publishers[0].vods[0].description",
-          "fingerprint": "0166a0728940933b7817"
-        },
-        {
-          "field_path": "publishers[0].vods[0].subheadline",
-          "fingerprint": "6703014314d0afa3e07c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].updater",
-          "fingerprint": "7ad72210fda6372658b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].pixellot_event_id",
-          "fingerprint": "a2927c545dff3ccd9275"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_url",
-          "fingerprint": "b7e023ebc91471f236a3"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_name",
-          "fingerprint": "7429098e61f255b7d926"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].publisher_name_with_association",
-          "fingerprint": "1d49bad2f06c58dcfe82"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_key",
-          "fingerprint": "baecbccb6262afa6f68a"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].ingest_point",
-          "fingerprint": "48c2e48ec154080e9ac0"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_name_with_association",
-          "fingerprint": "e8a215493052174275e6"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_key",
-          "fingerprint": "d46efacf5a34db6117f7"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_type",
-          "fingerprint": "8b1bff4caf4c8d73f878"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_slug",
-          "fingerprint": "ac03b4639bb67093e4c2"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_id",
-          "fingerprint": "b5fa978d7e9da9cc310e"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_key",
-          "fingerprint": "38add31bb14decde3f8b"
-        },
-        {
-          "field_path": "publishers[0].vods[0].key",
-          "fingerprint": "97d3001e59325f326992"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_url",
-          "fingerprint": "e670d6ddc1477397123c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_key",
-          "fingerprint": "80ef3aa00ad352eeff85"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.school_key",
-          "fingerprint": "bd8bf36d745c514dfc91"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.city",
-          "fingerprint": "f7906b794aedf798cd6c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_time_zone",
-          "fingerprint": "acb2a3287bc63b603ced"
-        }
-      ],
-      "provider_redirect_chain": [
-        {
-          "hop": 0,
-          "status": 302,
-          "host": "amazing-onyx.net",
-          "next_host": "lb1.cdnbp.net",
-          "header_names": [
-            "alt-svc",
-            "cache-control",
-            "cf-cache-status",
-            "cf-ray",
-            "connection",
-            "content-type",
-            "date",
-            "location",
-            "nel",
-            "report-to",
-            "server",
-            "transfer-encoding"
-          ]
-        },
-        {
-          "hop": 1,
-          "host": "lb1.cdnbp.net",
-          "error": "This operation was aborted"
-        }
-      ],
-      "provider_source_fingerprints": [
-        {
-          "location": "path_segment",
-          "fingerprint": "b1d5aa42c10470a98465"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "9a1106d56bc9370c56c6"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "90cb33f97f71cadca2a1"
-        },
-        {
-          "location": "header:alt-svc",
-          "fingerprint": "f2299ead734351c26961"
-        },
-        {
-          "location": "header:cache-control",
-          "fingerprint": "152af9a85d91bb21efa8"
-        },
-        {
-          "location": "header:cf-ray",
-          "fingerprint": "df1fcd87b7ac58338d92"
-        },
-        {
-          "location": "header:connection",
-          "fingerprint": "ef4f616f9b068e6b527a"
-        },
-        {
-          "location": "header:content-type",
-          "fingerprint": "5e30ae15588f8f014141"
-        },
-        {
-          "location": "header:date",
-          "fingerprint": "d3517b715f3dc8b0573a"
-        },
-        {
-          "location": "header:location",
-          "fingerprint": "49fb848f9bfbe5d08590"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "b4f327dc519749cd29aa"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "19837f47b96bbd7f5ab2"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "69e0874255374935c718"
-        },
-        {
-          "location": "header:nel",
-          "fingerprint": "3e6a4053f9d7de153350"
-        },
-        {
-          "location": "header:report-to",
-          "fingerprint": "a4cda36cd89f775719ee"
-        },
-        {
-          "location": "header:server",
-          "fingerprint": "738e22f0acab814cc0c6"
-        }
-      ],
-      "matches": [],
-      "correlation_found": false
-    },
-    {
-      "label": "Frederica Academy vs Bradwell Institute",
-      "event_id": "gamee5d943f7a",
-      "provider_nfhs_number": 3596,
-      "provider_stream_found": true,
-      "stream_id": 2066711,
-      "provider_title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "official_identifier_fingerprints": [
-        {
-          "field_path": "publishers[0].broadcasts[0].key",
-          "fingerprint": "05bc230af7b9aa90f530"
-        },
-        {
-          "field_path": "publishers[0].vods[0].description",
-          "fingerprint": "0166a0728940933b7817"
-        },
-        {
-          "field_path": "publishers[0].vods[0].subheadline",
-          "fingerprint": "e9eef53224b09079581d"
-        },
-        {
-          "field_path": "publishers[0].vods[0].creator",
-          "fingerprint": "bcc758bb8848a6bcf46d"
-        },
-        {
-          "field_path": "publishers[0].vods[0].updater",
-          "fingerprint": "7ad72210fda6372658b5"
-        },
-        {
-          "field_path": "publishers[0].vods[0].pixellot_event_id",
-          "fingerprint": "df63bcd7f0f40df2d4ed"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.top_left.key",
-          "fingerprint": "d6bc4ed497cef42f7301"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_overlay.top_left.screen_location",
-          "fingerprint": "3712c1aa88e8bfdb7dcb"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_url",
-          "fingerprint": "dab99878a0bbc0a533ec"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_name",
-          "fingerprint": "eb7b3006dac4e5b99ec4"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].publisher_name_with_association",
-          "fingerprint": "12328070ac40b3fc54e8"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_key",
-          "fingerprint": "70766fa29990aefa699c"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].ingest_point",
-          "fingerprint": "4306efc2f91dc1dc6fa4"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_name_with_association",
-          "fingerprint": "4924010c5d6e998cdcbb"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_key",
-          "fingerprint": "252ecd1d77990d490f14"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_type",
-          "fingerprint": "8b1bff4caf4c8d73f878"
-        },
-        {
-          "field_path": "publishers[0].vods[0].producer_slug",
-          "fingerprint": "8b7b6ade395a7af4899e"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_id",
-          "fingerprint": "98e577e9226d5194c3c3"
-        },
-        {
-          "field_path": "publishers[0].broadcasts[0].pixellot_key",
-          "fingerprint": "80f8410881f1abc1c3ef"
-        },
-        {
-          "field_path": "publishers[0].vods[0].key",
-          "fingerprint": "e93327711cdd6249c421"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_url",
-          "fingerprint": "4559b9c8e2b3e9c7ca6c"
-        },
-        {
-          "field_path": "publishers[0].vods[0].game_key",
-          "fingerprint": "d96d0cd0d5d5942ccc1e"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.school_key",
-          "fingerprint": "8d2470e6d84172ca4844"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publishing_school.city",
-          "fingerprint": "1b0a02c2a6b5a6677739"
-        },
-        {
-          "field_path": "publishers[0].vods[0].publisher_time_zone",
-          "fingerprint": "acb2a3287bc63b603ced"
-        }
-      ],
-      "provider_redirect_chain": [
-        {
-          "hop": 0,
-          "status": 302,
-          "host": "amazing-onyx.net",
-          "next_host": "lb1.cdnbp.net",
-          "header_names": [
-            "alt-svc",
-            "cache-control",
-            "cf-cache-status",
-            "cf-ray",
-            "connection",
-            "content-type",
-            "date",
-            "location",
-            "nel",
-            "report-to",
-            "server",
-            "transfer-encoding"
-          ]
-        },
-        {
-          "hop": 1,
-          "host": "lb1.cdnbp.net",
-          "error": "This operation was aborted"
-        }
-      ],
-      "provider_source_fingerprints": [
-        {
-          "location": "path_segment",
-          "fingerprint": "b1d5aa42c10470a98465"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "db2db147bfd6e53e9846"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "53da1306768c28df7fef"
-        },
-        {
-          "location": "header:alt-svc",
-          "fingerprint": "f2299ead734351c26961"
-        },
-        {
-          "location": "header:cache-control",
-          "fingerprint": "152af9a85d91bb21efa8"
-        },
-        {
-          "location": "header:cf-ray",
-          "fingerprint": "b4be29612feaee34e4ec"
-        },
-        {
-          "location": "header:connection",
-          "fingerprint": "ef4f616f9b068e6b527a"
-        },
-        {
-          "location": "header:content-type",
-          "fingerprint": "5e30ae15588f8f014141"
-        },
-        {
-          "location": "header:date",
-          "fingerprint": "72700bbf6c68a10a9645"
-        },
-        {
-          "location": "header:location",
-          "fingerprint": "c0c3c2e44d3d3441cd16"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "b1c24be674e84df3255a"
-        },
-        {
-          "location": "path_segment",
-          "fingerprint": "3734d4580acd5619245d"
-        },
-        {
-          "location": "pathname",
-          "fingerprint": "14d61cb052b14af0083d"
-        },
-        {
-          "location": "header:nel",
-          "fingerprint": "3e6a4053f9d7de153350"
-        },
-        {
-          "location": "header:report-to",
-          "fingerprint": "3415d75c60b34d447fbe"
-        },
-        {
-          "location": "header:server",
-          "fingerprint": "738e22f0acab814cc0c6"
-        }
-      ],
-      "matches": [],
-      "correlation_found": false
-    }
-  ]
+  "likely_georgia_matches": [],
+  "active_stream_results": []
 }
