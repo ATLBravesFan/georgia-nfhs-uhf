@@ -1,635 +1,309 @@
 {
-  "generated_at": "2026-09-29T21:20:27.921Z",
+  "generated_at": "2026-09-29T21:25:32.480Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": 4,
-  "purpose": "Compare NFHS GHSA page ordering against provider NFHS channel ordering.",
+  "diagnostic_version": 5,
+  "purpose": "Test whether provider NFHS numbering follows NFHS nationwide Watch Events ordering.",
   "provider": {
     "category": "USA | NFHS Network",
     "source_stream_count": 5000
   },
-  "ghsa_event_count": 41,
-  "provider_match_count": 3,
-  "target": {
-    "page_index": 33,
-    "event_id": "gamb8ad8195a3",
-    "is_target": true,
-    "nfhs_text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
-    "provider_match_score": null,
-    "provider_nfhs_number": null,
-    "provider_stream_id": null,
-    "provider_name": null,
-    "provider_added": null
-  },
-  "target_neighborhood": [
+  "pages": [
     {
-      "page_index": 28,
-      "event_id": "gam3e10f31e5a",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls SoftballRome vs. PopeSep 29, 2026 | 9:30 PM UTCMarietta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
+      "url": "https://get.nfhsnetwork.com/watch-events",
+      "ok": true,
+      "event_count": 36,
+      "error": null
     },
     {
-      "page_index": 29,
-      "event_id": "gam462c767320",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballArabia Mountain vs. Miller GroveSep 29, 2026 | 9:30 PM UTCLithonia, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 30,
-      "event_id": "gam47a94cbf72",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballMeadowcreek vs. ChambleeSep 29, 2026 | 9:30 PM UTCChamblee, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 31,
-      "event_id": "gam4d89749099",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballPope vs. LassiterSep 29, 2026 | 9:30 PM UTCMarietta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 32,
-      "event_id": "gamc34e8e3bfe",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballClinch County vs. Brantley Co.Sep 29, 2026 | 9:00 PM UTCNahunta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 33,
-      "event_id": "gamb8ad8195a3",
-      "is_target": true,
-      "nfhs_text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 34,
-      "event_id": "gamee5d943f7a",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls Volleyball1:10:04Frederica Aca. vs. Bradwell Inst.Sep 29, 2026 | 8:00 PM UTCHinesville, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 35,
-      "event_id": "evteab09ef1f5",
-      "is_target": false,
-      "nfhs_text": "Sports Show2026 Georgia High School Sports Daily ShowSeptember 29th EpisodeSep 29, 2026 | 4:00 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 36,
-      "event_id": "gam470b3cf859",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football2:09:04Columbus vs. East CowetaSep 29, 2026 | 12:31 AM UTCSharpsburg, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 37,
-      "event_id": "gam92787f0657",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football52:56Mundy's Mill vs. ColumbusSep 28, 2026 | 11:40 PM UTCSharpsburg, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 38,
-      "event_id": "gam2dd08e6bc2",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football3:03:16Dunwoody vs. ParkviewSep 28, 2026 | 11:30 PM UTCLilburn, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
+      "url": "https://www.nfhsnetwork.com/watch-events",
+      "ok": true,
+      "event_count": 36,
+      "error": null
     }
   ],
-  "matched_events": [
+  "comparisons": [
     {
-      "page_index": 16,
-      "event_id": "gam302604b4e5",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballLong County vs. St. Vincent'sSep 29, 2026 | 8:00 PM UTCSavannah, GA",
-      "provider_match_score": 0.6666666666666666,
-      "provider_nfhs_number": 3455,
-      "provider_stream_id": 2066857,
-      "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236552"
+      "page_url": "https://get.nfhsnetwork.com/watch-events",
+      "page_ok": true,
+      "event_count": 36,
+      "rows": [
+        {
+          "role": "target",
+          "label": "Clinch County vs. Brantley County",
+          "event_id": "gamb8ad8195a3",
+          "global_page_found": true,
+          "global_page_index": 34,
+          "global_page_text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
+          "provider_nfhs_number": null,
+          "provider_stream_id": null,
+          "provider_name": null,
+          "provider_added": null
+        },
+        {
+          "role": "control",
+          "label": "Long County vs. St. Vincent's Academy",
+          "event_id": "gam302604b4e5",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3455,
+          "provider_stream_id": 2066857,
+          "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236552"
+        },
+        {
+          "role": "control",
+          "label": "Camden County vs. Savannah Country Day",
+          "event_id": "gamd493cc6a81",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3572,
+          "provider_stream_id": 2066737,
+          "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236493"
+        },
+        {
+          "role": "control",
+          "label": "Frederica Academy vs. Bradwell Institute",
+          "event_id": "gamee5d943f7a",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3596,
+          "provider_stream_id": 2066711,
+          "provider_name": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236481"
+        }
+      ]
     },
     {
-      "page_index": 17,
-      "event_id": "gamd493cc6a81",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballJunior Varsity Girls VolleyballCamden County High School vs. Savannah Country Day SchoolSep 29, 2026 | 8:00 PM UTCSavannah, GA",
-      "provider_match_score": 0.75,
-      "provider_nfhs_number": 3572,
-      "provider_stream_id": 2066737,
-      "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236493"
-    },
-    {
-      "page_index": 41,
-      "event_id": "gam37be599bf2",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football1:45:20St. Vincent's vs. Bradwell Inst.Sep 28, 2026 | 11:00 PM UTCHinesville, GA",
-      "provider_match_score": 0.75,
-      "provider_nfhs_number": 1510,
-      "provider_stream_id": 2068825,
-      "provider_name": "NFHS Network 1510: St. Vincent's Academy vs. Bradwell Institute Junior Varsity Girls Flag Football @ 28 Sep 06:00 PM ET",
-      "provider_added": "1789237575"
+      "page_url": "https://www.nfhsnetwork.com/watch-events",
+      "page_ok": true,
+      "event_count": 36,
+      "rows": [
+        {
+          "role": "target",
+          "label": "Clinch County vs. Brantley County",
+          "event_id": "gamb8ad8195a3",
+          "global_page_found": true,
+          "global_page_index": 34,
+          "global_page_text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
+          "provider_nfhs_number": null,
+          "provider_stream_id": null,
+          "provider_name": null,
+          "provider_added": null
+        },
+        {
+          "role": "control",
+          "label": "Long County vs. St. Vincent's Academy",
+          "event_id": "gam302604b4e5",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3455,
+          "provider_stream_id": 2066857,
+          "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236552"
+        },
+        {
+          "role": "control",
+          "label": "Camden County vs. Savannah Country Day",
+          "event_id": "gamd493cc6a81",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3572,
+          "provider_stream_id": 2066737,
+          "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236493"
+        },
+        {
+          "role": "control",
+          "label": "Frederica Academy vs. Bradwell Institute",
+          "event_id": "gamee5d943f7a",
+          "global_page_found": false,
+          "global_page_index": null,
+          "global_page_text": null,
+          "provider_nfhs_number": 3596,
+          "provider_stream_id": 2066711,
+          "provider_name": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "provider_added": "1789236481"
+        }
+      ]
     }
   ],
-  "all_events": [
+  "target_neighborhoods": [
     {
-      "page_index": 1,
-      "event_id": "gama99c8ce5d8",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls VolleyballMiddle School Girls VolleyballSep 29, 2026 | 8:00 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
+      "page_url": "https://get.nfhsnetwork.com/watch-events",
+      "target_found": true,
+      "target_index": 34,
+      "rows": [
+        {
+          "index": 24,
+          "event_id": "gam02a1e65a8c",
+          "text": "Junior Varsity Boys SoccerNorth Harford vs. FallstonSep 29, 2026 | 9:30 PM UTCFallston, MD",
+          "href": "https://www.nfhsnetwork.com/events/fallston-high-school-fallston-md/gam02a1e65a8c"
+        },
+        {
+          "index": 25,
+          "event_id": "gamc34e8e3bfe",
+          "text": "Junior Varsity Girls VolleyballClinch County vs. Brantley Co.Sep 29, 2026 | 9:00 PM UTCNahunta, GA",
+          "href": "https://www.nfhsnetwork.com/events/brantley-county-high-school-nahunta-ga/gamc34e8e3bfe"
+        },
+        {
+          "index": 26,
+          "event_id": "gamfd01e23bc2",
+          "text": "Middle School Girls VolleyballMiddle School Girls VolleyballBottineau High School vs. Mohall-Lansford-Sherwood High SchoolSep 29, 2026 | 8:50 PM UTCMOHALL, ND",
+          "href": "https://www.nfhsnetwork.com/events/mls-mohallsherwood-high-school-mohall-nd/gamfd01e23bc2"
+        },
+        {
+          "index": 27,
+          "event_id": "evtc82c0f5042",
+          "text": "Pep Rally1:03:03CelinaSep 29, 2026 | 8:00 PM UTCCelina, TX",
+          "href": "https://www.nfhsnetwork.com/events/celina-high-school-celina-tx/evtc82c0f5042"
+        },
+        {
+          "index": 28,
+          "event_id": "gam4d03b095f9",
+          "text": "Middle School Girls Volleyball1:00:48Cary vs. TrinitySep 29, 2026 | 8:00 PM UTCDurham, NC",
+          "href": "https://www.nfhsnetwork.com/events/trinity-school-of-durham-and-chapel-hill-durham-nc/gam4d03b095f9"
+        },
+        {
+          "index": 29,
+          "event_id": "gam65c0a14e0b",
+          "text": "Middle School Girls Volleyball1:01:12Away vs. Anderson Chr.Sep 29, 2026 | 8:00 PM UTCAnderson, SC",
+          "href": "https://www.nfhsnetwork.com/events/anderson-christian-school-anderson-sc/gam65c0a14e0b"
+        },
+        {
+          "index": 30,
+          "event_id": "gam68ae978e5a",
+          "text": "Middle School Girls Volleyball1:00:36Shalom Chr. vs. New LifeSep 29, 2026 | 8:00 PM UTCFrederick, MD",
+          "href": "https://www.nfhsnetwork.com/events/new-life-christian-school-frederick-md/gam68ae978e5a"
+        },
+        {
+          "index": 31,
+          "event_id": "gam742705fcbe",
+          "text": "Junior Varsity Girls Volleyball1:00:52Bradenton Chr. vs. Calvary CLWSep 29, 2026 | 8:00 PM UTCClearwater, FL",
+          "href": "https://www.nfhsnetwork.com/events/calvary-christian-high-school-clearwater-clearwater-fl/gam742705fcbe"
+        },
+        {
+          "index": 32,
+          "event_id": "gam7a4d71b081",
+          "text": "Freshman Girls Volleyball1:15:44Cary vs. Holly SpringsSep 29, 2026 | 8:00 PM UTCHolly Spring, NC",
+          "href": "https://www.nfhsnetwork.com/events/holly-springs-high-school-holly-springs-nc/gam7a4d71b081"
+        },
+        {
+          "index": 33,
+          "event_id": "gam8370f6eaa8",
+          "text": "Middle School Boys Football1:11:52West Iron Cty. vs. CalumetSep 29, 2026 | 8:00 PM UTCCalumet, MI",
+          "href": "https://www.nfhsnetwork.com/events/calumet-high-school-calumet-mi/gam8370f6eaa8"
+        },
+        {
+          "index": 34,
+          "event_id": "gamb8ad8195a3",
+          "text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
+          "href": "https://www.nfhsnetwork.com/events/brantley-county-high-school-nahunta-ga/gamb8ad8195a3"
+        },
+        {
+          "index": 35,
+          "event_id": "gambb59c64f73",
+          "text": "Freshman Girls Volleyball1:01:12Sanderson vs. Middle CreekSep 29, 2026 | 8:00 PM UTCApex, NC",
+          "href": "https://www.nfhsnetwork.com/events/middle-creek-high-school-raleigh-nc/gambb59c64f73"
+        },
+        {
+          "index": 36,
+          "event_id": "gambdf8368394",
+          "text": "Middle School Girls Volleyball1:00:48Thales Roles vs. St. Thomas MoreSep 29, 2026 | 8:00 PM UTCRaleigh, NC",
+          "href": "https://www.nfhsnetwork.com/events/st-thomas-more-academy-raleigh-nc/gambdf8368394"
+        }
+      ]
     },
     {
-      "page_index": 2,
-      "event_id": "gamb6a05b504b",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls Volleyball2026 GHSA Girls Volleyball PlayoffsPerimeter vs. Mount PisgahSep 29, 2026 | 8:30 PM UTCAlpharetta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 3,
-      "event_id": "gam7752c7b729",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls Volleyball2026 GHSA Girls Volleyball PlayoffsNorth Cobb vs. WesleyanSep 29, 2026 | 9:00 PM UTCPeachtree Corners, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 4,
-      "event_id": "gam40504b9238",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls Volleyball2026 GHSA Girls Volleyball PlayoffsPace AcademyOct 1, 2026 | 8:30 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 5,
-      "event_id": "gam205ab52f45",
-      "is_target": false,
-      "nfhs_text": "Middle School Boys Football2026 GHSA Football PlayoffsFitzgerald vs. BainbridgeOct 1, 2026 | 9:00 PM UTCBainbridge, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 6,
-      "event_id": "gamf4d4975373",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballVarsity Girls VolleyballOct 6, 2026 | 8:55 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 7,
-      "event_id": "gam478424ba6b",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball RegionalNorthview vs. Blessed TrinityOct 6, 2026 | 10:00 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 8,
-      "event_id": "gamfb8257d053",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball RegionalBlessed TrinityOct 7, 2026 | 9:30 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 9,
-      "event_id": "gam821d118a19",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball RegionalBlessed TrinityOct 7, 2026 | 11:00 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 10,
-      "event_id": "gam317c9a2174",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball SemifinalAway vs. FCSOct 8, 2026 | 8:55 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 11,
-      "event_id": "gam5bf043fcd3",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball RegionalBlessed TrinityOct 8, 2026 | 10:00 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 12,
-      "event_id": "gam2e4b0d5446",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA Girls Volleyball FinalAway vs. FCSOct 13, 2026 | 9:55 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 13,
-      "event_id": "gam58ce111918",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Volleyball2026 GHSA 4A Girls Volleyball ChampionshipTBA vs TBAOct 29, 2026 | 4:00 AM UTCCartersville, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 14,
-      "event_id": "gamacc2c6aaf4",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls VolleyballFCSSep 29, 2026 | 7:55 PM UTCRoswell, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 15,
-      "event_id": "gam12d7e3305b",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag FootballVarsity Girls Flag FootballSep 29, 2026 | 8:00 PM UTCAthens, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 16,
-      "event_id": "gam302604b4e5",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballLong County vs. St. Vincent'sSep 29, 2026 | 8:00 PM UTCSavannah, GA",
-      "provider_match_score": 0.6666666666666666,
-      "provider_nfhs_number": 3455,
-      "provider_stream_id": 2066857,
-      "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236552"
-    },
-    {
-      "page_index": 17,
-      "event_id": "gamd493cc6a81",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballJunior Varsity Girls VolleyballCamden County High School vs. Savannah Country Day SchoolSep 29, 2026 | 8:00 PM UTCSavannah, GA",
-      "provider_match_score": 0.75,
-      "provider_nfhs_number": 3572,
-      "provider_stream_id": 2066737,
-      "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236493"
-    },
-    {
-      "page_index": 18,
-      "event_id": "gam23b196c091",
-      "is_target": false,
-      "nfhs_text": "Middle School Girls VolleyballWhitefield Aca. vs. Lovett SchoolSep 29, 2026 | 8:30 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 19,
-      "event_id": "gam2e937b88a4",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballVarsity Girls VolleyballSep 29, 2026 | 8:30 PM UTCWaycross, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 20,
-      "event_id": "gam49bb3da339",
-      "is_target": false,
-      "nfhs_text": "Middle School Boys FootballArmucheeSep 29, 2026 | 8:30 PM UTCRome, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 21,
-      "event_id": "gamcc9219fd4b",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls SoftballEast Coweta vs. WhitewaterSep 29, 2026 | 8:30 PM UTCFayetteville, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 22,
-      "event_id": "gam1b9a1edef7",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls SoftballGAC vs. WestminsterSep 29, 2026 | 9:25 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 23,
-      "event_id": "gam8e4f2ea819",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag FootballVarsity Girls Flag FootballSep 29, 2026 | 9:25 PM UTCBogart, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 24,
-      "event_id": "gam193c718d14",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballMonroe Area vs. Oconee CountySep 29, 2026 | 9:30 PM UTCWatkinsville, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 25,
-      "event_id": "gam2c6f58417b",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballHapeville Char. vs. RedanSep 29, 2026 | 9:30 PM UTCStone Mountain, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 26,
-      "event_id": "gam322e22ac11",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls SoftballTemple vs. Lovett SchoolSep 29, 2026 | 9:30 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 27,
-      "event_id": "gam3c3c268fdc",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballMundy's Mill vs. WoodlandSep 29, 2026 | 9:30 PM UTCStockbridge, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 28,
-      "event_id": "gam3e10f31e5a",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls SoftballRome vs. PopeSep 29, 2026 | 9:30 PM UTCMarietta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 29,
-      "event_id": "gam462c767320",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballArabia Mountain vs. Miller GroveSep 29, 2026 | 9:30 PM UTCLithonia, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 30,
-      "event_id": "gam47a94cbf72",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls VolleyballMeadowcreek vs. ChambleeSep 29, 2026 | 9:30 PM UTCChamblee, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 31,
-      "event_id": "gam4d89749099",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballPope vs. LassiterSep 29, 2026 | 9:30 PM UTCMarietta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 32,
-      "event_id": "gamc34e8e3bfe",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls VolleyballClinch County vs. Brantley Co.Sep 29, 2026 | 9:00 PM UTCNahunta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 33,
-      "event_id": "gamb8ad8195a3",
-      "is_target": true,
-      "nfhs_text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 34,
-      "event_id": "gamee5d943f7a",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls Volleyball1:10:04Frederica Aca. vs. Bradwell Inst.Sep 29, 2026 | 8:00 PM UTCHinesville, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 35,
-      "event_id": "evteab09ef1f5",
-      "is_target": false,
-      "nfhs_text": "Sports Show2026 Georgia High School Sports Daily ShowSeptember 29th EpisodeSep 29, 2026 | 4:00 PM UTCAtlanta, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 36,
-      "event_id": "gam470b3cf859",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football2:09:04Columbus vs. East CowetaSep 29, 2026 | 12:31 AM UTCSharpsburg, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 37,
-      "event_id": "gam92787f0657",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football52:56Mundy's Mill vs. ColumbusSep 28, 2026 | 11:40 PM UTCSharpsburg, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 38,
-      "event_id": "gam2dd08e6bc2",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football3:03:16Dunwoody vs. ParkviewSep 28, 2026 | 11:30 PM UTCLilburn, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 39,
-      "event_id": "gam7899a43f4e",
-      "is_target": false,
-      "nfhs_text": "Junior Varsity Girls Flag Football2:02:56Campbell vs. HillgroveSep 28, 2026 | 11:30 PM UTCPowder Springs, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 40,
-      "event_id": "gam7d9a2d8844",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football2:09:25Centennial vs. MiltonSep 28, 2026 | 11:30 PM UTCMilton, GA",
-      "provider_match_score": null,
-      "provider_nfhs_number": null,
-      "provider_stream_id": null,
-      "provider_name": null,
-      "provider_added": null
-    },
-    {
-      "page_index": 41,
-      "event_id": "gam37be599bf2",
-      "is_target": false,
-      "nfhs_text": "Varsity Girls Flag Football1:45:20St. Vincent's vs. Bradwell Inst.Sep 28, 2026 | 11:00 PM UTCHinesville, GA",
-      "provider_match_score": 0.75,
-      "provider_nfhs_number": 1510,
-      "provider_stream_id": 2068825,
-      "provider_name": "NFHS Network 1510: St. Vincent's Academy vs. Bradwell Institute Junior Varsity Girls Flag Football @ 28 Sep 06:00 PM ET",
-      "provider_added": "1789237575"
+      "page_url": "https://www.nfhsnetwork.com/watch-events",
+      "target_found": true,
+      "target_index": 34,
+      "rows": [
+        {
+          "index": 24,
+          "event_id": "gam02a1e65a8c",
+          "text": "Junior Varsity Boys SoccerNorth Harford vs. FallstonSep 29, 2026 | 9:30 PM UTCFallston, MD",
+          "href": "https://www.nfhsnetwork.com/events/fallston-high-school-fallston-md/gam02a1e65a8c"
+        },
+        {
+          "index": 25,
+          "event_id": "gamc34e8e3bfe",
+          "text": "Junior Varsity Girls VolleyballClinch County vs. Brantley Co.Sep 29, 2026 | 9:00 PM UTCNahunta, GA",
+          "href": "https://www.nfhsnetwork.com/events/brantley-county-high-school-nahunta-ga/gamc34e8e3bfe"
+        },
+        {
+          "index": 26,
+          "event_id": "gam266e58a45d",
+          "text": "Middle School Boys SoccerMiddle School Boys Soccer vs. Lakewood Middle SchoolDurham School of the ArtsSep 29, 2026 | 8:45 PM UTCDurham, NC",
+          "href": "https://www.nfhsnetwork.com/events/durham-school-of-the-arts-dsa-high-school-durham-nc/gam266e58a45d"
+        },
+        {
+          "index": 27,
+          "event_id": "evtc82c0f5042",
+          "text": "Pep Rally1:03:03CelinaSep 29, 2026 | 8:00 PM UTCCelina, TX",
+          "href": "https://www.nfhsnetwork.com/events/celina-high-school-celina-tx/evtc82c0f5042"
+        },
+        {
+          "index": 28,
+          "event_id": "gam4d03b095f9",
+          "text": "Middle School Girls Volleyball1:00:48Cary vs. TrinitySep 29, 2026 | 8:00 PM UTCDurham, NC",
+          "href": "https://www.nfhsnetwork.com/events/trinity-school-of-durham-and-chapel-hill-durham-nc/gam4d03b095f9"
+        },
+        {
+          "index": 29,
+          "event_id": "gam65c0a14e0b",
+          "text": "Middle School Girls Volleyball1:01:12Away vs. Anderson Chr.Sep 29, 2026 | 8:00 PM UTCAnderson, SC",
+          "href": "https://www.nfhsnetwork.com/events/anderson-christian-school-anderson-sc/gam65c0a14e0b"
+        },
+        {
+          "index": 30,
+          "event_id": "gam68ae978e5a",
+          "text": "Middle School Girls Volleyball1:00:36Shalom Chr. vs. New LifeSep 29, 2026 | 8:00 PM UTCFrederick, MD",
+          "href": "https://www.nfhsnetwork.com/events/new-life-christian-school-frederick-md/gam68ae978e5a"
+        },
+        {
+          "index": 31,
+          "event_id": "gam742705fcbe",
+          "text": "Junior Varsity Girls Volleyball1:00:52Bradenton Chr. vs. Calvary CLWSep 29, 2026 | 8:00 PM UTCClearwater, FL",
+          "href": "https://www.nfhsnetwork.com/events/calvary-christian-high-school-clearwater-clearwater-fl/gam742705fcbe"
+        },
+        {
+          "index": 32,
+          "event_id": "gam7a4d71b081",
+          "text": "Freshman Girls Volleyball1:15:44Cary vs. Holly SpringsSep 29, 2026 | 8:00 PM UTCHolly Spring, NC",
+          "href": "https://www.nfhsnetwork.com/events/holly-springs-high-school-holly-springs-nc/gam7a4d71b081"
+        },
+        {
+          "index": 33,
+          "event_id": "gam8370f6eaa8",
+          "text": "Middle School Boys Football1:11:52West Iron Cty. vs. CalumetSep 29, 2026 | 8:00 PM UTCCalumet, MI",
+          "href": "https://www.nfhsnetwork.com/events/calumet-high-school-calumet-mi/gam8370f6eaa8"
+        },
+        {
+          "index": 34,
+          "event_id": "gamb8ad8195a3",
+          "text": "Freshman Girls Volleyball2:58Clinch County vs. Brantley Co.Sep 29, 2026 | 8:00 PM UTCNahunta, GA",
+          "href": "https://www.nfhsnetwork.com/events/brantley-county-high-school-nahunta-ga/gamb8ad8195a3"
+        },
+        {
+          "index": 35,
+          "event_id": "gambb59c64f73",
+          "text": "Freshman Girls Volleyball1:01:12Sanderson vs. Middle CreekSep 29, 2026 | 8:00 PM UTCApex, NC",
+          "href": "https://www.nfhsnetwork.com/events/middle-creek-high-school-raleigh-nc/gambb59c64f73"
+        },
+        {
+          "index": 36,
+          "event_id": "gambdf8368394",
+          "text": "Middle School Girls Volleyball1:00:48Thales Roles vs. St. Thomas MoreSep 29, 2026 | 8:00 PM UTCRaleigh, NC",
+          "href": "https://www.nfhsnetwork.com/events/st-thomas-more-academy-raleigh-nc/gambdf8368394"
+        }
+      ]
     }
   ]
 }
