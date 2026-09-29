@@ -1,19 +1,43 @@
 import fs from "node:fs/promises";
+import crypto from "node:crypto";
 
 const DEFAULT_CATEGORY = "USA | NFHS Network";
-const TARGET_EVENT_ID = "gamb8ad8195a3";
-const TARGET = {
-  away: "Clinch County",
-  home: "Brantley County",
-  sport: "Volleyball",
-  level: "Freshman",
-  gender: "Girls",
-  date: "29 Sep",
-  time: "04:00 PM",
-};
+
+const EVENTS = [
+  {
+    role: "target",
+    event_id: "gamb8ad8195a3",
+    name: "Clinch County vs. Brantley County Freshman Girls Volleyball",
+    known_provider_stream_id: null,
+    known_provider_nfhs_number: null
+  },
+  {
+    role: "control",
+    event_id: "gamd493cc6a81",
+    name: "Camden County vs. Savannah Country Day Junior Varsity Girls Volleyball",
+    known_provider_stream_id: 2066737,
+    known_provider_nfhs_number: 3572
+  }
+];
 
 function cleanSpace(s = "") {
   return String(s).replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function hashValue(v) {
+  if (!v) return null;
+  return crypto.createHash("sha256").update(String(v)).digest("hex").slice(0, 20);
+}
+
+function maybeDecodeBase64(v) {
+  if (!v || typeof v !== "string") return v;
+  try {
+    const s = Buffer.from(v, "base64").toString("utf8");
+    if (!s || /[\u0000-\u0008\u000E-\u001F]/.test(s)) return v;
+    return s;
+  } catch {
+    return v;
+  }
 }
 
 async function fetchText(url, timeoutMs = 20000) {
@@ -22,7 +46,7 @@ async function fetchText(url, timeoutMs = 20000) {
   try {
     const r = await fetch(url, {
       signal: ac.signal,
-      headers: { "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/1.0" },
+      headers: { "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/2.0" },
     });
     const text = await r.text();
     if (!r.ok) throw new Error(`${r.status} ${r.statusText}: ${text.slice(0, 200)}`);
@@ -36,31 +60,31 @@ async function fetchJson(url, timeoutMs = 20000) {
   return JSON.parse(await fetchText(url, timeoutMs));
 }
 
-async function getProviderStreams() {
+async function getProvider() {
   const base = cleanSpace(process.env.XTREAM_BASE_URL || "").replace(/\/+$/, "");
   const username = process.env.XTREAM_USERNAME || "";
   const password = process.env.XTREAM_PASSWORD || "";
+
   if (!base || !username || !password) {
     throw new Error("Missing XTREAM_BASE_URL, XTREAM_USERNAME, or XTREAM_PASSWORD.");
   }
 
   const auth = `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
   const categories = await fetchJson(`${base}/player_api.php?${auth}&action=get_live_categories`);
-  const wanted = cleanSpace(process.env.NFHS_CATEGORY_NAME || DEFAULT_CATEGORY).toLowerCase();
 
+  const wanted = cleanSpace(process.env.NFHS_CATEGORY_NAME || DEFAULT_CATEGORY).toLowerCase();
   let category = categories.find(c => cleanSpace(c.category_name).toLowerCase() === wanted);
   if (!category) category = categories.find(c => /nfhs/i.test(String(c.category_name || "")));
-  if (!category) throw new Error("Could not find the NFHS category.");
+  if (!category) throw new Error("Could not find NFHS category.");
 
   let streams = await fetchJson(
     `${base}/player_api.php?${auth}&action=get_live_streams&category_id=${encodeURIComponent(category.category_id)}`
   );
-
   streams = streams.filter(
     s => String(s.category_id) === String(category.category_id) || !s.category_id
   );
 
-  return { category, streams };
+  return { base, username, password, auth, category, streams };
 }
 
 function providerNumber(name = "") {
@@ -68,123 +92,158 @@ function providerNumber(name = "") {
   return m ? Number(m[1]) : null;
 }
 
-function scoreCandidate(name = "") {
+function isTargetCandidate(name = "") {
   const n = String(name).toLowerCase();
-  let score = 0;
-  const reasons = [];
-
-  if (n.includes("29 sep")) { score += 4; reasons.push("same date"); }
-  if (n.includes("04:00 pm et")) { score += 8; reasons.push("same 4:00 PM start"); }
-  if (n.includes("volleyball")) { score += 5; reasons.push("same sport"); }
-  if (n.includes("freshman")) { score += 5; reasons.push("same level"); }
-  if (n.includes("girls")) { score += 2; reasons.push("same gender"); }
-
-  if (n.includes("clinch county")) { score += 50; reasons.push("Clinch County named"); }
-  if (n.includes("brantley county")) { score += 50; reasons.push("Brantley County named"); }
-
-  return { score, reasons };
+  return n.includes("29 sep") &&
+    n.includes("04:00 pm et") &&
+    n.includes("volleyball") &&
+    n.includes("freshman") &&
+    n.includes("girls");
 }
 
-function summarizeNfhs(data) {
-  const publisher = Array.isArray(data?.publishers) ? data.publishers[0] : null;
-  const broadcast = publisher && Array.isArray(publisher.broadcasts) ? publisher.broadcasts[0] : null;
-  const vod = publisher && Array.isArray(publisher.vods) ? publisher.vods[0] : null;
-
+function sanitizeEpg(epg) {
+  const listings = Array.isArray(epg?.epg_listings) ? epg.epg_listings : [];
   return {
-    request_ok: true,
-    event_id: TARGET_EVENT_ID,
-    local_start_time: data?.local_start_time ?? null,
-    city: data?.city ?? null,
-    state_name: data?.state_name ?? null,
-    event_type: data?.event_type ?? data?.type ?? null,
-    publisher: publisher ? {
-      name: publisher.formatted_name ?? publisher.name ?? null,
-      publisher_key: publisher.publisher_key ?? null,
-      type: publisher.type ?? null,
-      slug: publisher.slug ?? null,
-      broadcast_count: Array.isArray(publisher.broadcasts) ? publisher.broadcasts.length : 0,
-      vod_count: Array.isArray(publisher.vods) ? publisher.vods.length : 0,
-    } : null,
-    broadcast: broadcast ? {
-      status: broadcast.status ?? null,
-      on_air: broadcast.on_air ?? null,
-      description: broadcast.description ?? null,
-      key_present: Boolean(broadcast.key),
-    } : null,
-    vod: vod ? {
-      status: vod.status ?? null,
-      key_present: Boolean(vod.key),
-    } : null,
+    listing_count: listings.length,
+    listings: listings.slice(0, 5).map(x => ({
+      id: x.id ?? null,
+      epg_id: x.epg_id ?? null,
+      title: maybeDecodeBase64(x.title ?? null),
+      description: maybeDecodeBase64(x.description ?? null),
+      start: x.start ?? null,
+      end: x.end ?? null,
+      start_timestamp: x.start_timestamp ?? null,
+      stop_timestamp: x.stop_timestamp ?? null,
+      now_playing: x.now_playing ?? null,
+      has_archive: x.has_archive ?? null
+    }))
   };
 }
 
-async function getNfhsMetadata() {
-  const url = `https://cfunity.nfhsnetwork.com/v2/game_or_event/${TARGET_EVENT_ID}`;
+async function getShortEpg(provider, streamId) {
+  const url = `${provider.base}/player_api.php?${provider.auth}&action=get_short_epg&stream_id=${encodeURIComponent(streamId)}&limit=5`;
+  try {
+    return { ok: true, ...sanitizeEpg(await fetchJson(url)) };
+  } catch (err) {
+    return { ok: false, error: String(err?.message || err), listing_count: 0, listings: [] };
+  }
+}
+
+async function getSimpleData(provider, streamId) {
+  const url = `${provider.base}/player_api.php?${provider.auth}&action=get_simple_data_table&stream_id=${encodeURIComponent(streamId)}`;
   try {
     const data = await fetchJson(url);
-    return summarizeNfhs(data);
+    return {
+      ok: true,
+      epg_listings: sanitizeEpg(data),
+      raw_keys: data && typeof data === "object" ? Object.keys(data).sort() : []
+    };
+  } catch (err) {
+    return { ok: false, error: String(err?.message || err) };
+  }
+}
+
+async function getNfhsMetadata(event) {
+  const url = `https://cfunity.nfhsnetwork.com/v2/game_or_event/${event.event_id}`;
+  try {
+    const data = await fetchJson(url);
+    const publisher = Array.isArray(data?.publishers) ? data.publishers[0] : null;
+    const broadcast = publisher && Array.isArray(publisher.broadcasts) ? publisher.broadcasts[0] : null;
+    const vod = publisher && Array.isArray(publisher.vods) ? publisher.vods[0] : null;
+
+    return {
+      ok: true,
+      role: event.role,
+      event_id: event.event_id,
+      name: event.name,
+      known_provider_stream_id: event.known_provider_stream_id,
+      known_provider_nfhs_number: event.known_provider_nfhs_number,
+      local_start_time: data?.local_start_time ?? null,
+      city: data?.city ?? null,
+      state_name: data?.state_name ?? null,
+      publisher: publisher ? {
+        name: publisher.formatted_name ?? publisher.name ?? null,
+        publisher_key: publisher.publisher_key ?? null,
+        slug: publisher.slug ?? null,
+        type: publisher.type ?? null,
+        broadcast_count: Array.isArray(publisher.broadcasts) ? publisher.broadcasts.length : 0,
+        vod_count: Array.isArray(publisher.vods) ? publisher.vods.length : 0
+      } : null,
+      broadcast: broadcast ? {
+        status: broadcast.status ?? null,
+        key_fingerprint: hashValue(broadcast.key),
+        key_length: broadcast.key ? String(broadcast.key).length : 0,
+        safe_keys_present: Object.keys(broadcast).filter(k =>
+          /^(id|status|on_air|description|created_at|updated_at|start|stop|type)$/i.test(k)
+        )
+      } : null,
+      vod: vod ? {
+        status: vod.status ?? null,
+        key_fingerprint: hashValue(vod.key),
+        key_length: vod.key ? String(vod.key).length : 0
+      } : null
+    };
   } catch (err) {
     return {
-      request_ok: false,
-      event_id: TARGET_EVENT_ID,
-      error: String(err?.message || err),
+      ok: false,
+      role: event.role,
+      event_id: event.event_id,
+      name: event.name,
+      error: String(err?.message || err)
     };
   }
 }
 
 async function main() {
-  const provider = await getProviderStreams();
-  const nfhs = await getNfhsMetadata();
+  const provider = await getProvider();
 
-  const candidates = provider.streams
-    .map(s => {
-      const name = cleanSpace(s.name || "");
-      const scored = scoreCandidate(name);
-      return {
-        stream_id: s.stream_id,
-        provider_nfhs_number: providerNumber(name),
-        original_name: name,
-        score: scored.score,
-        reasons: scored.reasons,
-      };
-    })
-    .filter(x => x.score >= 12)
-    .sort((a, b) => b.score - a.score || Number(b.stream_id) - Number(a.stream_id));
-
-  const exactFourPmFreshmanGirlsVolleyball = candidates.filter(x => {
-    const n = x.original_name.toLowerCase();
-    return n.includes("29 sep") &&
-      n.includes("04:00 pm et") &&
-      n.includes("volleyball") &&
-      n.includes("freshman") &&
-      n.includes("girls");
-  });
-
-  const exactFourPmAllSports = provider.streams
+  const targetCandidates = provider.streams
+    .filter(s => isTargetCandidate(s.name || ""))
     .map(s => ({
       stream_id: s.stream_id,
       provider_nfhs_number: providerNumber(s.name || ""),
-      original_name: cleanSpace(s.name || ""),
-    }))
-    .filter(x => /@\s*29\s+Sep\s+04:00\s+PM\s+ET\s*$/i.test(x.original_name));
+      original_name: cleanSpace(s.name || "")
+    }));
+
+  const nfhsMetadata = [];
+  for (const event of EVENTS) {
+    nfhsMetadata.push(await getNfhsMetadata(event));
+  }
+
+  const controlStream = provider.streams.find(s => Number(s.stream_id) === 2066737);
+  const controlProvider = controlStream ? {
+    stream_id: controlStream.stream_id,
+    provider_nfhs_number: providerNumber(controlStream.name || ""),
+    original_name: cleanSpace(controlStream.name || ""),
+    short_epg: await getShortEpg(provider, controlStream.stream_id),
+    simple_data: await getSimpleData(provider, controlStream.stream_id)
+  } : {
+    stream_id: 2066737,
+    error: "Known Camden control stream was not present in the current provider dump."
+  };
+
+  const candidateDetails = [];
+  for (const c of targetCandidates) {
+    candidateDetails.push({
+      ...c,
+      short_epg: await getShortEpg(provider, c.stream_id),
+      simple_data: await getSimpleData(provider, c.stream_id)
+    });
+  }
 
   const payload = {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    target: {
-      ...TARGET,
-      nfhs_event_id: TARGET_EVENT_ID,
-    },
-    nfhs_metadata: nfhs,
+    purpose: "Compare NFHS event metadata plus provider-side EPG/details for the Clinch-Brantley target against a known Camden control.",
+    nfhs_events: nfhsMetadata,
     provider: {
       category: provider.category?.category_name || DEFAULT_CATEGORY,
       source_stream_count: provider.streams.length,
-      four_pm_stream_count: exactFourPmAllSports.length,
-      matching_freshman_girls_volleyball_candidates: exactFourPmFreshmanGirlsVolleyball.length,
+      target_candidate_count: targetCandidates.length
     },
-    strongest_candidates: candidates.slice(0, 50),
-    four_pm_freshman_girls_volleyball: exactFourPmFreshmanGirlsVolleyball,
+    known_control_provider_stream: controlProvider,
+    target_candidates: candidateDetails
   };
 
   await fs.mkdir("public", { recursive: true });
@@ -194,10 +253,8 @@ async function main() {
     "utf8"
   );
 
-  console.log(
-    `Diagnostic complete. Found ${exactFourPmFreshmanGirlsVolleyball.length} 4:00 PM Freshman Girls Volleyball candidate(s).`
-  );
-  console.log("This script did NOT modify public/events.json.");
+  console.log(`Wrote diagnostic with ${targetCandidates.length} target candidate(s).`);
+  console.log("public/events.json was NOT modified.");
 }
 
 main().catch(err => {
