@@ -1,565 +1,271 @@
 {
-  "generated_at": "2026-09-29T21:13:27.986Z",
+  "generated_at": "2026-09-29T21:17:08.854Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "purpose": "Compare NFHS event metadata plus provider-side EPG/details for the Clinch-Brantley target against a known Camden control.",
-  "nfhs_events": [
-    {
-      "ok": true,
-      "role": "target",
-      "event_id": "gamb8ad8195a3",
-      "name": "Clinch County vs. Brantley County Freshman Girls Volleyball",
-      "known_provider_stream_id": null,
-      "known_provider_nfhs_number": null,
-      "local_start_time": "2026-09-29T16:00:00.000-04:00",
-      "city": "Nahunta",
-      "state_name": "Georgia",
-      "publisher": {
-        "name": "GHSA: Brantley County High School, Nahunta, GA",
-        "publisher_key": "4ba434d4ea",
-        "slug": "brantley-county-high-school-nahunta-ga",
-        "type": "school",
-        "broadcast_count": 1,
-        "vod_count": 1
-      },
-      "broadcast": {
-        "status": "complete",
-        "key_fingerprint": "b774022c8e84041dcdc2",
-        "key_length": 13,
-        "safe_keys_present": [
-          "status",
-          "description",
-          "created_at",
-          "updated_at"
-        ]
-      },
-      "vod": {
-        "status": "complete",
-        "key_fingerprint": "39828d874d796817e149",
-        "key_length": 13
-      }
-    },
-    {
-      "ok": true,
-      "role": "control",
-      "event_id": "gamd493cc6a81",
-      "name": "Camden County vs. Savannah Country Day Junior Varsity Girls Volleyball",
-      "known_provider_stream_id": 2066737,
-      "known_provider_nfhs_number": 3572,
-      "local_start_time": "2026-09-29T16:00:00.000-04:00",
-      "city": "Savannah",
-      "state_name": "Georgia",
-      "publisher": {
-        "name": "GHSA: Savannah Country Day School, Savannah, GA",
-        "publisher_key": "a3b05c24f3",
-        "slug": "savannah-country-day-school-savannah-ga",
-        "type": "school",
-        "broadcast_count": 1,
-        "vod_count": 1
-      },
-      "broadcast": {
-        "status": "on_air",
-        "key_fingerprint": "6e0be7cdc79c8dc49970",
-        "key_length": 13,
-        "safe_keys_present": [
-          "status",
-          "description",
-          "created_at",
-          "updated_at"
-        ]
-      },
-      "vod": {
-        "status": "scheduled",
-        "key_fingerprint": "97d3001e59325f326992",
-        "key_length": 13
-      }
-    }
-  ],
+  "diagnostic_version": 3,
+  "purpose": "Compare NFHS event metadata and creation/order fields against known provider NFHS channel assignments.",
+  "source": "https://get.nfhsnetwork.com/associations/ghsa/",
   "provider": {
     "category": "USA | NFHS Network",
-    "source_stream_count": 5000,
-    "target_candidate_count": 23
+    "source_stream_count": 5000
   },
-  "known_control_provider_stream": {
-    "stream_id": 2066737,
-    "provider_nfhs_number": 3572,
-    "original_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-    "short_epg": {
-      "ok": true,
-      "listing_count": 0,
-      "listings": []
-    },
-    "simple_data": {
-      "ok": true,
-      "epg_listings": {
-        "listing_count": 0,
-        "listings": []
+  "discovery": {
+    "discovered_event_link_count": 43,
+    "games": [
+      {
+        "role": "target",
+        "label": "Clinch County vs. Brantley County",
+        "search_terms": [
+          "Clinch County",
+          "Brantley"
+        ],
+        "known_event_id": "gamb8ad8195a3",
+        "known_provider_stream_id": null,
+        "known_provider_nfhs_number": null,
+        "event_id": "gamb8ad8195a3",
+        "event_id_source": "known"
       },
-      "raw_keys": [
-        "epg_listings"
-      ]
-    }
+      {
+        "role": "control",
+        "label": "North Georgia Tribe vs. Sugar Hill Christian Academy",
+        "search_terms": [
+          "North GA Tribe",
+          "Sugar Hill"
+        ],
+        "known_event_id": null,
+        "known_provider_stream_id": 2066864,
+        "known_provider_nfhs_number": 3448,
+        "event_id": null,
+        "event_id_source": "not uniquely found",
+        "event_link_matches": []
+      },
+      {
+        "role": "control",
+        "label": "Long County vs. St. Vincent's Academy",
+        "search_terms": [
+          "Long County",
+          "St. Vincent"
+        ],
+        "known_event_id": null,
+        "known_provider_stream_id": 2066857,
+        "known_provider_nfhs_number": 3455,
+        "event_id": "gam302604b4e5",
+        "event_id_source": "GHSA page",
+        "event_link_matches": [
+          {
+            "text": "Junior Varsity Girls VolleyballLong County vs. St. Vincent'sSep 29, 2026 | 8:00 PM UTCSavannah, GA",
+            "href": "https://www.nfhsnetwork.com/events/st-vincents-academy-savannah-ga/gam302604b4e5",
+            "event_id": "gam302604b4e5"
+          }
+        ]
+      },
+      {
+        "role": "control",
+        "label": "Camden County vs. Savannah Country Day",
+        "search_terms": [
+          "Camden County",
+          "Savannah Country Day"
+        ],
+        "known_event_id": "gamd493cc6a81",
+        "known_provider_stream_id": 2066737,
+        "known_provider_nfhs_number": 3572,
+        "event_id": "gamd493cc6a81",
+        "event_id_source": "known"
+      },
+      {
+        "role": "control",
+        "label": "Frederica Academy vs. Bradwell Institute",
+        "search_terms": [
+          "Frederica",
+          "Bradwell"
+        ],
+        "known_event_id": null,
+        "known_provider_stream_id": 2066711,
+        "known_provider_nfhs_number": 3596,
+        "event_id": "gamee5d943f7a",
+        "event_id_source": "GHSA page",
+        "event_link_matches": [
+          {
+            "text": "Junior Varsity Girls Volleyball1:10:04Frederica Aca. vs. Bradwell Inst.Sep 29, 2026 | 8:00 PM UTCHinesville, GA",
+            "href": "https://www.nfhsnetwork.com/events/bradwell-institute-hinesville-ga/gamee5d943f7a",
+            "event_id": "gamee5d943f7a"
+          }
+        ]
+      }
+    ]
   },
-  "target_candidates": [
+  "comparison": [
     {
-      "stream_id": 2066901,
-      "provider_nfhs_number": 3411,
-      "original_name": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
+      "role": "target",
+      "game": "Clinch County vs. Brantley County",
+      "nfhs_event_id": "gamb8ad8195a3",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: Brantley County High School, Nahunta, GA",
+      "publisher_key": "4ba434d4ea",
+      "broadcast_fingerprint": "b774022c8e84041dcdc2",
+      "broadcast_status": "complete",
+      "broadcast_created_at": "2026-09-29T11:10:53.000Z",
+      "broadcast_updated_at": "2026-09-29T19:58:23.000Z",
+      "vod_fingerprint": "39828d874d796817e149",
+      "provider_nfhs_number": null,
+      "provider_stream_id": null,
+      "provider_name": null,
+      "provider_added": null
     },
     {
-      "stream_id": 2066898,
-      "provider_nfhs_number": 3414,
-      "original_name": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
+      "role": "control",
+      "game": "North Georgia Tribe vs. Sugar Hill Christian Academy",
+      "nfhs_event_id": null,
+      "nfhs_start": null,
+      "publisher_name": null,
+      "publisher_key": null,
+      "broadcast_fingerprint": null,
+      "broadcast_status": null,
+      "broadcast_created_at": null,
+      "broadcast_updated_at": null,
+      "vod_fingerprint": null,
+      "provider_nfhs_number": 3448,
+      "provider_stream_id": 2066864,
+      "provider_name": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236556"
     },
     {
-      "stream_id": 2066878,
-      "provider_nfhs_number": 3434,
-      "original_name": "NFHS Network 3434: Stevenson High School - Sterling Heights vs. Port Huron High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
+      "role": "control",
+      "game": "Long County vs. St. Vincent's Academy",
+      "nfhs_event_id": "gam302604b4e5",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: St. Vincent's Academy, Savannah, GA",
+      "publisher_key": "80309ed9f3",
+      "broadcast_fingerprint": "17701fdf55477831497d",
+      "broadcast_status": "on_air",
+      "broadcast_created_at": "2026-09-28T12:34:04.000Z",
+      "broadcast_updated_at": "2026-09-29T19:59:19.000Z",
+      "vod_fingerprint": "91fbad844b78d3d14fd7",
+      "provider_nfhs_number": 3455,
+      "provider_stream_id": 2066857,
+      "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236552"
     },
     {
-      "stream_id": 2066862,
-      "provider_nfhs_number": 3450,
-      "original_name": "NFHS Network 3450: Thornton Academy vs. York High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
+      "role": "control",
+      "game": "Camden County vs. Savannah Country Day",
+      "nfhs_event_id": "gamd493cc6a81",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: Savannah Country Day School, Savannah, GA",
+      "publisher_key": "a3b05c24f3",
+      "broadcast_fingerprint": "6e0be7cdc79c8dc49970",
+      "broadcast_status": "on_air",
+      "broadcast_created_at": "2026-06-01T23:57:06.000Z",
+      "broadcast_updated_at": "2026-09-29T19:59:17.000Z",
+      "vod_fingerprint": "97d3001e59325f326992",
+      "provider_nfhs_number": 3572,
+      "provider_stream_id": 2066737,
+      "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236493"
     },
     {
-      "stream_id": 2066855,
-      "provider_nfhs_number": 3457,
-      "original_name": "NFHS Network 3457: Franklinton High School vs. Wake Forest High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066847,
-      "provider_nfhs_number": 3465,
-      "original_name": "NFHS Network 3465: Heritage High School - Wake Forest vs. Knightdale High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066846,
-      "provider_nfhs_number": 3466,
-      "original_name": "NFHS Network 3466: Thurston High School vs. Crestwood High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066841,
-      "provider_nfhs_number": 3471,
-      "original_name": "NFHS Network 3471: Green Level High School vs. Apex Friendship High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066836,
-      "provider_nfhs_number": 3476,
-      "original_name": "NFHS Network 3476: Treasure Coast HS vs. South Fork High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066835,
-      "provider_nfhs_number": 3477,
-      "original_name": "NFHS Network 3477: Winter Park HS vs. Olympia High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066834,
-      "provider_nfhs_number": 3478,
-      "original_name": "NFHS Network 3478: OA Carlson High School vs. Edsel Ford High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066828,
-      "provider_nfhs_number": 3484,
-      "original_name": "NFHS Network 3484: Felton Grove High School vs. Cardinal Gibbons High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066820,
-      "provider_nfhs_number": 3492,
-      "original_name": "NFHS Network 3492: Jay High School vs. Central High School - Milton Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066818,
-      "provider_nfhs_number": 3494,
-      "original_name": "NFHS Network 3494: Southgate Anderson High School vs. Trenton High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066812,
-      "provider_nfhs_number": 3500,
-      "original_name": "NFHS Network 3500: Away vs. Panther Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066809,
-      "provider_nfhs_number": 3503,
-      "original_name": "NFHS Network 3503: Willow Spring High School vs. Apex High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066798,
-      "provider_nfhs_number": 3514,
-      "original_name": "NFHS Network 3514: Cary High School vs. Holly Springs High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066788,
-      "provider_nfhs_number": 3524,
-      "original_name": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066783,
-      "provider_nfhs_number": 3529,
-      "original_name": "NFHS Network 3529: Big Rapids High School vs. Chippewa Hills High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066754,
-      "provider_nfhs_number": 3556,
-      "original_name": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066744,
-      "provider_nfhs_number": 3565,
-      "original_name": "NFHS Network 3565: Wakefield High School vs. Millbrook High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066720,
-      "provider_nfhs_number": 3588,
-      "original_name": "NFHS Network 3588: Long Reach High School vs. Guilford Park High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
-    },
-    {
-      "stream_id": 2066690,
-      "provider_nfhs_number": 3616,
-      "original_name": "NFHS Network 3616: Lansing Christian High School vs. Lakewood Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "short_epg": {
-        "ok": true,
-        "listing_count": 0,
-        "listings": []
-      },
-      "simple_data": {
-        "ok": true,
-        "epg_listings": {
-          "listing_count": 0,
-          "listings": []
-        },
-        "raw_keys": [
-          "epg_listings"
-        ]
-      }
+      "role": "control",
+      "game": "Frederica Academy vs. Bradwell Institute",
+      "nfhs_event_id": "gamee5d943f7a",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: Bradwell Institute, Hinesville, GA",
+      "publisher_key": "ceadaa83b7",
+      "broadcast_fingerprint": "05bc230af7b9aa90f530",
+      "broadcast_status": "complete",
+      "broadcast_created_at": "2026-09-27T16:49:58.000Z",
+      "broadcast_updated_at": "2026-09-29T21:11:05.000Z",
+      "vod_fingerprint": "e93327711cdd6249c421",
+      "provider_nfhs_number": 3596,
+      "provider_stream_id": 2066711,
+      "provider_name": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236481"
     }
-  ]
+  ],
+  "provider_controls_sorted": [
+    {
+      "role": "control",
+      "game": "North Georgia Tribe vs. Sugar Hill Christian Academy",
+      "nfhs_event_id": null,
+      "nfhs_start": null,
+      "publisher_name": null,
+      "publisher_key": null,
+      "broadcast_fingerprint": null,
+      "broadcast_status": null,
+      "broadcast_created_at": null,
+      "broadcast_updated_at": null,
+      "vod_fingerprint": null,
+      "provider_nfhs_number": 3448,
+      "provider_stream_id": 2066864,
+      "provider_name": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236556"
+    },
+    {
+      "role": "control",
+      "game": "Long County vs. St. Vincent's Academy",
+      "nfhs_event_id": "gam302604b4e5",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: St. Vincent's Academy, Savannah, GA",
+      "publisher_key": "80309ed9f3",
+      "broadcast_fingerprint": "17701fdf55477831497d",
+      "broadcast_status": "on_air",
+      "broadcast_created_at": "2026-09-28T12:34:04.000Z",
+      "broadcast_updated_at": "2026-09-29T19:59:19.000Z",
+      "vod_fingerprint": "91fbad844b78d3d14fd7",
+      "provider_nfhs_number": 3455,
+      "provider_stream_id": 2066857,
+      "provider_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236552"
+    },
+    {
+      "role": "control",
+      "game": "Camden County vs. Savannah Country Day",
+      "nfhs_event_id": "gamd493cc6a81",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: Savannah Country Day School, Savannah, GA",
+      "publisher_key": "a3b05c24f3",
+      "broadcast_fingerprint": "6e0be7cdc79c8dc49970",
+      "broadcast_status": "on_air",
+      "broadcast_created_at": "2026-06-01T23:57:06.000Z",
+      "broadcast_updated_at": "2026-09-29T19:59:17.000Z",
+      "vod_fingerprint": "97d3001e59325f326992",
+      "provider_nfhs_number": 3572,
+      "provider_stream_id": 2066737,
+      "provider_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236493"
+    },
+    {
+      "role": "control",
+      "game": "Frederica Academy vs. Bradwell Institute",
+      "nfhs_event_id": "gamee5d943f7a",
+      "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+      "publisher_name": "GHSA: Bradwell Institute, Hinesville, GA",
+      "publisher_key": "ceadaa83b7",
+      "broadcast_fingerprint": "05bc230af7b9aa90f530",
+      "broadcast_status": "complete",
+      "broadcast_created_at": "2026-09-27T16:49:58.000Z",
+      "broadcast_updated_at": "2026-09-29T21:11:05.000Z",
+      "vod_fingerprint": "e93327711cdd6249c421",
+      "provider_nfhs_number": 3596,
+      "provider_stream_id": 2066711,
+      "provider_name": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "provider_added": "1789236481"
+    }
+  ],
+  "target": {
+    "role": "target",
+    "game": "Clinch County vs. Brantley County",
+    "nfhs_event_id": "gamb8ad8195a3",
+    "nfhs_start": "2026-09-29T16:00:00.000-04:00",
+    "publisher_name": "GHSA: Brantley County High School, Nahunta, GA",
+    "publisher_key": "4ba434d4ea",
+    "broadcast_fingerprint": "b774022c8e84041dcdc2",
+    "broadcast_status": "complete",
+    "broadcast_created_at": "2026-09-29T11:10:53.000Z",
+    "broadcast_updated_at": "2026-09-29T19:58:23.000Z",
+    "vod_fingerprint": "39828d874d796817e149",
+    "provider_nfhs_number": null,
+    "provider_stream_id": null,
+    "provider_name": null,
+    "provider_added": null
+  }
 }
