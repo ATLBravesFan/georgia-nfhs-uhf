@@ -1,0 +1,52 @@
+name: Update Georgia NFHS data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: georgia-nfhs-refresh
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build Georgia NFHS data
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+          NFHS_CATEGORY_NAME: ${{ vars.NFHS_CATEGORY_NAME }}
+          GHSA_DIRECTORY_URL: ${{ vars.GHSA_DIRECTORY_URL }}
+          LOOKAHEAD_DAYS: "7"
+        run: node scripts/update-nfhs.mjs
+
+      - name: Publish updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/events.json
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git commit -m "Update Georgia NFHS data"
+          git push
