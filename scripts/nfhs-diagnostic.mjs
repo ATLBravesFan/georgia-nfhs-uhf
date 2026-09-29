@@ -1,37 +1,44 @@
 import fs from "node:fs/promises";
-import * as cheerio from "cheerio";
 
 const DEFAULT_CATEGORY = "USA | NFHS Network";
 
-const GLOBAL_PAGES = [
-  "https://get.nfhsnetwork.com/watch-events",
-  "https://www.nfhsnetwork.com/watch-events"
-];
+const TARGET = {
+  label: "Clinch County vs. Brantley County",
+  event_id: "gamb8ad8195a3"
+};
 
-const EVENTS = [
+const KNOWN_PAIRS = [
   {
-    role: "target",
-    label: "Clinch County vs. Brantley County",
-    event_id: "gamb8ad8195a3",
-    provider_nfhs_number: null,
-    provider_stream_id: null
-  },
-  {
-    role: "control",
-    label: "Long County vs. St. Vincent's Academy",
+    label: "Long County vs. St. Vincent's",
     event_id: "gam302604b4e5",
     provider_nfhs_number: 3455,
     provider_stream_id: 2066857
   },
   {
-    role: "control",
+    label: "Cary vs. Holly Springs",
+    event_id: "gam7a4d71b081",
+    provider_nfhs_number: 3514,
+    provider_stream_id: 2066798
+  },
+  {
+    label: "Big Rapids vs. Chippewa Hills",
+    event_id: "gam959038070d",
+    provider_nfhs_number: 3529,
+    provider_stream_id: 2066783
+  },
+  {
+    label: "Sanderson vs. Middle Creek",
+    event_id: "gambb59c64f73",
+    provider_nfhs_number: 3556,
+    provider_stream_id: 2066754
+  },
+  {
     label: "Camden County vs. Savannah Country Day",
     event_id: "gamd493cc6a81",
     provider_nfhs_number: 3572,
     provider_stream_id: 2066737
   },
   {
-    role: "control",
     label: "Frederica Academy vs. Bradwell Institute",
     event_id: "gamee5d943f7a",
     provider_nfhs_number: 3596,
@@ -54,14 +61,16 @@ async function fetchText(url, timeoutMs = 20000) {
     const r = await fetch(url, {
       signal: ac.signal,
       headers: {
-        "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/5.0"
+        "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/6.0"
       }
     });
 
     const text = await r.text();
 
     if (!r.ok) {
-      throw new Error(`${r.status} ${r.statusText}`);
+      throw new Error(
+        `${r.status} ${r.statusText}: ${text.slice(0, 200)}`
+      );
     }
 
     return text;
@@ -79,11 +88,16 @@ async function getProvider() {
     process.env.XTREAM_BASE_URL || ""
   ).replace(/\/+$/, "");
 
-  const username = process.env.XTREAM_USERNAME || "";
-  const password = process.env.XTREAM_PASSWORD || "";
+  const username =
+    process.env.XTREAM_USERNAME || "";
+
+  const password =
+    process.env.XTREAM_PASSWORD || "";
 
   if (!base || !username || !password) {
-    throw new Error("Missing Xtream GitHub secrets.");
+    throw new Error(
+      "Missing XTREAM_BASE_URL, XTREAM_USERNAME, or XTREAM_PASSWORD."
+    );
   }
 
   const auth =
@@ -91,36 +105,48 @@ async function getProvider() {
     `&password=${encodeURIComponent(password)}`;
 
   const categories = await fetchJson(
-    `${base}/player_api.php?${auth}&action=get_live_categories`
+    `${base}/player_api.php?${auth}` +
+    `&action=get_live_categories`
   );
 
   const wanted = cleanSpace(
-    process.env.NFHS_CATEGORY_NAME || DEFAULT_CATEGORY
+    process.env.NFHS_CATEGORY_NAME ||
+    DEFAULT_CATEGORY
   ).toLowerCase();
 
   let category = categories.find(
-    c => cleanSpace(c.category_name).toLowerCase() === wanted
+    c =>
+      cleanSpace(c.category_name)
+        .toLowerCase() === wanted
   );
 
   if (!category) {
     category = categories.find(
-      c => /nfhs/i.test(String(c.category_name || ""))
+      c =>
+        /nfhs/i.test(
+          String(c.category_name || "")
+        )
     );
   }
 
   if (!category) {
-    throw new Error("NFHS category not found.");
+    throw new Error(
+      "Could not find NFHS category."
+    );
   }
 
   let streams = await fetchJson(
     `${base}/player_api.php?${auth}` +
     `&action=get_live_streams` +
-    `&category_id=${encodeURIComponent(category.category_id)}`
+    `&category_id=${encodeURIComponent(
+      category.category_id
+    )}`
   );
 
   streams = streams.filter(
     s =>
-      String(s.category_id) === String(category.category_id) ||
+      String(s.category_id) ===
+        String(category.category_id) ||
       !s.category_id
   );
 
@@ -138,197 +164,296 @@ function providerNumber(name = "") {
   return m ? Number(m[1]) : null;
 }
 
-async function extractGlobalPage(url) {
-  try {
-    const html = await fetchText(url);
-    const $ = cheerio.load(html);
+function verifyKnownPair(provider, pair) {
+  const stream =
+    provider.streams.find(
+      s =>
+        Number(s.stream_id) ===
+        Number(pair.provider_stream_id)
+    );
 
-    const events = [];
-    const seen = new Set();
-
-    $("a").each((_, el) => {
-      let href = cleanSpace($(el).attr("href") || "");
-      const text = cleanSpace($(el).text());
-
-      if (!href) return;
-
-      if (href.startsWith("/")) {
-        href = `https://www.nfhsnetwork.com${href}`;
-      }
-
-      const m = href.match(
-        /\/events\/[^/]+\/([a-z0-9]+)(?:[/?#]|$)/i
-      );
-
-      if (!m) return;
-
-      const eventId = m[1];
-
-      if (seen.has(eventId)) return;
-      seen.add(eventId);
-
-      events.push({
-        index: events.length + 1,
-        event_id: eventId,
-        text,
-        href
-      });
-    });
-
+  if (!stream) {
     return {
-      ok: true,
-      url,
-      event_count: events.length,
-      events
-    };
-
-  } catch (err) {
-    return {
-      ok: false,
-      url,
-      event_count: 0,
-      events: [],
-      error: String(err?.message || err)
+      ...pair,
+      provider_stream_found: false
     };
   }
-}
-
-function findProviderStream(provider, streamId) {
-  if (!streamId) return null;
-
-  const s = provider.streams.find(
-    x => Number(x.stream_id) === Number(streamId)
-  );
-
-  if (!s) return null;
 
   return {
-    stream_id: s.stream_id,
-    provider_nfhs_number: providerNumber(s.name || ""),
-    provider_name: cleanSpace(s.name || ""),
-    provider_added: s.added ?? null
+    ...pair,
+
+    provider_stream_found: true,
+
+    current_provider_nfhs_number:
+      providerNumber(stream.name || ""),
+
+    current_provider_name:
+      cleanSpace(stream.name || ""),
+
+    provider_added:
+      stream.added ?? null
   };
 }
 
-function comparePage(page, provider) {
-  return EVENTS.map(event => {
-    const pageEvent = page.events.find(
-      x => x.event_id === event.event_id
+function compareEventIds(a, b) {
+  return String(a.event_id)
+    .localeCompare(
+      String(b.event_id),
+      "en",
+      {
+        numeric: false,
+        sensitivity: "variant"
+      }
     );
+}
 
-    const providerStream =
-      findProviderStream(
-        provider,
-        event.provider_stream_id
+function isMonotonic(rows) {
+  const sorted = [...rows]
+    .sort(compareEventIds);
+
+  for (
+    let i = 1;
+    i < sorted.length;
+    i++
+  ) {
+    if (
+      Number(
+        sorted[i].provider_nfhs_number
+      ) <=
+      Number(
+        sorted[i - 1].provider_nfhs_number
+      )
+    ) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function findTargetBracket(rows) {
+  const sorted =
+    [...rows].sort(compareEventIds);
+
+  let lower = null;
+  let upper = null;
+
+  for (const row of sorted) {
+    const comparison =
+      String(row.event_id).localeCompare(
+        TARGET.event_id,
+        "en",
+        {
+          numeric: false,
+          sensitivity: "variant"
+        }
       );
 
-    return {
-      role: event.role,
-      label: event.label,
-      event_id: event.event_id,
+    if (comparison < 0) {
+      lower = row;
+    }
 
-      global_page_found: Boolean(pageEvent),
+    if (comparison > 0) {
+      upper = row;
+      break;
+    }
+  }
 
-      global_page_index:
-        pageEvent?.index ?? null,
-
-      global_page_text:
-        pageEvent?.text ?? null,
-
-      provider_nfhs_number:
-        providerStream?.provider_nfhs_number ??
-        event.provider_nfhs_number,
-
-      provider_stream_id:
-        providerStream?.stream_id ??
-        event.provider_stream_id,
-
-      provider_name:
-        providerStream?.provider_name ?? null,
-
-      provider_added:
-        providerStream?.provider_added ?? null
-    };
-  });
+  return {
+    lower,
+    target: TARGET,
+    upper
+  };
 }
 
 async function main() {
-  const provider = await getProvider();
+  const provider =
+    await getProvider();
 
-  const pages = [];
-
-  for (const url of GLOBAL_PAGES) {
-    pages.push(
-      await extractGlobalPage(url)
-    );
-  }
-
-  const comparisons = pages.map(page => ({
-    page_url: page.url,
-    page_ok: page.ok,
-    event_count: page.event_count,
-    rows: comparePage(page, provider)
-  }));
-
-  const targetNeighborhoods = [];
-
-  for (const page of pages) {
-    const target = page.events.find(
-      x => x.event_id === "gamb8ad8195a3"
+  const verified =
+    KNOWN_PAIRS.map(
+      pair =>
+        verifyKnownPair(
+          provider,
+          pair
+        )
     );
 
-    if (!target) {
-      targetNeighborhoods.push({
-        page_url: page.url,
-        target_found: false,
-        rows: []
-      });
-
-      continue;
-    }
-
-    targetNeighborhoods.push({
-      page_url: page.url,
-      target_found: true,
-      target_index: target.index,
-
-      rows: page.events.filter(
-        x => Math.abs(x.index - target.index) <= 10
+  const usablePairs =
+    verified
+      .filter(
+        x =>
+          x.provider_stream_found
       )
-    });
+      .map(x => ({
+        label:
+          x.label,
+
+        event_id:
+          x.event_id,
+
+        provider_nfhs_number:
+          x.current_provider_nfhs_number,
+
+        provider_stream_id:
+          x.provider_stream_id,
+
+        provider_name:
+          x.current_provider_name,
+
+        provider_added:
+          x.provider_added
+      }));
+
+  const orderedPairs =
+    [...usablePairs]
+      .sort(compareEventIds);
+
+  const monotonic =
+    isMonotonic(usablePairs);
+
+  const targetBracket =
+    findTargetBracket(
+      usablePairs
+    );
+
+  const lowerNumber =
+    Number(
+      targetBracket.lower
+        ?.provider_nfhs_number
+    );
+
+  const upperNumber =
+    Number(
+      targetBracket.upper
+        ?.provider_nfhs_number
+    );
+
+  let bracketStreams = [];
+
+  if (
+    Number.isFinite(lowerNumber) &&
+    Number.isFinite(upperNumber)
+  ) {
+    bracketStreams =
+      provider.streams
+        .map(s => ({
+          stream_id:
+            s.stream_id,
+
+          provider_nfhs_number:
+            providerNumber(
+              s.name || ""
+            ),
+
+          original_name:
+            cleanSpace(
+              s.name || ""
+            ),
+
+          added:
+            s.added ?? null
+        }))
+        .filter(
+          s =>
+            Number.isFinite(
+              s.provider_nfhs_number
+            ) &&
+            s.provider_nfhs_number >
+              lowerNumber &&
+            s.provider_nfhs_number <
+              upperNumber
+        )
+        .sort(
+          (a, b) =>
+            a.provider_nfhs_number -
+            b.provider_nfhs_number
+        );
   }
+
+  const freshmanVolleyballCandidates =
+    bracketStreams.filter(s => {
+      const n =
+        s.original_name
+          .toLowerCase();
+
+      return (
+        n.includes("29 sep") &&
+        n.includes("04:00 pm et") &&
+        n.includes("freshman") &&
+        n.includes("girls") &&
+        n.includes("volleyball")
+      );
+    });
 
   const payload = {
-    generated_at: new Date().toISOString(),
+    generated_at:
+      new Date().toISOString(),
 
-    diagnostic_only: true,
+    diagnostic_only:
+      true,
 
-    modifies_epg: false,
+    modifies_epg:
+      false,
 
-    diagnostic_version: 5,
+    diagnostic_version:
+      6,
 
     purpose:
-      "Test whether provider NFHS numbering follows NFHS nationwide Watch Events ordering.",
+      "Test whether NFHS event IDs sort monotonically with provider NFHS numbers and bracket the Clinch-Brantley target.",
 
     provider: {
       category:
-        provider.category?.category_name ||
+        provider.category
+          ?.category_name ||
         DEFAULT_CATEGORY,
 
       source_stream_count:
         provider.streams.length
     },
 
-    pages: pages.map(page => ({
-      url: page.url,
-      ok: page.ok,
-      event_count: page.event_count,
-      error: page.error ?? null
-    })),
+    target:
+      TARGET,
 
-    comparisons,
+    ordering_test: {
+      known_pair_count:
+        usablePairs.length,
 
-        target_neighborhoods: targetNeighborhoods
+      event_id_to_provider_number_monotonic:
+        monotonic,
+
+      ordered_pairs:
+        orderedPairs
+    },
+
+    target_bracket:
+      targetBracket,
+
+    bracket_range:
+      Number.isFinite(lowerNumber) &&
+      Number.isFinite(upperNumber)
+        ? {
+            greater_than:
+              lowerNumber,
+
+            less_than:
+              upperNumber,
+
+            possible_provider_number_count:
+              Math.max(
+                upperNumber -
+                lowerNumber -
+                1,
+                0
+              )
+          }
+        : null,
+
+    bracket_streams:
+      bracketStreams,
+
+    freshman_girls_volleyball_candidates_inside_bracket:
+      freshmanVolleyballCandidates
   };
 
   await fs.mkdir(
@@ -338,12 +463,29 @@ async function main() {
 
   await fs.writeFile(
     "public/nfhs-diagnostic.json",
-    JSON.stringify(payload, null, 2) + "\n",
+    JSON.stringify(
+      payload,
+      null,
+      2
+    ) + "\n",
     "utf8"
   );
 
-  console.log("Diagnostic v5 complete.");
-  console.log("public/events.json was NOT modified.");
+  console.log(
+    `Diagnostic v6 complete.`
+  );
+
+  console.log(
+    `Ordering monotonic: ${monotonic}`
+  );
+
+  console.log(
+    `Bracket streams: ${bracketStreams.length}`
+  );
+
+  console.log(
+    "public/events.json was NOT modified."
+  );
 }
 
 main().catch(err => {
