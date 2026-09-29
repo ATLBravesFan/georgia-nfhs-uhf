@@ -33,7 +33,7 @@ const AMBIGUOUS_CORES = new Set([
   "lee county", "baker county", "houston county", "worth county", "union county",
   "washington county", "jefferson county", "jasper county", "madison county", "franklin county",
   // Nationally duplicated names that can otherwise produce false Georgia matches.
-  "river ridge", "blessed trinity", "st mary s"
+  "river ridge", "blessed trinity", "st mary s", "bethlehem christian academy", "bethlehem christian"
 ]);
 
 const LOCAL_PRIORITY = new Set([
@@ -83,7 +83,7 @@ async function fetchText(url, timeoutMs = 15000) {
   try {
     const r = await fetch(url, {
       signal: ac.signal,
-      headers: { "User-Agent": "Mozilla/5.0 Georgia-NFHS-UHF/2.0" }
+      headers: { "User-Agent": "Mozilla/5.0 Georgia-NFHS-UHF/3.0" }
     });
     if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
     return await r.text();
