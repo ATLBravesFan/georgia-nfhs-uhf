@@ -1,11 +1,286 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-09-29T08:35:59.873-04:00",
+  "eastern_date": "2026-09-29",
   "lookahead_days": 7,
-  "category": null,
-  "source_stream_count": 0,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
-  "directory_sources": {},
-  "school_name_count": 0,
-  "channels": []
+  "category": "USA | NFHS Network",
+  "source_stream_count": 5000,
+  "total_georgia_matches_found": 140,
+  "georgia_channel_count": 11,
+  "currently_live_estimate": 0,
+  "upcoming_next_7_days": 11,
+  "completed_today_but_still_visible": 0,
+  "placeholder_active": false,
+  "directory_sources": {
+    "GHSA": {
+      "ok": true,
+      "count": 457
+    },
+    "GIAA": {
+      "ok": true,
+      "count": 0
+    },
+    "GAPPS": {
+      "ok": true,
+      "count": 142
+    }
+  },
+  "school_name_count": 607,
+  "channels": [
+    {
+      "id": "ga-nfhs-2066967",
+      "stream_id": 2066967,
+      "extension": "ts",
+      "original_name": "NFHS Network 3345: KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball @ 29 Sep 12:00 PM ET",
+      "name": "KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T12:00:00.000-04:00",
+      "stop": "2026-09-29T15:00:00.000-04:00",
+      "sport": "Softball",
+      "teams": [
+        "KIPP Atlanta Collegiate",
+        "Wesleyan School"
+      ],
+      "matched_schools": [
+        {
+          "team": "KIPP Atlanta Collegiate",
+          "core": "kipp atlanta collegiate",
+          "confidence": 2
+        },
+        {
+          "team": "Wesleyan School",
+          "core": "wesleyan",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066966",
+      "stream_id": 2066966,
+      "extension": "ts",
+      "original_name": "NFHS Network 3346: River Ridge High School vs. Bishop McLaughlin Catholic High School Varsity Girls Volleyball @ 29 Sep 12:30 PM ET",
+      "name": "River Ridge High School vs. Bishop McLaughlin Catholic High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T12:30:00.000-04:00",
+      "stop": "2026-09-29T15:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "River Ridge High School",
+        "Bishop McLaughlin Catholic High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "River Ridge High School",
+          "core": "river ridge",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066963",
+      "stream_id": 2066963,
+      "extension": "ts",
+      "original_name": "NFHS Network 3349: River Ridge High School vs. Bishop McLaughlin Catholic High School Junior Varsity Girls Volleyball @ 29 Sep 02:30 PM ET",
+      "name": "River Ridge High School vs. Bishop McLaughlin Catholic High School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T14:30:00.000-04:00",
+      "stop": "2026-09-29T17:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "River Ridge High School",
+        "Bishop McLaughlin Catholic High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "River Ridge High School",
+          "core": "river ridge",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066908",
+      "stream_id": 2066908,
+      "extension": "ts",
+      "original_name": "NFHS Network 3404: Fellowship Christian School Middle School Girls Volleyball @ 29 Sep 03:55 PM ET",
+      "name": "Fellowship Christian School Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T15:55:00.000-04:00",
+      "stop": "2026-09-29T18:25:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Fellowship Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fellowship Christian School",
+          "core": "fellowship christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066893",
+      "stream_id": 2066893,
+      "extension": "ts",
+      "original_name": "NFHS Network 3419: Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Blessed Trinity School",
+        "Redeemer Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Blessed Trinity School",
+          "core": "blessed trinity",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066889",
+      "stream_id": 2066889,
+      "extension": "ts",
+      "original_name": "NFHS Network 3423: Ravenscroft High School vs. Saint Mary's School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Ravenscroft High School vs. Saint Mary's School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Ravenscroft High School",
+        "Saint Mary's School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Saint Mary's School",
+          "core": "st mary s",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066864",
+      "stream_id": 2066864,
+      "extension": "ts",
+      "original_name": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "North Georgia Tribe",
+        "Sugar Hill Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Georgia Tribe",
+          "core": "north georgia tribe",
+          "confidence": 2
+        },
+        {
+          "team": "Sugar Hill Christian Academy",
+          "core": "sugar hill christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066857",
+      "stream_id": 2066857,
+      "extension": "ts",
+      "original_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Long County High School",
+        "St. Vincent's Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Long County High School",
+          "core": "long county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066737",
+      "stream_id": 2066737,
+      "extension": "ts",
+      "original_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Camden County High School",
+        "Savannah Country Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Camden County High School",
+          "core": "camden county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066711",
+      "stream_id": 2066711,
+      "extension": "ts",
+      "original_name": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Frederica Academy",
+        "Bradwell Institute"
+      ],
+      "matched_schools": [
+        {
+          "team": "Bradwell Institute",
+          "core": "bradwell institute",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2066697",
+      "stream_id": 2066697,
+      "extension": "ts",
+      "original_name": "NFHS Network 3609: Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "name": "Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-09-29T16:00:00.000-04:00",
+      "stop": "2026-09-29T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Colquitt Christian Academy",
+        "Scintilla Charter Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Colquitt Christian Academy",
+          "core": "colquitt christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Scintilla Charter Academy",
+          "core": "scintilla charter academy",
+          "confidence": 2
+        }
+      ]
+    }
+  ]
 }
