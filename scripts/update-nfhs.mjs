@@ -31,7 +31,9 @@ const AMBIGUOUS_CORES = new Set([
   "salem", "savannah", "stockbridge", "temple", "thomasville", "trinity christian",
   "walker", "walton", "washington", "wheeler", "woodstock", "westwood", "spring creek",
   "lee county", "baker county", "houston county", "worth county", "union county",
-  "washington county", "jefferson county", "jasper county", "madison county", "franklin county"
+  "washington county", "jefferson county", "jasper county", "madison county", "franklin county",
+  // Nationally duplicated names that can otherwise produce false Georgia matches.
+  "river ridge", "blessed trinity", "st mary s"
 ]);
 
 const LOCAL_PRIORITY = new Set([
@@ -144,16 +146,43 @@ function extractGhsaSchools(html) {
 
 function extractGiaaSchools(html) {
   const $ = cheerio.load(html);
-  const lines = $("body").text().split(/\r?\n/).map(cleanSpace).filter(Boolean);
-  const out = [];
+  const out = new Set();
   let active = false;
-  for (const line of lines) {
-    if (/^GIAA MEMBERS$/i.test(line)) { active = true; continue; }
-    if (active && /^GISA MEMBERS$/i.test(line)) break;
-    if (!active) continue;
-    if (/^[A-Za-z]/.test(line) && line.length >= 3 && line.length <= 100) out.push(line);
+
+  // The GIAA page lists the member schools as links between the
+  // "GIAA MEMBERS" and "GISA MEMBERS" headings. Walking DOM elements
+  // is more reliable than splitting body text because WordPress may
+  // collapse the visible text into one long line.
+  $("body *").each((_, el) => {
+    const tag = String(el.tagName || el.name || "").toLowerCase();
+    const text = cleanSpace($(el).text());
+
+    if (/^h[1-6]$/.test(tag)) {
+      if (/^GIAA MEMBERS$/i.test(text)) { active = true; return; }
+      if (active && /^GISA MEMBERS$/i.test(text)) { active = false; return false; }
+    }
+
+    if (!active || tag !== "a") return;
+    const name = cleanSpace($(el).text());
+    if (!name || name.length < 3 || name.length > 110) return;
+    if (/^(email|login|tickets|more|members|about)$/i.test(name)) return;
+    out.add(name);
+  });
+
+  // Fallback for a future page redesign: look for text bounded by the
+  // same headings and split on common list separators.
+  if (!out.size) {
+    const body = cleanSpace($("body").text());
+    const m = body.match(/GIAA MEMBERS\s+([\s\S]*?)\s+GISA MEMBERS/i);
+    if (m) {
+      for (const piece of m[1].split(/\s{2,}|\n|\r|\t/)) {
+        const name = cleanSpace(piece);
+        if (name && name.length >= 3 && name.length <= 110) out.add(name);
+      }
+    }
   }
-  return out;
+
+  return [...out];
 }
 
 function extractGappsSchools(html) {
