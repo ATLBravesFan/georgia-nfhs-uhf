@@ -1,973 +1,565 @@
 {
-  "generated_at": "2026-09-29T21:02:14.209Z",
+  "generated_at": "2026-09-29T21:07:38.943Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "target": {
-    "away": "Clinch County",
-    "home": "Brantley County",
-    "sport": "Volleyball",
-    "level": "Freshman",
-    "gender": "Girls",
-    "date": "29 Sep",
-    "time": "04:00 PM",
-    "nfhs_event_id": "gamb8ad8195a3"
-  },
-  "nfhs_metadata": {
-    "request_ok": true,
-    "event_id": "gamb8ad8195a3",
-    "local_start_time": "2026-09-29T16:00:00.000-04:00",
-    "city": "Nahunta",
-    "state_name": "Georgia",
-    "event_type": null,
-    "publisher": {
-      "name": "GHSA: Brantley County High School, Nahunta, GA",
-      "publisher_key": "4ba434d4ea",
-      "type": "school",
-      "slug": "brantley-county-high-school-nahunta-ga",
-      "broadcast_count": 1,
-      "vod_count": 1
+  "purpose": "Compare NFHS event metadata plus provider-side EPG/details for the Clinch-Brantley target against a known Camden control.",
+  "nfhs_events": [
+    {
+      "ok": true,
+      "role": "target",
+      "event_id": "gamb8ad8195a3",
+      "name": "Clinch County vs. Brantley County Freshman Girls Volleyball",
+      "known_provider_stream_id": null,
+      "known_provider_nfhs_number": null,
+      "local_start_time": "2026-09-29T16:00:00.000-04:00",
+      "city": "Nahunta",
+      "state_name": "Georgia",
+      "publisher": {
+        "name": "GHSA: Brantley County High School, Nahunta, GA",
+        "publisher_key": "4ba434d4ea",
+        "slug": "brantley-county-high-school-nahunta-ga",
+        "type": "school",
+        "broadcast_count": 1,
+        "vod_count": 1
+      },
+      "broadcast": {
+        "status": "complete",
+        "key_fingerprint": "b774022c8e84041dcdc2",
+        "key_length": 13,
+        "safe_keys_present": [
+          "status",
+          "description",
+          "created_at",
+          "updated_at"
+        ]
+      },
+      "vod": {
+        "status": "complete",
+        "key_fingerprint": "39828d874d796817e149",
+        "key_length": 13
+      }
     },
-    "broadcast": {
-      "status": "complete",
-      "on_air": null,
-      "description": "",
-      "key_present": true
-    },
-    "vod": {
-      "status": "complete",
-      "key_present": true
+    {
+      "ok": true,
+      "role": "control",
+      "event_id": "gamd493cc6a81",
+      "name": "Camden County vs. Savannah Country Day Junior Varsity Girls Volleyball",
+      "known_provider_stream_id": 2066737,
+      "known_provider_nfhs_number": 3572,
+      "local_start_time": "2026-09-29T16:00:00.000-04:00",
+      "city": "Savannah",
+      "state_name": "Georgia",
+      "publisher": {
+        "name": "GHSA: Savannah Country Day School, Savannah, GA",
+        "publisher_key": "a3b05c24f3",
+        "slug": "savannah-country-day-school-savannah-ga",
+        "type": "school",
+        "broadcast_count": 1,
+        "vod_count": 1
+      },
+      "broadcast": {
+        "status": "on_air",
+        "key_fingerprint": "6e0be7cdc79c8dc49970",
+        "key_length": 13,
+        "safe_keys_present": [
+          "status",
+          "description",
+          "created_at",
+          "updated_at"
+        ]
+      },
+      "vod": {
+        "status": "scheduled",
+        "key_fingerprint": "97d3001e59325f326992",
+        "key_length": 13
+      }
     }
-  },
+  ],
   "provider": {
     "category": "USA | NFHS Network",
     "source_stream_count": 5000,
-    "four_pm_stream_count": 211,
-    "matching_freshman_girls_volleyball_candidates": 23
+    "target_candidate_count": 23
   },
-  "strongest_candidates": [
-    {
-      "stream_id": 2066901,
-      "provider_nfhs_number": 3411,
-      "original_name": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+  "known_control_provider_stream": {
+    "stream_id": 2066737,
+    "provider_nfhs_number": 3572,
+    "original_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+    "short_epg": {
+      "ok": true,
+      "listing_count": 0,
+      "listings": []
     },
-    {
-      "stream_id": 2066898,
-      "provider_nfhs_number": 3414,
-      "original_name": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066878,
-      "provider_nfhs_number": 3434,
-      "original_name": "NFHS Network 3434: Stevenson High School - Sterling Heights vs. Port Huron High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066862,
-      "provider_nfhs_number": 3450,
-      "original_name": "NFHS Network 3450: Thornton Academy vs. York High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066855,
-      "provider_nfhs_number": 3457,
-      "original_name": "NFHS Network 3457: Franklinton High School vs. Wake Forest High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066847,
-      "provider_nfhs_number": 3465,
-      "original_name": "NFHS Network 3465: Heritage High School - Wake Forest vs. Knightdale High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066846,
-      "provider_nfhs_number": 3466,
-      "original_name": "NFHS Network 3466: Thurston High School vs. Crestwood High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066841,
-      "provider_nfhs_number": 3471,
-      "original_name": "NFHS Network 3471: Green Level High School vs. Apex Friendship High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066836,
-      "provider_nfhs_number": 3476,
-      "original_name": "NFHS Network 3476: Treasure Coast HS vs. South Fork High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066835,
-      "provider_nfhs_number": 3477,
-      "original_name": "NFHS Network 3477: Winter Park HS vs. Olympia High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066834,
-      "provider_nfhs_number": 3478,
-      "original_name": "NFHS Network 3478: OA Carlson High School vs. Edsel Ford High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066828,
-      "provider_nfhs_number": 3484,
-      "original_name": "NFHS Network 3484: Felton Grove High School vs. Cardinal Gibbons High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066820,
-      "provider_nfhs_number": 3492,
-      "original_name": "NFHS Network 3492: Jay High School vs. Central High School - Milton Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066818,
-      "provider_nfhs_number": 3494,
-      "original_name": "NFHS Network 3494: Southgate Anderson High School vs. Trenton High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066812,
-      "provider_nfhs_number": 3500,
-      "original_name": "NFHS Network 3500: Away vs. Panther Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066809,
-      "provider_nfhs_number": 3503,
-      "original_name": "NFHS Network 3503: Willow Spring High School vs. Apex High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066798,
-      "provider_nfhs_number": 3514,
-      "original_name": "NFHS Network 3514: Cary High School vs. Holly Springs High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066788,
-      "provider_nfhs_number": 3524,
-      "original_name": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066783,
-      "provider_nfhs_number": 3529,
-      "original_name": "NFHS Network 3529: Big Rapids High School vs. Chippewa Hills High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066754,
-      "provider_nfhs_number": 3556,
-      "original_name": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066744,
-      "provider_nfhs_number": 3565,
-      "original_name": "NFHS Network 3565: Wakefield High School vs. Millbrook High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066720,
-      "provider_nfhs_number": 3588,
-      "original_name": "NFHS Network 3588: Long Reach High School vs. Guilford Park High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066690,
-      "provider_nfhs_number": 3616,
-      "original_name": "NFHS Network 3616: Lansing Christian High School vs. Lakewood Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066905,
-      "provider_nfhs_number": 3407,
-      "original_name": "NFHS Network 3407: West Branch High School vs. Moshannon Valley High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066904,
-      "provider_nfhs_number": 3408,
-      "original_name": "NFHS Network 3408: Burlington Christian Academy vs. Wesleyan Christian Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066902,
-      "provider_nfhs_number": 3410,
-      "original_name": "NFHS Network 3410: Homer Center High School vs. Portage Area High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066899,
-      "provider_nfhs_number": 3413,
-      "original_name": "NFHS Network 3413: Lynn Vocational Technical High School vs. Minuteman High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066896,
-      "provider_nfhs_number": 3416,
-      "original_name": "NFHS Network 3416: The Clinton School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066894,
-      "provider_nfhs_number": 3418,
-      "original_name": "NFHS Network 3418: Away vs. Admiral Farragut Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066893,
-      "provider_nfhs_number": 3419,
-      "original_name": "NFHS Network 3419: Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066890,
-      "provider_nfhs_number": 3422,
-      "original_name": "NFHS Network 3422: Away vs. Southside High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066889,
-      "provider_nfhs_number": 3423,
-      "original_name": "NFHS Network 3423: Ravenscroft High School vs. Saint Mary's School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066885,
-      "provider_nfhs_number": 3427,
-      "original_name": "NFHS Network 3427: Edward Little High School vs. Biddeford High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066879,
-      "provider_nfhs_number": 3433,
-      "original_name": "NFHS Network 3433: Triton Regional High School vs. Newburyport High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066872,
-      "provider_nfhs_number": 3440,
-      "original_name": "NFHS Network 3440: Little Flower Catholic High School for Girls vs. Cardinal O'Hara High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066871,
-      "provider_nfhs_number": 3441,
-      "original_name": "NFHS Network 3441: Bethany Community School vs. Clover Garden School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066869,
-      "provider_nfhs_number": 3443,
-      "original_name": "NFHS Network 3443: Plainville High School vs. E.O. Smith High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066867,
-      "provider_nfhs_number": 3445,
-      "original_name": "NFHS Network 3445: Mark T Sheehan High School vs. Jonathan Law High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066865,
-      "provider_nfhs_number": 3447,
-      "original_name": "NFHS Network 3447: South Central High School vs. New Bern High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066864,
-      "provider_nfhs_number": 3448,
-      "original_name": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066858,
-      "provider_nfhs_number": 3454,
-      "original_name": "NFHS Network 3454: John I. Burton High School vs. Rye Cove High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066857,
-      "provider_nfhs_number": 3455,
-      "original_name": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066853,
-      "provider_nfhs_number": 3459,
-      "original_name": "NFHS Network 3459: Everett Area High School vs. Tussey Mountain High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066850,
-      "provider_nfhs_number": 3462,
-      "original_name": "NFHS Network 3462: Westchester Country Day School vs. High Point Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066849,
-      "provider_nfhs_number": 3463,
-      "original_name": "NFHS Network 3463: Marathon Middle-High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066843,
-      "provider_nfhs_number": 3469,
-      "original_name": "NFHS Network 3469: Emmanuel Christian Academy vs. American School For The Deaf Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066842,
-      "provider_nfhs_number": 3470,
-      "original_name": "NFHS Network 3470: Harvard Ellis Tech High School vs. Howell Cheney Tech High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066840,
-      "provider_nfhs_number": 3472,
-      "original_name": "NFHS Network 3472: Jones Senior High School vs. East Carteret High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066838,
-      "provider_nfhs_number": 3474,
-      "original_name": "NFHS Network 3474: Westmont Hilltop High School vs. Penn Cambria High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
-      ]
-    },
-    {
-      "stream_id": 2066837,
-      "provider_nfhs_number": 3475,
-      "original_name": "NFHS Network 3475: Purchase Line High School vs. United High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 19,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same gender"
+    "simple_data": {
+      "ok": true,
+      "epg_listings": {
+        "listing_count": 0,
+        "listings": []
+      },
+      "raw_keys": [
+        "epg_listings"
       ]
     }
-  ],
-  "four_pm_freshman_girls_volleyball": [
+  },
+  "target_candidates": [
     {
       "stream_id": 2066901,
       "provider_nfhs_number": 3411,
       "original_name": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066898,
       "provider_nfhs_number": 3414,
       "original_name": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066878,
       "provider_nfhs_number": 3434,
       "original_name": "NFHS Network 3434: Stevenson High School - Sterling Heights vs. Port Huron High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066862,
       "provider_nfhs_number": 3450,
       "original_name": "NFHS Network 3450: Thornton Academy vs. York High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066855,
       "provider_nfhs_number": 3457,
       "original_name": "NFHS Network 3457: Franklinton High School vs. Wake Forest High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066847,
       "provider_nfhs_number": 3465,
       "original_name": "NFHS Network 3465: Heritage High School - Wake Forest vs. Knightdale High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066846,
       "provider_nfhs_number": 3466,
       "original_name": "NFHS Network 3466: Thurston High School vs. Crestwood High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066841,
       "provider_nfhs_number": 3471,
       "original_name": "NFHS Network 3471: Green Level High School vs. Apex Friendship High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066836,
       "provider_nfhs_number": 3476,
       "original_name": "NFHS Network 3476: Treasure Coast HS vs. South Fork High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066835,
       "provider_nfhs_number": 3477,
       "original_name": "NFHS Network 3477: Winter Park HS vs. Olympia High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066834,
       "provider_nfhs_number": 3478,
       "original_name": "NFHS Network 3478: OA Carlson High School vs. Edsel Ford High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066828,
       "provider_nfhs_number": 3484,
       "original_name": "NFHS Network 3484: Felton Grove High School vs. Cardinal Gibbons High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066820,
       "provider_nfhs_number": 3492,
       "original_name": "NFHS Network 3492: Jay High School vs. Central High School - Milton Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066818,
       "provider_nfhs_number": 3494,
       "original_name": "NFHS Network 3494: Southgate Anderson High School vs. Trenton High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066812,
       "provider_nfhs_number": 3500,
       "original_name": "NFHS Network 3500: Away vs. Panther Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066809,
       "provider_nfhs_number": 3503,
       "original_name": "NFHS Network 3503: Willow Spring High School vs. Apex High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066798,
       "provider_nfhs_number": 3514,
       "original_name": "NFHS Network 3514: Cary High School vs. Holly Springs High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066788,
       "provider_nfhs_number": 3524,
       "original_name": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066783,
       "provider_nfhs_number": 3529,
       "original_name": "NFHS Network 3529: Big Rapids High School vs. Chippewa Hills High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066754,
       "provider_nfhs_number": 3556,
       "original_name": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066744,
       "provider_nfhs_number": 3565,
       "original_name": "NFHS Network 3565: Wakefield High School vs. Millbrook High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066720,
       "provider_nfhs_number": 3588,
       "original_name": "NFHS Network 3588: Long Reach High School vs. Guilford Park High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     },
     {
       "stream_id": 2066690,
       "provider_nfhs_number": 3616,
       "original_name": "NFHS Network 3616: Lansing Christian High School vs. Lakewood Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "score": 24,
-      "reasons": [
-        "same date",
-        "same 4:00 PM start",
-        "same sport",
-        "same level",
-        "same gender"
-      ]
+      "short_epg": {
+        "ok": true,
+        "listing_count": 0,
+        "listings": []
+      },
+      "simple_data": {
+        "ok": true,
+        "epg_listings": {
+          "listing_count": 0,
+          "listings": []
+        },
+        "raw_keys": [
+          "epg_listings"
+        ]
+      }
     }
   ]
 }
