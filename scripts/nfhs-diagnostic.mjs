@@ -1,45 +1,30 @@
 import fs from "node:fs/promises";
-import * as cheerio from "cheerio";
+import { spawn } from "node:child_process";
 
 const DEFAULT_CATEGORY = "USA | NFHS Network";
 
-const PROVIDER_SLOT = {
-  nfhs_number: 3552,
-  stream_id: 2066758
-};
-
-const LOWER_ANCHOR = {
-  provider_nfhs_number: 3551,
-  event_id: "gamb69ef5c0a2",
-  label: "Windham vs. Biddeford JV Girls Field Hockey"
-};
-
-const UPPER_ANCHOR = {
-  provider_nfhs_number: 3553,
-  event_id: "gamb8ee19f85e",
-  label: "Away vs. Saint Stephen's Middle School Girls Volleyball"
-};
-
-const SOURCE_PAGES = [
-  "https://www.nfhsnetwork.com/schools/wicomico-high-school-salisbury-md",
-  "https://www.nfhsnetwork.com/schools/wicomico-high-school-salisbury-md/volleyball",
-  "https://www.nfhsnetwork.com/schools/north-caroline-high-school-ridgely-md",
-  "https://www.nfhsnetwork.com/schools/north-caroline-high-school-ridgely-md/volleyball",
-  "https://www.nfhsnetwork.com/watch-events?activity=Volleyball&gender=girls"
+const PROBE_CHANNELS = [
+  {
+    provider_nfhs_number: 3551,
+    note: "Known neighboring control"
+  },
+  {
+    provider_nfhs_number: 3552,
+    note: "Suspicious slot currently showing volleyball"
+  },
+  {
+    provider_nfhs_number: 3553,
+    note: "Known neighboring control"
+  },
+  {
+    provider_nfhs_number: 3572,
+    note: "Known Camden Georgia control"
+  }
 ];
 
 function cleanSpace(s = "") {
   return String(s)
     .replace(/\u00a0/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function normalize(s = "") {
-  return cleanSpace(s)
-    .toLowerCase()
-    .replace(/[’‘`]/g, "'")
-    .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -53,7 +38,7 @@ async function fetchText(url, timeoutMs = 20000) {
       signal: ac.signal,
       headers: {
         "User-Agent":
-          "Mozilla/5.0 Georgia-NFHS-Diagnostic/7.0"
+          "Mozilla/5.0 Georgia-NFHS-Diagnostic/8.0"
       }
     });
 
@@ -145,6 +130,9 @@ async function getProvider() {
   );
 
   return {
+    base,
+    username,
+    password,
     category,
     streams
   };
@@ -158,292 +146,485 @@ function providerNumber(name = "") {
   return m ? Number(m[1]) : null;
 }
 
-async function scrapePage(url) {
-  try {
-    const html = await fetchText(url);
-    const $ = cheerio.load(html);
+function sanitizeString(
+  value,
+  username,
+  password
+) {
+  if (value === null || value === undefined) {
+    return value;
+  }
 
-    const events = [];
-    const seen = new Set();
+  let s = String(value);
 
-    $("a").each((_, el) => {
-      let href =
-        cleanSpace(
-          $(el).attr("href") || ""
+  if (username) {
+    s = s.split(username).join("[USERNAME]");
+  }
+
+  if (password) {
+    s = s.split(password).join("[PASSWORD]");
+  }
+
+  s = s.replace(
+    /https?:\/\/[^\s"']+/gi,
+    raw => {
+      try {
+        const u = new URL(raw);
+
+        return (
+          `${u.protocol}//${u.hostname}` +
+          (u.port ? `:${u.port}` : "") +
+          "/[REDACTED]"
         );
+      } catch {
+        return "[REDACTED-URL]";
+      }
+    }
+  );
 
-      const text =
-        cleanSpace(
-          $(el).text()
-        );
+  return s;
+}
 
-      if (!href) return;
+function sanitizeTags(
+  tags,
+  username,
+  password
+) {
+  if (!tags || typeof tags !== "object") {
+    return {};
+  }
 
-      if (href.startsWith("/")) {
-        href =
-          `https://www.nfhsnetwork.com${href}`;
+  const out = {};
+
+  for (const [key, value] of Object.entries(tags)) {
+    out[key] = sanitizeString(
+      value,
+      username,
+      password
+    );
+  }
+
+  return out;
+}
+
+function runFfprobe(url, timeoutMs = 12000) {
+  return new Promise(resolve => {
+    const args = [
+      "-hide_banner",
+      "-v",
+      "error",
+
+      "-analyzeduration",
+      "5000000",
+
+      "-probesize",
+      "5000000",
+
+      "-show_format",
+      "-show_streams",
+      "-show_programs",
+
+      "-of",
+      "json",
+
+      url
+    ];
+
+    const child = spawn(
+      "ffprobe",
+      args,
+      {
+        stdio: [
+          "ignore",
+          "pipe",
+          "pipe"
+        ]
+      }
+    );
+
+    let stdout = "";
+    let stderr = "";
+
+    const timer = setTimeout(() => {
+      child.kill("SIGKILL");
+    }, timeoutMs);
+
+    child.stdout.on(
+      "data",
+      chunk => {
+        stdout += chunk.toString();
+      }
+    );
+
+    child.stderr.on(
+      "data",
+      chunk => {
+        stderr += chunk.toString();
+      }
+    );
+
+    child.on("close", code => {
+      clearTimeout(timer);
+
+      if (code !== 0) {
+        resolve({
+          ok: false,
+          code,
+          error:
+            stderr.slice(0, 1000)
+        });
+
+        return;
       }
 
-      const m = href.match(
-        /\/events\/[^/]+\/((?:gam|evt)[a-z0-9]+)(?:[/?#]|$)/i
-      );
-
-      if (!m) return;
-
-      const eventId = m[1];
-
-      if (seen.has(eventId)) return;
-
-      seen.add(eventId);
-
-      events.push({
-        event_id: eventId,
-        link_text: text,
-        href,
-        source_page: url
-      });
+      try {
+        resolve({
+          ok: true,
+          data: JSON.parse(stdout)
+        });
+      } catch (err) {
+        resolve({
+          ok: false,
+          code,
+          error:
+            `Could not parse ffprobe JSON: ${err.message}`
+        });
+      }
     });
 
-    return {
-      ok: true,
-      url,
-      event_count: events.length,
-      events
-    };
+    child.on("error", err => {
+      clearTimeout(timer);
 
-  } catch (err) {
-    return {
-      ok: false,
-      url,
-      event_count: 0,
-      events: [],
-      error:
-        String(
+      resolve({
+        ok: false,
+        error: String(
           err?.message || err
         )
-    };
-  }
+      });
+    });
+  });
 }
 
-async function getMetadata(event) {
-  try {
-    const data =
-      await fetchJson(
-        `https://cfunity.nfhsnetwork.com/v2/game_or_event/${event.event_id}`
+function buildProbeUrls(provider, streamId) {
+  const user =
+    encodeURIComponent(
+      provider.username
+    );
+
+  const pass =
+    encodeURIComponent(
+      provider.password
+    );
+
+  return [
+    {
+      type: "live-ts",
+      url:
+        `${provider.base}/live/` +
+        `${user}/${pass}/` +
+        `${streamId}.ts`
+    },
+    {
+      type: "live-m3u8",
+      url:
+        `${provider.base}/live/` +
+        `${user}/${pass}/` +
+        `${streamId}.m3u8`
+    },
+    {
+      type: "direct-path",
+      url:
+        `${provider.base}/` +
+        `${user}/${pass}/` +
+        `${streamId}`
+    }
+  ];
+}
+
+async function probeStream(
+  provider,
+  stream
+) {
+  const candidates =
+    buildProbeUrls(
+      provider,
+      stream.stream_id
+    );
+
+  const attempts = [];
+
+  for (const candidate of candidates) {
+    const result =
+      await runFfprobe(
+        candidate.url
       );
 
-    const publishers =
-      Array.isArray(data?.publishers)
-        ? data.publishers
+    attempts.push({
+      type:
+        candidate.type,
+
+      ok:
+        result.ok,
+
+      error:
+        result.ok
+          ? null
+          : sanitizeString(
+              result.error,
+              provider.username,
+              provider.password
+            )
+    });
+
+    if (!result.ok) {
+      continue;
+    }
+
+    const data =
+      result.data || {};
+
+    const format =
+      data.format || {};
+
+    const streams =
+      Array.isArray(data.streams)
+        ? data.streams
         : [];
 
-    const publisher =
-      publishers[0] || null;
-
-    const broadcasts =
-      publisher &&
-      Array.isArray(
-        publisher.broadcasts
-      )
-        ? publisher.broadcasts
+    const programs =
+      Array.isArray(data.programs)
+        ? data.programs
         : [];
-
-    const vods =
-      publisher &&
-      Array.isArray(
-        publisher.vods
-      )
-        ? publisher.vods
-        : [];
-
-    const broadcast =
-      broadcasts[0] || null;
-
-    const vod =
-      vods[0] || null;
 
     return {
-      ...event,
+      probe_ok: true,
 
-      metadata_ok: true,
+      successful_endpoint_type:
+        candidate.type,
 
-      local_start_time:
-        data?.local_start_time ??
-        null,
+      format: {
+        format_name:
+          format.format_name ?? null,
 
-      city:
-        data?.city ??
-        null,
+        format_long_name:
+          format.format_long_name ?? null,
 
-      state_name:
-        data?.state_name ??
-        null,
+        duration:
+          format.duration ?? null,
 
-      event_type:
-        data?.event_type ??
-        null,
+        bit_rate:
+          format.bit_rate ?? null,
 
-      title:
-        data?.title ??
-        data?.name ??
-        null,
+        tags:
+          sanitizeTags(
+            format.tags,
+            provider.username,
+            provider.password
+          )
+      },
 
-      publisher_name:
-        publisher?.formatted_name ??
-        publisher?.name ??
-        null,
+      programs:
+        programs.map(p => ({
+          program_id:
+            p.program_id ?? null,
 
-      publisher_slug:
-        publisher?.slug ??
-        null,
+          program_num:
+            p.program_num ?? null,
 
-      broadcast_status:
-        broadcast?.status ??
-        null,
+          tags:
+            sanitizeTags(
+              p.tags,
+              provider.username,
+              provider.password
+            ),
 
-      vod_status:
-        vod?.status ??
-        null
-    };
+          stream_indexes:
+            Array.isArray(p.streams)
+              ? p.streams.map(
+                  s => s.index
+                )
+              : []
+        })),
 
-  } catch (err) {
-    return {
-      ...event,
+      streams:
+        streams.map(s => ({
+          index:
+            s.index ?? null,
 
-      metadata_ok: false,
+          codec_type:
+            s.codec_type ?? null,
 
-      metadata_error:
-        String(
-          err?.message || err
-        )
+          codec_name:
+            s.codec_name ?? null,
+
+          codec_long_name:
+            s.codec_long_name ?? null,
+
+          width:
+            s.width ?? null,
+
+          height:
+            s.height ?? null,
+
+          sample_rate:
+            s.sample_rate ?? null,
+
+          channels:
+            s.channels ?? null,
+
+          bit_rate:
+            s.bit_rate ?? null,
+
+          tags:
+            sanitizeTags(
+              s.tags,
+              provider.username,
+              provider.password
+            )
+        })),
+
+      attempts
     };
   }
+
+  return {
+    probe_ok: false,
+    attempts
+  };
 }
 
-function looksLikeWicomicoCandidate(x) {
-  const combined =
-    normalize(
-      [
-        x.link_text,
-        x.href,
-        x.title,
-        x.publisher_name,
-        x.publisher_slug,
-        x.city,
-        x.state_name
-      ]
-        .filter(Boolean)
-        .join(" ")
-    );
+function collectInterestingTags(probe) {
+  if (!probe?.probe_ok) {
+    return [];
+  }
 
-  const hasWicomico =
-    combined.includes("wicomico");
+  const values = [];
 
-  const hasNorthCaroline =
-    combined.includes(
-      "north caroline"
-    );
+  function add(section, tags) {
+    if (!tags) return;
 
-  const hasSalisburyMaryland =
-    combined.includes("salisbury") &&
-    (
-      combined.includes(" maryland") ||
-      combined.includes(" md")
-    );
+    for (
+      const [key, value]
+      of Object.entries(tags)
+    ) {
+      if (
+        value !== null &&
+        value !== undefined &&
+        String(value).trim()
+      ) {
+        values.push({
+          section,
+          key,
+          value
+        });
+      }
+    }
+  }
 
-  return (
-    hasWicomico ||
-    hasNorthCaroline ||
-    hasSalisburyMaryland
+  add(
+    "format",
+    probe.format?.tags
   );
-}
 
-function betweenAnchors(eventId) {
-  if (!eventId) return false;
+  for (
+    const program
+    of probe.programs || []
+  ) {
+    add(
+      `program:${program.program_id}`,
+      program.tags
+    );
+  }
 
-  return (
-    eventId.localeCompare(
-      LOWER_ANCHOR.event_id,
-      "en"
-    ) > 0 &&
-    eventId.localeCompare(
-      UPPER_ANCHOR.event_id,
-      "en"
-    ) < 0
-  );
+  for (
+    const stream
+    of probe.streams || []
+  ) {
+    add(
+      `stream:${stream.index}`,
+      stream.tags
+    );
+  }
+
+  return values;
 }
 
 async function main() {
   const provider =
     await getProvider();
 
-  const providerSlot =
-    provider.streams.find(
-      s =>
-        Number(
+  const results = [];
+
+  for (
+    const wanted
+    of PROBE_CHANNELS
+  ) {
+    const stream =
+      provider.streams.find(
+        s =>
           providerNumber(
             s.name || ""
-          )
-        ) ===
-        PROVIDER_SLOT.nfhs_number
-    ) ||
-    provider.streams.find(
-      s =>
-        Number(s.stream_id) ===
-        PROVIDER_SLOT.stream_id
+          ) ===
+          wanted.provider_nfhs_number
+      );
+
+    if (!stream) {
+      results.push({
+        provider_nfhs_number:
+          wanted.provider_nfhs_number,
+
+        note:
+          wanted.note,
+
+        found:
+          false
+      });
+
+      continue;
+    }
+
+    console.log(
+      `Probing NFHS ${wanted.provider_nfhs_number} / stream ${stream.stream_id}`
     );
 
-  const scrapedPages = [];
+    const probe =
+      await probeStream(
+        provider,
+        stream
+      );
 
-  for (const url of SOURCE_PAGES) {
-    scrapedPages.push(
-      await scrapePage(url)
-    );
+    results.push({
+      provider_nfhs_number:
+        wanted.provider_nfhs_number,
+
+      note:
+        wanted.note,
+
+      found:
+        true,
+
+      stream_id:
+        stream.stream_id,
+
+      provider_title:
+        cleanSpace(
+          stream.name || ""
+        ),
+
+      provider_added:
+        stream.added ?? null,
+
+      epg_channel_id:
+        stream.epg_channel_id ?? null,
+
+      probe,
+
+      interesting_tags:
+        collectInterestingTags(
+          probe
+        )
+    });
   }
-
-  const uniqueEvents =
-    [
-      ...new Map(
-        scrapedPages
-          .flatMap(
-            p => p.events
-          )
-          .map(
-            e => [
-              e.event_id,
-              e
-            ]
-          )
-      ).values()
-    ];
-
-  const metadata = [];
-
-  for (const event of uniqueEvents) {
-    metadata.push(
-      await getMetadata(event)
-    );
-  }
-
-  const wicomicoCandidates =
-    metadata
-      .filter(
-        looksLikeWicomicoCandidate
-      )
-      .map(x => ({
-        ...x,
-
-        sorts_between_3551_and_3553:
-          betweenAnchors(
-            x.event_id
-          )
-      }));
-
-  const exactOrderingCandidates =
-    wicomicoCandidates.filter(
-      x =>
-        x.sorts_between_3551_and_3553
-    );
 
   const payload = {
     generated_at:
@@ -456,10 +637,10 @@ async function main() {
       false,
 
     diagnostic_version:
-      7,
+      8,
 
     purpose:
-      "Determine whether provider NFHS slot 3552 was dynamically reassigned to a Wicomico volleyball event and test that event against immediate NFHS event-ID anchors.",
+      "Inspect safe technical metadata from suspicious and known-good NFHS provider streams without changing the live EPG.",
 
     provider: {
       category:
@@ -471,75 +652,8 @@ async function main() {
         provider.streams.length
     },
 
-    provider_slot_3552:
-      providerSlot
-        ? {
-            stream_id:
-              providerSlot.stream_id,
-
-            provider_nfhs_number:
-              providerNumber(
-                providerSlot.name || ""
-              ),
-
-            provider_title:
-              cleanSpace(
-                providerSlot.name || ""
-              ),
-
-            added:
-              providerSlot.added ??
-              null
-          }
-        : null,
-
-    anchors: {
-      lower:
-        LOWER_ANCHOR,
-
-      upper:
-        UPPER_ANCHOR
-    },
-
-    source_pages:
-      scrapedPages.map(
-        p => ({
-          url:
-            p.url,
-
-          ok:
-            p.ok,
-
-          event_count:
-            p.event_count,
-
-          error:
-            p.error ?? null
-        })
-      ),
-
-    unique_scraped_event_count:
-      uniqueEvents.length,
-
-    wicomico_candidates:
-      wicomicoCandidates,
-
-    exact_ordering_candidates:
-      exactOrderingCandidates,
-
-    conclusion: {
-      one_exact_candidate:
-        exactOrderingCandidates.length === 1,
-
-      predicted_current_event_id_for_3552:
-        exactOrderingCandidates.length === 1
-          ? exactOrderingCandidates[0]
-              .event_id
-          : null,
-
-      dynamic_slot_reuse_supported:
-        exactOrderingCandidates.length === 1
-    }
+    channels:
+      results
   };
 
   await fs.mkdir(
@@ -558,15 +672,7 @@ async function main() {
   );
 
   console.log(
-    "Diagnostic v7 complete."
-  );
-
-  console.log(
-    `Wicomico candidates: ${wicomicoCandidates.length}`
-  );
-
-  console.log(
-    `Exact ordering candidates: ${exactOrderingCandidates.length}`
+    "Diagnostic v8 complete."
   );
 
   console.log(
