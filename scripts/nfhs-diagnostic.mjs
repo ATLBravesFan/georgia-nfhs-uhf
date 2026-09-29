@@ -1,43 +1,49 @@
 import fs from "node:fs/promises";
-import crypto from "node:crypto";
+import os from "node:os";
+import path from "node:path";
+import { spawn } from "node:child_process";
+import * as cheerio from "cheerio";
+import { DateTime } from "luxon";
 
+const EASTERN = "America/New_York";
 const DEFAULT_CATEGORY = "USA | NFHS Network";
 
-/*
-  These are events where we already know BOTH:
-  1. the official NFHS event ID
-  2. the provider NFHS channel number
-
-  If there is a hidden source-ID relationship, these controls
-  should reveal the same pattern repeatedly.
-*/
-const CONTROLS = [
+const OFFICIAL_SOURCES = [
   {
-    label: "Long County vs St. Vincent's",
-    event_id: "gam302604b4e5",
-    provider_nfhs_number: 3455
+    label: "GHSA",
+    url: "https://get.nfhsnetwork.com/associations/ghsa/"
   },
   {
-    label: "Cary vs Holly Springs",
-    event_id: "gam7a4d71b081",
-    provider_nfhs_number: 3514
+    label: "GAPPS",
+    url: "https://get.nfhsnetwork.com/associations/gapps"
   },
   {
-    label: "Sanderson vs Middle Creek",
-    event_id: "gambb59c64f73",
-    provider_nfhs_number: 3556
-  },
-  {
-    label: "Camden County vs Savannah Country Day",
-    event_id: "gamd493cc6a81",
-    provider_nfhs_number: 3572
-  },
-  {
-    label: "Frederica Academy vs Bradwell Institute",
-    event_id: "gamee5d943f7a",
-    provider_nfhs_number: 3596
+    label: "WATCH",
+    url: "https://get.nfhsnetwork.com/watch-events"
   }
 ];
+
+const STOP_WORDS = new Set([
+  "high",
+  "school",
+  "academy",
+  "county",
+  "christian",
+  "preparatory",
+  "prep",
+  "middle",
+  "varsity",
+  "junior",
+  "girls",
+  "boys",
+  "the",
+  "and",
+  "athletics",
+  "association",
+  "ghsa",
+  "gapps",
+  "georgia"
+]);
 
 function cleanSpace(s = "") {
   return String(s)
@@ -46,23 +52,18 @@ function cleanSpace(s = "") {
     .trim();
 }
 
-function sha(value) {
-  return crypto
-    .createHash("sha256")
-    .update(String(value))
-    .digest("hex")
-    .slice(0, 20);
+function normalize(s = "") {
+  return cleanSpace(s)
+    .toLowerCase()
+    .replace(/[’‘`]/g, "'")
+    .replace(/&/g, " and ")
+    .replace(/\bsaint\b/g, "st")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function providerNumber(name = "") {
-  const m = String(name).match(
-    /^NFHS\s+Network\s+(\d+)\s*:/i
-  );
-
-  return m ? Number(m[1]) : null;
-}
-
-async function fetchText(url, timeoutMs = 20000) {
+async function fetchText(url, timeoutMs = 15000) {
   const ac = new AbortController();
 
   const timer = setTimeout(
@@ -75,7 +76,7 @@ async function fetchText(url, timeoutMs = 20000) {
       signal: ac.signal,
       headers: {
         "User-Agent":
-          "Mozilla/5.0 Georgia-NFHS-Diagnostic/11.0"
+          "Mozilla/5.0 Georgia-NFHS-Diagnostic/12.0"
       }
     });
 
@@ -100,6 +101,77 @@ async function fetchJson(url, timeoutMs = 20000) {
   );
 }
 
+function providerNumber(name = "") {
+  const m = String(name).match(
+    /^NFHS\s+Network\s+(\d+)\s*:/i
+  );
+
+  return m ? Number(m[1]) : null;
+}
+
+function parseProviderStart(
+  name,
+  now = DateTime.now().setZone(EASTERN)
+) {
+  const m = String(name).match(
+    /@\s*(\d{1,2})\s+([A-Za-z]{3})\s+(\d{1,2}):(\d{2})\s*(AM|PM)\s*ET\s*$/i
+  );
+
+  if (!m) {
+    return null;
+  }
+
+  const [
+    ,
+    dayS,
+    monS,
+    hourS,
+    minuteS,
+    ampm
+  ] = m;
+
+  const month =
+    DateTime.fromFormat(
+      monS,
+      "LLL",
+      {
+        zone: EASTERN
+      }
+    ).month;
+
+  if (!month) {
+    return null;
+  }
+
+  let hour =
+    Number(hourS) % 12;
+
+  if (
+    ampm.toUpperCase() === "PM"
+  ) {
+    hour += 12;
+  }
+
+  const dt =
+    DateTime.fromObject(
+      {
+        year: now.year,
+        month,
+        day: Number(dayS),
+        hour,
+        minute: Number(minuteS),
+        second: 0
+      },
+      {
+        zone: EASTERN
+      }
+    );
+
+  return dt.isValid
+    ? dt
+    : null;
+}
+
 async function getProvider() {
   const base = cleanSpace(
     process.env.XTREAM_BASE_URL || ""
@@ -113,7 +185,7 @@ async function getProvider() {
 
   if (!base || !username || !password) {
     throw new Error(
-      "Missing XTREAM_BASE_URL, XTREAM_USERNAME, or XTREAM_PASSWORD."
+      "Missing Xtream credentials."
     );
   }
 
@@ -121,30 +193,36 @@ async function getProvider() {
     `username=${encodeURIComponent(username)}` +
     `&password=${encodeURIComponent(password)}`;
 
-  const categories = await fetchJson(
-    `${base}/player_api.php?${auth}` +
-    `&action=get_live_categories`
-  );
+  const categories =
+    await fetchJson(
+      `${base}/player_api.php?${auth}` +
+      `&action=get_live_categories`
+    );
 
-  const wanted = cleanSpace(
-    process.env.NFHS_CATEGORY_NAME ||
-    DEFAULT_CATEGORY
-  ).toLowerCase();
+  const wanted =
+    cleanSpace(
+      process.env.NFHS_CATEGORY_NAME ||
+      DEFAULT_CATEGORY
+    ).toLowerCase();
 
-  let category = categories.find(
-    c =>
-      cleanSpace(
-        c.category_name
-      ).toLowerCase() === wanted
-  );
+  let category =
+    categories.find(
+      c =>
+        cleanSpace(
+          c.category_name
+        ).toLowerCase() === wanted
+    );
 
   if (!category) {
-    category = categories.find(
-      c =>
-        /nfhs/i.test(
-          String(c.category_name || "")
-        )
-    );
+    category =
+      categories.find(
+        c =>
+          /nfhs/i.test(
+            String(
+              c.category_name || ""
+            )
+          )
+      );
   }
 
   if (!category) {
@@ -153,20 +231,22 @@ async function getProvider() {
     );
   }
 
-  let streams = await fetchJson(
-    `${base}/player_api.php?${auth}` +
-    `&action=get_live_streams` +
-    `&category_id=${encodeURIComponent(
-      category.category_id
-    )}`
-  );
+  let streams =
+    await fetchJson(
+      `${base}/player_api.php?${auth}` +
+      `&action=get_live_streams` +
+      `&category_id=${encodeURIComponent(
+        category.category_id
+      )}`
+    );
 
-  streams = streams.filter(
-    s =>
-      String(s.category_id) ===
-        String(category.category_id) ||
-      !s.category_id
-  );
+  streams =
+    streams.filter(
+      s =>
+        String(s.category_id) ===
+          String(category.category_id) ||
+        !s.category_id
+    );
 
   return {
     base,
@@ -177,836 +257,1051 @@ async function getProvider() {
   };
 }
 
+function streamUrl(provider, streamId) {
+  return (
+    `${provider.base}/live/` +
+    `${encodeURIComponent(provider.username)}/` +
+    `${encodeURIComponent(provider.password)}/` +
+    `${streamId}.ts`
+  );
+}
+
 /*
-  Walk only the broadcast/VOD metadata and collect identifier-like
-  strings.
-
-  URLs are deliberately ignored. We do NOT need or use NFHS
-  playback URLs for this test.
+  Quick test to determine whether a stale channel is
+  actually carrying video right now.
 */
-function collectIdentifierStrings(
-  value,
-  path = "",
-  out = []
-) {
-  if (
-    value === null ||
-    value === undefined
-  ) {
-    return out;
-  }
-
-  if (typeof value === "string") {
-    const s = value.trim();
-
-    if (s.length < 8) {
-      return out;
-    }
-
-    if (/^https?:\/\//i.test(s)) {
-      return out;
-    }
-
-    if (
-      /^\d{4}-\d{2}-\d{2}T/i.test(s)
-    ) {
-      return out;
-    }
-
-    if (
-      /^(scheduled|complete|on_air|live|ready|archived)$/i.test(
-        s
-      )
-    ) {
-      return out;
-    }
-
-    out.push({
-      path,
-      raw: s,
-      fingerprint: sha(s)
-    });
-
-    return out;
-  }
-
-  if (
-    typeof value === "number" ||
-    typeof value === "bigint"
-  ) {
-    const s = String(value);
-
-    if (s.length >= 8) {
-      out.push({
-        path,
-        raw: s,
-        fingerprint: sha(s)
-      });
-    }
-
-    return out;
-  }
-
-  if (Array.isArray(value)) {
-    value.forEach(
-      (item, index) => {
-        collectIdentifierStrings(
-          item,
-          `${path}[${index}]`,
-          out
-        );
-      }
-    );
-
-    return out;
-  }
-
-  if (typeof value === "object") {
-    for (
-      const [key, child]
-      of Object.entries(value)
-    ) {
-      collectIdentifierStrings(
-        child,
-        path
-          ? `${path}.${key}`
-          : key,
-        out
-      );
-    }
-  }
-
-  return out;
-}
-
-async function getOfficialFingerprintData(eventId) {
-  const data = await fetchJson(
-    `https://cfunity.nfhsnetwork.com/v2/game_or_event/${eventId}`
-  );
-
-  const publishers =
-    Array.isArray(data?.publishers)
-      ? data.publishers
-      : [];
-
-  const roots = [];
-
-  publishers.forEach(
-    (publisher, pIndex) => {
-      if (
-        Array.isArray(
-          publisher?.broadcasts
-        )
-      ) {
-        publisher.broadcasts.forEach(
-          (broadcast, bIndex) => {
-            roots.push({
-              path:
-                `publishers[${pIndex}].broadcasts[${bIndex}]`,
-              value:
-                broadcast
-            });
-          }
-        );
-      }
-
-      if (
-        Array.isArray(
-          publisher?.vods
-        )
-      ) {
-        publisher.vods.forEach(
-          (vod, vIndex) => {
-            roots.push({
-              path:
-                `publishers[${pIndex}].vods[${vIndex}]`,
-              value:
-                vod
-            });
-          }
-        );
-      }
-    }
-  );
-
-  const candidates = [];
-
-  for (const root of roots) {
-    collectIdentifierStrings(
-      root.value,
-      root.path,
-      candidates
-    );
-  }
-
-  /*
-    Deduplicate by raw value but output only the fingerprint.
-  */
-  const unique = [
-    ...new Map(
-      candidates.map(
-        x => [
-          x.raw,
-          x
-        ]
-      )
-    ).values()
-  ];
-
-  return {
-    raw_candidates:
-      unique,
-
-    public_candidates:
-      unique.map(
-        x => ({
-          field_path:
-            x.path,
-
-          fingerprint:
-            x.fingerprint
-        })
-      )
-  };
-}
-
-function urlPieces(rawUrl) {
-  const pieces = [];
-
-  try {
-    const u =
-      new URL(rawUrl);
-
-    for (
-      const part
-      of u.pathname.split("/")
-    ) {
-      let decoded = "";
-
-      try {
-        decoded =
-          decodeURIComponent(part);
-      } catch {
-        decoded = part;
-      }
-
-      decoded =
-        decoded.trim();
-
-      if (
-        decoded.length >= 8
-      ) {
-        pieces.push({
-          location:
-            "path_segment",
-
-          raw:
-            decoded,
-
-          fingerprint:
-            sha(decoded)
-        });
-      }
-    }
-
-    for (
-      const [key, value]
-      of u.searchParams.entries()
-    ) {
-      const decoded =
-        String(value).trim();
-
-      if (
-        decoded.length >= 8
-      ) {
-        pieces.push({
-          location:
-            `query:${key}`,
-
-          raw:
-            decoded,
-
-          fingerprint:
-            sha(decoded)
-        });
-      }
-    }
-
-    const pathname =
-      u.pathname.trim();
-
-    if (
-      pathname.length >= 8
-    ) {
-      pieces.push({
-        location:
-          "pathname",
-
-        raw:
-          pathname,
-
-        fingerprint:
-          sha(pathname)
-      });
-    }
-
-  } catch {}
-
-  return pieces;
-}
-
-async function requestOneHop(
-  url,
-  timeoutMs = 8000
-) {
+async function streamIsLive(url) {
   const ac =
     new AbortController();
 
   const timer =
     setTimeout(
       () => ac.abort(),
-      timeoutMs
+      2500
     );
 
   try {
-    const response =
+    const r =
       await fetch(url, {
-        signal:
-          ac.signal,
-
-        redirect:
-          "manual",
-
+        signal: ac.signal,
+        redirect: "follow",
         headers: {
           "User-Agent":
-            "Mozilla/5.0 Georgia-NFHS-Diagnostic/11.0"
+            "Mozilla/5.0 Georgia-NFHS-Diagnostic/12.0"
         }
       });
 
-    const status =
-      response.status;
-
-    const location =
-      response.headers.get(
-        "location"
-      );
-
-    const headers =
-      Object.fromEntries(
-        response.headers.entries()
+    const type =
+      String(
+        r.headers.get(
+          "content-type"
+        ) || ""
       );
 
     try {
-      await response.body?.cancel();
+      await r.body?.cancel();
     } catch {}
 
-    return {
-      status,
-      location,
-      headers
-    };
+    return (
+      r.ok &&
+      (
+        type.includes("video") ||
+        type.includes("mp2t") ||
+        type.includes("octet-stream")
+      )
+    );
+
+  } catch {
+    return false;
 
   } finally {
     clearTimeout(timer);
   }
 }
 
-async function inspectRedirectChain(
-  provider,
-  streamId
+function runProcess(
+  command,
+  args,
+  {
+    timeoutMs = 10000,
+    binary = false
+  } = {}
 ) {
-  let current =
-    `${provider.base}/live/` +
-    `${encodeURIComponent(
-      provider.username
-    )}/` +
-    `${encodeURIComponent(
-      provider.password
-    )}/` +
-    `${streamId}.ts`;
+  return new Promise(resolve => {
+    const child =
+      spawn(
+        command,
+        args,
+        {
+          stdio: [
+            "ignore",
+            "pipe",
+            "pipe"
+          ]
+        }
+      );
 
-  const rawUrls = [];
-  const rawPieces = [];
-  const publicChain = [];
+    const stdout = [];
+    let stderr = "";
+    let timedOut = false;
 
-  for (
-    let hop = 0;
-    hop < 6;
-    hop++
-  ) {
-    rawUrls.push(current);
+    const timer =
+      setTimeout(
+        () => {
+          timedOut = true;
 
-    rawPieces.push(
-      ...urlPieces(current)
+          try {
+            child.kill("SIGKILL");
+          } catch {}
+        },
+        timeoutMs
+      );
+
+    child.stdout.on(
+      "data",
+      chunk => {
+        stdout.push(chunk);
+      }
     );
 
-    let parsedCurrent = null;
-
-    try {
-      parsedCurrent =
-        new URL(current);
-    } catch {}
-
-    let result;
-
-    try {
-      result =
-        await requestOneHop(
-          current
-        );
-
-    } catch (err) {
-      publicChain.push({
-        hop,
-        host:
-          parsedCurrent?.hostname ||
-          null,
-
-        error:
-          String(
-            err?.message ||
-            err
-          )
-      });
-
-      break;
-    }
-
-    /*
-      Header VALUES are used internally for comparison but are never
-      printed raw.
-    */
-    for (
-      const [key, value]
-      of Object.entries(
-        result.headers || {}
-      )
-    ) {
-      const text =
-        String(value || "");
-
-      if (
-        text.length >= 8
-      ) {
-        rawPieces.push({
-          location:
-            `header:${key}`,
-
-          raw:
-            text,
-
-          fingerprint:
-            sha(text)
-        });
-
-        /*
-          Also pull URL pieces from any header value that happens
-          to contain a URL.
-        */
-        if (
-          /^https?:\/\//i.test(text)
-        ) {
-          rawPieces.push(
-            ...urlPieces(text)
-          );
-        }
+    child.stderr.on(
+      "data",
+      chunk => {
+        stderr +=
+          chunk.toString();
       }
-    }
+    );
 
-    let nextUrl = null;
-    let nextHost = null;
+    child.on(
+      "error",
+      err => {
+        clearTimeout(timer);
 
-    if (
-      result.location
-    ) {
-      try {
-        nextUrl =
-          new URL(
-            result.location,
-            current
-          ).toString();
+        resolve({
+          ok: false,
+          timed_out: timedOut,
+          error:
+            String(
+              err?.message || err
+            )
+        });
+      }
+    );
 
-        nextHost =
-          new URL(
-            nextUrl
-          ).hostname;
+    child.on(
+      "close",
+      code => {
+        clearTimeout(timer);
 
-        rawUrls.push(nextUrl);
+        const buffer =
+          Buffer.concat(stdout);
 
-        rawPieces.push(
-          ...urlPieces(nextUrl)
-        );
+        resolve({
+          ok:
+            code === 0 &&
+            !timedOut,
 
-      } catch {}
-    }
+          timed_out:
+            timedOut,
 
-    publicChain.push({
-      hop,
+          stdout:
+            binary
+              ? buffer
+              : buffer.toString(),
 
-      status:
-        result.status,
+          error:
+            stderr.slice(0, 1000)
+        });
+      }
+    );
+  });
+}
 
-      host:
-        parsedCurrent?.hostname ||
-        null,
+async function captureFrame(
+  url,
+  filename
+) {
+  const result =
+    await runProcess(
+      "ffmpeg",
+      [
+        "-hide_banner",
+        "-loglevel",
+        "error",
 
-      next_host:
-        nextHost,
+        "-rw_timeout",
+        "5000000",
 
-      header_names:
-        Object.keys(
-          result.headers || {}
-        ).sort()
-    });
+        "-i",
+        url,
 
-    if (
-      !nextUrl ||
-      ![301, 302, 303, 307, 308]
-        .includes(
-          result.status
-        )
-    ) {
-      break;
-    }
+        "-frames:v",
+        "1",
 
-    current =
-      nextUrl;
+        "-vf",
+        "scale=1280:-2",
+
+        "-q:v",
+        "3",
+
+        "-y",
+        filename
+      ],
+      {
+        timeoutMs: 8000
+      }
+    );
+
+  if (!result.ok) {
+    return {
+      ok: false,
+      error:
+        result.error ||
+        "ffmpeg failed"
+    };
   }
 
-  const uniquePieces = [
-    ...new Map(
-      rawPieces.map(
-        x => [
-          `${x.location}|${x.raw}`,
-          x
-        ]
-      )
-    ).values()
-  ];
+  try {
+    const stat =
+      await fs.stat(filename);
+
+    if (
+      stat.size < 5000
+    ) {
+      return {
+        ok: false,
+        error:
+          "Captured image was too small."
+      };
+    }
+
+  } catch {
+    return {
+      ok: false,
+      error:
+        "No frame was created."
+    };
+  }
 
   return {
-    raw_urls:
-      rawUrls,
+    ok: true
+  };
+}
 
-    raw_pieces:
-      uniquePieces,
+async function runOcr(filename) {
+  const result =
+    await runProcess(
+      "tesseract",
+      [
+        filename,
+        "stdout",
+        "--psm",
+        "11"
+      ],
+      {
+        timeoutMs: 12000
+      }
+    );
 
-    public_chain:
-      publicChain,
+  if (!result.ok) {
+    return {
+      ok: false,
+      text: "",
+      error:
+        result.error ||
+        "OCR failed"
+    };
+  }
 
-    public_piece_fingerprints:
-      uniquePieces.map(
-        x => ({
-          location:
-            x.location,
+  return {
+    ok: true,
 
-          fingerprint:
-            x.fingerprint
-        })
+    text:
+      cleanSpace(
+        result.stdout
       )
   };
 }
 
-function compareFingerprints(
-  official,
-  providerRedirect
-) {
-  const matches = [];
+/* --------------------------
+   OFFICIAL GEORGIA EVENTS
+--------------------------- */
 
-  for (
-    const off
-    of official.raw_candidates
-  ) {
-    for (
-      const piece
-      of providerRedirect.raw_pieces
-    ) {
-      const a =
-        String(off.raw);
+async function scrapeOfficialPage(source) {
+  try {
+    const html =
+      await fetchText(
+        source.url
+      );
 
-      const b =
-        String(piece.raw);
+    const $ =
+      cheerio.load(html);
 
-      let matchType = null;
-
-      if (a === b) {
-        matchType =
-          "exact";
-
-      } else if (
-        a.length >= 8 &&
-        b.includes(a)
-      ) {
-        matchType =
-          "official_identifier_inside_provider_value";
-
-      } else if (
-        b.length >= 8 &&
-        a.includes(b)
-      ) {
-        matchType =
-          "provider_value_inside_official_identifier";
-      }
-
-      if (!matchType) {
-        continue;
-      }
-
-      matches.push({
-        match_type:
-          matchType,
-
-        official_field_path:
-          off.path,
-
-        official_fingerprint:
-          off.fingerprint,
-
-        provider_location:
-          piece.location,
-
-        provider_fingerprint:
-          piece.fingerprint
-      });
-    }
-
-    /*
-      Also test against complete redirect URLs without ever
-      outputting those URLs.
-    */
-    for (
-      const rawUrl
-      of providerRedirect.raw_urls
-    ) {
-      if (
-        String(off.raw).length >= 8 &&
-        String(rawUrl).includes(
-          String(off.raw)
-        )
-      ) {
-        matches.push({
-          match_type:
-            "official_identifier_inside_redirect_url",
-
-          official_field_path:
-            off.path,
-
-          official_fingerprint:
-            off.fingerprint,
-
-          provider_location:
-            "redirect_url",
-
-          provider_fingerprint:
-            sha(rawUrl)
-        });
-      }
-    }
-  }
-
-  return [
-    ...new Map(
-      matches.map(
-        x => [
-          JSON.stringify(x),
-          x
-        ]
-      )
-    ).values()
-  ];
-}
-
-function findConsistentFields(results) {
-  const counts =
-    new Map();
-
-  for (
-    const result
-    of results
-  ) {
-    const seenInControl =
+    const events = [];
+    const seen =
       new Set();
 
-    for (
-      const match
-      of result.matches || []
-    ) {
-      const key =
-        `${match.official_field_path}` +
-        ` → ${match.provider_location}`;
+    $("a").each(
+      (_, el) => {
+        let href =
+          cleanSpace(
+            $(el).attr("href") ||
+            ""
+          );
 
-      seenInControl.add(key);
-    }
+        if (!href) {
+          return;
+        }
 
-    for (
-      const key
-      of seenInControl
-    ) {
-      counts.set(
-        key,
-        (
-          counts.get(key) ||
-          0
-        ) + 1
+        if (
+          href.startsWith("/")
+        ) {
+          href =
+            `https://www.nfhsnetwork.com${href}`;
+        }
+
+        const m =
+          href.match(
+            /\/events\/[^/]+\/((?:gam|evt)[a-z0-9]+)(?:[/?#]|$)/i
+          );
+
+        if (!m) {
+          return;
+        }
+
+        const eventId =
+          m[1];
+
+        if (
+          seen.has(eventId)
+        ) {
+          return;
+        }
+
+        seen.add(eventId);
+
+        events.push({
+          source:
+            source.label,
+
+          event_id:
+            eventId,
+
+          link_text:
+            cleanSpace(
+              $(el).text()
+            ),
+
+          href
+        });
+      }
+    );
+
+    return {
+      ok: true,
+      events
+    };
+
+  } catch (err) {
+    return {
+      ok: false,
+      events: [],
+      error:
+        String(
+          err?.message || err
+        )
+    };
+  }
+}
+
+async function getOfficialMetadata(event) {
+  try {
+    const data =
+      await fetchJson(
+        `https://cfunity.nfhsnetwork.com/v2/game_or_event/${event.event_id}`
       );
+
+    const publishers =
+      Array.isArray(
+        data?.publishers
+      )
+        ? data.publishers
+        : [];
+
+    const publisher =
+      publishers[0] ||
+      null;
+
+    return {
+      ...event,
+
+      metadata_ok: true,
+
+      local_start_time:
+        data?.local_start_time ??
+        null,
+
+      city:
+        data?.city ??
+        null,
+
+      state_name:
+        data?.state_name ??
+        null,
+
+      publisher_name:
+        publisher?.formatted_name ??
+        publisher?.name ??
+        null
+    };
+
+  } catch (err) {
+    return {
+      ...event,
+
+      metadata_ok: false,
+
+      metadata_error:
+        String(
+          err?.message ||
+          err
+        )
+    };
+  }
+}
+
+async function mapLimit(
+  items,
+  limit,
+  fn
+) {
+  const result =
+    new Array(
+      items.length
+    );
+
+  let next = 0;
+
+  async function worker() {
+    while (true) {
+      const index =
+        next++;
+
+      if (
+        index >=
+        items.length
+      ) {
+        return;
+      }
+
+      result[index] =
+        await fn(
+          items[index],
+          index
+        );
     }
   }
 
-  return [
-    ...counts.entries()
-  ]
-    .map(
-      ([relationship, control_count]) => ({
-        relationship,
-        control_count
-      })
+  await Promise.all(
+    Array.from(
+      {
+        length:
+          Math.min(
+            limit,
+            items.length
+          )
+      },
+      () => worker()
     )
-    .sort(
-      (a, b) =>
-        b.control_count -
-        a.control_count
+  );
+
+  return result;
+}
+
+function removeLeadingSport(text) {
+  let s =
+    cleanSpace(text);
+
+  s =
+    s.replace(
+      /^(?:Junior Varsity|Varsity|Freshman|Middle School|JV|MS|7th Grade|8th Grade)\s*/i,
+      ""
+    );
+
+  s =
+    s.replace(
+      /^(?:Girls|Boys|Coed)\s*/i,
+      ""
+    );
+
+  s =
+    s.replace(
+      /^(?:Flag Football|Football|Volleyball|Basketball|Baseball|Softball|Soccer|Wrestling|Lacrosse|Field Hockey|Ice Hockey|Hockey|Tennis|Swimming|Track(?: and Field)?|Cross Country|Golf|Badminton)\s*/i,
+      ""
+    );
+
+  s =
+    s.replace(
+      /^2026\s+GHSA\s+Girls\s+Volleyball\s+Playoffs/i,
+      ""
+    );
+
+  return cleanSpace(s);
+}
+
+function officialTeamTerms(event) {
+  const terms =
+    new Set();
+
+  let text =
+    cleanSpace(
+      event.link_text || ""
+    );
+
+  text =
+    text.replace(
+      /(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}.*$/i,
+      ""
+    );
+
+  const parts =
+    text.split(
+      /\s+vs\.?\s+|\s+versus\s+/i
+    );
+
+  if (
+    parts.length >= 2
+  ) {
+    const left =
+      removeLeadingSport(
+        parts[0]
+      );
+
+    const right =
+      cleanSpace(
+        parts[1]
+      );
+
+    if (left) {
+      terms.add(left);
+    }
+
+    if (right) {
+      terms.add(right);
+    }
+  }
+
+  if (
+    event.publisher_name
+  ) {
+    let publisher =
+      cleanSpace(
+        event.publisher_name
+      )
+        .replace(
+          /^[^:]+:\s*/,
+          ""
+        )
+        .replace(
+          /,\s*[^,]+,\s*GA\s*$/i,
+          ""
+        );
+
+    if (publisher) {
+      terms.add(publisher);
+    }
+  }
+
+  return [...terms];
+}
+
+function distinctiveWords(term) {
+  return normalize(term)
+    .split(" ")
+    .filter(
+      word =>
+        word.length >= 4 &&
+        !STOP_WORDS.has(word)
+    );
+}
+
+function scoreOcrAgainstEvent(
+  ocrText,
+  event
+) {
+  const ocr =
+    normalize(ocrText);
+
+  if (!ocr) {
+    return {
+      score: 0,
+      evidence: []
+    };
+  }
+
+  let score = 0;
+  const evidence = [];
+
+  for (
+    const term
+    of event.match_terms
+  ) {
+    const n =
+      normalize(term);
+
+    if (
+      n.length >= 5 &&
+      ocr.includes(n)
+    ) {
+      score += 80;
+
+      evidence.push(
+        `full:${term}`
+      );
+    }
+
+    for (
+      const word
+      of distinctiveWords(term)
+    ) {
+      if (
+        ocr.includes(word)
+      ) {
+        score += 20;
+
+        evidence.push(
+          `word:${word}`
+        );
+      }
+    }
+  }
+
+  const city =
+    normalize(
+      event.city || ""
+    );
+
+  if (
+    city.length >= 5 &&
+    ocr.includes(city)
+  ) {
+    score += 10;
+
+    evidence.push(
+      `city:${event.city}`
+    );
+  }
+
+  return {
+    score,
+
+    evidence:
+      [...new Set(evidence)]
+  };
+}
+
+async function getTonightGeorgiaEvents(now) {
+  const pages =
+    await Promise.all(
+      OFFICIAL_SOURCES.map(
+        scrapeOfficialPage
+      )
+    );
+
+  const discovered =
+    pages.flatMap(
+      p => p.events
+    );
+
+  const unique =
+    [
+      ...new Map(
+        discovered.map(
+          x => [
+            x.event_id,
+            x
+          ]
+        )
+      ).values()
+    ];
+
+  const metadata =
+    await mapLimit(
+      unique,
+      8,
+      getOfficialMetadata
+    );
+
+  return metadata
+    .map(
+      event => {
+        const start =
+          event.local_start_time
+            ? DateTime.fromISO(
+                event.local_start_time,
+                {
+                  setZone: true
+                }
+              ).setZone(
+                EASTERN
+              )
+            : null;
+
+        return {
+          ...event,
+
+          eastern_start:
+            start?.isValid
+              ? start.toISO()
+              : null,
+
+          match_terms:
+            officialTeamTerms(
+              event
+            )
+        };
+      }
+    )
+    .filter(
+      event => {
+        if (
+          String(
+            event.state_name || ""
+          ).toLowerCase() !==
+          "georgia"
+        ) {
+          return false;
+        }
+
+        if (
+          !event.eastern_start
+        ) {
+          return false;
+        }
+
+        const start =
+          DateTime.fromISO(
+            event.eastern_start
+          ).setZone(
+            EASTERN
+          );
+
+        if (
+          !start.hasSame(
+            now,
+            "day"
+          )
+        ) {
+          return false;
+        }
+
+        /*
+          Keep games from 4 PM through tonight.
+          A game may still be live several hours
+          after the listed start time.
+        */
+        return (
+          start.hour >= 16
+        );
+      }
     );
 }
 
 async function main() {
+  const now =
+    DateTime.now()
+      .setZone(EASTERN);
+
   const provider =
     await getProvider();
 
-  const results = [];
+  console.log(
+    `V12 started at ${now.toISO()}`
+  );
 
-  for (
-    const control
-    of CONTROLS
-  ) {
-    console.log(
-      `Testing ${control.label}`
+  const officialEvents =
+    await getTonightGeorgiaEvents(
+      now
     );
 
-    const stream =
-      provider.streams.find(
-        s =>
-          providerNumber(
-            s.name || ""
-          ) ===
-          control.provider_nfhs_number
+  console.log(
+    `Official Georgia events from 4 PM onward: ${officialEvents.length}`
+  );
+
+  /*
+    V10 proved provider metadata ends at 4 PM.
+
+    Scan the slots immediately surrounding that
+    cutoff because these are the channels most
+    likely to be reused later in the evening.
+  */
+  const staleCandidates =
+    provider.streams
+      .map(
+        stream => ({
+          stream,
+
+          start:
+            parseProviderStart(
+              stream.name || "",
+              now
+            )
+        })
+      )
+      .filter(
+        x => {
+          if (!x.start) {
+            return false;
+          }
+
+          if (
+            !x.start.hasSame(
+              now,
+              "day"
+            )
+          ) {
+            return false;
+          }
+
+          const minutes =
+            x.start.hour * 60 +
+            x.start.minute;
+
+          /*
+            3:45 PM through 4:00 PM.
+          */
+          return (
+            minutes >=
+              15 * 60 + 45 &&
+            minutes <=
+              16 * 60
+          );
+        }
       );
 
-    if (!stream) {
-      results.push({
-        ...control,
-        provider_stream_found:
-          false
-      });
+  console.log(
+    `Stale provider slots to test: ${staleCandidates.length}`
+  );
 
-      continue;
+  const tmpDir =
+    await fs.mkdtemp(
+      path.join(
+        os.tmpdir(),
+        "nfhs-v12-"
+      )
+    );
+
+  const results = [];
+
+  let checked = 0;
+
+  /*
+    INTENTIONALLY SEQUENTIAL.
+    Only one provider stream is touched at a time.
+  */
+  for (
+    const candidate
+    of staleCandidates
+  ) {
+    checked++;
+
+    const stream =
+      candidate.stream;
+
+    const number =
+      providerNumber(
+        stream.name || ""
+      );
+
+    if (
+      checked % 20 === 0
+    ) {
+      console.log(
+        `Checked ${checked}/${staleCandidates.length}`
+      );
     }
 
-    let official;
-
-    try {
-      official =
-        await getOfficialFingerprintData(
-          control.event_id
-        );
-
-    } catch (err) {
-      results.push({
-        ...control,
-
-        provider_stream_found:
-          true,
-
-        stream_id:
-          stream.stream_id,
-
-        provider_title:
-          cleanSpace(
-            stream.name || ""
-          ),
-
-        official_metadata_error:
-          String(
-            err?.message ||
-            err
-          )
-      });
-
-      continue;
-    }
-
-    const redirects =
-      await inspectRedirectChain(
+    const url =
+      streamUrl(
         provider,
         stream.stream_id
       );
 
-    const matches =
-      compareFingerprints(
-        official,
-        redirects
+    const active =
+      await streamIsLive(url);
+
+    if (!active) {
+      continue;
+    }
+
+    const frameFile =
+      path.join(
+        tmpDir,
+        `nfhs-${number}-${stream.stream_id}.jpg`
       );
 
+    const frame =
+      await captureFrame(
+        url,
+        frameFile
+      );
+
+    if (!frame.ok) {
+      results.push({
+        provider_nfhs_number:
+          number,
+
+        stream_id:
+          stream.stream_id,
+
+        stale_provider_title:
+          cleanSpace(
+            stream.name || ""
+          ),
+
+        active:
+          true,
+
+        frame_ok:
+          false,
+
+        frame_error:
+          frame.error
+      });
+
+      continue;
+    }
+
+    const ocr =
+      await runOcr(
+        frameFile
+      );
+
+    const matches =
+      officialEvents
+        .map(
+          event => {
+            const scored =
+              scoreOcrAgainstEvent(
+                ocr.text,
+                event
+              );
+
+            return {
+              event_id:
+                event.event_id,
+
+              official_text:
+                event.link_text,
+
+              eastern_start:
+                event.eastern_start,
+
+              publisher_name:
+                event.publisher_name,
+
+              city:
+                event.city,
+
+              match_terms:
+                event.match_terms,
+
+              score:
+                scored.score,
+
+              evidence:
+                scored.evidence
+            };
+          }
+        )
+        .filter(
+          x =>
+            x.score > 0
+        )
+        .sort(
+          (a, b) =>
+            b.score -
+            a.score
+        )
+        .slice(
+          0,
+          5
+        );
+
+    const best =
+      matches[0] ||
+      null;
+
     results.push({
-      label:
-        control.label,
-
-      event_id:
-        control.event_id,
-
       provider_nfhs_number:
-        control.provider_nfhs_number,
-
-      provider_stream_found:
-        true,
+        number,
 
       stream_id:
         stream.stream_id,
 
-      provider_title:
+      stale_provider_title:
         cleanSpace(
           stream.name || ""
         ),
 
-      official_identifier_fingerprints:
-        official.public_candidates,
+      stale_provider_start:
+        candidate.start
+          ?.toISO() ||
+        null,
 
-      provider_redirect_chain:
-        redirects.public_chain,
+      active:
+        true,
 
-      provider_source_fingerprints:
-        redirects.public_piece_fingerprints,
+      frame_ok:
+        true,
 
-      matches,
+      ocr_ok:
+        ocr.ok,
 
-      correlation_found:
-        matches.length > 0
+      ocr_text:
+        ocr.text,
+
+      best_georgia_match:
+        best,
+
+      likely_match:
+        Boolean(
+          best &&
+          best.score >= 80
+        ),
+
+      top_georgia_matches:
+        matches
     });
+
+    try {
+      await fs.unlink(
+        frameFile
+      );
+    } catch {}
   }
 
-  const correlatedControls =
-    results.filter(
-      x =>
-        x.correlation_found
-    );
-
-  const consistent =
-    findConsistentFields(
-      results
-    );
-
-  const bestRelationship =
-    consistent[0] ||
-    null;
-
-  const usableRelationship =
-    Boolean(
-      bestRelationship &&
-      bestRelationship.control_count >= 2
-    );
+  const likelyMatches =
+    results
+      .filter(
+        x =>
+          x.likely_match
+      )
+      .sort(
+        (a, b) =>
+          (
+            b.best_georgia_match
+              ?.score || 0
+          ) -
+          (
+            a.best_georgia_match
+              ?.score || 0
+          )
+      );
 
   const payload = {
     generated_at:
-      new Date().toISOString(),
+      now.toISO(),
 
     diagnostic_only:
       true,
@@ -1015,10 +1310,21 @@ async function main() {
       false,
 
     diagnostic_version:
-      11,
+      12,
 
     purpose:
-      "Test whether provider redirect/source identifiers correlate with identifier-like values in official NFHS broadcast metadata using known event-to-provider control pairs. Raw NFHS identifiers, provider source paths, playback URLs, and credentials are never written to this file.",
+      "Scan stale late-afternoon provider NFHS slots that are still carrying video, OCR one current video frame from each, and compare visible text against official Georgia NFHS events from 4 PM onward.",
+
+    safety: {
+      provider_connections_used_concurrently:
+        1,
+
+      frames_saved_to_repository:
+        false,
+
+      public_events_json_modified:
+        false
+    },
 
     provider: {
       category:
@@ -1027,29 +1333,69 @@ async function main() {
         DEFAULT_CATEGORY,
 
       source_stream_count:
-        provider.streams.length
+        provider.streams.length,
+
+      stale_slots_tested:
+        staleCandidates.length,
+
+      active_stale_slots:
+        results.length
+    },
+
+    official: {
+      georgia_events_from_4pm:
+        officialEvents.length,
+
+      events:
+        officialEvents.map(
+          x => ({
+            source:
+              x.source,
+
+            event_id:
+              x.event_id,
+
+            text:
+              x.link_text,
+
+            eastern_start:
+              x.eastern_start,
+
+            publisher_name:
+              x.publisher_name,
+
+            city:
+              x.city,
+
+            match_terms:
+              x.match_terms
+          })
+        )
     },
 
     summary: {
-      controls_tested:
-        results.length,
+      active_streams_with_frames:
+        results.filter(
+          x =>
+            x.frame_ok
+        ).length,
 
-      controls_with_source_correlation:
-        correlatedControls.length,
+      streams_with_nonempty_ocr:
+        results.filter(
+          x =>
+            cleanSpace(
+              x.ocr_text || ""
+            )
+        ).length,
 
-      repeated_relationships:
-        consistent,
-
-      usable_repeated_relationship_found:
-        usableRelationship,
-
-      next_step:
-        usableRelationship
-          ? "A repeated source relationship was found. Use it in a follow-up diagnostic to scan later Georgia NFHS events against active provider slots."
-          : "No repeated direct source identifier relationship was found across the known controls. Source-fingerprint matching is not a reliable mapping method with this provider."
+      likely_georgia_matches:
+        likelyMatches.length
     },
 
-    controls:
+    likely_georgia_matches:
+      likelyMatches,
+
+    active_stream_results:
       results
   };
 
@@ -1071,19 +1417,15 @@ async function main() {
   );
 
   console.log(
-    "Diagnostic v11 complete."
+    "Diagnostic v12 complete."
   );
 
   console.log(
-    `Controls with correlation: ${correlatedControls.length}/${results.length}`
+    `Active stale slots: ${results.length}`
   );
 
   console.log(
-    `Usable repeated relationship: ${usableRelationship}`
-  );
-
-  console.log(
-    "Raw NFHS identifiers and provider source URLs were NOT written."
+    `Likely Georgia OCR matches: ${likelyMatches.length}`
   );
 
   console.log(
