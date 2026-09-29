@@ -1,54 +1,45 @@
 import fs from "node:fs/promises";
+import * as cheerio from "cheerio";
 
 const DEFAULT_CATEGORY = "USA | NFHS Network";
 
-const TARGET = {
-  label: "Clinch County vs. Brantley County",
-  event_id: "gamb8ad8195a3"
+const PROVIDER_SLOT = {
+  nfhs_number: 3552,
+  stream_id: 2066758
 };
 
-const KNOWN_PAIRS = [
-  {
-    label: "Long County vs. St. Vincent's",
-    event_id: "gam302604b4e5",
-    provider_nfhs_number: 3455,
-    provider_stream_id: 2066857
-  },
-  {
-    label: "Cary vs. Holly Springs",
-    event_id: "gam7a4d71b081",
-    provider_nfhs_number: 3514,
-    provider_stream_id: 2066798
-  },
-  {
-    label: "Big Rapids vs. Chippewa Hills",
-    event_id: "gam959038070d",
-    provider_nfhs_number: 3529,
-    provider_stream_id: 2066783
-  },
-  {
-    label: "Sanderson vs. Middle Creek",
-    event_id: "gambb59c64f73",
-    provider_nfhs_number: 3556,
-    provider_stream_id: 2066754
-  },
-  {
-    label: "Camden County vs. Savannah Country Day",
-    event_id: "gamd493cc6a81",
-    provider_nfhs_number: 3572,
-    provider_stream_id: 2066737
-  },
-  {
-    label: "Frederica Academy vs. Bradwell Institute",
-    event_id: "gamee5d943f7a",
-    provider_nfhs_number: 3596,
-    provider_stream_id: 2066711
-  }
+const LOWER_ANCHOR = {
+  provider_nfhs_number: 3551,
+  event_id: "gamb69ef5c0a2",
+  label: "Windham vs. Biddeford JV Girls Field Hockey"
+};
+
+const UPPER_ANCHOR = {
+  provider_nfhs_number: 3553,
+  event_id: "gamb8ee19f85e",
+  label: "Away vs. Saint Stephen's Middle School Girls Volleyball"
+};
+
+const SOURCE_PAGES = [
+  "https://www.nfhsnetwork.com/schools/wicomico-high-school-salisbury-md",
+  "https://www.nfhsnetwork.com/schools/wicomico-high-school-salisbury-md/volleyball",
+  "https://www.nfhsnetwork.com/schools/north-caroline-high-school-ridgely-md",
+  "https://www.nfhsnetwork.com/schools/north-caroline-high-school-ridgely-md/volleyball",
+  "https://www.nfhsnetwork.com/watch-events?activity=Volleyball&gender=girls"
 ];
 
 function cleanSpace(s = "") {
   return String(s)
     .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalize(s = "") {
+  return cleanSpace(s)
+    .toLowerCase()
+    .replace(/[’‘`]/g, "'")
+    .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -61,7 +52,8 @@ async function fetchText(url, timeoutMs = 20000) {
     const r = await fetch(url, {
       signal: ac.signal,
       headers: {
-        "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/6.0"
+        "User-Agent":
+          "Mozilla/5.0 Georgia-NFHS-Diagnostic/7.0"
       }
     });
 
@@ -80,7 +72,9 @@ async function fetchText(url, timeoutMs = 20000) {
 }
 
 async function fetchJson(url, timeoutMs = 20000) {
-  return JSON.parse(await fetchText(url, timeoutMs));
+  return JSON.parse(
+    await fetchText(url, timeoutMs)
+  );
 }
 
 async function getProvider() {
@@ -164,227 +158,292 @@ function providerNumber(name = "") {
   return m ? Number(m[1]) : null;
 }
 
-function verifyKnownPair(provider, pair) {
-  const stream =
-    provider.streams.find(
-      s =>
-        Number(s.stream_id) ===
-        Number(pair.provider_stream_id)
-    );
+async function scrapePage(url) {
+  try {
+    const html = await fetchText(url);
+    const $ = cheerio.load(html);
 
-  if (!stream) {
-    return {
-      ...pair,
-      provider_stream_found: false
-    };
-  }
+    const events = [];
+    const seen = new Set();
 
-  return {
-    ...pair,
+    $("a").each((_, el) => {
+      let href =
+        cleanSpace(
+          $(el).attr("href") || ""
+        );
 
-    provider_stream_found: true,
+      const text =
+        cleanSpace(
+          $(el).text()
+        );
 
-    current_provider_nfhs_number:
-      providerNumber(stream.name || ""),
+      if (!href) return;
 
-    current_provider_name:
-      cleanSpace(stream.name || ""),
-
-    provider_added:
-      stream.added ?? null
-  };
-}
-
-function compareEventIds(a, b) {
-  return String(a.event_id)
-    .localeCompare(
-      String(b.event_id),
-      "en",
-      {
-        numeric: false,
-        sensitivity: "variant"
+      if (href.startsWith("/")) {
+        href =
+          `https://www.nfhsnetwork.com${href}`;
       }
-    );
-}
 
-function isMonotonic(rows) {
-  const sorted = [...rows]
-    .sort(compareEventIds);
-
-  for (
-    let i = 1;
-    i < sorted.length;
-    i++
-  ) {
-    if (
-      Number(
-        sorted[i].provider_nfhs_number
-      ) <=
-      Number(
-        sorted[i - 1].provider_nfhs_number
-      )
-    ) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-function findTargetBracket(rows) {
-  const sorted =
-    [...rows].sort(compareEventIds);
-
-  let lower = null;
-  let upper = null;
-
-  for (const row of sorted) {
-    const comparison =
-      String(row.event_id).localeCompare(
-        TARGET.event_id,
-        "en",
-        {
-          numeric: false,
-          sensitivity: "variant"
-        }
+      const m = href.match(
+        /\/events\/[^/]+\/((?:gam|evt)[a-z0-9]+)(?:[/?#]|$)/i
       );
 
-    if (comparison < 0) {
-      lower = row;
-    }
+      if (!m) return;
 
-    if (comparison > 0) {
-      upper = row;
-      break;
-    }
+      const eventId = m[1];
+
+      if (seen.has(eventId)) return;
+
+      seen.add(eventId);
+
+      events.push({
+        event_id: eventId,
+        link_text: text,
+        href,
+        source_page: url
+      });
+    });
+
+    return {
+      ok: true,
+      url,
+      event_count: events.length,
+      events
+    };
+
+  } catch (err) {
+    return {
+      ok: false,
+      url,
+      event_count: 0,
+      events: [],
+      error:
+        String(
+          err?.message || err
+        )
+    };
   }
+}
 
-  return {
-    lower,
-    target: TARGET,
-    upper
-  };
+async function getMetadata(event) {
+  try {
+    const data =
+      await fetchJson(
+        `https://cfunity.nfhsnetwork.com/v2/game_or_event/${event.event_id}`
+      );
+
+    const publishers =
+      Array.isArray(data?.publishers)
+        ? data.publishers
+        : [];
+
+    const publisher =
+      publishers[0] || null;
+
+    const broadcasts =
+      publisher &&
+      Array.isArray(
+        publisher.broadcasts
+      )
+        ? publisher.broadcasts
+        : [];
+
+    const vods =
+      publisher &&
+      Array.isArray(
+        publisher.vods
+      )
+        ? publisher.vods
+        : [];
+
+    const broadcast =
+      broadcasts[0] || null;
+
+    const vod =
+      vods[0] || null;
+
+    return {
+      ...event,
+
+      metadata_ok: true,
+
+      local_start_time:
+        data?.local_start_time ??
+        null,
+
+      city:
+        data?.city ??
+        null,
+
+      state_name:
+        data?.state_name ??
+        null,
+
+      event_type:
+        data?.event_type ??
+        null,
+
+      title:
+        data?.title ??
+        data?.name ??
+        null,
+
+      publisher_name:
+        publisher?.formatted_name ??
+        publisher?.name ??
+        null,
+
+      publisher_slug:
+        publisher?.slug ??
+        null,
+
+      broadcast_status:
+        broadcast?.status ??
+        null,
+
+      vod_status:
+        vod?.status ??
+        null
+    };
+
+  } catch (err) {
+    return {
+      ...event,
+
+      metadata_ok: false,
+
+      metadata_error:
+        String(
+          err?.message || err
+        )
+    };
+  }
+}
+
+function looksLikeWicomicoCandidate(x) {
+  const combined =
+    normalize(
+      [
+        x.link_text,
+        x.href,
+        x.title,
+        x.publisher_name,
+        x.publisher_slug,
+        x.city,
+        x.state_name
+      ]
+        .filter(Boolean)
+        .join(" ")
+    );
+
+  const hasWicomico =
+    combined.includes("wicomico");
+
+  const hasNorthCaroline =
+    combined.includes(
+      "north caroline"
+    );
+
+  const hasSalisburyMaryland =
+    combined.includes("salisbury") &&
+    (
+      combined.includes(" maryland") ||
+      combined.includes(" md")
+    );
+
+  return (
+    hasWicomico ||
+    hasNorthCaroline ||
+    hasSalisburyMaryland
+  );
+}
+
+function betweenAnchors(eventId) {
+  if (!eventId) return false;
+
+  return (
+    eventId.localeCompare(
+      LOWER_ANCHOR.event_id,
+      "en"
+    ) > 0 &&
+    eventId.localeCompare(
+      UPPER_ANCHOR.event_id,
+      "en"
+    ) < 0
+  );
 }
 
 async function main() {
   const provider =
     await getProvider();
 
-  const verified =
-    KNOWN_PAIRS.map(
-      pair =>
-        verifyKnownPair(
-          provider,
-          pair
-        )
+  const providerSlot =
+    provider.streams.find(
+      s =>
+        Number(
+          providerNumber(
+            s.name || ""
+          )
+        ) ===
+        PROVIDER_SLOT.nfhs_number
+    ) ||
+    provider.streams.find(
+      s =>
+        Number(s.stream_id) ===
+        PROVIDER_SLOT.stream_id
     );
 
-  const usablePairs =
-    verified
-      .filter(
-        x =>
-          x.provider_stream_found
-      )
-      .map(x => ({
-        label:
-          x.label,
+  const scrapedPages = [];
 
-        event_id:
-          x.event_id,
-
-        provider_nfhs_number:
-          x.current_provider_nfhs_number,
-
-        provider_stream_id:
-          x.provider_stream_id,
-
-        provider_name:
-          x.current_provider_name,
-
-        provider_added:
-          x.provider_added
-      }));
-
-  const orderedPairs =
-    [...usablePairs]
-      .sort(compareEventIds);
-
-  const monotonic =
-    isMonotonic(usablePairs);
-
-  const targetBracket =
-    findTargetBracket(
-      usablePairs
+  for (const url of SOURCE_PAGES) {
+    scrapedPages.push(
+      await scrapePage(url)
     );
-
-  const lowerNumber =
-    Number(
-      targetBracket.lower
-        ?.provider_nfhs_number
-    );
-
-  const upperNumber =
-    Number(
-      targetBracket.upper
-        ?.provider_nfhs_number
-    );
-
-  let bracketStreams = [];
-
-  if (
-    Number.isFinite(lowerNumber) &&
-    Number.isFinite(upperNumber)
-  ) {
-    bracketStreams =
-      provider.streams
-        .map(s => ({
-          stream_id:
-            s.stream_id,
-
-          provider_nfhs_number:
-            providerNumber(
-              s.name || ""
-            ),
-
-          original_name:
-            cleanSpace(
-              s.name || ""
-            ),
-
-          added:
-            s.added ?? null
-        }))
-        .filter(
-          s =>
-            Number.isFinite(
-              s.provider_nfhs_number
-            ) &&
-            s.provider_nfhs_number >
-              lowerNumber &&
-            s.provider_nfhs_number <
-              upperNumber
-        )
-        .sort(
-          (a, b) =>
-            a.provider_nfhs_number -
-            b.provider_nfhs_number
-        );
   }
 
-  const freshmanVolleyballCandidates =
-    bracketStreams.filter(s => {
-      const n =
-        s.original_name
-          .toLowerCase();
+  const uniqueEvents =
+    [
+      ...new Map(
+        scrapedPages
+          .flatMap(
+            p => p.events
+          )
+          .map(
+            e => [
+              e.event_id,
+              e
+            ]
+          )
+      ).values()
+    ];
 
-      return (
-        n.includes("29 sep") &&
-        n.includes("04:00 pm et") &&
-        n.includes("freshman") &&
-        n.includes("girls") &&
-        n.includes("volleyball")
-      );
-    });
+  const metadata = [];
+
+  for (const event of uniqueEvents) {
+    metadata.push(
+      await getMetadata(event)
+    );
+  }
+
+  const wicomicoCandidates =
+    metadata
+      .filter(
+        looksLikeWicomicoCandidate
+      )
+      .map(x => ({
+        ...x,
+
+        sorts_between_3551_and_3553:
+          betweenAnchors(
+            x.event_id
+          )
+      }));
+
+  const exactOrderingCandidates =
+    wicomicoCandidates.filter(
+      x =>
+        x.sorts_between_3551_and_3553
+    );
 
   const payload = {
     generated_at:
@@ -397,10 +456,10 @@ async function main() {
       false,
 
     diagnostic_version:
-      6,
+      7,
 
     purpose:
-      "Test whether NFHS event IDs sort monotonically with provider NFHS numbers and bracket the Clinch-Brantley target.",
+      "Determine whether provider NFHS slot 3552 was dynamically reassigned to a Wicomico volleyball event and test that event against immediate NFHS event-ID anchors.",
 
     provider: {
       category:
@@ -412,48 +471,75 @@ async function main() {
         provider.streams.length
     },
 
-    target:
-      TARGET,
-
-    ordering_test: {
-      known_pair_count:
-        usablePairs.length,
-
-      event_id_to_provider_number_monotonic:
-        monotonic,
-
-      ordered_pairs:
-        orderedPairs
-    },
-
-    target_bracket:
-      targetBracket,
-
-    bracket_range:
-      Number.isFinite(lowerNumber) &&
-      Number.isFinite(upperNumber)
+    provider_slot_3552:
+      providerSlot
         ? {
-            greater_than:
-              lowerNumber,
+            stream_id:
+              providerSlot.stream_id,
 
-            less_than:
-              upperNumber,
+            provider_nfhs_number:
+              providerNumber(
+                providerSlot.name || ""
+              ),
 
-            possible_provider_number_count:
-              Math.max(
-                upperNumber -
-                lowerNumber -
-                1,
-                0
-              )
+            provider_title:
+              cleanSpace(
+                providerSlot.name || ""
+              ),
+
+            added:
+              providerSlot.added ??
+              null
           }
         : null,
 
-    bracket_streams:
-      bracketStreams,
+    anchors: {
+      lower:
+        LOWER_ANCHOR,
 
-    freshman_girls_volleyball_candidates_inside_bracket:
-      freshmanVolleyballCandidates
+      upper:
+        UPPER_ANCHOR
+    },
+
+    source_pages:
+      scrapedPages.map(
+        p => ({
+          url:
+            p.url,
+
+          ok:
+            p.ok,
+
+          event_count:
+            p.event_count,
+
+          error:
+            p.error ?? null
+        })
+      ),
+
+    unique_scraped_event_count:
+      uniqueEvents.length,
+
+    wicomico_candidates:
+      wicomicoCandidates,
+
+    exact_ordering_candidates:
+      exactOrderingCandidates,
+
+    conclusion: {
+      one_exact_candidate:
+        exactOrderingCandidates.length === 1,
+
+      predicted_current_event_id_for_3552:
+        exactOrderingCandidates.length === 1
+          ? exactOrderingCandidates[0]
+              .event_id
+          : null,
+
+      dynamic_slot_reuse_supported:
+        exactOrderingCandidates.length === 1
+    }
   };
 
   await fs.mkdir(
@@ -472,15 +558,15 @@ async function main() {
   );
 
   console.log(
-    `Diagnostic v6 complete.`
+    "Diagnostic v7 complete."
   );
 
   console.log(
-    `Ordering monotonic: ${monotonic}`
+    `Wicomico candidates: ${wicomicoCandidates.length}`
   );
 
   console.log(
-    `Bracket streams: ${bracketStreams.length}`
+    `Exact ordering candidates: ${exactOrderingCandidates.length}`
   );
 
   console.log(
