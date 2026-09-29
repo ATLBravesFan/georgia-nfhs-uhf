@@ -2,25 +2,46 @@ import fs from "node:fs/promises";
 import * as cheerio from "cheerio";
 
 const DEFAULT_CATEGORY = "USA | NFHS Network";
-const GHSA_PAGE = "https://get.nfhsnetwork.com/associations/ghsa/";
-const TARGET_ID = "gamb8ad8195a3";
+
+const GLOBAL_PAGES = [
+  "https://get.nfhsnetwork.com/watch-events",
+  "https://www.nfhsnetwork.com/watch-events"
+];
+
+const EVENTS = [
+  {
+    role: "target",
+    label: "Clinch County vs. Brantley County",
+    event_id: "gamb8ad8195a3",
+    provider_nfhs_number: null,
+    provider_stream_id: null
+  },
+  {
+    role: "control",
+    label: "Long County vs. St. Vincent's Academy",
+    event_id: "gam302604b4e5",
+    provider_nfhs_number: 3455,
+    provider_stream_id: 2066857
+  },
+  {
+    role: "control",
+    label: "Camden County vs. Savannah Country Day",
+    event_id: "gamd493cc6a81",
+    provider_nfhs_number: 3572,
+    provider_stream_id: 2066737
+  },
+  {
+    role: "control",
+    label: "Frederica Academy vs. Bradwell Institute",
+    event_id: "gamee5d943f7a",
+    provider_nfhs_number: 3596,
+    provider_stream_id: 2066711
+  }
+];
 
 function cleanSpace(s = "") {
   return String(s)
     .replace(/\u00a0/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function normalize(s = "") {
-  return cleanSpace(s)
-    .toLowerCase()
-    .replace(/[’‘`]/g, "'")
-    .replace(/\bhigh school\b/g, " ")
-    .replace(/\bschool\b/g, " ")
-    .replace(/\bacademy\b/g, " academy ")
-    .replace(/\bjunior varsity\b/g, " jv ")
-    .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -33,7 +54,7 @@ async function fetchText(url, timeoutMs = 20000) {
     const r = await fetch(url, {
       signal: ac.signal,
       headers: {
-        "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/4.0"
+        "User-Agent": "Mozilla/5.0 Georgia-NFHS-Diagnostic/5.0"
       }
     });
 
@@ -117,231 +138,177 @@ function providerNumber(name = "") {
   return m ? Number(m[1]) : null;
 }
 
-function providerBody(name = "") {
-  return cleanSpace(name)
-    .replace(/^NFHS\s+Network\s+\d+\s*:\s*/i, "")
-    .replace(
-      /\s*@\s*\d{1,2}\s+[A-Za-z]{3}\s+\d{1,2}:\d{2}\s*(?:AM|PM)\s*ET\s*$/i,
-      ""
-    );
-}
+async function extractGlobalPage(url) {
+  try {
+    const html = await fetchText(url);
+    const $ = cheerio.load(html);
 
-function importantTokens(text = "") {
-  const ignored = new Set([
-    "high",
-    "school",
-    "academy",
-    "the",
-    "and",
-    "vs",
-    "girls",
-    "boys",
-    "varsity",
-    "junior",
-    "jv",
-    "freshman",
-    "middle",
-    "volleyball",
-    "football",
-    "basketball",
-    "softball",
-    "baseball",
-    "soccer",
-    "sep",
-    "utc",
-    "2026"
-  ]);
+    const events = [];
+    const seen = new Set();
 
-  return normalize(text)
-    .split(" ")
-    .filter(
-      x =>
-        x.length >= 4 &&
-        !ignored.has(x)
-    );
-}
+    $("a").each((_, el) => {
+      let href = cleanSpace($(el).attr("href") || "");
+      const text = cleanSpace($(el).text());
 
-function similarity(a, b) {
-  const aa = new Set(importantTokens(a));
-  const bb = new Set(importantTokens(b));
+      if (!href) return;
 
-  if (!aa.size || !bb.size) return 0;
+      if (href.startsWith("/")) {
+        href = `https://www.nfhsnetwork.com${href}`;
+      }
 
-  let common = 0;
+      const m = href.match(
+        /\/events\/[^/]+\/([a-z0-9]+)(?:[/?#]|$)/i
+      );
 
-  for (const token of aa) {
-    if (bb.has(token)) common++;
-  }
+      if (!m) return;
 
-  return common / Math.max(
-    Math.min(aa.size, bb.size),
-    1
-  );
-}
+      const eventId = m[1];
 
-async function getGhsaEvents() {
-  const html = await fetchText(GHSA_PAGE);
-  const $ = cheerio.load(html);
+      if (seen.has(eventId)) return;
+      seen.add(eventId);
 
-  const events = [];
-  const seen = new Set();
-
-  $("a").each((_, el) => {
-    const text = cleanSpace($(el).text());
-
-    let href =
-      cleanSpace($(el).attr("href") || "");
-
-    if (!href) return;
-
-    if (href.startsWith("/")) {
-      href =
-        `https://www.nfhsnetwork.com${href}`;
-    }
-
-    const m = href.match(
-      /\/events\/[^/]+\/([a-z0-9]+)(?:[/?#]|$)/i
-    );
-
-    if (!m) return;
-
-    const eventId = m[1];
-
-    if (seen.has(eventId)) return;
-
-    seen.add(eventId);
-
-    events.push({
-      page_index: events.length + 1,
-      event_id: eventId,
-      text,
-      href
+      events.push({
+        index: events.length + 1,
+        event_id: eventId,
+        text,
+        href
+      });
     });
-  });
 
-  return events;
+    return {
+      ok: true,
+      url,
+      event_count: events.length,
+      events
+    };
+
+  } catch (err) {
+    return {
+      ok: false,
+      url,
+      event_count: 0,
+      events: [],
+      error: String(err?.message || err)
+    };
+  }
 }
 
-function findBestProviderMatch(event, streams) {
-  let best = null;
+function findProviderStream(provider, streamId) {
+  if (!streamId) return null;
 
-  for (const stream of streams) {
-    const name =
-      cleanSpace(stream.name || "");
+  const s = provider.streams.find(
+    x => Number(x.stream_id) === Number(streamId)
+  );
 
-    if (!name) continue;
+  if (!s) return null;
 
-    const score = similarity(
-      event.text,
-      providerBody(name)
+  return {
+    stream_id: s.stream_id,
+    provider_nfhs_number: providerNumber(s.name || ""),
+    provider_name: cleanSpace(s.name || ""),
+    provider_added: s.added ?? null
+  };
+}
+
+function comparePage(page, provider) {
+  return EVENTS.map(event => {
+    const pageEvent = page.events.find(
+      x => x.event_id === event.event_id
     );
 
-    if (
-      !best ||
-      score > best.score
-    ) {
-      best = {
-        score,
-        stream_id: stream.stream_id,
-        provider_nfhs_number:
-          providerNumber(name),
-        provider_name: name,
-        provider_added:
-          stream.added ?? null
-      };
-    }
-  }
-
-  if (!best || best.score < 0.66) {
-    return null;
-  }
-
-  return best;
-}
-
-async function main() {
-  const provider =
-    await getProvider();
-
-  const events =
-    await getGhsaEvents();
-
-  const rows = events.map(event => {
-    const match =
-      findBestProviderMatch(
-        event,
-        provider.streams
+    const providerStream =
+      findProviderStream(
+        provider,
+        event.provider_stream_id
       );
 
     return {
-      page_index:
-        event.page_index,
+      role: event.role,
+      label: event.label,
+      event_id: event.event_id,
 
-      event_id:
-        event.event_id,
+      global_page_found: Boolean(pageEvent),
 
-      is_target:
-        event.event_id === TARGET_ID,
+      global_page_index:
+        pageEvent?.index ?? null,
 
-      nfhs_text:
-        event.text,
-
-      provider_match_score:
-        match?.score ?? null,
+      global_page_text:
+        pageEvent?.text ?? null,
 
       provider_nfhs_number:
-        match?.provider_nfhs_number ?? null,
+        providerStream?.provider_nfhs_number ??
+        event.provider_nfhs_number,
 
       provider_stream_id:
-        match?.stream_id ?? null,
+        providerStream?.stream_id ??
+        event.provider_stream_id,
 
       provider_name:
-        match?.provider_name ?? null,
+        providerStream?.provider_name ?? null,
 
       provider_added:
-        match?.provider_added ?? null
+        providerStream?.provider_added ?? null
     };
   });
+}
 
-  const matched =
-    rows.filter(
-      x =>
-        x.provider_nfhs_number !== null
+async function main() {
+  const provider = await getProvider();
+
+  const pages = [];
+
+  for (const url of GLOBAL_PAGES) {
+    pages.push(
+      await extractGlobalPage(url)
+    );
+  }
+
+  const comparisons = pages.map(page => ({
+    page_url: page.url,
+    page_ok: page.ok,
+    event_count: page.event_count,
+    rows: comparePage(page, provider)
+  }));
+
+  const targetNeighborhoods = [];
+
+  for (const page of pages) {
+    const target = page.events.find(
+      x => x.event_id === "gamb8ad8195a3"
     );
 
-  const target =
-    rows.find(
-      x => x.is_target
-    ) || null;
+    if (!target) {
+      targetNeighborhoods.push({
+        page_url: page.url,
+        target_found: false,
+        rows: []
+      });
 
-  let targetNeighborhood = [];
+      continue;
+    }
 
-  if (target) {
-    targetNeighborhood =
-      rows.filter(
-        x =>
-          Math.abs(
-            x.page_index -
-            target.page_index
-          ) <= 5
-      );
+    targetNeighborhoods.push({
+      page_url: page.url,
+      target_found: true,
+      target_index: target.index,
+
+      rows: page.events.filter(
+        x => Math.abs(x.index - target.index) <= 10
+      )
+    });
   }
 
   const payload = {
-    generated_at:
-      new Date().toISOString(),
+    generated_at: new Date().toISOString(),
 
-    diagnostic_only:
-      true,
+    diagnostic_only: true,
 
-    modifies_epg:
-      false,
+    modifies_epg: false,
 
-    diagnostic_version:
-      4,
+    diagnostic_version: 5,
 
     purpose:
-      "Compare NFHS GHSA page ordering against provider NFHS channel ordering.",
+      "Test whether provider NFHS numbering follows NFHS nationwide Watch Events ordering.",
 
     provider: {
       category:
@@ -352,22 +319,16 @@ async function main() {
         provider.streams.length
     },
 
-    ghsa_event_count:
-      events.length,
+    pages: pages.map(page => ({
+      url: page.url,
+      ok: page.ok,
+      event_count: page.event_count,
+      error: page.error ?? null
+    })),
 
-    provider_match_count:
-      matched.length,
+    comparisons,
 
-    target,
-
-    target_neighborhood:
-      targetNeighborhood,
-
-    matched_events:
-      matched,
-
-    all_events:
-      rows
+    target_neighborhoods
   };
 
   await fs.mkdir(
@@ -377,23 +338,12 @@ async function main() {
 
   await fs.writeFile(
     "public/nfhs-diagnostic.json",
-    JSON.stringify(
-      payload,
-      null,
-      2
-    ) + "\n",
+    JSON.stringify(payload, null, 2) + "\n",
     "utf8"
   );
 
-  console.log(
-    `Diagnostic v4 matched ` +
-    `${matched.length} of ` +
-    `${events.length} NFHS events.`
-  );
-
-  console.log(
-    "public/events.json was NOT modified."
-  );
+  console.log("Diagnostic v5 complete.");
+  console.log("public/events.json was NOT modified.");
 }
 
 main().catch(err => {
