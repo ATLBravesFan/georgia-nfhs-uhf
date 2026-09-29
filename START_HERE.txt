@@ -1,0 +1,11 @@
+START HERE
+
+1. You can delete the broken NFHS playlist from UHF now.
+2. Do NOT delete the Pipedream project yet. Keep it until the replacement works.
+3. Open README_EASY_SETUP.md.
+4. Create the GitHub repo and add the three Xtream secrets.
+5. Run the GitHub Action once.
+6. Create the Cloudflare Worker, paste worker/index.js, and add its variables/secrets.
+7. Test the JSON and M3U URLs in Safari.
+8. Add the new M3U + XML URLs to UHF.
+9. Once UHF works, delete Pipedream.
