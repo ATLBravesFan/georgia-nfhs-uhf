@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T09:12:35.525-04:00",
+  "generated_at": "2026-09-29T09:25:16.993-04:00",
   "eastern_date": "2026-09-29",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 137,
-  "georgia_channel_count": 8,
+  "total_georgia_matches_found": 136,
+  "georgia_channel_count": 7,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 8,
+  "upcoming_next_7_days": 7,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -50,28 +50,6 @@
           "team": "Wesleyan School",
           "core": "wesleyan",
           "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2066954",
-      "stream_id": 2066954,
-      "extension": "ts",
-      "original_name": "NFHS Network 3358: Upper Bucks Christian School vs. Bethlehem Christian School Middle School Girls Volleyball @ 29 Sep 03:30 PM ET",
-      "name": "Upper Bucks Christian School vs. Bethlehem Christian School Middle School Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-09-29T15:30:00.000-04:00",
-      "stop": "2026-09-29T18:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Upper Bucks Christian School",
-        "Bethlehem Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Bethlehem Christian School",
-          "core": "bethlehem christian",
-          "confidence": 2
         }
       ]
     },
