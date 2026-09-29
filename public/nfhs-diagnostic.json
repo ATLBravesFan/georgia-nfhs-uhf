@@ -1,301 +1,166 @@
 {
-  "generated_at": "2026-09-29T22:16:01.041Z",
+  "generated_at": "2026-09-29T22:19:31.374Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": 8,
-  "purpose": "Inspect safe technical metadata from suspicious and known-good NFHS provider streams without changing the live EPG.",
+  "diagnostic_version": 9,
+  "purpose": "Inspect provider-side metadata, M3U attributes, Xtream responses, and HTTP stream headers for mislabeled NFHS streams.",
   "provider": {
     "category": "USA | NFHS Network",
-    "source_stream_count": 5000
+    "source_stream_count": 5000,
+    "m3u_download_ok": true
   },
   "channels": [
     {
       "provider_nfhs_number": 3551,
-      "note": "Known neighboring control",
       "found": true,
       "stream_id": 2066759,
       "provider_title": "NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236504",
       "epg_channel_id": null,
-      "probe": {
-        "probe_ok": true,
-        "successful_endpoint_type": "live-ts",
-        "format": {
-          "format_name": "mpegts",
-          "format_long_name": "MPEG-TS (MPEG-2 Transport Stream)",
-          "duration": null,
-          "bit_rate": null,
-          "tags": {}
-        },
-        "programs": [
-          {
-            "program_id": 1,
-            "program_num": 1,
-            "tags": {
-              "service_name": "Service01",
-              "service_provider": "FFmpeg"
-            },
-            "stream_indexes": [
-              0,
-              1
-            ]
-          }
-        ],
-        "streams": [
-          {
-            "index": 0,
-            "codec_type": "video",
-            "codec_name": "h264",
-            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "width": 1920,
-            "height": 1080,
-            "sample_rate": null,
-            "channels": null,
-            "bit_rate": null,
-            "tags": {}
-          },
-          {
-            "index": 1,
-            "codec_type": "audio",
-            "codec_name": "aac",
-            "codec_long_name": "AAC (Advanced Audio Coding)",
-            "width": null,
-            "height": null,
-            "sample_rate": "48000",
-            "channels": 2,
-            "bit_rate": "132382",
-            "tags": {
-              "language": "und"
-            }
-          }
-        ],
-        "attempts": [
-          {
-            "type": "live-ts",
-            "ok": true,
-            "error": null
-          }
-        ]
+      "direct_source_present": false,
+      "stream_icon": "https://cdn.iptvboss.pro/[REDACTED]",
+      "m3u_entry": {
+        "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET\" tvg-logo=\"https://cdn.iptvboss.pro/[REDACTED]\" group-title=\"USA | NFHS Network\",NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "stream_line": "https://amazing-onyx.net/[REDACTED]"
       },
-      "interesting_tags": [
-        {
-          "section": "program:1",
-          "key": "service_name",
-          "value": "Service01"
-        },
-        {
-          "section": "program:1",
-          "key": "service_provider",
-          "value": "FFmpeg"
-        },
-        {
-          "section": "stream:1",
-          "key": "language",
-          "value": "und"
+      "get_live_info": {
+        "ok": true,
+        "status": 200,
+        "response": "[]"
+      },
+      "get_short_epg": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "get_simple_data_table": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "http_stream_response": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://lb1.cdnbp.net/[REDACTED]",
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "close",
+          "content-type": "video/mp2t",
+          "date": "Tue, 29 Sep 2026 22:19:18 GMT",
+          "server": "nginx"
         }
-      ]
+      }
     },
     {
       "provider_nfhs_number": 3552,
-      "note": "Suspicious slot currently showing volleyball",
       "found": true,
       "stream_id": 2066758,
       "provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236503",
       "epg_channel_id": null,
-      "probe": {
-        "probe_ok": true,
-        "successful_endpoint_type": "live-ts",
-        "format": {
-          "format_name": "mpegts",
-          "format_long_name": "MPEG-TS (MPEG-2 Transport Stream)",
-          "duration": null,
-          "bit_rate": null,
-          "tags": {}
-        },
-        "programs": [
-          {
-            "program_id": 1,
-            "program_num": 1,
-            "tags": {
-              "service_name": "Service01",
-              "service_provider": "FFmpeg"
-            },
-            "stream_indexes": [
-              0,
-              1
-            ]
-          }
-        ],
-        "streams": [
-          {
-            "index": 0,
-            "codec_type": "video",
-            "codec_name": "h264",
-            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "width": 1920,
-            "height": 1080,
-            "sample_rate": null,
-            "channels": null,
-            "bit_rate": null,
-            "tags": {}
-          },
-          {
-            "index": 1,
-            "codec_type": "audio",
-            "codec_name": "aac",
-            "codec_long_name": "AAC (Advanced Audio Coding)",
-            "width": null,
-            "height": null,
-            "sample_rate": "48000",
-            "channels": 2,
-            "bit_rate": "134142",
-            "tags": {
-              "language": "und"
-            }
-          }
-        ],
-        "attempts": [
-          {
-            "type": "live-ts",
-            "ok": true,
-            "error": null
-          }
-        ]
+      "direct_source_present": false,
+      "stream_icon": "https://cdn.iptvboss.pro/[REDACTED]",
+      "m3u_entry": {
+        "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET\" tvg-logo=\"https://cdn.iptvboss.pro/[REDACTED]\" group-title=\"USA | NFHS Network\",NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "stream_line": "https://amazing-onyx.net/[REDACTED]"
       },
-      "interesting_tags": [
-        {
-          "section": "program:1",
-          "key": "service_name",
-          "value": "Service01"
-        },
-        {
-          "section": "program:1",
-          "key": "service_provider",
-          "value": "FFmpeg"
-        },
-        {
-          "section": "stream:1",
-          "key": "language",
-          "value": "und"
+      "get_live_info": {
+        "ok": true,
+        "status": 200,
+        "response": "[]"
+      },
+      "get_short_epg": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "get_simple_data_table": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "http_stream_response": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://lb1.cdnbp.net/[REDACTED]",
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "close",
+          "content-type": "video/mp2t",
+          "date": "Tue, 29 Sep 2026 22:19:19 GMT",
+          "server": "nginx"
         }
-      ]
+      }
     },
     {
       "provider_nfhs_number": 3553,
-      "note": "Known neighboring control",
       "found": true,
       "stream_id": 2066757,
       "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236503",
       "epg_channel_id": null,
-      "probe": {
-        "probe_ok": false,
-        "attempts": [
-          {
-            "type": "live-ts",
-            "ok": false,
-            "error": ""
-          },
-          {
-            "type": "live-m3u8",
-            "ok": false,
-            "error": "https://amazing-onyx.net/[REDACTED] Server returned 404 Not Found\n"
-          },
-          {
-            "type": "direct-path",
-            "ok": false,
-            "error": "https://amazing-onyx.net/[REDACTED] Server returned 404 Not Found\n"
-          }
-        ]
+      "direct_source_present": false,
+      "stream_icon": "https://cdn.iptvboss.pro/[REDACTED]",
+      "m3u_entry": {
+        "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET\" tvg-logo=\"https://cdn.iptvboss.pro/[REDACTED]\" group-title=\"USA | NFHS Network\",NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "stream_line": "https://amazing-onyx.net/[REDACTED]"
       },
-      "interesting_tags": []
+      "get_live_info": {
+        "ok": true,
+        "status": 200,
+        "response": "[]"
+      },
+      "get_short_epg": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "get_simple_data_table": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "http_stream_response": {
+        "ok": false,
+        "error": "This operation was aborted"
+      }
     },
     {
       "provider_nfhs_number": 3572,
-      "note": "Known Camden Georgia control",
       "found": true,
       "stream_id": 2066737,
       "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "provider_added": "1789236493",
       "epg_channel_id": null,
-      "probe": {
-        "probe_ok": true,
-        "successful_endpoint_type": "live-ts",
-        "format": {
-          "format_name": "mpegts",
-          "format_long_name": "MPEG-TS (MPEG-2 Transport Stream)",
-          "duration": null,
-          "bit_rate": null,
-          "tags": {}
-        },
-        "programs": [
-          {
-            "program_id": 1,
-            "program_num": 1,
-            "tags": {
-              "service_name": "Service01",
-              "service_provider": "FFmpeg"
-            },
-            "stream_indexes": [
-              0,
-              1
-            ]
-          }
-        ],
-        "streams": [
-          {
-            "index": 0,
-            "codec_type": "video",
-            "codec_name": "h264",
-            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-            "width": 1920,
-            "height": 1080,
-            "sample_rate": null,
-            "channels": null,
-            "bit_rate": null,
-            "tags": {}
-          },
-          {
-            "index": 1,
-            "codec_type": "audio",
-            "codec_name": "aac",
-            "codec_long_name": "AAC (Advanced Audio Coding)",
-            "width": null,
-            "height": null,
-            "sample_rate": "48000",
-            "channels": 2,
-            "bit_rate": "133522",
-            "tags": {
-              "language": "und"
-            }
-          }
-        ],
-        "attempts": [
-          {
-            "type": "live-ts",
-            "ok": true,
-            "error": null
-          }
-        ]
+      "direct_source_present": false,
+      "stream_icon": "https://cdn.iptvboss.pro/[REDACTED]",
+      "m3u_entry": {
+        "extinf": "#EXTINF:-1 tvg-id=\"\" tvg-name=\"NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET\" tvg-logo=\"https://cdn.iptvboss.pro/[REDACTED]\" group-title=\"USA | NFHS Network\",NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "stream_line": "https://amazing-onyx.net/[REDACTED]"
       },
-      "interesting_tags": [
-        {
-          "section": "program:1",
-          "key": "service_name",
-          "value": "Service01"
-        },
-        {
-          "section": "program:1",
-          "key": "service_provider",
-          "value": "FFmpeg"
-        },
-        {
-          "section": "stream:1",
-          "key": "language",
-          "value": "und"
+      "get_live_info": {
+        "ok": true,
+        "status": 200,
+        "response": "[]"
+      },
+      "get_short_epg": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "get_simple_data_table": {
+        "ok": true,
+        "status": 200,
+        "response": "{\"epg_listings\":[]}"
+      },
+      "http_stream_response": {
+        "ok": true,
+        "status": 200,
+        "final_url": "https://lb1.cdnbp.net/[REDACTED]",
+        "headers": {
+          "cache-control": "no-store",
+          "connection": "close",
+          "content-type": "video/mp2t",
+          "date": "Tue, 29 Sep 2026 22:19:31 GMT",
+          "server": "nginx"
         }
-      ]
+      }
     }
   ]
 }
