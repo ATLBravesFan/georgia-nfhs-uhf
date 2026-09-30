@@ -163,7 +163,7 @@ async function getProvider(){
   const rows=await fetchJson(`${base}/player_api.php?${auth}&action=get_live_streams&category_id=${encodeURIComponent(cat.category_id)}`);
   const streams=(Array.isArray(rows)?rows:[]).map(s=>{
     const m=String(s.name||"").match(/^NFHS\s+Network\s+(\d+)/i);
-    return m?{slot:Number(m[1]),stream_id:Number(s.stream_id),title:cleanSpace(s.name||"")}:null;
+    return m?{slot:Number(m[1]),stream_id:Number(s.stream_id),title:cleanSpace(s.name||""),container_extension:cleanSpace(s.container_extension||"ts").replace(/^\\./,"")||"ts"}:null;
   }).filter(Boolean);
   return {base,username,password,streams};
 }
@@ -191,7 +191,8 @@ async function main(){
 
   async function probeOne(slot){
     const row=bySlot.get(slot);
-    const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.ts`;
+    const ext=row.container_extension||"ts";
+    const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.${ext}`;
     const got=await fetchLimitedBytes(target,SAMPLE_BYTES,500);
     const ts=got.ok?tsSummary(got.bytes):{is_ts:false,packet_count:0,pids:[]};
     const probe=(got.ok && !FAST_SWEEP)?await ffprobeSummary(got.bytes,slot):null;
@@ -199,6 +200,7 @@ async function main(){
       slot,
       stream_id:row.stream_id,
       provider_title:row.title,
+      container_extension:row.container_extension,
       active:Boolean(got.ok&&got.bytes?.length),
       http_status:got.status,
       latency_ms:got.latency_ms,
