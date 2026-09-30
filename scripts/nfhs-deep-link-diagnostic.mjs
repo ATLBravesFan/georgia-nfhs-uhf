@@ -1990,6 +1990,296 @@ async function probeClinchBroadcastRouting() {
   };
 }
 
+
+function safeUrlStructureDeep(raw) {
+  if (raw === null || raw === undefined) return null;
+  const strings = [];
+
+  function collect(v, depth = 0) {
+    if (depth > 5 || strings.length > 100) return;
+    if (typeof v === "string") {
+      strings.push(v);
+      return;
+    }
+    if (!v || typeof v !== "object") return;
+    if (Array.isArray(v)) {
+      for (const x of v) collect(x, depth + 1);
+      return;
+    }
+    for (const x of Object.values(v)) collect(x, depth + 1);
+  }
+
+  collect(raw);
+  const urlLike = strings.find(s => /^[a-z][a-z0-9+.-]*:\/\//i.test(s)) || null;
+
+  if (!urlLike) {
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: false
+    };
+  }
+
+  try {
+    const u = new URL(urlLike);
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: true,
+      url_hash: sha20(urlLike),
+      protocol: u.protocol,
+      hostname_hash: sha20(u.hostname),
+      port: u.port || null,
+      pathname_hash: sha20(u.pathname),
+      path_segment_hashes: u.pathname.split("/").filter(Boolean).map(sha20),
+      query_keys: [...u.searchParams.keys()].sort(),
+      query_value_hashes: [...u.searchParams.entries()]
+        .map(([key, value]) => ({ key, value_hash: sha20(value) }))
+        .sort((a, b) => a.key.localeCompare(b.key) || a.value_hash.localeCompare(b.value_hash))
+    };
+  } catch {
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: false
+    };
+  }
+}
+
+function compareSafeUrlStructures(providerStruct, officialStruct) {
+  const p = providerStruct || {};
+  const o = officialStruct || {};
+  const pSeg = Array.isArray(p.path_segment_hashes) ? p.path_segment_hashes : [];
+  const oSeg = Array.isArray(o.path_segment_hashes) ? o.path_segment_hashes : [];
+  const oSet = new Set(oSeg);
+  const sharedSegments = pSeg.filter(x => oSet.has(x));
+
+  const pQ = new Set(
+    (Array.isArray(p.query_value_hashes) ? p.query_value_hashes : [])
+      .map(x => `${x.key}|${x.value_hash}`)
+  );
+  const oQ = new Set(
+    (Array.isArray(o.query_value_hashes) ? o.query_value_hashes : [])
+      .map(x => `${x.key}|${x.value_hash}`)
+  );
+  const sharedQueryValues = [...pQ].filter(x => oQ.has(x));
+
+  return {
+    both_urls_found: Boolean(p.url_found && o.url_found),
+    same_protocol: Boolean(p.protocol && p.protocol === o.protocol),
+    same_hostname_hash: Boolean(p.hostname_hash && p.hostname_hash === o.hostname_hash),
+    same_pathname_hash: Boolean(p.pathname_hash && p.pathname_hash === o.pathname_hash),
+    same_path_segment_count: pSeg.length > 0 && pSeg.length === oSeg.length,
+    shared_path_segment_count: sharedSegments.length,
+    shared_path_segment_hashes: sharedSegments,
+    same_first_path_segment: Boolean(pSeg[0] && pSeg[0] === oSeg[0]),
+    same_last_path_segment: Boolean(
+      pSeg.length &&
+      oSeg.length &&
+      pSeg[pSeg.length - 1] === oSeg[oSeg.length - 1]
+    ),
+    shared_query_value_count: sharedQueryValues.length,
+    shared_query_value_hashes: sharedQueryValues
+  };
+}
+
+async function resolveProviderRedirectStructure(streamId) {
+  const base = cleanSpace(process.env.XTREAM_BASE_URL || "").replace(/\/+$/, "");
+  const username = process.env.XTREAM_USERNAME || "";
+  const password = process.env.XTREAM_PASSWORD || "";
+
+  if (!base || !username || !password) {
+    return { ok: false, error: "Missing provider credentials." };
+  }
+
+  const target =
+    `${base}/live/${encodeURIComponent(username)}/${encodeURIComponent(password)}/${streamId}.ts`;
+
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), 10000);
+
+  try {
+    const r = await fetch(target, {
+      method: "GET",
+      redirect: "manual",
+      signal: ac.signal,
+      headers: { "User-Agent": "Mozilla/5.0 Georgia-NFHS-Deep-Link-Diagnostic/15.0" }
+    });
+
+    const location = r.headers.get("location");
+
+    try {
+      if (r.body) await r.body.cancel();
+    } catch {}
+
+    let absoluteLocation = location;
+    if (location && !/^[a-z][a-z0-9+.-]*:\/\//i.test(location)) {
+      try {
+        absoluteLocation = new URL(location, base).toString();
+      } catch {}
+    }
+
+    return {
+      ok: true,
+      status: r.status,
+      redirected: Boolean(location),
+      redirect_structure: location ? safeUrlStructureDeep(absoluteLocation) : null,
+      content_type: r.headers.get("content-type") || null
+    };
+  } catch (err) {
+    return {
+      ok: false,
+      error: String(err?.message || err).slice(0, 300)
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function resolveOfficialEventRouting(eventId) {
+  try {
+    const event = await fetchJson(
+      `${UNITY_BASE}/v2/game_or_event/${encodeURIComponent(eventId)}`,
+      30000
+    );
+
+    const pubs = Array.isArray(event?.publishers) ? event.publishers : [];
+    const pairs = pubs.flatMap(pub =>
+      (Array.isArray(pub?.broadcasts) ? pub.broadcasts : []).map(b => ({ pub, b }))
+    );
+    const pair = pairs[0] || null;
+    const b = pair?.b || null;
+
+    if (!b?.key) {
+      return { event_key: eventId, ok: false, error: "No broadcast key." };
+    }
+
+    let playback = null;
+    let playbackError = null;
+    try {
+      playback = await fetchMaybeJson(
+        `${UNITY_BASE}/v2/broadcasts/${encodeURIComponent(b.key)}/url`,
+        30000
+      );
+    } catch (err) {
+      playbackError = String(err?.message || err).slice(0, 300);
+    }
+
+    let apiRoute = null;
+    let apiRouteError = null;
+    try {
+      apiRoute = await fetchMaybeJson(
+        `${UNITY_BASE}/v2/broadcasts/${encodeURIComponent(b.key)}/broadcast_api_url`,
+        30000
+      );
+    } catch (err) {
+      apiRouteError = String(err?.message || err).slice(0, 300);
+    }
+
+    return {
+      event_key: eventId,
+      ok: true,
+      local_start_time: event?.local_start_time || null,
+      publisher_key_hash: sha20(pair?.pub?.key || pair?.pub?.publisher_key),
+      producer_key_hash: sha20(b?.producer_key),
+      broadcast_key_hash: sha20(b?.key),
+      ingest_structure: safeUrlStructureDeep(b?.ingest_point),
+      playback_ok: playback !== null,
+      playback_error: playbackError,
+      playback_structure: safeUrlStructureDeep(playback),
+      broadcast_api_url_ok: apiRoute !== null,
+      broadcast_api_url_error: apiRouteError,
+      broadcast_api_url_structure: safeUrlStructureDeep(apiRoute)
+    };
+  } catch (err) {
+    return {
+      event_key: eventId,
+      ok: false,
+      error: String(err?.message || err).slice(0, 400)
+    };
+  }
+}
+
+async function probeOfficialPlaybackVsProviderRelay(providerStreams) {
+  const controls = [
+    {
+      provider_nfhs_number: 3552,
+      candidates: [
+        { label: "stale_title_event", event_key: "gamb8ebe375ea" },
+        { label: "clinch_4pm", event_key: "gamb8ad8195a3" },
+        { label: "clinch_5pm", event_key: "gamc34e8e3bfe" }
+      ]
+    },
+    {
+      provider_nfhs_number: 3572,
+      candidates: [
+        { label: "camden_savannah_5pm", event_key: "gam3a5725b205" }
+      ]
+    },
+    {
+      provider_nfhs_number: 3536,
+      candidates: [
+        { label: "grove_carmel_650pm", event_key: "gam3ba7a342c5" }
+      ]
+    }
+  ];
+
+  const rows = [];
+
+  for (const control of controls) {
+    const provider = providerStreams.find(
+      x => x.provider_nfhs_number === control.provider_nfhs_number
+    );
+
+    if (!provider) {
+      rows.push({
+        provider_nfhs_number: control.provider_nfhs_number,
+        error: "Provider slot not found."
+      });
+      continue;
+    }
+
+    const providerRelay = await resolveProviderRedirectStructure(provider.stream_id);
+    const candidates = [];
+
+    for (const candidate of control.candidates) {
+      const official = await resolveOfficialEventRouting(candidate.event_key);
+
+      candidates.push({
+        label: candidate.label,
+        event_key: candidate.event_key,
+        official,
+        comparisons: official?.ok && providerRelay?.ok ? {
+          provider_vs_playback: compareSafeUrlStructures(
+            providerRelay.redirect_structure,
+            official.playback_structure
+          ),
+          provider_vs_broadcast_api_url: compareSafeUrlStructures(
+            providerRelay.redirect_structure,
+            official.broadcast_api_url_structure
+          ),
+          provider_vs_ingest: compareSafeUrlStructures(
+            providerRelay.redirect_structure,
+            official.ingest_structure
+          )
+        } : null
+      });
+    }
+
+    rows.push({
+      provider_nfhs_number: control.provider_nfhs_number,
+      stream_id: provider.stream_id,
+      provider_title: provider.title,
+      provider_relay: providerRelay,
+      candidates
+    });
+  }
+
+  return {
+    purpose:
+      "Resolve official NFHS playback/API routing for known controls and compare only hashed URL structure against the provider relay redirect. Raw provider credentials and raw NFHS/provider URLs are never written.",
+    provider_connections_are_sequential: true,
+    rows
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -2124,6 +2414,7 @@ async function main() {
   const brantleyClinchSequence = await probeBrantleyClinchSequence();
   const brantleySourceLineage = await probeBrantleySourceLineage();
   const clinchBroadcastRouting = await probeClinchBroadcastRouting();
+  const officialPlaybackVsProviderRelay = await probeOfficialPlaybackVsProviderRelay(provider.streams);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -2169,7 +2460,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-14",
+    diagnostic_version: "deep-link-15",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -2210,6 +2501,7 @@ async function main() {
     brantley_clinch_sequence_probe: brantleyClinchSequence,
     brantley_source_lineage_probe: brantleySourceLineage,
     clinch_broadcast_routing_probe: clinchBroadcastRouting,
+    official_playback_vs_provider_relay_probe: officialPlaybackVsProviderRelay,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
