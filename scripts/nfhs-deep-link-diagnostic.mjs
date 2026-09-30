@@ -43,6 +43,41 @@ function providerCore(name = "") {
   );
 }
 
+
+function buildSearchTerms(core = "") {
+  const scrub = cleanSpace(
+    core
+      .replace(/\b(?:Junior Varsity|Varsity|Freshman|Middle School|JV|MS)\b/gi, " ")
+      .replace(/\b(?:Girls|Boys|Coed)\b/gi, " ")
+      .replace(/\b(?:Flag Football|Football|Volleyball|Basketball|Baseball|Softball|Soccer|Wrestling|Lacrosse|Field Hockey|Ice Hockey|Hockey|Tennis|Swimming|Track(?: and Field)?|Cross Country|Golf|Badminton|Cheerleading|Assembly|Sports Show|News)\b/gi, " ")
+      .replace(/\bHigh School\b/gi, " ")
+      .replace(/\bMiddle School\b/gi, " ")
+      .replace(/\bSchool\b/gi, " ")
+      .replace(/\s+/g, " ")
+  );
+
+  const sides = scrub.split(/\s+vs\.?\s+|\s+versus\s+/i).map(cleanSpace).filter(Boolean);
+  const out = [];
+
+  const add = value => {
+    const q = cleanSpace(value).split(/\s+/).filter(Boolean).slice(0, 5).join(" ");
+    if (q && !out.includes(q)) out.push(q);
+  };
+
+  if (sides.length >= 2) {
+    add(sides[0]);
+    add(sides[1]);
+    add([
+      ...sides[0].split(/\s+/).filter(Boolean).slice(0, 2),
+      ...sides[1].split(/\s+/).filter(Boolean).slice(0, 2)
+    ].join(" "));
+  } else {
+    add(scrub);
+  }
+
+  return out.slice(0, 3);
+}
+
 function parseProviderStart(name, now = DateTime.now().setZone(EASTERN)) {
   const m = String(name).match(/@\s*(\d{1,2})\s+([A-Za-z]{3})\s+(\d{1,2}):(\d{2})\s*(AM|PM)\s*ET\s*$/i);
   if (!m) return null;
@@ -403,21 +438,44 @@ async function main() {
     const p = selected.samples[i];
     console.log(`Search ${i + 1}/${selected.samples.length}: NFHS ${p.provider_nfhs_number}`);
 
-    let search;
-    try {
-      search = await fetchJson(
-        `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(p.core.split(/\s+/).slice(0, 4).join(" "))}&size=${SEARCH_SIZE}`
-      );
-    } catch (err) {
+    const searchTerms = buildSearchTerms(p.core);
+    const candidateMap = new Map();
+    const attempts = [];
+
+    for (const term of searchTerms) {
+      try {
+        const search = await fetchJson(
+          `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(term)}&size=${SEARCH_SIZE}`
+        );
+        const flat = flattenSearchItems(search?.items || []);
+        for (const item of flat) {
+          const key = [
+            item.event_key || "",
+            item.broadcast_key || "",
+            item.broadcast_start || item.event_start || "",
+            item.publisher_slug || ""
+          ].join("|");
+          candidateMap.set(key, item);
+        }
+        attempts.push({ term, ok: true, item_count: Array.isArray(search?.items) ? search.items.length : 0 });
+      } catch (err) {
+        attempts.push({ term, ok: false, error: String(err?.message || err).slice(0, 200) });
+      }
+    }
+
+    const candidates = [...candidateMap.values()];
+
+    if (!attempts.some(x => x.ok)) {
       rows.push({
         provider: p,
         search_ok: false,
-        search_error: String(err?.message || err).slice(0, 300)
+        search_terms: searchTerms,
+        search_attempts: attempts,
+        search_error: "All compact NFHS Search API queries failed."
       });
       continue;
     }
 
-    const candidates = flattenSearchItems(search?.items || []);
     const best = bestCandidate(p, candidates);
 
     const strong =
@@ -433,7 +491,9 @@ async function main() {
     rows.push({
       provider: p,
       search_ok: true,
-      search_item_count: Array.isArray(search?.items) ? search.items.length : 0,
+      search_terms: searchTerms,
+      search_attempts: attempts,
+      unique_candidate_count: candidates.length,
       best_match: best,
       strong_match: strong,
       unity
@@ -470,7 +530,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-3",
+    diagnostic_version: "deep-link-4",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
