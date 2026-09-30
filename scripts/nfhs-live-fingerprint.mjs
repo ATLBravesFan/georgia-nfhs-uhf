@@ -12,6 +12,7 @@ const START_SLOT = Number(process.env.START_SLOT || 3353);
 const END_SLOT = Number(process.env.END_SLOT || 3405);
 const SAMPLE_BYTES = Number(process.env.SAMPLE_BYTES || 196608);
 const SLOT_LIST = String(process.env.SLOT_LIST || "").trim();
+const FAST_SWEEP = String(process.env.FAST_SWEEP || "").toLowerCase() === "true";
 
 function cleanSpace(s="") { return String(s).replace(/\s+/g," ").trim(); }
 function sha20(v) {
@@ -173,21 +174,23 @@ async function main(){
   const explicitSlots = SLOT_LIST
     ? [...new Set(SLOT_LIST.split(",").map(x=>Number(x.trim())).filter(Number.isFinite))].sort((a,b)=>a-b)
     : [];
-  const slots=(explicitSlots.length
-    ? explicitSlots
-    : Array.from({length:Math.max(0,END_SLOT-START_SLOT+1)},(_,i)=>START_SLOT+i)
+  const slots=(FAST_SWEEP
+    ? Array.from({length:5000},(_,i)=>i+1)
+    : explicitSlots.length
+      ? explicitSlots
+      : Array.from({length:Math.max(0,END_SLOT-START_SLOT+1)},(_,i)=>START_SLOT+i)
   ).filter(x=>bySlot.has(x));
 
-  console.log(`Provider-only live probe for ${EVENT_ID}: ${explicitSlots.length ? "explicit candidate slots" : `slots ${START_SLOT}-${END_SLOT}`} (${slots.length} total), sequentially.`);
+  console.log(`Provider-only live probe for ${EVENT_ID}: ${FAST_SWEEP ? "full NFHS activity sweep 1-5000" : explicitSlots.length ? "explicit candidate slots" : `slots ${START_SLOT}-${END_SLOT}`} (${slots.length} total), sequentially.`);
   console.log("Official NFHS video is NOT accessed. Only public event metadata and the user's authorized provider streams are used.");
 
   const results=[];
   for(let i=0;i<slots.length;i++){
     const slot=slots[i], row=bySlot.get(slot);
     const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.ts`;
-    const got=await fetchLimitedBytes(target,SAMPLE_BYTES,1500);
+    const got=await fetchLimitedBytes(target,SAMPLE_BYTES,500);
     const ts=got.ok?tsSummary(got.bytes):{is_ts:false,packet_count:0,pids:[]};
-    const probe=got.ok?await ffprobeSummary(got.bytes,slot):null;
+    const probe=(got.ok && !FAST_SWEEP)?await ffprobeSummary(got.bytes,slot):null;
     results.push({
       slot,
       stream_id:row.stream_id,
@@ -200,7 +203,8 @@ async function main(){
       ts,
       ffprobe:probe
     });
-    if((i+1)%10===0) console.log(`Probed ${i+1}/${slots.length}`);
+    const step = FAST_SWEEP ? 100 : 10;
+    if((i+1)%step===0) console.log(`Probed ${i+1}/${slots.length}`);
   }
 
   const active=results.filter(x=>x.active).sort((a,b)=>a.slot-b.slot);
@@ -215,10 +219,10 @@ async function main(){
       credentials_saved:false
     },
     target_official_event:official,
-    scan:{start_slot:explicitSlots.length?null:START_SLOT,end_slot:explicitSlots.length?null:END_SLOT,explicit_slots:explicitSlots.length?slots:null,slots_probed:slots.length},
+    scan:{mode:FAST_SWEEP?"full_activity_sweep":explicitSlots.length?"explicit_slots":"range",start_slot:(FAST_SWEEP||explicitSlots.length)?null:START_SLOT,end_slot:(FAST_SWEEP||explicitSlots.length)?null:END_SLOT,explicit_slots:explicitSlots.length?slots:null,slots_probed:slots.length},
     totals:{active_slots:active.length,inactive_slots:results.length-active.length,ts_slots:active.filter(x=>x.ts?.is_ts).length},
     active_slots:active,
-    all_results:results
+    all_results:FAST_SWEEP?active:results
   };
 
   await fs.mkdir("public",{recursive:true});
