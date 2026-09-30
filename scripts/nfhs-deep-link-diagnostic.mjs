@@ -3069,6 +3069,172 @@ async function probeWoodlawnRandallstownSequence() {
   };
 }
 
+
+async function probeGlobalDayOrdering(providerStreams) {
+  const day = await fetchOfficialDayEvents("2026-09-29");
+
+  // One canonical row per official event/start. Prefer a row with a broadcast subheadline.
+  const canonical = new Map();
+  for (const row of day.rows) {
+    const k = [row.event_key || "", row.official_start || ""].join("|");
+    const existing = canonical.get(k);
+    if (!existing || (!existing.broadcast_subheadline && row.broadcast_subheadline)) {
+      canonical.set(k, row);
+    }
+  }
+
+  const official = [...canonical.values()].sort((a, b) =>
+    String(a.official_start || "").localeCompare(String(b.official_start || "")) ||
+    String(a.event_key || "").localeCompare(String(b.event_key || ""))
+  );
+  official.forEach((x, i) => { x.global_day_rank = i; });
+
+  const strictIndex = new Map();
+  for (const row of official) {
+    const sportKey = normalize(row.sport || "");
+    for (const title of [row.broadcast_subheadline, row.event_title].filter(Boolean)) {
+      const matchupKey = strictMatchupKey(title);
+      if (!matchupKey) continue;
+      const key = `${sportKey}::${matchupKey}`;
+      if (!strictIndex.has(key)) strictIndex.set(key, []);
+      strictIndex.get(key).push(row);
+    }
+  }
+
+  const direct = [];
+  for (const p of providerStreams) {
+    const sport = providerSportFromTitle(p.title || "");
+    if (!sport) continue;
+    const matchupKey = strictMatchupKey(p.title || "");
+    if (!matchupKey) continue;
+
+    const key = `${normalize(sport)}::${matchupKey}`;
+    const candidates = [...new Map(
+      (strictIndex.get(key) || []).map(x => [
+        [x.event_key, x.official_start].join("|"),
+        x
+      ])
+    ).values()];
+
+    if (candidates.length !== 1) continue;
+    const hit = candidates[0];
+
+    direct.push({
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_title: p.title,
+      event_key: hit.event_key,
+      official_start: hit.official_start,
+      global_day_rank: hit.global_day_rank,
+      sport: hit.sport,
+      subheadline: hit.broadcast_subheadline,
+      publisher_slug: hit.publisher_slug,
+      association: hit.association
+    });
+  }
+
+  // Deduplicate anchors by official event, preferring the lowest provider number when duplicates exist.
+  const eventAnchor = new Map();
+  for (const row of direct) {
+    const cur = eventAnchor.get(row.event_key);
+    if (!cur || row.provider_nfhs_number < cur.provider_nfhs_number) {
+      eventAnchor.set(row.event_key, row);
+    }
+  }
+  const anchors = [...eventAnchor.values()].sort((a, b) => a.global_day_rank - b.global_day_rank);
+
+  let monotonicPairs = 0;
+  let pairCount = 0;
+  for (let i = 1; i < anchors.length; i++) {
+    pairCount++;
+    if (anchors[i].provider_nfhs_number > anchors[i - 1].provider_nfhs_number) monotonicPairs++;
+  }
+
+  const targets = [
+    { label: "clinch_brantley_4pm", event_key: "gamb8ad8195a3" },
+    { label: "clinch_brantley_5pm", event_key: "gamc34e8e3bfe" }
+  ];
+
+  const targetResults = targets.map(t => {
+    const event = official.find(x => x.event_key === t.event_key) || null;
+    if (!event) return { ...t, found: false };
+
+    const before = [...anchors]
+      .filter(x => x.global_day_rank < event.global_day_rank)
+      .sort((a, b) => b.global_day_rank - a.global_day_rank)[0] || null;
+
+    const after = [...anchors]
+      .filter(x => x.global_day_rank > event.global_day_rank)
+      .sort((a, b) => a.global_day_rank - b.global_day_rank)[0] || null;
+
+    let interpolation = null;
+    if (before && after) {
+      const providerGap = after.provider_nfhs_number - before.provider_nfhs_number;
+      const rankGap = after.global_day_rank - before.global_day_rank;
+      const targetDelta = event.global_day_rank - before.global_day_rank;
+      const exactLinearGap = providerGap === rankGap;
+
+      interpolation = {
+        before_anchor: {
+          provider_nfhs_number: before.provider_nfhs_number,
+          event_key: before.event_key,
+          official_start: before.official_start,
+          global_day_rank: before.global_day_rank
+        },
+        after_anchor: {
+          provider_nfhs_number: after.provider_nfhs_number,
+          event_key: after.event_key,
+          official_start: after.official_start,
+          global_day_rank: after.global_day_rank
+        },
+        provider_gap: providerGap,
+        official_rank_gap: rankGap,
+        exact_linear_gap: exactLinearGap,
+        predicted_provider_slot_if_linear:
+          exactLinearGap ? before.provider_nfhs_number + targetDelta : null
+      };
+    }
+
+    return {
+      ...t,
+      found: true,
+      official_start: event.official_start,
+      global_day_rank: event.global_day_rank,
+      interpolation
+    };
+  });
+
+  // Also inspect only anchors in a narrow time window around each target.
+  const targetWindows = targetResults.map(t => {
+    if (!t.found) return { label: t.label, anchors: [] };
+    const target = DateTime.fromISO(t.official_start || "", { setZone: true }).toUTC();
+    const rows = anchors.filter(a => {
+      const dt = DateTime.fromISO(a.official_start || "", { setZone: true }).toUTC();
+      return dt.isValid && Math.abs(dt.diff(target, "minutes").minutes) <= 20;
+    });
+    return {
+      label: t.label,
+      target_start: t.official_start,
+      anchors: rows.slice(0, 80)
+    };
+  });
+
+  return {
+    purpose:
+      "Strictly match all 5,000 provider titles to unique Sep 29 NFHS events, compare provider numbering to the full official day order, and bracket the two Clinch/Brantley events with independent exact-title anchors.",
+    official_unique_events: official.length,
+    provider_streams_scanned: providerStreams.length,
+    direct_unique_strict_matches: direct.length,
+    unique_official_event_anchors: anchors.length,
+    adjacent_anchor_pairs: pairCount,
+    adjacent_anchor_provider_number_increases: monotonicPairs,
+    adjacent_anchor_monotonic_percent:
+      pairCount ? Number((monotonicPairs / pairCount * 100).toFixed(2)) : null,
+    target_results: targetResults,
+    target_time_windows: targetWindows
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -3211,6 +3377,7 @@ async function main() {
   const allFourPmTitlesVsFullDay = await probeAllFourPmTitlesAgainstFullDay(provider.streams);
   const georgiaSourceLaneMappings = await probeGeorgiaSourceLaneMappings(provider.streams);
   const woodlawnRandallstownSequence = await probeWoodlawnRandallstownSequence();
+  const globalDayOrdering = await probeGlobalDayOrdering(provider.streams);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3256,7 +3423,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-20",
+    diagnostic_version: "deep-link-21",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3303,6 +3470,7 @@ async function main() {
     all_four_pm_titles_vs_full_day_probe: allFourPmTitlesVsFullDay,
     georgia_source_lane_mapping_probe: georgiaSourceLaneMappings,
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
+    global_day_ordering_probe: globalDayOrdering,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3346,7 +3514,8 @@ async function main() {
       after_4pm_single_lane_candidates:
         georgiaSourceLaneMappings.after_4pm_single_lane_candidates
     },
-    woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence
+    woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
+    global_day_ordering_probe: globalDayOrdering
   };
 
   await fs.writeFile(
