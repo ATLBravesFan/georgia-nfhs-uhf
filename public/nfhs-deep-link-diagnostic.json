@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:41:15.696Z",
+  "generated_at": "2026-09-30T14:49:14.273Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-11",
+  "diagnostic_version": "deep-link-12",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
-      "total": 1498874,
+      "total": 1498911,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498874,
+      "total": 1498911,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498874,
+    "returned_total": 1498911,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -20243,6 +20243,85 @@
           "sport_match": true,
           "was_in_four_pm_official_only_set": false
         }
+      }
+    ]
+  },
+  "same_day_provider_only_resolution": {
+    "strong_same_day_resolutions": 2,
+    "rows": [
+      {
+        "provider_nfhs_number": 3536,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "event_key": "gam3ba7a342c5",
+        "official_start": "2026-09-29T22:50:00.000Z",
+        "minutes_apart": 170,
+        "sport": "Volleyball",
+        "association": "VISAA",
+        "subheadline": "Grove Christian School vs. Carmel School"
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "event_key": "gam3a5725b205",
+        "official_start": "2026-09-29T21:00:00.000Z",
+        "minutes_apart": 60,
+        "sport": "Volleyball",
+        "association": "GHSA",
+        "subheadline": "Camden County High School vs. Savannah Country Day School"
+      }
+    ]
+  },
+  "brantley_clinch_sequence_probe": {
+    "search_terms": [
+      "Clinch County Brantley County",
+      "Brantley County"
+    ],
+    "same_day_brantley_volleyball_events_found": 2,
+    "events": [
+      {
+        "event_key": "gamb8ad8195a3",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "subheadline": "Clinch County High School vs. Brantley County High School",
+        "association": "GHSA",
+        "publisher_slug": "brantley-county-high-school-nahunta-ga",
+        "safe_identity": {
+          "publisher_key_hash": "9c5d09184e5e72abd8d0",
+          "pixellot_event_id_hash": null,
+          "pixellot_id_hash": null,
+          "pixellot_key_hash": null,
+          "producer_key_hash": "d16bab7ae7ee4565257f",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "unity_error": null
+      },
+      {
+        "event_key": "gamc34e8e3bfe",
+        "official_start": "2026-09-29T21:00:00.000Z",
+        "subheadline": "Clinch County High School vs. Brantley County High School",
+        "association": "GHSA",
+        "publisher_slug": "brantley-county-high-school-nahunta-ga",
+        "safe_identity": {
+          "publisher_key_hash": "9c5d09184e5e72abd8d0",
+          "pixellot_event_id_hash": null,
+          "pixellot_id_hash": null,
+          "pixellot_key_hash": null,
+          "producer_key_hash": "d16bab7ae7ee4565257f",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "unity_error": null
+      }
+    ],
+    "pairwise_identity_comparisons": [
+      {
+        "event_a": "gamb8ad8195a3",
+        "event_b": "gamc34e8e3bfe",
+        "start_a": "2026-09-29T20:00:00.000Z",
+        "start_b": "2026-09-29T21:00:00.000Z",
+        "same_publisher": true,
+        "same_pixellot_unit": false,
+        "same_pixellot_key": false,
+        "same_producer": true,
+        "same_ingest_fingerprint": true
       }
     ]
   },
