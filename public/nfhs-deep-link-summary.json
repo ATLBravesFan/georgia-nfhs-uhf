@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-09-30T15:39:44.641Z",
+  "diagnostic_version": "deep-link-19",
+  "diagnostic_only": true,
+  "modifies_epg": false,
+  "summary": {
+    "samples_tested": 41,
+    "search_api_successes": 41,
+    "strong_official_matches": 36,
+    "near_exact_metadata_matches": 36,
+    "strong_matches_with_unity_event": 36,
+    "provider_number_vs_official_start_pearson": 0.415399
+  },
+  "all_four_pm_titles_vs_full_day_probe": {
+    "provider_4pm_title_count": 211,
+    "unique_strict_same_day_matches": 75,
+    "unique_matches_actually_after_4pm": 4,
+    "georgia_unique_matches": 1,
+    "georgia_rows": [
+      {
+        "provider_nfhs_number": 3572,
+        "event_key": "gam3a5725b205",
+        "actual_start_eastern": "2026-09-29T17:00:00.000-04:00",
+        "association": "GHSA",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "subheadline": "Camden County High School vs. Savannah Country Day School",
+        "sport": "Volleyball"
+      }
+    ],
+    "after_4pm_rows": [
+      {
+        "provider_nfhs_number": 3572,
+        "event_key": "gam3a5725b205",
+        "actual_start_eastern": "2026-09-29T17:00:00.000-04:00",
+        "association": "GHSA",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "subheadline": "Camden County High School vs. Savannah Country Day School",
+        "sport": "Volleyball"
+      },
+      {
+        "provider_nfhs_number": 3539,
+        "event_key": "gama955dda4cf",
+        "actual_start_eastern": "2026-09-29T18:00:00.000-04:00",
+        "association": "NHIAA",
+        "publisher_slug": "kearsarge-regional-high-school-sutton-nh",
+        "subheadline": "Pelham High School vs. Kearsarge Regional High School",
+        "sport": "Soccer"
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "event_key": "gam3ba7a342c5",
+        "actual_start_eastern": "2026-09-29T18:50:00.000-04:00",
+        "association": "VISAA",
+        "publisher_slug": "carmel-school-ruther-glen-va",
+        "subheadline": "Grove Christian School vs. Carmel School",
+        "sport": "Volleyball"
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "event_key": "gam87f4a5fb84",
+        "actual_start_eastern": "2026-09-29T19:00:00.000-04:00",
+        "association": "PIAA",
+        "publisher_slug": "cambria-heights-high-school-patton-pa",
+        "subheadline": "Penns Manor Area High School vs. Cambria Heights High School",
+        "sport": "Volleyball"
+      }
+    ]
+  },
+  "georgia_source_lane_mapping_probe": {
+    "provider_streams_scanned": 5000,
+    "georgia_official_rows": 175,
+    "direct_unique_georgia_provider_matches": 3,
+    "unique_source_signatures_with_direct_provider_anchor": 3,
+    "georgia_after_4pm_events": 167,
+    "georgia_after_4pm_direct_matches": 2,
+    "georgia_after_4pm_with_single_same_source_candidate_slot": 3,
+    "brantley_or_clinch_provider_title_hits": [],
+    "brantley_clinch_official_events": [
+      {
+        "event_key": "gamb8ad8195a3",
+        "official_start_eastern": "2026-09-29T16:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Clinch County High School vs. Brantley County High School",
+        "publisher_slug": "brantley-county-high-school-nahunta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "75779017803d94b73a82",
+        "source": {
+          "publisher_key_hash": "9c5d09184e5e72abd8d0",
+          "producer_key_hash": "d16bab7ae7ee4565257f",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "direct_provider_slots": [],
+        "same_source_candidate_slots": []
+      },
+      {
+        "event_key": "gamc34e8e3bfe",
+        "official_start_eastern": "2026-09-29T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Clinch County High School vs. Brantley County High School",
+        "publisher_slug": "brantley-county-high-school-nahunta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "75779017803d94b73a82",
+        "source": {
+          "publisher_key_hash": "9c5d09184e5e72abd8d0",
+          "producer_key_hash": "d16bab7ae7ee4565257f",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "direct_provider_slots": [],
+        "same_source_candidate_slots": []
+      }
+    ],
+    "direct_matches": [
+      {
+        "provider_nfhs_number": 1028,
+        "stream_id": 2069319,
+        "provider_title": "NFHS Network 1028: Away vs. Galloway School Middle School Football @ 28 Sep 05:45 PM ET",
+        "event_key": "gamc5f0348efd",
+        "official_start": "2026-09-29T21:45:00.000Z",
+        "sport": "Football",
+        "subheadline": "Away vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2abbf2378c9015654250",
+        "source": {
+          "publisher_key_hash": "b5645f78df4c1404e799",
+          "producer_key_hash": "f17f2f060df765d3b615",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 3404,
+        "stream_id": 2066908,
+        "provider_title": "NFHS Network 3404: Fellowship Christian School Middle School Girls Volleyball @ 29 Sep 03:55 PM ET",
+        "event_key": "gamacc2c6aaf4",
+        "official_start": "2026-09-29T19:55:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Fellowship Christian School",
+        "publisher_slug": "fellowship-christian-school-roswell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "d9d17fbf505d5e30a467",
+        "source": {
+          "publisher_key_hash": "9ca448696d611b7267a2",
+          "producer_key_hash": "0241052d6e18fc5396ec",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "event_key": "gam3a5725b205",
+        "official_start": "2026-09-29T21:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Camden County High School vs. Savannah Country Day School",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "9e021a9e02e9892a04f6",
+        "source": {
+          "publisher_key_hash": "baecbccb6262afa6f68a",
+          "producer_key_hash": "0ea4a01bbf37daea47b4",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        }
+      }
+    ],
+    "after_4pm_single_lane_candidates": [
+      {
+        "event_key": "gam3a5725b205",
+        "official_start_eastern": "2026-09-29T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Camden County High School vs. Savannah Country Day School",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "9e021a9e02e9892a04f6",
+        "source": {
+          "publisher_key_hash": "baecbccb6262afa6f68a",
+          "producer_key_hash": "0ea4a01bbf37daea47b4",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "direct_provider_slots": [
+          3572
+        ],
+        "same_source_candidate_slots": [
+          3572
+        ]
+      },
+      {
+        "event_key": "gamc5f0348efd",
+        "official_start_eastern": "2026-09-29T17:45:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Away vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2abbf2378c9015654250",
+        "source": {
+          "publisher_key_hash": "b5645f78df4c1404e799",
+          "producer_key_hash": "f17f2f060df765d3b615",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        },
+        "direct_provider_slots": [
+          1028
+        ],
+        "same_source_candidate_slots": [
+          1028
+        ]
+      },
+      {
+        "event_key": "gam45b4df39a0",
+        "official_start_eastern": "2026-09-29T19:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Toombs County High School vs. Savannah Country Day School",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "9e021a9e02e9892a04f6",
+        "source": {
+          "publisher_key_hash": "baecbccb6262afa6f68a",
+          "producer_key_hash": "0ea4a01bbf37daea47b4",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        },
+        "direct_provider_slots": [],
+        "same_source_candidate_slots": [
+          3572
+        ]
+      }
+    ]
+  }
+}
