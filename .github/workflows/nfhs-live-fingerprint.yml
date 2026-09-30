@@ -6,15 +6,15 @@ on:
       target_event_id:
         description: "Official NFHS event ID"
         required: false
-        default: "gam015745122d"
+        default: "gam0afdf9a583"
       start_slot:
         description: "First provider NFHS slot to probe"
         required: false
-        default: "3500"
+        default: "3353"
       end_slot:
         description: "Last provider NFHS slot to probe"
         required: false
-        default: "3650"
+        default: "3405"
 
 permissions:
   contents: write
