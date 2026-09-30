@@ -695,6 +695,129 @@ async function probeSearchApiControls() {
   return out;
 }
 
+
+function encodeSearchCursor(startIso, key = "") {
+  const dt = DateTime.fromISO(startIso, { setZone: true });
+  if (!dt.isValid) return null;
+  const payload = {
+    version: 1,
+    sort: "start_time:desc|key.keyword:asc",
+    values: [dt.toMillis(), key]
+  };
+  return Buffer.from(JSON.stringify(payload), "utf8").toString("base64");
+}
+
+async function probeTargetDateCursor(strongRows) {
+  const targetIso = "2026-09-29T21:05:00.000Z";
+  const cursor = encodeSearchCursor(targetIso, "");
+  const known = strongRows
+    .filter(x => x?.unity?.event_key)
+    .map(x => ({
+      provider_nfhs_number: x.provider.provider_nfhs_number,
+      stream_id: x.provider.stream_id,
+      event_key: x.unity.event_key,
+      official_start: x.best_match?.broadcast_start || x.best_match?.event_start || null
+    }))
+    .sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+
+  try {
+    const data = await fetchJson(
+      `${SEARCH_BASE}/v3/search/events?size=500&cursor=${encodeURIComponent(cursor)}`,
+      30000
+    );
+
+    const items = Array.isArray(data?.items) ? data.items : [];
+    const eventOrder = items.map((event, index) => ({
+      index,
+      event_key: event?.key || null,
+      start_time: event?.start_time || null,
+      sport: event?.sport || null,
+      publisher_slugs: Array.isArray(event?.publishers)
+        ? event.publishers.map(p => p?.slug).filter(Boolean).slice(0, 3)
+        : []
+    }));
+
+    const pos = new Map(eventOrder.filter(x => x.event_key).map(x => [x.event_key, x.index]));
+    const found = known
+      .map(x => ({ ...x, feed_index: pos.has(x.event_key) ? pos.get(x.event_key) : null }))
+      .filter(x => x.feed_index !== null);
+
+    const offsets = found.map(x => x.provider_nfhs_number - x.feed_index);
+    const offsetCounts = {};
+    for (const off of offsets) offsetCounts[off] = (offsetCounts[off] || 0) + 1;
+
+    let bestOffset = null;
+    let bestCount = 0;
+    for (const [off, count] of Object.entries(offsetCounts)) {
+      if (count > bestCount) {
+        bestOffset = Number(off);
+        bestCount = count;
+      }
+    }
+
+    let adjacentGapAgreement = null;
+    if (found.length >= 2) {
+      const byProvider = [...found].sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+      let sameGap = 0;
+      let total = 0;
+      const pairs = [];
+
+      for (let i = 1; i < byProvider.length; i++) {
+        const a = byProvider[i - 1];
+        const b = byProvider[i];
+        const providerGap = b.provider_nfhs_number - a.provider_nfhs_number;
+        const feedGap = b.feed_index - a.feed_index;
+        total++;
+        if (providerGap === feedGap) sameGap++;
+        pairs.push({
+          from_event: a.event_key,
+          to_event: b.event_key,
+          provider_gap: providerGap,
+          feed_gap: feedGap,
+          gap_difference: providerGap - feedGap
+        });
+      }
+
+      adjacentGapAgreement = {
+        exact_gap_matches: sameGap,
+        total_pairs: total,
+        percent: total ? Number((sameGap / total * 100).toFixed(2)) : null,
+        pairs
+      };
+    }
+
+    return {
+      ok: true,
+      target_cursor_start: targetIso,
+      returned_start: data?.start ?? null,
+      returned_size: data?.size ?? null,
+      returned_total: data?.total ?? null,
+      returned_cursor_decoded: decodeCursor(data?.cursor),
+      first_event: eventOrder[0] || null,
+      last_event: eventOrder.at(-1) || null,
+      known_matches_found: found.length,
+      known_matches_total: known.length,
+      dominant_provider_minus_feed_index_offset: bestOffset,
+      dominant_offset_support: bestCount,
+      offset_counts: offsetCounts,
+      adjacent_gap_agreement: adjacentGapAgreement,
+      known_positions: found,
+      target_window_events: eventOrder.filter(x => {
+        const t = DateTime.fromISO(x.start_time || "", { setZone: true });
+        return t.isValid &&
+          t >= DateTime.fromISO("2026-09-29T19:00:00.000Z") &&
+          t <= DateTime.fromISO("2026-09-29T21:05:00.000Z");
+      })
+    };
+  } catch (err) {
+    return {
+      ok: false,
+      target_cursor_start: targetIso,
+      error: String(err?.message || err).slice(0, 500)
+    };
+  }
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -819,6 +942,7 @@ async function main() {
   const officialFeedProbe = await probeOfficialFeed(strongRows);
   const unityFleetFeeds = await probeUnityFleetFeeds(strongRows);
   const searchApiControls = await probeSearchApiControls();
+  const targetDateCursorProbe = await probeTargetDateCursor(strongRows);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -864,7 +988,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-6",
+    diagnostic_version: "deep-link-7",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -898,6 +1022,7 @@ async function main() {
     official_feed_probe: officialFeedProbe,
     unity_fleet_feed_probe: unityFleetFeeds,
     search_api_control_probe: searchApiControls,
+    target_date_cursor_probe: targetDateCursorProbe,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
