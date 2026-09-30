@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:34:58.814Z",
+  "generated_at": "2026-09-30T14:41:15.696Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-10",
+  "diagnostic_version": "deep-link-11",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
-      "total": 1498833,
+      "total": 1498874,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498833,
+      "total": 1498874,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498833,
+    "returned_total": 1498874,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -18497,6 +18497,1752 @@
           "text_score": 0.4357
         },
         "strong_match": false
+      }
+    ]
+  },
+  "provider_only_resolution_probe": {
+    "provider_only_rows_tested": 26,
+    "strongly_resolved": 16,
+    "unresolved": 10,
+    "strongly_resolved_to_different_official_time": 16,
+    "strongly_resolved_to_four_pm_official_only_event": 0,
+    "different_time_rows": [
+      {
+        "provider_nfhs_number": 3414,
+        "stream_id": 2066898,
+        "provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Bosque",
+          "West Las Vegas",
+          "Bosque West Las"
+        ],
+        "search_attempts": [
+          {
+            "term": "Bosque",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "West Las Vegas",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Bosque West Las",
+            "ok": true,
+            "item_count": 2
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam26ad3df210",
+          "sport": "Volleyball",
+          "broadcast_start": "2025-08-22T00:00:00.000Z",
+          "event_start": "2025-08-22T00:00:00.000Z",
+          "official_start": "2025-08-22T00:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 581520,
+          "publisher_slug": "bosque-school-albuquerque-nm",
+          "association": "NMAA",
+          "broadcast_subheadline": "West Las Vegas High School vs. Bosque School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3420,
+        "stream_id": 2066892,
+        "provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Scarborough",
+          "Gorham",
+          "Scarborough Gorham"
+        ],
+        "search_attempts": [
+          {
+            "term": "Scarborough",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Gorham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Scarborough Gorham",
+            "ok": true,
+            "item_count": 20
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamddbed6035d",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-10T16:00:00.000Z",
+          "event_start": "2026-10-10T16:00:00.000Z",
+          "official_start": "2026-10-10T16:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 15600,
+          "publisher_slug": "gorham-high-school-gorham-me",
+          "association": "MPA",
+          "broadcast_subheadline": "Scarborough High School vs. Gorham High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3431,
+        "stream_id": 2066881,
+        "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Whitinsville Christian",
+          "Northbridge",
+          "Whitinsville Christian Northbridge"
+        ],
+        "search_attempts": [
+          {
+            "term": "Whitinsville Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Northbridge",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Whitinsville Christian Northbridge",
+            "ok": true,
+            "item_count": 6
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam467ad73e86",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-17T19:00:00.000Z",
+          "event_start": "2026-10-17T19:00:00.000Z",
+          "official_start": "2026-10-17T19:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 25860,
+          "publisher_slug": "northbridge-high-school-whitinsville-ma",
+          "association": "MIAA",
+          "broadcast_subheadline": "Whitinsville Christian High School vs. Northbridge High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3441,
+        "stream_id": 2066871,
+        "provider_title": "NFHS Network 3441: Bethany Community School vs. Clover Garden School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Bethany Community",
+          "Clover Garden",
+          "Bethany Community Clover Garden"
+        ],
+        "search_attempts": [
+          {
+            "term": "Bethany Community",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Clover Garden",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Bethany Community Clover Garden",
+            "ok": true,
+            "item_count": 10
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam2cba74359b",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-25T23:01:00.000Z",
+          "event_start": "2026-09-25T23:01:00.000Z",
+          "official_start": "2026-09-25T23:01:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 5579,
+          "publisher_slug": "bethany-community-school-summerfield-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Clover Garden School vs. Bethany Community School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3462,
+        "stream_id": 2066850,
+        "provider_title": "NFHS Network 3462: Westchester Country Day School vs. High Point Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Westchester Country Day",
+          "High Point Christian Academy",
+          "Westchester Country High Point"
+        ],
+        "search_attempts": [
+          {
+            "term": "Westchester Country Day",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "High Point Christian Academy",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Westchester Country High Point",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam0a09d17636",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-14T22:00:00.000Z",
+          "event_start": "2026-09-14T22:00:00.000Z",
+          "official_start": "2026-09-14T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 21480,
+          "publisher_slug": "westchester-country-day-school-high-point-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "High Point Christian Academy vs. Westchester Country Day School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Penns Manor Area",
+          "Cambria Heights",
+          "Penns Manor Cambria Heights"
+        ],
+        "search_attempts": [
+          {
+            "term": "Penns Manor Area",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Cambria Heights",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Penns Manor Cambria Heights",
+            "ok": true,
+            "item_count": 10
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam2ff3581d14",
+          "sport": "Volleyball",
+          "broadcast_start": "2025-09-23T23:00:00.000Z",
+          "event_start": "2025-09-23T23:00:00.000Z",
+          "official_start": "2025-09-23T23:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 534060,
+          "publisher_slug": "penns-manor-area-high-school-clymer-pa",
+          "association": "PIAA",
+          "broadcast_subheadline": "Cambria Heights High School vs. Penns Manor Area High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3524,
+        "stream_id": 2066788,
+        "provider_title": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Broughton",
+          "Athens Drive",
+          "Broughton Athens Drive"
+        ],
+        "search_attempts": [
+          {
+            "term": "Broughton",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Athens Drive",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Broughton Athens Drive",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam45d1d74328",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-14T22:00:00.000Z",
+          "event_start": "2026-09-14T22:00:00.000Z",
+          "official_start": "2026-09-14T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 21480,
+          "publisher_slug": "broughton-needham-high-school-raleigh-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Athens Drive High School vs. Broughton High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Grove Christian",
+          "Carmel",
+          "Grove Christian Carmel"
+        ],
+        "search_attempts": [
+          {
+            "term": "Grove Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Carmel",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Grove Christian Carmel",
+            "ok": true,
+            "item_count": 22
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam3ba7a342c5",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-29T22:50:00.000Z",
+          "event_start": "2026-09-29T22:50:00.000Z",
+          "official_start": "2026-09-29T22:50:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 170,
+          "publisher_slug": "carmel-school-ruther-glen-va",
+          "association": "VISAA",
+          "broadcast_subheadline": "Grove Christian School vs. Carmel School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3539,
+        "stream_id": 2066772,
+        "provider_title": "NFHS Network 3539: Pelham High School vs. Kearsarge Regional High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Pelham",
+          "Kearsarge Regional",
+          "Pelham Kearsarge Regional"
+        ],
+        "search_attempts": [
+          {
+            "term": "Pelham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Kearsarge Regional",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Pelham Kearsarge Regional",
+            "ok": true,
+            "item_count": 3
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam801804ae22",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-16T20:00:00.000Z",
+          "event_start": "2026-10-16T20:00:00.000Z",
+          "official_start": "2026-10-16T20:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 24480,
+          "publisher_slug": "kearsarge-regional-high-school-sutton-nh",
+          "association": "NHIAA",
+          "broadcast_subheadline": "Pelham High School vs. Kearsarge Regional High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Away",
+          "Saint Stephen's Episcopal",
+          "Away Saint Stephen's"
+        ],
+        "search_attempts": [
+          {
+            "term": "Away",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Saint Stephen's Episcopal",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Away Saint Stephen's",
+            "ok": true,
+            "item_count": 19
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam5d515852ce",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-24T20:30:00.000Z",
+          "event_start": "2026-09-24T20:30:00.000Z",
+          "official_start": "2026-09-24T20:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 7170,
+          "publisher_slug": "saint-stephens-episcopal-school-bradenton-fl",
+          "association": "FHSAA",
+          "broadcast_subheadline": "Away vs. Saint Stephen's Episcopal School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3560,
+        "stream_id": 2066750,
+        "provider_title": "NFHS Network 3560: Gorham High School vs. Windham High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Gorham",
+          "Windham",
+          "Gorham Windham"
+        ],
+        "search_attempts": [
+          {
+            "term": "Gorham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Windham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Gorham Windham",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamfbc8ff38f2",
+          "sport": "Soccer",
+          "broadcast_start": "2026-09-22T22:00:00.000Z",
+          "event_start": "2026-09-22T22:00:00.000Z",
+          "official_start": "2026-09-22T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 9960,
+          "publisher_slug": "gorham-high-school-gorham-me",
+          "association": "MPA",
+          "broadcast_subheadline": "Windham High School vs. Gorham High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3566,
+        "stream_id": 2066743,
+        "provider_title": "NFHS Network 3566: Oak Level Baptist Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Oak Level Baptist Academy"
+        ],
+        "search_attempts": [
+          {
+            "term": "Oak Level Baptist Academy",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam6ea6506e07",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-10-06T22:00:00.000Z",
+          "event_start": "2026-10-06T22:00:00.000Z",
+          "official_start": "2026-10-06T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 10200,
+          "publisher_slug": "oak-level-baptist-academy-stokesdale-nc",
+          "association": null,
+          "broadcast_subheadline": "Oak Level Baptist Academy",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Camden County",
+          "Savannah Country Day",
+          "Camden County Savannah Country"
+        ],
+        "search_attempts": [
+          {
+            "term": "Camden County",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Savannah Country Day",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Camden County Savannah Country",
+            "ok": true,
+            "item_count": 1
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam3a5725b205",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-29T21:00:00.000Z",
+          "event_start": "2026-09-29T21:00:00.000Z",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 60,
+          "publisher_slug": "savannah-country-day-school-savannah-ga",
+          "association": "GHSA",
+          "broadcast_subheadline": "Camden County High School vs. Savannah Country Day School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3573,
+        "stream_id": 2066736,
+        "provider_title": "NFHS Network 3573: Gaston Day School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Gaston Day"
+        ],
+        "search_attempts": [
+          {
+            "term": "Gaston Day",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gama883a027c0",
+          "sport": "Soccer",
+          "broadcast_start": "2027-04-22T21:30:00.000Z",
+          "event_start": "2027-04-22T21:30:00.000Z",
+          "official_start": "2027-04-22T21:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 295290,
+          "publisher_slug": "gaston-day-school-gastonia-nc",
+          "association": "NCISAA",
+          "broadcast_subheadline": "Away vs. Gaston Day School",
+          "text_score": 0.9,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3577,
+        "stream_id": 2066731,
+        "provider_title": "NFHS Network 3577: Northern Nash High School vs. Southern Wayne High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Northern Nash",
+          "Southern Wayne",
+          "Northern Nash Southern Wayne"
+        ],
+        "search_attempts": [
+          {
+            "term": "Northern Nash",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Southern Wayne",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Northern Nash Southern Wayne",
+            "ok": true,
+            "item_count": 13
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam95669dff7f",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-03T21:00:00.000Z",
+          "event_start": "2026-09-03T21:00:00.000Z",
+          "official_start": "2026-09-03T21:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 37380,
+          "publisher_slug": "northern-nash-high-school-rocky-mount-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Southern Wayne High School vs. Northern Nash High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3606,
+        "stream_id": 2066700,
+        "provider_title": "NFHS Network 3606: Godfrey-Lee High School vs. Zion Christian School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Godfrey-Lee",
+          "Zion Christian",
+          "Godfrey-Lee Zion Christian"
+        ],
+        "search_attempts": [
+          {
+            "term": "Godfrey-Lee",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Zion Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Godfrey-Lee Zion Christian",
+            "ok": true,
+            "item_count": 14
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamd0cff25a1a",
+          "sport": "Soccer",
+          "broadcast_start": "2025-04-15T21:15:00.000Z",
+          "event_start": "2025-04-15T21:15:00.000Z",
+          "official_start": "2025-04-15T21:15:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 766005,
+          "publisher_slug": "lee-high-school-wyoming-mi",
+          "association": "MHSAA",
+          "broadcast_subheadline": "Zion Christian School vs. Godfrey-Lee High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      }
+    ],
+    "rescued_four_pm_rows": [],
+    "rows": [
+      {
+        "provider_nfhs_number": 3414,
+        "stream_id": 2066898,
+        "provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Bosque",
+          "West Las Vegas",
+          "Bosque West Las"
+        ],
+        "search_attempts": [
+          {
+            "term": "Bosque",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "West Las Vegas",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Bosque West Las",
+            "ok": true,
+            "item_count": 2
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam26ad3df210",
+          "sport": "Volleyball",
+          "broadcast_start": "2025-08-22T00:00:00.000Z",
+          "event_start": "2025-08-22T00:00:00.000Z",
+          "official_start": "2025-08-22T00:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 581520,
+          "publisher_slug": "bosque-school-albuquerque-nm",
+          "association": "NMAA",
+          "broadcast_subheadline": "West Las Vegas High School vs. Bosque School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3420,
+        "stream_id": 2066892,
+        "provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Scarborough",
+          "Gorham",
+          "Scarborough Gorham"
+        ],
+        "search_attempts": [
+          {
+            "term": "Scarborough",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Gorham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Scarborough Gorham",
+            "ok": true,
+            "item_count": 20
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamddbed6035d",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-10T16:00:00.000Z",
+          "event_start": "2026-10-10T16:00:00.000Z",
+          "official_start": "2026-10-10T16:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 15600,
+          "publisher_slug": "gorham-high-school-gorham-me",
+          "association": "MPA",
+          "broadcast_subheadline": "Scarborough High School vs. Gorham High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3430,
+        "stream_id": 2066882,
+        "provider_title": "NFHS Network 3430: Multi-team Event Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Multi-team Event"
+        ],
+        "search_attempts": [
+          {
+            "term": "Multi-team Event",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam3c832a4638",
+          "sport": "Basketball",
+          "broadcast_start": "2027-05-22T17:00:00.000Z",
+          "event_start": "2027-05-22T17:00:00.000Z",
+          "official_start": "2027-05-22T17:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 338220,
+          "publisher_slug": "thunderridge-high-school-highlands-ranch-co",
+          "association": "CHSAA",
+          "broadcast_subheadline": "Multi-team Event",
+          "text_score": 0.97,
+          "sport_match": false,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3431,
+        "stream_id": 2066881,
+        "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Whitinsville Christian",
+          "Northbridge",
+          "Whitinsville Christian Northbridge"
+        ],
+        "search_attempts": [
+          {
+            "term": "Whitinsville Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Northbridge",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Whitinsville Christian Northbridge",
+            "ok": true,
+            "item_count": 6
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam467ad73e86",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-17T19:00:00.000Z",
+          "event_start": "2026-10-17T19:00:00.000Z",
+          "official_start": "2026-10-17T19:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 25860,
+          "publisher_slug": "northbridge-high-school-whitinsville-ma",
+          "association": "MIAA",
+          "broadcast_subheadline": "Whitinsville Christian High School vs. Northbridge High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3439,
+        "stream_id": 2066873,
+        "provider_title": "NFHS Network 3439: Granby Memorial High School vs. Canton High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Granby Memorial",
+          "Canton",
+          "Granby Memorial Canton"
+        ],
+        "search_attempts": [
+          {
+            "term": "Granby Memorial",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Canton",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Granby Memorial Canton",
+            "ok": true,
+            "item_count": 14
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam5f6869b38b",
+          "sport": "Volleyball",
+          "broadcast_start": "2024-09-26T22:00:00.000Z",
+          "event_start": "2024-09-26T22:00:00.000Z",
+          "official_start": "2024-09-26T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 1055400,
+          "publisher_slug": "canton-high-school-canton-ct",
+          "association": "CIAC",
+          "broadcast_subheadline": "Canton High School vs. Granby Memorial High School",
+          "text_score": 1,
+          "sport_match": false,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3441,
+        "stream_id": 2066871,
+        "provider_title": "NFHS Network 3441: Bethany Community School vs. Clover Garden School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Bethany Community",
+          "Clover Garden",
+          "Bethany Community Clover Garden"
+        ],
+        "search_attempts": [
+          {
+            "term": "Bethany Community",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Clover Garden",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Bethany Community Clover Garden",
+            "ok": true,
+            "item_count": 10
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam2cba74359b",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-25T23:01:00.000Z",
+          "event_start": "2026-09-25T23:01:00.000Z",
+          "official_start": "2026-09-25T23:01:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 5579,
+          "publisher_slug": "bethany-community-school-summerfield-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Clover Garden School vs. Bethany Community School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3442,
+        "stream_id": 2066870,
+        "provider_title": "NFHS Network 3442: Aquinas Academy of Pittsburgh vs. Penn-Trafford High School Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Aquinas Academy of Pittsburgh",
+          "Penn-Trafford",
+          "Aquinas Academy Penn-Trafford"
+        ],
+        "search_attempts": [
+          {
+            "term": "Aquinas Academy of Pittsburgh",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Penn-Trafford",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Aquinas Academy Penn-Trafford",
+            "ok": true,
+            "item_count": 0
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam05fc3a4de1",
+          "sport": "Field Hockey",
+          "broadcast_start": "2026-10-20T22:00:00.000Z",
+          "event_start": "2026-10-20T22:00:00.000Z",
+          "official_start": "2026-10-20T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 30360,
+          "publisher_slug": "penntrafford-high-school-harrison-city-pa",
+          "association": "WPIAL",
+          "broadcast_subheadline": "Away vs. Penn-Trafford High School",
+          "text_score": 0.5667,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3453,
+        "stream_id": 2066859,
+        "provider_title": "NFHS Network 3453: Away vs. Springfield High School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Away",
+          "Springfield",
+          "Away Springfield"
+        ],
+        "search_attempts": [
+          {
+            "term": "Away",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Springfield",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Away Springfield",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam515f31e972",
+          "sport": "Soccer",
+          "broadcast_start": "2028-04-15T17:00:00.000Z",
+          "event_start": "2028-04-15T17:00:00.000Z",
+          "official_start": "2028-04-15T17:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 811980,
+          "publisher_slug": "williamsville-high-school-williamsville-il",
+          "association": "IHSA",
+          "broadcast_subheadline": "Springfield High School vs. Williamsville High School",
+          "text_score": 0.45,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3462,
+        "stream_id": 2066850,
+        "provider_title": "NFHS Network 3462: Westchester Country Day School vs. High Point Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Westchester Country Day",
+          "High Point Christian Academy",
+          "Westchester Country High Point"
+        ],
+        "search_attempts": [
+          {
+            "term": "Westchester Country Day",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "High Point Christian Academy",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Westchester Country High Point",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam0a09d17636",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-14T22:00:00.000Z",
+          "event_start": "2026-09-14T22:00:00.000Z",
+          "official_start": "2026-09-14T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 21480,
+          "publisher_slug": "westchester-country-day-school-high-point-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "High Point Christian Academy vs. Westchester Country Day School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3468,
+        "stream_id": 2066844,
+        "provider_title": "NFHS Network 3468: Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Emmanuel Christian Academy",
+          "Watkinson",
+          "Emmanuel Christian Watkinson"
+        ],
+        "search_attempts": [
+          {
+            "term": "Emmanuel Christian Academy",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Watkinson",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Emmanuel Christian Watkinson",
+            "ok": true,
+            "item_count": 0
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam4a13fddd04",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-14T19:45:00.000Z",
+          "event_start": "2026-10-14T19:45:00.000Z",
+          "official_start": "2026-10-14T19:45:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 21585,
+          "publisher_slug": "watkinson-school-hartford-ct",
+          "association": null,
+          "broadcast_subheadline": "Christian Heritage School vs. Watkinson School",
+          "text_score": 0.5867,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3473,
+        "stream_id": 2066839,
+        "provider_title": "NFHS Network 3473: Meridian High School vs. Lake Braddock High School Varsity Girls Cross Country @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Meridian",
+          "Lake Braddock",
+          "Meridian Lake Braddock"
+        ],
+        "search_attempts": [
+          {
+            "term": "Meridian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Lake Braddock",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Meridian Lake Braddock",
+            "ok": true,
+            "item_count": 0
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam3b8cff5b87",
+          "sport": "Basketball",
+          "broadcast_start": "2027-02-01T22:45:00.000Z",
+          "event_start": "2027-02-01T22:45:00.000Z",
+          "official_start": "2027-02-01T22:45:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 180165,
+          "publisher_slug": "lake-braddock-high-school-burke-va",
+          "association": "VHSL",
+          "broadcast_subheadline": "C G Woodson High School vs. Lake Braddock High School",
+          "text_score": 0.5667,
+          "sport_match": false,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3483,
+        "stream_id": 2066829,
+        "provider_title": "NFHS Network 3483: Cornwall Central High School vs. Warwick Valley High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Cornwall Central",
+          "Warwick Valley",
+          "Cornwall Central Warwick Valley"
+        ],
+        "search_attempts": [
+          {
+            "term": "Cornwall Central",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Warwick Valley",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Cornwall Central Warwick Valley",
+            "ok": true,
+            "item_count": 15
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gam10c695e212",
+          "sport": "Soccer",
+          "broadcast_start": "2025-11-04T00:30:00.000Z",
+          "event_start": "2025-11-04T00:30:00.000Z",
+          "official_start": "2025-11-04T00:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 474930,
+          "publisher_slug": "nysphsaasix",
+          "association": "NYSPHSAASIX",
+          "broadcast_subheadline": "Warwick vs Cornwall",
+          "text_score": 0.85,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Penns Manor Area",
+          "Cambria Heights",
+          "Penns Manor Cambria Heights"
+        ],
+        "search_attempts": [
+          {
+            "term": "Penns Manor Area",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Cambria Heights",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Penns Manor Cambria Heights",
+            "ok": true,
+            "item_count": 10
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam2ff3581d14",
+          "sport": "Volleyball",
+          "broadcast_start": "2025-09-23T23:00:00.000Z",
+          "event_start": "2025-09-23T23:00:00.000Z",
+          "official_start": "2025-09-23T23:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 534060,
+          "publisher_slug": "penns-manor-area-high-school-clymer-pa",
+          "association": "PIAA",
+          "broadcast_subheadline": "Cambria Heights High School vs. Penns Manor Area High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3524,
+        "stream_id": 2066788,
+        "provider_title": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Broughton",
+          "Athens Drive",
+          "Broughton Athens Drive"
+        ],
+        "search_attempts": [
+          {
+            "term": "Broughton",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Athens Drive",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Broughton Athens Drive",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam45d1d74328",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-14T22:00:00.000Z",
+          "event_start": "2026-09-14T22:00:00.000Z",
+          "official_start": "2026-09-14T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 21480,
+          "publisher_slug": "broughton-needham-high-school-raleigh-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Athens Drive High School vs. Broughton High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3533,
+        "stream_id": 2066778,
+        "provider_title": "NFHS Network 3533: Chesapeake High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Chesapeake"
+        ],
+        "search_attempts": [
+          {
+            "term": "Chesapeake",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gamdaf04c124b",
+          "sport": "Basketball",
+          "broadcast_start": "2027-02-08T21:00:00.000Z",
+          "event_start": "2027-02-08T21:00:00.000Z",
+          "official_start": "2027-02-08T21:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 190140,
+          "publisher_slug": "dundalk-high-school-baltimore-md",
+          "association": "MPSSAA",
+          "broadcast_subheadline": "Chesapeake High School",
+          "text_score": 0.97,
+          "sport_match": false,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Grove Christian",
+          "Carmel",
+          "Grove Christian Carmel"
+        ],
+        "search_attempts": [
+          {
+            "term": "Grove Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Carmel",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Grove Christian Carmel",
+            "ok": true,
+            "item_count": 22
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam3ba7a342c5",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-29T22:50:00.000Z",
+          "event_start": "2026-09-29T22:50:00.000Z",
+          "official_start": "2026-09-29T22:50:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 170,
+          "publisher_slug": "carmel-school-ruther-glen-va",
+          "association": "VISAA",
+          "broadcast_subheadline": "Grove Christian School vs. Carmel School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3537,
+        "stream_id": 2066774,
+        "provider_title": "NFHS Network 3537: None Wilson Christian Chargers vs Fellowship Baptist @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "None Wilson Christian Chargers",
+          "Fellowship Baptist",
+          "None Wilson Fellowship Baptist"
+        ],
+        "search_attempts": [
+          {
+            "term": "None Wilson Christian Chargers",
+            "ok": true,
+            "item_count": 0
+          },
+          {
+            "term": "Fellowship Baptist",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "None Wilson Fellowship Baptist",
+            "ok": true,
+            "item_count": 0
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gamcec1af9310",
+          "sport": "Basketball",
+          "broadcast_start": "2027-01-11T23:30:00.000Z",
+          "event_start": "2027-01-11T23:30:00.000Z",
+          "official_start": "2027-01-11T23:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 149970,
+          "publisher_slug": "wilson-christian-academy-wilson-nc",
+          "association": null,
+          "broadcast_subheadline": "Fellowship Baptist Academy vs. Wilson Christian Academy",
+          "text_score": 0.7314,
+          "sport_match": null,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3539,
+        "stream_id": 2066772,
+        "provider_title": "NFHS Network 3539: Pelham High School vs. Kearsarge Regional High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Pelham",
+          "Kearsarge Regional",
+          "Pelham Kearsarge Regional"
+        ],
+        "search_attempts": [
+          {
+            "term": "Pelham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Kearsarge Regional",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Pelham Kearsarge Regional",
+            "ok": true,
+            "item_count": 3
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam801804ae22",
+          "sport": "Soccer",
+          "broadcast_start": "2026-10-16T20:00:00.000Z",
+          "event_start": "2026-10-16T20:00:00.000Z",
+          "official_start": "2026-10-16T20:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 24480,
+          "publisher_slug": "kearsarge-regional-high-school-sutton-nh",
+          "association": "NHIAA",
+          "broadcast_subheadline": "Pelham High School vs. Kearsarge Regional High School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Away",
+          "Saint Stephen's Episcopal",
+          "Away Saint Stephen's"
+        ],
+        "search_attempts": [
+          {
+            "term": "Away",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Saint Stephen's Episcopal",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Away Saint Stephen's",
+            "ok": true,
+            "item_count": 19
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam5d515852ce",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-24T20:30:00.000Z",
+          "event_start": "2026-09-24T20:30:00.000Z",
+          "official_start": "2026-09-24T20:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 7170,
+          "publisher_slug": "saint-stephens-episcopal-school-bradenton-fl",
+          "association": "FHSAA",
+          "broadcast_subheadline": "Away vs. Saint Stephen's Episcopal School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3560,
+        "stream_id": 2066750,
+        "provider_title": "NFHS Network 3560: Gorham High School vs. Windham High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Gorham",
+          "Windham",
+          "Gorham Windham"
+        ],
+        "search_attempts": [
+          {
+            "term": "Gorham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Windham",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Gorham Windham",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamfbc8ff38f2",
+          "sport": "Soccer",
+          "broadcast_start": "2026-09-22T22:00:00.000Z",
+          "event_start": "2026-09-22T22:00:00.000Z",
+          "official_start": "2026-09-22T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 9960,
+          "publisher_slug": "gorham-high-school-gorham-me",
+          "association": "MPA",
+          "broadcast_subheadline": "Windham High School vs. Gorham High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3566,
+        "stream_id": 2066743,
+        "provider_title": "NFHS Network 3566: Oak Level Baptist Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Oak Level Baptist Academy"
+        ],
+        "search_attempts": [
+          {
+            "term": "Oak Level Baptist Academy",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam6ea6506e07",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-10-06T22:00:00.000Z",
+          "event_start": "2026-10-06T22:00:00.000Z",
+          "official_start": "2026-10-06T22:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 10200,
+          "publisher_slug": "oak-level-baptist-academy-stokesdale-nc",
+          "association": null,
+          "broadcast_subheadline": "Oak Level Baptist Academy",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Camden County",
+          "Savannah Country Day",
+          "Camden County Savannah Country"
+        ],
+        "search_attempts": [
+          {
+            "term": "Camden County",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Savannah Country Day",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Camden County Savannah Country",
+            "ok": true,
+            "item_count": 1
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam3a5725b205",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-29T21:00:00.000Z",
+          "event_start": "2026-09-29T21:00:00.000Z",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 60,
+          "publisher_slug": "savannah-country-day-school-savannah-ga",
+          "association": "GHSA",
+          "broadcast_subheadline": "Camden County High School vs. Savannah Country Day School",
+          "text_score": 0.97,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3573,
+        "stream_id": 2066736,
+        "provider_title": "NFHS Network 3573: Gaston Day School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Gaston Day"
+        ],
+        "search_attempts": [
+          {
+            "term": "Gaston Day",
+            "ok": true,
+            "item_count": 25
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gama883a027c0",
+          "sport": "Soccer",
+          "broadcast_start": "2027-04-22T21:30:00.000Z",
+          "event_start": "2027-04-22T21:30:00.000Z",
+          "official_start": "2027-04-22T21:30:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 295290,
+          "publisher_slug": "gaston-day-school-gastonia-nc",
+          "association": "NCISAA",
+          "broadcast_subheadline": "Away vs. Gaston Day School",
+          "text_score": 0.9,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3577,
+        "stream_id": 2066731,
+        "provider_title": "NFHS Network 3577: Northern Nash High School vs. Southern Wayne High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Northern Nash",
+          "Southern Wayne",
+          "Northern Nash Southern Wayne"
+        ],
+        "search_attempts": [
+          {
+            "term": "Northern Nash",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Southern Wayne",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Northern Nash Southern Wayne",
+            "ok": true,
+            "item_count": 13
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gam95669dff7f",
+          "sport": "Volleyball",
+          "broadcast_start": "2026-09-03T21:00:00.000Z",
+          "event_start": "2026-09-03T21:00:00.000Z",
+          "official_start": "2026-09-03T21:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 37380,
+          "publisher_slug": "northern-nash-high-school-rocky-mount-nc",
+          "association": "NCHSAA",
+          "broadcast_subheadline": "Southern Wayne High School vs. Northern Nash High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3583,
+        "stream_id": 2066725,
+        "provider_title": "NFHS Network 3583: None BCS vs. Christ's Church Academy - Part 1 @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "None BCS",
+          "Christ's Church Academy - Part",
+          "None BCS Christ's Church"
+        ],
+        "search_attempts": [
+          {
+            "term": "None BCS",
+            "ok": true,
+            "item_count": 11
+          },
+          {
+            "term": "Christ's Church Academy - Part",
+            "ok": true,
+            "item_count": 0
+          },
+          {
+            "term": "None BCS Christ's Church",
+            "ok": true,
+            "item_count": 0
+          }
+        ],
+        "strong_resolution": false,
+        "best_match": {
+          "event_key": "gama83031dfaf",
+          "sport": "Basketball",
+          "broadcast_start": "2026-01-09T00:00:00.000Z",
+          "event_start": "2026-01-09T00:00:00.000Z",
+          "official_start": "2026-01-09T00:00:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 379920,
+          "publisher_slug": "lakeland-regional-high-school-wanaque-nj",
+          "association": "NJSIAA",
+          "broadcast_subheadline": "Bergen Arts and Science Charter School vs. Lakeland Regional High School",
+          "text_score": 0,
+          "sport_match": null,
+          "was_in_four_pm_official_only_set": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3606,
+        "stream_id": 2066700,
+        "provider_title": "NFHS Network 3606: Godfrey-Lee High School vs. Zion Christian School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "search_terms": [
+          "Godfrey-Lee",
+          "Zion Christian",
+          "Godfrey-Lee Zion Christian"
+        ],
+        "search_attempts": [
+          {
+            "term": "Godfrey-Lee",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Zion Christian",
+            "ok": true,
+            "item_count": 25
+          },
+          {
+            "term": "Godfrey-Lee Zion Christian",
+            "ok": true,
+            "item_count": 14
+          }
+        ],
+        "strong_resolution": true,
+        "best_match": {
+          "event_key": "gamd0cff25a1a",
+          "sport": "Soccer",
+          "broadcast_start": "2025-04-15T21:15:00.000Z",
+          "event_start": "2025-04-15T21:15:00.000Z",
+          "official_start": "2025-04-15T21:15:00.000Z",
+          "provider_start": "2026-09-29T16:00:00.000-04:00",
+          "minutes_apart": 766005,
+          "publisher_slug": "lee-high-school-wyoming-mi",
+          "association": "MHSAA",
+          "broadcast_subheadline": "Zion Christian School vs. Godfrey-Lee High School",
+          "text_score": 1,
+          "sport_match": true,
+          "was_in_four_pm_official_only_set": false
+        }
       }
     ]
   },
