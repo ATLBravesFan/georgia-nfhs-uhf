@@ -2961,6 +2961,114 @@ async function probeGeorgiaSourceLaneMappings(providerStreams) {
   };
 }
 
+
+async function probeWoodlawnRandallstownSequence() {
+  const terms = ["Randallstown Woodlawn", "Woodlawn High School", "Randallstown High School"];
+  const candidateMap = new Map();
+
+  for (const term of terms) {
+    try {
+      const search = await fetchJson(
+        `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(term)}&size=100`,
+        30000
+      );
+      for (const item of flattenSearchItems(search?.items || [])) {
+        const start = item.broadcast_start || item.event_start || "";
+        if (!String(start).startsWith("2026-09-29")) continue;
+
+        const text = [
+          item.broadcast_subheadline,
+          item.event_title,
+          item.publisher_name,
+          item.publisher_slug
+        ].filter(Boolean).join(" ");
+
+        if (!/randallstown|woodlawn/i.test(text)) continue;
+
+        const key = [
+          item.event_key || "",
+          item.broadcast_key || "",
+          start,
+          item.publisher_slug || ""
+        ].join("|");
+
+        candidateMap.set(key, item);
+      }
+    } catch {}
+  }
+
+  const rows = [...candidateMap.values()]
+    .sort((a, b) =>
+      String(a.broadcast_start || a.event_start || "").localeCompare(
+        String(b.broadcast_start || b.event_start || "")
+      )
+    );
+
+  const enriched = [];
+  for (const row of rows) {
+    const unity = await enrichUnity(row);
+    enriched.push({
+      event_key: row.event_key,
+      official_start: row.broadcast_start || row.event_start || null,
+      sport: row.sport || null,
+      subheadline: row.broadcast_subheadline || null,
+      publisher_slug: row.publisher_slug || null,
+      association: row.association || null,
+      source_signature_hash: sha20(safeSourceSignature(unity)),
+      source: unity && !unity.error ? {
+        publisher_key_hash: sha20(unity.publisher_key),
+        producer_key_hash: sha20(unity.producer_key),
+        ingest_point_fingerprint: unity.ingest_point_fingerprint || null
+      } : null
+    });
+  }
+
+  const staleBadminton = enriched.find(x => x.event_key === "gamb8ebe375ea") || null;
+  const clinch4 = {
+    event_key: "gamb8ad8195a3",
+    source_signature_hash: "75779017803d94b73a82"
+  };
+  const clinch5 = {
+    event_key: "gamc34e8e3bfe",
+    source_signature_hash: "75779017803d94b73a82"
+  };
+
+  const sameSourceAsBadminton = staleBadminton
+    ? enriched.filter(x =>
+        x.event_key !== staleBadminton.event_key &&
+        x.source_signature_hash &&
+        x.source_signature_hash === staleBadminton.source_signature_hash
+      )
+    : [];
+
+  const volleyballRows = enriched.filter(x =>
+    String(x.sport || "").toLowerCase() === "volleyball"
+  );
+
+  const laterVolleyballRows = volleyballRows.filter(x => {
+    const dt = DateTime.fromISO(x.official_start || "", { setZone: true }).setZone(EASTERN);
+    return dt.isValid && dt.hour >= 16;
+  });
+
+  return {
+    purpose:
+      "Check whether provider slot 3552's stale Randallstown/Woodlawn badminton title could have stayed on a Woodlawn/Randallstown source that later carried girls volleyball, instead of carrying Clinch/Brantley. This is a targeted falsification test.",
+    search_terms: terms,
+    matching_sep29_events: enriched.length,
+    stale_badminton_event: staleBadminton,
+    same_source_as_stale_badminton: sameSourceAsBadminton,
+    sep29_volleyball_events: volleyballRows,
+    sep29_later_volleyball_events: laterVolleyballRows,
+    stale_badminton_source_matches_clinch_4pm:
+      Boolean(staleBadminton?.source_signature_hash) &&
+      staleBadminton.source_signature_hash === clinch4.source_signature_hash,
+    stale_badminton_source_matches_clinch_5pm:
+      Boolean(staleBadminton?.source_signature_hash) &&
+      staleBadminton.source_signature_hash === clinch5.source_signature_hash,
+    rows: enriched
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -3102,6 +3210,7 @@ async function main() {
   );
   const allFourPmTitlesVsFullDay = await probeAllFourPmTitlesAgainstFullDay(provider.streams);
   const georgiaSourceLaneMappings = await probeGeorgiaSourceLaneMappings(provider.streams);
+  const woodlawnRandallstownSequence = await probeWoodlawnRandallstownSequence();
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3147,7 +3256,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-19",
+    diagnostic_version: "deep-link-20",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3193,6 +3302,7 @@ async function main() {
     same_day_provider_only_match_probe: sameDayProviderOnlyMatches,
     all_four_pm_titles_vs_full_day_probe: allFourPmTitlesVsFullDay,
     georgia_source_lane_mapping_probe: georgiaSourceLaneMappings,
+    woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3235,7 +3345,8 @@ async function main() {
       direct_matches: georgiaSourceLaneMappings.direct_matches,
       after_4pm_single_lane_candidates:
         georgiaSourceLaneMappings.after_4pm_single_lane_candidates
-    }
+    },
+    woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence
   };
 
   await fs.writeFile(
