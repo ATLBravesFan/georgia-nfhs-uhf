@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T13:37:26.625Z",
+  "generated_at": "2026-09-30T13:40:09.989Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-2",
+  "diagnostic_version": "deep-link-3",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -19,13 +19,39 @@
   },
   "summary": {
     "samples_tested": 41,
-    "search_api_successes": 0,
-    "strong_official_matches": 0,
-    "near_exact_metadata_matches": 0,
-    "strong_matches_with_unity_event": 0,
-    "provider_number_vs_official_start_pearson": null
+    "search_api_successes": 41,
+    "strong_official_matches": 15,
+    "near_exact_metadata_matches": 15,
+    "strong_matches_with_unity_event": 15,
+    "provider_number_vs_official_start_pearson": 0.501489
   },
-  "official_start_groups_to_provider_numbers": {},
+  "official_start_groups_to_provider_numbers": {
+    "2026-09-29T04:00:00.000Z": [
+      3329
+    ],
+    "2026-09-29T16:00:00.000Z": [
+      3343
+    ],
+    "2026-09-29T19:45:00.000Z": [
+      3378,
+      3386,
+      3395
+    ],
+    "2026-09-29T19:55:00.000Z": [
+      3403
+    ],
+    "2026-09-29T20:00:00.000Z": [
+      3411,
+      3427,
+      3436,
+      3452,
+      3477,
+      3493,
+      3501,
+      3550,
+      3596
+    ]
+  },
   "rows": [
     {
       "provider": {
@@ -37,8 +63,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236627
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamc90837e6b4",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T04:00:00.000Z",
+        "publisher_name": "HHSAA",
+        "publisher_slug": "keaau-high-school-keaau-hi",
+        "association": "HHSAA",
+        "broadcast_key": "bdc9e4364e778",
+        "broadcast_game_key": "gamc90837e6b4",
+        "broadcast_start": "2026-09-29T04:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Kealakehe High School vs. Kea'au High School",
+        "view_url": "http://www.nfhsnetwork.com/events/keaau-high-school-keaau-hi/gamc90837e6b4",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamc90837e6b4",
+        "local_start_time": "2026-09-28T18:00:00.000-10:00",
+        "state_name": "Hawaii",
+        "city": "Keaau",
+        "publisher_key": "pub9a2788d65b",
+        "publisher_name": "HHSAA: Kea'au High School, Keaau, HI",
+        "broadcast_key": "bdc9e4364e778",
+        "game_key": "gamc90837e6b4",
+        "status": "complete",
+        "pixellot_event_id": "6a7653196978625bf5c51bcb",
+        "pixellot_id": "5f689ba5a2b1312447456cec",
+        "pixellot_key": "pxl4dbf683c1f",
+        "producer_key": "pdc4a9eaa57a3",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -50,8 +113,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236623
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam111ed285b7",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2028-01-11T22:30:00.000Z",
+        "publisher_name": "MHSAA",
+        "publisher_slug": "hart-high-school-hart-mi",
+        "association": "MHSAA",
+        "broadcast_key": "bdc35e763e85c",
+        "broadcast_game_key": "gam111ed285b7",
+        "broadcast_start": "2028-01-11T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Fremont High School vs. Hart High School",
+        "view_url": "http://www.nfhsnetwork.com/events/hart-high-school-hart-mi/gam111ed285b7",
+        "text_score": 1,
+        "minutes_apart": 676140,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -63,8 +147,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236620
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 1,
+      "best_match": {
+        "event_key": "evteab09ef1f5",
+        "event_title": null,
+        "sport": null,
+        "event_start": "2026-09-29T16:00:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "ghsa",
+        "association": "GHSA",
+        "broadcast_key": "bdcb69d12f5e1",
+        "broadcast_game_key": null,
+        "broadcast_start": "2026-09-29T16:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "September 29th Episode",
+        "view_url": "http://www.nfhsnetwork.com/events/ghsa/evteab09ef1f5",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "evteab09ef1f5",
+        "local_start_time": "2026-09-29T12:00:00.000-04:00",
+        "state_name": "Georgia",
+        "city": "Atlanta",
+        "publisher_key": "30d48aaaaa",
+        "publisher_name": "GHSA: Georgia High School Association",
+        "broadcast_key": "bdcb69d12f5e1",
+        "game_key": null,
+        "status": "complete",
+        "pixellot_event_id": null,
+        "pixellot_id": null,
+        "pixellot_key": null,
+        "producer_key": "pdc3fa06ef699",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -76,8 +197,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236619
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam59655fe349",
+        "event_title": null,
+        "sport": "Football",
+        "event_start": "2026-10-31T20:00:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "kipp-atlanta-collegiate-atlanta-ga",
+        "association": "GHSA",
+        "broadcast_key": "bdc4edb853e01",
+        "broadcast_game_key": "gam59655fe349",
+        "broadcast_start": "2026-10-31T20:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Wesleyan School vs. KIPP Atlanta Collegiate",
+        "view_url": "http://www.nfhsnetwork.com/events/kipp-atlanta-collegiate-atlanta-ga/gam59655fe349",
+        "text_score": 1,
+        "minutes_apart": 46320,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -89,8 +231,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236614
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam4c1596a8b5",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-19T22:30:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "perryville-high-school-perryville-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdc6276470f04",
+        "broadcast_game_key": "gam4c1596a8b5",
+        "broadcast_start": "2027-01-19T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Rising Sun High School vs. Perryville High School",
+        "view_url": "http://www.nfhsnetwork.com/events/perryville-high-school-perryville-md/gam4c1596a8b5",
+        "text_score": 0.5867,
+        "minutes_apart": 161470,
+        "combined_score": 0.5867
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -102,8 +265,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236610
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam1b25c3f7b4",
+        "event_title": null,
+        "sport": "Soccer",
+        "event_start": "2026-09-29T21:00:00.000Z",
+        "publisher_name": "MIAA",
+        "publisher_slug": "doherty-memorial-high-school-worcester-ma",
+        "association": "MIAA",
+        "broadcast_key": "bdcc8e0db9b44",
+        "broadcast_game_key": "gam1b25c3f7b4",
+        "broadcast_start": "2026-09-29T21:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Shrewsbury High School vs. Doherty Memorial High School",
+        "view_url": "http://www.nfhsnetwork.com/events/doherty-memorial-high-school-worcester-ma/gam1b25c3f7b4",
+        "text_score": 0.97,
+        "minutes_apart": 90,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -115,8 +299,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236606
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamd10eea1985",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-02-13T00:30:00.000Z",
+        "publisher_name": "CHSAA",
+        "publisher_slug": "greeley-west-high-school-greeley-co",
+        "association": "CHSAA",
+        "broadcast_key": "bdc34986706e1",
+        "broadcast_game_key": "gamd10eea1985",
+        "broadcast_start": "2027-02-13T00:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Poudre High School vs. Greeley West High School",
+        "view_url": "http://www.nfhsnetwork.com/events/greeley-west-high-school-greeley-co/gamd10eea1985",
+        "text_score": 1,
+        "minutes_apart": 196125,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -128,8 +333,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236591
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam42f6a9cabe",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T19:45:00.000Z",
+        "publisher_name": "Tradition Preparatory High School, Port St. Lucie, FL",
+        "publisher_slug": "tradition-preparatory-high-school-port-st-lucie-fl",
+        "association": null,
+        "broadcast_key": "bdc285f60ab39",
+        "broadcast_game_key": "gam42f6a9cabe",
+        "broadcast_start": "2026-09-29T19:45:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Tradition Preparatory High School",
+        "view_url": "http://www.nfhsnetwork.com/events/tradition-preparatory-high-school-port-st-lucie-fl/gam42f6a9cabe",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam42f6a9cabe",
+        "local_start_time": "2026-09-29T15:45:00.000-04:00",
+        "state_name": "Florida",
+        "city": "Port St. Lucie",
+        "publisher_key": "pubf16e50a8c9",
+        "publisher_name": "Tradition Preparatory High School, Port St. Lucie, FL",
+        "broadcast_key": "bdc285f60ab39",
+        "game_key": "gam42f6a9cabe",
+        "status": "complete",
+        "pixellot_event_id": "6aba7c18bdc20d2163f5afc5",
+        "pixellot_id": "605aeca0dba9fca1648110a9",
+        "pixellot_key": "pxl7246b0d95e",
+        "producer_key": "pdc8ca81aeb0f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -141,8 +383,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236587
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam750b34bae4",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T19:45:00.000Z",
+        "publisher_name": "CIAC",
+        "publisher_slug": "naugatuck-high-school-naugatuck-ct",
+        "association": "CIAC",
+        "broadcast_key": "bdc1ad292e828",
+        "broadcast_game_key": "gam750b34bae4",
+        "broadcast_start": "2026-09-29T19:45:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Waterbury Career Academy vs. Naugatuck High School",
+        "view_url": "http://www.nfhsnetwork.com/events/naugatuck-high-school-naugatuck-ct/gam750b34bae4",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam750b34bae4",
+        "local_start_time": "2026-09-29T15:45:00.000-04:00",
+        "state_name": "Connecticut",
+        "city": "Naugatuck",
+        "publisher_key": "a5007a9866",
+        "publisher_name": "CIAC: Naugatuck High School, Naugatuck, CT",
+        "broadcast_key": "bdc1ad292e828",
+        "game_key": "gam750b34bae4",
+        "status": "complete",
+        "pixellot_event_id": "6a98405f9175897b10f5099e",
+        "pixellot_id": "5fd0e82e121757244b7f608d",
+        "pixellot_key": "pxl47d7d279bd",
+        "producer_key": "pdccea36d57da",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -154,8 +433,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236583
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamfa82b98af2",
+        "event_title": null,
+        "sport": "Soccer",
+        "event_start": "2026-09-29T19:45:00.000Z",
+        "publisher_name": "Riverside High School, Riverside, NJ",
+        "publisher_slug": "riverside-high-school-riverside-nj",
+        "association": null,
+        "broadcast_key": "bdc62e9b7d6c7",
+        "broadcast_game_key": "gamfa82b98af2",
+        "broadcast_start": "2026-09-29T19:45:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Audubon High School vs. Riverside High School",
+        "view_url": "http://www.nfhsnetwork.com/events/riverside-high-school-riverside-nj/gamfa82b98af2",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamfa82b98af2",
+        "local_start_time": "2026-09-29T15:45:00.000-04:00",
+        "state_name": "New Jersey",
+        "city": "Riverside",
+        "publisher_key": "951f0fe4e8",
+        "publisher_name": "Riverside High School, Riverside, NJ",
+        "broadcast_key": "bdc62e9b7d6c7",
+        "game_key": "gamfa82b98af2",
+        "status": "complete",
+        "pixellot_event_id": "6aa8440df2a2746fc0cedf5f",
+        "pixellot_id": "5fc61adfc605e25fd8a1a735",
+        "pixellot_key": "pxl503a6e3dd5",
+        "producer_key": "pdc7a793999f9",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -167,8 +483,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236579
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gama43ba13ce6",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T19:55:00.000Z",
+        "publisher_name": "NJSIAA",
+        "publisher_slug": "mount-saint-mary-academy-watchung-nj",
+        "association": "NJSIAA",
+        "broadcast_key": "bdc72e1ac8016",
+        "broadcast_game_key": "gama43ba13ce6",
+        "broadcast_start": "2026-09-29T19:55:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "North Hunterdon High School vs. Mount Saint Mary Academy",
+        "view_url": "http://www.nfhsnetwork.com/events/mount-saint-mary-academy-watchung-nj/gama43ba13ce6",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gama43ba13ce6",
+        "local_start_time": "2026-09-29T15:55:00.000-04:00",
+        "state_name": "New Jersey",
+        "city": "Watchung",
+        "publisher_key": "pubc63d5c51b4",
+        "publisher_name": "NJSIAA: Mount Saint Mary Academy, Watchung, NJ",
+        "broadcast_key": "bdc72e1ac8016",
+        "game_key": "gama43ba13ce6",
+        "status": "complete",
+        "pixellot_event_id": "6abaa0a83aa14744f98c0929",
+        "pixellot_id": "5f75d9927c47ca94dce9e9b8",
+        "pixellot_key": "pxl9d1c35d13e",
+        "producer_key": "pdc875a5d190c",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -180,8 +533,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236575
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 17,
+      "best_match": {
+        "event_key": "gam028a6b98b5",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MPA",
+        "publisher_slug": "messalonskee-high-school-oakland-me",
+        "association": "MPA",
+        "broadcast_key": "bdc38266452ad",
+        "broadcast_game_key": "gam028a6b98b5",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Hampden Academy vs. Messalonskee High School",
+        "view_url": "http://www.nfhsnetwork.com/events/messalonskee-high-school-oakland-me/gam028a6b98b5",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam028a6b98b5",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maine",
+        "city": "Oakland",
+        "publisher_key": "pubc28abc7af2",
+        "publisher_name": "MPA: Messalonskee High School, Oakland, ME",
+        "broadcast_key": "bdc38266452ad",
+        "game_key": "gam028a6b98b5",
+        "status": "complete",
+        "pixellot_event_id": "6a99aeb50b081128f21f226b",
+        "pixellot_id": "5f33ab21b57e630784325e67",
+        "pixellot_key": "pxl2c1713f3ab",
+        "producer_key": "pdc0f037be1e4",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -193,8 +583,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236571
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam554d8a387e",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-23T17:30:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "blessed-trinity-high-school-roswell-ga",
+        "association": "GHSA",
+        "broadcast_key": "bdc13eb84bd2a",
+        "broadcast_game_key": "gam554d8a387e",
+        "broadcast_start": "2027-01-23T17:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Mount Pisgah Christian School vs. Blessed Trinity Catholic High School",
+        "view_url": "http://www.nfhsnetwork.com/events/blessed-trinity-high-school-roswell-ga/gam554d8a387e",
+        "text_score": 0.675,
+        "minutes_apart": 166890,
+        "combined_score": 0.675
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -206,8 +617,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236567
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam0f59408b73",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MPA",
+        "publisher_slug": "biddeford-high-school-biddeford-me",
+        "association": "MPA",
+        "broadcast_key": "bdce5dc0280f4",
+        "broadcast_game_key": "gam0f59408b73",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Edward Little High School vs. Biddeford High School",
+        "view_url": "http://www.nfhsnetwork.com/events/biddeford-high-school-biddeford-me/gam0f59408b73",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam0f59408b73",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maine",
+        "city": "Biddeford",
+        "publisher_key": "24b17c4c36",
+        "publisher_name": "MPA: Biddeford High School, Biddeford, ME",
+        "broadcast_key": "bdce5dc0280f4",
+        "game_key": "gam0f59408b73",
+        "status": "complete",
+        "pixellot_event_id": "6a5675f6f223aa6c640f275a",
+        "pixellot_id": "5f0c4e14689f326db4f2839b",
+        "pixellot_key": "pxlb4b95fdd13",
+        "producer_key": "pdc64ad7873fe",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -219,8 +667,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236562
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam189de43d85",
+        "event_title": null,
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "queen-annes-high-school-centreville-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdcbc12ce76e9",
+        "broadcast_game_key": "gam189de43d85",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "James M. Bennett High School vs. Queen Anne's High School",
+        "view_url": "http://www.nfhsnetwork.com/events/queen-annes-high-school-centreville-md/gam189de43d85",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam189de43d85",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Centreville",
+        "publisher_key": "pub092e0336ce",
+        "publisher_name": "MPSSAA: Queen Anne's High School, Centreville, MD",
+        "broadcast_key": "bdcbc12ce76e9",
+        "game_key": "gam189de43d85",
+        "status": "complete",
+        "pixellot_event_id": "6a19c85d3039e01f9f7d186a",
+        "pixellot_id": "63be4f9c511c819a7e4a655f",
+        "pixellot_key": "pxl6f2304f6a2",
+        "producer_key": "pdc1e41bafb36",
+        "ingest_point_fingerprint": "48c2e48ec154080e9ac0",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -232,8 +717,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236558
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam915f2465b1",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-22T21:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "eastern-technical-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdc97ea3b8fe1",
+        "broadcast_game_key": "gam915f2465b1",
+        "broadcast_start": "2027-01-22T21:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Dundalk High School vs. Eastern Technical High School",
+        "view_url": "http://www.nfhsnetwork.com/events/eastern-technical-high-school-baltimore-md/gam915f2465b1",
+        "text_score": 1,
+        "minutes_apart": 165660,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -245,8 +751,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236554
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam2a81770b90",
+        "event_title": null,
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MIAA",
+        "publisher_slug": "bridgewaterraynham-regional-high-school-bridgewater-ma",
+        "association": "MIAA",
+        "broadcast_key": "bdc2237241838",
+        "broadcast_game_key": "gam2a81770b90",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Barnstable High School vs. Bridgewater-Raynham Reg High School",
+        "view_url": "http://www.nfhsnetwork.com/events/bridgewaterraynham-regional-high-school-bridgewater-ma/gam2a81770b90",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam2a81770b90",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Massachusetts",
+        "city": "BRIDGEWATER",
+        "publisher_key": "7a11537b01",
+        "publisher_name": "MIAA: Bridgewater-Raynham Reg High School, Bridgewater, MA",
+        "broadcast_key": "bdc2237241838",
+        "game_key": "gam2a81770b90",
+        "status": "complete",
+        "pixellot_event_id": "6a1dc4798032fc321a9c0fb8",
+        "pixellot_id": "618b800c325ca4a75988f950",
+        "pixellot_key": "pxlaeedfbaf7c",
+        "producer_key": "pdc13b352e94b",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -258,8 +801,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236552
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gama23a754d94",
+        "event_title": null,
+        "sport": "Flag Football",
+        "event_start": "2026-11-09T22:00:00.000Z",
+        "publisher_name": "Savannah-Chatham County Public School District, Savannah, GA",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "broadcast_key": "bdce1f2d2fe7c",
+        "broadcast_game_key": "gama23a754d94",
+        "broadcast_start": "2026-11-09T22:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Long County High School vs. Savannah Arts Academy",
+        "view_url": "http://www.nfhsnetwork.com/events/savannahchatham-county-public-school-district-savannah-ga/gama23a754d94",
+        "text_score": 0.675,
+        "minutes_apart": 59160,
+        "combined_score": 0.675
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -271,8 +835,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236550
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam11258a1eb9",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-15T22:30:00.000Z",
+        "publisher_name": "VHSL",
+        "publisher_slug": "first-colonial-high-school-virginia-beach-va",
+        "association": "VHSL",
+        "broadcast_key": "bdc03516d854e",
+        "broadcast_game_key": "gam11258a1eb9",
+        "broadcast_start": "2027-01-15T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Tallwood High School vs. First Colonial High School",
+        "view_url": "http://www.nfhsnetwork.com/events/first-colonial-high-school-virginia-beach-va/gam11258a1eb9",
+        "text_score": 0.97,
+        "minutes_apart": 155670,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -284,8 +869,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236546
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam9227672994",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-14T22:30:00.000Z",
+        "publisher_name": "OHSAA",
+        "publisher_slug": "emmanuel-christian-academy-springfield-oh",
+        "association": "OHSAA",
+        "broadcast_key": "bdc4e688a36b2",
+        "broadcast_game_key": "gam9227672994",
+        "broadcast_start": "2027-01-14T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Legacy Christian Academy High School vs. Emmanuel Christian Academy",
+        "view_url": "http://www.nfhsnetwork.com/events/emmanuel-christian-academy-springfield-oh/gam9227672994",
+        "text_score": 0.705,
+        "minutes_apart": 154230,
+        "combined_score": 0.705
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -297,8 +903,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236541
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam4a34445be4",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "FHSAA",
+        "publisher_slug": "olympia-hs-orlando-fl",
+        "association": "FHSAA",
+        "broadcast_key": "bdc954d01f191",
+        "broadcast_game_key": "gam4a34445be4",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Winter Park HS vs. Olympia High School",
+        "view_url": "http://www.nfhsnetwork.com/events/olympia-hs-orlando-fl/gam4a34445be4",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam4a34445be4",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Florida",
+        "city": "Orlando",
+        "publisher_key": "pub6b4d1f72a9",
+        "publisher_name": "FHSAA: Olympia High School, Orlando, FL",
+        "broadcast_key": "bdc954d01f191",
+        "game_key": "gam4a34445be4",
+        "status": "complete",
+        "pixellot_event_id": "6a724ccbf4fc0f14fd0efb2f",
+        "pixellot_id": "5fa14e52db47685af64035eb",
+        "pixellot_key": "pxl422c0d904a",
+        "producer_key": "pdc3cebc1cc0f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -310,8 +953,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236537
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam5bfe521274",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-11T23:00:00.000Z",
+        "publisher_name": "CIAC",
+        "publisher_slug": "bolton-high-school-bolton-ct",
+        "association": "CIAC",
+        "broadcast_key": "bdc4ff1be97d1",
+        "broadcast_game_key": "gam5bfe521274",
+        "broadcast_start": "2027-01-11T23:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Windsor Locks High School vs. Bolton High School",
+        "view_url": "http://www.nfhsnetwork.com/events/bolton-high-school-bolton-ct/gam5bfe521274",
+        "text_score": 0.97,
+        "minutes_apart": 149940,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -323,8 +987,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236533
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 20,
+      "best_match": {
+        "event_key": "gam596dd5aeec",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "FHSAA",
+        "publisher_slug": "berean-christian-high-school-west-palm-beach-fl",
+        "association": "FHSAA",
+        "broadcast_key": "bdcdad09f537c",
+        "broadcast_game_key": "gam596dd5aeec",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "The Greene School vs. Berean Christian School",
+        "view_url": "http://www.nfhsnetwork.com/events/berean-christian-high-school-west-palm-beach-fl/gam596dd5aeec",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam596dd5aeec",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Florida",
+        "city": "West Palm Beach",
+        "publisher_key": "pub0669498c12",
+        "publisher_name": "FHSAA: Berean Christian School, West Palm Beach, FL",
+        "broadcast_key": "bdcdad09f537c",
+        "game_key": "gam596dd5aeec",
+        "status": "complete",
+        "pixellot_event_id": "6a75e2a56b14a9ac5aa2521e",
+        "pixellot_id": "63a15315124af4539207c6b1",
+        "pixellot_key": "pxlade65ee17c",
+        "producer_key": "pdc29311362ca",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -336,8 +1037,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236529
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam63614100d0",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "edmondsonwestside-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdcf756a1f494",
+        "broadcast_game_key": "gam63614100d0",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "SEED School of Maryland vs. Edmondson-Westside High School",
+        "view_url": "http://www.nfhsnetwork.com/events/edmondsonwestside-high-school-baltimore-md/gam63614100d0",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam63614100d0",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Baltimore",
+        "publisher_key": "pub773fdd81df",
+        "publisher_name": "MPSSAA: Edmondson-Westside High School, Baltimore, MD",
+        "broadcast_key": "bdcf756a1f494",
+        "game_key": "gam63614100d0",
+        "status": "complete",
+        "pixellot_event_id": "6ab9930f4f50111eeaea761d",
+        "pixellot_id": "60699f44cc9b2ad29e1a41cf",
+        "pixellot_key": "pxl350b408305",
+        "producer_key": "pdc8aacc00b8f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -349,8 +1087,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236525
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam096062a619",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-02-05T22:30:00.000Z",
+        "publisher_name": "VHSL",
+        "publisher_slug": "floyd-e-kellam-high-school-virginia-beach-va",
+        "association": "VHSL",
+        "broadcast_key": "bdcade6f68ca8",
+        "broadcast_game_key": "gam096062a619",
+        "broadcast_start": "2027-02-05T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Ocean Lakes High School vs. Floyd E. Kellam High School",
+        "view_url": "http://www.nfhsnetwork.com/events/floyd-e-kellam-high-school-virginia-beach-va/gam096062a619",
+        "text_score": 1,
+        "minutes_apart": 185910,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -362,8 +1121,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236520
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam75a76fb311",
+        "event_title": null,
+        "sport": "Field Hockey",
+        "event_start": "2026-10-12T20:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "queen-annes-high-school-centreville-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdc9b9449d134",
+        "broadcast_game_key": "gam75a76fb311",
+        "broadcast_start": "2026-10-12T20:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "St. Michaels High School vs. Queen Anne's High School",
+        "view_url": "http://www.nfhsnetwork.com/events/queen-annes-high-school-centreville-md/gam75a76fb311",
+        "text_score": 0.5867,
+        "minutes_apart": 18720,
+        "combined_score": 0.5867
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -375,8 +1155,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236516
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam8fcd5edb78",
+        "event_title": null,
+        "sport": "Football",
+        "event_start": "2026-11-09T21:00:00.000Z",
+        "publisher_name": "DIAA",
+        "publisher_slug": "smyrna-high-school-smyrna-de",
+        "association": "DIAA",
+        "broadcast_key": "bdc263b1d65e5",
+        "broadcast_game_key": "gam8fcd5edb78",
+        "broadcast_start": "2026-11-09T21:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Dover High School vs. Smyrna High School",
+        "view_url": "http://www.nfhsnetwork.com/events/smyrna-high-school-smyrna-de/gam8fcd5edb78",
+        "text_score": 0.425,
+        "minutes_apart": 59100,
+        "combined_score": 0.425
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -388,8 +1189,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236512
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam77bc59160e",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-28T23:00:00.000Z",
+        "publisher_name": "PIAA",
+        "publisher_slug": "glendale-high-school-flinton-pa",
+        "association": "PIAA",
+        "broadcast_key": "bdcda7d3918b6",
+        "broadcast_game_key": "gam77bc59160e",
+        "broadcast_start": "2027-01-28T23:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Curwensville Area High School vs. Glendale High School",
+        "view_url": "http://www.nfhsnetwork.com/events/glendale-high-school-flinton-pa/gam77bc59160e",
+        "text_score": 0.6167,
+        "minutes_apart": 174420,
+        "combined_score": 0.6167
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -401,8 +1223,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236508
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam06b0e14c0e",
+        "event_title": null,
+        "sport": "Flag Football",
+        "event_start": "2026-10-19T23:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "walt-whitman-high-school-bethesda-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdc758f3932ee",
+        "broadcast_game_key": "gam06b0e14c0e",
+        "broadcast_start": "2026-10-19T23:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Northwest High School vs. Walt Whitman High School",
+        "view_url": "http://www.nfhsnetwork.com/events/walt-whitman-high-school-bethesda-md/gam06b0e14c0e",
+        "text_score": 0.5867,
+        "minutes_apart": 28980,
+        "combined_score": 0.5867
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -414,8 +1257,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236504
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamb3e7fa4b9e",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "NHIAA",
+        "publisher_slug": "dover-high-school-dover-nh",
+        "association": "NHIAA",
+        "broadcast_key": "bdcdbfef534a9",
+        "broadcast_game_key": "gamb3e7fa4b9e",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Nashua High School South vs. Dover High School",
+        "view_url": "http://www.nfhsnetwork.com/events/dover-high-school-dover-nh/gamb3e7fa4b9e",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamb3e7fa4b9e",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "New Hampshire",
+        "city": "Dover",
+        "publisher_key": "pubf1a646503e",
+        "publisher_name": "NHIAA: Dover High School, Dover, NH",
+        "broadcast_key": "bdcdbfef534a9",
+        "game_key": "gamb3e7fa4b9e",
+        "status": "complete",
+        "pixellot_event_id": "6a6f93d72f645e1011b5c81b",
+        "pixellot_id": "5f2bb1337fa27a3fef891296",
+        "pixellot_key": "pxla9bfe416a3",
+        "producer_key": "pdc06fe142676",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -427,8 +1307,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236503
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamde1c405949",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-02-17T21:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "woodlawn-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdc05184d7e99",
+        "broadcast_game_key": "gamde1c405949",
+        "broadcast_start": "2027-02-17T21:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Randallstown High School vs. Woodlawn High School",
+        "view_url": "http://www.nfhsnetwork.com/events/woodlawn-high-school-baltimore-md/gamde1c405949",
+        "text_score": 0.97,
+        "minutes_apart": 203100,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -440,8 +1341,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236500
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gama0a3083797",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-29T21:00:00.000Z",
+        "publisher_name": "MPSSAA",
+        "publisher_slug": "perry-hall-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "broadcast_key": "bdce54de37b3a",
+        "broadcast_game_key": "gama0a3083797",
+        "broadcast_start": "2027-01-29T21:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Towson High School vs. Perry Hall High School",
+        "view_url": "http://www.nfhsnetwork.com/events/perry-hall-high-school-baltimore-md/gama0a3083797",
+        "text_score": 0.97,
+        "minutes_apart": 175740,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -453,8 +1375,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236496
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam7ff3ef3306",
+        "event_title": null,
+        "sport": "Lacrosse",
+        "event_start": "2027-04-13T21:00:00.000Z",
+        "publisher_name": "CIAC",
+        "publisher_slug": "stratford-high-school-stratford-ct",
+        "association": "CIAC",
+        "broadcast_key": "bdc428a3a697b",
+        "broadcast_game_key": "gam7ff3ef3306",
+        "broadcast_start": "2027-04-13T21:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "New Fairfield High School vs. Stratford High School",
+        "view_url": "http://www.nfhsnetwork.com/events/stratford-high-school-stratford-ct/gam7ff3ef3306",
+        "text_score": 1,
+        "minutes_apart": 282300,
+        "combined_score": 1
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -466,8 +1409,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236493
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam3d7a36e18d",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-26T00:30:00.000Z",
+        "publisher_name": "NCHSAA",
+        "publisher_slug": "camden-county-high-school-camden-nc",
+        "association": "NCHSAA",
+        "broadcast_key": "bdcae9bd49a97",
+        "broadcast_game_key": "gam3d7a36e18d",
+        "broadcast_start": "2027-01-26T00:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Away vs. Camden County High School",
+        "view_url": "http://www.nfhsnetwork.com/events/camden-county-high-school-camden-nc/gam3d7a36e18d",
+        "text_score": 0.5667,
+        "minutes_apart": 170190,
+        "combined_score": 0.5667
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -479,8 +1443,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236492
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamfe8025bb40",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-01-25T22:00:00.000Z",
+        "publisher_name": "NHIAA",
+        "publisher_slug": "colebrook-academy-colebrook-nh",
+        "association": "NHIAA",
+        "broadcast_key": "bdc2e99db4aa5",
+        "broadcast_game_key": "gamfe8025bb40",
+        "broadcast_start": "2027-01-25T22:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Gorham High School vs. Colebrook Academy",
+        "view_url": "http://www.nfhsnetwork.com/events/colebrook-academy-colebrook-nh/gamfe8025bb40",
+        "text_score": 0.97,
+        "minutes_apart": 170040,
+        "combined_score": 0.97
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -492,8 +1477,11 @@
         "provider_day": "2026-09-29",
         "added": 1789236487
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 0,
+      "best_match": null,
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -505,8 +1493,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236483
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gamc84c948175",
+        "event_title": null,
+        "sport": "Baseball",
+        "event_start": "2027-04-01T20:00:00.000Z",
+        "publisher_name": "NJSIAA",
+        "publisher_slug": "montclair-high-school-montclair-nj",
+        "association": "NJSIAA",
+        "broadcast_key": "bdc16fccdd930",
+        "broadcast_game_key": "gamc84c948175",
+        "broadcast_start": "2027-04-01T20:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "West Essex Regional High School vs. Montclair High School",
+        "view_url": "http://www.nfhsnetwork.com/events/montclair-high-school-montclair-nj/gamc84c948175",
+        "text_score": 0.2833,
+        "minutes_apart": 264960,
+        "combined_score": 0.2833
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -518,8 +1527,45 @@
         "provider_day": "2026-09-29",
         "added": 1789236481
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 6,
+      "best_match": {
+        "event_key": "gamee5d943f7a",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "bradwell-institute-hinesville-ga",
+        "association": "GHSA",
+        "broadcast_key": "bdc5161aa1e06",
+        "broadcast_game_key": "gamee5d943f7a",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Frederica Academy vs. Bradwell Institute",
+        "view_url": "http://www.nfhsnetwork.com/events/bradwell-institute-hinesville-ga/gamee5d943f7a",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
+      },
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamee5d943f7a",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Georgia",
+        "city": "Hinesville",
+        "publisher_key": "8588bddc43",
+        "publisher_name": "GHSA: Bradwell Institute, Hinesville, GA",
+        "broadcast_key": "bdc5161aa1e06",
+        "game_key": "gamee5d943f7a",
+        "status": "complete",
+        "pixellot_event_id": "6ab9493620c6650289e33fd4",
+        "pixellot_id": "60d1824dd9b5510a14c0f7ae",
+        "pixellot_key": "pxlfedf2bf6c6",
+        "producer_key": "pdc883e2182b8",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -531,8 +1577,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236479
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam8927a1f295",
+        "event_title": null,
+        "sport": "Volleyball",
+        "event_start": "2027-04-13T23:00:00.000Z",
+        "publisher_name": "IHSA",
+        "publisher_slug": "harlem-high-school-machesney-park-il",
+        "association": "IHSA",
+        "broadcast_key": "bdc029fa87582",
+        "broadcast_game_key": "gam8927a1f295",
+        "broadcast_start": "2027-04-13T23:00:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Guilford High School vs. Harlem High School",
+        "view_url": "http://www.nfhsnetwork.com/events/harlem-high-school-machesney-park-il/gam8927a1f295",
+        "text_score": 0.45,
+        "minutes_apart": 282420,
+        "combined_score": 0.45
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -544,8 +1611,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236475
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "gam2fcc09b33c",
+        "event_title": null,
+        "sport": "Soccer",
+        "event_start": "2027-04-10T00:30:00.000Z",
+        "publisher_name": "AHSAA",
+        "publisher_slug": "pell-city-high-school-pell-city-al",
+        "association": "AHSAA",
+        "broadcast_key": "bdcb0b08813a8",
+        "broadcast_game_key": "gam2fcc09b33c",
+        "broadcast_start": "2027-04-10T00:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Oxford High School vs. Pell City High School",
+        "view_url": "http://www.nfhsnetwork.com/events/pell-city-high-school-pell-city-al/gam2fcc09b33c",
+        "text_score": 0.425,
+        "minutes_apart": 276750,
+        "combined_score": 0.425
+      },
+      "strong_match": false,
+      "unity": null
     },
     {
       "provider": {
@@ -557,8 +1645,29 @@
         "provider_day": "2026-09-29",
         "added": 1789236471
       },
-      "search_ok": false,
-      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+      "search_ok": true,
+      "search_item_count": 25,
+      "best_match": {
+        "event_key": "game6d24819c2",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2027-02-09T22:30:00.000Z",
+        "publisher_name": "MHSAA",
+        "publisher_slug": "lansing-christian-high-school-lansing-mi",
+        "association": "MHSAA",
+        "broadcast_key": "bdcd0b5b086cf",
+        "broadcast_game_key": "game6d24819c2",
+        "broadcast_start": "2027-02-09T22:30:00.000Z",
+        "broadcast_status": "scheduled",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Laingsburg High School vs. Lansing Christian High School",
+        "view_url": "http://www.nfhsnetwork.com/events/lansing-christian-high-school-lansing-mi/game6d24819c2",
+        "text_score": 0.6167,
+        "minutes_apart": 191670,
+        "combined_score": 0.6167
+      },
+      "strong_match": false,
+      "unity": null
     }
   ]
 }
