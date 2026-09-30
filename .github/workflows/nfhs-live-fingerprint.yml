@@ -1,6 +1,10 @@
 name: NFHS Live Fingerprint Diagnostic
 
 on:
+  push:
+    paths:
+      - ".github/workflows/nfhs-live-fingerprint.yml"
+      - "scripts/nfhs-live-fingerprint.mjs"
   workflow_dispatch:
     inputs:
       target_event_id:
@@ -45,9 +49,10 @@ jobs:
           XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
           XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
           XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
-          TARGET_EVENT_ID: ${{ inputs.target_event_id }}
-          START_SLOT: ${{ inputs.start_slot }}
-          END_SLOT: ${{ inputs.end_slot }}
+          TARGET_EVENT_ID: ${{ inputs.target_event_id || 'gam0afdf9a583' }}
+          START_SLOT: ${{ inputs.start_slot || '3180' }}
+          END_SLOT: ${{ inputs.end_slot || '3225' }}
+          SLOT_LIST: "1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1034,1035,1036,1037,1038,3188,3189,3190,3191,3192,3193,3194,3195,3196,3197,3198,3199,3200,3201,3202,3203,3204,3205,3206,3207,3208,3209,3210,3211,3212,3213,3214,3215,3398,3399,3400,3401,3402,3403,3404,3405,3406,3407,3408,3409,3410"
           CONTROL_SLOTS: "464"
         run: node scripts/nfhs-live-fingerprint.mjs
 
