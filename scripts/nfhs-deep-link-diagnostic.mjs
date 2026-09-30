@@ -3365,6 +3365,185 @@ async function probeProviderEpgMetadata(provider) {
   };
 }
 
+
+function parseExtinfAttributes(line = "") {
+  const attrs = {};
+  const re = /([A-Za-z0-9_-]+)="([^"]*)"/g;
+  let m;
+  while ((m = re.exec(line))) attrs[m[1]] = m[2];
+
+  const comma = line.indexOf(",");
+  const displayName = comma >= 0 ? cleanSpace(line.slice(comma + 1)) : "";
+
+  return { attrs, displayName };
+}
+
+function safePlaylistAttrValue(key, value) {
+  if (value === null || value === undefined || value === "") return value ?? null;
+  const s = String(value);
+
+  if (/url|logo|source|icon/i.test(key) || /^[a-z][a-z0-9+.-]*:\/\//i.test(s)) {
+    try {
+      const u = new URL(s);
+      return {
+        is_url: true,
+        hostname_hash: sha20(u.hostname),
+        pathname_hash: sha20(u.pathname),
+        path_segment_hashes: u.pathname.split("/").filter(Boolean).map(sha20),
+        query_keys: [...u.searchParams.keys()].sort()
+      };
+    } catch {
+      return { value_hash: sha20(s) };
+    }
+  }
+
+  return s;
+}
+
+async function probeProviderPlaylistMetadata(provider) {
+  const url =
+    `${provider.base}/get.php?${provider.auth}&type=m3u_plus&output=ts`;
+
+  let text = "";
+  try {
+    text = await fetchText(url, 60000);
+  } catch (err) {
+    return {
+      purpose:
+        "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
+      ok: false,
+      error: String(err?.message || err).slice(0, 400)
+    };
+  }
+
+  const lines = text.split(/\r?\n/);
+  const rows = [];
+  let pending = null;
+
+  for (const line of lines) {
+    if (line.startsWith("#EXTINF:")) {
+      pending = parseExtinfAttributes(line);
+      continue;
+    }
+
+    if (!pending || !line || line.startsWith("#")) continue;
+
+    const n = providerNumber(pending.displayName || "");
+    if (n !== null) {
+      const safeAttrs = {};
+      for (const [k, v] of Object.entries(pending.attrs || {})) {
+        safeAttrs[k] = safePlaylistAttrValue(k, v);
+      }
+
+      let streamId = null;
+      try {
+        const u = new URL(line);
+        const segs = u.pathname.split("/").filter(Boolean);
+        const last = segs.at(-1) || "";
+        const m = last.match(/^(\d+)(?:\.[A-Za-z0-9]+)?$/);
+        if (m) streamId = Number(m[1]);
+      } catch {}
+
+      rows.push({
+        provider_nfhs_number: n,
+        stream_id: streamId,
+        display_name: pending.displayName,
+        attrs: safeAttrs
+      });
+    }
+
+    pending = null;
+  }
+
+  const targetNumbers = new Set([
+    3549, 3550, 3551, 3552, 3553, 3554, 3555, 3556, 3557, 3558,
+    3572, 3536, 3523
+  ]);
+
+  const targetRows = rows.filter(x => targetNumbers.has(x.provider_nfhs_number));
+
+  const attrKeyCounts = {};
+  const nonEmptyAttrKeyCounts = {};
+  const clinchMentions = [];
+  const interestingIdentifierRows = [];
+
+  for (const row of rows) {
+    for (const [k, v] of Object.entries(row.attrs || {})) {
+      attrKeyCounts[k] = (attrKeyCounts[k] || 0) + 1;
+      const nonEmpty =
+        v !== null &&
+        v !== "" &&
+        !(typeof v === "object" && Object.keys(v).length === 0);
+      if (nonEmpty) nonEmptyAttrKeyCounts[k] = (nonEmptyAttrKeyCounts[k] || 0) + 1;
+
+      const rawText = typeof v === "string" ? v : "";
+      if (/clinch county|brantley county/i.test(rawText)) {
+        clinchMentions.push({
+          provider_nfhs_number: row.provider_nfhs_number,
+          stream_id: row.stream_id,
+          attribute: k,
+          value: rawText
+        });
+      }
+    }
+
+    const ids = {};
+    for (const k of ["tvg-id", "channel-id", "tvg-chno", "tvg-name", "group-title"]) {
+      const v = row.attrs?.[k];
+      if (v !== undefined && v !== null && v !== "") ids[k] = v;
+    }
+
+    if (Object.keys(ids).length) {
+      interestingIdentifierRows.push({
+        provider_nfhs_number: row.provider_nfhs_number,
+        stream_id: row.stream_id,
+        identifiers: ids
+      });
+    }
+  }
+
+  const targetComparisons = [];
+  for (let i = 1; i < targetRows.length; i++) {
+    const a = targetRows[i - 1];
+    const b = targetRows[i];
+    const keys = [...new Set([
+      ...Object.keys(a.attrs || {}),
+      ...Object.keys(b.attrs || {})
+    ])].sort();
+
+    const same = [];
+    const different = [];
+
+    for (const k of keys) {
+      const av = JSON.stringify(a.attrs?.[k] ?? null);
+      const bv = JSON.stringify(b.attrs?.[k] ?? null);
+      if (av === bv) same.push(k);
+      else different.push(k);
+    }
+
+    targetComparisons.push({
+      provider_a: a.provider_nfhs_number,
+      provider_b: b.provider_nfhs_number,
+      same_attribute_keys: same,
+      different_attribute_keys: different
+    });
+  }
+
+  return {
+    purpose:
+      "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
+    ok: true,
+    playlist_line_count: lines.length,
+    nfhs_rows_found: rows.length,
+    attribute_key_counts: attrKeyCounts,
+    nonempty_attribute_key_counts: nonEmptyAttrKeyCounts,
+    clinch_or_brantley_attribute_mentions: clinchMentions,
+    target_rows: targetRows,
+    target_attribute_comparisons: targetComparisons,
+    identifier_rows_sample: interestingIdentifierRows.slice(0, 80)
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -3509,6 +3688,7 @@ async function main() {
   const woodlawnRandallstownSequence = await probeWoodlawnRandallstownSequence();
   const globalDayOrdering = await probeGlobalDayOrdering(provider.streams);
   const providerEpgMetadata = await probeProviderEpgMetadata(provider);
+  const providerPlaylistMetadata = await probeProviderPlaylistMetadata(provider);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3554,7 +3734,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-22",
+    diagnostic_version: "deep-link-23",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3603,6 +3783,7 @@ async function main() {
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
     global_day_ordering_probe: globalDayOrdering,
     provider_epg_metadata_probe: providerEpgMetadata,
+    provider_playlist_metadata_probe: providerPlaylistMetadata,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3648,7 +3829,8 @@ async function main() {
     },
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
     global_day_ordering_probe: globalDayOrdering,
-    provider_epg_metadata_probe: providerEpgMetadata
+    provider_epg_metadata_probe: providerEpgMetadata,
+    provider_playlist_metadata_probe: providerPlaylistMetadata
   };
 
   await fs.writeFile(
