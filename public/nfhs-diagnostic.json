@@ -1,592 +1,266 @@
 {
-  "generated_at": "2026-09-29T20:16:38.447-04:00",
+  "generated_at": "2026-09-30T00:28:13.281Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": 14,
-  "purpose": "Test whether Node.js can read actual MPEG-TS bytes from provider NFHS streams and then let FFmpeg process the saved local sample, bypassing FFmpeg's direct TLS/CDN connection failures.",
+  "diagnostic_version": 15,
+  "purpose": "Separate GitHub-runner/provider network blocking from dead NFHS slots by forcing IPv4 with curl and comparing known NFHS slots against ordinary non-NFHS provider channels likely to be continuously live.",
   "safety": {
     "provider_connections_used_concurrently": 1,
-    "raw_stream_samples_saved_to_repository": false,
-    "frames_saved_to_repository": false,
+    "samples_saved_to_repository": false,
     "credentials_written_to_output": false,
     "public_events_json_modified": false
   },
-  "provider": {
-    "category": "USA | NFHS Network",
-    "source_stream_count": 5000,
-    "candidate_limit": 24,
-    "successful_sample_stop_limit": 4,
-    "sample_byte_limit": 4194304
-  },
   "summary": {
-    "candidates_attempted": 24,
-    "node_http_200": 0,
-    "node_received_any_bytes": 0,
-    "node_received_usable_ts_sample": 0,
-    "local_ffmpeg_frames_created": 0,
-    "samples_with_nonempty_ocr": 0,
-    "node_to_local_ffmpeg_path_works": false
+    "nfhs_controls_tested": 3,
+    "nfhs_controls_with_stream_bytes": 0,
+    "non_nfhs_controls_tested": 4,
+    "non_nfhs_controls_with_stream_bytes": 4,
+    "diagnosis": "provider_streaming_works_from_github_but_tested_nfhs_slots_are_not_delivering_video"
   },
-  "controls": [
-    {
-      "provider_nfhs_number": 3552,
-      "stream_id": 2066758,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3572,
-      "stream_id": 2066737,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3596,
-      "stream_id": 2066711,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 14999,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3455,
-      "stream_id": 2066857,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3556,
-      "stream_id": 2066754,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3448,
-      "stream_id": 2066864,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3609,
-      "stream_id": 2066697,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3609: Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    }
-  ],
   "results": [
     {
+      "kind": "nfhs_control",
+      "category_name": "USA | NFHS Network",
       "provider_nfhs_number": 3552,
       "stream_id": 2066758,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
+      "title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+      "sample": {
         "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+        "usable_bytes": false,
+        "elapsed_ms": 10156,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received\n",
+        "ffprobe": null
+      }
     },
     {
+      "kind": "nfhs_control",
+      "category_name": "USA | NFHS Network",
       "provider_nfhs_number": 3572,
       "stream_id": 2066737,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
+      "title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "sample": {
         "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+        "usable_bytes": false,
+        "elapsed_ms": 10148,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received\n",
+        "ffprobe": null
+      }
     },
     {
+      "kind": "nfhs_control",
+      "category_name": "USA | NFHS Network",
       "provider_nfhs_number": 3596,
       "stream_id": 2066711,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
+      "title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "sample": {
         "bytes_saved": 0,
-        "elapsed_ms": 14999,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+        "usable_bytes": false,
+        "elapsed_ms": 10161,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received\n",
+        "ffprobe": null
+      }
     },
     {
-      "provider_nfhs_number": 3455,
-      "stream_id": 2066857,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+      "kind": "non_nfhs_control",
+      "category_name": "USA | Sports ⚽",
+      "provider_nfhs_number": null,
+      "stream_id": 934703,
+      "title": "US: ESPN FHD",
+      "sample": {
+        "bytes_saved": 15485748,
+        "usable_bytes": true,
+        "elapsed_ms": 10283,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": null,
+        "ffprobe": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720
+                },
+                {
+                  "codec_name": "ac3",
+                  "codec_type": "audio"
+                }
+              ]
+            }
+          ],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "codec_name": "ac3",
+              "codec_type": "audio"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts",
+            "duration": "24.027678"
+          }
+        }
+      }
     },
     {
-      "provider_nfhs_number": 3556,
-      "stream_id": 2066754,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+      "kind": "non_nfhs_control",
+      "category_name": "USA | Sports ⚽",
+      "provider_nfhs_number": null,
+      "stream_id": 934702,
+      "title": "US: ESPN 2 FHD",
+      "sample": {
+        "bytes_saved": 14784508,
+        "usable_bytes": true,
+        "elapsed_ms": 10220,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": null,
+        "ffprobe": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720
+                },
+                {
+                  "codec_name": "aac",
+                  "codec_type": "audio"
+                }
+              ]
+            }
+          ],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "codec_name": "aac",
+              "codec_type": "audio"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts",
+            "duration": "20.020678"
+          }
+        }
+      }
     },
     {
-      "provider_nfhs_number": 3448,
-      "stream_id": 2066864,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+      "kind": "non_nfhs_control",
+      "category_name": "USA | Sports ⚽",
+      "provider_nfhs_number": null,
+      "stream_id": 96161,
+      "title": "US: ESPN",
+      "sample": {
+        "bytes_saved": 7312824,
+        "usable_bytes": true,
+        "elapsed_ms": 10238,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": null,
+        "ffprobe": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720
+                },
+                {
+                  "codec_name": "ac3",
+                  "codec_type": "audio"
+                }
+              ]
+            }
+          ],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "codec_name": "ac3",
+              "codec_type": "audio"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts",
+            "duration": "12.043678"
+          }
+        }
+      }
     },
     {
-      "provider_nfhs_number": 3609,
-      "stream_id": 2066697,
-      "reason": "control",
-      "stale_provider_title": "NFHS Network 3609: Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3406,
-      "stream_id": 2066906,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3406: Celina High School Pep Rally @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3407,
-      "stream_id": 2066905,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3407: West Branch High School vs. Moshannon Valley High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3408,
-      "stream_id": 2066904,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3408: Burlington Christian Academy vs. Wesleyan Christian Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3409,
-      "stream_id": 2066903,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3409: Brien McMahon High School vs. Trumbull High School Freshman Boys Soccer @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3410,
-      "stream_id": 2066902,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3410: Homer Center High School vs. Portage Area High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 14999,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3411,
-      "stream_id": 2066901,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3412,
-      "stream_id": 2066900,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3412: Oak City Academy vs. Christ Covenant School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3413,
-      "stream_id": 2066899,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3413: Lynn Vocational Technical High School vs. Minuteman High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3414,
-      "stream_id": 2066898,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3415,
-      "stream_id": 2066897,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3415: Richlands High School vs. West Carteret High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3416,
-      "stream_id": 2066896,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3416: The Clinton School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3417,
-      "stream_id": 2066895,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3417: Away vs. Holly Springs High School Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3418,
-      "stream_id": 2066894,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3418: Away vs. Admiral Farragut Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3419,
-      "stream_id": 2066893,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3419: Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15001,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3420,
-      "stream_id": 2066892,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 14999,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3421,
-      "stream_id": 2066891,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3421: Randallstown High School vs. Milford Mill Academy Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 14999,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
-    },
-    {
-      "provider_nfhs_number": 3422,
-      "stream_id": 2066890,
-      "reason": "recent_today_title",
-      "stale_provider_title": "NFHS Network 3422: Away vs. Southside High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
-      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
-      "node_sample": {
-        "ok": false,
-        "status": null,
-        "final_host": null,
-        "content_type": null,
-        "bytes_saved": 0,
-        "elapsed_ms": 15000,
-        "error": "This operation was aborted"
-      },
-      "local_ffmpeg": null,
-      "ocr_text": null
+      "kind": "non_nfhs_control",
+      "category_name": "USA | Sports ⚽",
+      "provider_nfhs_number": null,
+      "stream_id": 65902,
+      "title": "US: ESPN 2",
+      "sample": {
+        "bytes_saved": 13814992,
+        "usable_bytes": true,
+        "elapsed_ms": 10213,
+        "curl_exit_code": 28,
+        "curl_timed_out": false,
+        "curl_error": null,
+        "ffprobe": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720
+                },
+                {
+                  "codec_name": "aac",
+                  "codec_type": "audio"
+                }
+              ]
+            }
+          ],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "codec_name": "aac",
+              "codec_type": "audio"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts",
+            "duration": "20.032678"
+          }
+        }
+      }
     }
   ]
 }
