@@ -1,707 +1,592 @@
 {
-  "generated_at": "2026-09-29T19:40:50.073-04:00",
+  "generated_at": "2026-09-29T20:16:38.447-04:00",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": 13,
-  "purpose": "Test every NFHS provider slot labeled for today directly with FFmpeg, capture two frames from playable streams, OCR full/top/bottom image areas, and compare visible text with official Georgia NFHS events from 4 PM onward.",
+  "diagnostic_version": 14,
+  "purpose": "Test whether Node.js can read actual MPEG-TS bytes from provider NFHS streams and then let FFmpeg process the saved local sample, bypassing FFmpeg's direct TLS/CDN connection failures.",
   "safety": {
-    "provider_connections_used_concurrently": 2,
+    "provider_connections_used_concurrently": 1,
+    "raw_stream_samples_saved_to_repository": false,
     "frames_saved_to_repository": false,
+    "credentials_written_to_output": false,
     "public_events_json_modified": false
   },
   "provider": {
     "category": "USA | NFHS Network",
     "source_stream_count": 5000,
-    "today_provider_slots_tested": 288
-  },
-  "official": {
-    "georgia_events_from_4pm": 25,
-    "schedule_sources": [
-      {
-        "source": "GHSA",
-        "ok": true,
-        "event_count": 40,
-        "error": null
-      },
-      {
-        "source": "GAPPS",
-        "ok": true,
-        "event_count": 17,
-        "error": null
-      },
-      {
-        "source": "WATCH",
-        "ok": true,
-        "event_count": 36,
-        "error": null
-      }
-    ],
-    "events": [
-      {
-        "source": "GHSA",
-        "event_id": "gam12d7e3305b",
-        "text": "Varsity Girls Flag FootballVarsity Girls Flag FootballSep 29, 2026 | 8:00 PM UTCAthens, GA",
-        "eastern_start": "2026-09-29T16:00:00.000-04:00",
-        "publisher_name": "GHSA: Athens Academy, Athens, GA",
-        "city": "Athens",
-        "match_terms": [
-          "Athens Academy"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam2e937b88a4",
-        "text": "Varsity Girls VolleyballVarsity Girls VolleyballSep 29, 2026 | 8:30 PM UTCWaycross, GA",
-        "eastern_start": "2026-09-29T16:30:00.000-04:00",
-        "publisher_name": "GHSA: Ware County High School, Waycross, GA",
-        "city": "Waycross",
-        "match_terms": [
-          "Ware County High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam49bb3da339",
-        "text": "Middle School Boys FootballArmucheeSep 29, 2026 | 8:30 PM UTCRome, GA",
-        "eastern_start": "2026-09-29T16:30:00.000-04:00",
-        "publisher_name": "GHSA: Armuchee High School, Rome, GA",
-        "city": "Rome",
-        "match_terms": [
-          "Armuchee",
-          "Armuchee High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam09811d652f",
-        "text": "Varsity Girls SoftballThomas County vs. CoffeeSep 29, 2026 | 8:45 PM UTCDouglas, GA",
-        "eastern_start": "2026-09-29T16:45:00.000-04:00",
-        "publisher_name": "GHSA: Coffee High School, Douglas, GA",
-        "city": "Douglas",
-        "match_terms": [
-          "Thomas County",
-          "Coffee",
-          "Coffee High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gamd4a59a96d4",
-        "text": "Varsity Girls VolleyballVarsity Girls VolleyballSep 29, 2026 | 8:45 PM UTCAugusta, GA",
-        "eastern_start": "2026-09-29T16:45:00.000-04:00",
-        "publisher_name": "GHSA: Davidson Fine Arts Magnet School, Augusta, GA",
-        "city": "Augusta",
-        "match_terms": [
-          "Davidson Fine Arts Magnet School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam2d977a8cb4",
-        "text": "Middle School Boys FootballTrionSep 29, 2026 | 8:50 PM UTCTrion, GA",
-        "eastern_start": "2026-09-29T16:50:00.000-04:00",
-        "publisher_name": "GHSA: Trion High School, Trion, GA",
-        "city": "Trion",
-        "match_terms": [
-          "Trion",
-          "Trion High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam0073e4fee3",
-        "text": "Varsity Girls VolleyballAppling County vs. StatesboroSep 29, 2026 | 9:00 PM UTCStatesboro, GA",
-        "eastern_start": "2026-09-29T17:00:00.000-04:00",
-        "publisher_name": "GHSA: Statesboro High School, Statesboro, GA",
-        "city": "Statesboro",
-        "match_terms": [
-          "Appling County",
-          "Statesboro",
-          "Statesboro High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam0a87368bc7",
-        "text": "Varsity Girls VolleyballElite Scholars Academy Royal Knights vs Coretta Scott King Eagles/Paideia SchoolSep 29, 2026 | 9:00 PM UTCJonesboro, GA",
-        "eastern_start": "2026-09-29T17:00:00.000-04:00",
-        "publisher_name": "GHSA: Elite Scholars Academy, Jonesboro, GA",
-        "city": "Jonesboro",
-        "match_terms": [
-          "Elite Scholars Academy Royal Knights",
-          "Coretta Scott King Eagles/Paideia School",
-          "Elite Scholars Academy"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam0b687e3eb5",
-        "text": "Varsity Girls Flag FootballWorth County vs. HawkinsvilleSep 29, 2026 | 9:00 PM UTCHawkinsville, GA",
-        "eastern_start": "2026-09-29T17:00:00.000-04:00",
-        "publisher_name": "GHSA: Hawkinsville High School, Hawkinsville, GA",
-        "city": "Hawkinsville",
-        "match_terms": [
-          "Worth County",
-          "Hawkinsville",
-          "Hawkinsville High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam105358d396",
-        "text": "Varsity Girls VolleyballWesleyan vs. Lovett SchoolSep 29, 2026 | 9:00 PM UTCAtlanta, GA",
-        "eastern_start": "2026-09-29T17:00:00.000-04:00",
-        "publisher_name": "GHSA: Lovett School, Atlanta, GA",
-        "city": "Atlanta",
-        "match_terms": [
-          "Wesleyan",
-          "Lovett School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam3e0308212e",
-        "text": "Varsity Girls VolleyballCentral vs. MonticelloSep 30, 2026 | 12:00 AM UTCMonticello, GA",
-        "eastern_start": "2026-09-29T20:00:00.000-04:00",
-        "publisher_name": "GHSA: Jasper County High School, Monticello, GA",
-        "city": "Monticello",
-        "match_terms": [
-          "Central",
-          "Monticello",
-          "Jasper County High School"
-        ]
-      },
-      {
-        "source": "WATCH",
-        "event_id": "gama40c44c55b",
-        "text": "Varsity Girls Softball2:12:23Cedartown vs. CassSep 29, 2026 | 11:00 PM UTCWhite, GA",
-        "eastern_start": "2026-09-29T19:00:00.000-04:00",
-        "publisher_name": "WGAA Radio",
-        "city": "White",
-        "match_terms": [
-          "Cedartown",
-          "Cass",
-          "WGAA Radio"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam03da3f1f2e",
-        "text": "Varsity Girls Volleyball1:01:28Social Circle vs. Banks CountySep 29, 2026 | 10:00 PM UTCHOMER, GA",
-        "eastern_start": "2026-09-29T18:00:00.000-04:00",
-        "publisher_name": "GHSA: Banks County High School, Homer, GA",
-        "city": "HOMER",
-        "match_terms": [
-          "Social Circle",
-          "Banks County",
-          "Banks County High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam231a879aaf",
-        "text": "Junior Varsity Girls Volleyball1:31:12Central vs. MonticelloSep 29, 2026 | 10:00 PM UTCMonticello, GA",
-        "eastern_start": "2026-09-29T18:00:00.000-04:00",
-        "publisher_name": "GHSA: Jasper County High School, Monticello, GA",
-        "city": "Monticello",
-        "match_terms": [
-          "Central",
-          "Monticello",
-          "Jasper County High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam94393a74e6",
-        "text": "Varsity Girls Flag Football1:01:24Beach vs. West ForsythSep 29, 2026 | 10:00 PM UTCSavannah, GA",
-        "eastern_start": "2026-09-29T18:00:00.000-04:00",
-        "publisher_name": "Savannah-Chatham County Public School District, Savannah, GA",
-        "city": "Savannah",
-        "match_terms": [
-          "Beach",
-          "West Forsyth",
-          "Savannah-Chatham County Public School District"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gamfc14846685",
-        "text": "Varsity Girls Volleyball1:31:20Lamar County vs. LuellaSep 29, 2026 | 10:00 PM UTCFORSYTH, GA",
-        "eastern_start": "2026-09-29T18:00:00.000-04:00",
-        "publisher_name": "GHSA: Mary Persons High School, Forsyth, GA",
-        "city": "FORSYTH",
-        "match_terms": [
-          "Lamar County",
-          "Luella",
-          "Mary Persons High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam193c718d14",
-        "text": "Varsity Girls Volleyball1:59:24Monroe Area vs. Oconee CountySep 29, 2026 | 9:30 PM UTCWatkinsville, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "GHSA: Oconee County High School, Watkinsville, GA",
-        "city": "Watkinsville",
-        "match_terms": [
-          "Monroe Area",
-          "Oconee County",
-          "Oconee County High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam52b5764e5f",
-        "text": "Varsity Girls Volleyball1:48:48Brooks County vs. Taylor CountySep 29, 2026 | 9:30 PM UTCButler, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "GHSA: Taylor County High School, Butler, GA",
-        "city": "Butler",
-        "match_terms": [
-          "Brooks County",
-          "Taylor County",
-          "Taylor County High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gam83c2269dc5",
-        "text": "Junior Varsity Girls Volleyball1:31:28Tattnall Co. vs. VidaliaSep 29, 2026 | 9:30 PM UTCVidalia, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "GHSA: Vidalia High School, Vidalia, GA",
-        "city": "Vidalia",
-        "match_terms": [
-          "Tattnall Co.",
-          "Vidalia",
-          "Vidalia High School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gamb5ea9ee12a",
-        "text": "Varsity Girls Volleyball1:52:35Therrell vs. Holy Innocents'Sep 29, 2026 | 9:30 PM UTCAtlanta, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "GHSA: Holy Innocents' Episcopal School, Atlanta, GA",
-        "city": "Atlanta",
-        "match_terms": [
-          "Therrell",
-          "Holy Innocents'",
-          "Holy Innocents' Episcopal School"
-        ]
-      },
-      {
-        "source": "GHSA",
-        "event_id": "gamc3d8cf5866",
-        "text": "Junior Varsity Girls Volleyball1:33:02Kell vs. CreekviewSep 29, 2026 | 9:30 PM UTCCanton, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "GHSA: Creekview High School, Canton, GA",
-        "city": "Canton",
-        "match_terms": [
-          "Kell",
-          "Creekview",
-          "Creekview High School"
-        ]
-      },
-      {
-        "source": "GAPPS",
-        "event_id": "gamaf7cf471c1",
-        "text": "Junior Varsity Girls VolleyballJHA vs. WCASep 29, 2026 | 9:00 PM UTCWatkinsville, GA",
-        "eastern_start": "2026-09-29T17:00:00.000-04:00",
-        "publisher_name": "Westminster Christian Academy, Watkinsville, GA",
-        "city": "Watkinsville",
-        "match_terms": [
-          "JHA",
-          "WCA",
-          "Westminster Christian Academy"
-        ]
-      },
-      {
-        "source": "GAPPS",
-        "event_id": "gam28ba30f491",
-        "text": "Varsity Girls VolleyballJHA vs. WCASep 29, 2026 | 10:00 PM UTCWatkinsville, GA",
-        "eastern_start": "2026-09-29T18:00:00.000-04:00",
-        "publisher_name": "Westminster Christian Academy, Watkinsville, GA",
-        "city": "Watkinsville",
-        "match_terms": [
-          "JHA",
-          "WCA",
-          "Westminster Christian Academy"
-        ]
-      },
-      {
-        "source": "GAPPS",
-        "event_id": "gambb9d113e00",
-        "text": "Varsity Girls VolleyballNorth GA Tribe vs. Sugar HillSep 29, 2026 | 9:30 PM UTCSugar Hill, GA",
-        "eastern_start": "2026-09-29T17:30:00.000-04:00",
-        "publisher_name": "Sugar Hill Christian Academy, Sugar Hill, GA",
-        "city": "Sugar Hill",
-        "match_terms": [
-          "North GA Tribe",
-          "Sugar Hill",
-          "Sugar Hill Christian Academy"
-        ]
-      },
-      {
-        "source": "GAPPS",
-        "event_id": "gam297231f5aa",
-        "text": "Junior Varsity Girls Volleyball43:24North GA Tribe vs. Sugar HillSep 29, 2026 | 8:00 PM UTCSugar Hill, GA",
-        "eastern_start": "2026-09-29T16:00:00.000-04:00",
-        "publisher_name": "Sugar Hill Christian Academy, Sugar Hill, GA",
-        "city": "Sugar Hill",
-        "match_terms": [
-          "North GA Tribe",
-          "Sugar Hill",
-          "Sugar Hill Christian Academy"
-        ]
-      }
-    ]
+    "candidate_limit": 24,
+    "successful_sample_stop_limit": 4,
+    "sample_byte_limit": 4194304
   },
   "summary": {
-    "provider_slots_tested": 288,
-    "streams_with_frames": 0,
-    "streams_with_nonempty_ocr": 0,
-    "likely_georgia_matches": 0,
-    "possible_georgia_matches": 0,
-    "ffmpeg_failures": 288
+    "candidates_attempted": 24,
+    "node_http_200": 0,
+    "node_received_any_bytes": 0,
+    "node_received_usable_ts_sample": 0,
+    "local_ffmpeg_frames_created": 0,
+    "samples_with_nonempty_ocr": 0,
+    "node_to_local_ffmpeg_path_works": false
   },
-  "known_control_diagnostics": [
+  "controls": [
     {
       "provider_nfhs_number": 3552,
-      "tested": true,
-      "frame_ok": false,
-      "ocr_text": null,
-      "ffmpeg_error": "[tls @ 0x56171d4c1b80] Error in the pull function.\n[tls @ 0x56171d4c1b80] IO error: Connection timed out\n[in#0 @ 0x56171d3d5f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "stream_id": 2066758,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
       "provider_nfhs_number": 3572,
-      "tested": true,
-      "frame_ok": false,
-      "ocr_text": null,
-      "ffmpeg_error": "[tls @ 0x55d03cc17b80] Error in the pull function.\n[tls @ 0x55d03cc17b80] IO error: Connection timed out\n[in#0 @ 0x55d03cb2bf40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "stream_id": 2066737,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
+    },
+    {
+      "provider_nfhs_number": 3596,
+      "stream_id": 2066711,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 14999,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
+    },
+    {
+      "provider_nfhs_number": 3455,
+      "stream_id": 2066857,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
+    },
+    {
+      "provider_nfhs_number": 3556,
+      "stream_id": 2066754,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
+    },
+    {
+      "provider_nfhs_number": 3448,
+      "stream_id": 2066864,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
+    },
+    {
+      "provider_nfhs_number": 3609,
+      "stream_id": 2066697,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3609: Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     }
   ],
-  "likely_georgia_matches": [],
-  "possible_georgia_matches": [],
-  "active_stream_results": [],
-  "ffmpeg_failure_sample": [
+  "results": [
     {
-      "provider_nfhs_number": 3329,
-      "stream_id": 2066983,
-      "stale_provider_title": "NFHS Network 3329: Kealakehe High School vs. Kea'au High School Varsity Girls Volleyball @ 29 Sep 12:00 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55cd4c7c3b80] Error in the pull function.\n[tls @ 0x55cd4c7c3b80] IO error: Connection timed out\n[in#0 @ 0x55cd4c6d7f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3552,
+      "stream_id": 2066758,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3330,
-      "stream_id": 2066982,
-      "stale_provider_title": "NFHS Network 3330: Thales Academy at Flowers Plantation vs. Neuse Charter School Junior Varsity Girls Volleyball @ 29 Sep 12:01 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55dabeb2db80] Error in the pull function.\n[tls @ 0x55dabeb2db80] IO error: Connection timed out\n[in#0 @ 0x55dabea41f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3572,
+      "stream_id": 2066737,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3331,
-      "stream_id": 2066981,
-      "stale_provider_title": "NFHS Network 3331: Staunton High School vs. Rockbridge County High School Varsity Girls Volleyball @ 29 Sep 12:01 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 8,
-      "ffmpeg_error": "[in#0 @ 0x55fcf2214f40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [REDACTED-URL]\nError opening input files: Server returned 403 Forbidden (access denied)\n"
+      "provider_nfhs_number": 3596,
+      "stream_id": 2066711,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 14999,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3332,
-      "stream_id": 2066980,
-      "stale_provider_title": "NFHS Network 3332: North Pocono High School vs. Lakeland High School Middle School Football @ 29 Sep 01:01 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55a0dbcb1b80] Error in the pull function.\n[tls @ 0x55a0dbcb1b80] IO error: Connection timed out\n[in#0 @ 0x55a0dbbc5f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3455,
+      "stream_id": 2066857,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3333,
-      "stream_id": 2066979,
-      "stale_provider_title": "NFHS Network 3333: Lustre Christian High School vs. Culbertson High School Varsity Girls Volleyball @ 29 Sep 02:01 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x5564a1569b80] Error in the pull function.\n[tls @ 0x5564a1569b80] IO error: Connection timed out\n[in#0 @ 0x5564a147df40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3556,
+      "stream_id": 2066754,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3334,
-      "stream_id": 2066978,
-      "stale_provider_title": "NFHS Network 3334: St. Pius X - St. Matthias Academy vs. St. Marys Academy Varsity Girls Volleyball @ 29 Sep 03:01 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x5558291b4b80] Error in the pull function.\n[tls @ 0x5558291b4b80] IO error: Connection timed out\n[in#0 @ 0x5558290c8f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3448,
+      "stream_id": 2066864,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3335,
-      "stream_id": 2066977,
-      "stale_provider_title": "NFHS Network 3335: Bishop McCort Catholic High School vs. Central Cambria High School Varsity Boys Soccer @ 29 Sep 05:00 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55a3dac78b80] Error in the pull function.\n[tls @ 0x55a3dac78b80] IO error: Connection timed out\n[in#0 @ 0x55a3dab8cf40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3609,
+      "stream_id": 2066697,
+      "reason": "control",
+      "stale_provider_title": "NFHS Network 3609: Colquitt Christian Academy vs. Scintilla Charter Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3336,
-      "stream_id": 2066976,
-      "stale_provider_title": "NFHS Network 3336: Chatham High School vs. Montclair High School Junior Varsity Field Hockey @ 29 Sep 05:30 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x558556290b80] Error in the pull function.\n[tls @ 0x558556290b80] IO error: Connection timed out\n[in#0 @ 0x5585561a4f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3406,
+      "stream_id": 2066906,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3406: Celina High School Pep Rally @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3337,
-      "stream_id": 2066975,
-      "stale_provider_title": "NFHS Network 3337: Hart High School vs. Fremont High School Freshman Girls Volleyball @ 29 Sep 05:30 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x5617d28bab80] Error in the pull function.\n[tls @ 0x5617d28bab80] IO error: Connection timed out\n[in#0 @ 0x5617d27cef40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3407,
+      "stream_id": 2066905,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3407: West Branch High School vs. Moshannon Valley High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3338,
-      "stream_id": 2066974,
-      "stale_provider_title": "NFHS Network 3338: Dora High School vs. Minor High School Junior Varsity Girls Volleyball @ 29 Sep 06:00 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x5631bca43b80] Error in the pull function.\n[tls @ 0x5631bca43b80] IO error: Connection timed out\n[in#0 @ 0x5631bc957f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3408,
+      "stream_id": 2066904,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3408: Burlington Christian Academy vs. Wesleyan Christian Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3339,
-      "stream_id": 2066973,
-      "stale_provider_title": "NFHS Network 3339: Wheaton Warrenville South High School Middle School Boys Basketball @ 29 Sep 06:30 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x557dec4c9b80] Error in the pull function.\n[tls @ 0x557dec4c9b80] IO error: Connection timed out\n[in#0 @ 0x557dec3ddf40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3409,
+      "stream_id": 2066903,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3409: Brien McMahon High School vs. Trumbull High School Freshman Boys Soccer @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3340,
-      "stream_id": 2066972,
-      "stale_provider_title": "NFHS Network 3340: Laconia High School vs. St. Thomas Aquinas High School Varsity Boys Soccer @ 29 Sep 08:00 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x558d70295b80] Error in the pull function.\n[tls @ 0x558d70295b80] IO error: Connection timed out\n[in#0 @ 0x558d701a9f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3410,
+      "stream_id": 2066902,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3410: Homer Center High School vs. Portage Area High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 14999,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3341,
-      "stream_id": 2066971,
-      "stale_provider_title": "NFHS Network 3341: Pelham High School Assembly @ 29 Sep 09:25 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55a6d9971b80] Error in the pull function.\n[tls @ 0x55a6d9971b80] IO error: Connection timed out\n[in#0 @ 0x55a6d9885f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3411,
+      "stream_id": 2066901,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3342,
-      "stream_id": 2066970,
-      "stale_provider_title": "NFHS Network 3342: Brookfield High School vs. Liberty High School Varsity Girls Volleyball @ 29 Sep 11:30 AM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55e4d7a93b80] Error in the pull function.\n[tls @ 0x55e4d7a93b80] IO error: Connection timed out\n[in#0 @ 0x55e4d79a7f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3412,
+      "stream_id": 2066900,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3412: Oak City Academy vs. Christ Covenant School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3343,
-      "stream_id": 2066969,
-      "stale_provider_title": "NFHS Network 3343: September 29th Episode 2026 Georgia High School Sports Daily Show @ 29 Sep 12:00 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55597467eb80] Error in the pull function.\n[tls @ 0x55597467eb80] IO error: Connection timed out\n[in#0 @ 0x555974592f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3413,
+      "stream_id": 2066899,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3413: Lynn Vocational Technical High School vs. Minuteman High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3344,
-      "stream_id": 2066968,
-      "stale_provider_title": "NFHS Network 3344: Massac County High School Freshman Girls Volleyball @ 29 Sep 12:00 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55a2e35e2b80] Error in the pull function.\n[tls @ 0x55a2e35e2b80] IO error: Connection timed out\n[in#0 @ 0x55a2e34f6f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3414,
+      "stream_id": 2066898,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3345,
-      "stream_id": 2066967,
-      "stale_provider_title": "NFHS Network 3345: KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball @ 29 Sep 12:00 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55d741e7cb80] Error in the pull function.\n[tls @ 0x55d741e7cb80] IO error: Connection timed out\n[in#0 @ 0x55d741d90f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3415,
+      "stream_id": 2066897,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3415: Richlands High School vs. West Carteret High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3346,
-      "stream_id": 2066966,
-      "stale_provider_title": "NFHS Network 3346: River Ridge High School vs. Bishop McLaughlin Catholic High School Varsity Girls Volleyball @ 29 Sep 12:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x556acd3e7b80] Error in the pull function.\n[tls @ 0x556acd3e7b80] IO error: Connection timed out\n[in#0 @ 0x556acd2fbf40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3416,
+      "stream_id": 2066896,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3416: The Clinton School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3347,
-      "stream_id": 2066965,
-      "stale_provider_title": "NFHS Network 3347: 09/29/26 LO-AM @ 29 Sep 12:55 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55b29bf44b80] Error in the pull function.\n[tls @ 0x55b29bf44b80] IO error: Connection timed out\n[in#0 @ 0x55b29be58f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3417,
+      "stream_id": 2066895,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3417: Away vs. Holly Springs High School Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3348,
-      "stream_id": 2066964,
-      "stale_provider_title": "NFHS Network 3348: Jackson Northwest High School vs. Coldwater High School Varsity Girls Volleyball @ 29 Sep 01:00 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55d0da493b80] Error in the pull function.\n[tls @ 0x55d0da493b80] IO error: Connection timed out\n[in#0 @ 0x55d0da3a7f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3418,
+      "stream_id": 2066894,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3418: Away vs. Admiral Farragut Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3349,
-      "stream_id": 2066963,
-      "stale_provider_title": "NFHS Network 3349: River Ridge High School vs. Bishop McLaughlin Catholic High School Junior Varsity Girls Volleyball @ 29 Sep 02:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x564362e65b80] Error in the pull function.\n[tls @ 0x564362e65b80] IO error: Connection timed out\n[in#0 @ 0x564362d79f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3419,
+      "stream_id": 2066893,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3419: Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15001,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3350,
-      "stream_id": 2066962,
-      "stale_provider_title": "NFHS Network 3350: Jackson Northwest High School vs. Coldwater High School Junior Varsity Girls Volleyball @ 29 Sep 02:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x556f10373b80] Error in the pull function.\n[tls @ 0x556f10373b80] IO error: Connection timed out\n[in#0 @ 0x556f10287f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3420,
+      "stream_id": 2066892,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 14999,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3351,
-      "stream_id": 2066961,
-      "stale_provider_title": "NFHS Network 3351: David Crockett High School vs. Elizabethton High School Varsity Girls Volleyball @ 29 Sep 02:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x560ab52cbb80] Error in the pull function.\n[tls @ 0x560ab52cbb80] IO error: Connection timed out\n[in#0 @ 0x560ab51dff40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3421,
+      "stream_id": 2066891,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3421: Randallstown High School vs. Milford Mill Academy Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 14999,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     },
     {
-      "provider_nfhs_number": 3352,
-      "stream_id": 2066960,
-      "stale_provider_title": "NFHS Network 3352: Liberty Creek High School Varsity Boys And Girls Basketball @ 29 Sep 02:56 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x557986273b80] Error in the pull function.\n[tls @ 0x557986273b80] IO error: Connection timed out\n[in#0 @ 0x557986187f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3353,
-      "stream_id": 2066959,
-      "stale_provider_title": "NFHS Network 3353: Away vs. Wakefield School Middle School Girls Volleyball @ 29 Sep 03:15 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55d3c3aa2b80] Error in the pull function.\n[tls @ 0x55d3c3aa2b80] IO error: Connection timed out\n[in#0 @ 0x55d3c39b6f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3354,
-      "stream_id": 2066958,
-      "stale_provider_title": "NFHS Network 3354: Rising Sun High School vs. Bel Air High School Junior Varsity Boys Soccer @ 29 Sep 03:20 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x56141e8a2b80] Error in the pull function.\n[tls @ 0x56141e8a2b80] IO error: Connection timed out\n[in#0 @ 0x56141e7b6f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3355,
-      "stream_id": 2066957,
-      "stale_provider_title": "NFHS Network 3355: None La Salle Royal Lions vs Coral Gables Cavaliers @ 29 Sep 03:20 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55e3e625eb80] Error in the pull function.\n[tls @ 0x55e3e625eb80] IO error: Connection timed out\n[in#0 @ 0x55e3e6172f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3356,
-      "stream_id": 2066956,
-      "stale_provider_title": "NFHS Network 3356: Thomas McKean High School vs. Brandywine High School Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 8,
-      "ffmpeg_error": "[in#0 @ 0x557747379f40] Error opening input: Server returned 403 Forbidden (access denied)\nError opening input file [REDACTED-URL]\nError opening input files: Server returned 403 Forbidden (access denied)\n"
-    },
-    {
-      "provider_nfhs_number": 3357,
-      "stream_id": 2066955,
-      "stale_provider_title": "NFHS Network 3357: Stonington High School vs. Killingly High School Junior Varsity Girls Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x562971b3cb80] Error in the pull function.\n[tls @ 0x562971b3cb80] IO error: Connection timed out\n[in#0 @ 0x562971a50f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3358,
-      "stream_id": 2066954,
-      "stale_provider_title": "NFHS Network 3358: Upper Bucks Christian School vs. Bethlehem Christian School Middle School Girls Volleyball @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x5594d1492b80] Error in the pull function.\n[tls @ 0x5594d1492b80] IO error: Connection timed out\n[in#0 @ 0x5594d13a6f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3359,
-      "stream_id": 2066953,
-      "stale_provider_title": "NFHS Network 3359: Aberdeen High School vs. Elkton High School Junior Varsity Girls Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55e894a7ab80] Error in the pull function.\n[tls @ 0x55e894a7ab80] IO error: Connection timed out\n[in#0 @ 0x55e89498ef40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3360,
-      "stream_id": 2066952,
-      "stale_provider_title": "NFHS Network 3360: Winnacunnet High School vs. Bishop Guertin High School Varsity Field Hockey @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55cbec552b80] Error in the pull function.\n[tls @ 0x55cbec552b80] IO error: Connection timed out\n[in#0 @ 0x55cbec466f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3361,
-      "stream_id": 2066951,
-      "stale_provider_title": "NFHS Network 3361: Upper Merion Area High School vs. Wissahickon High School Freshman Boys Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x56541c7bbb80] Error in the pull function.\n[tls @ 0x56541c7bbb80] IO error: Connection timed out\n[in#0 @ 0x56541c6cff40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3362,
-      "stream_id": 2066950,
-      "stale_provider_title": "NFHS Network 3362: Shrewsbury High School vs. Doherty Memorial High School Junior Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x563160b8db80] Error in the pull function.\n[tls @ 0x563160b8db80] IO error: Connection timed out\n[in#0 @ 0x563160aa1f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3363,
-      "stream_id": 2066949,
-      "stale_provider_title": "NFHS Network 3363: Robert E Fitch High School vs. Ledyard High School Junior Varsity Girls Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55aece6f1b80] Error in the pull function.\n[tls @ 0x55aece6f1b80] IO error: Connection timed out\n[in#0 @ 0x55aece605f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3364,
-      "stream_id": 2066948,
-      "stale_provider_title": "NFHS Network 3364: Holy Cross High School vs. Woodland Regional High School Freshman Girls Volleyball @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x559a1a1afb80] Error in the pull function.\n[tls @ 0x559a1a1afb80] IO error: Connection timed out\n[in#0 @ 0x559a1a0c3f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3365,
-      "stream_id": 2066947,
-      "stale_provider_title": "NFHS Network 3365: Worcester Technical High School vs. Oxford High School Varsity Field Hockey @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x56544bb8fb80] Error in the pull function.\n[tls @ 0x56544bb8fb80] IO error: Connection timed out\n[in#0 @ 0x56544baa3f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3366,
-      "stream_id": 2066946,
-      "stale_provider_title": "NFHS Network 3366: Blackstone Valley Regional Vocational Technical High School vs. Sutton High School Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x555c38cebb80] Error in the pull function.\n[tls @ 0x555c38cebb80] IO error: Connection timed out\n[in#0 @ 0x555c38bfff40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3367,
-      "stream_id": 2066945,
-      "stale_provider_title": "NFHS Network 3367: Aberdeen High School vs. Fallston High School Junior Varsity Girls Volleyball @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x560b83c62b80] Error in the pull function.\n[tls @ 0x560b83c62b80] IO error: Connection timed out\n[in#0 @ 0x560b83b76f40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
-    },
-    {
-      "provider_nfhs_number": 3368,
-      "stream_id": 2066944,
-      "stale_provider_title": "NFHS Network 3368: Apponequet Regional High School vs. Fairhaven High School Varsity Field Hockey @ 29 Sep 03:30 PM ET",
-      "ffmpeg_timed_out": false,
-      "ffmpeg_code": 146,
-      "ffmpeg_error": "[tls @ 0x55c23b06ab80] Error in the pull function.\n[tls @ 0x55c23b06ab80] IO error: Connection timed out\n[in#0 @ 0x55c23af7ef40] Error opening input: Connection timed out\nError opening input file [REDACTED-URL]\nError opening input files: Connection timed out\n"
+      "provider_nfhs_number": 3422,
+      "stream_id": 2066890,
+      "reason": "recent_today_title",
+      "stale_provider_title": "NFHS Network 3422: Away vs. Southside High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "stale_provider_start": "2026-09-29T16:00:00.000-04:00",
+      "node_sample": {
+        "ok": false,
+        "status": null,
+        "final_host": null,
+        "content_type": null,
+        "bytes_saved": 0,
+        "elapsed_ms": 15000,
+        "error": "This operation was aborted"
+      },
+      "local_ffmpeg": null,
+      "ocr_text": null
     }
   ]
 }
