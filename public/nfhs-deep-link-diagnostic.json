@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T16:00:48.375Z",
+  "generated_at": "2026-09-30T16:06:30.615Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-21",
+  "diagnostic_version": "deep-link-22",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1499164,
+      "total": 1499218,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1499165,
+      "total": 1499218,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1499165,
+    "returned_total": 1499218,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "5e0443013c7925ce1861",
+            "response_hash": "49c9ab25bfba9ea32b58",
             "url_found": true,
-            "url_hash": "066fe8d81651a245e82d",
+            "url_hash": "8cbf271399d4158bfb46",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "294b446e037131afa982",
+            "pathname_hash": "06a71c2768f814724851",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "ac88b6554cd481ff21b7",
+              "99bed040f24a46a1fd4a",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "dcf36ec7f04661ff8156",
+            "response_hash": "6d88ca3bfd8c3607aa90",
             "url_found": true,
-            "url_hash": "46839d76307cc8a9f255",
+            "url_hash": "e955a39d81687fd9448a",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "6c06eaa09e4db15cfa1b",
+            "pathname_hash": "bbd29ed35fa5895c7a63",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "078e91b60f63b3b6a253",
+              "dde874afd86bbbbb21de",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "a324c62ba4e51c205ec0",
+            "response_hash": "80abc6fbe14b715f9044",
             "url_found": true,
-            "url_hash": "95ca5bd2064618649e7b",
+            "url_hash": "caaebcc8ac2110cff024",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "290f60acb6e13250ea09",
+            "pathname_hash": "1867e9c34ce83128a31e",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "e4624c05f8f7f883c29c",
+              "5d1be6964c2b65e7551a",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -22665,7 +22665,7 @@
   },
   "same_day_provider_only_match_probe": {
     "purpose": "Match the provider-only/stale 4 PM titles against the complete Sep 29 NFHS event day, avoiding false matches to other dates.",
-    "day_rows_loaded": 5614,
+    "day_rows_loaded": 5613,
     "day_pages_fetched": 12,
     "day_stop_reason": "passed_start_of_day",
     "provider_only_rows_tested": 26,
@@ -23389,7 +23389,7 @@
   "all_four_pm_titles_vs_full_day_probe": {
     "purpose": "Strictly match every provider title stamped 4:00 PM against the complete Sep 29 NFHS day using normalized matchup plus sport, ignoring the provider's displayed time.",
     "provider_4pm_title_count": 211,
-    "official_day_rows_loaded": 5614,
+    "official_day_rows_loaded": 5613,
     "unique_strict_same_day_matches": 75,
     "ambiguous_or_unmatched": 136,
     "unique_matches_actually_after_4pm": 4,
@@ -28591,7 +28591,7 @@
   "georgia_source_lane_mapping_probe": {
     "purpose": "Build Georgia event-to-provider source-lane hypotheses by finding exact same-day Georgia title matches anywhere in the provider's 5,000 NFHS streams, enriching official events through Unity, and propagating only identical hashed publisher+producer+ingest signatures. Same-source slots are hypotheses until independently validated.",
     "provider_streams_scanned": 5000,
-    "official_day_rows_loaded": 5614,
+    "official_day_rows_loaded": 5613,
     "georgia_official_rows": 175,
     "direct_unique_georgia_provider_matches": 3,
     "unique_source_signatures_with_direct_provider_anchor": 3,
@@ -31637,7 +31637,7 @@
   },
   "global_day_ordering_probe": {
     "purpose": "Strictly match all 5,000 provider titles to unique Sep 29 NFHS events, compare provider numbering to the full official day order, and bracket the two Clinch/Brantley events with independent exact-title anchors.",
-    "official_unique_events": 5614,
+    "official_unique_events": 5613,
     "provider_streams_scanned": 5000,
     "direct_unique_strict_matches": 182,
     "unique_official_event_anchors": 166,
@@ -32719,6 +32719,403 @@
       }
     ]
   },
+  "provider_epg_metadata_probe": {
+    "purpose": "Inspect Xtream EPG metadata for the Clinch neighborhood and known stale-title controls. This uses only the user's authorized provider metadata APIs and never writes provider credentials or raw source URLs.",
+    "controls_tested": 13,
+    "clinch_or_brantley_epg_mentions": [],
+    "rows": [
+      {
+        "provider_nfhs_number": 3549,
+        "stream_id": 2066761,
+        "provider_title": "NFHS Network 3549: Tekamah-Herman High School vs. Homer High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3550,
+        "stream_id": 2066760,
+        "provider_title": "NFHS Network 3550: Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3551,
+        "stream_id": 2066759,
+        "provider_title": "NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3552,
+        "stream_id": 2066758,
+        "provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3554,
+        "stream_id": 2066756,
+        "provider_title": "NFHS Network 3554: Pomperaug High School vs. Weston High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3555,
+        "stream_id": 2066755,
+        "provider_title": "NFHS Network 3555: Mid Vermont Christian School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3556,
+        "stream_id": 2066754,
+        "provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3557,
+        "stream_id": 2066753,
+        "provider_title": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3558,
+        "stream_id": 2066752,
+        "provider_title": "NFHS Network 3558: Hollidaysburg Area High School vs. Bishop Guilfoyle Academy Middle School Girls Soccer @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      }
+    ]
+  },
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
       3329
@@ -32780,7 +33177,14 @@
         "core": "Kealakehe High School vs. Kea'au High School Varsity Girls Volleyball",
         "provider_start": "2026-09-29T00:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236627
+        "added": 1789236627,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -32852,7 +33256,14 @@
         "core": "Hart High School vs. Fremont High School Freshman Girls Volleyball",
         "provider_start": "2026-09-29T05:30:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236623
+        "added": 1789236623,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -32908,7 +33319,14 @@
         "core": "September 29th Episode 2026 Georgia High School Sports Daily Show",
         "provider_start": "2026-09-29T12:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236620
+        "added": 1789236620,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -32968,7 +33386,14 @@
         "core": "KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball",
         "provider_start": "2026-09-29T12:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236619
+        "added": 1789236619,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33024,7 +33449,14 @@
         "core": "Rising Sun High School vs. Bel Air High School Junior Varsity Boys Soccer",
         "provider_start": "2026-09-29T15:20:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236614
+        "added": 1789236614,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33096,7 +33528,14 @@
         "core": "Shrewsbury High School vs. Doherty Memorial High School Junior Varsity Boys Soccer",
         "provider_start": "2026-09-29T15:30:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236610
+        "added": 1789236610,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33152,7 +33591,14 @@
         "core": "Greeley West High School vs. Poudre High School Junior Varsity Boys Soccer",
         "provider_start": "2026-09-29T15:45:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236606
+        "added": 1789236606,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33224,7 +33670,14 @@
         "core": "Tradition Preparatory High School Varsity Girls Volleyball",
         "provider_start": "2026-09-29T15:45:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236591
+        "added": 1789236591,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33284,7 +33737,14 @@
         "core": "Waterbury Career Academy vs. Naugatuck High School Freshman Girls Volleyball",
         "provider_start": "2026-09-29T15:45:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236587
+        "added": 1789236587,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33356,7 +33816,14 @@
         "core": "Audubon High School vs. Riverside High School Varsity Boys Soccer",
         "provider_start": "2026-09-29T15:45:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236583
+        "added": 1789236583,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33428,7 +33895,14 @@
         "core": "North Hunterdon High School vs. Mount Saint Mary Academy Freshman Girls Volleyball",
         "provider_start": "2026-09-29T15:55:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236579
+        "added": 1789236579,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33500,7 +33974,14 @@
         "core": "Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236575
+        "added": 1789236575,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33572,7 +34053,14 @@
         "core": "Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236571
+        "added": 1789236571,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33644,7 +34132,14 @@
         "core": "Edward Little High School vs. Biddeford High School Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236567
+        "added": 1789236567,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33716,7 +34211,14 @@
         "core": "James M. Bennett High School vs. Queen Anne's High School Junior Varsity Girls Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236562
+        "added": 1789236562,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33788,7 +34290,14 @@
         "core": "Eastern Technical High School vs. Dundalk High School Varsity Girls Flag Football",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236558
+        "added": 1789236558,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33860,7 +34369,14 @@
         "core": "Barnstable High School vs. Bridgewater-Raynham Reg High School Varsity Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236554
+        "added": 1789236554,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -33932,7 +34448,14 @@
         "core": "Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236552
+        "added": 1789236552,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34004,7 +34527,14 @@
         "core": "Tallwood High School vs. First Colonial High School Varsity Boys Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236550
+        "added": 1789236550,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34076,7 +34606,14 @@
         "core": "Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236546
+        "added": 1789236546,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34132,7 +34669,14 @@
         "core": "Winter Park HS vs. Olympia High School Freshman Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236541
+        "added": 1789236541,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34204,7 +34748,14 @@
         "core": "Windsor Locks High School vs. Bolton High School Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236537
+        "added": 1789236537,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34276,7 +34827,14 @@
         "core": "The Greene School vs. Berean Christian School Middle School Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236533
+        "added": 1789236533,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34348,7 +34906,14 @@
         "core": "SEED School of Maryland vs. Edmondson-Westside High School Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236529
+        "added": 1789236529,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34420,7 +34985,14 @@
         "core": "Floyd E. Kellam High School vs. Ocean Lakes High School Varsity Field Hockey",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236525
+        "added": 1789236525,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34492,7 +35064,14 @@
         "core": "Queen Anne's High School vs. Stephen Decatur High School Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236520
+        "added": 1789236520,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34564,7 +35143,14 @@
         "core": "Smyrna High School vs. Caesar Rodney High School Junior Varsity Field Hockey",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236516
+        "added": 1789236516,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34636,7 +35222,14 @@
         "core": "Glendale High School vs. Windber Area High School Middle School Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236512
+        "added": 1789236512,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34708,7 +35301,14 @@
         "core": "Walt Whitman High School vs. Lindenhurst Senior High School Varsity Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236508
+        "added": 1789236508,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34780,7 +35380,14 @@
         "core": "Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236504
+        "added": 1789236504,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34852,7 +35459,14 @@
         "core": "Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236503
+        "added": 1789236503,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34924,7 +35538,14 @@
         "core": "Towson High School vs. Perry Hall High School Varsity Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236500
+        "added": 1789236500,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -34996,7 +35617,14 @@
         "core": "Stratford High School vs. New Fairfield High School Junior Varsity Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236496
+        "added": 1789236496,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35068,7 +35696,14 @@
         "core": "Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236493
+        "added": 1789236493,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35140,7 +35775,14 @@
         "core": "Gorham High School vs. Colebrook Academy Varsity Girls Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236492
+        "added": 1789236492,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35212,7 +35854,14 @@
         "core": "None BCS vs. Christ's Church Academy - Part 1",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236487
+        "added": 1789236487,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35268,7 +35917,14 @@
         "core": "Essex High School vs. South Burlington High School Varsity Field Hockey",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236483
+        "added": 1789236483,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35340,7 +35996,14 @@
         "core": "Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236481
+        "added": 1789236481,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35412,7 +36075,14 @@
         "core": "Guilford High School vs. Xavier High School Freshman Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236479
+        "added": 1789236479,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35484,7 +36154,14 @@
         "core": "Oxford High School vs. Clarkston High School Freshman Boys Soccer",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236475
+        "added": 1789236475,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [
@@ -35556,7 +36233,14 @@
         "core": "Lansing Christian High School vs. Lakewood Freshman Girls Volleyball",
         "provider_start": "2026-09-29T16:00:00.000-04:00",
         "provider_day": "2026-09-29",
-        "added": 1789236471
+        "added": 1789236471,
+        "epg_channel_id": null,
+        "custom_sid": null,
+        "tv_archive": 0,
+        "tv_archive_duration": 0,
+        "container_extension": null,
+        "direct_source_hash": null,
+        "has_direct_source": false
       },
       "search_ok": true,
       "search_terms": [

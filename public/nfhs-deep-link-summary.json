@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T16:00:48.375Z",
-  "diagnostic_version": "deep-link-21",
+  "generated_at": "2026-09-30T16:06:30.615Z",
+  "diagnostic_version": "deep-link-22",
   "diagnostic_only": true,
   "modifies_epg": false,
   "summary": {
@@ -297,7 +297,7 @@
   },
   "global_day_ordering_probe": {
     "purpose": "Strictly match all 5,000 provider titles to unique Sep 29 NFHS events, compare provider numbering to the full official day order, and bracket the two Clinch/Brantley events with independent exact-title anchors.",
-    "official_unique_events": 5614,
+    "official_unique_events": 5613,
     "provider_streams_scanned": 5000,
     "direct_unique_strict_matches": 182,
     "unique_official_event_anchors": 166,
@@ -1376,6 +1376,403 @@
             "association": "MHSAA"
           }
         ]
+      }
+    ]
+  },
+  "provider_epg_metadata_probe": {
+    "purpose": "Inspect Xtream EPG metadata for the Clinch neighborhood and known stale-title controls. This uses only the user's authorized provider metadata APIs and never writes provider credentials or raw source URLs.",
+    "controls_tested": 13,
+    "clinch_or_brantley_epg_mentions": [],
+    "rows": [
+      {
+        "provider_nfhs_number": 3549,
+        "stream_id": 2066761,
+        "provider_title": "NFHS Network 3549: Tekamah-Herman High School vs. Homer High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3550,
+        "stream_id": 2066760,
+        "provider_title": "NFHS Network 3550: Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3551,
+        "stream_id": 2066759,
+        "provider_title": "NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3552,
+        "stream_id": 2066758,
+        "provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3554,
+        "stream_id": 2066756,
+        "provider_title": "NFHS Network 3554: Pomperaug High School vs. Weston High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3555,
+        "stream_id": 2066755,
+        "provider_title": "NFHS Network 3555: Mid Vermont Christian School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3556,
+        "stream_id": 2066754,
+        "provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3557,
+        "stream_id": 2066753,
+        "provider_title": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3558,
+        "stream_id": 2066752,
+        "provider_title": "NFHS Network 3558: Hollidaysburg Area High School vs. Bishop Guilfoyle Academy Middle School Girls Soccer @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_metadata": {
+          "epg_channel_id": null,
+          "custom_sid": null,
+          "tv_archive": 0,
+          "tv_archive_duration": 0,
+          "container_extension": null,
+          "has_direct_source": false,
+          "direct_source_hash": null
+        },
+        "endpoints": {
+          "get_short_epg": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          },
+          "get_simple_data_table": {
+            "ok": true,
+            "top_level_keys": [
+              "epg_listings"
+            ],
+            "listings": []
+          }
+        }
       }
     ]
   }
