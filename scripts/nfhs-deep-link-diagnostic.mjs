@@ -1808,6 +1808,188 @@ async function probeBrantleySourceLineage() {
   };
 }
 
+
+function safeUrlStructure(raw) {
+  if (raw === null || raw === undefined) return null;
+  const strings = [];
+
+  function collect(v, depth = 0) {
+    if (depth > 5 || strings.length > 50) return;
+    if (typeof v === "string") {
+      strings.push(v);
+      return;
+    }
+    if (!v || typeof v !== "object") return;
+    if (Array.isArray(v)) {
+      for (const x of v) collect(x, depth + 1);
+      return;
+    }
+    for (const x of Object.values(v)) collect(x, depth + 1);
+  }
+
+  collect(raw);
+
+  const urlLike = strings.find(s => /^https?:\/\//i.test(s)) || null;
+  if (!urlLike) {
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: false
+    };
+  }
+
+  try {
+    const u = new URL(urlLike);
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: true,
+      url_hash: sha20(urlLike),
+      protocol: u.protocol,
+      hostname_hash: sha20(u.hostname),
+      port: u.port || null,
+      pathname_hash: sha20(u.pathname),
+      path_segment_hashes: u.pathname.split("/").filter(Boolean).map(sha20),
+      query_keys: [...u.searchParams.keys()].sort()
+    };
+  } catch {
+    return {
+      response_hash: sha20(JSON.stringify(raw)),
+      url_found: false
+    };
+  }
+}
+
+async function fetchMaybeJson(url, timeoutMs = 30000) {
+  const text = await fetchText(url, timeoutMs);
+  try {
+    return JSON.parse(text);
+  } catch {
+    return text;
+  }
+}
+
+async function probeClinchBroadcastRouting() {
+  const eventIds = ["gamb8ad8195a3", "gamc34e8e3bfe"];
+  const rows = [];
+
+  for (const eventId of eventIds) {
+    try {
+      const event = await fetchJson(
+        `${UNITY_BASE}/v2/game_or_event/${encodeURIComponent(eventId)}`,
+        30000
+      );
+
+      const pubs = Array.isArray(event?.publishers) ? event.publishers : [];
+      const pairs = pubs.flatMap(pub =>
+        (Array.isArray(pub?.broadcasts) ? pub.broadcasts : []).map(b => ({ pub, b }))
+      );
+      const pair = pairs[0] || null;
+      const b = pair?.b || null;
+
+      if (!b?.key) {
+        rows.push({ event_key: eventId, error: "No broadcast key found." });
+        continue;
+      }
+
+      let preset = null;
+      let presetError = null;
+      try {
+        preset = await fetchMaybeJson(
+          `${UNITY_BASE}/v2/pixellots/presets/${encodeURIComponent(b.key)}`,
+          30000
+        );
+      } catch (err) {
+        presetError = String(err?.message || err).slice(0, 300);
+      }
+
+      let apiUrl = null;
+      let apiUrlError = null;
+      try {
+        apiUrl = await fetchMaybeJson(
+          `${UNITY_BASE}/v2/broadcasts/${encodeURIComponent(b.key)}/broadcast_api_url`,
+          30000
+        );
+      } catch (err) {
+        apiUrlError = String(err?.message || err).slice(0, 300);
+      }
+
+      rows.push({
+        event_key: eventId,
+        local_start_time: event?.local_start_time || null,
+        preset_ok: preset !== null,
+        preset_error: presetError,
+        preset_response_type: Array.isArray(preset) ? "array" : typeof preset,
+        preset_identifier_fingerprints: collectSafeIdentifierFingerprints(preset),
+        preset_response_hash: preset === null ? null : sha20(JSON.stringify(preset)),
+        broadcast_api_url_ok: apiUrl !== null,
+        broadcast_api_url_error: apiUrlError,
+        broadcast_api_url_structure: safeUrlStructure(apiUrl)
+      });
+    } catch (err) {
+      rows.push({
+        event_key: eventId,
+        error: String(err?.message || err).slice(0, 400)
+      });
+    }
+  }
+
+  const comparison = {};
+
+  if (rows.length === 2 && !rows[0].error && !rows[1].error) {
+    const presetA = new Map(
+      (rows[0].preset_identifier_fingerprints || []).map(x => [x.path, x.value_hash])
+    );
+    const presetB = new Map(
+      (rows[1].preset_identifier_fingerprints || []).map(x => [x.path, x.value_hash])
+    );
+
+    const equalPresetPaths = [];
+    const differentPresetPaths = [];
+
+    for (const [path, ah] of presetA) {
+      if (!presetB.has(path)) continue;
+      const bh = presetB.get(path);
+      if (ah === bh) equalPresetPaths.push(path);
+      else differentPresetPaths.push(path);
+    }
+
+    comparison.preset_response_hash_equal = Boolean(
+      rows[0].preset_response_hash &&
+      rows[0].preset_response_hash === rows[1].preset_response_hash
+    );
+    comparison.preset_equal_identifier_paths = equalPresetPaths;
+    comparison.preset_different_identifier_paths = differentPresetPaths;
+
+    const ua = rows[0].broadcast_api_url_structure || {};
+    const ub = rows[1].broadcast_api_url_structure || {};
+
+    comparison.broadcast_api_url = {
+      both_available: Boolean(rows[0].broadcast_api_url_ok && rows[1].broadcast_api_url_ok),
+      same_full_url_hash: Boolean(ua.url_hash && ua.url_hash === ub.url_hash),
+      same_hostname_hash: Boolean(ua.hostname_hash && ua.hostname_hash === ub.hostname_hash),
+      same_pathname_hash: Boolean(ua.pathname_hash && ua.pathname_hash === ub.pathname_hash),
+      same_path_segment_count: Array.isArray(ua.path_segment_hashes) &&
+        Array.isArray(ub.path_segment_hashes) &&
+        ua.path_segment_hashes.length === ub.path_segment_hashes.length,
+      equal_path_segment_positions: Array.isArray(ua.path_segment_hashes) &&
+        Array.isArray(ub.path_segment_hashes)
+          ? ua.path_segment_hashes
+              .map((h, i) => h === ub.path_segment_hashes[i] ? i : null)
+              .filter(i => i !== null)
+          : [],
+      query_keys_equal: Array.isArray(ua.query_keys) &&
+        Array.isArray(ub.query_keys) &&
+        JSON.stringify(ua.query_keys) === JSON.stringify(ub.query_keys)
+    };
+  }
+
+  return {
+    purpose:
+      "Compare event-specific Pixellot presets and broadcast API routing for the two Sep 29 Clinch County vs Brantley County broadcasts. Raw URLs, keys, and identifiers are not written.",
+    rows,
+    comparison
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -1941,6 +2123,7 @@ async function main() {
   const sameDayProviderOnlyResolution = summarizeSameDayProviderOnlyResolution(providerOnlyResolution);
   const brantleyClinchSequence = await probeBrantleyClinchSequence();
   const brantleySourceLineage = await probeBrantleySourceLineage();
+  const clinchBroadcastRouting = await probeClinchBroadcastRouting();
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -1986,7 +2169,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-13",
+    diagnostic_version: "deep-link-14",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -2026,6 +2209,7 @@ async function main() {
     same_day_provider_only_resolution: sameDayProviderOnlyResolution,
     brantley_clinch_sequence_probe: brantleyClinchSequence,
     brantley_source_lineage_probe: brantleySourceLineage,
+    clinch_broadcast_routing_probe: clinchBroadcastRouting,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
