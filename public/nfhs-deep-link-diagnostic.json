@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:49:14.273Z",
+  "generated_at": "2026-09-30T14:55:13.672Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-12",
+  "diagnostic_version": "deep-link-13",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -40,8 +40,8 @@
     "top_level_metadata": {
       "start": 0,
       "size": 500,
-      "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
-      "total": 1498911,
+      "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
+      "total": 1498882,
       "api_version": "v3"
     },
     "first_events": [
@@ -120,18 +120,6 @@
     ],
     "last_events": [
       {
-        "event_key": "gamb08b167fd8",
-        "start_time": "2028-03-27T21:00:00.000Z",
-        "publisher_slug": "central-york-high-school-york-pa",
-        "subheadline": "Warwick High School vs. Central York High School"
-      },
-      {
-        "event_key": "gam953fe89bad",
-        "start_time": "2028-03-27T20:00:00.000Z",
-        "publisher_slug": "central-york-high-school-york-pa",
-        "subheadline": "Dallastown Area High School vs. Central York High School"
-      },
-      {
         "event_key": "gam1bc4690e75",
         "start_time": "2028-03-24T19:45:00.000Z",
         "publisher_slug": "pope-john-paul-ii-high-school-royersford-pa",
@@ -190,6 +178,18 @@
         "start_time": "2028-03-22T22:00:00.000Z",
         "publisher_slug": "southwestern-high-school-piasa-il",
         "subheadline": "Wesclin High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam0cab24e559",
+        "start_time": "2028-03-22T00:00:00.000Z",
+        "publisher_slug": "williamsville-high-school-williamsville-il",
+        "subheadline": "Mt. Zion High School vs. Williamsville High School"
+      },
+      {
+        "event_key": "game9f1ea9c2e",
+        "start_time": "2028-03-21T23:00:00.000Z",
+        "publisher_slug": "york-suburban-high-school-york-pa",
+        "subheadline": "New Oxford High School vs. York Suburban High School"
       }
     ],
     "known_matches_found_in_feed": 0,
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498911,
+      "total": 1498882,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498911,
+    "returned_total": 1498882,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -20324,6 +20324,1672 @@
         "same_ingest_fingerprint": true
       }
     ]
+  },
+  "brantley_source_lineage_probe": {
+    "purpose": "Compare the two Sep 29 Clinch County vs Brantley County broadcasts at the source-lineage level without saving raw identifiers or playback URLs.",
+    "events": [
+      {
+        "event_key": "gamb8ad8195a3",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "publisher_key_hash": "9c5d09184e5e72abd8d0",
+        "producer_key_hash": "d16bab7ae7ee4565257f",
+        "ingest_point_hash": "48c2e48ec154080e9ac0",
+        "broadcast_key_hash": "b774022c8e84041dcdc2",
+        "broadcast_detail_ok": true,
+        "broadcast_detail_error": null,
+        "broadcast_detail_identifier_fingerprints": [
+          {
+            "path": "$.key",
+            "value_hash": "b774022c8e84041dcdc2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.stream_to_facebook",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.publisher_url",
+            "value_hash": "1296f49ca77168bc70ce",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_name_with_association",
+            "value_hash": "0dfe4aae7eafc98b3af5",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.ingest_point",
+            "value_hash": "48c2e48ec154080e9ac0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_name_with_association",
+            "value_hash": "0dfe4aae7eafc98b3af5",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_key",
+            "value_hash": "d16bab7ae7ee4565257f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_type",
+            "value_hash": "d64debd942d7dc26a851",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_slug",
+            "value_hash": "6fd0e2cc37df5cd2273a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.vod_key",
+            "value_hash": "39828d874d796817e149",
+            "value_type": "string"
+          },
+          {
+            "path": "$.game_key",
+            "value_hash": "fd4434f663aa8cd31388",
+            "value_type": "string"
+          }
+        ],
+        "publisher_pixellot_ok": true,
+        "publisher_pixellot_error": null,
+        "publisher_pixellot_top_level_type": "object",
+        "publisher_pixellot_top_level_length": null,
+        "publisher_pixellot_identifier_fingerprints": [
+          {
+            "path": "$.pixellots[0].pixellot_venue_id",
+            "value_hash": "508b123914a3c6b7a7b2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_name",
+            "value_hash": "8cd508f3ce3bd168b448",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].key",
+            "value_hash": "d17e074612500da4c98c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pxl_id",
+            "value_hash": "4687351074953ec431b7",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].salesforce_implementation_id",
+            "value_hash": "5804f6ca1eb42e2f30ea",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.id",
+            "value_hash": "83e2be5a5afab87ad840",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.key",
+            "value_hash": "3db7e5af9ce85c1a0e01",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.id",
+            "value_hash": "11d4ea560ba8d2cd4812",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.key",
+            "value_hash": "e60a0b9c300d86b675da",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.id",
+            "value_hash": "d1526c7406d61358dad0",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.key",
+            "value_hash": "f5dc15c23d7a66277164",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].producer_key",
+            "value_hash": "272e38f135b1dc58e9ca",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].camera_severity",
+            "value_hash": "e981ddae45d8f4ca53f1",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].id",
+            "value_hash": "3eb68322e580a58564bc",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].key",
+            "value_hash": "f33196fa7018b0b88d7e",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "e410bc1b53ab2ebce09b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "8cd508f3ce3bd168b448",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_venue_id",
+            "value_hash": "67c18dc9f5c7d938b063",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].key",
+            "value_hash": "6ad5bfd9d294c62239b6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pxl_id",
+            "value_hash": "33ef9fc1690b7b938c28",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].salesforce_implementation_id",
+            "value_hash": "61d87f97fb28d160dcfc",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.id",
+            "value_hash": "b698d86c67a2cff80405",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.key",
+            "value_hash": "f34a80a1b2312364e705",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.id",
+            "value_hash": "d38380816cac82f2e4f7",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.key",
+            "value_hash": "0f3407de5b87420e25a6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.id",
+            "value_hash": "1ca4e2b4094dc937c848",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.key",
+            "value_hash": "8fc3b2f86ffeab77a11b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].producer_key",
+            "value_hash": "45bb7fccebcc8f3051cd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].id",
+            "value_hash": "e17e37b02513047cf764",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].key",
+            "value_hash": "406d28a1130d8f3722e1",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "efe74b57405a62326ed0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].id",
+            "value_hash": "e18554eb5c8577e89239",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].key",
+            "value_hash": "fe8564a96dd25d7a041b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].validated_school_mapping",
+            "value_hash": "97c2ace65cd00281e7e2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].id",
+            "value_hash": "39c81ded5c023b141ec8",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].key",
+            "value_hash": "0a2663c3908d4518125a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].validated_school_mapping",
+            "value_hash": "97c2ace65cd00281e7e2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_venue_id",
+            "value_hash": "7f995baf0648cf7bba90",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].key",
+            "value_hash": "83e6d7d170347298038b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pxl_id",
+            "value_hash": "05a75995b2fc490eaab6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].salesforce_implementation_id",
+            "value_hash": "80e5b2cd5deb38e6a205",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.id",
+            "value_hash": "3ca0b4dbd418e3b0f128",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.key",
+            "value_hash": "9e80f6b80914b7a2771c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.id",
+            "value_hash": "968010b60974857532d6",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.key",
+            "value_hash": "759741f06b39ed40d8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.id",
+            "value_hash": "009f94cc1ec6bacc64a6",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.key",
+            "value_hash": "99201a9b2abc0b15dbc7",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].producer_key",
+            "value_hash": "566f93e2015148f8e8c0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].id",
+            "value_hash": "9ed41a4c5aa6af941176",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].key",
+            "value_hash": "024a440742332b6410aa",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].id",
+            "value_hash": "d0ae553f2215d82e34b2",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].key",
+            "value_hash": "402dbfc4b7ad6d1e6bb9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].id",
+            "value_hash": "e670e8bb47655f895f07",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].key",
+            "value_hash": "c7f770362e8de29b4a78",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_venue_id",
+            "value_hash": "8c3a230901a3d4a0862c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_name",
+            "value_hash": "ba78d8ec9172d8fa5ba9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].key",
+            "value_hash": "c6c66f4d102f8e4273ba",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pxl_id",
+            "value_hash": "8ee9900425e49b3e39e0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].salesforce_implementation_id",
+            "value_hash": "e0157f562aeaf0128e80",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.id",
+            "value_hash": "74a3ef0af604a46350a2",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.key",
+            "value_hash": "bb7a57025011a0510433",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "0026f8124280a125d330",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].producer_key",
+            "value_hash": "dc71dc0ebaf1e46cbb5b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].id",
+            "value_hash": "35fd8974f26ad1e1d978",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].key",
+            "value_hash": "3b9d8b6c888a51b72274",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "0026f8124280a125d330",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "b0e5ea28bc72c10807a4",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "ba78d8ec9172d8fa5ba9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          }
+        ]
+      },
+      {
+        "event_key": "gamc34e8e3bfe",
+        "local_start_time": "2026-09-29T17:00:00.000-04:00",
+        "publisher_key_hash": "9c5d09184e5e72abd8d0",
+        "producer_key_hash": "d16bab7ae7ee4565257f",
+        "ingest_point_hash": "48c2e48ec154080e9ac0",
+        "broadcast_key_hash": "f48d891ea71b2fd392c0",
+        "broadcast_detail_ok": true,
+        "broadcast_detail_error": null,
+        "broadcast_detail_identifier_fingerprints": [
+          {
+            "path": "$.key",
+            "value_hash": "f48d891ea71b2fd392c0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.stream_to_facebook",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.publisher_url",
+            "value_hash": "1296f49ca77168bc70ce",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_name_with_association",
+            "value_hash": "0dfe4aae7eafc98b3af5",
+            "value_type": "string"
+          },
+          {
+            "path": "$.publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.ingest_point",
+            "value_hash": "48c2e48ec154080e9ac0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_name_with_association",
+            "value_hash": "0dfe4aae7eafc98b3af5",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_key",
+            "value_hash": "d16bab7ae7ee4565257f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_type",
+            "value_hash": "d64debd942d7dc26a851",
+            "value_type": "string"
+          },
+          {
+            "path": "$.producer_slug",
+            "value_hash": "6fd0e2cc37df5cd2273a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.vod_key",
+            "value_hash": "a50d28447528931cbc25",
+            "value_type": "string"
+          },
+          {
+            "path": "$.game_key",
+            "value_hash": "c74978d77bfde181167f",
+            "value_type": "string"
+          }
+        ],
+        "publisher_pixellot_ok": true,
+        "publisher_pixellot_error": null,
+        "publisher_pixellot_top_level_type": "object",
+        "publisher_pixellot_top_level_length": null,
+        "publisher_pixellot_identifier_fingerprints": [
+          {
+            "path": "$.pixellots[0].pixellot_venue_id",
+            "value_hash": "508b123914a3c6b7a7b2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_name",
+            "value_hash": "8cd508f3ce3bd168b448",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].key",
+            "value_hash": "d17e074612500da4c98c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pxl_id",
+            "value_hash": "4687351074953ec431b7",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].salesforce_implementation_id",
+            "value_hash": "5804f6ca1eb42e2f30ea",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.id",
+            "value_hash": "83e2be5a5afab87ad840",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.key",
+            "value_hash": "3db7e5af9ce85c1a0e01",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.id",
+            "value_hash": "11d4ea560ba8d2cd4812",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.key",
+            "value_hash": "e60a0b9c300d86b675da",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.id",
+            "value_hash": "d1526c7406d61358dad0",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.key",
+            "value_hash": "f5dc15c23d7a66277164",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].producer_key",
+            "value_hash": "272e38f135b1dc58e9ca",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].camera_severity",
+            "value_hash": "e981ddae45d8f4ca53f1",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].id",
+            "value_hash": "3eb68322e580a58564bc",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].key",
+            "value_hash": "f33196fa7018b0b88d7e",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "ad61c9d91e974dd55605",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "e410bc1b53ab2ebce09b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "8cd508f3ce3bd168b448",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[0].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_venue_id",
+            "value_hash": "67c18dc9f5c7d938b063",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].key",
+            "value_hash": "6ad5bfd9d294c62239b6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pxl_id",
+            "value_hash": "33ef9fc1690b7b938c28",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].salesforce_implementation_id",
+            "value_hash": "61d87f97fb28d160dcfc",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.id",
+            "value_hash": "b698d86c67a2cff80405",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.key",
+            "value_hash": "f34a80a1b2312364e705",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.id",
+            "value_hash": "d38380816cac82f2e4f7",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.key",
+            "value_hash": "0f3407de5b87420e25a6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.id",
+            "value_hash": "1ca4e2b4094dc937c848",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.key",
+            "value_hash": "8fc3b2f86ffeab77a11b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].producer_key",
+            "value_hash": "45bb7fccebcc8f3051cd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].id",
+            "value_hash": "e17e37b02513047cf764",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].key",
+            "value_hash": "406d28a1130d8f3722e1",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "efe74b57405a62326ed0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].id",
+            "value_hash": "e18554eb5c8577e89239",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].key",
+            "value_hash": "fe8564a96dd25d7a041b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].validated_school_mapping",
+            "value_hash": "97c2ace65cd00281e7e2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[1].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].id",
+            "value_hash": "39c81ded5c023b141ec8",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].key",
+            "value_hash": "0a2663c3908d4518125a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].pixellot_id",
+            "value_hash": "a6b316cab1a87ae0cd0f",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].validated_school_mapping",
+            "value_hash": "97c2ace65cd00281e7e2",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].pixellot_name",
+            "value_hash": "fbeb6d88367ec305e3ee",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[1].pixellot_team_mappings[2].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_venue_id",
+            "value_hash": "7f995baf0648cf7bba90",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].key",
+            "value_hash": "83e6d7d170347298038b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pxl_id",
+            "value_hash": "05a75995b2fc490eaab6",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].salesforce_implementation_id",
+            "value_hash": "80e5b2cd5deb38e6a205",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.id",
+            "value_hash": "3ca0b4dbd418e3b0f128",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.key",
+            "value_hash": "9e80f6b80914b7a2771c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.id",
+            "value_hash": "968010b60974857532d6",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.key",
+            "value_hash": "759741f06b39ed40d8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_left.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.id",
+            "value_hash": "009f94cc1ec6bacc64a6",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.key",
+            "value_hash": "99201a9b2abc0b15dbc7",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_overlay.bottom_right.pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].producer_key",
+            "value_hash": "566f93e2015148f8e8c0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].id",
+            "value_hash": "9ed41a4c5aa6af941176",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].key",
+            "value_hash": "024a440742332b6410aa",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].id",
+            "value_hash": "d0ae553f2215d82e34b2",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].key",
+            "value_hash": "402dbfc4b7ad6d1e6bb9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[1].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].id",
+            "value_hash": "e670e8bb47655f895f07",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].key",
+            "value_hash": "c7f770362e8de29b4a78",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].pixellot_id",
+            "value_hash": "44e2740e4e8f1d14b3a3",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].validated_school_mapping",
+            "value_hash": "ec43b195e0f06aecd801",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].pixellot_name",
+            "value_hash": "7687334e040a29d98cbd",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[2].pixellot_team_mappings[2].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_venue_id",
+            "value_hash": "8c3a230901a3d4a0862c",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_name",
+            "value_hash": "ba78d8ec9172d8fa5ba9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].key",
+            "value_hash": "c6c66f4d102f8e4273ba",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pxl_id",
+            "value_hash": "8ee9900425e49b3e39e0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].salesforce_implementation_id",
+            "value_hash": "e0157f562aeaf0128e80",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].camera_type",
+            "value_hash": "0df6f1cad36c49da768a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].entity_key",
+            "value_hash": "e012ee6d319c15962c6f",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.id",
+            "value_hash": "74a3ef0af604a46350a2",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.key",
+            "value_hash": "bb7a57025011a0510433",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_overlay.top_left.pixellot_id",
+            "value_hash": "0026f8124280a125d330",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].publishers[0].publisher_key",
+            "value_hash": "9c5d09184e5e72abd8d0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].publishers[0].publisher_name",
+            "value_hash": "96de41655495cc1d71f0",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].producer_key",
+            "value_hash": "dc71dc0ebaf1e46cbb5b",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].camera_severity",
+            "value_hash": "843ac01149cced785dfe",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].hdBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].panoBandwidth",
+            "value_hash": "54a0e8c17ebb21a11f8a",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].id",
+            "value_hash": "35fd8974f26ad1e1d978",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].key",
+            "value_hash": "3b9d8b6c888a51b72274",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].middle_school",
+            "value_hash": "fcbcf165908dd18a9e49",
+            "value_type": "boolean"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].school_id",
+            "value_hash": "9b20894f75c15e9b905c",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].pixellot_id",
+            "value_hash": "0026f8124280a125d330",
+            "value_type": "number"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].validated_school_mapping",
+            "value_hash": "b0e5ea28bc72c10807a4",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].pixellot_name",
+            "value_hash": "ba78d8ec9172d8fa5ba9",
+            "value_type": "string"
+          },
+          {
+            "path": "$.pixellots[3].pixellot_team_mappings[0].data_validator",
+            "value_hash": "787188ffa5cca48212ed",
+            "value_type": "string"
+          }
+        ]
+      }
+    ],
+    "comparison": {
+      "common_equal_identifier_paths": [
+        "$.stream_to_facebook",
+        "$.publisher_url",
+        "$.publisher_name",
+        "$.publisher_name_with_association",
+        "$.publisher_key",
+        "$.ingest_point",
+        "$.producer_name",
+        "$.producer_name_with_association",
+        "$.producer_key",
+        "$.producer_type",
+        "$.producer_slug"
+      ],
+      "common_different_identifier_paths": [
+        "$.key",
+        "$.vod_key",
+        "$.game_key"
+      ],
+      "publisher_pixellot_fingerprint_sets_equal": true,
+      "same_publisher": true,
+      "same_producer": true,
+      "same_ingest": true,
+      "broadcast_keys_different": true
+    }
   },
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
