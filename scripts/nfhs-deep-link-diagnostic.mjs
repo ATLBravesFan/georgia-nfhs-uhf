@@ -2783,6 +2783,184 @@ async function probeAllFourPmTitlesAgainstFullDay(providerStreams) {
   };
 }
 
+
+function isGeorgiaOfficialRow(row) {
+  const assoc = String(row?.association || "").toUpperCase();
+  const slug = String(row?.publisher_slug || "").toLowerCase();
+  return ["GHSA", "GIAA", "GAPPS"].includes(assoc) || /-ga(?:$|-)/i.test(slug);
+}
+
+function safeSourceSignature(unity) {
+  if (!unity || unity.error) return null;
+  const parts = [
+    sha20(unity.publisher_key),
+    sha20(unity.producer_key),
+    unity.ingest_point_fingerprint || null
+  ];
+  if (!parts.some(Boolean)) return null;
+  return parts.map(x => x || "-").join("|");
+}
+
+async function probeGeorgiaSourceLaneMappings(providerStreams) {
+  const day = await fetchOfficialDayEvents("2026-09-29");
+  const strictIndex = new Map();
+
+  for (const row of day.rows) {
+    const sportKey = normalize(row.sport || "");
+    const titleCandidates = [row.broadcast_subheadline, row.event_title].filter(Boolean);
+
+    for (const title of titleCandidates) {
+      const matchupKey = strictMatchupKey(title);
+      if (!matchupKey) continue;
+      const key = `${sportKey}::${matchupKey}`;
+      if (!strictIndex.has(key)) strictIndex.set(key, []);
+      strictIndex.get(key).push(row);
+    }
+  }
+
+  const direct = [];
+
+  for (const p of providerStreams) {
+    const providerSport = providerSportFromTitle(p.title || "");
+    if (!providerSport) continue;
+    const matchupKey = strictMatchupKey(p.title || "");
+    if (!matchupKey) continue;
+
+    const key = `${normalize(providerSport)}::${matchupKey}`;
+    const candidates = [...new Map(
+      (strictIndex.get(key) || []).map(x => [
+        [x.event_key, x.official_start, x.publisher_slug].join("|"),
+        x
+      ])
+    ).values()];
+
+    if (candidates.length !== 1) continue;
+    const hit = candidates[0];
+    if (!isGeorgiaOfficialRow(hit)) continue;
+
+    direct.push({
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_title: p.title,
+      event_key: hit.event_key,
+      official_start: hit.official_start,
+      sport: hit.sport,
+      subheadline: hit.broadcast_subheadline,
+      publisher_slug: hit.publisher_slug,
+      association: hit.association
+    });
+  }
+
+  const gaRowsRaw = day.rows.filter(isGeorgiaOfficialRow);
+  const gaMap = new Map();
+
+  for (const row of gaRowsRaw) {
+    const key = [row.event_key, row.official_start, row.publisher_slug, row.broadcast_subheadline].join("|");
+    if (!gaMap.has(key)) gaMap.set(key, row);
+  }
+  const gaRows = [...gaMap.values()];
+
+  const eventIds = [...new Set([
+    ...gaRows.map(x => x.event_key),
+    ...direct.map(x => x.event_key)
+  ].filter(Boolean))];
+
+  const unityByEvent = new Map();
+  for (const eventId of eventIds) {
+    unityByEvent.set(eventId, await enrichUnity({ event_key: eventId }));
+  }
+
+  const directWithSource = direct.map(x => {
+    const unity = unityByEvent.get(x.event_key);
+    return {
+      ...x,
+      source_signature_hash: sha20(safeSourceSignature(unity)),
+      source: unity && !unity.error ? {
+        publisher_key_hash: sha20(unity.publisher_key),
+        producer_key_hash: sha20(unity.producer_key),
+        ingest_point_fingerprint: unity.ingest_point_fingerprint || null
+      } : null
+    };
+  });
+
+  const slotsBySource = new Map();
+  for (const row of directWithSource) {
+    if (!row.source_signature_hash) continue;
+    if (!slotsBySource.has(row.source_signature_hash)) slotsBySource.set(row.source_signature_hash, new Set());
+    slotsBySource.get(row.source_signature_hash).add(row.provider_nfhs_number);
+  }
+
+  const gaEvents = gaRows.map(row => {
+    const unity = unityByEvent.get(row.event_key);
+    const sigHash = sha20(safeSourceSignature(unity));
+    const candidateSlots = sigHash && slotsBySource.has(sigHash)
+      ? [...slotsBySource.get(sigHash)].sort((a, b) => a - b)
+      : [];
+
+    const dt = DateTime.fromISO(row.official_start || "", { setZone: true }).setZone(EASTERN);
+
+    return {
+      event_key: row.event_key,
+      official_start_eastern: dt.isValid ? dt.toISO() : row.official_start,
+      sport: row.sport,
+      subheadline: row.broadcast_subheadline,
+      publisher_slug: row.publisher_slug,
+      association: row.association,
+      source_signature_hash: sigHash,
+      source: unity && !unity.error ? {
+        publisher_key_hash: sha20(unity.publisher_key),
+        producer_key_hash: sha20(unity.producer_key),
+        ingest_point_fingerprint: unity.ingest_point_fingerprint || null
+      } : null,
+      direct_provider_slots: directWithSource
+        .filter(x => x.event_key === row.event_key)
+        .map(x => x.provider_nfhs_number)
+        .sort((a, b) => a - b),
+      same_source_candidate_slots: candidateSlots
+    };
+  });
+
+  const afterFourMillis = DateTime.fromISO("2026-09-29T20:00:00.000Z", { setZone: true }).toMillis();
+  const afterFour = gaEvents.filter(x => {
+    const dt = DateTime.fromISO(x.official_start_eastern || "", { setZone: true });
+    return dt.isValid && dt.toUTC().toMillis() > afterFourMillis;
+  });
+
+  const afterFourWithLane = afterFour.filter(x => x.same_source_candidate_slots.length === 1);
+  const afterFourDirect = afterFour.filter(x => x.direct_provider_slots.length > 0);
+
+  const brantleyTextHits = providerStreams
+    .filter(x => /\b(?:brantley county|clinch county)\b/i.test(x.title || ""))
+    .map(x => ({
+      provider_nfhs_number: x.provider_nfhs_number,
+      stream_id: x.stream_id,
+      provider_title: x.title
+    }));
+
+  const brantleyEvents = gaEvents.filter(x =>
+    /brantley-county-high-school/i.test(x.publisher_slug || "") ||
+    /\b(?:brantley county|clinch county)\b/i.test(x.subheadline || "")
+  );
+
+  return {
+    purpose:
+      "Build Georgia event-to-provider source-lane hypotheses by finding exact same-day Georgia title matches anywhere in the provider's 5,000 NFHS streams, enriching official events through Unity, and propagating only identical hashed publisher+producer+ingest signatures. Same-source slots are hypotheses until independently validated.",
+    provider_streams_scanned: providerStreams.length,
+    official_day_rows_loaded: day.row_count,
+    georgia_official_rows: gaEvents.length,
+    direct_unique_georgia_provider_matches: directWithSource.length,
+    unique_source_signatures_with_direct_provider_anchor: slotsBySource.size,
+    georgia_after_4pm_events: afterFour.length,
+    georgia_after_4pm_direct_matches: afterFourDirect.length,
+    georgia_after_4pm_with_single_same_source_candidate_slot: afterFourWithLane.length,
+    brantley_or_clinch_provider_title_hits: brantleyTextHits,
+    brantley_clinch_official_events: brantleyEvents,
+    direct_matches: directWithSource,
+    after_4pm_single_lane_candidates: afterFourWithLane,
+    georgia_events: gaEvents
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -2923,6 +3101,7 @@ async function main() {
     exactFourPmBlockProbe?.two_sided_sequence_alignment?.provider_only_rows || []
   );
   const allFourPmTitlesVsFullDay = await probeAllFourPmTitlesAgainstFullDay(provider.streams);
+  const georgiaSourceLaneMappings = await probeGeorgiaSourceLaneMappings(provider.streams);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -2968,7 +3147,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-18",
+    diagnostic_version: "deep-link-19",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3013,6 +3192,7 @@ async function main() {
     five_pm_slot_reuse_probe: fivePmSlotReuse,
     same_day_provider_only_match_probe: sameDayProviderOnlyMatches,
     all_four_pm_titles_vs_full_day_probe: allFourPmTitlesVsFullDay,
+    georgia_source_lane_mapping_probe: georgiaSourceLaneMappings,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3021,6 +3201,46 @@ async function main() {
   await fs.writeFile(
     "public/nfhs-deep-link-diagnostic.json",
     JSON.stringify(payload, null, 2) + "\n",
+    "utf8"
+  );
+
+  const compactSummary = {
+    generated_at: payload.generated_at,
+    diagnostic_version: payload.diagnostic_version,
+    diagnostic_only: true,
+    modifies_epg: false,
+    summary: payload.summary,
+    all_four_pm_titles_vs_full_day_probe: {
+      provider_4pm_title_count: allFourPmTitlesVsFullDay.provider_4pm_title_count,
+      unique_strict_same_day_matches: allFourPmTitlesVsFullDay.unique_strict_same_day_matches,
+      unique_matches_actually_after_4pm: allFourPmTitlesVsFullDay.unique_matches_actually_after_4pm,
+      georgia_unique_matches: allFourPmTitlesVsFullDay.georgia_unique_matches,
+      georgia_rows: allFourPmTitlesVsFullDay.georgia_rows,
+      after_4pm_rows: allFourPmTitlesVsFullDay.after_4pm_rows
+    },
+    georgia_source_lane_mapping_probe: {
+      provider_streams_scanned: georgiaSourceLaneMappings.provider_streams_scanned,
+      georgia_official_rows: georgiaSourceLaneMappings.georgia_official_rows,
+      direct_unique_georgia_provider_matches: georgiaSourceLaneMappings.direct_unique_georgia_provider_matches,
+      unique_source_signatures_with_direct_provider_anchor:
+        georgiaSourceLaneMappings.unique_source_signatures_with_direct_provider_anchor,
+      georgia_after_4pm_events: georgiaSourceLaneMappings.georgia_after_4pm_events,
+      georgia_after_4pm_direct_matches: georgiaSourceLaneMappings.georgia_after_4pm_direct_matches,
+      georgia_after_4pm_with_single_same_source_candidate_slot:
+        georgiaSourceLaneMappings.georgia_after_4pm_with_single_same_source_candidate_slot,
+      brantley_or_clinch_provider_title_hits:
+        georgiaSourceLaneMappings.brantley_or_clinch_provider_title_hits,
+      brantley_clinch_official_events:
+        georgiaSourceLaneMappings.brantley_clinch_official_events,
+      direct_matches: georgiaSourceLaneMappings.direct_matches,
+      after_4pm_single_lane_candidates:
+        georgiaSourceLaneMappings.after_4pm_single_lane_candidates
+    }
+  };
+
+  await fs.writeFile(
+    "public/nfhs-deep-link-summary.json",
+    JSON.stringify(compactSummary, null, 2) + "\n",
     "utf8"
   );
 
