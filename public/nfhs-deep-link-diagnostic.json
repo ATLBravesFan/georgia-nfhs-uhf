@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T15:22:51.368Z",
+  "generated_at": "2026-09-30T15:26:53.847Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-16",
+  "diagnostic_version": "deep-link-17",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1499008,
+      "total": 1499026,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1499009,
+      "total": 1499027,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,13 +527,13 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1499009,
+    "returned_total": 1499027,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
       "values": [
         1790714700000,
-        "gam56ded4e8cf"
+        "gamc6f878d235"
       ]
     },
     "first_event": {
@@ -547,11 +547,11 @@
     },
     "last_event": {
       "index": 499,
-      "event_key": "gam56ded4e8cf",
+      "event_key": "gamc6f878d235",
       "start_time": "2026-09-29T20:45:00.000Z",
-      "sport": "Volleyball",
+      "sport": "Field Hockey",
       "publisher_slugs": [
-        "lakeland-christian-school-lakeland-fl"
+        "forsyth-country-day-school-lewisville-nc"
       ]
     },
     "known_matches_found": 1,
@@ -3049,15 +3049,6 @@
       },
       {
         "index": 275,
-        "event_key": "gam934ca752f2",
-        "start_time": "2026-09-29T21:00:00.000Z",
-        "sport": "Volleyball",
-        "publisher_slugs": [
-          "ardrey-kell-high-school-charlotte-nc"
-        ]
-      },
-      {
-        "index": 276,
         "event_key": "gam9430dad7ef",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3066,7 +3057,7 @@
         ]
       },
       {
-        "index": 277,
+        "index": 276,
         "event_key": "gam949457b9f0",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3075,7 +3066,7 @@
         ]
       },
       {
-        "index": 278,
+        "index": 277,
         "event_key": "gam95e35e6c7c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3084,7 +3075,7 @@
         ]
       },
       {
-        "index": 279,
+        "index": 278,
         "event_key": "gam96209af1dd",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3093,7 +3084,7 @@
         ]
       },
       {
-        "index": 280,
+        "index": 279,
         "event_key": "gam962b32f236",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3102,7 +3093,7 @@
         ]
       },
       {
-        "index": 281,
+        "index": 280,
         "event_key": "gam973d821b70",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3111,7 +3102,7 @@
         ]
       },
       {
-        "index": 282,
+        "index": 281,
         "event_key": "gam98264ba5d3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3120,7 +3111,7 @@
         ]
       },
       {
-        "index": 283,
+        "index": 282,
         "event_key": "gam987e354471",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3129,7 +3120,7 @@
         ]
       },
       {
-        "index": 284,
+        "index": 283,
         "event_key": "gam993cf357f9",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3138,7 +3129,7 @@
         ]
       },
       {
-        "index": 285,
+        "index": 284,
         "event_key": "gam998df01636",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3147,7 +3138,7 @@
         ]
       },
       {
-        "index": 286,
+        "index": 285,
         "event_key": "gam9a78091ba9",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -3156,7 +3147,7 @@
         ]
       },
       {
-        "index": 287,
+        "index": 286,
         "event_key": "gam9b17a63284",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3165,7 +3156,7 @@
         ]
       },
       {
-        "index": 288,
+        "index": 287,
         "event_key": "gam9b9c689b80",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3174,7 +3165,7 @@
         ]
       },
       {
-        "index": 289,
+        "index": 288,
         "event_key": "gam9bae252edf",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3183,7 +3174,7 @@
         ]
       },
       {
-        "index": 290,
+        "index": 289,
         "event_key": "gam9c2d666228",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3192,7 +3183,7 @@
         ]
       },
       {
-        "index": 291,
+        "index": 290,
         "event_key": "gam9d1b574a07",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3201,7 +3192,7 @@
         ]
       },
       {
-        "index": 292,
+        "index": 291,
         "event_key": "gam9f6b816c2b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3210,7 +3201,7 @@
         ]
       },
       {
-        "index": 293,
+        "index": 292,
         "event_key": "gam9fcc844cfe",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3219,7 +3210,7 @@
         ]
       },
       {
-        "index": 294,
+        "index": 293,
         "event_key": "gam9fe45c2094",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3228,7 +3219,7 @@
         ]
       },
       {
-        "index": 295,
+        "index": 294,
         "event_key": "gama0ba90aaec",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3237,7 +3228,7 @@
         ]
       },
       {
-        "index": 296,
+        "index": 295,
         "event_key": "gama342b2ed96",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3246,7 +3237,7 @@
         ]
       },
       {
-        "index": 297,
+        "index": 296,
         "event_key": "gama3765e4ec2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3255,7 +3246,7 @@
         ]
       },
       {
-        "index": 298,
+        "index": 297,
         "event_key": "gama4226857db",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3264,7 +3255,7 @@
         ]
       },
       {
-        "index": 299,
+        "index": 298,
         "event_key": "gama454a10b92",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3273,7 +3264,7 @@
         ]
       },
       {
-        "index": 300,
+        "index": 299,
         "event_key": "gama65b31aa1c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3282,7 +3273,7 @@
         ]
       },
       {
-        "index": 301,
+        "index": 300,
         "event_key": "gama68ab3146f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3291,7 +3282,7 @@
         ]
       },
       {
-        "index": 302,
+        "index": 301,
         "event_key": "gama7e74d5404",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3300,7 +3291,7 @@
         ]
       },
       {
-        "index": 303,
+        "index": 302,
         "event_key": "gama822074001",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3309,7 +3300,7 @@
         ]
       },
       {
-        "index": 304,
+        "index": 303,
         "event_key": "gama998dc7532",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3318,7 +3309,7 @@
         ]
       },
       {
-        "index": 305,
+        "index": 304,
         "event_key": "gama9b11432ee",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3327,7 +3318,7 @@
         ]
       },
       {
-        "index": 306,
+        "index": 305,
         "event_key": "gamaae6c10a50",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3336,7 +3327,7 @@
         ]
       },
       {
-        "index": 307,
+        "index": 306,
         "event_key": "gamab30a341cb",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3345,7 +3336,7 @@
         ]
       },
       {
-        "index": 308,
+        "index": 307,
         "event_key": "gamac3431e352",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3354,7 +3345,7 @@
         ]
       },
       {
-        "index": 309,
+        "index": 308,
         "event_key": "gamad1aeb8b3c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3363,7 +3354,7 @@
         ]
       },
       {
-        "index": 310,
+        "index": 309,
         "event_key": "gamad487cc4a0",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3372,7 +3363,7 @@
         ]
       },
       {
-        "index": 311,
+        "index": 310,
         "event_key": "gamad9d56580e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3381,7 +3372,7 @@
         ]
       },
       {
-        "index": 312,
+        "index": 311,
         "event_key": "gamaddcae3e08",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3390,7 +3381,7 @@
         ]
       },
       {
-        "index": 313,
+        "index": 312,
         "event_key": "gamadf45b2221",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3399,7 +3390,7 @@
         ]
       },
       {
-        "index": 314,
+        "index": 313,
         "event_key": "gamae6d2e124c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3408,7 +3399,7 @@
         ]
       },
       {
-        "index": 315,
+        "index": 314,
         "event_key": "gamae896fc027",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3417,7 +3408,7 @@
         ]
       },
       {
-        "index": 316,
+        "index": 315,
         "event_key": "gamaea7db9022",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3426,7 +3417,7 @@
         ]
       },
       {
-        "index": 317,
+        "index": 316,
         "event_key": "gamaf7cf471c1",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3435,7 +3426,7 @@
         ]
       },
       {
-        "index": 318,
+        "index": 317,
         "event_key": "gamaf97b95646",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3444,7 +3435,7 @@
         ]
       },
       {
-        "index": 319,
+        "index": 318,
         "event_key": "gamafa9defbc3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Field Hockey",
@@ -3453,7 +3444,7 @@
         ]
       },
       {
-        "index": 320,
+        "index": 319,
         "event_key": "gamb161f31b3c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3462,7 +3453,7 @@
         ]
       },
       {
-        "index": 321,
+        "index": 320,
         "event_key": "gamb2a9617bae",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3471,7 +3462,7 @@
         ]
       },
       {
-        "index": 322,
+        "index": 321,
         "event_key": "gamb2fee0575e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3480,7 +3471,7 @@
         ]
       },
       {
-        "index": 323,
+        "index": 322,
         "event_key": "gamb31d605930",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3489,7 +3480,7 @@
         ]
       },
       {
-        "index": 324,
+        "index": 323,
         "event_key": "gamb383874be9",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -3498,7 +3489,7 @@
         ]
       },
       {
-        "index": 325,
+        "index": 324,
         "event_key": "gamb6e156307d",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3507,7 +3498,7 @@
         ]
       },
       {
-        "index": 326,
+        "index": 325,
         "event_key": "gamb8945fb7c4",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3516,7 +3507,7 @@
         ]
       },
       {
-        "index": 327,
+        "index": 326,
         "event_key": "gamb898dc565c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3525,7 +3516,7 @@
         ]
       },
       {
-        "index": 328,
+        "index": 327,
         "event_key": "gamb8b03a5553",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3534,7 +3525,7 @@
         ]
       },
       {
-        "index": 329,
+        "index": 328,
         "event_key": "gamb8fdb43b1d",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3543,7 +3534,7 @@
         ]
       },
       {
-        "index": 330,
+        "index": 329,
         "event_key": "gamb9b2fa1924",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3552,7 +3543,7 @@
         ]
       },
       {
-        "index": 331,
+        "index": 330,
         "event_key": "gamb9b5189c1d",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -3561,7 +3552,7 @@
         ]
       },
       {
-        "index": 332,
+        "index": 331,
         "event_key": "gamba3357d613",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3570,7 +3561,7 @@
         ]
       },
       {
-        "index": 333,
+        "index": 332,
         "event_key": "gamba7ccd7d90",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3579,7 +3570,7 @@
         ]
       },
       {
-        "index": 334,
+        "index": 333,
         "event_key": "gambb8d9b27fa",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -3588,7 +3579,7 @@
         ]
       },
       {
-        "index": 335,
+        "index": 334,
         "event_key": "gambbfba12f02",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3597,7 +3588,7 @@
         ]
       },
       {
-        "index": 336,
+        "index": 335,
         "event_key": "gambc1a54b9ca",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3606,7 +3597,7 @@
         ]
       },
       {
-        "index": 337,
+        "index": 336,
         "event_key": "gambc3b36dd27",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3615,7 +3606,7 @@
         ]
       },
       {
-        "index": 338,
+        "index": 337,
         "event_key": "gambc5f97fa96",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3624,7 +3615,7 @@
         ]
       },
       {
-        "index": 339,
+        "index": 338,
         "event_key": "gambd2d64e730",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3633,7 +3624,7 @@
         ]
       },
       {
-        "index": 340,
+        "index": 339,
         "event_key": "gambd64c8f26a",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3642,7 +3633,7 @@
         ]
       },
       {
-        "index": 341,
+        "index": 340,
         "event_key": "gambd96815615",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -3651,7 +3642,7 @@
         ]
       },
       {
-        "index": 342,
+        "index": 341,
         "event_key": "gambdb593a609",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3660,7 +3651,7 @@
         ]
       },
       {
-        "index": 343,
+        "index": 342,
         "event_key": "gambdf37c05aa",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3669,7 +3660,7 @@
         ]
       },
       {
-        "index": 344,
+        "index": 343,
         "event_key": "gamc06b3d9882",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3678,7 +3669,7 @@
         ]
       },
       {
-        "index": 345,
+        "index": 344,
         "event_key": "gamc166df3a20",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3687,7 +3678,7 @@
         ]
       },
       {
-        "index": 346,
+        "index": 345,
         "event_key": "gamc1eaff9125",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3696,7 +3687,7 @@
         ]
       },
       {
-        "index": 347,
+        "index": 346,
         "event_key": "gamc1ebac56eb",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3705,7 +3696,7 @@
         ]
       },
       {
-        "index": 348,
+        "index": 347,
         "event_key": "gamc34e8e3bfe",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3714,7 +3705,7 @@
         ]
       },
       {
-        "index": 349,
+        "index": 348,
         "event_key": "gamc3ab526086",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3723,7 +3714,7 @@
         ]
       },
       {
-        "index": 350,
+        "index": 349,
         "event_key": "gamc4250f8747",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3732,7 +3723,7 @@
         ]
       },
       {
-        "index": 351,
+        "index": 350,
         "event_key": "gamc45eeeb9cc",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3741,7 +3732,7 @@
         ]
       },
       {
-        "index": 352,
+        "index": 351,
         "event_key": "gamc4a1f6e738",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3750,7 +3741,7 @@
         ]
       },
       {
-        "index": 353,
+        "index": 352,
         "event_key": "gamc4bf25bc6c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3759,7 +3750,7 @@
         ]
       },
       {
-        "index": 354,
+        "index": 353,
         "event_key": "gamc50f56982f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3768,7 +3759,7 @@
         ]
       },
       {
-        "index": 355,
+        "index": 354,
         "event_key": "gamc55ed87a15",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3777,7 +3768,7 @@
         ]
       },
       {
-        "index": 356,
+        "index": 355,
         "event_key": "gamc5bf6ccc74",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3786,7 +3777,7 @@
         ]
       },
       {
-        "index": 357,
+        "index": 356,
         "event_key": "gamc5cd9101cd",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3795,7 +3786,7 @@
         ]
       },
       {
-        "index": 358,
+        "index": 357,
         "event_key": "gamc62b813b67",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3804,7 +3795,7 @@
         ]
       },
       {
-        "index": 359,
+        "index": 358,
         "event_key": "gamc75706ab0e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Football",
@@ -3813,7 +3804,7 @@
         ]
       },
       {
-        "index": 360,
+        "index": 359,
         "event_key": "gamc828e17227",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3822,7 +3813,7 @@
         ]
       },
       {
-        "index": 361,
+        "index": 360,
         "event_key": "gamc8e8fc04db",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3831,7 +3822,7 @@
         ]
       },
       {
-        "index": 362,
+        "index": 361,
         "event_key": "gamc942e19c98",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3840,7 +3831,7 @@
         ]
       },
       {
-        "index": 363,
+        "index": 362,
         "event_key": "gamc94a746e76",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3849,7 +3840,7 @@
         ]
       },
       {
-        "index": 364,
+        "index": 363,
         "event_key": "gamc9c1283631",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3858,7 +3849,7 @@
         ]
       },
       {
-        "index": 365,
+        "index": 364,
         "event_key": "gamcaf1c82783",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3867,7 +3858,7 @@
         ]
       },
       {
-        "index": 366,
+        "index": 365,
         "event_key": "gamcaf52bb4c6",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3876,7 +3867,7 @@
         ]
       },
       {
-        "index": 367,
+        "index": 366,
         "event_key": "gamcb9e39336f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3885,7 +3876,7 @@
         ]
       },
       {
-        "index": 368,
+        "index": 367,
         "event_key": "gamcc2207de31",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3894,7 +3885,7 @@
         ]
       },
       {
-        "index": 369,
+        "index": 368,
         "event_key": "gamcce21da5a3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3903,7 +3894,7 @@
         ]
       },
       {
-        "index": 370,
+        "index": 369,
         "event_key": "gamcde4ad9625",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3912,7 +3903,7 @@
         ]
       },
       {
-        "index": 371,
+        "index": 370,
         "event_key": "gamcf31b9135b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3921,7 +3912,7 @@
         ]
       },
       {
-        "index": 372,
+        "index": 371,
         "event_key": "gamcf514d32ae",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3930,7 +3921,7 @@
         ]
       },
       {
-        "index": 373,
+        "index": 372,
         "event_key": "gamcf56f99f94",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3939,7 +3930,7 @@
         ]
       },
       {
-        "index": 374,
+        "index": 373,
         "event_key": "gamcf88e0d1ab",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Field Hockey",
@@ -3948,7 +3939,7 @@
         ]
       },
       {
-        "index": 375,
+        "index": 374,
         "event_key": "gamd04ed339a7",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3957,7 +3948,7 @@
         ]
       },
       {
-        "index": 376,
+        "index": 375,
         "event_key": "gamd0a396ec62",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3966,7 +3957,7 @@
         ]
       },
       {
-        "index": 377,
+        "index": 376,
         "event_key": "gamd1aff06542",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Football",
@@ -3975,7 +3966,7 @@
         ]
       },
       {
-        "index": 378,
+        "index": 377,
         "event_key": "gamd1e744019b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -3984,7 +3975,7 @@
         ]
       },
       {
-        "index": 379,
+        "index": 378,
         "event_key": "gamd26eefacc7",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -3993,7 +3984,7 @@
         ]
       },
       {
-        "index": 380,
+        "index": 379,
         "event_key": "gamd44392f443",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4002,7 +3993,7 @@
         ]
       },
       {
-        "index": 381,
+        "index": 380,
         "event_key": "gamd4d5c729f5",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4011,7 +4002,7 @@
         ]
       },
       {
-        "index": 382,
+        "index": 381,
         "event_key": "gamd4d7be026f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4020,7 +4011,7 @@
         ]
       },
       {
-        "index": 383,
+        "index": 382,
         "event_key": "gamd5032912f1",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4029,7 +4020,7 @@
         ]
       },
       {
-        "index": 384,
+        "index": 383,
         "event_key": "gamd5e0cd703b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -4038,7 +4029,7 @@
         ]
       },
       {
-        "index": 385,
+        "index": 384,
         "event_key": "gamd5f5ed8a24",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4047,7 +4038,7 @@
         ]
       },
       {
-        "index": 386,
+        "index": 385,
         "event_key": "gamd64185a6ba",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4056,7 +4047,7 @@
         ]
       },
       {
-        "index": 387,
+        "index": 386,
         "event_key": "gamd656c7bc2b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4065,7 +4056,7 @@
         ]
       },
       {
-        "index": 388,
+        "index": 387,
         "event_key": "gamd6a0d1fcbb",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Football",
@@ -4074,7 +4065,7 @@
         ]
       },
       {
-        "index": 389,
+        "index": 388,
         "event_key": "gamd748449b36",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4083,7 +4074,7 @@
         ]
       },
       {
-        "index": 390,
+        "index": 389,
         "event_key": "gamd86c7d5de3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Football",
@@ -4092,7 +4083,7 @@
         ]
       },
       {
-        "index": 391,
+        "index": 390,
         "event_key": "gamd8d490faa2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4101,7 +4092,7 @@
         ]
       },
       {
-        "index": 392,
+        "index": 391,
         "event_key": "gamd9363bc7bd",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4110,7 +4101,7 @@
         ]
       },
       {
-        "index": 393,
+        "index": 392,
         "event_key": "gamd9f8c59907",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4119,7 +4110,7 @@
         ]
       },
       {
-        "index": 394,
+        "index": 393,
         "event_key": "gamda2b16d174",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4128,7 +4119,7 @@
         ]
       },
       {
-        "index": 395,
+        "index": 394,
         "event_key": "gamda7afb29f8",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4137,7 +4128,7 @@
         ]
       },
       {
-        "index": 396,
+        "index": 395,
         "event_key": "gamda8b96dc8a",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4146,7 +4137,7 @@
         ]
       },
       {
-        "index": 397,
+        "index": 396,
         "event_key": "gamda9615e112",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4155,7 +4146,7 @@
         ]
       },
       {
-        "index": 398,
+        "index": 397,
         "event_key": "gamdb621aee1f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4164,7 +4155,7 @@
         ]
       },
       {
-        "index": 399,
+        "index": 398,
         "event_key": "gamdc25032f4e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4173,7 +4164,7 @@
         ]
       },
       {
-        "index": 400,
+        "index": 399,
         "event_key": "gamdce0a24de1",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4182,7 +4173,7 @@
         ]
       },
       {
-        "index": 401,
+        "index": 400,
         "event_key": "gamdd4a5157f2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4191,7 +4182,7 @@
         ]
       },
       {
-        "index": 402,
+        "index": 401,
         "event_key": "gamdd692f51f1",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4200,7 +4191,7 @@
         ]
       },
       {
-        "index": 403,
+        "index": 402,
         "event_key": "gamddd27bfdf0",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4209,7 +4200,7 @@
         ]
       },
       {
-        "index": 404,
+        "index": 403,
         "event_key": "gamde3763de61",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4218,7 +4209,7 @@
         ]
       },
       {
-        "index": 405,
+        "index": 404,
         "event_key": "gamde5e95c18e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4227,7 +4218,7 @@
         ]
       },
       {
-        "index": 406,
+        "index": 405,
         "event_key": "gamdf1acd6a66",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4236,7 +4227,7 @@
         ]
       },
       {
-        "index": 407,
+        "index": 406,
         "event_key": "game08a5dfe10",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4245,7 +4236,7 @@
         ]
       },
       {
-        "index": 408,
+        "index": 407,
         "event_key": "game0c901d167",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4254,7 +4245,7 @@
         ]
       },
       {
-        "index": 409,
+        "index": 408,
         "event_key": "game26ff44873",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4263,7 +4254,7 @@
         ]
       },
       {
-        "index": 410,
+        "index": 409,
         "event_key": "game2cf8548b2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4272,7 +4263,7 @@
         ]
       },
       {
-        "index": 411,
+        "index": 410,
         "event_key": "game2eb1687aa",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4281,7 +4272,7 @@
         ]
       },
       {
-        "index": 412,
+        "index": 411,
         "event_key": "game305428fb6",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Flag Football",
@@ -4290,7 +4281,7 @@
         ]
       },
       {
-        "index": 413,
+        "index": 412,
         "event_key": "game305676067",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Softball",
@@ -4299,7 +4290,7 @@
         ]
       },
       {
-        "index": 414,
+        "index": 413,
         "event_key": "game387e0458c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4308,7 +4299,7 @@
         ]
       },
       {
-        "index": 415,
+        "index": 414,
         "event_key": "game39bd608be",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4317,7 +4308,7 @@
         ]
       },
       {
-        "index": 416,
+        "index": 415,
         "event_key": "game3b379e7dc",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4326,7 +4317,7 @@
         ]
       },
       {
-        "index": 417,
+        "index": 416,
         "event_key": "game3bd036f3d",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4335,7 +4326,7 @@
         ]
       },
       {
-        "index": 418,
+        "index": 417,
         "event_key": "game4135fdc89",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4344,7 +4335,7 @@
         ]
       },
       {
-        "index": 419,
+        "index": 418,
         "event_key": "game439428fee",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4353,7 +4344,7 @@
         ]
       },
       {
-        "index": 420,
+        "index": 419,
         "event_key": "game4ddf1bf53",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4362,7 +4353,7 @@
         ]
       },
       {
-        "index": 421,
+        "index": 420,
         "event_key": "game4fcd7896f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4371,7 +4362,7 @@
         ]
       },
       {
-        "index": 422,
+        "index": 421,
         "event_key": "game5405b6f1e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Field Hockey",
@@ -4380,7 +4371,7 @@
         ]
       },
       {
-        "index": 423,
+        "index": 422,
         "event_key": "game5a1a4841e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4389,7 +4380,7 @@
         ]
       },
       {
-        "index": 424,
+        "index": 423,
         "event_key": "game5b655c289",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4398,7 +4389,7 @@
         ]
       },
       {
-        "index": 425,
+        "index": 424,
         "event_key": "game5f4e27392",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4407,7 +4398,7 @@
         ]
       },
       {
-        "index": 426,
+        "index": 425,
         "event_key": "game6d24f9da2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4416,7 +4407,7 @@
         ]
       },
       {
-        "index": 427,
+        "index": 426,
         "event_key": "game75d7aec12",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4425,7 +4416,7 @@
         ]
       },
       {
-        "index": 428,
+        "index": 427,
         "event_key": "game7e15736c4",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4434,7 +4425,7 @@
         ]
       },
       {
-        "index": 429,
+        "index": 428,
         "event_key": "game848e0d21c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4443,7 +4434,7 @@
         ]
       },
       {
-        "index": 430,
+        "index": 429,
         "event_key": "game91195f24d",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Field Hockey",
@@ -4452,7 +4443,7 @@
         ]
       },
       {
-        "index": 431,
+        "index": 430,
         "event_key": "game93fba322e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4461,7 +4452,7 @@
         ]
       },
       {
-        "index": 432,
+        "index": 431,
         "event_key": "game97610eb10",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4470,7 +4461,7 @@
         ]
       },
       {
-        "index": 433,
+        "index": 432,
         "event_key": "gameaac1905f4",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4479,7 +4470,7 @@
         ]
       },
       {
-        "index": 434,
+        "index": 433,
         "event_key": "gameaf3fa8174",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4488,7 +4479,7 @@
         ]
       },
       {
-        "index": 435,
+        "index": 434,
         "event_key": "gameb61b2578f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4497,7 +4488,7 @@
         ]
       },
       {
-        "index": 436,
+        "index": 435,
         "event_key": "gamec0f50edf5",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4506,7 +4497,7 @@
         ]
       },
       {
-        "index": 437,
+        "index": 436,
         "event_key": "gamec3a8fe542",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4515,7 +4506,7 @@
         ]
       },
       {
-        "index": 438,
+        "index": 437,
         "event_key": "gamed309e6fe7",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4524,7 +4515,7 @@
         ]
       },
       {
-        "index": 439,
+        "index": 438,
         "event_key": "gamed4f2c6a8c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4533,7 +4524,7 @@
         ]
       },
       {
-        "index": 440,
+        "index": 439,
         "event_key": "gamedf496a121",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4542,7 +4533,7 @@
         ]
       },
       {
-        "index": 441,
+        "index": 440,
         "event_key": "gamee3a0ce2bd",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4551,7 +4542,7 @@
         ]
       },
       {
-        "index": 442,
+        "index": 441,
         "event_key": "gameedcb73c94",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4560,7 +4551,7 @@
         ]
       },
       {
-        "index": 443,
+        "index": 442,
         "event_key": "gamef4c90c6f3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4569,7 +4560,7 @@
         ]
       },
       {
-        "index": 444,
+        "index": 443,
         "event_key": "gamf0d8418f54",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4578,7 +4569,7 @@
         ]
       },
       {
-        "index": 445,
+        "index": 444,
         "event_key": "gamf1d7785283",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4587,7 +4578,7 @@
         ]
       },
       {
-        "index": 446,
+        "index": 445,
         "event_key": "gamf2916259e2",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4596,7 +4587,7 @@
         ]
       },
       {
-        "index": 447,
+        "index": 446,
         "event_key": "gamf2b22f4d1f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4605,7 +4596,7 @@
         ]
       },
       {
-        "index": 448,
+        "index": 447,
         "event_key": "gamf384547a29",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4614,7 +4605,7 @@
         ]
       },
       {
-        "index": 449,
+        "index": 448,
         "event_key": "gamf3d8ff9080",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4623,7 +4614,7 @@
         ]
       },
       {
-        "index": 450,
+        "index": 449,
         "event_key": "gamf4f3c4e33b",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4632,7 +4623,7 @@
         ]
       },
       {
-        "index": 451,
+        "index": 450,
         "event_key": "gamf52d094103",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4641,7 +4632,7 @@
         ]
       },
       {
-        "index": 452,
+        "index": 451,
         "event_key": "gamf5fe244579",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4650,7 +4641,7 @@
         ]
       },
       {
-        "index": 453,
+        "index": 452,
         "event_key": "gamf61ef896f8",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4659,7 +4650,7 @@
         ]
       },
       {
-        "index": 454,
+        "index": 453,
         "event_key": "gamf636eb9e8f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4668,7 +4659,7 @@
         ]
       },
       {
-        "index": 455,
+        "index": 454,
         "event_key": "gamf67450d010",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4677,7 +4668,7 @@
         ]
       },
       {
-        "index": 456,
+        "index": 455,
         "event_key": "gamf6d9d6715c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4686,7 +4677,7 @@
         ]
       },
       {
-        "index": 457,
+        "index": 456,
         "event_key": "gamf6dbb5b26c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4695,7 +4686,7 @@
         ]
       },
       {
-        "index": 458,
+        "index": 457,
         "event_key": "gamf7e95c7a93",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4704,7 +4695,7 @@
         ]
       },
       {
-        "index": 459,
+        "index": 458,
         "event_key": "gamf8356ff8fb",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4713,7 +4704,7 @@
         ]
       },
       {
-        "index": 460,
+        "index": 459,
         "event_key": "gamf8a556328f",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4722,7 +4713,7 @@
         ]
       },
       {
-        "index": 461,
+        "index": 460,
         "event_key": "gamf9753202e6",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4731,7 +4722,7 @@
         ]
       },
       {
-        "index": 462,
+        "index": 461,
         "event_key": "gamfa6cc5d76c",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4740,7 +4731,7 @@
         ]
       },
       {
-        "index": 463,
+        "index": 462,
         "event_key": "gamfa8f2d5522",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4749,7 +4740,7 @@
         ]
       },
       {
-        "index": 464,
+        "index": 463,
         "event_key": "gamfaa5ada0bc",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4758,7 +4749,7 @@
         ]
       },
       {
-        "index": 465,
+        "index": 464,
         "event_key": "gamfbbea4c4d9",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4767,7 +4758,7 @@
         ]
       },
       {
-        "index": 466,
+        "index": 465,
         "event_key": "gamfbc29a6804",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4776,7 +4767,7 @@
         ]
       },
       {
-        "index": 467,
+        "index": 466,
         "event_key": "gamfbf64af0f6",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4785,7 +4776,7 @@
         ]
       },
       {
-        "index": 468,
+        "index": 467,
         "event_key": "gamfc4206c138",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4794,7 +4785,7 @@
         ]
       },
       {
-        "index": 469,
+        "index": 468,
         "event_key": "gamfc6140d711",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Football",
@@ -4803,7 +4794,7 @@
         ]
       },
       {
-        "index": 470,
+        "index": 469,
         "event_key": "gamfc8d236c68",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4812,7 +4803,7 @@
         ]
       },
       {
-        "index": 471,
+        "index": 470,
         "event_key": "gamfcab6b37ab",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Field Hockey",
@@ -4821,7 +4812,7 @@
         ]
       },
       {
-        "index": 472,
+        "index": 471,
         "event_key": "gamfd8215679e",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4830,7 +4821,7 @@
         ]
       },
       {
-        "index": 473,
+        "index": 472,
         "event_key": "gamfd9b7a6ffb",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Soccer",
@@ -4839,7 +4830,7 @@
         ]
       },
       {
-        "index": 474,
+        "index": 473,
         "event_key": "gamfdd473f3b3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4848,7 +4839,7 @@
         ]
       },
       {
-        "index": 475,
+        "index": 474,
         "event_key": "gamfde9828aad",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4857,7 +4848,7 @@
         ]
       },
       {
-        "index": 476,
+        "index": 475,
         "event_key": "gamfe47db4fb3",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4866,7 +4857,7 @@
         ]
       },
       {
-        "index": 477,
+        "index": 476,
         "event_key": "gamfecf74fc04",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4875,7 +4866,7 @@
         ]
       },
       {
-        "index": 478,
+        "index": 477,
         "event_key": "gamff143615bc",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4884,7 +4875,7 @@
         ]
       },
       {
-        "index": 479,
+        "index": 478,
         "event_key": "gamff2a7766c1",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4893,7 +4884,7 @@
         ]
       },
       {
-        "index": 480,
+        "index": 479,
         "event_key": "gamff41db05a6",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4902,7 +4893,7 @@
         ]
       },
       {
-        "index": 481,
+        "index": 480,
         "event_key": "gamff4217e865",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4911,7 +4902,7 @@
         ]
       },
       {
-        "index": 482,
+        "index": 481,
         "event_key": "gamff794b7259",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Basketball",
@@ -4920,7 +4911,7 @@
         ]
       },
       {
-        "index": 483,
+        "index": 482,
         "event_key": "gamffdcfa75ce",
         "start_time": "2026-09-29T21:00:00.000Z",
         "sport": "Volleyball",
@@ -4929,7 +4920,7 @@
         ]
       },
       {
-        "index": 484,
+        "index": 483,
         "event_key": "gam88e457869a",
         "start_time": "2026-09-29T20:55:00.000Z",
         "sport": "Volleyball",
@@ -4938,7 +4929,7 @@
         ]
       },
       {
-        "index": 485,
+        "index": 484,
         "event_key": "gamcd379a09d1",
         "start_time": "2026-09-29T20:55:00.000Z",
         "sport": "Basketball",
@@ -4947,7 +4938,7 @@
         ]
       },
       {
-        "index": 486,
+        "index": 485,
         "event_key": "gamd056292f8c",
         "start_time": "2026-09-29T20:55:00.000Z",
         "sport": "Volleyball",
@@ -4956,7 +4947,7 @@
         ]
       },
       {
-        "index": 487,
+        "index": 486,
         "event_key": "gamdd866e493a",
         "start_time": "2026-09-29T20:55:00.000Z",
         "sport": "Volleyball",
@@ -4965,7 +4956,7 @@
         ]
       },
       {
-        "index": 488,
+        "index": 487,
         "event_key": "gam0b01ab3cc8",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Soccer",
@@ -4974,7 +4965,7 @@
         ]
       },
       {
-        "index": 489,
+        "index": 488,
         "event_key": "gam15e919cf02",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Volleyball",
@@ -4983,7 +4974,7 @@
         ]
       },
       {
-        "index": 490,
+        "index": 489,
         "event_key": "gam2d977a8cb4",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Football",
@@ -4992,7 +4983,7 @@
         ]
       },
       {
-        "index": 491,
+        "index": 490,
         "event_key": "gam510626cbe0",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Soccer",
@@ -5001,7 +4992,7 @@
         ]
       },
       {
-        "index": 492,
+        "index": 491,
         "event_key": "gamd0fcdda159",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Basketball",
@@ -5010,7 +5001,7 @@
         ]
       },
       {
-        "index": 493,
+        "index": 492,
         "event_key": "gamde0ef55f4b",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Volleyball",
@@ -5019,7 +5010,7 @@
         ]
       },
       {
-        "index": 494,
+        "index": 493,
         "event_key": "gamf4943c80df",
         "start_time": "2026-09-29T20:50:00.000Z",
         "sport": "Volleyball",
@@ -5028,7 +5019,7 @@
         ]
       },
       {
-        "index": 495,
+        "index": 494,
         "event_key": "gam089dc7a5ae",
         "start_time": "2026-09-29T20:45:00.000Z",
         "sport": "Volleyball",
@@ -5037,7 +5028,7 @@
         ]
       },
       {
-        "index": 496,
+        "index": 495,
         "event_key": "gam09811d652f",
         "start_time": "2026-09-29T20:45:00.000Z",
         "sport": "Softball",
@@ -5046,7 +5037,7 @@
         ]
       },
       {
-        "index": 497,
+        "index": 496,
         "event_key": "gam491e45ff42",
         "start_time": "2026-09-29T20:45:00.000Z",
         "sport": "Volleyball",
@@ -5055,7 +5046,7 @@
         ]
       },
       {
-        "index": 498,
+        "index": 497,
         "event_key": "gam551355ff5b",
         "start_time": "2026-09-29T20:45:00.000Z",
         "sport": "Soccer",
@@ -5064,12 +5055,21 @@
         ]
       },
       {
-        "index": 499,
+        "index": 498,
         "event_key": "gam56ded4e8cf",
         "start_time": "2026-09-29T20:45:00.000Z",
         "sport": "Volleyball",
         "publisher_slugs": [
           "lakeland-christian-school-lakeland-fl"
+        ]
+      },
+      {
+        "index": 499,
+        "event_key": "gamc6f878d235",
+        "start_time": "2026-09-29T20:45:00.000Z",
+        "sport": "Field Hockey",
+        "publisher_slugs": [
+          "forsyth-country-day-school-lewisville-nc"
         ]
       }
     ]
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "3214a497c3d9cc8973e2",
+            "response_hash": "240b5095bb7253e217cc",
             "url_found": true,
-            "url_hash": "cafe9e963d227e40b538",
+            "url_hash": "2f449eed2686869394be",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "40a27871788260ab2fc9",
+            "pathname_hash": "78406bf256b7a97f6d08",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "b21057111b518b08fc3e",
+              "146b9f2514cb8e26047c",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "d36d154dcacb7b037051",
+            "response_hash": "878eb4470616d7a8e20d",
             "url_found": true,
-            "url_hash": "c195143402b8a8ca2331",
+            "url_hash": "a417d866f5d6d8c859f1",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "4baa8548c1fb04120710",
+            "pathname_hash": "5483a7e6428a65da6cb5",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "d175acdb56e077dba64b",
+              "5d907bfdfc48544902c9",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "5b2f4ca09b44e1d38566",
+            "response_hash": "fc201df4662622b7254e",
             "url_found": true,
-            "url_hash": "a59262e3a99bbf5e5005",
+            "url_hash": "f4d3ee83f57145c51554",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "ce754610c319f07e09fc",
+            "pathname_hash": "6ff9f50be81a4213d68c",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "80c4e7eb12183aeb9700",
+              "72a29899a094c7429f7c",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -22605,7 +22605,7 @@
   },
   "five_pm_slot_reuse_probe": {
     "purpose": "Test whether the provider reuses the 4 PM slot base for the 5 PM NFHS event block by comparing exact official 5 PM feed indices to observed provider slots.",
-    "exact_5pm_event_count": 483,
+    "exact_5pm_event_count": 482,
     "pages_fetched": 1,
     "stopped_because": "passed_target_time",
     "four_pm_reference_base": 3406,
@@ -22615,10 +22615,10 @@
         "event_key": "gamc34e8e3bfe",
         "observed_provider_slot": 3552,
         "found_in_exact_5pm_block": true,
-        "official_feed_index": 347,
-        "implied_provider_base": 3205,
-        "projected_slot_using_4pm_base_3406": 3753,
-        "projection_error_vs_observed": 201,
+        "official_feed_index": 346,
+        "implied_provider_base": 3206,
+        "projected_slot_using_4pm_base_3406": 3752,
+        "projection_error_vs_observed": 200,
         "official_event": {
           "event_key": "gamc34e8e3bfe",
           "sport": "Volleyball",
@@ -22659,8 +22659,731 @@
     ],
     "implied_bases_equal": false,
     "implied_base_values": [
-      3205,
+      3206,
       3473
+    ]
+  },
+  "same_day_provider_only_match_probe": {
+    "purpose": "Match the provider-only/stale 4 PM titles against the complete Sep 29 NFHS event day, avoiding false matches to other dates.",
+    "day_rows_loaded": 5616,
+    "day_pages_fetched": 12,
+    "day_stop_reason": "passed_start_of_day",
+    "provider_only_rows_tested": 26,
+    "strong_unambiguous_same_day_matches": 7,
+    "ambiguous_same_day_matches": 2,
+    "unresolved_same_day": 17,
+    "official_time_histogram_eastern": {
+      "16:15": 1,
+      "17:15": 1,
+      "19:00": 1,
+      "18:50": 1,
+      "18:00": 1,
+      "17:00": 1,
+      "15:30": 1
+    },
+    "rows": [
+      {
+        "provider_nfhs_number": 3414,
+        "stream_id": 2066898,
+        "provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam05f1a413de",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Away vs. West Las Vegas High School",
+          "publisher_slug": "west-las-vegas-high-school-las-vegas-nm",
+          "association": "NMAA",
+          "text_score": 0.705,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam79e58173b9",
+          "official_start": "2026-09-30T00:30:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Bonanza High School vs. Western High School",
+          "publisher_slug": "western-high-school-las-vegas-nv",
+          "association": "NIAA",
+          "text_score": 0.4357,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3420,
+        "stream_id": 2066892,
+        "provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamd74c7ae4a6",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Gorham High School vs. Colebrook Academy",
+          "publisher_slug": "northeast-sports-network",
+          "association": null,
+          "text_score": 0.425,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam63f4148132",
+          "official_start": "2026-09-29T19:20:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Rising Sun High School vs. Bel Air High School",
+          "publisher_slug": "bel-air-high-school-bel-air-md",
+          "association": "MPSSAA",
+          "text_score": 0,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3430,
+        "stream_id": 2066882,
+        "provider_title": "NFHS Network 3430: Multi-team Event Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": true,
+        "best_match": {
+          "event_key": "gam7b6bd917fe",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Flag Football",
+          "subheadline": "Multi-team Event",
+          "publisher_slug": "north-forsyth-high-school-winstonsalem-nc",
+          "association": "NCHSAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam91cfc5e8ff",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Flag Football",
+          "subheadline": "Multi-team Event",
+          "publisher_slug": "cardinal-gibbons-high-school-raleigh-nc",
+          "association": "NCHSAA",
+          "text_score": 0.97,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3431,
+        "stream_id": 2066881,
+        "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": true,
+        "best_match": {
+          "event_key": "gamf1128a3030",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Whitinsville Christian High School vs. Northbridge High School",
+          "publisher_slug": "northbridge-high-school-whitinsville-ma",
+          "association": "MIAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam5a56e58472",
+          "official_start": "2026-09-30T00:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Whitinsville Christian High School vs. Northbridge High School",
+          "publisher_slug": "northbridge-high-school-whitinsville-ma",
+          "association": "MIAA",
+          "text_score": 0.97,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3439,
+        "stream_id": 2066873,
+        "provider_title": "NFHS Network 3439: Granby Memorial High School vs. Canton High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam1b25c3f7b4",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Shrewsbury High School vs. Doherty Memorial High School",
+          "publisher_slug": "doherty-memorial-high-school-worcester-ma",
+          "association": "MIAA",
+          "text_score": 0.2933,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam9b07e67d19",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Lyman Memorial High School vs. Putnam High School",
+          "publisher_slug": "putnam-high-school-putnam-ct",
+          "association": "CIAC",
+          "text_score": 0.2933,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3441,
+        "stream_id": 2066871,
+        "provider_title": "NFHS Network 3441: Bethany Community School vs. Clover Garden School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam937d831834",
+          "official_start": "2026-09-29T20:15:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Garden School",
+          "publisher_slug": "garden-school-jackson-heights-ny",
+          "association": null,
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam5404f728d2",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Away vs. Clover Garden School",
+          "publisher_slug": "clover-garden-school-burlington-nc",
+          "association": "NCHSAA",
+          "text_score": 0.5867,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3442,
+        "stream_id": 2066870,
+        "provider_title": "NFHS Network 3442: Aquinas Academy of Pittsburgh vs. Penn-Trafford High School Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamd953ff2533",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Field Hockey",
+          "subheadline": "Sussex Academy vs. Delmar Middle/High School",
+          "publisher_slug": "delmar-middlehigh-school-delmar-de",
+          "association": "DIAA",
+          "text_score": 0.2125,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam599ff4b154",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Field Hockey",
+          "subheadline": "Norwich Free Academy vs. Killingly High School",
+          "publisher_slug": "killingly-high-school-dayville-ct",
+          "association": "CIAC",
+          "text_score": 0.2125,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3453,
+        "stream_id": 2066859,
+        "provider_title": "NFHS Network 3453: Away vs. Springfield High School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gambf1a31c1b8",
+          "official_start": "2026-09-29T21:15:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Springfield High School",
+          "publisher_slug": "tecgym-sports",
+          "association": null,
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam42ddaaef83",
+          "official_start": "2026-09-29T19:55:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Springfield High School",
+          "publisher_slug": "springfield-high-school-springfield-vt",
+          "association": "VPA",
+          "text_score": 0.97,
+          "sport_match": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3462,
+        "stream_id": 2066850,
+        "provider_title": "NFHS Network 3462: Westchester Country Day School vs. High Point Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam141bf36738",
+          "official_start": "2026-09-29T21:15:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Burlington Christian Academy vs. High Point Christian Academy",
+          "publisher_slug": "high-point-christian-academy-high-point-nc",
+          "association": "NCHSAA",
+          "text_score": 0.71,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam00c17398e2",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Burlington Christian Academy vs. Wesleyan Christian Academy",
+          "publisher_slug": "wesleyan-christian-academy-high-point-nc",
+          "association": "NCHSAA",
+          "text_score": 0.6,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3468,
+        "stream_id": 2066844,
+        "provider_title": "NFHS Network 3468: Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamfc0a0a5782",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Wilmington Christian Academy",
+          "publisher_slug": "wilmington-christian-academy-wilmlington-nc",
+          "association": null,
+          "text_score": 0.5867,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gama65b31aa1c",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": null,
+          "publisher_slug": "wilson-christian-academy-wilson-nc",
+          "association": null,
+          "text_score": 0.5867,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3473,
+        "stream_id": 2066839,
+        "provider_title": "NFHS Network 3473: Meridian High School vs. Lake Braddock High School Varsity Girls Cross Country @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamdd17c45727",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Cross Country",
+          "subheadline": "Richland Center High School vs. River Valley High School",
+          "publisher_slug": "wiaa-wi",
+          "association": "WIAA",
+          "text_score": 0,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "evt07a1ff1202",
+          "official_start": "2026-09-29T16:55:00.000Z",
+          "sport": null,
+          "subheadline": "09/29/26",
+          "publisher_slug": "lake-orion-high-school-lake-orion-mi",
+          "association": "MHSAA",
+          "text_score": 0.2762,
+          "sport_match": null
+        }
+      },
+      {
+        "provider_nfhs_number": 3483,
+        "stream_id": 2066829,
+        "provider_title": "NFHS Network 3483: Cornwall Central High School vs. Warwick Valley High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam068e5c2f4c",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Charlotte Valley Central School vs. Worcester Central School",
+          "publisher_slug": "worcester-senior-high-school-na-ny",
+          "association": null,
+          "text_score": 0.45,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gamfc34f0dad4",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Wells Central School vs. Keene Central School",
+          "publisher_slug": "keene-central-school-keene-valley-ny",
+          "association": null,
+          "text_score": 0.45,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam87f4a5fb84",
+          "official_start": "2026-09-29T23:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Penns Manor Area High School vs. Cambria Heights High School",
+          "publisher_slug": "cambria-heights-high-school-patton-pa",
+          "association": "PIAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam612364d8fc",
+          "official_start": "2026-09-29T23:30:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Manor High School vs. Elgin High School",
+          "publisher_slug": "elgin-high-school-elgin-tx",
+          "association": "UIL",
+          "text_score": 0.4,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3524,
+        "stream_id": 2066788,
+        "provider_title": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam7ced001b85",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Broughton High School vs. Athens Drive High School",
+          "publisher_slug": "athens-drive-high-school-raleigh-nc",
+          "association": "NCHSAA",
+          "text_score": 0.97,
+          "sport_match": false
+        },
+        "second_match": {
+          "event_key": "gam119d5174aa",
+          "official_start": "2026-09-29T22:30:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Broughton High School vs. Athens Drive High School",
+          "publisher_slug": "athens-drive-high-school-raleigh-nc",
+          "association": "NCHSAA",
+          "text_score": 0.97,
+          "sport_match": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3533,
+        "stream_id": 2066778,
+        "provider_title": "NFHS Network 3533: Chesapeake High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam7c32eeb84e",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Chesapeake High School vs. Kenwood High School",
+          "publisher_slug": "kenwood-high-school-baltimore-md",
+          "association": "MPSSAA",
+          "text_score": 0.85,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "game848e0d21c",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Chesapeake High School vs. Meade High School",
+          "publisher_slug": "meade-high-school-ft-meade-md",
+          "association": "MPSSAA",
+          "text_score": 0.85,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam3ba7a342c5",
+          "official_start": "2026-09-29T22:50:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Grove Christian School vs. Carmel School",
+          "publisher_slug": "carmel-school-ruther-glen-va",
+          "association": "VISAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam574a09642d",
+          "official_start": "2026-09-29T19:45:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": null,
+          "publisher_slug": "lakeland-christian-school-lakeland-fl",
+          "association": "FHSAA",
+          "text_score": 0.425,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3537,
+        "stream_id": 2066774,
+        "provider_title": "NFHS Network 3537: None Wilson Christian Chargers vs Fellowship Baptist @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamacc2c6aaf4",
+          "official_start": "2026-09-29T19:55:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Fellowship Christian School",
+          "publisher_slug": "fellowship-christian-school-roswell-ga",
+          "association": "GHSA",
+          "text_score": 0.8,
+          "sport_match": null
+        },
+        "second_match": {
+          "event_key": "gam9c28d40659",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": null,
+          "publisher_slug": "wilson-christian-academy-wilson-nc",
+          "association": null,
+          "text_score": 0.5524,
+          "sport_match": null
+        }
+      },
+      {
+        "provider_nfhs_number": 3539,
+        "stream_id": 2066772,
+        "provider_title": "NFHS Network 3539: Pelham High School vs. Kearsarge Regional High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gama955dda4cf",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Pelham High School vs. Kearsarge Regional High School",
+          "publisher_slug": "kearsarge-regional-high-school-sutton-nh",
+          "association": "NHIAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "evt9a1a79883b",
+          "official_start": "2026-09-29T13:25:00.000Z",
+          "sport": null,
+          "subheadline": "Pelham High School",
+          "publisher_slug": "pelham-high-school-pelham-al",
+          "association": "AHSAA",
+          "text_score": 0.97,
+          "sport_match": null
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamb06981a23c",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Sarasota Christian School vs. Saint Stephen's Episcopal School",
+          "publisher_slug": "saint-stephens-episcopal-school-bradenton-fl",
+          "association": "FHSAA",
+          "text_score": 0.5867,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam834e7bcd10",
+          "official_start": "2026-09-29T23:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Sarasota Christian School vs. Saint Stephen's Episcopal School",
+          "publisher_slug": "saint-stephens-episcopal-school-bradenton-fl",
+          "association": "FHSAA",
+          "text_score": 0.5867,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3560,
+        "stream_id": 2066750,
+        "provider_title": "NFHS Network 3560: Gorham High School vs. Windham High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamd74c7ae4a6",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Gorham High School vs. Colebrook Academy",
+          "publisher_slug": "northeast-sports-network",
+          "association": null,
+          "text_score": 0.425,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gama4d53296db",
+          "official_start": "2026-09-29T19:45:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Windham Tech High School vs. Ella Grasso Tech High School",
+          "publisher_slug": "grasso-tech-high-school-groton-ct",
+          "association": "CIAC",
+          "text_score": 0.41,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3566,
+        "stream_id": 2066743,
+        "provider_title": "NFHS Network 3566: Oak Level Baptist Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamfcfc775f6a",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Valley Forge Baptist Academy",
+          "publisher_slug": "valley-forge-baptist-academy-collegeville-pa",
+          "association": "PIAA",
+          "text_score": 0.45,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam190a6bef81",
+          "official_start": "2026-09-29T19:45:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Bridgeport Baptist Academy vs. Juniata Christian School",
+          "publisher_slug": "juniata-christian-school-vassar-mi",
+          "association": null,
+          "text_score": 0.4357,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam3a5725b205",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Camden County High School vs. Savannah Country Day School",
+          "publisher_slug": "savannah-country-day-school-savannah-ga",
+          "association": "GHSA",
+          "text_score": 1,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gam45b4df39a0",
+          "official_start": "2026-09-29T23:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Toombs County High School vs. Savannah Country Day School",
+          "publisher_slug": "savannah-country-day-school-savannah-ga",
+          "association": "GHSA",
+          "text_score": 0.76,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3573,
+        "stream_id": 2066736,
+        "provider_title": "NFHS Network 3573: Gaston Day School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": true,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamd5e30ba1dc",
+          "official_start": "2026-09-29T19:30:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Gaston Day School",
+          "publisher_slug": "gaston-day-school-gastonia-nc",
+          "association": "NCISAA",
+          "text_score": 0.97,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gamd6fd73b146",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Away vs. Gaston Day School",
+          "publisher_slug": "gaston-day-school-gastonia-nc",
+          "association": "NCISAA",
+          "text_score": 0.9,
+          "sport_match": false
+        }
+      },
+      {
+        "provider_nfhs_number": 3577,
+        "stream_id": 2066731,
+        "provider_title": "NFHS Network 3577: Northern Nash High School vs. Southern Wayne High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam4eaa85f7c1",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Southern Nash High School vs. Hunt High School",
+          "publisher_slug": "hunt-high-school-wilson-nc",
+          "association": "NCHSAA",
+          "text_score": 0.5867,
+          "sport_match": true
+        },
+        "second_match": {
+          "event_key": "gamaf97b95646",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Southern Nash High School vs. Hunt High School",
+          "publisher_slug": "hunt-high-school-wilson-nc",
+          "association": "NCHSAA",
+          "text_score": 0.5867,
+          "sport_match": true
+        }
+      },
+      {
+        "provider_nfhs_number": 3583,
+        "stream_id": 2066725,
+        "provider_title": "NFHS Network 3583: None BCS vs. Christ's Church Academy - Part 1 @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gam188773a470",
+          "official_start": "2026-09-29T22:00:00.000Z",
+          "sport": "Football",
+          "subheadline": "Christ Church Academy vs. Episcopal School of Jacksonville",
+          "publisher_slug": "episcopal-school-of-jacksonville-jacksonville-fl",
+          "association": "FHSAA",
+          "text_score": 0.5325,
+          "sport_match": null
+        },
+        "second_match": {
+          "event_key": "gam9864fad27f",
+          "official_start": "2026-09-29T20:30:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Covenant School vs. Christ Chapel Academy",
+          "publisher_slug": "christ-chapel-academy-woodbridge-va",
+          "association": "VISAA",
+          "text_score": 0.425,
+          "sport_match": null
+        }
+      },
+      {
+        "provider_nfhs_number": 3606,
+        "stream_id": 2066700,
+        "provider_title": "NFHS Network 3606: Godfrey-Lee High School vs. Zion Christian School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "strong_same_day_match": false,
+        "ambiguous_same_day_match": false,
+        "best_match": {
+          "event_key": "gamcaf1c82783",
+          "official_start": "2026-09-29T21:00:00.000Z",
+          "sport": "Volleyball",
+          "subheadline": "Zion Christian School vs. Godfrey-Lee High School",
+          "publisher_slug": "lee-high-school-wyoming-mi",
+          "association": "MHSAA",
+          "text_score": 1,
+          "sport_match": false
+        },
+        "second_match": {
+          "event_key": "gam5e5b6c8e16",
+          "official_start": "2026-09-29T20:00:00.000Z",
+          "sport": "Soccer",
+          "subheadline": "Wayne Christian School",
+          "publisher_slug": "wayne-christian-school-goldsboro-nc",
+          "association": "NCISAA",
+          "text_score": 0.41,
+          "sport_match": true
+        }
+      }
     ]
   },
   "official_start_groups_to_provider_numbers": {
