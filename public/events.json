@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:24:07.307-04:00",
+  "generated_at": "2026-09-30T16:23:26.268-04:00",
   "eastern_date": "2026-09-30",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
@@ -21,9 +21,9 @@
     },
     "GAPPS": {
       "ok": true,
-      "count": 142
+      "count": 144
     }
   },
-  "school_name_count": 660,
+  "school_name_count": 662,
   "channels": []
 }
