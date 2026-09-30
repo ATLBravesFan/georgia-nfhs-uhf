@@ -406,7 +406,7 @@ async function main() {
     let search;
     try {
       search = await fetchJson(
-        `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(p.core)}&size=${SEARCH_SIZE}`
+        `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(p.core.split(/\\s+/).slice(0, 5).join(" "))}&size=${SEARCH_SIZE}`
       );
     } catch (err) {
       rows.push({
@@ -470,7 +470,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-1",
+    diagnostic_version: "deep-link-2",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
