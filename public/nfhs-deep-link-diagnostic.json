@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:12:51.951Z",
+  "generated_at": "2026-09-30T14:22:55.526Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-7",
+  "diagnostic_version": "deep-link-8",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
-      "total": 1498734,
+      "total": 1498786,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498734,
+      "total": 1498786,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498734,
+    "returned_total": 1498786,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -5071,6 +5071,5111 @@
         "publisher_slugs": [
           "lakeland-christian-school-lakeland-fl"
         ]
+      }
+    ]
+  },
+  "exact_four_pm_block_probe": {
+    "ok": true,
+    "target_start": "2026-09-29T20:00:00.000Z",
+    "pages_fetched": 1,
+    "stopped_because": "passed_target_time",
+    "official_events_exact_time": 221,
+    "official_events_with_broadcasts": 221,
+    "official_broadcast_candidates": 221,
+    "provider_titles_exact_time": 211,
+    "strong_local_matches": 184,
+    "unique_event_strong_matches": 176,
+    "full_feed_order_check": {
+      "increasing_pairs": 168,
+      "total_pairs": 175,
+      "percent_increasing": 96,
+      "exact_gap_pairs": 128,
+      "percent_exact_gap": 73.14,
+      "pairs": [
+        {
+          "from_provider": 3406,
+          "to_provider": 3407,
+          "from_event": "evtc82c0f5042",
+          "to_event": "gam0094164a27",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3407,
+          "to_provider": 3408,
+          "from_event": "gam0094164a27",
+          "to_event": "gam00c17398e2",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3408,
+          "to_provider": 3409,
+          "from_event": "gam00c17398e2",
+          "to_event": "gam011751bafc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3409,
+          "to_provider": 3410,
+          "from_event": "gam011751bafc",
+          "to_event": "gam0130336640",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3410,
+          "to_provider": 3411,
+          "from_event": "gam0130336640",
+          "to_event": "gam028a6b98b5",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3411,
+          "to_provider": 3412,
+          "from_event": "gam028a6b98b5",
+          "to_event": "gam03f20672f4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3412,
+          "to_provider": 3413,
+          "from_event": "gam03f20672f4",
+          "to_event": "gam04c5bb1220",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3413,
+          "to_provider": 3415,
+          "from_event": "gam04c5bb1220",
+          "to_event": "gam06241f19e2",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3415,
+          "to_provider": 3416,
+          "from_event": "gam06241f19e2",
+          "to_event": "gam0806d5f2dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3416,
+          "to_provider": 3418,
+          "from_event": "gam0806d5f2dc",
+          "to_event": "gam09c2679169",
+          "provider_gap": 2,
+          "feed_gap": 3,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3418,
+          "to_provider": 3419,
+          "from_event": "gam09c2679169",
+          "to_event": "gam0baae7a751",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3419,
+          "to_provider": 3421,
+          "from_event": "gam0baae7a751",
+          "to_event": "gam0c109e2565",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3421,
+          "to_provider": 3422,
+          "from_event": "gam0c109e2565",
+          "to_event": "gam0d1a6b8fd3",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3422,
+          "to_provider": 3423,
+          "from_event": "gam0d1a6b8fd3",
+          "to_event": "gam0d571b062c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3423,
+          "to_provider": 3424,
+          "from_event": "gam0d571b062c",
+          "to_event": "gam0e1ac34840",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3424,
+          "to_provider": 3425,
+          "from_event": "gam0e1ac34840",
+          "to_event": "gam0e30476195",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3425,
+          "to_provider": 3426,
+          "from_event": "gam0e30476195",
+          "to_event": "gam0f333c2d31",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3426,
+          "to_provider": 3427,
+          "from_event": "gam0f333c2d31",
+          "to_event": "gam0f59408b73",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3427,
+          "to_provider": 3428,
+          "from_event": "gam0f59408b73",
+          "to_event": "gam0fe2db07ea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3428,
+          "to_provider": 3429,
+          "from_event": "gam0fe2db07ea",
+          "to_event": "gam1230746a42",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3429,
+          "to_provider": 3430,
+          "from_event": "gam1230746a42",
+          "to_event": "gama99c8ce5d8",
+          "provider_gap": 1,
+          "feed_gap": 122,
+          "gap_difference": -121
+        },
+        {
+          "from_provider": 3430,
+          "to_provider": 3432,
+          "from_event": "gama99c8ce5d8",
+          "to_event": "gam1564baf262",
+          "provider_gap": 2,
+          "feed_gap": -121,
+          "gap_difference": 123
+        },
+        {
+          "from_provider": 3432,
+          "to_provider": 3433,
+          "from_event": "gam1564baf262",
+          "to_event": "gam15db863144",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3433,
+          "to_provider": 3434,
+          "from_event": "gam15db863144",
+          "to_event": "gam164f8853e7",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3434,
+          "to_provider": 3435,
+          "from_event": "gam164f8853e7",
+          "to_event": "gam1818d8d696",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3435,
+          "to_provider": 3436,
+          "from_event": "gam1818d8d696",
+          "to_event": "gam189de43d85",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3436,
+          "to_provider": 3437,
+          "from_event": "gam189de43d85",
+          "to_event": "gam18b9916c2b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3437,
+          "to_provider": 3438,
+          "from_event": "gam18b9916c2b",
+          "to_event": "gam195d0a5a68",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3438,
+          "to_provider": 3440,
+          "from_event": "gam195d0a5a68",
+          "to_event": "gam2155076096",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3440,
+          "to_provider": 3443,
+          "from_event": "gam2155076096",
+          "to_event": "gam2555a47f83",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3443,
+          "to_provider": 3444,
+          "from_event": "gam2555a47f83",
+          "to_event": "gam25b130cbd1",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3444,
+          "to_provider": 3445,
+          "from_event": "gam25b130cbd1",
+          "to_event": "gam2653d51415",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3445,
+          "to_provider": 3446,
+          "from_event": "gam2653d51415",
+          "to_event": "gam2717133d7e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3446,
+          "to_provider": 3447,
+          "from_event": "gam2717133d7e",
+          "to_event": "gam273daed0ae",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3447,
+          "to_provider": 3448,
+          "from_event": "gam273daed0ae",
+          "to_event": "gam297231f5aa",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3448,
+          "to_provider": 3449,
+          "from_event": "gam297231f5aa",
+          "to_event": "gam29c0492e87",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3449,
+          "to_provider": 3450,
+          "from_event": "gam29c0492e87",
+          "to_event": "gam29f5e4cd59",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3450,
+          "to_provider": 3451,
+          "from_event": "gam29f5e4cd59",
+          "to_event": "gam29f8353cb1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3451,
+          "to_provider": 3452,
+          "from_event": "gam29f8353cb1",
+          "to_event": "gam2a81770b90",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3452,
+          "to_provider": 3454,
+          "from_event": "gam2a81770b90",
+          "to_event": "gam2d80fd30ad",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3454,
+          "to_provider": 3455,
+          "from_event": "gam2d80fd30ad",
+          "to_event": "gam302604b4e5",
+          "provider_gap": 1,
+          "feed_gap": 3,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3455,
+          "to_provider": 3456,
+          "from_event": "gam302604b4e5",
+          "to_event": "gam33f94509fe",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3456,
+          "to_provider": 3457,
+          "from_event": "gam33f94509fe",
+          "to_event": "gam34458f6522",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3457,
+          "to_provider": 3458,
+          "from_event": "gam34458f6522",
+          "to_event": "gam35b50f61ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3458,
+          "to_provider": 3459,
+          "from_event": "gam35b50f61ef",
+          "to_event": "gam362c2c1320",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3459,
+          "to_provider": 3460,
+          "from_event": "gam362c2c1320",
+          "to_event": "gam37c5d356bb",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3460,
+          "to_provider": 3463,
+          "from_event": "gam37c5d356bb",
+          "to_event": "gam3ba3b79ff1",
+          "provider_gap": 3,
+          "feed_gap": 3,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3463,
+          "to_provider": 3464,
+          "from_event": "gam3ba3b79ff1",
+          "to_event": "gam3cbad07ae5",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3464,
+          "to_provider": 3465,
+          "from_event": "gam3cbad07ae5",
+          "to_event": "gam3df0d3b409",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3465,
+          "to_provider": 3466,
+          "from_event": "gam3df0d3b409",
+          "to_event": "gam3e8521f961",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3466,
+          "to_provider": 3467,
+          "from_event": "gam3e8521f961",
+          "to_event": "gam3ff3b809e6",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3467,
+          "to_provider": 3469,
+          "from_event": "gam3ff3b809e6",
+          "to_event": "gam42ef8da51f",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3469,
+          "to_provider": 3470,
+          "from_event": "gam42ef8da51f",
+          "to_event": "gam43d55c0858",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3470,
+          "to_provider": 3471,
+          "from_event": "gam43d55c0858",
+          "to_event": "gam45b14ea578",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3471,
+          "to_provider": 3472,
+          "from_event": "gam45b14ea578",
+          "to_event": "gam45c2867c2b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3472,
+          "to_provider": 3474,
+          "from_event": "gam45c2867c2b",
+          "to_event": "gam46756f496f",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3474,
+          "to_provider": 3475,
+          "from_event": "gam46756f496f",
+          "to_event": "gam46f1077ccd",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3475,
+          "to_provider": 3476,
+          "from_event": "gam46f1077ccd",
+          "to_event": "gam47366063a4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3476,
+          "to_provider": 3477,
+          "from_event": "gam47366063a4",
+          "to_event": "gam4a34445be4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3477,
+          "to_provider": 3478,
+          "from_event": "gam4a34445be4",
+          "to_event": "gam4a35472a00",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3478,
+          "to_provider": 3479,
+          "from_event": "gam4a35472a00",
+          "to_event": "gam4a7cd4a0dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3479,
+          "to_provider": 3480,
+          "from_event": "gam4a7cd4a0dc",
+          "to_event": "gam4d3b503e7e",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3480,
+          "to_provider": 3481,
+          "from_event": "gam4d3b503e7e",
+          "to_event": "gam4eaa85f7c1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3481,
+          "to_provider": 3482,
+          "from_event": "gam4eaa85f7c1",
+          "to_event": "gam505103d064",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3482,
+          "to_provider": 3484,
+          "from_event": "gam505103d064",
+          "to_event": "gam510f207ccb",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3484,
+          "to_provider": 3485,
+          "from_event": "gam510f207ccb",
+          "to_event": "gam51670877ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3485,
+          "to_provider": 3487,
+          "from_event": "gam51670877ef",
+          "to_event": "gam5380832fb1",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3487,
+          "to_provider": 3488,
+          "from_event": "gam5380832fb1",
+          "to_event": "gam5389dc439c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3488,
+          "to_provider": 3489,
+          "from_event": "gam5389dc439c",
+          "to_event": "gam55ed487a3d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3489,
+          "to_provider": 3490,
+          "from_event": "gam55ed487a3d",
+          "to_event": "gam567c47e0ec",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3490,
+          "to_provider": 3491,
+          "from_event": "gam567c47e0ec",
+          "to_event": "gam56eea4ea7d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3491,
+          "to_provider": 3492,
+          "from_event": "gam56eea4ea7d",
+          "to_event": "gam58001bfa53",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3492,
+          "to_provider": 3493,
+          "from_event": "gam58001bfa53",
+          "to_event": "gam596dd5aeec",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3493,
+          "to_provider": 3494,
+          "from_event": "gam596dd5aeec",
+          "to_event": "gam599e8f6941",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3494,
+          "to_provider": 3495,
+          "from_event": "gam599e8f6941",
+          "to_event": "gamd08432d4c5",
+          "provider_gap": 1,
+          "feed_gap": 84,
+          "gap_difference": -83
+        },
+        {
+          "from_provider": 3495,
+          "to_provider": 3496,
+          "from_event": "gamd08432d4c5",
+          "to_event": "gam5c695f176d",
+          "provider_gap": 1,
+          "feed_gap": -82,
+          "gap_difference": 83
+        },
+        {
+          "from_provider": 3496,
+          "to_provider": 3497,
+          "from_event": "gam5c695f176d",
+          "to_event": "gam5da84863ec",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3497,
+          "to_provider": 3498,
+          "from_event": "gam5da84863ec",
+          "to_event": "gam5ea53d8e8c",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3498,
+          "to_provider": 3501,
+          "from_event": "gam5ea53d8e8c",
+          "to_event": "gam63614100d0",
+          "provider_gap": 3,
+          "feed_gap": 5,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3501,
+          "to_provider": 3502,
+          "from_event": "gam63614100d0",
+          "to_event": "gam64de7612c4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3502,
+          "to_provider": 3503,
+          "from_event": "gam64de7612c4",
+          "to_event": "gam65bc67e7b6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3503,
+          "to_provider": 3504,
+          "from_event": "gam65bc67e7b6",
+          "to_event": "gam65c0a14e0b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3504,
+          "to_provider": 3505,
+          "from_event": "gam65c0a14e0b",
+          "to_event": "gam68ae978e5a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3505,
+          "to_provider": 3506,
+          "from_event": "gam68ae978e5a",
+          "to_event": "gam68df0dd69d",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3506,
+          "to_provider": 3507,
+          "from_event": "gam68df0dd69d",
+          "to_event": "gam69f712facd",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3507,
+          "to_provider": 3508,
+          "from_event": "gam69f712facd",
+          "to_event": "gam6a8493b74e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3508,
+          "to_provider": 3509,
+          "from_event": "gam6a8493b74e",
+          "to_event": "gam6b75e5d667",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3509,
+          "to_provider": 3510,
+          "from_event": "gam6b75e5d667",
+          "to_event": "gam7147fbe5e7",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3510,
+          "to_provider": 3511,
+          "from_event": "gam7147fbe5e7",
+          "to_event": "gam7346719a14",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3511,
+          "to_provider": 3512,
+          "from_event": "gam7346719a14",
+          "to_event": "gam73a079f12b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3512,
+          "to_provider": 3513,
+          "from_event": "gam73a079f12b",
+          "to_event": "gam742705fcbe",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3513,
+          "to_provider": 3514,
+          "from_event": "gam742705fcbe",
+          "to_event": "gam7a4d71b081",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3514,
+          "to_provider": 3515,
+          "from_event": "gam7a4d71b081",
+          "to_event": "gam7c32eeb84e",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3515,
+          "to_provider": 3516,
+          "from_event": "gam7c32eeb84e",
+          "to_event": "gam80c0b3b49d",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3516,
+          "to_provider": 3517,
+          "from_event": "gam80c0b3b49d",
+          "to_event": "gama61d367938",
+          "provider_gap": 1,
+          "feed_gap": 22,
+          "gap_difference": -21
+        },
+        {
+          "from_provider": 3517,
+          "to_provider": 3518,
+          "from_event": "gama61d367938",
+          "to_event": "gam81dfaa58ea",
+          "provider_gap": 1,
+          "feed_gap": -20,
+          "gap_difference": 21
+        },
+        {
+          "from_provider": 3518,
+          "to_provider": 3520,
+          "from_event": "gam81dfaa58ea",
+          "to_event": "gam8370f6eaa8",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3520,
+          "to_provider": 3521,
+          "from_event": "gam8370f6eaa8",
+          "to_event": "gam849da54659",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3521,
+          "to_provider": 3522,
+          "from_event": "gam849da54659",
+          "to_event": "gam84b4fd97e4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3522,
+          "to_provider": 3525,
+          "from_event": "gam84b4fd97e4",
+          "to_event": "gam89c39796dd",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3525,
+          "to_provider": 3526,
+          "from_event": "gam89c39796dd",
+          "to_event": "gam8a6a87467e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3526,
+          "to_provider": 3527,
+          "from_event": "gam8a6a87467e",
+          "to_event": "gam8b6d11f25c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3527,
+          "to_provider": 3528,
+          "from_event": "gam8b6d11f25c",
+          "to_event": "gam911e0130b5",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3528,
+          "to_provider": 3529,
+          "from_event": "gam911e0130b5",
+          "to_event": "gam959038070d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3529,
+          "to_provider": 3530,
+          "from_event": "gam959038070d",
+          "to_event": "gam95996f1157",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3530,
+          "to_provider": 3531,
+          "from_event": "gam95996f1157",
+          "to_event": "gam959bc862ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3531,
+          "to_provider": 3532,
+          "from_event": "gam959bc862ef",
+          "to_event": "gam95c61d6d82",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3532,
+          "to_provider": 3534,
+          "from_event": "gam95c61d6d82",
+          "to_event": "gam972bdc8601",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3534,
+          "to_provider": 3535,
+          "from_event": "gam972bdc8601",
+          "to_event": "gam99d65daf44",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3535,
+          "to_provider": 3538,
+          "from_event": "gam99d65daf44",
+          "to_event": "gam9c36c9724f",
+          "provider_gap": 3,
+          "feed_gap": 2,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3538,
+          "to_provider": 3540,
+          "from_event": "gam9c36c9724f",
+          "to_event": "gama61c47f145",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3540,
+          "to_provider": 3541,
+          "from_event": "gama61c47f145",
+          "to_event": "gam811cf0110c",
+          "provider_gap": 1,
+          "feed_gap": -20,
+          "gap_difference": 21
+        },
+        {
+          "from_provider": 3541,
+          "to_provider": 3542,
+          "from_event": "gam811cf0110c",
+          "to_event": "gama623d930ac",
+          "provider_gap": 1,
+          "feed_gap": 22,
+          "gap_difference": -21
+        },
+        {
+          "from_provider": 3542,
+          "to_provider": 3543,
+          "from_event": "gama623d930ac",
+          "to_event": "gamf3457e966e",
+          "provider_gap": 1,
+          "feed_gap": 65,
+          "gap_difference": -64
+        },
+        {
+          "from_provider": 3543,
+          "to_provider": 3544,
+          "from_event": "gamf3457e966e",
+          "to_event": "gamaad7ecaf94",
+          "provider_gap": 1,
+          "feed_gap": -62,
+          "gap_difference": 63
+        },
+        {
+          "from_provider": 3544,
+          "to_provider": 3545,
+          "from_event": "gamaad7ecaf94",
+          "to_event": "gamab9f9f5bea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3545,
+          "to_provider": 3546,
+          "from_event": "gamab9f9f5bea",
+          "to_event": "gamaf2d4fcc0e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3546,
+          "to_provider": 3547,
+          "from_event": "gamaf2d4fcc0e",
+          "to_event": "gamafa054aee6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3547,
+          "to_provider": 3548,
+          "from_event": "gamafa054aee6",
+          "to_event": "gamb0311249b3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3548,
+          "to_provider": 3549,
+          "from_event": "gamb0311249b3",
+          "to_event": "gamb2385aa000",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3549,
+          "to_provider": 3550,
+          "from_event": "gamb2385aa000",
+          "to_event": "gamb3e7fa4b9e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3550,
+          "to_provider": 3551,
+          "from_event": "gamb3e7fa4b9e",
+          "to_event": "gamb69ef5c0a2",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3551,
+          "to_provider": 3552,
+          "from_event": "gamb69ef5c0a2",
+          "to_event": "gamb8ebe375ea",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3552,
+          "to_provider": 3554,
+          "from_event": "gamb8ebe375ea",
+          "to_event": "gamba76d22648",
+          "provider_gap": 2,
+          "feed_gap": 3,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3554,
+          "to_provider": 3555,
+          "from_event": "gamba76d22648",
+          "to_event": "gamba7884736f",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3555,
+          "to_provider": 3556,
+          "from_event": "gamba7884736f",
+          "to_event": "gambb59c64f73",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3556,
+          "to_provider": 3557,
+          "from_event": "gambb59c64f73",
+          "to_event": "gambdf8368394",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3557,
+          "to_provider": 3558,
+          "from_event": "gambdf8368394",
+          "to_event": "gambe49835165",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3558,
+          "to_provider": 3559,
+          "from_event": "gambe49835165",
+          "to_event": "gamc2785418b1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3559,
+          "to_provider": 3561,
+          "from_event": "gamc2785418b1",
+          "to_event": "gamc4ecf83d43",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3561,
+          "to_provider": 3563,
+          "from_event": "gamc4ecf83d43",
+          "to_event": "gamc8bf328d37",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3563,
+          "to_provider": 3564,
+          "from_event": "gamc8bf328d37",
+          "to_event": "gamc8faf12113",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3564,
+          "to_provider": 3565,
+          "from_event": "gamc8faf12113",
+          "to_event": "gamc9c8896597",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3565,
+          "to_provider": 3567,
+          "from_event": "gamc9c8896597",
+          "to_event": "gamcae9cebd36",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3567,
+          "to_provider": 3568,
+          "from_event": "gamcae9cebd36",
+          "to_event": "gamcbba0f9182",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3568,
+          "to_provider": 3569,
+          "from_event": "gamcbba0f9182",
+          "to_event": "gamce16de126a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3569,
+          "to_provider": 3570,
+          "from_event": "gamce16de126a",
+          "to_event": "gam5c0d964826",
+          "provider_gap": 1,
+          "feed_gap": -82,
+          "gap_difference": 83
+        },
+        {
+          "from_provider": 3570,
+          "to_provider": 3571,
+          "from_event": "gam5c0d964826",
+          "to_event": "gamd46dfbaa92",
+          "provider_gap": 1,
+          "feed_gap": 84,
+          "gap_difference": -83
+        },
+        {
+          "from_provider": 3571,
+          "to_provider": 3574,
+          "from_event": "gamd46dfbaa92",
+          "to_event": "gamd6fd73b146",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3574,
+          "to_provider": 3575,
+          "from_event": "gamd6fd73b146",
+          "to_event": "gamd74c7ae4a6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3575,
+          "to_provider": 3576,
+          "from_event": "gamd74c7ae4a6",
+          "to_event": "gamd800b78abf",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3576,
+          "to_provider": 3578,
+          "from_event": "gamd800b78abf",
+          "to_event": "gamd953ff2533",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3578,
+          "to_provider": 3579,
+          "from_event": "gamd953ff2533",
+          "to_event": "gamda5cc70834",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3579,
+          "to_provider": 3580,
+          "from_event": "gamda5cc70834",
+          "to_event": "gamdacbecfbda",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3580,
+          "to_provider": 3581,
+          "from_event": "gamdacbecfbda",
+          "to_event": "gamdc52436517",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3581,
+          "to_provider": 3582,
+          "from_event": "gamdc52436517",
+          "to_event": "gamddde1364b0",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3582,
+          "to_provider": 3584,
+          "from_event": "gamddde1364b0",
+          "to_event": "game0ee060965",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3584,
+          "to_provider": 3585,
+          "from_event": "game0ee060965",
+          "to_event": "game3dbad3f3b",
+          "provider_gap": 1,
+          "feed_gap": 3,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3585,
+          "to_provider": 3586,
+          "from_event": "game3dbad3f3b",
+          "to_event": "game45d165d7d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3586,
+          "to_provider": 3587,
+          "from_event": "game45d165d7d",
+          "to_event": "game7c53e5709",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3587,
+          "to_provider": 3588,
+          "from_event": "game7c53e5709",
+          "to_event": "game87887b6f6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3588,
+          "to_provider": 3590,
+          "from_event": "game87887b6f6",
+          "to_event": "gamea7cc9a353",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3590,
+          "to_provider": 3591,
+          "from_event": "gamea7cc9a353",
+          "to_event": "gamead52ea562",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3591,
+          "to_provider": 3592,
+          "from_event": "gamead52ea562",
+          "to_event": "gameb48d4a8ea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3592,
+          "to_provider": 3593,
+          "from_event": "gameb48d4a8ea",
+          "to_event": "gameb4d22d136",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3593,
+          "to_provider": 3594,
+          "from_event": "gameb4d22d136",
+          "to_event": "gameb8e38bb44",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3594,
+          "to_provider": 3595,
+          "from_event": "gameb8e38bb44",
+          "to_event": "gamed7b9a0d13",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3595,
+          "to_provider": 3596,
+          "from_event": "gamed7b9a0d13",
+          "to_event": "gamee5d943f7a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3596,
+          "to_provider": 3597,
+          "from_event": "gamee5d943f7a",
+          "to_event": "gamefae6d01f3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3597,
+          "to_provider": 3598,
+          "from_event": "gamefae6d01f3",
+          "to_event": "gamf092be8e77",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3598,
+          "to_provider": 3599,
+          "from_event": "gamf092be8e77",
+          "to_event": "gamf0f95944ae",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3599,
+          "to_provider": 3600,
+          "from_event": "gamf0f95944ae",
+          "to_event": "gamf18f429af3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3600,
+          "to_provider": 3601,
+          "from_event": "gamf18f429af3",
+          "to_event": "gamf1aabe512a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3601,
+          "to_provider": 3602,
+          "from_event": "gamf1aabe512a",
+          "to_event": "gamf264588beb",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3602,
+          "to_provider": 3603,
+          "from_event": "gamf264588beb",
+          "to_event": "gamf283f5a60e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3603,
+          "to_provider": 3604,
+          "from_event": "gamf283f5a60e",
+          "to_event": "gamf3427220dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3604,
+          "to_provider": 3607,
+          "from_event": "gamf3427220dc",
+          "to_event": "gamf6421bdbda",
+          "provider_gap": 3,
+          "feed_gap": 3,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3607,
+          "to_provider": 3608,
+          "from_event": "gamf6421bdbda",
+          "to_event": "gamf94ce65d6d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3608,
+          "to_provider": 3609,
+          "from_event": "gamf94ce65d6d",
+          "to_event": "gamf9e78cb981",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3609,
+          "to_provider": 3610,
+          "from_event": "gamf9e78cb981",
+          "to_event": "gamf9f8bb16f6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3610,
+          "to_provider": 3611,
+          "from_event": "gamf9f8bb16f6",
+          "to_event": "gam0817e77c83",
+          "provider_gap": 1,
+          "feed_gap": -203,
+          "gap_difference": 204
+        },
+        {
+          "from_provider": 3611,
+          "to_provider": 3613,
+          "from_event": "gam0817e77c83",
+          "to_event": "gamfc320f80b5",
+          "provider_gap": 2,
+          "feed_gap": 206,
+          "gap_difference": -204
+        },
+        {
+          "from_provider": 3613,
+          "to_provider": 3614,
+          "from_event": "gamfc320f80b5",
+          "to_event": "gamfc979bbae6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3614,
+          "to_provider": 3615,
+          "from_event": "gamfc979bbae6",
+          "to_event": "gamfcfc775f6a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3615,
+          "to_provider": 3616,
+          "from_event": "gamfcfc775f6a",
+          "to_event": "gamff3531129c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        }
+      ]
+    },
+    "broadcast_feed_order_check": {
+      "increasing_pairs": 168,
+      "total_pairs": 175,
+      "percent_increasing": 96,
+      "exact_gap_pairs": 128,
+      "percent_exact_gap": 73.14,
+      "pairs": [
+        {
+          "from_provider": 3406,
+          "to_provider": 3407,
+          "from_event": "evtc82c0f5042",
+          "to_event": "gam0094164a27",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3407,
+          "to_provider": 3408,
+          "from_event": "gam0094164a27",
+          "to_event": "gam00c17398e2",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3408,
+          "to_provider": 3409,
+          "from_event": "gam00c17398e2",
+          "to_event": "gam011751bafc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3409,
+          "to_provider": 3410,
+          "from_event": "gam011751bafc",
+          "to_event": "gam0130336640",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3410,
+          "to_provider": 3411,
+          "from_event": "gam0130336640",
+          "to_event": "gam028a6b98b5",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3411,
+          "to_provider": 3412,
+          "from_event": "gam028a6b98b5",
+          "to_event": "gam03f20672f4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3412,
+          "to_provider": 3413,
+          "from_event": "gam03f20672f4",
+          "to_event": "gam04c5bb1220",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3413,
+          "to_provider": 3415,
+          "from_event": "gam04c5bb1220",
+          "to_event": "gam06241f19e2",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3415,
+          "to_provider": 3416,
+          "from_event": "gam06241f19e2",
+          "to_event": "gam0806d5f2dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3416,
+          "to_provider": 3418,
+          "from_event": "gam0806d5f2dc",
+          "to_event": "gam09c2679169",
+          "provider_gap": 2,
+          "feed_gap": 3,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3418,
+          "to_provider": 3419,
+          "from_event": "gam09c2679169",
+          "to_event": "gam0baae7a751",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3419,
+          "to_provider": 3421,
+          "from_event": "gam0baae7a751",
+          "to_event": "gam0c109e2565",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3421,
+          "to_provider": 3422,
+          "from_event": "gam0c109e2565",
+          "to_event": "gam0d1a6b8fd3",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3422,
+          "to_provider": 3423,
+          "from_event": "gam0d1a6b8fd3",
+          "to_event": "gam0d571b062c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3423,
+          "to_provider": 3424,
+          "from_event": "gam0d571b062c",
+          "to_event": "gam0e1ac34840",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3424,
+          "to_provider": 3425,
+          "from_event": "gam0e1ac34840",
+          "to_event": "gam0e30476195",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3425,
+          "to_provider": 3426,
+          "from_event": "gam0e30476195",
+          "to_event": "gam0f333c2d31",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3426,
+          "to_provider": 3427,
+          "from_event": "gam0f333c2d31",
+          "to_event": "gam0f59408b73",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3427,
+          "to_provider": 3428,
+          "from_event": "gam0f59408b73",
+          "to_event": "gam0fe2db07ea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3428,
+          "to_provider": 3429,
+          "from_event": "gam0fe2db07ea",
+          "to_event": "gam1230746a42",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3429,
+          "to_provider": 3430,
+          "from_event": "gam1230746a42",
+          "to_event": "gama99c8ce5d8",
+          "provider_gap": 1,
+          "feed_gap": 122,
+          "gap_difference": -121
+        },
+        {
+          "from_provider": 3430,
+          "to_provider": 3432,
+          "from_event": "gama99c8ce5d8",
+          "to_event": "gam1564baf262",
+          "provider_gap": 2,
+          "feed_gap": -121,
+          "gap_difference": 123
+        },
+        {
+          "from_provider": 3432,
+          "to_provider": 3433,
+          "from_event": "gam1564baf262",
+          "to_event": "gam15db863144",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3433,
+          "to_provider": 3434,
+          "from_event": "gam15db863144",
+          "to_event": "gam164f8853e7",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3434,
+          "to_provider": 3435,
+          "from_event": "gam164f8853e7",
+          "to_event": "gam1818d8d696",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3435,
+          "to_provider": 3436,
+          "from_event": "gam1818d8d696",
+          "to_event": "gam189de43d85",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3436,
+          "to_provider": 3437,
+          "from_event": "gam189de43d85",
+          "to_event": "gam18b9916c2b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3437,
+          "to_provider": 3438,
+          "from_event": "gam18b9916c2b",
+          "to_event": "gam195d0a5a68",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3438,
+          "to_provider": 3440,
+          "from_event": "gam195d0a5a68",
+          "to_event": "gam2155076096",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3440,
+          "to_provider": 3443,
+          "from_event": "gam2155076096",
+          "to_event": "gam2555a47f83",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3443,
+          "to_provider": 3444,
+          "from_event": "gam2555a47f83",
+          "to_event": "gam25b130cbd1",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3444,
+          "to_provider": 3445,
+          "from_event": "gam25b130cbd1",
+          "to_event": "gam2653d51415",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3445,
+          "to_provider": 3446,
+          "from_event": "gam2653d51415",
+          "to_event": "gam2717133d7e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3446,
+          "to_provider": 3447,
+          "from_event": "gam2717133d7e",
+          "to_event": "gam273daed0ae",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3447,
+          "to_provider": 3448,
+          "from_event": "gam273daed0ae",
+          "to_event": "gam297231f5aa",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3448,
+          "to_provider": 3449,
+          "from_event": "gam297231f5aa",
+          "to_event": "gam29c0492e87",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3449,
+          "to_provider": 3450,
+          "from_event": "gam29c0492e87",
+          "to_event": "gam29f5e4cd59",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3450,
+          "to_provider": 3451,
+          "from_event": "gam29f5e4cd59",
+          "to_event": "gam29f8353cb1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3451,
+          "to_provider": 3452,
+          "from_event": "gam29f8353cb1",
+          "to_event": "gam2a81770b90",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3452,
+          "to_provider": 3454,
+          "from_event": "gam2a81770b90",
+          "to_event": "gam2d80fd30ad",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3454,
+          "to_provider": 3455,
+          "from_event": "gam2d80fd30ad",
+          "to_event": "gam302604b4e5",
+          "provider_gap": 1,
+          "feed_gap": 3,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3455,
+          "to_provider": 3456,
+          "from_event": "gam302604b4e5",
+          "to_event": "gam33f94509fe",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3456,
+          "to_provider": 3457,
+          "from_event": "gam33f94509fe",
+          "to_event": "gam34458f6522",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3457,
+          "to_provider": 3458,
+          "from_event": "gam34458f6522",
+          "to_event": "gam35b50f61ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3458,
+          "to_provider": 3459,
+          "from_event": "gam35b50f61ef",
+          "to_event": "gam362c2c1320",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3459,
+          "to_provider": 3460,
+          "from_event": "gam362c2c1320",
+          "to_event": "gam37c5d356bb",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3460,
+          "to_provider": 3463,
+          "from_event": "gam37c5d356bb",
+          "to_event": "gam3ba3b79ff1",
+          "provider_gap": 3,
+          "feed_gap": 3,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3463,
+          "to_provider": 3464,
+          "from_event": "gam3ba3b79ff1",
+          "to_event": "gam3cbad07ae5",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3464,
+          "to_provider": 3465,
+          "from_event": "gam3cbad07ae5",
+          "to_event": "gam3df0d3b409",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3465,
+          "to_provider": 3466,
+          "from_event": "gam3df0d3b409",
+          "to_event": "gam3e8521f961",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3466,
+          "to_provider": 3467,
+          "from_event": "gam3e8521f961",
+          "to_event": "gam3ff3b809e6",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3467,
+          "to_provider": 3469,
+          "from_event": "gam3ff3b809e6",
+          "to_event": "gam42ef8da51f",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3469,
+          "to_provider": 3470,
+          "from_event": "gam42ef8da51f",
+          "to_event": "gam43d55c0858",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3470,
+          "to_provider": 3471,
+          "from_event": "gam43d55c0858",
+          "to_event": "gam45b14ea578",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3471,
+          "to_provider": 3472,
+          "from_event": "gam45b14ea578",
+          "to_event": "gam45c2867c2b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3472,
+          "to_provider": 3474,
+          "from_event": "gam45c2867c2b",
+          "to_event": "gam46756f496f",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3474,
+          "to_provider": 3475,
+          "from_event": "gam46756f496f",
+          "to_event": "gam46f1077ccd",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3475,
+          "to_provider": 3476,
+          "from_event": "gam46f1077ccd",
+          "to_event": "gam47366063a4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3476,
+          "to_provider": 3477,
+          "from_event": "gam47366063a4",
+          "to_event": "gam4a34445be4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3477,
+          "to_provider": 3478,
+          "from_event": "gam4a34445be4",
+          "to_event": "gam4a35472a00",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3478,
+          "to_provider": 3479,
+          "from_event": "gam4a35472a00",
+          "to_event": "gam4a7cd4a0dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3479,
+          "to_provider": 3480,
+          "from_event": "gam4a7cd4a0dc",
+          "to_event": "gam4d3b503e7e",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3480,
+          "to_provider": 3481,
+          "from_event": "gam4d3b503e7e",
+          "to_event": "gam4eaa85f7c1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3481,
+          "to_provider": 3482,
+          "from_event": "gam4eaa85f7c1",
+          "to_event": "gam505103d064",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3482,
+          "to_provider": 3484,
+          "from_event": "gam505103d064",
+          "to_event": "gam510f207ccb",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3484,
+          "to_provider": 3485,
+          "from_event": "gam510f207ccb",
+          "to_event": "gam51670877ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3485,
+          "to_provider": 3487,
+          "from_event": "gam51670877ef",
+          "to_event": "gam5380832fb1",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3487,
+          "to_provider": 3488,
+          "from_event": "gam5380832fb1",
+          "to_event": "gam5389dc439c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3488,
+          "to_provider": 3489,
+          "from_event": "gam5389dc439c",
+          "to_event": "gam55ed487a3d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3489,
+          "to_provider": 3490,
+          "from_event": "gam55ed487a3d",
+          "to_event": "gam567c47e0ec",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3490,
+          "to_provider": 3491,
+          "from_event": "gam567c47e0ec",
+          "to_event": "gam56eea4ea7d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3491,
+          "to_provider": 3492,
+          "from_event": "gam56eea4ea7d",
+          "to_event": "gam58001bfa53",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3492,
+          "to_provider": 3493,
+          "from_event": "gam58001bfa53",
+          "to_event": "gam596dd5aeec",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3493,
+          "to_provider": 3494,
+          "from_event": "gam596dd5aeec",
+          "to_event": "gam599e8f6941",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3494,
+          "to_provider": 3495,
+          "from_event": "gam599e8f6941",
+          "to_event": "gamd08432d4c5",
+          "provider_gap": 1,
+          "feed_gap": 84,
+          "gap_difference": -83
+        },
+        {
+          "from_provider": 3495,
+          "to_provider": 3496,
+          "from_event": "gamd08432d4c5",
+          "to_event": "gam5c695f176d",
+          "provider_gap": 1,
+          "feed_gap": -82,
+          "gap_difference": 83
+        },
+        {
+          "from_provider": 3496,
+          "to_provider": 3497,
+          "from_event": "gam5c695f176d",
+          "to_event": "gam5da84863ec",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3497,
+          "to_provider": 3498,
+          "from_event": "gam5da84863ec",
+          "to_event": "gam5ea53d8e8c",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3498,
+          "to_provider": 3501,
+          "from_event": "gam5ea53d8e8c",
+          "to_event": "gam63614100d0",
+          "provider_gap": 3,
+          "feed_gap": 5,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3501,
+          "to_provider": 3502,
+          "from_event": "gam63614100d0",
+          "to_event": "gam64de7612c4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3502,
+          "to_provider": 3503,
+          "from_event": "gam64de7612c4",
+          "to_event": "gam65bc67e7b6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3503,
+          "to_provider": 3504,
+          "from_event": "gam65bc67e7b6",
+          "to_event": "gam65c0a14e0b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3504,
+          "to_provider": 3505,
+          "from_event": "gam65c0a14e0b",
+          "to_event": "gam68ae978e5a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3505,
+          "to_provider": 3506,
+          "from_event": "gam68ae978e5a",
+          "to_event": "gam68df0dd69d",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3506,
+          "to_provider": 3507,
+          "from_event": "gam68df0dd69d",
+          "to_event": "gam69f712facd",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3507,
+          "to_provider": 3508,
+          "from_event": "gam69f712facd",
+          "to_event": "gam6a8493b74e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3508,
+          "to_provider": 3509,
+          "from_event": "gam6a8493b74e",
+          "to_event": "gam6b75e5d667",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3509,
+          "to_provider": 3510,
+          "from_event": "gam6b75e5d667",
+          "to_event": "gam7147fbe5e7",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3510,
+          "to_provider": 3511,
+          "from_event": "gam7147fbe5e7",
+          "to_event": "gam7346719a14",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3511,
+          "to_provider": 3512,
+          "from_event": "gam7346719a14",
+          "to_event": "gam73a079f12b",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3512,
+          "to_provider": 3513,
+          "from_event": "gam73a079f12b",
+          "to_event": "gam742705fcbe",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3513,
+          "to_provider": 3514,
+          "from_event": "gam742705fcbe",
+          "to_event": "gam7a4d71b081",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3514,
+          "to_provider": 3515,
+          "from_event": "gam7a4d71b081",
+          "to_event": "gam7c32eeb84e",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3515,
+          "to_provider": 3516,
+          "from_event": "gam7c32eeb84e",
+          "to_event": "gam80c0b3b49d",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3516,
+          "to_provider": 3517,
+          "from_event": "gam80c0b3b49d",
+          "to_event": "gama61d367938",
+          "provider_gap": 1,
+          "feed_gap": 22,
+          "gap_difference": -21
+        },
+        {
+          "from_provider": 3517,
+          "to_provider": 3518,
+          "from_event": "gama61d367938",
+          "to_event": "gam81dfaa58ea",
+          "provider_gap": 1,
+          "feed_gap": -20,
+          "gap_difference": 21
+        },
+        {
+          "from_provider": 3518,
+          "to_provider": 3520,
+          "from_event": "gam81dfaa58ea",
+          "to_event": "gam8370f6eaa8",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3520,
+          "to_provider": 3521,
+          "from_event": "gam8370f6eaa8",
+          "to_event": "gam849da54659",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3521,
+          "to_provider": 3522,
+          "from_event": "gam849da54659",
+          "to_event": "gam84b4fd97e4",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3522,
+          "to_provider": 3525,
+          "from_event": "gam84b4fd97e4",
+          "to_event": "gam89c39796dd",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3525,
+          "to_provider": 3526,
+          "from_event": "gam89c39796dd",
+          "to_event": "gam8a6a87467e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3526,
+          "to_provider": 3527,
+          "from_event": "gam8a6a87467e",
+          "to_event": "gam8b6d11f25c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3527,
+          "to_provider": 3528,
+          "from_event": "gam8b6d11f25c",
+          "to_event": "gam911e0130b5",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3528,
+          "to_provider": 3529,
+          "from_event": "gam911e0130b5",
+          "to_event": "gam959038070d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3529,
+          "to_provider": 3530,
+          "from_event": "gam959038070d",
+          "to_event": "gam95996f1157",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3530,
+          "to_provider": 3531,
+          "from_event": "gam95996f1157",
+          "to_event": "gam959bc862ef",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3531,
+          "to_provider": 3532,
+          "from_event": "gam959bc862ef",
+          "to_event": "gam95c61d6d82",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3532,
+          "to_provider": 3534,
+          "from_event": "gam95c61d6d82",
+          "to_event": "gam972bdc8601",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3534,
+          "to_provider": 3535,
+          "from_event": "gam972bdc8601",
+          "to_event": "gam99d65daf44",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3535,
+          "to_provider": 3538,
+          "from_event": "gam99d65daf44",
+          "to_event": "gam9c36c9724f",
+          "provider_gap": 3,
+          "feed_gap": 2,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3538,
+          "to_provider": 3540,
+          "from_event": "gam9c36c9724f",
+          "to_event": "gama61c47f145",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3540,
+          "to_provider": 3541,
+          "from_event": "gama61c47f145",
+          "to_event": "gam811cf0110c",
+          "provider_gap": 1,
+          "feed_gap": -20,
+          "gap_difference": 21
+        },
+        {
+          "from_provider": 3541,
+          "to_provider": 3542,
+          "from_event": "gam811cf0110c",
+          "to_event": "gama623d930ac",
+          "provider_gap": 1,
+          "feed_gap": 22,
+          "gap_difference": -21
+        },
+        {
+          "from_provider": 3542,
+          "to_provider": 3543,
+          "from_event": "gama623d930ac",
+          "to_event": "gamf3457e966e",
+          "provider_gap": 1,
+          "feed_gap": 65,
+          "gap_difference": -64
+        },
+        {
+          "from_provider": 3543,
+          "to_provider": 3544,
+          "from_event": "gamf3457e966e",
+          "to_event": "gamaad7ecaf94",
+          "provider_gap": 1,
+          "feed_gap": -62,
+          "gap_difference": 63
+        },
+        {
+          "from_provider": 3544,
+          "to_provider": 3545,
+          "from_event": "gamaad7ecaf94",
+          "to_event": "gamab9f9f5bea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3545,
+          "to_provider": 3546,
+          "from_event": "gamab9f9f5bea",
+          "to_event": "gamaf2d4fcc0e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3546,
+          "to_provider": 3547,
+          "from_event": "gamaf2d4fcc0e",
+          "to_event": "gamafa054aee6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3547,
+          "to_provider": 3548,
+          "from_event": "gamafa054aee6",
+          "to_event": "gamb0311249b3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3548,
+          "to_provider": 3549,
+          "from_event": "gamb0311249b3",
+          "to_event": "gamb2385aa000",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3549,
+          "to_provider": 3550,
+          "from_event": "gamb2385aa000",
+          "to_event": "gamb3e7fa4b9e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3550,
+          "to_provider": 3551,
+          "from_event": "gamb3e7fa4b9e",
+          "to_event": "gamb69ef5c0a2",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3551,
+          "to_provider": 3552,
+          "from_event": "gamb69ef5c0a2",
+          "to_event": "gamb8ebe375ea",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3552,
+          "to_provider": 3554,
+          "from_event": "gamb8ebe375ea",
+          "to_event": "gamba76d22648",
+          "provider_gap": 2,
+          "feed_gap": 3,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3554,
+          "to_provider": 3555,
+          "from_event": "gamba76d22648",
+          "to_event": "gamba7884736f",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3555,
+          "to_provider": 3556,
+          "from_event": "gamba7884736f",
+          "to_event": "gambb59c64f73",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3556,
+          "to_provider": 3557,
+          "from_event": "gambb59c64f73",
+          "to_event": "gambdf8368394",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3557,
+          "to_provider": 3558,
+          "from_event": "gambdf8368394",
+          "to_event": "gambe49835165",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3558,
+          "to_provider": 3559,
+          "from_event": "gambe49835165",
+          "to_event": "gamc2785418b1",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3559,
+          "to_provider": 3561,
+          "from_event": "gamc2785418b1",
+          "to_event": "gamc4ecf83d43",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3561,
+          "to_provider": 3563,
+          "from_event": "gamc4ecf83d43",
+          "to_event": "gamc8bf328d37",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3563,
+          "to_provider": 3564,
+          "from_event": "gamc8bf328d37",
+          "to_event": "gamc8faf12113",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3564,
+          "to_provider": 3565,
+          "from_event": "gamc8faf12113",
+          "to_event": "gamc9c8896597",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3565,
+          "to_provider": 3567,
+          "from_event": "gamc9c8896597",
+          "to_event": "gamcae9cebd36",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3567,
+          "to_provider": 3568,
+          "from_event": "gamcae9cebd36",
+          "to_event": "gamcbba0f9182",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3568,
+          "to_provider": 3569,
+          "from_event": "gamcbba0f9182",
+          "to_event": "gamce16de126a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3569,
+          "to_provider": 3570,
+          "from_event": "gamce16de126a",
+          "to_event": "gam5c0d964826",
+          "provider_gap": 1,
+          "feed_gap": -82,
+          "gap_difference": 83
+        },
+        {
+          "from_provider": 3570,
+          "to_provider": 3571,
+          "from_event": "gam5c0d964826",
+          "to_event": "gamd46dfbaa92",
+          "provider_gap": 1,
+          "feed_gap": 84,
+          "gap_difference": -83
+        },
+        {
+          "from_provider": 3571,
+          "to_provider": 3574,
+          "from_event": "gamd46dfbaa92",
+          "to_event": "gamd6fd73b146",
+          "provider_gap": 3,
+          "feed_gap": 1,
+          "gap_difference": 2
+        },
+        {
+          "from_provider": 3574,
+          "to_provider": 3575,
+          "from_event": "gamd6fd73b146",
+          "to_event": "gamd74c7ae4a6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3575,
+          "to_provider": 3576,
+          "from_event": "gamd74c7ae4a6",
+          "to_event": "gamd800b78abf",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3576,
+          "to_provider": 3578,
+          "from_event": "gamd800b78abf",
+          "to_event": "gamd953ff2533",
+          "provider_gap": 2,
+          "feed_gap": 1,
+          "gap_difference": 1
+        },
+        {
+          "from_provider": 3578,
+          "to_provider": 3579,
+          "from_event": "gamd953ff2533",
+          "to_event": "gamda5cc70834",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3579,
+          "to_provider": 3580,
+          "from_event": "gamda5cc70834",
+          "to_event": "gamdacbecfbda",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3580,
+          "to_provider": 3581,
+          "from_event": "gamdacbecfbda",
+          "to_event": "gamdc52436517",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3581,
+          "to_provider": 3582,
+          "from_event": "gamdc52436517",
+          "to_event": "gamddde1364b0",
+          "provider_gap": 1,
+          "feed_gap": 2,
+          "gap_difference": -1
+        },
+        {
+          "from_provider": 3582,
+          "to_provider": 3584,
+          "from_event": "gamddde1364b0",
+          "to_event": "game0ee060965",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3584,
+          "to_provider": 3585,
+          "from_event": "game0ee060965",
+          "to_event": "game3dbad3f3b",
+          "provider_gap": 1,
+          "feed_gap": 3,
+          "gap_difference": -2
+        },
+        {
+          "from_provider": 3585,
+          "to_provider": 3586,
+          "from_event": "game3dbad3f3b",
+          "to_event": "game45d165d7d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3586,
+          "to_provider": 3587,
+          "from_event": "game45d165d7d",
+          "to_event": "game7c53e5709",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3587,
+          "to_provider": 3588,
+          "from_event": "game7c53e5709",
+          "to_event": "game87887b6f6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3588,
+          "to_provider": 3590,
+          "from_event": "game87887b6f6",
+          "to_event": "gamea7cc9a353",
+          "provider_gap": 2,
+          "feed_gap": 2,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3590,
+          "to_provider": 3591,
+          "from_event": "gamea7cc9a353",
+          "to_event": "gamead52ea562",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3591,
+          "to_provider": 3592,
+          "from_event": "gamead52ea562",
+          "to_event": "gameb48d4a8ea",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3592,
+          "to_provider": 3593,
+          "from_event": "gameb48d4a8ea",
+          "to_event": "gameb4d22d136",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3593,
+          "to_provider": 3594,
+          "from_event": "gameb4d22d136",
+          "to_event": "gameb8e38bb44",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3594,
+          "to_provider": 3595,
+          "from_event": "gameb8e38bb44",
+          "to_event": "gamed7b9a0d13",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3595,
+          "to_provider": 3596,
+          "from_event": "gamed7b9a0d13",
+          "to_event": "gamee5d943f7a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3596,
+          "to_provider": 3597,
+          "from_event": "gamee5d943f7a",
+          "to_event": "gamefae6d01f3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3597,
+          "to_provider": 3598,
+          "from_event": "gamefae6d01f3",
+          "to_event": "gamf092be8e77",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3598,
+          "to_provider": 3599,
+          "from_event": "gamf092be8e77",
+          "to_event": "gamf0f95944ae",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3599,
+          "to_provider": 3600,
+          "from_event": "gamf0f95944ae",
+          "to_event": "gamf18f429af3",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3600,
+          "to_provider": 3601,
+          "from_event": "gamf18f429af3",
+          "to_event": "gamf1aabe512a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3601,
+          "to_provider": 3602,
+          "from_event": "gamf1aabe512a",
+          "to_event": "gamf264588beb",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3602,
+          "to_provider": 3603,
+          "from_event": "gamf264588beb",
+          "to_event": "gamf283f5a60e",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3603,
+          "to_provider": 3604,
+          "from_event": "gamf283f5a60e",
+          "to_event": "gamf3427220dc",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3604,
+          "to_provider": 3607,
+          "from_event": "gamf3427220dc",
+          "to_event": "gamf6421bdbda",
+          "provider_gap": 3,
+          "feed_gap": 3,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3607,
+          "to_provider": 3608,
+          "from_event": "gamf6421bdbda",
+          "to_event": "gamf94ce65d6d",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3608,
+          "to_provider": 3609,
+          "from_event": "gamf94ce65d6d",
+          "to_event": "gamf9e78cb981",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3609,
+          "to_provider": 3610,
+          "from_event": "gamf9e78cb981",
+          "to_event": "gamf9f8bb16f6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3610,
+          "to_provider": 3611,
+          "from_event": "gamf9f8bb16f6",
+          "to_event": "gam0817e77c83",
+          "provider_gap": 1,
+          "feed_gap": -203,
+          "gap_difference": 204
+        },
+        {
+          "from_provider": 3611,
+          "to_provider": 3613,
+          "from_event": "gam0817e77c83",
+          "to_event": "gamfc320f80b5",
+          "provider_gap": 2,
+          "feed_gap": 206,
+          "gap_difference": -204
+        },
+        {
+          "from_provider": 3613,
+          "to_provider": 3614,
+          "from_event": "gamfc320f80b5",
+          "to_event": "gamfc979bbae6",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3614,
+          "to_provider": 3615,
+          "from_event": "gamfc979bbae6",
+          "to_event": "gamfcfc775f6a",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        },
+        {
+          "from_provider": 3615,
+          "to_provider": 3616,
+          "from_event": "gamfcfc775f6a",
+          "to_event": "gamff3531129c",
+          "provider_gap": 1,
+          "feed_gap": 1,
+          "gap_difference": 0
+        }
+      ]
+    },
+    "matched_positions": [
+      {
+        "provider_rank": 0,
+        "provider_nfhs_number": 3406,
+        "event_key": "evtc82c0f5042",
+        "full_feed_index": 0,
+        "broadcast_feed_index": 0,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 1,
+        "provider_nfhs_number": 3407,
+        "event_key": "gam0094164a27",
+        "full_feed_index": 1,
+        "broadcast_feed_index": 1,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 2,
+        "provider_nfhs_number": 3408,
+        "event_key": "gam00c17398e2",
+        "full_feed_index": 2,
+        "broadcast_feed_index": 2,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 3,
+        "provider_nfhs_number": 3409,
+        "event_key": "gam011751bafc",
+        "full_feed_index": 3,
+        "broadcast_feed_index": 3,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 4,
+        "provider_nfhs_number": 3410,
+        "event_key": "gam0130336640",
+        "full_feed_index": 4,
+        "broadcast_feed_index": 4,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 5,
+        "provider_nfhs_number": 3411,
+        "event_key": "gam028a6b98b5",
+        "full_feed_index": 5,
+        "broadcast_feed_index": 5,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 6,
+        "provider_nfhs_number": 3412,
+        "event_key": "gam03f20672f4",
+        "full_feed_index": 6,
+        "broadcast_feed_index": 6,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 7,
+        "provider_nfhs_number": 3413,
+        "event_key": "gam04c5bb1220",
+        "full_feed_index": 7,
+        "broadcast_feed_index": 7,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 8,
+        "provider_nfhs_number": 3415,
+        "event_key": "gam06241f19e2",
+        "full_feed_index": 9,
+        "broadcast_feed_index": 9,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 9,
+        "provider_nfhs_number": 3416,
+        "event_key": "gam0806d5f2dc",
+        "full_feed_index": 10,
+        "broadcast_feed_index": 10,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 10,
+        "provider_nfhs_number": 3418,
+        "event_key": "gam09c2679169",
+        "full_feed_index": 13,
+        "broadcast_feed_index": 13,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 11,
+        "provider_nfhs_number": 3419,
+        "event_key": "gam0baae7a751",
+        "full_feed_index": 14,
+        "broadcast_feed_index": 14,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 12,
+        "provider_nfhs_number": 3421,
+        "event_key": "gam0c109e2565",
+        "full_feed_index": 15,
+        "broadcast_feed_index": 15,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 13,
+        "provider_nfhs_number": 3422,
+        "event_key": "gam0d1a6b8fd3",
+        "full_feed_index": 17,
+        "broadcast_feed_index": 17,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 14,
+        "provider_nfhs_number": 3423,
+        "event_key": "gam0d571b062c",
+        "full_feed_index": 18,
+        "broadcast_feed_index": 18,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 15,
+        "provider_nfhs_number": 3424,
+        "event_key": "gam0e1ac34840",
+        "full_feed_index": 19,
+        "broadcast_feed_index": 19,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 16,
+        "provider_nfhs_number": 3425,
+        "event_key": "gam0e30476195",
+        "full_feed_index": 20,
+        "broadcast_feed_index": 20,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 17,
+        "provider_nfhs_number": 3426,
+        "event_key": "gam0f333c2d31",
+        "full_feed_index": 21,
+        "broadcast_feed_index": 21,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 18,
+        "provider_nfhs_number": 3427,
+        "event_key": "gam0f59408b73",
+        "full_feed_index": 22,
+        "broadcast_feed_index": 22,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 19,
+        "provider_nfhs_number": 3428,
+        "event_key": "gam0fe2db07ea",
+        "full_feed_index": 23,
+        "broadcast_feed_index": 23,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 20,
+        "provider_nfhs_number": 3429,
+        "event_key": "gam1230746a42",
+        "full_feed_index": 24,
+        "broadcast_feed_index": 24,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 21,
+        "provider_nfhs_number": 3430,
+        "event_key": "gama99c8ce5d8",
+        "full_feed_index": 146,
+        "broadcast_feed_index": 146,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 22,
+        "provider_nfhs_number": 3432,
+        "event_key": "gam1564baf262",
+        "full_feed_index": 25,
+        "broadcast_feed_index": 25,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 23,
+        "provider_nfhs_number": 3433,
+        "event_key": "gam15db863144",
+        "full_feed_index": 26,
+        "broadcast_feed_index": 26,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 24,
+        "provider_nfhs_number": 3434,
+        "event_key": "gam164f8853e7",
+        "full_feed_index": 27,
+        "broadcast_feed_index": 27,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 25,
+        "provider_nfhs_number": 3435,
+        "event_key": "gam1818d8d696",
+        "full_feed_index": 28,
+        "broadcast_feed_index": 28,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 26,
+        "provider_nfhs_number": 3436,
+        "event_key": "gam189de43d85",
+        "full_feed_index": 29,
+        "broadcast_feed_index": 29,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 27,
+        "provider_nfhs_number": 3437,
+        "event_key": "gam18b9916c2b",
+        "full_feed_index": 30,
+        "broadcast_feed_index": 30,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 28,
+        "provider_nfhs_number": 3438,
+        "event_key": "gam195d0a5a68",
+        "full_feed_index": 31,
+        "broadcast_feed_index": 31,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 29,
+        "provider_nfhs_number": 3440,
+        "event_key": "gam2155076096",
+        "full_feed_index": 33,
+        "broadcast_feed_index": 33,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 30,
+        "provider_nfhs_number": 3443,
+        "event_key": "gam2555a47f83",
+        "full_feed_index": 34,
+        "broadcast_feed_index": 34,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 31,
+        "provider_nfhs_number": 3444,
+        "event_key": "gam25b130cbd1",
+        "full_feed_index": 36,
+        "broadcast_feed_index": 36,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 32,
+        "provider_nfhs_number": 3445,
+        "event_key": "gam2653d51415",
+        "full_feed_index": 37,
+        "broadcast_feed_index": 37,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 33,
+        "provider_nfhs_number": 3446,
+        "event_key": "gam2717133d7e",
+        "full_feed_index": 38,
+        "broadcast_feed_index": 38,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 34,
+        "provider_nfhs_number": 3447,
+        "event_key": "gam273daed0ae",
+        "full_feed_index": 39,
+        "broadcast_feed_index": 39,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 35,
+        "provider_nfhs_number": 3448,
+        "event_key": "gam297231f5aa",
+        "full_feed_index": 40,
+        "broadcast_feed_index": 40,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 36,
+        "provider_nfhs_number": 3449,
+        "event_key": "gam29c0492e87",
+        "full_feed_index": 41,
+        "broadcast_feed_index": 41,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 37,
+        "provider_nfhs_number": 3450,
+        "event_key": "gam29f5e4cd59",
+        "full_feed_index": 42,
+        "broadcast_feed_index": 42,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 38,
+        "provider_nfhs_number": 3451,
+        "event_key": "gam29f8353cb1",
+        "full_feed_index": 43,
+        "broadcast_feed_index": 43,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 39,
+        "provider_nfhs_number": 3452,
+        "event_key": "gam2a81770b90",
+        "full_feed_index": 44,
+        "broadcast_feed_index": 44,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 40,
+        "provider_nfhs_number": 3454,
+        "event_key": "gam2d80fd30ad",
+        "full_feed_index": 46,
+        "broadcast_feed_index": 46,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 41,
+        "provider_nfhs_number": 3455,
+        "event_key": "gam302604b4e5",
+        "full_feed_index": 49,
+        "broadcast_feed_index": 49,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 42,
+        "provider_nfhs_number": 3456,
+        "event_key": "gam33f94509fe",
+        "full_feed_index": 50,
+        "broadcast_feed_index": 50,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 43,
+        "provider_nfhs_number": 3457,
+        "event_key": "gam34458f6522",
+        "full_feed_index": 51,
+        "broadcast_feed_index": 51,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 44,
+        "provider_nfhs_number": 3458,
+        "event_key": "gam35b50f61ef",
+        "full_feed_index": 52,
+        "broadcast_feed_index": 52,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 45,
+        "provider_nfhs_number": 3459,
+        "event_key": "gam362c2c1320",
+        "full_feed_index": 53,
+        "broadcast_feed_index": 53,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 46,
+        "provider_nfhs_number": 3460,
+        "event_key": "gam37c5d356bb",
+        "full_feed_index": 54,
+        "broadcast_feed_index": 54,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 47,
+        "provider_nfhs_number": 3463,
+        "event_key": "gam3ba3b79ff1",
+        "full_feed_index": 57,
+        "broadcast_feed_index": 57,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 48,
+        "provider_nfhs_number": 3464,
+        "event_key": "gam3cbad07ae5",
+        "full_feed_index": 58,
+        "broadcast_feed_index": 58,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 49,
+        "provider_nfhs_number": 3465,
+        "event_key": "gam3df0d3b409",
+        "full_feed_index": 60,
+        "broadcast_feed_index": 60,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 50,
+        "provider_nfhs_number": 3466,
+        "event_key": "gam3e8521f961",
+        "full_feed_index": 61,
+        "broadcast_feed_index": 61,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 51,
+        "provider_nfhs_number": 3467,
+        "event_key": "gam3ff3b809e6",
+        "full_feed_index": 63,
+        "broadcast_feed_index": 63,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 52,
+        "provider_nfhs_number": 3469,
+        "event_key": "gam42ef8da51f",
+        "full_feed_index": 65,
+        "broadcast_feed_index": 65,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 53,
+        "provider_nfhs_number": 3470,
+        "event_key": "gam43d55c0858",
+        "full_feed_index": 66,
+        "broadcast_feed_index": 66,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 54,
+        "provider_nfhs_number": 3471,
+        "event_key": "gam45b14ea578",
+        "full_feed_index": 67,
+        "broadcast_feed_index": 67,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 55,
+        "provider_nfhs_number": 3472,
+        "event_key": "gam45c2867c2b",
+        "full_feed_index": 68,
+        "broadcast_feed_index": 68,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 56,
+        "provider_nfhs_number": 3474,
+        "event_key": "gam46756f496f",
+        "full_feed_index": 69,
+        "broadcast_feed_index": 69,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 57,
+        "provider_nfhs_number": 3475,
+        "event_key": "gam46f1077ccd",
+        "full_feed_index": 70,
+        "broadcast_feed_index": 70,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 58,
+        "provider_nfhs_number": 3476,
+        "event_key": "gam47366063a4",
+        "full_feed_index": 71,
+        "broadcast_feed_index": 71,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 59,
+        "provider_nfhs_number": 3477,
+        "event_key": "gam4a34445be4",
+        "full_feed_index": 72,
+        "broadcast_feed_index": 72,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 60,
+        "provider_nfhs_number": 3478,
+        "event_key": "gam4a35472a00",
+        "full_feed_index": 73,
+        "broadcast_feed_index": 73,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 61,
+        "provider_nfhs_number": 3479,
+        "event_key": "gam4a7cd4a0dc",
+        "full_feed_index": 74,
+        "broadcast_feed_index": 74,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 62,
+        "provider_nfhs_number": 3480,
+        "event_key": "gam4d3b503e7e",
+        "full_feed_index": 76,
+        "broadcast_feed_index": 76,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 63,
+        "provider_nfhs_number": 3481,
+        "event_key": "gam4eaa85f7c1",
+        "full_feed_index": 77,
+        "broadcast_feed_index": 77,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 64,
+        "provider_nfhs_number": 3482,
+        "event_key": "gam505103d064",
+        "full_feed_index": 78,
+        "broadcast_feed_index": 78,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 65,
+        "provider_nfhs_number": 3484,
+        "event_key": "gam510f207ccb",
+        "full_feed_index": 79,
+        "broadcast_feed_index": 79,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 66,
+        "provider_nfhs_number": 3485,
+        "event_key": "gam51670877ef",
+        "full_feed_index": 80,
+        "broadcast_feed_index": 80,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 67,
+        "provider_nfhs_number": 3487,
+        "event_key": "gam5380832fb1",
+        "full_feed_index": 82,
+        "broadcast_feed_index": 82,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 68,
+        "provider_nfhs_number": 3488,
+        "event_key": "gam5389dc439c",
+        "full_feed_index": 83,
+        "broadcast_feed_index": 83,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 69,
+        "provider_nfhs_number": 3489,
+        "event_key": "gam55ed487a3d",
+        "full_feed_index": 84,
+        "broadcast_feed_index": 84,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 70,
+        "provider_nfhs_number": 3490,
+        "event_key": "gam567c47e0ec",
+        "full_feed_index": 86,
+        "broadcast_feed_index": 86,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 71,
+        "provider_nfhs_number": 3491,
+        "event_key": "gam56eea4ea7d",
+        "full_feed_index": 87,
+        "broadcast_feed_index": 87,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 72,
+        "provider_nfhs_number": 3492,
+        "event_key": "gam58001bfa53",
+        "full_feed_index": 88,
+        "broadcast_feed_index": 88,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 73,
+        "provider_nfhs_number": 3493,
+        "event_key": "gam596dd5aeec",
+        "full_feed_index": 89,
+        "broadcast_feed_index": 89,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 74,
+        "provider_nfhs_number": 3494,
+        "event_key": "gam599e8f6941",
+        "full_feed_index": 90,
+        "broadcast_feed_index": 90,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 75,
+        "provider_nfhs_number": 3495,
+        "event_key": "gamd08432d4c5",
+        "full_feed_index": 174,
+        "broadcast_feed_index": 174,
+        "text_score": 1
+      },
+      {
+        "provider_rank": 76,
+        "provider_nfhs_number": 3496,
+        "event_key": "gam5c695f176d",
+        "full_feed_index": 92,
+        "broadcast_feed_index": 92,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 77,
+        "provider_nfhs_number": 3497,
+        "event_key": "gam5da84863ec",
+        "full_feed_index": 94,
+        "broadcast_feed_index": 94,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 78,
+        "provider_nfhs_number": 3498,
+        "event_key": "gam5ea53d8e8c",
+        "full_feed_index": 96,
+        "broadcast_feed_index": 96,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 79,
+        "provider_nfhs_number": 3501,
+        "event_key": "gam63614100d0",
+        "full_feed_index": 101,
+        "broadcast_feed_index": 101,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 80,
+        "provider_nfhs_number": 3502,
+        "event_key": "gam64de7612c4",
+        "full_feed_index": 102,
+        "broadcast_feed_index": 102,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 81,
+        "provider_nfhs_number": 3503,
+        "event_key": "gam65bc67e7b6",
+        "full_feed_index": 103,
+        "broadcast_feed_index": 103,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 82,
+        "provider_nfhs_number": 3504,
+        "event_key": "gam65c0a14e0b",
+        "full_feed_index": 104,
+        "broadcast_feed_index": 104,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 83,
+        "provider_nfhs_number": 3505,
+        "event_key": "gam68ae978e5a",
+        "full_feed_index": 105,
+        "broadcast_feed_index": 105,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 84,
+        "provider_nfhs_number": 3506,
+        "event_key": "gam68df0dd69d",
+        "full_feed_index": 107,
+        "broadcast_feed_index": 107,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 85,
+        "provider_nfhs_number": 3507,
+        "event_key": "gam69f712facd",
+        "full_feed_index": 109,
+        "broadcast_feed_index": 109,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 86,
+        "provider_nfhs_number": 3508,
+        "event_key": "gam6a8493b74e",
+        "full_feed_index": 110,
+        "broadcast_feed_index": 110,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 87,
+        "provider_nfhs_number": 3509,
+        "event_key": "gam6b75e5d667",
+        "full_feed_index": 111,
+        "broadcast_feed_index": 111,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 88,
+        "provider_nfhs_number": 3510,
+        "event_key": "gam7147fbe5e7",
+        "full_feed_index": 113,
+        "broadcast_feed_index": 113,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 89,
+        "provider_nfhs_number": 3511,
+        "event_key": "gam7346719a14",
+        "full_feed_index": 114,
+        "broadcast_feed_index": 114,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 90,
+        "provider_nfhs_number": 3512,
+        "event_key": "gam73a079f12b",
+        "full_feed_index": 115,
+        "broadcast_feed_index": 115,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 91,
+        "provider_nfhs_number": 3513,
+        "event_key": "gam742705fcbe",
+        "full_feed_index": 116,
+        "broadcast_feed_index": 116,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 92,
+        "provider_nfhs_number": 3514,
+        "event_key": "gam7a4d71b081",
+        "full_feed_index": 117,
+        "broadcast_feed_index": 117,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 93,
+        "provider_nfhs_number": 3515,
+        "event_key": "gam7c32eeb84e",
+        "full_feed_index": 119,
+        "broadcast_feed_index": 119,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 94,
+        "provider_nfhs_number": 3516,
+        "event_key": "gam80c0b3b49d",
+        "full_feed_index": 121,
+        "broadcast_feed_index": 121,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 95,
+        "provider_nfhs_number": 3517,
+        "event_key": "gama61d367938",
+        "full_feed_index": 143,
+        "broadcast_feed_index": 143,
+        "text_score": 1
+      },
+      {
+        "provider_rank": 96,
+        "provider_nfhs_number": 3518,
+        "event_key": "gam81dfaa58ea",
+        "full_feed_index": 123,
+        "broadcast_feed_index": 123,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 97,
+        "provider_nfhs_number": 3520,
+        "event_key": "gam8370f6eaa8",
+        "full_feed_index": 125,
+        "broadcast_feed_index": 125,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 98,
+        "provider_nfhs_number": 3521,
+        "event_key": "gam849da54659",
+        "full_feed_index": 126,
+        "broadcast_feed_index": 126,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 99,
+        "provider_nfhs_number": 3522,
+        "event_key": "gam84b4fd97e4",
+        "full_feed_index": 127,
+        "broadcast_feed_index": 127,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 100,
+        "provider_nfhs_number": 3525,
+        "event_key": "gam89c39796dd",
+        "full_feed_index": 128,
+        "broadcast_feed_index": 128,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 101,
+        "provider_nfhs_number": 3526,
+        "event_key": "gam8a6a87467e",
+        "full_feed_index": 129,
+        "broadcast_feed_index": 129,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 102,
+        "provider_nfhs_number": 3527,
+        "event_key": "gam8b6d11f25c",
+        "full_feed_index": 130,
+        "broadcast_feed_index": 130,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 103,
+        "provider_nfhs_number": 3528,
+        "event_key": "gam911e0130b5",
+        "full_feed_index": 132,
+        "broadcast_feed_index": 132,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 104,
+        "provider_nfhs_number": 3529,
+        "event_key": "gam959038070d",
+        "full_feed_index": 133,
+        "broadcast_feed_index": 133,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 105,
+        "provider_nfhs_number": 3530,
+        "event_key": "gam95996f1157",
+        "full_feed_index": 134,
+        "broadcast_feed_index": 134,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 106,
+        "provider_nfhs_number": 3531,
+        "event_key": "gam959bc862ef",
+        "full_feed_index": 135,
+        "broadcast_feed_index": 135,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 107,
+        "provider_nfhs_number": 3532,
+        "event_key": "gam95c61d6d82",
+        "full_feed_index": 136,
+        "broadcast_feed_index": 136,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 108,
+        "provider_nfhs_number": 3534,
+        "event_key": "gam972bdc8601",
+        "full_feed_index": 137,
+        "broadcast_feed_index": 137,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 109,
+        "provider_nfhs_number": 3535,
+        "event_key": "gam99d65daf44",
+        "full_feed_index": 138,
+        "broadcast_feed_index": 138,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 110,
+        "provider_nfhs_number": 3538,
+        "event_key": "gam9c36c9724f",
+        "full_feed_index": 140,
+        "broadcast_feed_index": 140,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 111,
+        "provider_nfhs_number": 3540,
+        "event_key": "gama61c47f145",
+        "full_feed_index": 142,
+        "broadcast_feed_index": 142,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 112,
+        "provider_nfhs_number": 3541,
+        "event_key": "gam811cf0110c",
+        "full_feed_index": 122,
+        "broadcast_feed_index": 122,
+        "text_score": 1
+      },
+      {
+        "provider_rank": 113,
+        "provider_nfhs_number": 3542,
+        "event_key": "gama623d930ac",
+        "full_feed_index": 144,
+        "broadcast_feed_index": 144,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 114,
+        "provider_nfhs_number": 3543,
+        "event_key": "gamf3457e966e",
+        "full_feed_index": 209,
+        "broadcast_feed_index": 209,
+        "text_score": 1
+      },
+      {
+        "provider_rank": 115,
+        "provider_nfhs_number": 3544,
+        "event_key": "gamaad7ecaf94",
+        "full_feed_index": 147,
+        "broadcast_feed_index": 147,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 116,
+        "provider_nfhs_number": 3545,
+        "event_key": "gamab9f9f5bea",
+        "full_feed_index": 148,
+        "broadcast_feed_index": 148,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 117,
+        "provider_nfhs_number": 3546,
+        "event_key": "gamaf2d4fcc0e",
+        "full_feed_index": 149,
+        "broadcast_feed_index": 149,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 118,
+        "provider_nfhs_number": 3547,
+        "event_key": "gamafa054aee6",
+        "full_feed_index": 150,
+        "broadcast_feed_index": 150,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 119,
+        "provider_nfhs_number": 3548,
+        "event_key": "gamb0311249b3",
+        "full_feed_index": 151,
+        "broadcast_feed_index": 151,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 120,
+        "provider_nfhs_number": 3549,
+        "event_key": "gamb2385aa000",
+        "full_feed_index": 153,
+        "broadcast_feed_index": 153,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 121,
+        "provider_nfhs_number": 3550,
+        "event_key": "gamb3e7fa4b9e",
+        "full_feed_index": 154,
+        "broadcast_feed_index": 154,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 122,
+        "provider_nfhs_number": 3551,
+        "event_key": "gamb69ef5c0a2",
+        "full_feed_index": 155,
+        "broadcast_feed_index": 155,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 123,
+        "provider_nfhs_number": 3552,
+        "event_key": "gamb8ebe375ea",
+        "full_feed_index": 157,
+        "broadcast_feed_index": 157,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 124,
+        "provider_nfhs_number": 3554,
+        "event_key": "gamba76d22648",
+        "full_feed_index": 160,
+        "broadcast_feed_index": 160,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 125,
+        "provider_nfhs_number": 3555,
+        "event_key": "gamba7884736f",
+        "full_feed_index": 161,
+        "broadcast_feed_index": 161,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 126,
+        "provider_nfhs_number": 3556,
+        "event_key": "gambb59c64f73",
+        "full_feed_index": 162,
+        "broadcast_feed_index": 162,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 127,
+        "provider_nfhs_number": 3557,
+        "event_key": "gambdf8368394",
+        "full_feed_index": 163,
+        "broadcast_feed_index": 163,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 128,
+        "provider_nfhs_number": 3558,
+        "event_key": "gambe49835165",
+        "full_feed_index": 164,
+        "broadcast_feed_index": 164,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 129,
+        "provider_nfhs_number": 3559,
+        "event_key": "gamc2785418b1",
+        "full_feed_index": 165,
+        "broadcast_feed_index": 165,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 130,
+        "provider_nfhs_number": 3561,
+        "event_key": "gamc4ecf83d43",
+        "full_feed_index": 166,
+        "broadcast_feed_index": 166,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 131,
+        "provider_nfhs_number": 3563,
+        "event_key": "gamc8bf328d37",
+        "full_feed_index": 168,
+        "broadcast_feed_index": 168,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 132,
+        "provider_nfhs_number": 3564,
+        "event_key": "gamc8faf12113",
+        "full_feed_index": 169,
+        "broadcast_feed_index": 169,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 133,
+        "provider_nfhs_number": 3565,
+        "event_key": "gamc9c8896597",
+        "full_feed_index": 170,
+        "broadcast_feed_index": 170,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 134,
+        "provider_nfhs_number": 3567,
+        "event_key": "gamcae9cebd36",
+        "full_feed_index": 171,
+        "broadcast_feed_index": 171,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 135,
+        "provider_nfhs_number": 3568,
+        "event_key": "gamcbba0f9182",
+        "full_feed_index": 172,
+        "broadcast_feed_index": 172,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 136,
+        "provider_nfhs_number": 3569,
+        "event_key": "gamce16de126a",
+        "full_feed_index": 173,
+        "broadcast_feed_index": 173,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 137,
+        "provider_nfhs_number": 3570,
+        "event_key": "gam5c0d964826",
+        "full_feed_index": 91,
+        "broadcast_feed_index": 91,
+        "text_score": 1
+      },
+      {
+        "provider_rank": 138,
+        "provider_nfhs_number": 3571,
+        "event_key": "gamd46dfbaa92",
+        "full_feed_index": 175,
+        "broadcast_feed_index": 175,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 139,
+        "provider_nfhs_number": 3574,
+        "event_key": "gamd6fd73b146",
+        "full_feed_index": 176,
+        "broadcast_feed_index": 176,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 140,
+        "provider_nfhs_number": 3575,
+        "event_key": "gamd74c7ae4a6",
+        "full_feed_index": 177,
+        "broadcast_feed_index": 177,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 141,
+        "provider_nfhs_number": 3576,
+        "event_key": "gamd800b78abf",
+        "full_feed_index": 178,
+        "broadcast_feed_index": 178,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 142,
+        "provider_nfhs_number": 3578,
+        "event_key": "gamd953ff2533",
+        "full_feed_index": 179,
+        "broadcast_feed_index": 179,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 143,
+        "provider_nfhs_number": 3579,
+        "event_key": "gamda5cc70834",
+        "full_feed_index": 180,
+        "broadcast_feed_index": 180,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 144,
+        "provider_nfhs_number": 3580,
+        "event_key": "gamdacbecfbda",
+        "full_feed_index": 181,
+        "broadcast_feed_index": 181,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 145,
+        "provider_nfhs_number": 3581,
+        "event_key": "gamdc52436517",
+        "full_feed_index": 182,
+        "broadcast_feed_index": 182,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 146,
+        "provider_nfhs_number": 3582,
+        "event_key": "gamddde1364b0",
+        "full_feed_index": 184,
+        "broadcast_feed_index": 184,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 147,
+        "provider_nfhs_number": 3584,
+        "event_key": "game0ee060965",
+        "full_feed_index": 186,
+        "broadcast_feed_index": 186,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 148,
+        "provider_nfhs_number": 3585,
+        "event_key": "game3dbad3f3b",
+        "full_feed_index": 189,
+        "broadcast_feed_index": 189,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 149,
+        "provider_nfhs_number": 3586,
+        "event_key": "game45d165d7d",
+        "full_feed_index": 190,
+        "broadcast_feed_index": 190,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 150,
+        "provider_nfhs_number": 3587,
+        "event_key": "game7c53e5709",
+        "full_feed_index": 191,
+        "broadcast_feed_index": 191,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 151,
+        "provider_nfhs_number": 3588,
+        "event_key": "game87887b6f6",
+        "full_feed_index": 192,
+        "broadcast_feed_index": 192,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 152,
+        "provider_nfhs_number": 3590,
+        "event_key": "gamea7cc9a353",
+        "full_feed_index": 194,
+        "broadcast_feed_index": 194,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 153,
+        "provider_nfhs_number": 3591,
+        "event_key": "gamead52ea562",
+        "full_feed_index": 195,
+        "broadcast_feed_index": 195,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 154,
+        "provider_nfhs_number": 3592,
+        "event_key": "gameb48d4a8ea",
+        "full_feed_index": 196,
+        "broadcast_feed_index": 196,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 155,
+        "provider_nfhs_number": 3593,
+        "event_key": "gameb4d22d136",
+        "full_feed_index": 197,
+        "broadcast_feed_index": 197,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 156,
+        "provider_nfhs_number": 3594,
+        "event_key": "gameb8e38bb44",
+        "full_feed_index": 198,
+        "broadcast_feed_index": 198,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 157,
+        "provider_nfhs_number": 3595,
+        "event_key": "gamed7b9a0d13",
+        "full_feed_index": 199,
+        "broadcast_feed_index": 199,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 158,
+        "provider_nfhs_number": 3596,
+        "event_key": "gamee5d943f7a",
+        "full_feed_index": 200,
+        "broadcast_feed_index": 200,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 159,
+        "provider_nfhs_number": 3597,
+        "event_key": "gamefae6d01f3",
+        "full_feed_index": 201,
+        "broadcast_feed_index": 201,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 160,
+        "provider_nfhs_number": 3598,
+        "event_key": "gamf092be8e77",
+        "full_feed_index": 202,
+        "broadcast_feed_index": 202,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 161,
+        "provider_nfhs_number": 3599,
+        "event_key": "gamf0f95944ae",
+        "full_feed_index": 203,
+        "broadcast_feed_index": 203,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 162,
+        "provider_nfhs_number": 3600,
+        "event_key": "gamf18f429af3",
+        "full_feed_index": 204,
+        "broadcast_feed_index": 204,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 163,
+        "provider_nfhs_number": 3601,
+        "event_key": "gamf1aabe512a",
+        "full_feed_index": 205,
+        "broadcast_feed_index": 205,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 164,
+        "provider_nfhs_number": 3602,
+        "event_key": "gamf264588beb",
+        "full_feed_index": 206,
+        "broadcast_feed_index": 206,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 165,
+        "provider_nfhs_number": 3603,
+        "event_key": "gamf283f5a60e",
+        "full_feed_index": 207,
+        "broadcast_feed_index": 207,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 166,
+        "provider_nfhs_number": 3604,
+        "event_key": "gamf3427220dc",
+        "full_feed_index": 208,
+        "broadcast_feed_index": 208,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 167,
+        "provider_nfhs_number": 3607,
+        "event_key": "gamf6421bdbda",
+        "full_feed_index": 211,
+        "broadcast_feed_index": 211,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 168,
+        "provider_nfhs_number": 3608,
+        "event_key": "gamf94ce65d6d",
+        "full_feed_index": 212,
+        "broadcast_feed_index": 212,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 169,
+        "provider_nfhs_number": 3609,
+        "event_key": "gamf9e78cb981",
+        "full_feed_index": 213,
+        "broadcast_feed_index": 213,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 170,
+        "provider_nfhs_number": 3610,
+        "event_key": "gamf9f8bb16f6",
+        "full_feed_index": 214,
+        "broadcast_feed_index": 214,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 171,
+        "provider_nfhs_number": 3611,
+        "event_key": "gam0817e77c83",
+        "full_feed_index": 11,
+        "broadcast_feed_index": 11,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 172,
+        "provider_nfhs_number": 3613,
+        "event_key": "gamfc320f80b5",
+        "full_feed_index": 217,
+        "broadcast_feed_index": 217,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 173,
+        "provider_nfhs_number": 3614,
+        "event_key": "gamfc979bbae6",
+        "full_feed_index": 218,
+        "broadcast_feed_index": 218,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 174,
+        "provider_nfhs_number": 3615,
+        "event_key": "gamfcfc775f6a",
+        "full_feed_index": 219,
+        "broadcast_feed_index": 219,
+        "text_score": 0.97
+      },
+      {
+        "provider_rank": 175,
+        "provider_nfhs_number": 3616,
+        "event_key": "gamff3531129c",
+        "full_feed_index": 220,
+        "broadcast_feed_index": 220,
+        "text_score": 0.97
+      }
+    ],
+    "unmatched_provider_samples": [
+      {
+        "provider_nfhs_number": 3414,
+        "stream_id": 2066898,
+        "provider_title": "NFHS Network 3414: Bosque School vs. West Las Vegas High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam06241f19e2",
+          "full_feed_index": 9,
+          "broadcast_feed_index": 9,
+          "sport": "Soccer",
+          "broadcast_key": "bdce5050ad7b8",
+          "subheadline": "Richlands High School vs. West Carteret High School",
+          "publisher_slug": "west-carteret-high-school-morehead-city-nc",
+          "association": "NCHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2833
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3417,
+        "stream_id": 2066895,
+        "provider_title": "NFHS Network 3417: Away vs. Holly Springs High School Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam7a4d71b081",
+          "full_feed_index": 117,
+          "broadcast_feed_index": 117,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc6fb445092e",
+          "subheadline": "Cary High School vs. Holly Springs High School",
+          "publisher_slug": "holly-springs-high-school-holly-springs-nc",
+          "association": "NCHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.6167
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3420,
+        "stream_id": 2066892,
+        "provider_title": "NFHS Network 3420: Scarborough High School vs. Gorham High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gamd74c7ae4a6",
+          "full_feed_index": 177,
+          "broadcast_feed_index": 177,
+          "sport": "Soccer",
+          "broadcast_key": "bdcc641cae198",
+          "subheadline": "Gorham High School vs. Colebrook Academy",
+          "publisher_slug": "northeast-sports-network",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.425
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3431,
+        "stream_id": 2066881,
+        "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam5e5b6c8e16",
+          "full_feed_index": 95,
+          "broadcast_feed_index": 95,
+          "sport": "Soccer",
+          "broadcast_key": "bdc3342eab66f",
+          "subheadline": "Wayne Christian School",
+          "publisher_slug": "wayne-christian-school-goldsboro-nc",
+          "association": "NCISAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.425
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3439,
+        "stream_id": 2066873,
+        "provider_title": "NFHS Network 3439: Granby Memorial High School vs. Canton High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "evtc82c0f5042",
+          "full_feed_index": 0,
+          "broadcast_feed_index": 0,
+          "sport": null,
+          "broadcast_key": "bdc5902de47c5",
+          "subheadline": "Celina High School",
+          "publisher_slug": "celina-high-school-celina-tx",
+          "association": "UIL",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3441,
+        "stream_id": 2066871,
+        "provider_title": "NFHS Network 3441: Bethany Community School vs. Clover Garden School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gamed7b9a0d13",
+          "full_feed_index": 199,
+          "broadcast_feed_index": 199,
+          "sport": "Volleyball",
+          "broadcast_key": "bdcd6cee98f2e",
+          "subheadline": "Away vs. Roxboro Community High School",
+          "publisher_slug": "roxboro-community-high-school-roxboro-nc",
+          "association": "NCHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2833
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3442,
+        "stream_id": 2066870,
+        "provider_title": "NFHS Network 3442: Aquinas Academy of Pittsburgh vs. Penn-Trafford High School Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam028a6b98b5",
+          "full_feed_index": 5,
+          "broadcast_feed_index": 5,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc38266452ad",
+          "subheadline": "Hampden Academy vs. Messalonskee High School",
+          "publisher_slug": "messalonskee-high-school-oakland-me",
+          "association": "MPA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2762
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3453,
+        "stream_id": 2066859,
+        "provider_title": "NFHS Network 3453: Away vs. Springfield High School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam0d1a6b8fd3",
+          "full_feed_index": 17,
+          "broadcast_feed_index": 17,
+          "sport": "Volleyball",
+          "broadcast_key": "bdce48ed657df",
+          "subheadline": "Away vs. Southside High School",
+          "publisher_slug": "southside-high-school-east-chocowinity-nc",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.45
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3462,
+        "stream_id": 2066850,
+        "provider_title": "NFHS Network 3462: Westchester Country Day School vs. High Point Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam611aa6f324",
+          "full_feed_index": 97,
+          "broadcast_feed_index": 97,
+          "sport": "Volleyball",
+          "broadcast_key": "bdcabccca1be6",
+          "subheadline": "St Johns Christian Academy",
+          "publisher_slug": "st-johns-christian-academy-moncks-corner-sc",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.5417
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3468,
+        "stream_id": 2066844,
+        "provider_title": "NFHS Network 3468: Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam42ef8da51f",
+          "full_feed_index": 65,
+          "broadcast_feed_index": 65,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc805d98558a",
+          "subheadline": "Emmanuel Christian Academy vs. American School For The Deaf",
+          "publisher_slug": "american-school-for-the-deaf-west-hartford-ct",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.6375
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3473,
+        "stream_id": 2066839,
+        "provider_title": "NFHS Network 3473: Meridian High School vs. Lake Braddock High School Varsity Girls Cross Country @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam811cf0110c",
+          "full_feed_index": 122,
+          "broadcast_feed_index": 122,
+          "sport": "Soccer",
+          "broadcast_key": "bdce5aee4f0ec",
+          "subheadline": "Lake Forest High School vs. Laurel High School",
+          "publisher_slug": "laurel-high-school-laurel-de",
+          "association": "DIAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2762
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3483,
+        "stream_id": 2066829,
+        "provider_title": "NFHS Network 3483: Cornwall Central High School vs. Warwick Valley High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gamafa054aee6",
+          "full_feed_index": 150,
+          "broadcast_feed_index": 150,
+          "sport": "Soccer",
+          "broadcast_key": "bdc2a3f9bf6b6",
+          "subheadline": "Notre Dame High School vs. Hopewell Valley Central High",
+          "publisher_slug": "hopewell-valley-central-high-pennington-nj",
+          "association": "NJSIAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.425
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3486,
+        "stream_id": 2066826,
+        "provider_title": "NFHS Network 3486: Away vs. DeWitt High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam0d1a6b8fd3",
+          "full_feed_index": 17,
+          "broadcast_feed_index": 17,
+          "sport": "Volleyball",
+          "broadcast_key": "bdce48ed657df",
+          "subheadline": "Away vs. Southside High School",
+          "publisher_slug": "southside-high-school-east-chocowinity-nc",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.45
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3500,
+        "stream_id": 2066812,
+        "provider_title": "NFHS Network 3500: Away vs. Panther Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam61f6e4c60e",
+          "full_feed_index": 99,
+          "broadcast_feed_index": 99,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc3936634d03",
+          "subheadline": "Green Hope High School vs. Panther Creek High School",
+          "publisher_slug": "panther-creek-high-school-cary-nc",
+          "association": "NCHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.5867
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "provider_title": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam4d3b503e7e",
+          "full_feed_index": 76,
+          "broadcast_feed_index": 76,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc9010f670a1",
+          "subheadline": "Penns Valley Area High School vs. Philipsburg Osceola Area High School",
+          "publisher_slug": "philipsburg-osceola-area-high-school-philipsburg-pa",
+          "association": "PIAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.355
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3524,
+        "stream_id": 2066788,
+        "provider_title": "NFHS Network 3524: Broughton High School vs. Athens Drive High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam3cbad07ae5",
+          "full_feed_index": 58,
+          "broadcast_feed_index": 58,
+          "sport": "Soccer",
+          "broadcast_key": "bdc7e63eccaec",
+          "subheadline": "Berkley High School vs. Athens High School - Troy",
+          "publisher_slug": "athens-high-school-troy-troy-mi",
+          "association": "MHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2933
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3533,
+        "stream_id": 2066778,
+        "provider_title": "NFHS Network 3533: Chesapeake High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam7c32eeb84e",
+          "full_feed_index": 119,
+          "broadcast_feed_index": 119,
+          "sport": "Soccer",
+          "broadcast_key": "bdc7a8c85d886",
+          "subheadline": "Chesapeake High School vs. Kenwood High School",
+          "publisher_slug": "kenwood-high-school-baltimore-md",
+          "association": "MPSSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.85
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam5e5b6c8e16",
+          "full_feed_index": 95,
+          "broadcast_feed_index": 95,
+          "sport": "Soccer",
+          "broadcast_key": "bdc3342eab66f",
+          "subheadline": "Wayne Christian School",
+          "publisher_slug": "wayne-christian-school-goldsboro-nc",
+          "association": "NCISAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.425
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3537,
+        "stream_id": 2066774,
+        "provider_title": "NFHS Network 3537: None Wilson Christian Chargers vs Fellowship Baptist @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam5e5b6c8e16",
+          "full_feed_index": 95,
+          "broadcast_feed_index": 95,
+          "sport": "Soccer",
+          "broadcast_key": "bdc3342eab66f",
+          "subheadline": "Wayne Christian School",
+          "publisher_slug": "wayne-christian-school-goldsboro-nc",
+          "association": "NCISAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.3929
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3539,
+        "stream_id": 2066772,
+        "provider_title": "NFHS Network 3539: Pelham High School vs. Kearsarge Regional High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam1230746a42",
+          "full_feed_index": 24,
+          "broadcast_feed_index": 24,
+          "sport": "Soccer",
+          "broadcast_key": "bdc07aaa500fa",
+          "subheadline": "Ware High School vs. Quaboag Regional High School",
+          "publisher_slug": "quaboag-regional-high-school-warren-ma",
+          "association": "MIAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.2933
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam0d1a6b8fd3",
+          "full_feed_index": 17,
+          "broadcast_feed_index": 17,
+          "sport": "Volleyball",
+          "broadcast_key": "bdce48ed657df",
+          "subheadline": "Away vs. Southside High School",
+          "publisher_slug": "southside-high-school-east-chocowinity-nc",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.425
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3560,
+        "stream_id": 2066750,
+        "provider_title": "NFHS Network 3560: Gorham High School vs. Windham High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gamb69ef5c0a2",
+          "full_feed_index": 155,
+          "broadcast_feed_index": 155,
+          "sport": "Field Hockey",
+          "broadcast_key": "bdc53acbb191d",
+          "subheadline": "Windham High School vs. Biddeford High School",
+          "publisher_slug": "biddeford-high-school-biddeford-me",
+          "association": "MPA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.45
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3566,
+        "stream_id": 2066743,
+        "provider_title": "NFHS Network 3566: Oak Level Baptist Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam691fcb8f27",
+          "full_feed_index": 108,
+          "broadcast_feed_index": 108,
+          "sport": "Soccer",
+          "broadcast_key": "bdc8b02e6f692",
+          "subheadline": "Calvary Baptist Academy",
+          "publisher_slug": "calvary-baptist-academy-midland-mi",
+          "association": "MHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.5867
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam3ee4c82107",
+          "full_feed_index": 62,
+          "broadcast_feed_index": 62,
+          "sport": "Volleyball",
+          "broadcast_key": "bdce4d96f9a01",
+          "subheadline": "Rocky Mount Academy vs. Wayne Country Day School",
+          "publisher_slug": "wayne-country-day-school-goldsboro-nc",
+          "association": "NCHSAA",
+          "status": "scheduled",
+          "view_url_present": true,
+          "text_score": 0.355
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3577,
+        "stream_id": 2066731,
+        "provider_title": "NFHS Network 3577: Northern Nash High School vs. Southern Wayne High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam4eaa85f7c1",
+          "full_feed_index": 77,
+          "broadcast_feed_index": 77,
+          "sport": "Volleyball",
+          "broadcast_key": "bdcf29ba9cef9",
+          "subheadline": "Southern Nash High School vs. Hunt High School",
+          "publisher_slug": "hunt-high-school-wilson-nc",
+          "association": "NCHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.5867
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3583,
+        "stream_id": 2066725,
+        "provider_title": "NFHS Network 3583: None BCS vs. Christ's Church Academy - Part 1 @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam03f20672f4",
+          "full_feed_index": 6,
+          "broadcast_feed_index": 6,
+          "sport": "Soccer",
+          "broadcast_key": "bdc55cb862dc3",
+          "subheadline": "Oak City Academy vs. Christ Covenant School",
+          "publisher_slug": "christ-covenant-school-winterville-nc",
+          "association": null,
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.3467
+        },
+        "strong_match": false
+      },
+      {
+        "provider_nfhs_number": 3606,
+        "stream_id": 2066700,
+        "provider_title": "NFHS Network 3606: Godfrey-Lee High School vs. Zion Christian School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "best_match": {
+          "event_key": "gam8b6d11f25c",
+          "full_feed_index": 130,
+          "broadcast_feed_index": 130,
+          "sport": "Volleyball",
+          "broadcast_key": "bdc64a89d54cd",
+          "subheadline": "Grand River Preparatory vs. Zion Christian School",
+          "publisher_slug": "zion-christian-high-school-byron-center-mi",
+          "association": "MHSAA",
+          "status": "complete",
+          "view_url_present": true,
+          "text_score": 0.4357
+        },
+        "strong_match": false
       }
     ]
   },
