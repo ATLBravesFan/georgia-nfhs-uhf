@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T13:50:07.376Z",
+  "generated_at": "2026-09-30T13:58:19.910Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-4",
+  "diagnostic_version": "deep-link-5",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -24,6 +24,395 @@
     "near_exact_metadata_matches": 36,
     "strong_matches_with_unity_event": 36,
     "provider_number_vs_official_start_pearson": 0.415399
+  },
+  "ordering_checks": {
+    "exact_zero_minute_matches": 35,
+    "adjacent_pairs_agree_with_start_then_event_key": 34,
+    "adjacent_pairs_total": 34,
+    "percent_agreement": 100,
+    "violations": []
+  },
+  "official_feed_probe": {
+    "ok": true,
+    "requested_size_used": 500,
+    "item_count": 500,
+    "unique_event_count": 500,
+    "top_level_metadata": {
+      "start": 0,
+      "size": 500,
+      "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
+      "total": 1498720,
+      "api_version": "v3"
+    },
+    "first_events": [
+      {
+        "event_key": "gam67f8c6542c",
+        "start_time": "2034-10-13T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Gillespie High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam9525daa83b",
+        "start_time": "2034-09-29T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Litchfield High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam9d45703b1a",
+        "start_time": "2034-09-15T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "North Mac High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam750df38792",
+        "start_time": "2034-09-01T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Greenville High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam8878a2d65b",
+        "start_time": "2034-08-25T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Pana High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam20fd25d392",
+        "start_time": "2033-10-07T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Vandalia High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam7fd7155da8",
+        "start_time": "2033-09-23T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Carlinville High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam10941be48e",
+        "start_time": "2033-09-09T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Hillsboro High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam475b7ce709",
+        "start_time": "2033-08-19T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Staunton High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam7a2bff5e42",
+        "start_time": "2032-10-15T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Greenville High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gam53ec8d9196",
+        "start_time": "2032-10-08T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Litchfield High School vs. Southwestern High School"
+      },
+      {
+        "event_key": "gamfc02cf5743",
+        "start_time": "2032-09-24T23:45:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Pana High School vs. Southwestern High School"
+      }
+    ],
+    "last_events": [
+      {
+        "event_key": "gamb08b167fd8",
+        "start_time": "2028-03-27T21:00:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "Warwick High School vs. Central York High School"
+      },
+      {
+        "event_key": "gam953fe89bad",
+        "start_time": "2028-03-27T20:00:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "Dallastown Area High School vs. Central York High School"
+      },
+      {
+        "event_key": "gam1bc4690e75",
+        "start_time": "2028-03-24T19:45:00.000Z",
+        "publisher_slug": "pope-john-paul-ii-high-school-royersford-pa",
+        "subheadline": "Lansdale Catholic High School vs. Pope John Paul II High School"
+      },
+      {
+        "event_key": "gam70f75fa928",
+        "start_time": "2028-03-23T22:30:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "Penn Manor High School vs. Central York High School"
+      },
+      {
+        "event_key": "gam9032a5cc7d",
+        "start_time": "2028-03-23T22:30:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "South Western High School vs. Central York High School"
+      },
+      {
+        "event_key": "gam7a8428926f",
+        "start_time": "2028-03-23T21:30:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "Penn Manor High School vs. Central York High School"
+      },
+      {
+        "event_key": "gam186384375e",
+        "start_time": "2028-03-23T21:15:00.000Z",
+        "publisher_slug": "north-community-high-school-minneapolis-mn",
+        "subheadline": "Washburn High School vs. North Community High School"
+      },
+      {
+        "event_key": "gamba24f71e76",
+        "start_time": "2028-03-23T21:15:00.000Z",
+        "publisher_slug": "mccluer-southberkeley-high-school-st-louis-mo",
+        "subheadline": "Hazelwood Central High School vs. Steam Academy at McCluer South-Berkeley High School"
+      },
+      {
+        "event_key": "gamfa8191fb6d",
+        "start_time": "2028-03-23T21:00:00.000Z",
+        "publisher_slug": "central-york-high-school-york-pa",
+        "subheadline": "South Western High School vs. Central York High School"
+      },
+      {
+        "event_key": "gamb8731c3dd8",
+        "start_time": "2028-03-23T20:15:00.000Z",
+        "publisher_slug": "james-buchanan-high-school-mercersburg-pa",
+        "subheadline": "Littlestown Senior High School vs. James Buchanan High School"
+      },
+      {
+        "event_key": "gamdfe41e3e57",
+        "start_time": "2028-03-23T20:15:00.000Z",
+        "publisher_slug": "james-buchanan-high-school-mercersburg-pa",
+        "subheadline": "Bermudian Springs High School vs. James Buchanan High School"
+      },
+      {
+        "event_key": "gamdfde442c99",
+        "start_time": "2028-03-22T22:00:00.000Z",
+        "publisher_slug": "southwestern-high-school-piasa-il",
+        "subheadline": "Wesclin High School vs. Southwestern High School"
+      }
+    ],
+    "known_matches_found_in_feed": 0,
+    "known_matches_total": 36,
+    "provider_vs_feed_order_agreement": null,
+    "known_positions": [
+      {
+        "provider_nfhs_number": 3329,
+        "event_key": "gamc90837e6b4",
+        "official_start": "2026-09-29T04:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3343,
+        "event_key": "evteab09ef1f5",
+        "official_start": "2026-09-29T16:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3354,
+        "event_key": "gam63f4148132",
+        "official_start": "2026-09-29T19:20:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3370,
+        "event_key": "gam0a34fd5990",
+        "official_start": "2026-09-29T19:45:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3378,
+        "event_key": "gam42f6a9cabe",
+        "official_start": "2026-09-29T19:45:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3386,
+        "event_key": "gam750b34bae4",
+        "official_start": "2026-09-29T19:45:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3395,
+        "event_key": "gamfa82b98af2",
+        "official_start": "2026-09-29T19:45:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3403,
+        "event_key": "gama43ba13ce6",
+        "official_start": "2026-09-29T19:55:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3411,
+        "event_key": "gam028a6b98b5",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3419,
+        "event_key": "gam0baae7a751",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3427,
+        "event_key": "gam0f59408b73",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3436,
+        "event_key": "gam189de43d85",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3444,
+        "event_key": "gam25b130cbd1",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3452,
+        "event_key": "gam2a81770b90",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3455,
+        "event_key": "gam302604b4e5",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3460,
+        "event_key": "gam37c5d356bb",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3477,
+        "event_key": "gam4a34445be4",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3485,
+        "event_key": "gam51670877ef",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3493,
+        "event_key": "gam596dd5aeec",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3501,
+        "event_key": "gam63614100d0",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3509,
+        "event_key": "gam6b75e5d667",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3518,
+        "event_key": "gam81dfaa58ea",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3526,
+        "event_key": "gam8a6a87467e",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3534,
+        "event_key": "gam972bdc8601",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3542,
+        "event_key": "gama623d930ac",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3550,
+        "event_key": "gamb3e7fa4b9e",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3552,
+        "event_key": "gamb8ebe375ea",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3559,
+        "event_key": "gamc2785418b1",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3567,
+        "event_key": "gamcae9cebd36",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "event_key": "gam3a5725b205",
+        "official_start": "2026-09-29T21:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3575,
+        "event_key": "gamd74c7ae4a6",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3591,
+        "event_key": "gamead52ea562",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3596,
+        "event_key": "gamee5d943f7a",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3600,
+        "event_key": "gamf18f429af3",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3608,
+        "event_key": "gamf94ce65d6d",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      },
+      {
+        "provider_nfhs_number": 3616,
+        "event_key": "gamff3531129c",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "feed_position_zero_based": null
+      }
+    ]
   },
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
