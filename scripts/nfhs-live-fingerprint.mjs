@@ -185,13 +185,17 @@ async function main(){
   console.log("Official NFHS video is NOT accessed. Only public event metadata and the user's authorized provider streams are used.");
 
   const results=[];
-  for(let i=0;i<slots.length;i++){
-    const slot=slots[i], row=bySlot.get(slot);
+  let nextIndex=0;
+  let completed=0;
+  const CONCURRENCY=FAST_SWEEP?3:1;
+
+  async function probeOne(slot){
+    const row=bySlot.get(slot);
     const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.ts`;
     const got=await fetchLimitedBytes(target,SAMPLE_BYTES,500);
     const ts=got.ok?tsSummary(got.bytes):{is_ts:false,packet_count:0,pids:[]};
     const probe=(got.ok && !FAST_SWEEP)?await ffprobeSummary(got.bytes,slot):null;
-    results.push({
+    return {
       slot,
       stream_id:row.stream_id,
       provider_title:row.title,
@@ -202,10 +206,23 @@ async function main(){
       content_type:got.content_type,
       ts,
       ffprobe:probe
-    });
-    const step = FAST_SWEEP ? 100 : 10;
-    if((i+1)%step===0) console.log(`Probed ${i+1}/${slots.length}`);
+    };
   }
+
+  async function worker(){
+    while(true){
+      const i=nextIndex++;
+      if(i>=slots.length) return;
+      const result=await probeOne(slots[i]);
+      results.push(result);
+      completed++;
+      const step=FAST_SWEEP?250:10;
+      if(completed%step===0) console.log(`Probed ${completed}/${slots.length}`);
+    }
+  }
+
+  await Promise.all(Array.from({length:CONCURRENCY},()=>worker()));
+  results.sort((a,b)=>a.slot-b.slot);
 
   const active=results.filter(x=>x.active).sort((a,b)=>a.slot-b.slot);
   const payload={
