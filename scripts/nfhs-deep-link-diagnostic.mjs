@@ -1011,6 +1011,7 @@ async function probeExactFourPmBlock(providerStreams) {
   }));
 
   const sequenceAlignment = alignProviderToOfficial(provider4pm, broadcastBearing);
+  const twoSidedSequenceAlignment = alignProviderToOfficialTwoSided(provider4pm, broadcastBearing);
 
   return {
     ok: true,
@@ -1026,6 +1027,7 @@ async function probeExactFourPmBlock(providerStreams) {
     full_feed_order_check: compareIndex("full_feed_index"),
     broadcast_feed_order_check: compareIndex("broadcast_feed_index"),
     sequence_alignment: sequenceAlignment,
+    two_sided_sequence_alignment: twoSidedSequenceAlignment,
     matched_positions: providerRankVsOfficialRank,
     unmatched_provider_samples: matches.filter(x => !x.strong_match).slice(0, 30)
   };
@@ -1195,6 +1197,196 @@ function alignProviderToOfficial(providerRows, officialRows) {
     mapping,
     skipped_official_events: skipped,
     low_confidence_mappings: lowConfidence
+  };
+}
+
+
+function alignProviderToOfficialTwoSided(providerRows, officialRows) {
+  const P = providerRows;
+  const O = officialRows;
+  const n = P.length;
+  const m = O.length;
+  const NEG = -1e15;
+  const GAP_PROVIDER = -0.4;
+  const GAP_OFFICIAL = -0.4;
+
+  function officialTitle(o) {
+    return o?.broadcasts?.[0]?.subheadline || "";
+  }
+
+  function matchMeta(p, o) {
+    const text = similarity(p.core, officialTitle(o));
+    const ps = providerSportFromTitle(p.title);
+    const sportMatch = sportEqual(ps, o.sport);
+    let score = text * 12;
+    if (sportMatch === true) score += 4;
+    else if (sportMatch === false) score -= 5;
+    if (text >= 0.96) score += 3;
+    else if (text >= 0.80) score += 1;
+    else if (text < 0.35) score -= 5;
+    return { score, text, provider_sport: ps, official_sport: o.sport, sport_match: sportMatch };
+  }
+
+  const dp = Array.from({ length: n + 1 }, () => new Float64Array(m + 1));
+  const prev = Array.from({ length: n + 1 }, () => new Int8Array(m + 1));
+  for (let i = 0; i <= n; i++) for (let j = 0; j <= m; j++) dp[i][j] = NEG;
+  dp[0][0] = 0;
+
+  for (let i = 0; i <= n; i++) {
+    for (let j = 0; j <= m; j++) {
+      const cur = dp[i][j];
+      if (cur <= NEG / 2) continue;
+
+      if (i < n) {
+        const v = cur + GAP_PROVIDER;
+        if (v > dp[i + 1][j]) {
+          dp[i + 1][j] = v;
+          prev[i + 1][j] = 1; // provider-only / stale title
+        }
+      }
+
+      if (j < m) {
+        const v = cur + GAP_OFFICIAL;
+        if (v > dp[i][j + 1]) {
+          dp[i][j + 1] = v;
+          prev[i][j + 1] = 2; // official-only / not represented
+        }
+      }
+
+      if (i < n && j < m) {
+        const mm = matchMeta(P[i], O[j]);
+        const v = cur + mm.score;
+        if (v > dp[i + 1][j + 1]) {
+          dp[i + 1][j + 1] = v;
+          prev[i + 1][j + 1] = 3;
+        }
+      }
+    }
+  }
+
+  let i = n;
+  let j = m;
+  const mapping = [];
+  const providerOnly = [];
+  const officialOnly = [];
+
+  while (i > 0 || j > 0) {
+    const p = prev[i][j];
+
+    if (p === 3) {
+      const pr = P[i - 1];
+      const or = O[j - 1];
+      const mm = matchMeta(pr, or);
+      mapping.push({
+        provider_nfhs_number: pr.provider_nfhs_number,
+        stream_id: pr.stream_id,
+        provider_title: pr.title,
+        provider_sport: mm.provider_sport,
+        official_index: j - 1,
+        event_key: or.event_key,
+        official_sport: or.sport,
+        official_subheadline: officialTitle(or),
+        text_score: Number(mm.text.toFixed(4)),
+        sport_match: mm.sport_match,
+        alignment_score: Number(mm.score.toFixed(4))
+      });
+      i--; j--;
+    } else if (p === 1) {
+      const pr = P[i - 1];
+      providerOnly.push({
+        provider_nfhs_number: pr.provider_nfhs_number,
+        stream_id: pr.stream_id,
+        provider_title: pr.title,
+        provider_sport: providerSportFromTitle(pr.title)
+      });
+      i--;
+    } else if (p === 2) {
+      const or = O[j - 1];
+      officialOnly.push({
+        official_index: j - 1,
+        event_key: or.event_key,
+        sport: or.sport,
+        subheadline: officialTitle(or),
+        broadcast_key: or?.broadcasts?.[0]?.broadcast_key || null,
+        publisher_slug: or?.broadcasts?.[0]?.publisher_slug || null,
+        association: or?.broadcasts?.[0]?.association || null,
+        status: or?.broadcasts?.[0]?.status || null
+      });
+      j--;
+    } else {
+      if (i > 0) i--;
+      else if (j > 0) j--;
+    }
+  }
+
+  mapping.reverse();
+  providerOnly.reverse();
+  officialOnly.reverse();
+
+  const anchors = mapping.filter(x => x.text_score >= 0.96 && x.sport_match !== false);
+  const deterministic = new Map();
+
+  for (const a of anchors) {
+    deterministic.set(a.provider_nfhs_number, {
+      provider_nfhs_number: a.provider_nfhs_number,
+      official_index: a.official_index,
+      event_key: a.event_key,
+      method: "exact_anchor"
+    });
+  }
+
+  let exactAnchorGapPairs = 0;
+  let anchorGapPairs = 0;
+
+  for (let k = 1; k < anchors.length; k++) {
+    const a = anchors[k - 1];
+    const b = anchors[k];
+    const providerGap = b.provider_nfhs_number - a.provider_nfhs_number;
+    const officialGap = b.official_index - a.official_index;
+    anchorGapPairs++;
+
+    if (providerGap === officialGap) {
+      exactAnchorGapPairs++;
+      for (let step = 0; step <= providerGap; step++) {
+        const providerNumber = a.provider_nfhs_number + step;
+        const officialIndex = a.official_index + step;
+        const or = O[officialIndex];
+        if (!or) continue;
+        deterministic.set(providerNumber, {
+          provider_nfhs_number: providerNumber,
+          official_index: officialIndex,
+          event_key: or.event_key,
+          method: step === 0 || step === providerGap ? "exact_anchor" : "anchor_interpolation"
+        });
+      }
+    }
+  }
+
+  const deterministicRows = [...deterministic.values()].sort(
+    (a, b) => a.provider_nfhs_number - b.provider_nfhs_number
+  );
+
+  return {
+    final_alignment_score: Number(dp[n][m].toFixed(4)),
+    provider_count: n,
+    official_count: m,
+    matched_count: mapping.length,
+    provider_only_count: providerOnly.length,
+    official_only_count: officialOnly.length,
+    exact_anchor_count: anchors.length,
+    anchor_gap_pairs: anchorGapPairs,
+    exact_anchor_gap_pairs: exactAnchorGapPairs,
+    percent_anchor_gaps_exact: anchorGapPairs
+      ? Number((exactAnchorGapPairs / anchorGapPairs * 100).toFixed(2))
+      : null,
+    deterministic_provider_slots: deterministicRows.length,
+    deterministic_provider_coverage_percent: n
+      ? Number((deterministicRows.length / n * 100).toFixed(2))
+      : null,
+    mapping,
+    provider_only_rows: providerOnly,
+    official_only_rows: officialOnly,
+    deterministic_mapping: deterministicRows
   };
 }
 
@@ -1369,7 +1561,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-9",
+    diagnostic_version: "deep-link-10",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
