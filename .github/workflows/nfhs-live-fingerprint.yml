@@ -1,0 +1,65 @@
+name: NFHS Live Fingerprint Diagnostic
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_event_id:
+        description: "Official NFHS event ID"
+        required: false
+        default: "gam015745122d"
+      start_slot:
+        description: "First provider NFHS slot to probe"
+        required: false
+        default: "3500"
+      end_slot:
+        description: "Last provider NFHS slot to probe"
+        required: false
+        default: "3650"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nfhs-live-fingerprint
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run live fingerprint diagnostic
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+          TARGET_EVENT_ID: ${{ inputs.target_event_id }}
+          START_SLOT: ${{ inputs.start_slot }}
+          END_SLOT: ${{ inputs.end_slot }}
+          CONTROL_SLOTS: "464"
+        run: node scripts/nfhs-live-fingerprint.mjs
+
+      - name: Publish diagnostic result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/nfhs-live-fingerprint.json
+          if git diff --cached --quiet; then
+            echo "No diagnostic changes to publish."
+            exit 0
+          fi
+          git commit -m "Update NFHS live fingerprint diagnostic"
+          git pull --rebase origin main
+          git push
