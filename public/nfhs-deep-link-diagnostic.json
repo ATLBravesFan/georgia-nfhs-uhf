@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T13:58:19.910Z",
+  "generated_at": "2026-09-30T14:09:33.571Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-5",
+  "diagnostic_version": "deep-link-6",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzczNzUyMDAwMDAsImdhbWRmZGU0NDJjOTkiXX0=",
-      "total": 1498720,
+      "total": 1498730,
       "api_version": "v3"
     },
     "first_events": [
@@ -414,6 +414,114 @@
       }
     ]
   },
+  "unity_fleet_feed_probe": [
+    {
+      "endpoint": "/v2/upcoming",
+      "ok": true,
+      "top_level_type": "object",
+      "top_level_length": null,
+      "top_level_keys": [
+        "length"
+      ],
+      "known_id_hits": 0,
+      "hits": [],
+      "array_summaries": [],
+      "provider_order_vs_first_array_index": null
+    },
+    {
+      "endpoint": "/v2/upcoming_by_quality",
+      "ok": true,
+      "top_level_type": "object",
+      "top_level_length": null,
+      "top_level_keys": [
+        "SD",
+        "HD"
+      ],
+      "known_id_hits": 0,
+      "hits": [],
+      "array_summaries": [],
+      "provider_order_vs_first_array_index": null
+    },
+    {
+      "endpoint": "/v2/current_by_quality",
+      "ok": true,
+      "top_level_type": "object",
+      "top_level_length": null,
+      "top_level_keys": [
+        "SD",
+        "HD"
+      ],
+      "known_id_hits": 0,
+      "hits": [],
+      "array_summaries": [],
+      "provider_order_vs_first_array_index": null
+    }
+  ],
+  "search_api_control_probe": [
+    {
+      "name": "default",
+      "ok": true,
+      "start": 0,
+      "size": 5,
+      "total": 1498730,
+      "cursor_decoded": {
+        "version": 1,
+        "sort": "start_time:desc|key.keyword:asc",
+        "values": [
+          2040162300000,
+          "gam8878a2d65b"
+        ]
+      },
+      "first": {
+        "key": "gam67f8c6542c",
+        "start_time": "2034-10-13T23:45:00.000Z"
+      },
+      "last": {
+        "key": "gam8878a2d65b",
+        "start_time": "2034-08-25T23:45:00.000Z"
+      }
+    },
+    {
+      "name": "sort_start_asc",
+      "ok": true,
+      "start": 0,
+      "size": 5,
+      "total": 0,
+      "cursor_decoded": null,
+      "first": null,
+      "last": null
+    },
+    {
+      "name": "sort_start_asc_key_asc",
+      "ok": true,
+      "start": 0,
+      "size": 5,
+      "total": 0,
+      "cursor_decoded": null,
+      "first": null,
+      "last": null
+    },
+    {
+      "name": "start_100000",
+      "ok": true,
+      "start": 100000,
+      "size": 5,
+      "total": 0,
+      "cursor_decoded": null,
+      "first": null,
+      "last": null
+    },
+    {
+      "name": "start_500000",
+      "ok": true,
+      "start": 500000,
+      "size": 5,
+      "total": 0,
+      "cursor_decoded": null,
+      "first": null,
+      "last": null
+    }
+  ],
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
       3329
