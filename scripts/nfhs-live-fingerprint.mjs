@@ -11,6 +11,7 @@ const EVENT_ID = process.env.TARGET_EVENT_ID || "gam0afdf9a583";
 const START_SLOT = Number(process.env.START_SLOT || 3353);
 const END_SLOT = Number(process.env.END_SLOT || 3405);
 const SAMPLE_BYTES = Number(process.env.SAMPLE_BYTES || 196608);
+const SLOT_LIST = String(process.env.SLOT_LIST || "").trim();
 
 function cleanSpace(s="") { return String(s).replace(/\s+/g," ").trim(); }
 function sha20(v) {
@@ -169,16 +170,22 @@ async function main(){
   const official=await getOfficialMetadata(EVENT_ID);
   const provider=await getProvider();
   const bySlot=new Map(provider.streams.map(s=>[s.slot,s]));
-  const slots=Array.from({length:Math.max(0,END_SLOT-START_SLOT+1)},(_,i)=>START_SLOT+i).filter(x=>bySlot.has(x));
+  const explicitSlots = SLOT_LIST
+    ? [...new Set(SLOT_LIST.split(",").map(x=>Number(x.trim())).filter(Number.isFinite))].sort((a,b)=>a-b)
+    : [];
+  const slots=(explicitSlots.length
+    ? explicitSlots
+    : Array.from({length:Math.max(0,END_SLOT-START_SLOT+1)},(_,i)=>START_SLOT+i)
+  ).filter(x=>bySlot.has(x));
 
-  console.log(`Provider-only live probe for ${EVENT_ID}: slots ${START_SLOT}-${END_SLOT} (${slots.length} total), sequentially.`);
+  console.log(`Provider-only live probe for ${EVENT_ID}: ${explicitSlots.length ? "explicit candidate slots" : `slots ${START_SLOT}-${END_SLOT}`} (${slots.length} total), sequentially.`);
   console.log("Official NFHS video is NOT accessed. Only public event metadata and the user's authorized provider streams are used.");
 
   const results=[];
   for(let i=0;i<slots.length;i++){
     const slot=slots[i], row=bySlot.get(slot);
     const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.ts`;
-    const got=await fetchLimitedBytes(target,SAMPLE_BYTES,3500);
+    const got=await fetchLimitedBytes(target,SAMPLE_BYTES,1500);
     const ts=got.ok?tsSummary(got.bytes):{is_ts:false,packet_count:0,pids:[]};
     const probe=got.ok?await ffprobeSummary(got.bytes,slot):null;
     results.push({
@@ -208,7 +215,7 @@ async function main(){
       credentials_saved:false
     },
     target_official_event:official,
-    scan:{start_slot:START_SLOT,end_slot:END_SLOT,slots_probed:slots.length},
+    scan:{start_slot:explicitSlots.length?null:START_SLOT,end_slot:explicitSlots.length?null:END_SLOT,explicit_slots:explicitSlots.length?slots:null,slots_probed:slots.length},
     totals:{active_slots:active.length,inactive_slots:results.length-active.length,ts_slots:active.filter(x=>x.ts?.is_ts).length},
     active_slots:active,
     all_results:results
