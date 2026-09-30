@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:20:44.959Z",
+  "generated_at": "2026-09-30T20:57:09.108Z",
   "diagnostic_only": true,
   "modifies_epg": false,
   "safety": {
@@ -24,6 +24,7 @@
     "ingest_fingerprint": "4306efc2f91dc1dc6fa4"
   },
   "scan": {
+    "transport": "curl_ipv4_1s",
     "mode": "full_activity_sweep",
     "start_slot": null,
     "end_slot": null,
@@ -31,10 +32,6914 @@
     "slots_probed": 5000
   },
   "totals": {
-    "active_slots": 0,
-    "inactive_slots": 5000,
+    "active_slots": 203,
+    "inactive_slots": 4797,
     "ts_slots": 0
   },
-  "active_slots": [],
-  "all_results": []
+  "active_slots": [
+    {
+      "slot": 1,
+      "stream_id": 2070364,
+      "provider_title": "NFHS Network 01: Our Lady Of Lourdes High School vs. Spackenkill High School Varsity Boys Soccer @ 28 Sep 04:10 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 367,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2,
+      "stream_id": 2070363,
+      "provider_title": "NFHS Network 02: Passaic County Tech High School vs. Ramapo High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 415,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3,
+      "stream_id": 2070362,
+      "provider_title": "NFHS Network 03: North Brookfield High School vs. Quaboag Regional High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 324,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 8,
+      "stream_id": 2070357,
+      "provider_title": "NFHS Network 08: Westfield Academy vs. Academy for Classical Education Middle School Football @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 268,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 9,
+      "stream_id": 2070356,
+      "provider_title": "NFHS Network 09: St. Raphael Academy vs. Narragansett High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 213,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 11,
+      "stream_id": 2070354,
+      "provider_title": "NFHS Network 11: Ridgefield High School vs. Hasbrouck Heights High School Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 213,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 14,
+      "stream_id": 2070351,
+      "provider_title": "NFHS Network 14: College Achieve Public Schools vs. Eastside High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 343,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 18,
+      "stream_id": 2070347,
+      "provider_title": "NFHS Network 18: Twin Valley Middle High School vs. Brattleboro Union High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 266,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 52,
+      "stream_id": 2070313,
+      "provider_title": "NFHS Network 52: Lamoille Union High School vs. Stowe High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 305,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 56,
+      "stream_id": 2070309,
+      "provider_title": "NFHS Network 56: Sanford High School vs. Biddeford High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 58,
+      "stream_id": 2070307,
+      "provider_title": "NFHS Network 58: Paxton School vs. Ponce de Leon HS Middle School Boys Basketball @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 250,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 113,
+      "stream_id": 2070250,
+      "provider_title": "NFHS Network 113: Eastport-South Manor JrSr High School vs. East Hampton High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 135,
+      "stream_id": 2070228,
+      "provider_title": "NFHS Network 135: St. Dominic High School vs. Sacred Heart Academy - Hempstead Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 247,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 145,
+      "stream_id": 2070218,
+      "provider_title": "NFHS Network 145: Away vs. Preston High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 239,
+      "stream_id": 2070124,
+      "provider_title": "NFHS Network 239: Fruita Monument High School vs. Montrose High School Freshman Football @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 538,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 241,
+      "stream_id": 2070122,
+      "provider_title": "NFHS Network 241: Madison High School vs. Oakton High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 265,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 248,
+      "stream_id": 2070115,
+      "provider_title": "NFHS Network 248: South Greene High School vs. Jefferson County High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 293,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 252,
+      "stream_id": 2070111,
+      "provider_title": "NFHS Network 252: South Granville High School vs. Seaforth High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 281,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 253,
+      "stream_id": 2070110,
+      "provider_title": "NFHS Network 253: Bradford Preparatory School vs. Jackson Day School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 254,
+      "stream_id": 2070109,
+      "provider_title": "NFHS Network 254: Away vs. Owosso High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 282,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 261,
+      "stream_id": 2070102,
+      "provider_title": "NFHS Network 261: Tuscaloosa County High School vs. Hillcrest-Tuscaloosa High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 263,
+      "stream_id": 2070100,
+      "provider_title": "NFHS Network 263: Kalamazoo Central High School vs. Paw Paw High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 410,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 264,
+      "stream_id": 2070099,
+      "provider_title": "NFHS Network 264: Tallulah Falls School vs. Gainesville High School Varsity Softball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 205,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 274,
+      "stream_id": 2070089,
+      "provider_title": "NFHS Network 274: Randolph School vs. Madison Academy Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 273,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 293,
+      "stream_id": 2070070,
+      "provider_title": "NFHS Network 293: Pineville High School vs. Hancock County High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 297,
+      "stream_id": 2070066,
+      "provider_title": "NFHS Network 297: Walker High School vs. Denham Springs High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 319,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 313,
+      "stream_id": 2070050,
+      "provider_title": "NFHS Network 313: McMinn Central High School vs. Copper Basin High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 396,
+      "stream_id": 2069967,
+      "provider_title": "NFHS Network 396: Pecatonica High School vs. Forreston High School Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 286,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 403,
+      "stream_id": 2069960,
+      "provider_title": "NFHS Network 403: Gray's Creek High School vs. Cape Fear High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 438,
+      "stream_id": 2069925,
+      "provider_title": "NFHS Network 438: C G Woodson High School vs. James W Robinson High School Junior Varsity Boys Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 330,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 454,
+      "stream_id": 2069909,
+      "provider_title": "NFHS Network 454: Sanderson High School vs. Cardinal Gibbons High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 240,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 455,
+      "stream_id": 2069908,
+      "provider_title": "NFHS Network 455: Herndon High School vs. Edison High School Junior Varsity Boys Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 489,
+      "stream_id": 2069874,
+      "provider_title": "NFHS Network 489: Montgomery Academy vs. Montgomery Catholic Preparatory School Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 491,
+      "stream_id": 2069872,
+      "provider_title": "NFHS Network 491: Away vs. Gibsonburg Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 504,
+      "stream_id": 2069858,
+      "provider_title": "NFHS Network 504: Kearsley High School vs. Swartz Creek High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 269,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 511,
+      "stream_id": 2069850,
+      "provider_title": "NFHS Network 511: Achievement First Providence High School vs. Davies Career & Technical High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 272,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 551,
+      "stream_id": 2069808,
+      "provider_title": "NFHS Network 551: West Shore JrSr High School vs. Melbourne High School Freshman Girls Volleyball @ 28 Sep 05:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 224,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 622,
+      "stream_id": 2069732,
+      "provider_title": "NFHS Network 622: Away vs. Walther Christian Academy Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 308,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 658,
+      "stream_id": 2069693,
+      "provider_title": "NFHS Network 658: Ansley High School vs. Ravenna High School Middle School Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 857,
+      "stream_id": 2069490,
+      "provider_title": "NFHS Network 857: Rock Ridge High School vs. Dominion High School Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 861,
+      "stream_id": 2069486,
+      "provider_title": "NFHS Network 861: Beardstown High School vs. Quincy Senior High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 926,
+      "stream_id": 2069421,
+      "provider_title": "NFHS Network 926: Winston Churchill High School vs. Albert Einstein High School Junior Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 324,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 948,
+      "stream_id": 2069399,
+      "provider_title": "NFHS Network 948: Thomas Walker High School vs. Lee High School Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 952,
+      "stream_id": 2069395,
+      "provider_title": "NFHS Network 952: Wheeler High School vs. Waterford High School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 954,
+      "stream_id": 2069393,
+      "provider_title": "NFHS Network 954: Oswego High School vs. Bolingbrook High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1124,
+      "stream_id": 2069223,
+      "provider_title": "NFHS Network 1124: Caldwell High School vs. Franklin High School Middle School Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 886,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1156,
+      "stream_id": 2069191,
+      "provider_title": "NFHS Network 1156: Mount Pleasant High School vs. Central Academy of Technology and Arts High School Varsity Boys Soccer @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 323,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1541,
+      "stream_id": 2068794,
+      "provider_title": "NFHS Network 1541: Atholton High School vs. Mt. Hebron High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1545,
+      "stream_id": 2068790,
+      "provider_title": "NFHS Network 1545: FCS vs West TN Home School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 254,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1549,
+      "stream_id": 2068786,
+      "provider_title": "NFHS Network 1549: Pickford High School vs. Brimley Area High School Middle School Boys And Girls Flag Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1553,
+      "stream_id": 2068782,
+      "provider_title": "NFHS Network 1553: Bentworth High School vs. Belle Vernon Area High School Junior Varsity Girls Soccer @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 282,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1563,
+      "stream_id": 2068772,
+      "provider_title": "NFHS Network 1563: Trinity Christian High School - Jacksonville vs. The Bolles School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1588,
+      "stream_id": 2068745,
+      "provider_title": "NFHS Network 1588: Hampton High School vs. Lafayette High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1592,
+      "stream_id": 2068741,
+      "provider_title": "NFHS Network 1592: Thomas Jefferson Science & Technology High School vs. Edison High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1593,
+      "stream_id": 2068740,
+      "provider_title": "NFHS Network 1593: Upland High School vs. Los Osos High School Freshman Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1594,
+      "stream_id": 2068739,
+      "provider_title": "NFHS Network 1594: Kearsley High School vs. Swartz Creek High School Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 211,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1595,
+      "stream_id": 2068738,
+      "provider_title": "NFHS Network 1595: Fairfax High School vs. West Potomac High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 196,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1596,
+      "stream_id": 2068737,
+      "provider_title": "NFHS Network 1596: Astronaut High School vs. Titusville High School Freshman Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1597,
+      "stream_id": 2068736,
+      "provider_title": "NFHS Network 1597: Falls Church High School vs. Hayfield Secondary School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1599,
+      "stream_id": 2068734,
+      "provider_title": "NFHS Network 1599: Westfield High School vs. Chantilly High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 201,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1612,
+      "stream_id": 2068720,
+      "provider_title": "NFHS Network 1612: Chester-Joplin-Inverness High School vs. Shelby High School Junior Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1625,
+      "stream_id": 2068707,
+      "provider_title": "NFHS Network 1625: Linden High School vs. Flushing High School Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1650,
+      "stream_id": 2068680,
+      "provider_title": "NFHS Network 1650: Oliver Springs High School vs. Wartburg Central High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 253,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1663,
+      "stream_id": 2068667,
+      "provider_title": "NFHS Network 1663: Cumberland High School vs. South Kingstown High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1664,
+      "stream_id": 2068665,
+      "provider_title": "NFHS Network 1664: Costa Mesa High School vs. Fullerton Union High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 239,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1668,
+      "stream_id": 2068661,
+      "provider_title": "NFHS Network 1668: Chipley High School vs. Arnold High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1702,
+      "stream_id": 2068626,
+      "provider_title": "NFHS Network 1702: Freedom High School - Tampa vs. Alonso High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1742,
+      "stream_id": 2068586,
+      "provider_title": "NFHS Network 1742: Fairfield High School vs. Jefferson High School Junior Varsity Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1747,
+      "stream_id": 2068581,
+      "provider_title": "NFHS Network 1747: Tupper Lake Senior High School vs. Clifton-Fine Senior High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1879,
+      "stream_id": 2068448,
+      "provider_title": "NFHS Network 1879: James Clemens High School vs. Hewitt-Trussville High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1883,
+      "stream_id": 2068444,
+      "provider_title": "NFHS Network 1883: Park High School vs. East Helena High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 278,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1884,
+      "stream_id": 2068443,
+      "provider_title": "NFHS Network 1884: Wayne Christian School Varsity Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1885,
+      "stream_id": 2068442,
+      "provider_title": "NFHS Network 1885: Homewood High School vs. Spain Park High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1886,
+      "stream_id": 2068441,
+      "provider_title": "NFHS Network 1886: Wibaux County High School Middle School Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1887,
+      "stream_id": 2068440,
+      "provider_title": "NFHS Network 1887: Union City High School vs. Fulton County High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1890,
+      "stream_id": 2068437,
+      "provider_title": "NFHS Network 1890: Garner Magnet High School vs. Clayton High School Varsity Boys Soccer @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 192,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1898,
+      "stream_id": 2068428,
+      "provider_title": "NFHS Network 1898: North Smithfield High School vs. Burrillville High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1900,
+      "stream_id": 2068426,
+      "provider_title": "NFHS Network 1900: Durango High School vs. Ignacio High School Freshman Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1930,
+      "stream_id": 2068396,
+      "provider_title": "NFHS Network 1930: Arrowhead Christian Academy vs. Redlands Adventist Academy Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1931,
+      "stream_id": 2068395,
+      "provider_title": "NFHS Network 1931: Cornerstone Christian Academy vs. CCHS Varsity Boys Soccer @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 232,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1932,
+      "stream_id": 2068394,
+      "provider_title": "NFHS Network 1932: Karns High School vs. The King's Academy Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1933,
+      "stream_id": 2068393,
+      "provider_title": "NFHS Network 1933: Crosspoint Christian School vs. Klahowya Secondary School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 218,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1934,
+      "stream_id": 2068392,
+      "provider_title": "NFHS Network 1934: Suitland High School vs. DuVal High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 227,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1935,
+      "stream_id": 2068391,
+      "provider_title": "NFHS Network 1935: Cookeville High School vs. Oakland High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 216,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1936,
+      "stream_id": 2068390,
+      "provider_title": "NFHS Network 1936: Deep Run High School vs. Prince George High School Varsity Field Hockey @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 214,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1937,
+      "stream_id": 2068389,
+      "provider_title": "NFHS Network 1937: Daleville High School vs. Wicksburg High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 232,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1939,
+      "stream_id": 2068387,
+      "provider_title": "NFHS Network 1939: St. Patrick High School vs. East Central High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 207,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1940,
+      "stream_id": 2068386,
+      "provider_title": "NFHS Network 1940: Pioneer High School vs. Huron High School - Ann Arbor Varsity Field Hockey @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 241,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1944,
+      "stream_id": 2068382,
+      "provider_title": "NFHS Network 1944: Aspen High School vs. Eagle Valley High School Freshman Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 345,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1957,
+      "stream_id": 2068369,
+      "provider_title": "NFHS Network 1957: Urbana High School vs. Gov Thomas Johnson High School Varsity Girls Volleyball @ 28 Sep 06:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 271,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1964,
+      "stream_id": 2068362,
+      "provider_title": "NFHS Network 1964: Lingle-Fort Laramie High School vs. Southeast High School Middle School Football @ 28 Sep 06:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 217,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1998,
+      "stream_id": 2068328,
+      "provider_title": "NFHS Network 1998: Moore County High School Middle School Girls Flag Football @ 28 Sep 06:50 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 280,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2002,
+      "stream_id": 2068324,
+      "provider_title": "NFHS Network 2002: Condon High School vs. Ione High School Middle School Girls Volleyball @ 28 Sep 06:55 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2003,
+      "stream_id": 2068323,
+      "provider_title": "NFHS Network 2003: Hendersonville High School vs. Portland High School Junior Varsity Football @ 28 Sep 06:55 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2064,
+      "stream_id": 2068262,
+      "provider_title": "NFHS Network 2064: West High School - Bakersfield vs. Kern Valley High School Freshman Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 239,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2137,
+      "stream_id": 2068189,
+      "provider_title": "NFHS Network 2137: Mars Hill Bible School vs. Clements High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 238,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2145,
+      "stream_id": 2068181,
+      "provider_title": "NFHS Network 2145: Trinity Christian Academy vs. The Bolles School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2212,
+      "stream_id": 2068114,
+      "provider_title": "NFHS Network 2212: Garinger High School vs. South Mecklenburg High School Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2216,
+      "stream_id": 2068110,
+      "provider_title": "NFHS Network 2216: Illini Central High School vs. Hartsburg-Emden High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2217,
+      "stream_id": 2068109,
+      "provider_title": "NFHS Network 2217: Indian Springs School vs. Westminster School at Oak Mountain Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2375,
+      "stream_id": 2067951,
+      "provider_title": "NFHS Network 2375: Walled Lake Central High School vs. Lakeland High School Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 294,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2400,
+      "stream_id": 2067926,
+      "provider_title": "NFHS Network 2400: Valley Christian High School - San Jose vs. Los Altos High School Varsity Field Hockey @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2413,
+      "stream_id": 2067912,
+      "provider_title": "NFHS Network 2413: Bob Jones High School vs. James Clemens High School Junior Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2429,
+      "stream_id": 2067895,
+      "provider_title": "NFHS Network 2429: Waverly Senior High School vs. Johnson City Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 315,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2434,
+      "stream_id": 2067890,
+      "provider_title": "NFHS Network 2434: Natchez High School vs. Vicksburg High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 298,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2464,
+      "stream_id": 2067858,
+      "provider_title": "NFHS Network 2464: East Robertson High School vs. Westmoreland High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 362,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2466,
+      "stream_id": 2067856,
+      "provider_title": "NFHS Network 2466: Eagleville High School vs. Lincoln County High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2481,
+      "stream_id": 2067840,
+      "provider_title": "NFHS Network 2481: Southwest Valley High School vs. Central Decatur High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 299,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2484,
+      "stream_id": 2067837,
+      "provider_title": "NFHS Network 2484: Fort Knox High School vs. Presentation Academy Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 221,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2511,
+      "stream_id": 2067807,
+      "provider_title": "NFHS Network 2511: Corner High School vs. Pinson Valley High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 286,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2515,
+      "stream_id": 2067803,
+      "provider_title": "NFHS Network 2515: Phillipsburg High School vs. Norton Community High School Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2617,
+      "stream_id": 2067700,
+      "provider_title": "NFHS Network 2617: Hamilton High School vs. Phil Campbell High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2618,
+      "stream_id": 2067699,
+      "provider_title": "NFHS Network 2618: Fairhope High School vs. Foley High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2619,
+      "stream_id": 2067698,
+      "provider_title": "NFHS Network 2619: Shoals Christian School vs. Athens Bible School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 220,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2621,
+      "stream_id": 2067696,
+      "provider_title": "NFHS Network 2621: Legacy High School vs. Cimarron-Memorial High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2637,
+      "stream_id": 2067680,
+      "provider_title": "NFHS Network 2637: South Holt High School vs. Nodaway Valley Coop Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 300,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2638,
+      "stream_id": 2067679,
+      "provider_title": "NFHS Network 2638: Western High School vs. Durango High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2639,
+      "stream_id": 2067678,
+      "provider_title": "NFHS Network 2639: Bentworth High School vs. Belle Vernon Area High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2643,
+      "stream_id": 2067674,
+      "provider_title": "NFHS Network 2643: Oxford High School vs. Southside-Gadsden High School Junior Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 230,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2644,
+      "stream_id": 2067673,
+      "provider_title": "NFHS Network 2644: LaVergne High School vs. Riverdale High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 240,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2651,
+      "stream_id": 2067666,
+      "provider_title": "NFHS Network 2651: Chino High School vs. Diamond Ranch High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 258,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2652,
+      "stream_id": 2067665,
+      "provider_title": "NFHS Network 2652: Harpeth High School vs. Stewart County High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 264,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2653,
+      "stream_id": 2067664,
+      "provider_title": "NFHS Network 2653: Away vs. Chesterton Academy of the Holy Family Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2654,
+      "stream_id": 2067663,
+      "provider_title": "NFHS Network 2654: Tekoa High School - Rosalia High School vs. Colfax High School Middle School Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 195,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2655,
+      "stream_id": 2067662,
+      "provider_title": "NFHS Network 2655: Falls Church High School vs. Hayfield Secondary School Varsity Field Hockey @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2656,
+      "stream_id": 2067661,
+      "provider_title": "NFHS Network 2656: Aurora West College Preporatory Academy vs. Sheridan High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2657,
+      "stream_id": 2067660,
+      "provider_title": "NFHS Network 2657: Canyon Springs High School vs. Chaparral High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2659,
+      "stream_id": 2067658,
+      "provider_title": "NFHS Network 2659: Walla Walla Valley Academy vs. Saint George's School Varsity Boys Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 196,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2666,
+      "stream_id": 2067651,
+      "provider_title": "NFHS Network 2666: Hatton High School vs. Wilson High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 264,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2697,
+      "stream_id": 2067618,
+      "provider_title": "NFHS Network 2697: Civic Memorial High School vs. Granite City High School Varsity Boys Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2818,
+      "stream_id": 2067495,
+      "provider_title": "NFHS Network 2818: Murtaugh High School vs. Raft River Senior High School Junior Varsity Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 362,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2859,
+      "stream_id": 2067454,
+      "provider_title": "NFHS Network 2859: Ragland High School vs. Victory Christian School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2878,
+      "stream_id": 2067435,
+      "provider_title": "NFHS Network 2878: Murrieta Valley High School vs. Great Oak High School Freshman Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 218,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2907,
+      "stream_id": 2067406,
+      "provider_title": "NFHS Network 2907: Stark County High School vs. Annawan High School Varsity Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2923,
+      "stream_id": 2067390,
+      "provider_title": "NFHS Network 2923: Davenport High School vs. Jenkins Junior/Senior High School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 254,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2952,
+      "stream_id": 2067361,
+      "provider_title": "NFHS Network 2952: Valley Christian High School - San Jose vs. Los Altos High School Junior Varsity Field Hockey @ 28 Sep 08:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 217,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2980,
+      "stream_id": 2067333,
+      "provider_title": "NFHS Network 2980: Otto Middle School vs. Wilson Middle School Middle School Football @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 462,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2990,
+      "stream_id": 2067323,
+      "provider_title": "NFHS Network 2990: Rocky Mountain High School vs. Ridgevue High School Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 259,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2997,
+      "stream_id": 2067316,
+      "provider_title": "NFHS Network 2997: Middleton Senior High School vs. Bishop Kelly High School Varsity Girls Soccer @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 211,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3010,
+      "stream_id": 2067303,
+      "provider_title": "NFHS Network 3010: Napavine High School vs. White Pass JrSr High School Junior Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3012,
+      "stream_id": 2067301,
+      "provider_title": "NFHS Network 3012: Away vs. Overland High School Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3026,
+      "stream_id": 2067287,
+      "provider_title": "NFHS Network 3026: Redwood High School - Visalia vs. Monache High School Junior Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 229,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3056,
+      "stream_id": 2067257,
+      "provider_title": "NFHS Network 3056: River Ridge High School vs. Milton High School Varsity Girls Flag Football @ 28 Sep 08:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 845,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3144,
+      "stream_id": 2067168,
+      "provider_title": "NFHS Network 3144: Timberline High School vs. Peninsula High School Junior Varsity Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 199,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3147,
+      "stream_id": 2067165,
+      "provider_title": "NFHS Network 3147: Sun Valley Community School vs. Valley High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3151,
+      "stream_id": 2067161,
+      "provider_title": "NFHS Network 3151: South Whidbey High School vs. Evergreen High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 303,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3158,
+      "stream_id": 2067154,
+      "provider_title": "NFHS Network 3158: Sutter Union High School vs. Destiny Christian Academy Varsity Girls Flag Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3160,
+      "stream_id": 2067152,
+      "provider_title": "NFHS Network 3160: Dietrich High School vs. Richfield School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 209,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3166,
+      "stream_id": 2067146,
+      "provider_title": "NFHS Network 3166: North Marion High School vs. Amity High School Junior Varsity Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3170,
+      "stream_id": 2067142,
+      "provider_title": "NFHS Network 3170: Clairemont High School vs. Mission Bay High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 488,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3177,
+      "stream_id": 2067135,
+      "provider_title": "NFHS Network 3177: Northwest Christian High School vs. Fountain Hills High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 312,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3179,
+      "stream_id": 2067133,
+      "provider_title": "NFHS Network 3179: Away vs. Shoshone High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3206,
+      "stream_id": 2067106,
+      "provider_title": "NFHS Network 3206: Steele Canyon High School vs. Helix Charter High School Junior Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 305,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3209,
+      "stream_id": 2067103,
+      "provider_title": "NFHS Network 3209: Trinity High School vs. St Bernard's Academy Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 227,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3215,
+      "stream_id": 2067097,
+      "provider_title": "NFHS Network 3215: Lincoln High School vs. Wheatland High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3222,
+      "stream_id": 2067090,
+      "provider_title": "NFHS Network 3222: River Valley High School vs. Madison Highland Preparatory Junior Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 288,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3232,
+      "stream_id": 2067080,
+      "provider_title": "NFHS Network 3232: Barlow High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 306,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3245,
+      "stream_id": 2067067,
+      "provider_title": "NFHS Network 3245: Tamalpais High School vs. San Marin High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 297,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3297,
+      "stream_id": 2067015,
+      "provider_title": "NFHS Network 3297: Issaquah High School vs. Woodinville High School Varsity Girls Volleyball @ 28 Sep 10:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 371,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3299,
+      "stream_id": 2067013,
+      "provider_title": "NFHS Network 3299: Kent-Meridian High School vs. Decatur High School Varsity Girls Volleyball @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3300,
+      "stream_id": 2067012,
+      "provider_title": "NFHS Network 3300: Ceres High School vs. Central Valley High School - Ceres Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 296,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3304,
+      "stream_id": 2067008,
+      "provider_title": "NFHS Network 3304: Fife High School vs. Clover Park High School Varsity Girls Volleyball @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 345,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3314,
+      "stream_id": 2066998,
+      "provider_title": "NFHS Network 3314: Bella Vista High School vs. Woodcreek High School Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 268,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3315,
+      "stream_id": 2066997,
+      "provider_title": "NFHS Network 3315: West Ranch High School vs. Camarillo High School Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3331,
+      "stream_id": 2066981,
+      "provider_title": "NFHS Network 3331: Staunton High School vs. Rockbridge County High School Varsity Girls Volleyball @ 29 Sep 12:01 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 280,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3335,
+      "stream_id": 2066977,
+      "provider_title": "NFHS Network 3335: Bishop McCort Catholic High School vs. Central Cambria High School Varsity Boys Soccer @ 29 Sep 05:00 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3337,
+      "stream_id": 2066975,
+      "provider_title": "NFHS Network 3337: Hart High School vs. Fremont High School Freshman Girls Volleyball @ 29 Sep 05:30 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3364,
+      "stream_id": 2066948,
+      "provider_title": "NFHS Network 3364: Holy Cross High School vs. Woodland Regional High School Freshman Girls Volleyball @ 29 Sep 03:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 265,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3366,
+      "stream_id": 2066946,
+      "provider_title": "NFHS Network 3366: Blackstone Valley Regional Vocational Technical High School vs. Sutton High School Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3370,
+      "stream_id": 2066942,
+      "provider_title": "NFHS Network 3370: Greeley West High School vs. Poudre High School Junior Varsity Boys Soccer @ 29 Sep 03:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3424,
+      "stream_id": 2066888,
+      "provider_title": "NFHS Network 3424: Peoples Academy vs. Montpelier High School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3431,
+      "stream_id": 2066881,
+      "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 276,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3433,
+      "stream_id": 2066879,
+      "provider_title": "NFHS Network 3433: Triton Regional High School vs. Newburyport High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3499,
+      "stream_id": 2066813,
+      "provider_title": "NFHS Network 3499: Burlington Christian Academy vs. Wesleyan Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3501,
+      "stream_id": 2066811,
+      "provider_title": "NFHS Network 3501: SEED School of Maryland vs. Edmondson-Westside High School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 224,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3525,
+      "stream_id": 2066787,
+      "provider_title": "NFHS Network 3525: Housatonic Valley Regional High School vs. The Gilbert School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3526,
+      "stream_id": 2066786,
+      "provider_title": "NFHS Network 3526: Smyrna High School vs. Caesar Rodney High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3528,
+      "stream_id": 2066784,
+      "provider_title": "NFHS Network 3528: Smith Academy vs. Ralph C Mahar Regional High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3553,
+      "stream_id": 2066757,
+      "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 271,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3557,
+      "stream_id": 2066753,
+      "provider_title": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 315,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3594,
+      "stream_id": 2066713,
+      "provider_title": "NFHS Network 3594: Seffner Christian Academy vs. Cambridge Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 391,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3792,
+      "stream_id": 2066512,
+      "provider_title": "NFHS Network 3792: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3998,
+      "stream_id": 2066300,
+      "provider_title": "NFHS Network 3998: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4026,
+      "stream_id": 2066272,
+      "provider_title": "NFHS Network 4026: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 273,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4388,
+      "stream_id": 2065898,
+      "provider_title": "NFHS Network 4388: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 312,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4389,
+      "stream_id": 2065897,
+      "provider_title": "NFHS Network 4389: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4417,
+      "stream_id": 2065869,
+      "provider_title": "NFHS Network 4417: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 241,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4421,
+      "stream_id": 2065865,
+      "provider_title": "NFHS Network 4421: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4425,
+      "stream_id": 2065861,
+      "provider_title": "NFHS Network 4425: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4439,
+      "stream_id": 2065847,
+      "provider_title": "NFHS Network 4439: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4469,
+      "stream_id": 2065817,
+      "provider_title": "NFHS Network 4469: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4521,
+      "stream_id": 2065765,
+      "provider_title": "NFHS Network 4521: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4535,
+      "stream_id": 2065751,
+      "provider_title": "NFHS Network 4535: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4569,
+      "stream_id": 2065717,
+      "provider_title": "NFHS Network 4569: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4570,
+      "stream_id": 2065716,
+      "provider_title": "NFHS Network 4570: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4574,
+      "stream_id": 2065712,
+      "provider_title": "NFHS Network 4574: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4621,
+      "stream_id": 2065665,
+      "provider_title": "NFHS Network 4621: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 311,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4625,
+      "stream_id": 2065661,
+      "provider_title": "NFHS Network 4625: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4776,
+      "stream_id": 2065510,
+      "provider_title": "NFHS Network 4776: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 238,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4823,
+      "stream_id": 2065463,
+      "provider_title": "NFHS Network 4823: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 690,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4967,
+      "stream_id": 2065313,
+      "provider_title": "NFHS Network 4967: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 257,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4977,
+      "stream_id": 2065302,
+      "provider_title": "NFHS Network 4977: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 204,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4981,
+      "stream_id": 2065298,
+      "provider_title": "NFHS Network 4981: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    }
+  ],
+  "all_results": [
+    {
+      "slot": 1,
+      "stream_id": 2070364,
+      "provider_title": "NFHS Network 01: Our Lady Of Lourdes High School vs. Spackenkill High School Varsity Boys Soccer @ 28 Sep 04:10 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 367,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2,
+      "stream_id": 2070363,
+      "provider_title": "NFHS Network 02: Passaic County Tech High School vs. Ramapo High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 415,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3,
+      "stream_id": 2070362,
+      "provider_title": "NFHS Network 03: North Brookfield High School vs. Quaboag Regional High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 324,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 8,
+      "stream_id": 2070357,
+      "provider_title": "NFHS Network 08: Westfield Academy vs. Academy for Classical Education Middle School Football @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 268,
+      "bytes": 35,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 9,
+      "stream_id": 2070356,
+      "provider_title": "NFHS Network 09: St. Raphael Academy vs. Narragansett High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 213,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 11,
+      "stream_id": 2070354,
+      "provider_title": "NFHS Network 11: Ridgefield High School vs. Hasbrouck Heights High School Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 213,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 14,
+      "stream_id": 2070351,
+      "provider_title": "NFHS Network 14: College Achieve Public Schools vs. Eastside High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 343,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 18,
+      "stream_id": 2070347,
+      "provider_title": "NFHS Network 18: Twin Valley Middle High School vs. Brattleboro Union High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 266,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 52,
+      "stream_id": 2070313,
+      "provider_title": "NFHS Network 52: Lamoille Union High School vs. Stowe High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 305,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 56,
+      "stream_id": 2070309,
+      "provider_title": "NFHS Network 56: Sanford High School vs. Biddeford High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 58,
+      "stream_id": 2070307,
+      "provider_title": "NFHS Network 58: Paxton School vs. Ponce de Leon HS Middle School Boys Basketball @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 250,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 113,
+      "stream_id": 2070250,
+      "provider_title": "NFHS Network 113: Eastport-South Manor JrSr High School vs. East Hampton High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 135,
+      "stream_id": 2070228,
+      "provider_title": "NFHS Network 135: St. Dominic High School vs. Sacred Heart Academy - Hempstead Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 247,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 145,
+      "stream_id": 2070218,
+      "provider_title": "NFHS Network 145: Away vs. Preston High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 239,
+      "stream_id": 2070124,
+      "provider_title": "NFHS Network 239: Fruita Monument High School vs. Montrose High School Freshman Football @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 538,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 241,
+      "stream_id": 2070122,
+      "provider_title": "NFHS Network 241: Madison High School vs. Oakton High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 265,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 248,
+      "stream_id": 2070115,
+      "provider_title": "NFHS Network 248: South Greene High School vs. Jefferson County High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 293,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 252,
+      "stream_id": 2070111,
+      "provider_title": "NFHS Network 252: South Granville High School vs. Seaforth High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 281,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 253,
+      "stream_id": 2070110,
+      "provider_title": "NFHS Network 253: Bradford Preparatory School vs. Jackson Day School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 254,
+      "stream_id": 2070109,
+      "provider_title": "NFHS Network 254: Away vs. Owosso High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 282,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 261,
+      "stream_id": 2070102,
+      "provider_title": "NFHS Network 261: Tuscaloosa County High School vs. Hillcrest-Tuscaloosa High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 263,
+      "stream_id": 2070100,
+      "provider_title": "NFHS Network 263: Kalamazoo Central High School vs. Paw Paw High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 410,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 264,
+      "stream_id": 2070099,
+      "provider_title": "NFHS Network 264: Tallulah Falls School vs. Gainesville High School Varsity Softball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 205,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 274,
+      "stream_id": 2070089,
+      "provider_title": "NFHS Network 274: Randolph School vs. Madison Academy Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 273,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 293,
+      "stream_id": 2070070,
+      "provider_title": "NFHS Network 293: Pineville High School vs. Hancock County High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 297,
+      "stream_id": 2070066,
+      "provider_title": "NFHS Network 297: Walker High School vs. Denham Springs High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 319,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 313,
+      "stream_id": 2070050,
+      "provider_title": "NFHS Network 313: McMinn Central High School vs. Copper Basin High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 396,
+      "stream_id": 2069967,
+      "provider_title": "NFHS Network 396: Pecatonica High School vs. Forreston High School Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 286,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 403,
+      "stream_id": 2069960,
+      "provider_title": "NFHS Network 403: Gray's Creek High School vs. Cape Fear High School Junior Varsity Boys Soccer @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 438,
+      "stream_id": 2069925,
+      "provider_title": "NFHS Network 438: C G Woodson High School vs. James W Robinson High School Junior Varsity Boys Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 330,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 454,
+      "stream_id": 2069909,
+      "provider_title": "NFHS Network 454: Sanderson High School vs. Cardinal Gibbons High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 240,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 455,
+      "stream_id": 2069908,
+      "provider_title": "NFHS Network 455: Herndon High School vs. Edison High School Junior Varsity Boys Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 489,
+      "stream_id": 2069874,
+      "provider_title": "NFHS Network 489: Montgomery Academy vs. Montgomery Catholic Preparatory School Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 491,
+      "stream_id": 2069872,
+      "provider_title": "NFHS Network 491: Away vs. Gibsonburg Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 504,
+      "stream_id": 2069858,
+      "provider_title": "NFHS Network 504: Kearsley High School vs. Swartz Creek High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 269,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 511,
+      "stream_id": 2069850,
+      "provider_title": "NFHS Network 511: Achievement First Providence High School vs. Davies Career & Technical High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 272,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 551,
+      "stream_id": 2069808,
+      "provider_title": "NFHS Network 551: West Shore JrSr High School vs. Melbourne High School Freshman Girls Volleyball @ 28 Sep 05:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 224,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 622,
+      "stream_id": 2069732,
+      "provider_title": "NFHS Network 622: Away vs. Walther Christian Academy Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 308,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 658,
+      "stream_id": 2069693,
+      "provider_title": "NFHS Network 658: Ansley High School vs. Ravenna High School Middle School Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 857,
+      "stream_id": 2069490,
+      "provider_title": "NFHS Network 857: Rock Ridge High School vs. Dominion High School Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 861,
+      "stream_id": 2069486,
+      "provider_title": "NFHS Network 861: Beardstown High School vs. Quincy Senior High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 926,
+      "stream_id": 2069421,
+      "provider_title": "NFHS Network 926: Winston Churchill High School vs. Albert Einstein High School Junior Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 324,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 948,
+      "stream_id": 2069399,
+      "provider_title": "NFHS Network 948: Thomas Walker High School vs. Lee High School Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 952,
+      "stream_id": 2069395,
+      "provider_title": "NFHS Network 952: Wheeler High School vs. Waterford High School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 954,
+      "stream_id": 2069393,
+      "provider_title": "NFHS Network 954: Oswego High School vs. Bolingbrook High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1124,
+      "stream_id": 2069223,
+      "provider_title": "NFHS Network 1124: Caldwell High School vs. Franklin High School Middle School Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 886,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1156,
+      "stream_id": 2069191,
+      "provider_title": "NFHS Network 1156: Mount Pleasant High School vs. Central Academy of Technology and Arts High School Varsity Boys Soccer @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 323,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1541,
+      "stream_id": 2068794,
+      "provider_title": "NFHS Network 1541: Atholton High School vs. Mt. Hebron High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1545,
+      "stream_id": 2068790,
+      "provider_title": "NFHS Network 1545: FCS vs West TN Home School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 254,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1549,
+      "stream_id": 2068786,
+      "provider_title": "NFHS Network 1549: Pickford High School vs. Brimley Area High School Middle School Boys And Girls Flag Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1553,
+      "stream_id": 2068782,
+      "provider_title": "NFHS Network 1553: Bentworth High School vs. Belle Vernon Area High School Junior Varsity Girls Soccer @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 282,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1563,
+      "stream_id": 2068772,
+      "provider_title": "NFHS Network 1563: Trinity Christian High School - Jacksonville vs. The Bolles School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1588,
+      "stream_id": 2068745,
+      "provider_title": "NFHS Network 1588: Hampton High School vs. Lafayette High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1592,
+      "stream_id": 2068741,
+      "provider_title": "NFHS Network 1592: Thomas Jefferson Science & Technology High School vs. Edison High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1593,
+      "stream_id": 2068740,
+      "provider_title": "NFHS Network 1593: Upland High School vs. Los Osos High School Freshman Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1594,
+      "stream_id": 2068739,
+      "provider_title": "NFHS Network 1594: Kearsley High School vs. Swartz Creek High School Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 211,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1595,
+      "stream_id": 2068738,
+      "provider_title": "NFHS Network 1595: Fairfax High School vs. West Potomac High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 196,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1596,
+      "stream_id": 2068737,
+      "provider_title": "NFHS Network 1596: Astronaut High School vs. Titusville High School Freshman Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1597,
+      "stream_id": 2068736,
+      "provider_title": "NFHS Network 1597: Falls Church High School vs. Hayfield Secondary School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1599,
+      "stream_id": 2068734,
+      "provider_title": "NFHS Network 1599: Westfield High School vs. Chantilly High School Junior Varsity Field Hockey @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 201,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1612,
+      "stream_id": 2068720,
+      "provider_title": "NFHS Network 1612: Chester-Joplin-Inverness High School vs. Shelby High School Junior Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1625,
+      "stream_id": 2068707,
+      "provider_title": "NFHS Network 1625: Linden High School vs. Flushing High School Varsity Girls Volleyball @ 28 Sep 06:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 295,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1650,
+      "stream_id": 2068680,
+      "provider_title": "NFHS Network 1650: Oliver Springs High School vs. Wartburg Central High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 253,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1663,
+      "stream_id": 2068667,
+      "provider_title": "NFHS Network 1663: Cumberland High School vs. South Kingstown High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1664,
+      "stream_id": 2068665,
+      "provider_title": "NFHS Network 1664: Costa Mesa High School vs. Fullerton Union High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 239,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1668,
+      "stream_id": 2068661,
+      "provider_title": "NFHS Network 1668: Chipley High School vs. Arnold High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1702,
+      "stream_id": 2068626,
+      "provider_title": "NFHS Network 1702: Freedom High School - Tampa vs. Alonso High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1742,
+      "stream_id": 2068586,
+      "provider_title": "NFHS Network 1742: Fairfield High School vs. Jefferson High School Junior Varsity Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1747,
+      "stream_id": 2068581,
+      "provider_title": "NFHS Network 1747: Tupper Lake Senior High School vs. Clifton-Fine Senior High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1879,
+      "stream_id": 2068448,
+      "provider_title": "NFHS Network 1879: James Clemens High School vs. Hewitt-Trussville High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1883,
+      "stream_id": 2068444,
+      "provider_title": "NFHS Network 1883: Park High School vs. East Helena High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 278,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1884,
+      "stream_id": 2068443,
+      "provider_title": "NFHS Network 1884: Wayne Christian School Varsity Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1885,
+      "stream_id": 2068442,
+      "provider_title": "NFHS Network 1885: Homewood High School vs. Spain Park High School Freshman Football @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1886,
+      "stream_id": 2068441,
+      "provider_title": "NFHS Network 1886: Wibaux County High School Middle School Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1887,
+      "stream_id": 2068440,
+      "provider_title": "NFHS Network 1887: Union City High School vs. Fulton County High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1890,
+      "stream_id": 2068437,
+      "provider_title": "NFHS Network 1890: Garner Magnet High School vs. Clayton High School Varsity Boys Soccer @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 192,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1898,
+      "stream_id": 2068428,
+      "provider_title": "NFHS Network 1898: North Smithfield High School vs. Burrillville High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 223,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1900,
+      "stream_id": 2068426,
+      "provider_title": "NFHS Network 1900: Durango High School vs. Ignacio High School Freshman Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1930,
+      "stream_id": 2068396,
+      "provider_title": "NFHS Network 1930: Arrowhead Christian Academy vs. Redlands Adventist Academy Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1931,
+      "stream_id": 2068395,
+      "provider_title": "NFHS Network 1931: Cornerstone Christian Academy vs. CCHS Varsity Boys Soccer @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 232,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1932,
+      "stream_id": 2068394,
+      "provider_title": "NFHS Network 1932: Karns High School vs. The King's Academy Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1933,
+      "stream_id": 2068393,
+      "provider_title": "NFHS Network 1933: Crosspoint Christian School vs. Klahowya Secondary School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 218,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1934,
+      "stream_id": 2068392,
+      "provider_title": "NFHS Network 1934: Suitland High School vs. DuVal High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 227,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1935,
+      "stream_id": 2068391,
+      "provider_title": "NFHS Network 1935: Cookeville High School vs. Oakland High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 216,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1936,
+      "stream_id": 2068390,
+      "provider_title": "NFHS Network 1936: Deep Run High School vs. Prince George High School Varsity Field Hockey @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 214,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1937,
+      "stream_id": 2068389,
+      "provider_title": "NFHS Network 1937: Daleville High School vs. Wicksburg High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 232,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1939,
+      "stream_id": 2068387,
+      "provider_title": "NFHS Network 1939: St. Patrick High School vs. East Central High School Junior Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 207,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1940,
+      "stream_id": 2068386,
+      "provider_title": "NFHS Network 1940: Pioneer High School vs. Huron High School - Ann Arbor Varsity Field Hockey @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 241,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1944,
+      "stream_id": 2068382,
+      "provider_title": "NFHS Network 1944: Aspen High School vs. Eagle Valley High School Freshman Girls Volleyball @ 28 Sep 06:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 345,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1957,
+      "stream_id": 2068369,
+      "provider_title": "NFHS Network 1957: Urbana High School vs. Gov Thomas Johnson High School Varsity Girls Volleyball @ 28 Sep 06:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 271,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1964,
+      "stream_id": 2068362,
+      "provider_title": "NFHS Network 1964: Lingle-Fort Laramie High School vs. Southeast High School Middle School Football @ 28 Sep 06:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 217,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 1998,
+      "stream_id": 2068328,
+      "provider_title": "NFHS Network 1998: Moore County High School Middle School Girls Flag Football @ 28 Sep 06:50 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 280,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2002,
+      "stream_id": 2068324,
+      "provider_title": "NFHS Network 2002: Condon High School vs. Ione High School Middle School Girls Volleyball @ 28 Sep 06:55 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2003,
+      "stream_id": 2068323,
+      "provider_title": "NFHS Network 2003: Hendersonville High School vs. Portland High School Junior Varsity Football @ 28 Sep 06:55 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2064,
+      "stream_id": 2068262,
+      "provider_title": "NFHS Network 2064: West High School - Bakersfield vs. Kern Valley High School Freshman Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 239,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2137,
+      "stream_id": 2068189,
+      "provider_title": "NFHS Network 2137: Mars Hill Bible School vs. Clements High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 238,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2145,
+      "stream_id": 2068181,
+      "provider_title": "NFHS Network 2145: Trinity Christian Academy vs. The Bolles School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2212,
+      "stream_id": 2068114,
+      "provider_title": "NFHS Network 2212: Garinger High School vs. South Mecklenburg High School Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2216,
+      "stream_id": 2068110,
+      "provider_title": "NFHS Network 2216: Illini Central High School vs. Hartsburg-Emden High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2217,
+      "stream_id": 2068109,
+      "provider_title": "NFHS Network 2217: Indian Springs School vs. Westminster School at Oak Mountain Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2375,
+      "stream_id": 2067951,
+      "provider_title": "NFHS Network 2375: Walled Lake Central High School vs. Lakeland High School Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 294,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2400,
+      "stream_id": 2067926,
+      "provider_title": "NFHS Network 2400: Valley Christian High School - San Jose vs. Los Altos High School Varsity Field Hockey @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2413,
+      "stream_id": 2067912,
+      "provider_title": "NFHS Network 2413: Bob Jones High School vs. James Clemens High School Junior Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2429,
+      "stream_id": 2067895,
+      "provider_title": "NFHS Network 2429: Waverly Senior High School vs. Johnson City Varsity Boys Soccer @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 315,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2434,
+      "stream_id": 2067890,
+      "provider_title": "NFHS Network 2434: Natchez High School vs. Vicksburg High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 298,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2464,
+      "stream_id": 2067858,
+      "provider_title": "NFHS Network 2464: East Robertson High School vs. Westmoreland High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 362,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2466,
+      "stream_id": 2067856,
+      "provider_title": "NFHS Network 2466: Eagleville High School vs. Lincoln County High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2481,
+      "stream_id": 2067840,
+      "provider_title": "NFHS Network 2481: Southwest Valley High School vs. Central Decatur High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 299,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2484,
+      "stream_id": 2067837,
+      "provider_title": "NFHS Network 2484: Fort Knox High School vs. Presentation Academy Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 221,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2511,
+      "stream_id": 2067807,
+      "provider_title": "NFHS Network 2511: Corner High School vs. Pinson Valley High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 286,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2515,
+      "stream_id": 2067803,
+      "provider_title": "NFHS Network 2515: Phillipsburg High School vs. Norton Community High School Varsity Football @ 28 Sep 07:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2617,
+      "stream_id": 2067700,
+      "provider_title": "NFHS Network 2617: Hamilton High School vs. Phil Campbell High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2618,
+      "stream_id": 2067699,
+      "provider_title": "NFHS Network 2618: Fairhope High School vs. Foley High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2619,
+      "stream_id": 2067698,
+      "provider_title": "NFHS Network 2619: Shoals Christian School vs. Athens Bible School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 220,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2621,
+      "stream_id": 2067696,
+      "provider_title": "NFHS Network 2621: Legacy High School vs. Cimarron-Memorial High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2637,
+      "stream_id": 2067680,
+      "provider_title": "NFHS Network 2637: South Holt High School vs. Nodaway Valley Coop Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 300,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2638,
+      "stream_id": 2067679,
+      "provider_title": "NFHS Network 2638: Western High School vs. Durango High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2639,
+      "stream_id": 2067678,
+      "provider_title": "NFHS Network 2639: Bentworth High School vs. Belle Vernon Area High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2643,
+      "stream_id": 2067674,
+      "provider_title": "NFHS Network 2643: Oxford High School vs. Southside-Gadsden High School Junior Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 230,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2644,
+      "stream_id": 2067673,
+      "provider_title": "NFHS Network 2644: LaVergne High School vs. Riverdale High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 240,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2651,
+      "stream_id": 2067666,
+      "provider_title": "NFHS Network 2651: Chino High School vs. Diamond Ranch High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 258,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2652,
+      "stream_id": 2067665,
+      "provider_title": "NFHS Network 2652: Harpeth High School vs. Stewart County High School Junior Varsity Football @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 264,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2653,
+      "stream_id": 2067664,
+      "provider_title": "NFHS Network 2653: Away vs. Chesterton Academy of the Holy Family Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2654,
+      "stream_id": 2067663,
+      "provider_title": "NFHS Network 2654: Tekoa High School - Rosalia High School vs. Colfax High School Middle School Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 195,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2655,
+      "stream_id": 2067662,
+      "provider_title": "NFHS Network 2655: Falls Church High School vs. Hayfield Secondary School Varsity Field Hockey @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2656,
+      "stream_id": 2067661,
+      "provider_title": "NFHS Network 2656: Aurora West College Preporatory Academy vs. Sheridan High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2657,
+      "stream_id": 2067660,
+      "provider_title": "NFHS Network 2657: Canyon Springs High School vs. Chaparral High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2659,
+      "stream_id": 2067658,
+      "provider_title": "NFHS Network 2659: Walla Walla Valley Academy vs. Saint George's School Varsity Boys Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 196,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2666,
+      "stream_id": 2067651,
+      "provider_title": "NFHS Network 2666: Hatton High School vs. Wilson High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 264,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2697,
+      "stream_id": 2067618,
+      "provider_title": "NFHS Network 2697: Civic Memorial High School vs. Granite City High School Varsity Boys Soccer @ 28 Sep 07:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 245,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2818,
+      "stream_id": 2067495,
+      "provider_title": "NFHS Network 2818: Murtaugh High School vs. Raft River Senior High School Junior Varsity Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 362,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2859,
+      "stream_id": 2067454,
+      "provider_title": "NFHS Network 2859: Ragland High School vs. Victory Christian School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2878,
+      "stream_id": 2067435,
+      "provider_title": "NFHS Network 2878: Murrieta Valley High School vs. Great Oak High School Freshman Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 218,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2907,
+      "stream_id": 2067406,
+      "provider_title": "NFHS Network 2907: Stark County High School vs. Annawan High School Varsity Girls Volleyball @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2923,
+      "stream_id": 2067390,
+      "provider_title": "NFHS Network 2923: Davenport High School vs. Jenkins Junior/Senior High School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 254,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2952,
+      "stream_id": 2067361,
+      "provider_title": "NFHS Network 2952: Valley Christian High School - San Jose vs. Los Altos High School Junior Varsity Field Hockey @ 28 Sep 08:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 217,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2980,
+      "stream_id": 2067333,
+      "provider_title": "NFHS Network 2980: Otto Middle School vs. Wilson Middle School Middle School Football @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 462,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2990,
+      "stream_id": 2067323,
+      "provider_title": "NFHS Network 2990: Rocky Mountain High School vs. Ridgevue High School Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 259,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 2997,
+      "stream_id": 2067316,
+      "provider_title": "NFHS Network 2997: Middleton Senior High School vs. Bishop Kelly High School Varsity Girls Soccer @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 211,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3010,
+      "stream_id": 2067303,
+      "provider_title": "NFHS Network 3010: Napavine High School vs. White Pass JrSr High School Junior Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3012,
+      "stream_id": 2067301,
+      "provider_title": "NFHS Network 3012: Away vs. Overland High School Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3026,
+      "stream_id": 2067287,
+      "provider_title": "NFHS Network 3026: Redwood High School - Visalia vs. Monache High School Junior Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 229,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3056,
+      "stream_id": 2067257,
+      "provider_title": "NFHS Network 3056: River Ridge High School vs. Milton High School Varsity Girls Flag Football @ 28 Sep 08:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 845,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3144,
+      "stream_id": 2067168,
+      "provider_title": "NFHS Network 3144: Timberline High School vs. Peninsula High School Junior Varsity Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 199,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3147,
+      "stream_id": 2067165,
+      "provider_title": "NFHS Network 3147: Sun Valley Community School vs. Valley High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3151,
+      "stream_id": 2067161,
+      "provider_title": "NFHS Network 3151: South Whidbey High School vs. Evergreen High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 303,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3158,
+      "stream_id": 2067154,
+      "provider_title": "NFHS Network 3158: Sutter Union High School vs. Destiny Christian Academy Varsity Girls Flag Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 237,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3160,
+      "stream_id": 2067152,
+      "provider_title": "NFHS Network 3160: Dietrich High School vs. Richfield School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 209,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3166,
+      "stream_id": 2067146,
+      "provider_title": "NFHS Network 3166: North Marion High School vs. Amity High School Junior Varsity Football @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 219,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3170,
+      "stream_id": 2067142,
+      "provider_title": "NFHS Network 3170: Clairemont High School vs. Mission Bay High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 488,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3177,
+      "stream_id": 2067135,
+      "provider_title": "NFHS Network 3177: Northwest Christian High School vs. Fountain Hills High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 312,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3179,
+      "stream_id": 2067133,
+      "provider_title": "NFHS Network 3179: Away vs. Shoshone High School Varsity Girls Volleyball @ 28 Sep 09:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3206,
+      "stream_id": 2067106,
+      "provider_title": "NFHS Network 3206: Steele Canyon High School vs. Helix Charter High School Junior Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 305,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3209,
+      "stream_id": 2067103,
+      "provider_title": "NFHS Network 3209: Trinity High School vs. St Bernard's Academy Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 227,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3215,
+      "stream_id": 2067097,
+      "provider_title": "NFHS Network 3215: Lincoln High School vs. Wheatland High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3222,
+      "stream_id": 2067090,
+      "provider_title": "NFHS Network 3222: River Valley High School vs. Madison Highland Preparatory Junior Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 288,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3232,
+      "stream_id": 2067080,
+      "provider_title": "NFHS Network 3232: Barlow High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 306,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3245,
+      "stream_id": 2067067,
+      "provider_title": "NFHS Network 3245: Tamalpais High School vs. San Marin High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 297,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3297,
+      "stream_id": 2067015,
+      "provider_title": "NFHS Network 3297: Issaquah High School vs. Woodinville High School Varsity Girls Volleyball @ 28 Sep 10:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 371,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3299,
+      "stream_id": 2067013,
+      "provider_title": "NFHS Network 3299: Kent-Meridian High School vs. Decatur High School Varsity Girls Volleyball @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3300,
+      "stream_id": 2067012,
+      "provider_title": "NFHS Network 3300: Ceres High School vs. Central Valley High School - Ceres Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 296,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3304,
+      "stream_id": 2067008,
+      "provider_title": "NFHS Network 3304: Fife High School vs. Clover Park High School Varsity Girls Volleyball @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 345,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3314,
+      "stream_id": 2066998,
+      "provider_title": "NFHS Network 3314: Bella Vista High School vs. Woodcreek High School Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 268,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3315,
+      "stream_id": 2066997,
+      "provider_title": "NFHS Network 3315: West Ranch High School vs. Camarillo High School Varsity Girls Flag Football @ 28 Sep 10:15 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 243,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3331,
+      "stream_id": 2066981,
+      "provider_title": "NFHS Network 3331: Staunton High School vs. Rockbridge County High School Varsity Girls Volleyball @ 29 Sep 12:01 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 280,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3335,
+      "stream_id": 2066977,
+      "provider_title": "NFHS Network 3335: Bishop McCort Catholic High School vs. Central Cambria High School Varsity Boys Soccer @ 29 Sep 05:00 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 261,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3337,
+      "stream_id": 2066975,
+      "provider_title": "NFHS Network 3337: Hart High School vs. Fremont High School Freshman Girls Volleyball @ 29 Sep 05:30 AM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3364,
+      "stream_id": 2066948,
+      "provider_title": "NFHS Network 3364: Holy Cross High School vs. Woodland Regional High School Freshman Girls Volleyball @ 29 Sep 03:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 265,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3366,
+      "stream_id": 2066946,
+      "provider_title": "NFHS Network 3366: Blackstone Valley Regional Vocational Technical High School vs. Sutton High School Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 235,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3370,
+      "stream_id": 2066942,
+      "provider_title": "NFHS Network 3370: Greeley West High School vs. Poudre High School Junior Varsity Boys Soccer @ 29 Sep 03:45 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 244,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3424,
+      "stream_id": 2066888,
+      "provider_title": "NFHS Network 3424: Peoples Academy vs. Montpelier High School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3431,
+      "stream_id": 2066881,
+      "provider_title": "NFHS Network 3431: Whitinsville Christian High School vs. Northbridge High School Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 276,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3433,
+      "stream_id": 2066879,
+      "provider_title": "NFHS Network 3433: Triton Regional High School vs. Newburyport High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3499,
+      "stream_id": 2066813,
+      "provider_title": "NFHS Network 3499: Burlington Christian Academy vs. Wesleyan Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3501,
+      "stream_id": 2066811,
+      "provider_title": "NFHS Network 3501: SEED School of Maryland vs. Edmondson-Westside High School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 224,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3525,
+      "stream_id": 2066787,
+      "provider_title": "NFHS Network 3525: Housatonic Valley Regional High School vs. The Gilbert School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3526,
+      "stream_id": 2066786,
+      "provider_title": "NFHS Network 3526: Smyrna High School vs. Caesar Rodney High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 251,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3528,
+      "stream_id": 2066784,
+      "provider_title": "NFHS Network 3528: Smith Academy vs. Ralph C Mahar Regional High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 234,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3553,
+      "stream_id": 2066757,
+      "provider_title": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 271,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3557,
+      "stream_id": 2066753,
+      "provider_title": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 315,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3594,
+      "stream_id": 2066713,
+      "provider_title": "NFHS Network 3594: Seffner Christian Academy vs. Cambridge Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 391,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3792,
+      "stream_id": 2066512,
+      "provider_title": "NFHS Network 3792: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 3998,
+      "stream_id": 2066300,
+      "provider_title": "NFHS Network 3998: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 236,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4026,
+      "stream_id": 2066272,
+      "provider_title": "NFHS Network 4026: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 273,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4388,
+      "stream_id": 2065898,
+      "provider_title": "NFHS Network 4388: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 312,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4389,
+      "stream_id": 2065897,
+      "provider_title": "NFHS Network 4389: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4417,
+      "stream_id": 2065869,
+      "provider_title": "NFHS Network 4417: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 241,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4421,
+      "stream_id": 2065865,
+      "provider_title": "NFHS Network 4421: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 256,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4425,
+      "stream_id": 2065861,
+      "provider_title": "NFHS Network 4425: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 262,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4439,
+      "stream_id": 2065847,
+      "provider_title": "NFHS Network 4439: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 255,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4469,
+      "stream_id": 2065817,
+      "provider_title": "NFHS Network 4469: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 226,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4521,
+      "stream_id": 2065765,
+      "provider_title": "NFHS Network 4521: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 249,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4535,
+      "stream_id": 2065751,
+      "provider_title": "NFHS Network 4535: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 252,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4569,
+      "stream_id": 2065717,
+      "provider_title": "NFHS Network 4569: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 248,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4570,
+      "stream_id": 2065716,
+      "provider_title": "NFHS Network 4570: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 225,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4574,
+      "stream_id": 2065712,
+      "provider_title": "NFHS Network 4574: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 304,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4621,
+      "stream_id": 2065665,
+      "provider_title": "NFHS Network 4621: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 311,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4625,
+      "stream_id": 2065661,
+      "provider_title": "NFHS Network 4625: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 279,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4776,
+      "stream_id": 2065510,
+      "provider_title": "NFHS Network 4776: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 238,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4823,
+      "stream_id": 2065463,
+      "provider_title": "NFHS Network 4823: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 690,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4967,
+      "stream_id": 2065313,
+      "provider_title": "NFHS Network 4967: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 257,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4977,
+      "stream_id": 2065302,
+      "provider_title": "NFHS Network 4977: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 204,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    },
+    {
+      "slot": 4981,
+      "stream_id": 2065298,
+      "provider_title": "NFHS Network 4981: NO EVENT",
+      "container_extension": "ts",
+      "active": true,
+      "http_status": null,
+      "latency_ms": 228,
+      "bytes": 21,
+      "content_type": null,
+      "ts": {
+        "is_ts": false,
+        "packet_count": 0,
+        "pids": []
+      },
+      "ffprobe": null
+    }
+  ]
 }
