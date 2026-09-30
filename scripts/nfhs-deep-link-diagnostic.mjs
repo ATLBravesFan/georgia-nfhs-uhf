@@ -2410,6 +2410,221 @@ async function probeFivePmSlotReuse() {
   };
 }
 
+
+async function fetchOfficialDayEvents(dateIso = "2026-09-29") {
+  const start = DateTime.fromISO(dateIso, { zone: EASTERN }).startOf("day").toUTC();
+  const end = start.plus({ days: 1 });
+  let cursor = encodeSearchCursor(end.toISO(), "");
+  const rows = [];
+  const seen = new Set();
+  let pages = 0;
+  let stoppedBecause = null;
+
+  while (cursor && pages < 30) {
+    const data = await fetchJson(
+      `${SEARCH_BASE}/v3/search/events?size=500&cursor=${encodeURIComponent(cursor)}`,
+      30000
+    );
+    pages++;
+
+    const items = Array.isArray(data?.items) ? data.items : [];
+    if (!items.length) {
+      stoppedBecause = "empty_page";
+      break;
+    }
+
+    let sawBeforeDay = false;
+
+    for (const event of items) {
+      const edt = DateTime.fromISO(event?.start_time || "", { setZone: true });
+      if (!edt.isValid) continue;
+      const utc = edt.toUTC();
+
+      if (utc < start) {
+        sawBeforeDay = true;
+        continue;
+      }
+      if (utc >= end) continue;
+
+      const pubs = Array.isArray(event?.publishers) ? event.publishers : [];
+      for (const pub of pubs) {
+        const broadcasts = Array.isArray(pub?.broadcasts) ? pub.broadcasts : [];
+
+        if (!broadcasts.length) {
+          const key = [event?.key || "", pub?.slug || "", event?.start_time || ""].join("|");
+          if (!seen.has(key)) {
+            seen.add(key);
+            rows.push({
+              event_key: event?.key || null,
+              event_title: event?.title || null,
+              sport: event?.sport || null,
+              official_start: event?.start_time || null,
+              broadcast_subheadline: null,
+              publisher_slug: pub?.slug || null,
+              association: pub?.state_association_acronym || null
+            });
+          }
+          continue;
+        }
+
+        for (const b of broadcasts) {
+          const bdt = DateTime.fromISO(b?.start_time || event?.start_time || "", { setZone: true });
+          if (!bdt.isValid) continue;
+          const butc = bdt.toUTC();
+          if (butc < start || butc >= end) continue;
+
+          const key = [event?.key || "", b?.key || "", b?.start_time || event?.start_time || ""].join("|");
+          if (seen.has(key)) continue;
+          seen.add(key);
+
+          rows.push({
+            event_key: event?.key || null,
+            event_title: event?.title || null,
+            sport: event?.sport || null,
+            official_start: b?.start_time || event?.start_time || null,
+            broadcast_subheadline: b?.subheadline || null,
+            publisher_slug: pub?.slug || null,
+            association: pub?.state_association_acronym || null,
+            broadcast_key_hash: sha20(b?.key)
+          });
+        }
+      }
+    }
+
+    if (sawBeforeDay) {
+      stoppedBecause = "passed_start_of_day";
+      break;
+    }
+
+    cursor = data?.cursor || null;
+    if (!cursor) {
+      stoppedBecause = "no_cursor";
+      break;
+    }
+  }
+
+  rows.sort((a, b) =>
+    String(a.official_start || "").localeCompare(String(b.official_start || "")) ||
+    String(a.event_key || "").localeCompare(String(b.event_key || ""))
+  );
+
+  return {
+    date: dateIso,
+    pages_fetched: pages,
+    stopped_because: stoppedBecause,
+    row_count: rows.length,
+    rows
+  };
+}
+
+function scoreProviderAgainstDayEvent(providerRow, cand) {
+  const core = providerCore(providerRow.provider_title || "");
+  const providerSport = providerSportFromTitle(providerRow.provider_title || "");
+
+  const textOptions = [
+    cand.broadcast_subheadline,
+    cand.event_title,
+    [cand.publisher_slug, cand.broadcast_subheadline].filter(Boolean).join(" ")
+  ].filter(Boolean);
+
+  const textScore = Math.max(0, ...textOptions.map(t => similarity(core, t)));
+  const sportMatch = sportEqual(providerSport, cand.sport);
+
+  let score = textScore * 10;
+  if (sportMatch === true) score += 3;
+  else if (sportMatch === false) score -= 5;
+  if (textScore >= 0.96) score += 4;
+  else if (textScore >= 0.90) score += 2;
+
+  return {
+    ...cand,
+    text_score: Number(textScore.toFixed(4)),
+    provider_sport: providerSport,
+    sport_match: sportMatch,
+    score: Number(score.toFixed(4))
+  };
+}
+
+async function probeSameDayProviderOnlyMatches(providerOnlyRows) {
+  const day = await fetchOfficialDayEvents("2026-09-29");
+  const results = [];
+
+  for (const p of providerOnlyRows || []) {
+    const scored = day.rows
+      .map(c => scoreProviderAgainstDayEvent(p, c))
+      .sort((a, b) =>
+        b.score - a.score ||
+        String(a.official_start || "").localeCompare(String(b.official_start || ""))
+      );
+
+    const best = scored[0] || null;
+    const second = scored[1] || null;
+    const strong = Boolean(best) &&
+      best.text_score >= 0.90 &&
+      best.sport_match !== false;
+
+    const ambiguous = Boolean(
+      strong &&
+      second &&
+      second.text_score >= 0.90 &&
+      second.sport_match !== false &&
+      Math.abs(best.score - second.score) < 0.001 &&
+      second.event_key !== best.event_key
+    );
+
+    results.push({
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_title: p.provider_title,
+      strong_same_day_match: strong && !ambiguous,
+      ambiguous_same_day_match: ambiguous,
+      best_match: best ? {
+        event_key: best.event_key,
+        official_start: best.official_start,
+        sport: best.sport,
+        subheadline: best.broadcast_subheadline,
+        publisher_slug: best.publisher_slug,
+        association: best.association,
+        text_score: best.text_score,
+        sport_match: best.sport_match
+      } : null,
+      second_match: second ? {
+        event_key: second.event_key,
+        official_start: second.official_start,
+        sport: second.sport,
+        subheadline: second.broadcast_subheadline,
+        publisher_slug: second.publisher_slug,
+        association: second.association,
+        text_score: second.text_score,
+        sport_match: second.sport_match
+      } : null
+    });
+  }
+
+  const strongRows = results.filter(x => x.strong_same_day_match && x.best_match);
+  const timeHistogram = {};
+
+  for (const row of strongRows) {
+    const dt = DateTime.fromISO(row.best_match.official_start || "", { setZone: true }).setZone(EASTERN);
+    const label = dt.isValid ? dt.toFormat("HH:mm") : "unknown";
+    timeHistogram[label] = (timeHistogram[label] || 0) + 1;
+  }
+
+  return {
+    purpose:
+      "Match the provider-only/stale 4 PM titles against the complete Sep 29 NFHS event day, avoiding false matches to other dates.",
+    day_rows_loaded: day.row_count,
+    day_pages_fetched: day.pages_fetched,
+    day_stop_reason: day.stopped_because,
+    provider_only_rows_tested: results.length,
+    strong_unambiguous_same_day_matches: strongRows.length,
+    ambiguous_same_day_matches: results.filter(x => x.ambiguous_same_day_match).length,
+    unresolved_same_day: results.filter(x => !x.strong_same_day_match && !x.ambiguous_same_day_match).length,
+    official_time_histogram_eastern: timeHistogram,
+    rows: results
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -2546,6 +2761,9 @@ async function main() {
   const clinchBroadcastRouting = await probeClinchBroadcastRouting();
   const officialPlaybackVsProviderRelay = await probeOfficialPlaybackVsProviderRelay(provider.streams);
   const fivePmSlotReuse = await probeFivePmSlotReuse();
+  const sameDayProviderOnlyMatches = await probeSameDayProviderOnlyMatches(
+    exactFourPmBlockProbe?.two_sided_sequence_alignment?.provider_only_rows || []
+  );
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -2591,7 +2809,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-16",
+    diagnostic_version: "deep-link-17",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -2634,6 +2852,7 @@ async function main() {
     clinch_broadcast_routing_probe: clinchBroadcastRouting,
     official_playback_vs_provider_relay_probe: officialPlaybackVsProviderRelay,
     five_pm_slot_reuse_probe: fivePmSlotReuse,
+    same_day_provider_only_match_probe: sameDayProviderOnlyMatches,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
