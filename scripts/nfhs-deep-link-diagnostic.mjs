@@ -2969,6 +2969,183 @@ async function probeGeorgiaSourceLaneMappings(providerStreams) {
 }
 
 
+
+async function probeCrossDaySourceLaneMappings(providerStreams) {
+  const now = DateTime.now().setZone(EASTERN);
+  const today = now.toISODate();
+
+  const providerDays = [...new Set(
+    providerStreams.map(x => x.provider_day).filter(Boolean)
+  )]
+    .filter(d => d <= today)
+    .sort();
+
+  const anchorDays = providerDays.filter(d => d < today).slice(-3);
+  const daysToLoad = [...new Set([...anchorDays, today])];
+
+  const dayData = new Map();
+  for (const day of daysToLoad) {
+    dayData.set(day, await fetchOfficialDayEvents(day));
+  }
+
+  const strictByDay = new Map();
+
+  for (const day of daysToLoad) {
+    const idx = new Map();
+    const data = dayData.get(day);
+
+    for (const row of data?.rows || []) {
+      const sportKey = normalize(row.sport || "");
+      const titles = [row.broadcast_subheadline, row.event_title].filter(Boolean);
+
+      for (const title of titles) {
+        const matchupKey = strictMatchupKey(title);
+        if (!matchupKey) continue;
+        const key = `${sportKey}::${matchupKey}`;
+        if (!idx.has(key)) idx.set(key, []);
+        idx.get(key).push(row);
+      }
+    }
+
+    strictByDay.set(day, idx);
+  }
+
+  const directAnchors = [];
+
+  for (const p of providerStreams) {
+    const day = p.provider_day;
+    if (!anchorDays.includes(day)) continue;
+
+    const sport = providerSportFromTitle(p.title || "");
+    const matchupKey = strictMatchupKey(p.title || "");
+    if (!sport || !matchupKey) continue;
+
+    const idx = strictByDay.get(day);
+    const key = `${normalize(sport)}::${matchupKey}`;
+    const candidates = [...new Map(
+      (idx?.get(key) || []).map(x => [
+        [x.event_key, x.official_start, x.publisher_slug].join("|"),
+        x
+      ])
+    ).values()];
+
+    if (candidates.length !== 1) continue;
+    const hit = candidates[0];
+    if (!isGeorgiaOfficialRow(hit)) continue;
+
+    directAnchors.push({
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_day: p.provider_day,
+      provider_title: p.title,
+      event_key: hit.event_key,
+      official_start: hit.official_start,
+      sport: hit.sport,
+      subheadline: hit.broadcast_subheadline,
+      publisher_slug: hit.publisher_slug,
+      association: hit.association
+    });
+  }
+
+  const todayRaw = (dayData.get(today)?.rows || []).filter(isGeorgiaOfficialRow);
+  const todayMap = new Map();
+  for (const row of todayRaw) {
+    const k = [row.event_key, row.official_start, row.publisher_slug, row.broadcast_subheadline].join("|");
+    if (!todayMap.has(k)) todayMap.set(k, row);
+  }
+  const todayRows = [...todayMap.values()];
+
+  const eventIds = [...new Set([
+    ...directAnchors.map(x => x.event_key),
+    ...todayRows.map(x => x.event_key)
+  ].filter(Boolean))];
+
+  const unityByEvent = new Map();
+  for (const eventId of eventIds) {
+    unityByEvent.set(eventId, await enrichUnity({ event_key: eventId }));
+  }
+
+  const anchorsWithSource = directAnchors.map(x => {
+    const unity = unityByEvent.get(x.event_key);
+    const sig = safeSourceSignature(unity);
+    return {
+      ...x,
+      source_signature_hash: sha20(sig),
+      source: unity && !unity.error ? {
+        publisher_key_hash: sha20(unity.publisher_key),
+        producer_key_hash: sha20(unity.producer_key),
+        ingest_point_fingerprint: unity.ingest_point_fingerprint || null
+      } : null
+    };
+  }).filter(x => x.source_signature_hash);
+
+  const slotsBySource = new Map();
+  const anchorsBySource = new Map();
+
+  for (const row of anchorsWithSource) {
+    if (!slotsBySource.has(row.source_signature_hash)) slotsBySource.set(row.source_signature_hash, new Set());
+    slotsBySource.get(row.source_signature_hash).add(row.provider_nfhs_number);
+
+    if (!anchorsBySource.has(row.source_signature_hash)) anchorsBySource.set(row.source_signature_hash, []);
+    anchorsBySource.get(row.source_signature_hash).push(row);
+  }
+
+  const todayEvents = todayRows.map(row => {
+    const unity = unityByEvent.get(row.event_key);
+    const sigHash = sha20(safeSourceSignature(unity));
+    const candidateSlots = sigHash && slotsBySource.has(sigHash)
+      ? [...slotsBySource.get(sigHash)].sort((a,b) => a-b)
+      : [];
+    const anchorRows = sigHash && anchorsBySource.has(sigHash)
+      ? anchorsBySource.get(sigHash)
+      : [];
+
+    const dt = DateTime.fromISO(row.official_start || "", { setZone: true }).setZone(EASTERN);
+
+    return {
+      event_key: row.event_key,
+      official_start_eastern: dt.isValid ? dt.toISO() : row.official_start,
+      sport: row.sport,
+      subheadline: row.broadcast_subheadline,
+      publisher_slug: row.publisher_slug,
+      association: row.association,
+      source_signature_hash: sigHash,
+      same_source_candidate_slots: candidateSlots,
+      prior_day_source_anchors: anchorRows.map(a => ({
+        provider_nfhs_number: a.provider_nfhs_number,
+        provider_day: a.provider_day,
+        provider_title: a.provider_title,
+        anchor_event_key: a.event_key,
+        anchor_official_start: a.official_start,
+        anchor_subheadline: a.subheadline,
+        anchor_publisher_slug: a.publisher_slug
+      }))
+    };
+  });
+
+  const single = todayEvents.filter(x => x.same_source_candidate_slots.length === 1);
+  const multi = todayEvents.filter(x => x.same_source_candidate_slots.length > 1);
+  const none = todayEvents.filter(x => x.same_source_candidate_slots.length === 0);
+
+  return {
+    purpose:
+      "Test whether today's Georgia NFHS events reuse the exact same hashed publisher+producer+ingest source lane as provider slots whose visible titles are from prior days. This does not assume provider title dates refresh daily. Candidate slots remain hypotheses until a live event independently validates reuse.",
+    today,
+    provider_anchor_days: anchorDays,
+    provider_streams_scanned: providerStreams.length,
+    prior_day_direct_georgia_anchors: anchorsWithSource.length,
+    unique_prior_day_source_signatures: slotsBySource.size,
+    today_georgia_events: todayEvents.length,
+    today_with_single_same_source_candidate_slot: single.length,
+    today_with_multiple_same_source_candidate_slots: multi.length,
+    today_with_no_prior_source_anchor: none.length,
+    single_lane_candidates: single,
+    multi_lane_candidates: multi,
+    today_events: todayEvents,
+    prior_day_direct_anchors: anchorsWithSource
+  };
+}
+
 async function probeWoodlawnRandallstownSequence() {
   const terms = ["Randallstown Woodlawn", "Woodlawn High School", "Randallstown High School"];
   const candidateMap = new Map();
@@ -3689,6 +3866,7 @@ async function main() {
   const globalDayOrdering = await probeGlobalDayOrdering(provider.streams);
   const providerEpgMetadata = await probeProviderEpgMetadata(provider);
   const providerPlaylistMetadata = await probeProviderPlaylistMetadata(provider);
+  const crossDaySourceLaneMappings = await probeCrossDaySourceLaneMappings(provider.streams);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3734,7 +3912,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-23",
+    diagnostic_version: "deep-link-24",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3784,6 +3962,7 @@ async function main() {
     global_day_ordering_probe: globalDayOrdering,
     provider_epg_metadata_probe: providerEpgMetadata,
     provider_playlist_metadata_probe: providerPlaylistMetadata,
+    cross_day_source_lane_mapping_probe: crossDaySourceLaneMappings,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3830,7 +4009,22 @@ async function main() {
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
     global_day_ordering_probe: globalDayOrdering,
     provider_epg_metadata_probe: providerEpgMetadata,
-    provider_playlist_metadata_probe: providerPlaylistMetadata
+    provider_playlist_metadata_probe: providerPlaylistMetadata,
+    cross_day_source_lane_mapping_probe: {
+      purpose: crossDaySourceLaneMappings.purpose,
+      today: crossDaySourceLaneMappings.today,
+      provider_anchor_days: crossDaySourceLaneMappings.provider_anchor_days,
+      provider_streams_scanned: crossDaySourceLaneMappings.provider_streams_scanned,
+      prior_day_direct_georgia_anchors: crossDaySourceLaneMappings.prior_day_direct_georgia_anchors,
+      unique_prior_day_source_signatures: crossDaySourceLaneMappings.unique_prior_day_source_signatures,
+      today_georgia_events: crossDaySourceLaneMappings.today_georgia_events,
+      today_with_single_same_source_candidate_slot: crossDaySourceLaneMappings.today_with_single_same_source_candidate_slot,
+      today_with_multiple_same_source_candidate_slots: crossDaySourceLaneMappings.today_with_multiple_same_source_candidate_slots,
+      today_with_no_prior_source_anchor: crossDaySourceLaneMappings.today_with_no_prior_source_anchor,
+      single_lane_candidates: crossDaySourceLaneMappings.single_lane_candidates,
+      multi_lane_candidates: crossDaySourceLaneMappings.multi_lane_candidates,
+      prior_day_direct_anchors: crossDaySourceLaneMappings.prior_day_direct_anchors
+    }
   };
 
   await fs.writeFile(
