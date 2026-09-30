@@ -3146,6 +3146,59 @@ async function probeCrossDaySourceLaneMappings(providerStreams) {
   };
 }
 
+
+function summarizeHistoricalSourceSlotReuse(crossDaySourceLaneMappings) {
+  const anchors = crossDaySourceLaneMappings?.prior_day_direct_anchors || [];
+  const groups = new Map();
+
+  for (const row of anchors) {
+    if (!row.source_signature_hash) continue;
+    if (!groups.has(row.source_signature_hash)) groups.set(row.source_signature_hash, []);
+    groups.get(row.source_signature_hash).push(row);
+  }
+
+  const repeated = [];
+  for (const [sourceSignatureHash, rows] of groups.entries()) {
+    if (rows.length < 2) continue;
+
+    const sorted = [...rows].sort((a, b) =>
+      String(a.official_start || "").localeCompare(String(b.official_start || "")) ||
+      a.provider_nfhs_number - b.provider_nfhs_number
+    );
+
+    const slots = [...new Set(sorted.map(x => x.provider_nfhs_number))].sort((a,b) => a-b);
+    const days = [...new Set(sorted.map(x => x.provider_day))].sort();
+
+    repeated.push({
+      source_signature_hash: sourceSignatureHash,
+      observations: sorted.length,
+      unique_provider_slots: slots.length,
+      provider_slots: slots,
+      days,
+      fixed_provider_slot_across_observations: slots.length === 1,
+      rows: sorted.map(x => ({
+        provider_day: x.provider_day,
+        provider_nfhs_number: x.provider_nfhs_number,
+        official_start: x.official_start,
+        event_key: x.event_key,
+        subheadline: x.subheadline,
+        publisher_slug: x.publisher_slug
+      }))
+    });
+  }
+
+  return {
+    purpose:
+      "Test whether an exact NFHS publisher+producer+ingest source signature stays on one provider slot when the same source appears in multiple directly matched historical events. This distinguishes a fixed source-lane model from event/time-based slot assignment.",
+    historical_anchor_count: anchors.length,
+    unique_source_signatures: groups.size,
+    repeated_source_signatures: repeated.length,
+    repeated_sources_fixed_to_one_slot: repeated.filter(x => x.fixed_provider_slot_across_observations).length,
+    repeated_sources_seen_on_multiple_slots: repeated.filter(x => !x.fixed_provider_slot_across_observations).length,
+    repeated_sources: repeated
+  };
+}
+
 async function probeWoodlawnRandallstownSequence() {
   const terms = ["Randallstown Woodlawn", "Woodlawn High School", "Randallstown High School"];
   const candidateMap = new Map();
@@ -3867,6 +3920,7 @@ async function main() {
   const providerEpgMetadata = await probeProviderEpgMetadata(provider);
   const providerPlaylistMetadata = await probeProviderPlaylistMetadata(provider);
   const crossDaySourceLaneMappings = await probeCrossDaySourceLaneMappings(provider.streams);
+  const historicalSourceSlotReuse = summarizeHistoricalSourceSlotReuse(crossDaySourceLaneMappings);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3912,7 +3966,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-24",
+    diagnostic_version: "deep-link-25",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3963,6 +4017,7 @@ async function main() {
     provider_epg_metadata_probe: providerEpgMetadata,
     provider_playlist_metadata_probe: providerPlaylistMetadata,
     cross_day_source_lane_mapping_probe: crossDaySourceLaneMappings,
+    historical_source_slot_reuse_probe: historicalSourceSlotReuse,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -4010,6 +4065,7 @@ async function main() {
     global_day_ordering_probe: globalDayOrdering,
     provider_epg_metadata_probe: providerEpgMetadata,
     provider_playlist_metadata_probe: providerPlaylistMetadata,
+    historical_source_slot_reuse_probe: historicalSourceSlotReuse,
     cross_day_source_lane_mapping_probe: {
       purpose: crossDaySourceLaneMappings.purpose,
       today: crossDaySourceLaneMappings.today,
