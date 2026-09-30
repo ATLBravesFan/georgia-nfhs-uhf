@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T16:12:26.214Z",
+  "generated_at": "2026-09-30T18:24:04.237Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-23",
+  "diagnostic_version": "deep-link-24",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1499246,
+      "total": 1500007,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1499246,
+      "total": 1500007,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1499246,
+    "returned_total": 1500007,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "30a6a664f2506c51b65a",
+            "response_hash": "e965608b2a819edfa097",
             "url_found": true,
-            "url_hash": "4434ee2ebc7941ae37e8",
+            "url_hash": "07556d455c3c504e4afe",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "98d088585b636272156f",
+            "pathname_hash": "14d9542ea1fb237edbf0",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "9889356eb21d579d4cb0",
+              "035abd9453e1f08685cb",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "2fb22637b551dff9af47",
+            "response_hash": "460680d79016593f562c",
             "url_found": true,
-            "url_hash": "7dd4d26272e4db80af15",
+            "url_hash": "02a97c633e00c4dbd35c",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "9d982ab5aa3b374dfb2b",
+            "pathname_hash": "da3d8916f634622d4997",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "3273fd283dd2a0bc1faf",
+              "9442798de0d499e3ae39",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "7e51968951ab58cd8a66",
+            "response_hash": "6afbf5ecf34f75aff18d",
             "url_found": true,
-            "url_hash": "f037348d65fe55e047fa",
+            "url_hash": "b1e72325d5ed82e09c2f",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "a763f444b9c8c64f339c",
+            "pathname_hash": "ad3253afd24b86c35b4b",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "3cf44684a859022fc06b",
+              "c0e6923fc88580b95ca5",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -22665,7 +22665,7 @@
   },
   "same_day_provider_only_match_probe": {
     "purpose": "Match the provider-only/stale 4 PM titles against the complete Sep 29 NFHS event day, avoiding false matches to other dates.",
-    "day_rows_loaded": 5613,
+    "day_rows_loaded": 5609,
     "day_pages_fetched": 12,
     "day_stop_reason": "passed_start_of_day",
     "provider_only_rows_tested": 26,
@@ -23389,7 +23389,7 @@
   "all_four_pm_titles_vs_full_day_probe": {
     "purpose": "Strictly match every provider title stamped 4:00 PM against the complete Sep 29 NFHS day using normalized matchup plus sport, ignoring the provider's displayed time.",
     "provider_4pm_title_count": 211,
-    "official_day_rows_loaded": 5613,
+    "official_day_rows_loaded": 5609,
     "unique_strict_same_day_matches": 75,
     "ambiguous_or_unmatched": 136,
     "unique_matches_actually_after_4pm": 4,
@@ -28591,7 +28591,7 @@
   "georgia_source_lane_mapping_probe": {
     "purpose": "Build Georgia event-to-provider source-lane hypotheses by finding exact same-day Georgia title matches anywhere in the provider's 5,000 NFHS streams, enriching official events through Unity, and propagating only identical hashed publisher+producer+ingest signatures. Same-source slots are hypotheses until independently validated.",
     "provider_streams_scanned": 5000,
-    "official_day_rows_loaded": 5613,
+    "official_day_rows_loaded": 5609,
     "georgia_official_rows": 175,
     "direct_unique_georgia_provider_matches": 3,
     "unique_source_signatures_with_direct_provider_anchor": 3,
@@ -30183,7 +30183,7 @@
         "event_key": "gam88cd81d3c3",
         "official_start_eastern": "2026-09-29T17:30:00.000-04:00",
         "sport": "Softball",
-        "subheadline": "Southwest High School vs. Calhoun High School",
+        "subheadline": "Southeast Whitfield High School vs. Calhoun High School",
         "publisher_slug": "calhoun-high-school-calhoun-ga",
         "association": "GHSA",
         "source_signature_hash": "1f35b49545e5a0bca95b",
@@ -31637,7 +31637,7 @@
   },
   "global_day_ordering_probe": {
     "purpose": "Strictly match all 5,000 provider titles to unique Sep 29 NFHS events, compare provider numbering to the full official day order, and bracket the two Clinch/Brantley events with independent exact-title anchors.",
-    "official_unique_events": 5613,
+    "official_unique_events": 5609,
     "provider_streams_scanned": 5000,
     "direct_unique_strict_matches": 182,
     "unique_official_event_anchors": 166,
@@ -33119,7 +33119,7 @@
   "provider_playlist_metadata_probe": {
     "purpose": "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
     "ok": true,
-    "playlist_line_count": 658930,
+    "playlist_line_count": 659454,
     "nfhs_rows_found": 5000,
     "attribute_key_counts": {
       "tvg-id": 5000,
@@ -34193,6 +34193,1627 @@
         "identifiers": {
           "tvg-name": "NFHS Network 80: Away vs. Urbana High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
           "group-title": "USA | NFHS Network"
+        }
+      }
+    ]
+  },
+  "cross_day_source_lane_mapping_probe": {
+    "purpose": "Test whether today's Georgia NFHS events reuse the exact same hashed publisher+producer+ingest source lane as provider slots whose visible titles are from prior days. This does not assume provider title dates refresh daily. Candidate slots remain hypotheses until a live event independently validates reuse.",
+    "today": "2026-09-30",
+    "provider_anchor_days": [
+      "2026-09-28",
+      "2026-09-29"
+    ],
+    "provider_streams_scanned": 5000,
+    "prior_day_direct_georgia_anchors": 36,
+    "unique_prior_day_source_signatures": 34,
+    "today_georgia_events": 61,
+    "today_with_single_same_source_candidate_slot": 8,
+    "today_with_multiple_same_source_candidate_slots": 0,
+    "today_with_no_prior_source_anchor": 53,
+    "single_lane_candidates": [
+      {
+        "event_key": "gam015745122d",
+        "official_start_eastern": "2026-09-30T16:45:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Waycross Middle School vs. Appling County High School",
+        "publisher_slug": "appling-county-high-school-baxley-ga",
+        "association": "GHSA",
+        "source_signature_hash": "ba3440bcdc65d1925c10",
+        "same_source_candidate_slots": [
+          464
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 464,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 464: New Hampstead High School vs. Appling County High School Varsity Girls Flag Football @ 28 Sep 05:00 PM ET",
+            "anchor_event_key": "gamcd6e9c55c2",
+            "anchor_official_start": "2026-09-28T21:00:00.000Z",
+            "anchor_subheadline": "New Hampstead High School vs. Appling County High School",
+            "anchor_publisher_slug": "appling-county-high-school-baxley-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam3abf41c75e",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "North Springs High School vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a5e38227b82ca2487f96",
+        "same_source_candidate_slots": [
+          840
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 840,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 840: Weber School vs. Galloway School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+            "anchor_event_key": "gama15d01d079",
+            "anchor_official_start": "2026-09-28T21:30:00.000Z",
+            "anchor_subheadline": "Weber School vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gama1c73c7500",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Lakeview Academy",
+        "publisher_slug": "lakeview-academy-gainesville-ga",
+        "association": null,
+        "source_signature_hash": "c02413e6670ed5d56d9d",
+        "same_source_candidate_slots": [
+          578
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 578,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 578: Commerce High School vs. Lakeview Academy Varsity Boys Basketball @ 28 Sep 05:25 PM ET",
+            "anchor_event_key": "gam8d2608bb13",
+            "anchor_official_start": "2026-09-28T21:25:00.000Z",
+            "anchor_subheadline": "Commerce High School vs. Lakeview Academy",
+            "anchor_publisher_slug": "lakeview-academy-gainesville-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gamb648afe0ad",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Lowndes High School vs. Lee County High School",
+        "publisher_slug": "lee-county-high-school-leesburg-ga",
+        "association": "GHSA",
+        "source_signature_hash": "28e757beab68173f04e3",
+        "same_source_candidate_slots": [
+          1080
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1080,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1080: Coffee High School vs. Lee County High School Varsity Softball @ 28 Sep 06:00 PM ET",
+            "anchor_event_key": "gam0e0e0593b4",
+            "anchor_official_start": "2026-09-28T22:00:00.000Z",
+            "anchor_subheadline": "Coffee High School vs. Lee County High School",
+            "anchor_publisher_slug": "lee-county-high-school-leesburg-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam5c26100fa8",
+        "official_start_eastern": "2026-09-30T17:45:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Away vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2abbf2378c9015654250",
+        "same_source_candidate_slots": [
+          1028
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1028,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1028: Away vs. Galloway School Middle School Football @ 28 Sep 05:45 PM ET",
+            "anchor_event_key": "gamf9ce31b40a",
+            "anchor_official_start": "2026-09-28T21:45:00.000Z",
+            "anchor_subheadline": "Away vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam6a13e925e7",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Riverwood vs. Marist School",
+        "publisher_slug": "marist-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c13a352e7524eebbb479",
+        "same_source_candidate_slots": [
+          1179
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1179,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1179: Riverwood vs. Marist School Varsity Softball @ 28 Sep 06:00 PM ET",
+            "anchor_event_key": "gam41073f2f53",
+            "anchor_official_start": "2026-09-28T22:00:00.000Z",
+            "anchor_subheadline": "Riverwood vs. Marist School",
+            "anchor_publisher_slug": "marist-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gambe77d1b277",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Long County High School vs. Savannah Christian Preparatory School",
+        "publisher_slug": "savannah-christian-preparatory-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "29569b961fad7e556077",
+        "same_source_candidate_slots": [
+          109
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 109,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 109: Toombs County High School vs. Savannah Christian Preparatory School Varsity Softball @ 28 Sep 04:30 PM ET",
+            "anchor_event_key": "gam7bc49ac056",
+            "anchor_official_start": "2026-09-28T20:30:00.000Z",
+            "anchor_subheadline": "Toombs County High School vs. Savannah Christian Preparatory School",
+            "anchor_publisher_slug": "savannah-christian-preparatory-school-savannah-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gamc68cac6304",
+        "official_start_eastern": "2026-09-30T19:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Weber School vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a5e38227b82ca2487f96",
+        "same_source_candidate_slots": [
+          840
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 840,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 840: Weber School vs. Galloway School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+            "anchor_event_key": "gama15d01d079",
+            "anchor_official_start": "2026-09-28T21:30:00.000Z",
+            "anchor_subheadline": "Weber School vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      }
+    ],
+    "multi_lane_candidates": [],
+    "today_events": [
+      {
+        "event_key": "evt9afb565604",
+        "official_start_eastern": "2026-09-30T12:00:00.000-04:00",
+        "sport": null,
+        "subheadline": "September 30th Episode",
+        "publisher_slug": "ghsa",
+        "association": "GHSA",
+        "source_signature_hash": "142d7d95e18f2d022936",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "game473ad2dcf",
+        "official_start_eastern": "2026-09-30T15:00:00.000-04:00",
+        "sport": "Bass Fishing",
+        "subheadline": "Savannah Classical Academy",
+        "publisher_slug": "savannah-classical-academy-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c618d4701e95682638ea",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamfcba226756",
+        "official_start_eastern": "2026-09-30T16:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "West Forsyth High School vs. Groves High School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "96b3d2b557f85c6fcf96",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam6c255a533c",
+        "official_start_eastern": "2026-09-30T16:15:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "St. Martin's Episcopal School",
+        "publisher_slug": "st-martins-episcopal-atlanta-ga",
+        "association": null,
+        "source_signature_hash": "70cf8bda6ca08b0d784f",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam379e26265f",
+        "official_start_eastern": "2026-09-30T16:30:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Mount Vernon School vs. North Cobb Christian School",
+        "publisher_slug": "north-cobb-christian-school-kennesaw-ga",
+        "association": "GHSA",
+        "source_signature_hash": "48ed9560de9e4274f3b4",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam840d9c0ca5",
+        "official_start_eastern": "2026-09-30T16:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Heritage Prep School vs. Fulton Science Academy",
+        "publisher_slug": "fulton-science-academy-alpharetta-ga",
+        "association": null,
+        "source_signature_hash": "ff04bf85263830dba805",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "game72d6eeca5",
+        "official_start_eastern": "2026-09-30T16:30:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Lowndes High School vs. Valdosta High School",
+        "publisher_slug": "valdosta-high-school-valdosta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "d6ed7905c1a420470b97",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamd0fa346a30",
+        "official_start_eastern": "2026-09-30T16:38:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Screven County Middle School vs. Portal Middle High School",
+        "publisher_slug": "portal-high-school-portal-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2355428e9a37b217449e",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam015745122d",
+        "official_start_eastern": "2026-09-30T16:45:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Waycross Middle School vs. Appling County High School",
+        "publisher_slug": "appling-county-high-school-baxley-ga",
+        "association": "GHSA",
+        "source_signature_hash": "ba3440bcdc65d1925c10",
+        "same_source_candidate_slots": [
+          464
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 464,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 464: New Hampstead High School vs. Appling County High School Varsity Girls Flag Football @ 28 Sep 05:00 PM ET",
+            "anchor_event_key": "gamcd6e9c55c2",
+            "anchor_official_start": "2026-09-28T21:00:00.000Z",
+            "anchor_subheadline": "New Hampstead High School vs. Appling County High School",
+            "anchor_publisher_slug": "appling-county-high-school-baxley-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam990095f3b7",
+        "official_start_eastern": "2026-09-30T16:45:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "cherokee-bluff-high-school-flowery-branch-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0f308f796402a230d556",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam2e0b6fc0d7",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": null,
+        "publisher_slug": "roswell-high-school-roswell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "fe52db76535d1d36ab77",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam3abf41c75e",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "North Springs High School vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a5e38227b82ca2487f96",
+        "same_source_candidate_slots": [
+          840
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 840,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 840: Weber School vs. Galloway School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+            "anchor_event_key": "gama15d01d079",
+            "anchor_official_start": "2026-09-28T21:30:00.000Z",
+            "anchor_subheadline": "Weber School vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam47f506881e",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": null,
+        "publisher_slug": "thomasville-high-school-thomasville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "d4c308589e70c85b4dc8",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam6693b32e8d",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "McIntosh County Academy vs. Woodville-Tompkins High School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "6440b9fa546a8159e046",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gama034ec26d4",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Bryan County High School vs. Bulloch Academy",
+        "publisher_slug": "bulloch-academy-statesboro-ga",
+        "association": null,
+        "source_signature_hash": "4043d3e210abcddc287a",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gama14da405d8",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Calvary Day School vs. Woodville-Tompkins High School",
+        "publisher_slug": "woodvilletompkins-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "85120d134384a1d1d8ec",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gama1c73c7500",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Lakeview Academy",
+        "publisher_slug": "lakeview-academy-gainesville-ga",
+        "association": null,
+        "source_signature_hash": "c02413e6670ed5d56d9d",
+        "same_source_candidate_slots": [
+          578
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 578,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 578: Commerce High School vs. Lakeview Academy Varsity Boys Basketball @ 28 Sep 05:25 PM ET",
+            "anchor_event_key": "gam8d2608bb13",
+            "anchor_official_start": "2026-09-28T21:25:00.000Z",
+            "anchor_subheadline": "Commerce High School vs. Lakeview Academy",
+            "anchor_publisher_slug": "lakeview-academy-gainesville-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gamb648afe0ad",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Lowndes High School vs. Lee County High School",
+        "publisher_slug": "lee-county-high-school-leesburg-ga",
+        "association": "GHSA",
+        "source_signature_hash": "28e757beab68173f04e3",
+        "same_source_candidate_slots": [
+          1080
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1080,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1080: Coffee High School vs. Lee County High School Varsity Softball @ 28 Sep 06:00 PM ET",
+            "anchor_event_key": "gam0e0e0593b4",
+            "anchor_official_start": "2026-09-28T22:00:00.000Z",
+            "anchor_subheadline": "Coffee High School vs. Lee County High School",
+            "anchor_publisher_slug": "lee-county-high-school-leesburg-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gamc224fbf924",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "alpharetta-high-school-alpharetta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "ad52442dcec49093e76e",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "game7873e3868",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Crawford County High School vs. Schley County High School",
+        "publisher_slug": "schley-county-high-school-ellaville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2a806cd2610654bdb55d",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "game8c250e963",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Chattahoochee Co. High School vs. Marion County High School",
+        "publisher_slug": "marion-county-high-school-buena-vista-ga",
+        "association": "GHSA",
+        "source_signature_hash": "5f38e22099a4fb187c37",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamf349c00b08",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Ware County Middle School vs. Bacon County Middle School",
+        "publisher_slug": "bacon-county-high-school-alma-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c339a146c846d70c2e3a",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamf52d7d4688",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "St. Vincent's Academy vs. West Forsyth High School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "96b3d2b557f85c6fcf96",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamfbc1ab0573",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Central-Talbotton High School vs. Taylor County High School",
+        "publisher_slug": "taylor-county-high-school-butler-ga",
+        "association": "GHSA",
+        "source_signature_hash": "9cbab47882509883a370",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamffe588d17d",
+        "official_start_eastern": "2026-09-30T17:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "North Gwinnett High School vs. Cherokee High School",
+        "publisher_slug": "cherokee-high-school-canton-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0ffcfa3b830ae05b363b",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam3adb6ac477",
+        "official_start_eastern": "2026-09-30T17:15:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Edmund Burke Academy vs. Pinewood Christian Academy",
+        "publisher_slug": "pinewood-christian-academy-bellville-ga",
+        "association": null,
+        "source_signature_hash": "c9303e91d9e0b55ee7cf",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam14c194c1f8",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": null,
+        "publisher_slug": "peachtree-ridge-high-school-suwanee-ga",
+        "association": "GHSA",
+        "source_signature_hash": "63d24ce271fca69fc888",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam152b80af0a",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Brookwood School vs. Pelham High School",
+        "publisher_slug": "pelham-high-school-pelham-ga",
+        "association": "GHSA",
+        "source_signature_hash": "08bc8dbb2eafc8c2b674",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam1b7851241a",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Sandy Creek High School vs. Whitewater High School",
+        "publisher_slug": "whitewater-high-school-fayetteville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "016a20d82862328f0286",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam345d6f2cad",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "blessed-trinity-high-school-roswell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "ba5ba9d91478752c032d",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam76cbacaf15",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Heritage Prep School vs. Fulton Science Academy",
+        "publisher_slug": "fulton-science-academy-alpharetta-ga",
+        "association": null,
+        "source_signature_hash": "ff04bf85263830dba805",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam7a98080cc0",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "etowah-high-school-woodstock-ga",
+        "association": "GHSA",
+        "source_signature_hash": "21d55268b8933f6ef372",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam7e22e0b0b5",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Lakeside High School - Evans vs. St. Pius X Catholic High School",
+        "publisher_slug": "st-pius-x-catholic-high-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c91f3e4e4c5ed3033a06",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam9451fe0ee3",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Away vs. Thomson High School",
+        "publisher_slug": "thomson-high-school-thomson-ga",
+        "association": "GHSA",
+        "source_signature_hash": "cfcd805216ec62dbad35",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamc37429bb3e",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Kendrick High School vs. Early County High School",
+        "publisher_slug": "early-county-high-school-blakely-ga",
+        "association": "GHSA",
+        "source_signature_hash": "bb3882ab12e11f43197b",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamdfd9eba69b",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Walton High School vs. Brookwood High School",
+        "publisher_slug": "brookwood-high-school-snellville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2a380808c6bc5f3e463a",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "game337f1c039",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "North Springs High School vs. South Cobb High School",
+        "publisher_slug": "south-cobb-high-school-austell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "23bff2785b1158c51650",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamed35021c1c",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Meadowcreek High School vs. Providence Christian Academy",
+        "publisher_slug": "providence-christian-academy-lilburn-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0760a759aa73f2badd97",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamffc3d689e0",
+        "official_start_eastern": "2026-09-30T17:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "blessed-trinity-high-school-roswell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0b288f967ecd48ef2982",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam5c26100fa8",
+        "official_start_eastern": "2026-09-30T17:45:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Away vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2abbf2378c9015654250",
+        "same_source_candidate_slots": [
+          1028
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1028,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1028: Away vs. Galloway School Middle School Football @ 28 Sep 05:45 PM ET",
+            "anchor_event_key": "gamf9ce31b40a",
+            "anchor_official_start": "2026-09-28T21:45:00.000Z",
+            "anchor_subheadline": "Away vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam16f9c2cfd2",
+        "official_start_eastern": "2026-09-30T17:55:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Multi-team Event",
+        "publisher_slug": "north-oconee-high-school-bogart-ga",
+        "association": "GHSA",
+        "source_signature_hash": "00215e5993fd139ab9d4",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam6a13e925e7",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Riverwood vs. Marist School",
+        "publisher_slug": "marist-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c13a352e7524eebbb479",
+        "same_source_candidate_slots": [
+          1179
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 1179,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 1179: Riverwood vs. Marist School Varsity Softball @ 28 Sep 06:00 PM ET",
+            "anchor_event_key": "gam41073f2f53",
+            "anchor_official_start": "2026-09-28T22:00:00.000Z",
+            "anchor_subheadline": "Riverwood vs. Marist School",
+            "anchor_publisher_slug": "marist-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam8c2ff6b35d",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "McIntosh County Academy vs. Savannah Country Day School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "6440b9fa546a8159e046",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam94d2d99501",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Away vs. Memorial Day School",
+        "publisher_slug": "memorial-day-school-savannah-ga",
+        "association": null,
+        "source_signature_hash": "aa85fbd312ee81c25f53",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam9c08a9cbc4",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "St. Pius X Catholic High School vs. Greater Atlanta Christian School",
+        "publisher_slug": "greater-atlanta-christian-school-norcross-ga",
+        "association": "GHSA",
+        "source_signature_hash": "6a3f3d1bd6af5bd5edc4",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamaa7740a0f7",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "St. Vincent's Academy vs. Groves High School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "96b3d2b557f85c6fcf96",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamab9af27f61",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Chapel Hill High School vs. New Manchester High School",
+        "publisher_slug": "new-manchester-high-school-douglasville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a4bd157e021e7f63261c",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gambe77d1b277",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Softball",
+        "subheadline": "Long County High School vs. Savannah Christian Preparatory School",
+        "publisher_slug": "savannah-christian-preparatory-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "29569b961fad7e556077",
+        "same_source_candidate_slots": [
+          109
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 109,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 109: Toombs County High School vs. Savannah Christian Preparatory School Varsity Softball @ 28 Sep 04:30 PM ET",
+            "anchor_event_key": "gam7bc49ac056",
+            "anchor_official_start": "2026-09-28T20:30:00.000Z",
+            "anchor_subheadline": "Toombs County High School vs. Savannah Christian Preparatory School",
+            "anchor_publisher_slug": "savannah-christian-preparatory-school-savannah-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gameecf3434fb",
+        "official_start_eastern": "2026-09-30T18:00:00.000-04:00",
+        "sport": "Football",
+        "subheadline": "Dacula High School vs. Meadowcreek High School",
+        "publisher_slug": "meadowcreek-high-school-norcross-ga",
+        "association": "GHSA",
+        "source_signature_hash": "8b2897d0e7c6d0a0a3de",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam0aae695516",
+        "official_start_eastern": "2026-09-30T18:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Starr's Mill High School vs. East Coweta High School",
+        "publisher_slug": "east-coweta-high-school-sharpsburg-ga",
+        "association": "GHSA",
+        "source_signature_hash": "db7c3023cc6917637907",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam4fb1e5ac1f",
+        "official_start_eastern": "2026-09-30T18:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Away vs. Sprayberry High School",
+        "publisher_slug": "sprayberry-high-school-marietta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c185fd28c989af1a10b2",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gambe89359834",
+        "official_start_eastern": "2026-09-30T18:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Heritage Prep School vs. Fulton Science Academy",
+        "publisher_slug": "fulton-science-academy-alpharetta-ga",
+        "association": null,
+        "source_signature_hash": "ff04bf85263830dba805",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamc7d95d92dd",
+        "official_start_eastern": "2026-09-30T18:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Lassiter High School vs. Etowah High School",
+        "publisher_slug": "etowah-high-school-woodstock-ga",
+        "association": "GHSA",
+        "source_signature_hash": "8350af33b3c3420eaa86",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam711f7ed91c",
+        "official_start_eastern": "2026-09-30T18:55:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Crisp Academy",
+        "publisher_slug": "crisp-academy-cordele-ga",
+        "association": null,
+        "source_signature_hash": "d3e3e40ecae76d8040c6",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam06aa51d6ce",
+        "official_start_eastern": "2026-09-30T19:00:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Savannah Country Day School vs. Woodville-Tompkins High School",
+        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
+        "association": null,
+        "source_signature_hash": "6440b9fa546a8159e046",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gam41d87a0298",
+        "official_start_eastern": "2026-09-30T19:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Islands High School vs. Woodville-Tompkins High School",
+        "publisher_slug": "woodvilletompkins-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "85120d134384a1d1d8ec",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamc68cac6304",
+        "official_start_eastern": "2026-09-30T19:00:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Weber School vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a5e38227b82ca2487f96",
+        "same_source_candidate_slots": [
+          840
+        ],
+        "prior_day_source_anchors": [
+          {
+            "provider_nfhs_number": 840,
+            "provider_day": "2026-09-28",
+            "provider_title": "NFHS Network 840: Weber School vs. Galloway School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+            "anchor_event_key": "gama15d01d079",
+            "anchor_official_start": "2026-09-28T21:30:00.000Z",
+            "anchor_subheadline": "Weber School vs. Galloway School",
+            "anchor_publisher_slug": "the-galloway-school-atlanta-ga"
+          }
+        ]
+      },
+      {
+        "event_key": "gam9d9d00fbf6",
+        "official_start_eastern": "2026-09-30T19:30:00.000-04:00",
+        "sport": "Volleyball",
+        "subheadline": "Westover Comprehensive High School vs. Early County High School",
+        "publisher_slug": "early-county-high-school-blakely-ga",
+        "association": "GHSA",
+        "source_signature_hash": "bb3882ab12e11f43197b",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gama338e13f74",
+        "official_start_eastern": "2026-09-30T19:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Starr's Mill High School vs. East Coweta High School",
+        "publisher_slug": "east-coweta-high-school-sharpsburg-ga",
+        "association": "GHSA",
+        "source_signature_hash": "db7c3023cc6917637907",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamc097552161",
+        "official_start_eastern": "2026-09-30T19:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "Away vs. Cherokee High School",
+        "publisher_slug": "cherokee-high-school-canton-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0ffcfa3b830ae05b363b",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      },
+      {
+        "event_key": "gamfd63b540c2",
+        "official_start_eastern": "2026-09-30T20:30:00.000-04:00",
+        "sport": "Flag Football",
+        "subheadline": "North Cobb High School vs. Sprayberry High School",
+        "publisher_slug": "sprayberry-high-school-marietta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c185fd28c989af1a10b2",
+        "same_source_candidate_slots": [],
+        "prior_day_source_anchors": []
+      }
+    ],
+    "prior_day_direct_anchors": [
+      {
+        "provider_nfhs_number": 8,
+        "stream_id": 2070357,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 08: Westfield Academy vs. Academy for Classical Education Middle School Football @ 28 Sep 04:15 PM ET",
+        "event_key": "gam57357f0cc2",
+        "official_start": "2026-09-28T20:15:00.000Z",
+        "sport": "Football",
+        "subheadline": "Westfield Academy vs. Academy for Classical Education",
+        "publisher_slug": "academy-for-classical-education-macon-ga",
+        "association": "GHSA",
+        "source_signature_hash": "f35af99be2a600261a24",
+        "source": {
+          "publisher_key_hash": "f45ab3dbf16cb821b6b3",
+          "producer_key_hash": "0ef120052a588956caa8",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 41,
+        "stream_id": 2070324,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 41: Crisp County High School vs. Tiftarea Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+        "event_key": "gam1888f5601b",
+        "official_start": "2026-09-28T20:30:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Crisp County High School vs. Tiftarea Academy",
+        "publisher_slug": "tiftarea-academy-chula-ga",
+        "association": null,
+        "source_signature_hash": "02bbb5847c348a199443",
+        "source": {
+          "publisher_key_hash": "20f61ac193af473ab265",
+          "producer_key_hash": "d72ce26c26e27a6a9f76",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 109,
+        "stream_id": 2070254,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 109: Toombs County High School vs. Savannah Christian Preparatory School Varsity Softball @ 28 Sep 04:30 PM ET",
+        "event_key": "gam7bc49ac056",
+        "official_start": "2026-09-28T20:30:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Toombs County High School vs. Savannah Christian Preparatory School",
+        "publisher_slug": "savannah-christian-preparatory-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "29569b961fad7e556077",
+        "source": {
+          "publisher_key_hash": "19c275e3c1e0a594a8f9",
+          "producer_key_hash": "25c5bba7313f4910d142",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 201,
+        "stream_id": 2070162,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 201: Holy Spirit Preparatory Academy vs. Heritage Prep School Varsity Girls Volleyball @ 28 Sep 04:45 PM ET",
+        "event_key": "gam1f3ef26113",
+        "official_start": "2026-09-28T20:45:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Holy Spirit Preparatory Academy vs. Heritage Prep School",
+        "publisher_slug": "heritage-prep-school-atlanta-ga",
+        "association": null,
+        "source_signature_hash": "a460c71585c17e9ecd6d",
+        "source": {
+          "publisher_key_hash": "f631684df0569aeb4de1",
+          "producer_key_hash": "e9dccf34a64ff6a08d0e",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 234,
+        "stream_id": 2070129,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 234: Bethlehem Christian Academy vs. Tallulah Falls School Varsity Girls Volleyball @ 28 Sep 04:55 PM ET",
+        "event_key": "gam978419b5bd",
+        "official_start": "2026-09-28T20:55:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Bethlehem Christian Academy vs. Tallulah Falls School",
+        "publisher_slug": "tallulah-falls-school-tallulah-falls-ga",
+        "association": null,
+        "source_signature_hash": "eb564cd9689dc3ba7192",
+        "source": {
+          "publisher_key_hash": "ceaf298fdccd9ae9a5b2",
+          "producer_key_hash": "000208d3a8b3f8f49d9f",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 264,
+        "stream_id": 2070099,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 264: Tallulah Falls School vs. Gainesville High School Varsity Softball @ 28 Sep 05:00 PM ET",
+        "event_key": "gam1b97b19725",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Tallulah Falls School vs. Gainesville High School",
+        "publisher_slug": "gainesville-high-school-gainesville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "14d213da07399a8e1fb1",
+        "source": {
+          "publisher_key_hash": "f1a9d3a89fca7e3b4741",
+          "producer_key_hash": "3bbf14b996134a62ddab",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 330,
+        "stream_id": 2070033,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 330: Lakeview Academy vs. Athens Christian School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+        "event_key": "gam51651c716d",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Lakeview Academy vs. Athens Christian School",
+        "publisher_slug": "athens-christian-school-athens-ga",
+        "association": null,
+        "source_signature_hash": "8e26cd7f346e415181b7",
+        "source": {
+          "publisher_key_hash": "6196993a0ee1c28d2391",
+          "producer_key_hash": "aa3bd50bbf4c82df55e8",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 442,
+        "stream_id": 2069921,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 442: Tattnall County High School vs. Bryan County High School Varsity Softball @ 28 Sep 05:00 PM ET",
+        "event_key": "gamb7b907eab7",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Tattnall County High School vs. Bryan County High School",
+        "publisher_slug": "bryan-county-high-school-pembroke-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0d6d389276b37c0875bb",
+        "source": {
+          "publisher_key_hash": "003c50d3b1ac0c42d8bf",
+          "producer_key_hash": "f65be9e4cf4ad41f2d82",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 461,
+        "stream_id": 2069902,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 461: Archer High School vs. Peachtree Ridge High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+        "event_key": "gamc7dcd50def",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Archer High School vs. Peachtree Ridge High School",
+        "publisher_slug": "peachtree-ridge-high-school-suwanee-ga",
+        "association": "GHSA",
+        "source_signature_hash": "efe9ab61d527f86facab",
+        "source": {
+          "publisher_key_hash": "f0b5948aaf078cda470a",
+          "producer_key_hash": "a0d19b6f8eb1180853f7",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 464,
+        "stream_id": 2069899,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 464: New Hampstead High School vs. Appling County High School Varsity Girls Flag Football @ 28 Sep 05:00 PM ET",
+        "event_key": "gamcd6e9c55c2",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "New Hampstead High School vs. Appling County High School",
+        "publisher_slug": "appling-county-high-school-baxley-ga",
+        "association": "GHSA",
+        "source_signature_hash": "ba3440bcdc65d1925c10",
+        "source": {
+          "publisher_key_hash": "f00cde4347263caf5d17",
+          "producer_key_hash": "c78753a4cd7f25d05cd3",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 483,
+        "stream_id": 2069880,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 483: Groves High School vs. Bradwell Institute Varsity Girls Flag Football @ 28 Sep 05:00 PM ET",
+        "event_key": "gamdbdcaf744b",
+        "official_start": "2026-09-28T21:00:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Groves High School vs. Bradwell Institute",
+        "publisher_slug": "bradwell-institute-hinesville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0d62d02476e06cdb772c",
+        "source": {
+          "publisher_key_hash": "70766fa29990aefa699c",
+          "producer_key_hash": "0e329bf752ea32558c07",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 570,
+        "stream_id": 2069787,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 570: North Cobb Christian School vs. Westminster Schools Middle School Softball @ 28 Sep 05:25 PM ET",
+        "event_key": "gam118ef90b6e",
+        "official_start": "2026-09-28T21:25:00.000Z",
+        "sport": "Softball",
+        "subheadline": "North Cobb Christian School vs. Westminster Schools",
+        "publisher_slug": "westminster-schools-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "4d82781a9fcb259f2c48",
+        "source": {
+          "publisher_key_hash": "fb56663c8817cdb08aeb",
+          "producer_key_hash": "cdbbf1e9ebefa8f05842",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 578,
+        "stream_id": 2069779,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 578: Commerce High School vs. Lakeview Academy Varsity Boys Basketball @ 28 Sep 05:25 PM ET",
+        "event_key": "gam8d2608bb13",
+        "official_start": "2026-09-28T21:25:00.000Z",
+        "sport": "Basketball",
+        "subheadline": "Commerce High School vs. Lakeview Academy",
+        "publisher_slug": "lakeview-academy-gainesville-ga",
+        "association": null,
+        "source_signature_hash": "c02413e6670ed5d56d9d",
+        "source": {
+          "publisher_key_hash": "a1837df681d5e8ff1ef5",
+          "producer_key_hash": "5451b150f63577216320",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 595,
+        "stream_id": 2069761,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 595: Woodville-Tompkins High School vs. Grovetown High School Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+        "event_key": "gam07f66fb5ae",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Woodville-Tompkins High School vs. Grovetown High School",
+        "publisher_slug": "grovetown-high-school-grovetown-ga",
+        "association": "GHSA",
+        "source_signature_hash": "18e8ed9dfdb11d74c0da",
+        "source": {
+          "publisher_key_hash": "0a552b3f0b9b4cdb4aa8",
+          "producer_key_hash": "b25df8365d9fd9a6584c",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 669,
+        "stream_id": 2069679,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 669: South Cobb High School vs. Hillgrove High School Junior Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+        "event_key": "gam3765d23052",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "South Cobb High School vs. Hillgrove High School",
+        "publisher_slug": "hillgrove-high-school-powder-springs-ga",
+        "association": "GHSA",
+        "source_signature_hash": "e3a45ef1377a7f8ed71c",
+        "source": {
+          "publisher_key_hash": "0c9c669f5b29e46f0d32",
+          "producer_key_hash": "8baf3d720be9836918c7",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        }
+      },
+      {
+        "provider_nfhs_number": 702,
+        "stream_id": 2069645,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 702: Cass High School vs. Calhoun High School Varsity Softball @ 28 Sep 05:30 PM ET",
+        "event_key": "gam4ec55732e3",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Cass High School vs. Calhoun High School",
+        "publisher_slug": "calhoun-high-school-calhoun-ga",
+        "association": "GHSA",
+        "source_signature_hash": "1f35b49545e5a0bca95b",
+        "source": {
+          "publisher_key_hash": "5bd9004cc4b807856794",
+          "producer_key_hash": "e09739d4d50bb3d1486f",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 712,
+        "stream_id": 2069635,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 712: Southwest DeKalb High School vs. Parkview High School Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+        "event_key": "gam573c0bd877",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Southwest DeKalb High School vs. Parkview High School",
+        "publisher_slug": "parkview-high-school-lilburn-ga",
+        "association": "GHSA",
+        "source_signature_hash": "b67360b9b53a7bf0283b",
+        "source": {
+          "publisher_key_hash": "505b93f388244c357a05",
+          "producer_key_hash": "35ef1bb727e6cf4b5928",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 719,
+        "stream_id": 2069628,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 719: Chamblee Charter High School vs. Lovett School Middle School Softball @ 28 Sep 05:30 PM ET",
+        "event_key": "gam5c23799583",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Chamblee Charter High School vs. Lovett School",
+        "publisher_slug": "the-lovett-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "0416f71865668f33b748",
+        "source": {
+          "publisher_key_hash": "8208b20f50a1460ffe56",
+          "producer_key_hash": "2aa866e373e727947616",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 840,
+        "stream_id": 2069507,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 840: Weber School vs. Galloway School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+        "event_key": "gama15d01d079",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Weber School vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "a5e38227b82ca2487f96",
+        "source": {
+          "publisher_key_hash": "b5645f78df4c1404e799",
+          "producer_key_hash": "0b69666021028c8d1ade",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 976,
+        "stream_id": 2069371,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 976: Marion County High School vs. Dade County High School Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+        "event_key": "gamf80282cdce",
+        "official_start": "2026-09-28T21:30:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Marion County High School vs. Dade County High School",
+        "publisher_slug": "dade-county-high-school-trenton-ga",
+        "association": "GHSA",
+        "source_signature_hash": "74b0231cc0c1fc1d5234",
+        "source": {
+          "publisher_key_hash": "f7b450098af2b81ec6cb",
+          "producer_key_hash": "f907d4978c3d18c54d81",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1028,
+        "stream_id": 2069319,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1028: Away vs. Galloway School Middle School Football @ 28 Sep 05:45 PM ET",
+        "event_key": "gamf9ce31b40a",
+        "official_start": "2026-09-28T21:45:00.000Z",
+        "sport": "Football",
+        "subheadline": "Away vs. Galloway School",
+        "publisher_slug": "the-galloway-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "2abbf2378c9015654250",
+        "source": {
+          "publisher_key_hash": "b5645f78df4c1404e799",
+          "producer_key_hash": "f17f2f060df765d3b615",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1080,
+        "stream_id": 2069267,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1080: Coffee High School vs. Lee County High School Varsity Softball @ 28 Sep 06:00 PM ET",
+        "event_key": "gam0e0e0593b4",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Coffee High School vs. Lee County High School",
+        "publisher_slug": "lee-county-high-school-leesburg-ga",
+        "association": "GHSA",
+        "source_signature_hash": "28e757beab68173f04e3",
+        "source": {
+          "publisher_key_hash": "9eaf10596299c974aae4",
+          "producer_key_hash": "9aeb533a5d07c3d80168",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1093,
+        "stream_id": 2069254,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1093: Away vs. Cook High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+        "event_key": "gam160e9d63fe",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Football",
+        "subheadline": "Away vs. Cook High School",
+        "publisher_slug": "cook-high-school-adel-ga",
+        "association": "GHSA",
+        "source_signature_hash": "32a1df38cf3ecc6e546b",
+        "source": {
+          "publisher_key_hash": "b0d1395e2df15ce11830",
+          "producer_key_hash": "6b4b8ae3c822faed0d5b",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1104,
+        "stream_id": 2069243,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1104: Lee County Middle School East vs. Sherwood Christian Academy Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+        "event_key": "gam1a175bd149",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Lee County Middle School East vs. Sherwood Christian Academy",
+        "publisher_slug": "sherwood-christian-academy-albany-ga",
+        "association": null,
+        "source_signature_hash": "587f04fa4a71743dcb7f",
+        "source": {
+          "publisher_key_hash": "677a4c8bc157a98c1cba",
+          "producer_key_hash": "594a08c6413e5547a41b",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1119,
+        "stream_id": 2069228,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1119: Spencer High School vs. Bainbridge High School Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+        "event_key": "gam1fc4d274cd",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Spencer High School vs. Bainbridge High School",
+        "publisher_slug": "bainbridge-high-school-bainbridge-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c985cdefba0dd32a408c",
+        "source": {
+          "publisher_key_hash": "1c87f0a19a05ce807535",
+          "producer_key_hash": "5e8d46cbdc23f15aca01",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1179,
+        "stream_id": 2069168,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1179: Riverwood vs. Marist School Varsity Softball @ 28 Sep 06:00 PM ET",
+        "event_key": "gam41073f2f53",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Softball",
+        "subheadline": "Riverwood vs. Marist School",
+        "publisher_slug": "marist-school-atlanta-ga",
+        "association": "GHSA",
+        "source_signature_hash": "c13a352e7524eebbb479",
+        "source": {
+          "publisher_key_hash": "a9cb8b707220229d705a",
+          "producer_key_hash": "c3021d50d317886e7f25",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1243,
+        "stream_id": 2069104,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1243: Calvary Day School Middle School Girls Volleyball @ 28 Sep 06:00 PM ET",
+        "event_key": "gam5f8f7617d9",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Calvary Day School",
+        "publisher_slug": "calvary-day-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "e6652355df46f7feb2cf",
+        "source": {
+          "publisher_key_hash": "eeecf941b8fc42e7d9dd",
+          "producer_key_hash": "81ece669299685d62876",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1270,
+        "stream_id": 2069077,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1270: Springwood School vs. Brookstone School Middle School Football @ 28 Sep 06:00 PM ET",
+        "event_key": "gam7061b3c4d0",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Football",
+        "subheadline": "Springwood School vs. Brookstone School",
+        "publisher_slug": "brookstone-school-columbus-ga",
+        "association": null,
+        "source_signature_hash": "e983fb09e4f226f7e590",
+        "source": {
+          "publisher_key_hash": "6dbac5f2b64cb5e3c0b9",
+          "producer_key_hash": "48aed1839d3eb00da67e",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1495,
+        "stream_id": 2068840,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1495: John Hancock Academy vs. Covenant Academy Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+        "event_key": "gamd404ecacda",
+        "official_start": "2026-09-28T22:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "John Hancock Academy vs. Covenant Academy",
+        "publisher_slug": "covenant-academy-macon-ga",
+        "association": "GHSA",
+        "source_signature_hash": "f67f5997d84621ce02bd",
+        "source": {
+          "publisher_key_hash": "22d3cbc00d2b6c45fb79",
+          "producer_key_hash": "91b25eb46aa94424f2f4",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 1692,
+        "stream_id": 2068636,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 1692: Trinity Christian School vs. Landmark Christian School Middle School Football @ 28 Sep 06:30 PM ET",
+        "event_key": "gam29d3c411eb",
+        "official_start": "2026-09-28T22:30:00.000Z",
+        "sport": "Football",
+        "subheadline": "Trinity Christian School vs. Landmark Christian School",
+        "publisher_slug": "landmark-christian-high-school-fairburn-ga",
+        "association": "GHSA",
+        "source_signature_hash": "5aaf86cbd687bdd2f206",
+        "source": {
+          "publisher_key_hash": "4bc24a1ad7ae50bba47f",
+          "producer_key_hash": "a7105801679f2ad42b36",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 2437,
+        "stream_id": 2067887,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 2437: Wayne County High School vs. Tattnall County High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+        "event_key": "gamd0c3015a50",
+        "official_start": "2026-09-28T23:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Wayne County High School vs. Tattnall County High School",
+        "publisher_slug": "tattnall-county-high-school-reidsville-ga",
+        "association": "GHSA",
+        "source_signature_hash": "7646dd4c7825b4deb663",
+        "source": {
+          "publisher_key_hash": "99a5d99b67631908036a",
+          "producer_key_hash": "a446f6525a98b3e526a8",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 2611,
+        "stream_id": 2067706,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 2611: Dunwoody High School vs. Parkview High School Varsity Girls Flag Football @ 28 Sep 07:30 PM ET",
+        "event_key": "gam2dd08e6bc2",
+        "official_start": "2026-09-28T23:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Dunwoody High School vs. Parkview High School",
+        "publisher_slug": "parkview-high-school-lilburn-ga",
+        "association": "GHSA",
+        "source_signature_hash": "b67360b9b53a7bf0283b",
+        "source": {
+          "publisher_key_hash": "505b93f388244c357a05",
+          "producer_key_hash": "35ef1bb727e6cf4b5928",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 2660,
+        "stream_id": 2067657,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 2660: Campbell High School vs. Hillgrove High School Junior Varsity Girls Flag Football @ 28 Sep 07:30 PM ET",
+        "event_key": "gam7899a43f4e",
+        "official_start": "2026-09-28T23:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Campbell High School vs. Hillgrove High School",
+        "publisher_slug": "hillgrove-high-school-powder-springs-ga",
+        "association": "GHSA",
+        "source_signature_hash": "e3a45ef1377a7f8ed71c",
+        "source": {
+          "publisher_key_hash": "0c9c669f5b29e46f0d32",
+          "producer_key_hash": "8baf3d720be9836918c7",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
+        }
+      },
+      {
+        "provider_nfhs_number": 2665,
+        "stream_id": 2067652,
+        "provider_day": "2026-09-28",
+        "provider_title": "NFHS Network 2665: Centennial High School vs. Milton High School Varsity Girls Flag Football @ 28 Sep 07:30 PM ET",
+        "event_key": "gam7d9a2d8844",
+        "official_start": "2026-09-28T23:30:00.000Z",
+        "sport": "Flag Football",
+        "subheadline": "Centennial High School vs. Milton High School",
+        "publisher_slug": "milton-high-school-milton-ga",
+        "association": "GHSA",
+        "source_signature_hash": "d52e9f6ecfc2c663af91",
+        "source": {
+          "publisher_key_hash": "b64226f19d45d289303c",
+          "producer_key_hash": "0dce199182656b0f1de5",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 3404,
+        "stream_id": 2066908,
+        "provider_day": "2026-09-29",
+        "provider_title": "NFHS Network 3404: Fellowship Christian School Middle School Girls Volleyball @ 29 Sep 03:55 PM ET",
+        "event_key": "gamacc2c6aaf4",
+        "official_start": "2026-09-29T19:55:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Fellowship Christian School",
+        "publisher_slug": "fellowship-christian-school-roswell-ga",
+        "association": "GHSA",
+        "source_signature_hash": "d9d17fbf505d5e30a467",
+        "source": {
+          "publisher_key_hash": "9ca448696d611b7267a2",
+          "producer_key_hash": "0241052d6e18fc5396ec",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_day": "2026-09-29",
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "event_key": "gam3a5725b205",
+        "official_start": "2026-09-29T21:00:00.000Z",
+        "sport": "Volleyball",
+        "subheadline": "Camden County High School vs. Savannah Country Day School",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "association": "GHSA",
+        "source_signature_hash": "9e021a9e02e9892a04f6",
+        "source": {
+          "publisher_key_hash": "baecbccb6262afa6f68a",
+          "producer_key_hash": "0ea4a01bbf37daea47b4",
+          "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
         }
       }
     ]
@@ -35927,7 +37548,7 @@
         {
           "term": "The Greene",
           "ok": true,
-          "item_count": 21
+          "item_count": 22
         },
         {
           "term": "Berean Christian",
@@ -35937,7 +37558,7 @@
         {
           "term": "The Greene Berean Christian",
           "ok": true,
-          "item_count": 2
+          "item_count": 3
         }
       ],
       "unique_candidate_count": 44,
