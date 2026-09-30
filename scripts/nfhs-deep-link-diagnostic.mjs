@@ -1010,6 +1010,8 @@ async function probeExactFourPmBlock(providerStreams) {
     text_score: m.best_match.text_score
   }));
 
+  const sequenceAlignment = alignProviderToOfficial(provider4pm, broadcastBearing);
+
   return {
     ok: true,
     target_start: targetIso,
@@ -1023,8 +1025,176 @@ async function probeExactFourPmBlock(providerStreams) {
     unique_event_strong_matches: onePerEvent.length,
     full_feed_order_check: compareIndex("full_feed_index"),
     broadcast_feed_order_check: compareIndex("broadcast_feed_index"),
+    sequence_alignment: sequenceAlignment,
     matched_positions: providerRankVsOfficialRank,
     unmatched_provider_samples: matches.filter(x => !x.strong_match).slice(0, 30)
+  };
+}
+
+
+function providerSportFromTitle(title = "") {
+  const s = String(title).toLowerCase();
+  const sports = [
+    ["flag football", "Flag Football"],
+    ["field hockey", "Field Hockey"],
+    ["cross country", "Cross Country"],
+    ["ice hockey", "Ice Hockey"],
+    ["volleyball", "Volleyball"],
+    ["basketball", "Basketball"],
+    ["football", "Football"],
+    ["softball", "Softball"],
+    ["baseball", "Baseball"],
+    ["soccer", "Soccer"],
+    ["wrestling", "Wrestling"],
+    ["lacrosse", "Lacrosse"],
+    ["badminton", "Badminton"],
+    ["tennis", "Tennis"],
+    ["golf", "Golf"],
+    ["hockey", "Hockey"]
+  ];
+  for (const [needle, label] of sports) {
+    if (s.includes(needle)) return label;
+  }
+  return null;
+}
+
+function sportEqual(a, b) {
+  if (!a || !b) return null;
+  const aa = normalize(a).replace(/\b(?:boys|girls|coed|varsity|junior|freshman|middle)\b/g, "").trim();
+  const bb = normalize(b).replace(/\b(?:boys|girls|coed|varsity|junior|freshman|middle)\b/g, "").trim();
+  return aa === bb;
+}
+
+function alignProviderToOfficial(providerRows, officialRows) {
+  const P = providerRows;
+  const O = officialRows;
+  const n = P.length;
+  const m = O.length;
+  const NEG = -1e15;
+
+  function officialTitle(o) {
+    return o?.broadcasts?.[0]?.subheadline || "";
+  }
+
+  function matchScore(p, o) {
+    const text = similarity(p.core, officialTitle(o));
+    const ps = providerSportFromTitle(p.title);
+    const sportMatch = sportEqual(ps, o.sport);
+
+    let score = text * 12;
+    if (sportMatch === true) score += 4;
+    else if (sportMatch === false) score -= 5;
+
+    if (text >= 0.96) score += 3;
+    else if (text >= 0.80) score += 1;
+    else if (text < 0.35) score -= 5;
+
+    return { score, text, provider_sport: ps, official_sport: o.sport, sport_match: sportMatch };
+  }
+
+  // Constrained alignment: map every provider slot to one official event,
+  // allowing official events to be skipped. Here m-n should equal the provider filter count.
+  const dp = Array.from({ length: n + 1 }, () => new Float64Array(m + 1));
+  const prev = Array.from({ length: n + 1 }, () => new Int8Array(m + 1));
+
+  for (let i = 0; i <= n; i++) for (let j = 0; j <= m; j++) dp[i][j] = NEG;
+  dp[0][0] = 0;
+
+  const SKIP_OFFICIAL = -0.75;
+
+  for (let i = 0; i <= n; i++) {
+    for (let j = 0; j <= m; j++) {
+      const cur = dp[i][j];
+      if (cur <= NEG / 2) continue;
+
+      if (j < m) {
+        const v = cur + SKIP_OFFICIAL;
+        if (v > dp[i][j + 1]) {
+          dp[i][j + 1] = v;
+          prev[i][j + 1] = 1; // skipped official
+        }
+      }
+
+      if (i < n && j < m) {
+        const ms = matchScore(P[i], O[j]).score;
+        const v = cur + ms;
+        if (v > dp[i + 1][j + 1]) {
+          dp[i + 1][j + 1] = v;
+          prev[i + 1][j + 1] = 2; // matched
+        }
+      }
+    }
+  }
+
+  let i = n;
+  let j = m;
+  const mapping = [];
+  const skipped = [];
+
+  while (i > 0 || j > 0) {
+    const p = prev[i][j];
+    if (p === 2) {
+      const pr = P[i - 1];
+      const or = O[j - 1];
+      const ms = matchScore(pr, or);
+      mapping.push({
+        provider_nfhs_number: pr.provider_nfhs_number,
+        stream_id: pr.stream_id,
+        provider_title: pr.title,
+        provider_sport: ms.provider_sport,
+        official_index: j - 1,
+        event_key: or.event_key,
+        official_sport: or.sport,
+        official_subheadline: officialTitle(or),
+        text_score: Number(ms.text.toFixed(4)),
+        sport_match: ms.sport_match,
+        alignment_score: Number(ms.score.toFixed(4))
+      });
+      i--; j--;
+    } else if (p === 1) {
+      const or = O[j - 1];
+      skipped.push({
+        official_index: j - 1,
+        event_key: or.event_key,
+        sport: or.sport,
+        subheadline: officialTitle(or),
+        broadcast_key: or?.broadcasts?.[0]?.broadcast_key || null,
+        publisher_slug: or?.broadcasts?.[0]?.publisher_slug || null,
+        association: or?.broadcasts?.[0]?.association || null,
+        status: or?.broadcasts?.[0]?.status || null
+      });
+      j--;
+    } else {
+      // Should not occur for this constrained problem, but prevents an infinite loop.
+      if (j > 0) j--;
+      else if (i > 0) i--;
+    }
+  }
+
+  mapping.reverse();
+  skipped.reverse();
+
+  let monotonic = 0;
+  for (let k = 1; k < mapping.length; k++) {
+    if (mapping[k].official_index > mapping[k - 1].official_index) monotonic++;
+  }
+
+  const highConfidence = mapping.filter(x => x.text_score >= 0.96 && x.sport_match !== false);
+  const lowConfidence = mapping.filter(x => x.text_score < 0.80 || x.sport_match === false);
+
+  return {
+    provider_count: n,
+    official_count: m,
+    expected_official_skips: m - n,
+    mapped_count: mapping.length,
+    skipped_official_count: skipped.length,
+    monotonic_pairs: monotonic,
+    monotonic_pairs_total: Math.max(0, mapping.length - 1),
+    high_confidence_mapping_count: highConfidence.length,
+    low_confidence_mapping_count: lowConfidence.length,
+    mapping,
+    skipped_official_events: skipped,
+    low_confidence_mappings: lowConfidence
   };
 }
 
@@ -1199,7 +1369,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-8",
+    diagnostic_version: "deep-link-9",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
