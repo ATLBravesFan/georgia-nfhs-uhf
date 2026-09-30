@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T13:40:09.989Z",
+  "generated_at": "2026-09-30T13:50:07.376Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-3",
+  "diagnostic_version": "deep-link-4",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -20,10 +20,10 @@
   "summary": {
     "samples_tested": 41,
     "search_api_successes": 41,
-    "strong_official_matches": 15,
-    "near_exact_metadata_matches": 15,
-    "strong_matches_with_unity_event": 15,
-    "provider_number_vs_official_start_pearson": 0.501489
+    "strong_official_matches": 36,
+    "near_exact_metadata_matches": 36,
+    "strong_matches_with_unity_event": 36,
+    "provider_number_vs_official_start_pearson": 0.415399
   },
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
@@ -32,7 +32,11 @@
     "2026-09-29T16:00:00.000Z": [
       3343
     ],
+    "2026-09-29T19:20:00.000Z": [
+      3354
+    ],
     "2026-09-29T19:45:00.000Z": [
+      3370,
       3378,
       3386,
       3395
@@ -42,14 +46,35 @@
     ],
     "2026-09-29T20:00:00.000Z": [
       3411,
+      3419,
       3427,
       3436,
+      3444,
       3452,
+      3455,
+      3460,
       3477,
+      3485,
       3493,
       3501,
+      3509,
+      3518,
+      3526,
+      3534,
+      3542,
       3550,
-      3596
+      3552,
+      3559,
+      3567,
+      3575,
+      3591,
+      3596,
+      3600,
+      3608,
+      3616
+    ],
+    "2026-09-29T21:00:00.000Z": [
+      3572
     ]
   },
   "rows": [
@@ -64,7 +89,29 @@
         "added": 1789236627
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Kealakehe",
+        "Kea'au",
+        "Kealakehe Kea'au"
+      ],
+      "search_attempts": [
+        {
+          "term": "Kealakehe",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Kea'au",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Kealakehe Kea'au",
+          "ok": true,
+          "item_count": 10
+        }
+      ],
+      "unique_candidate_count": 49,
       "best_match": {
         "event_key": "gamc90837e6b4",
         "event_title": null,
@@ -114,24 +161,46 @@
         "added": 1789236623
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Hart",
+        "Fremont",
+        "Hart Fremont"
+      ],
+      "search_attempts": [
+        {
+          "term": "Hart",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Fremont",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Hart Fremont",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 61,
       "best_match": {
-        "event_key": "gam111ed285b7",
+        "event_key": "gam5b455736d2",
         "event_title": null,
         "sport": "Basketball",
-        "event_start": "2028-01-11T22:30:00.000Z",
+        "event_start": "2026-12-15T22:30:00.000Z",
         "publisher_name": "MHSAA",
         "publisher_slug": "hart-high-school-hart-mi",
         "association": "MHSAA",
-        "broadcast_key": "bdc35e763e85c",
-        "broadcast_game_key": "gam111ed285b7",
-        "broadcast_start": "2028-01-11T22:30:00.000Z",
+        "broadcast_key": "bdc9b05395a4d",
+        "broadcast_game_key": "gam5b455736d2",
+        "broadcast_start": "2026-12-15T22:30:00.000Z",
         "broadcast_status": "scheduled",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Fremont High School vs. Hart High School",
-        "view_url": "http://www.nfhsnetwork.com/events/hart-high-school-hart-mi/gam111ed285b7",
+        "view_url": "http://www.nfhsnetwork.com/events/hart-high-school-hart-mi/gam5b455736d2",
         "text_score": 1,
-        "minutes_apart": 676140,
+        "minutes_apart": 111660,
         "combined_score": 1
       },
       "strong_match": false,
@@ -148,7 +217,17 @@
         "added": 1789236620
       },
       "search_ok": true,
-      "search_item_count": 1,
+      "search_terms": [
+        "September 29th Episode 2026 Georgia"
+      ],
+      "search_attempts": [
+        {
+          "term": "September 29th Episode 2026 Georgia",
+          "ok": true,
+          "item_count": 1
+        }
+      ],
+      "unique_candidate_count": 1,
       "best_match": {
         "event_key": "evteab09ef1f5",
         "event_title": null,
@@ -198,7 +277,29 @@
         "added": 1789236619
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "KIPP Atlanta Collegiate",
+        "Wesleyan",
+        "KIPP Atlanta Wesleyan"
+      ],
+      "search_attempts": [
+        {
+          "term": "KIPP Atlanta Collegiate",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Wesleyan",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "KIPP Atlanta Wesleyan",
+          "ok": true,
+          "item_count": 4
+        }
+      ],
+      "unique_candidate_count": 52,
       "best_match": {
         "event_key": "gam59655fe349",
         "event_title": null,
@@ -232,28 +333,66 @@
         "added": 1789236614
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Rising Sun",
+        "Bel Air",
+        "Rising Sun Bel Air"
+      ],
+      "search_attempts": [
+        {
+          "term": "Rising Sun",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Bel Air",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Rising Sun Bel Air",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 71,
       "best_match": {
-        "event_key": "gam4c1596a8b5",
+        "event_key": "gam63f4148132",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-19T22:30:00.000Z",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T19:20:00.000Z",
         "publisher_name": "MPSSAA",
-        "publisher_slug": "perryville-high-school-perryville-md",
+        "publisher_slug": "bel-air-high-school-bel-air-md",
         "association": "MPSSAA",
-        "broadcast_key": "bdc6276470f04",
-        "broadcast_game_key": "gam4c1596a8b5",
-        "broadcast_start": "2027-01-19T22:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc4ca639a7f8",
+        "broadcast_game_key": "gam63f4148132",
+        "broadcast_start": "2026-09-29T19:20:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Rising Sun High School vs. Perryville High School",
-        "view_url": "http://www.nfhsnetwork.com/events/perryville-high-school-perryville-md/gam4c1596a8b5",
-        "text_score": 0.5867,
-        "minutes_apart": 161470,
-        "combined_score": 0.5867
+        "broadcast_subheadline": "Rising Sun High School vs. Bel Air High School",
+        "view_url": "http://www.nfhsnetwork.com/events/bel-air-high-school-bel-air-md/gam63f4148132",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam63f4148132",
+        "local_start_time": "2026-09-29T15:20:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Bel Air",
+        "publisher_key": "pub7a290df159",
+        "publisher_name": "MPSSAA: Bel Air High School, Bel Air, MD",
+        "broadcast_key": "bdc4ca639a7f8",
+        "game_key": "gam63f4148132",
+        "status": "complete",
+        "pixellot_event_id": "6aba873c49aa737eb0da959e",
+        "pixellot_id": "688b6e42d753a05c0ab22cae",
+        "pixellot_key": "pxl14c63578e9",
+        "producer_key": "pdcf3ccf1c562",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -266,7 +405,29 @@
         "added": 1789236610
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Shrewsbury",
+        "Doherty Memorial",
+        "Shrewsbury Doherty Memorial"
+      ],
+      "search_attempts": [
+        {
+          "term": "Shrewsbury",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Doherty Memorial",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Shrewsbury Doherty Memorial",
+          "ok": true,
+          "item_count": 9
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
         "event_key": "gam1b25c3f7b4",
         "event_title": null,
@@ -300,28 +461,66 @@
         "added": 1789236606
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Greeley West",
+        "Poudre",
+        "Greeley West Poudre"
+      ],
+      "search_attempts": [
+        {
+          "term": "Greeley West",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Poudre",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Greeley West Poudre",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 71,
       "best_match": {
-        "event_key": "gamd10eea1985",
+        "event_key": "gam0a34fd5990",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-02-13T00:30:00.000Z",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T19:45:00.000Z",
         "publisher_name": "CHSAA",
-        "publisher_slug": "greeley-west-high-school-greeley-co",
+        "publisher_slug": "poudre-high-school-fort-collins-co",
         "association": "CHSAA",
-        "broadcast_key": "bdc34986706e1",
-        "broadcast_game_key": "gamd10eea1985",
-        "broadcast_start": "2027-02-13T00:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdce5b14ab8e6",
+        "broadcast_game_key": "gam0a34fd5990",
+        "broadcast_start": "2026-09-29T19:45:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Poudre High School vs. Greeley West High School",
-        "view_url": "http://www.nfhsnetwork.com/events/greeley-west-high-school-greeley-co/gamd10eea1985",
-        "text_score": 1,
-        "minutes_apart": 196125,
-        "combined_score": 1
+        "broadcast_subheadline": "Greeley West High School vs. Poudre High School",
+        "view_url": "http://www.nfhsnetwork.com/events/poudre-high-school-fort-collins-co/gam0a34fd5990",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam0a34fd5990",
+        "local_start_time": "2026-09-29T13:45:00.000-06:00",
+        "state_name": "Colorado",
+        "city": "Fort Collins",
+        "publisher_key": "8ff91120ce",
+        "publisher_name": "CHSAA: Poudre High School, Fort Collins, CO",
+        "broadcast_key": "bdce5b14ab8e6",
+        "game_key": "gam0a34fd5990",
+        "status": "complete",
+        "pixellot_event_id": "6ab2a88b7ee2b142895ebe0a",
+        "pixellot_id": "6880633a67c7a8c86890d8ac",
+        "pixellot_key": "pxl92b14606a0",
+        "producer_key": "pdc58d60434ef",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -334,7 +533,17 @@
         "added": 1789236591
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Tradition Preparatory"
+      ],
+      "search_attempts": [
+        {
+          "term": "Tradition Preparatory",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 25,
       "best_match": {
         "event_key": "gam42f6a9cabe",
         "event_title": null,
@@ -384,7 +593,29 @@
         "added": 1789236587
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Waterbury Career Academy",
+        "Naugatuck",
+        "Waterbury Career Naugatuck"
+      ],
+      "search_attempts": [
+        {
+          "term": "Waterbury Career Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Naugatuck",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Waterbury Career Naugatuck",
+          "ok": true,
+          "item_count": 9
+        }
+      ],
+      "unique_candidate_count": 56,
       "best_match": {
         "event_key": "gam750b34bae4",
         "event_title": null,
@@ -434,7 +665,29 @@
         "added": 1789236583
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Audubon",
+        "Riverside",
+        "Audubon Riverside"
+      ],
+      "search_attempts": [
+        {
+          "term": "Audubon",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Riverside",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Audubon Riverside",
+          "ok": true,
+          "item_count": 4
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
         "event_key": "gamfa82b98af2",
         "event_title": null,
@@ -484,7 +737,29 @@
         "added": 1789236579
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "North Hunterdon",
+        "Mount Saint Mary Academy",
+        "North Hunterdon Mount Saint"
+      ],
+      "search_attempts": [
+        {
+          "term": "North Hunterdon",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Mount Saint Mary Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "North Hunterdon Mount Saint",
+          "ok": true,
+          "item_count": 4
+        }
+      ],
+      "unique_candidate_count": 48,
       "best_match": {
         "event_key": "gama43ba13ce6",
         "event_title": null,
@@ -534,7 +809,29 @@
         "added": 1789236575
       },
       "search_ok": true,
-      "search_item_count": 17,
+      "search_terms": [
+        "Hampden Academy",
+        "Messalonskee",
+        "Hampden Academy Messalonskee"
+      ],
+      "search_attempts": [
+        {
+          "term": "Hampden Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Messalonskee",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Hampden Academy Messalonskee",
+          "ok": true,
+          "item_count": 17
+        }
+      ],
+      "unique_candidate_count": 62,
       "best_match": {
         "event_key": "gam028a6b98b5",
         "event_title": null,
@@ -584,28 +881,66 @@
         "added": 1789236571
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Blessed Trinity",
+        "Redeemer Christian",
+        "Blessed Trinity Redeemer Christian"
+      ],
+      "search_attempts": [
+        {
+          "term": "Blessed Trinity",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Redeemer Christian",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Blessed Trinity Redeemer Christian",
+          "ok": true,
+          "item_count": 7
+        }
+      ],
+      "unique_candidate_count": 56,
       "best_match": {
-        "event_key": "gam554d8a387e",
+        "event_key": "gam0baae7a751",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-23T17:30:00.000Z",
-        "publisher_name": "GHSA",
-        "publisher_slug": "blessed-trinity-high-school-roswell-ga",
-        "association": "GHSA",
-        "broadcast_key": "bdc13eb84bd2a",
-        "broadcast_game_key": "gam554d8a387e",
-        "broadcast_start": "2027-01-23T17:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "FHSAA",
+        "publisher_slug": "redeemer-christian-school-ocala-fl",
+        "association": "FHSAA",
+        "broadcast_key": "bdcafbd305347",
+        "broadcast_game_key": "gam0baae7a751",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Mount Pisgah Christian School vs. Blessed Trinity Catholic High School",
-        "view_url": "http://www.nfhsnetwork.com/events/blessed-trinity-high-school-roswell-ga/gam554d8a387e",
-        "text_score": 0.675,
-        "minutes_apart": 166890,
-        "combined_score": 0.675
+        "broadcast_subheadline": "Blessed Trinity School vs. Redeemer Christian School",
+        "view_url": "http://www.nfhsnetwork.com/events/redeemer-christian-school-ocala-fl/gam0baae7a751",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam0baae7a751",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Florida",
+        "city": "Ocala",
+        "publisher_key": "5c5b19d673",
+        "publisher_name": "FHSAA: Redeemer Christian School, Ocala, FL",
+        "broadcast_key": "bdcafbd305347",
+        "game_key": "gam0baae7a751",
+        "status": "complete",
+        "pixellot_event_id": "6a846338cb513137f06fe165",
+        "pixellot_id": "5d959f2111655b0795cd2881",
+        "pixellot_key": "pxlbb34517b4a",
+        "producer_key": "pdc753996d48c",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -618,7 +953,29 @@
         "added": 1789236567
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Edward Little",
+        "Biddeford",
+        "Edward Little Biddeford"
+      ],
+      "search_attempts": [
+        {
+          "term": "Edward Little",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Biddeford",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Edward Little Biddeford",
+          "ok": true,
+          "item_count": 3
+        }
+      ],
+      "unique_candidate_count": 51,
       "best_match": {
         "event_key": "gam0f59408b73",
         "event_title": null,
@@ -668,7 +1025,29 @@
         "added": 1789236562
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "James M. Bennett",
+        "Queen Anne's",
+        "James M. Queen Anne's"
+      ],
+      "search_attempts": [
+        {
+          "term": "James M. Bennett",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Queen Anne's",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "James M. Queen Anne's",
+          "ok": true,
+          "item_count": 16
+        }
+      ],
+      "unique_candidate_count": 58,
       "best_match": {
         "event_key": "gam189de43d85",
         "event_title": null,
@@ -718,28 +1097,66 @@
         "added": 1789236558
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Eastern Technical",
+        "Dundalk",
+        "Eastern Technical Dundalk"
+      ],
+      "search_attempts": [
+        {
+          "term": "Eastern Technical",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Dundalk",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Eastern Technical Dundalk",
+          "ok": true,
+          "item_count": 16
+        }
+      ],
+      "unique_candidate_count": 60,
       "best_match": {
-        "event_key": "gam915f2465b1",
+        "event_key": "gam25b130cbd1",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-22T21:00:00.000Z",
+        "sport": "Flag Football",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "MPSSAA",
-        "publisher_slug": "eastern-technical-high-school-baltimore-md",
+        "publisher_slug": "dundalk-high-school-baltimore-md",
         "association": "MPSSAA",
-        "broadcast_key": "bdc97ea3b8fe1",
-        "broadcast_game_key": "gam915f2465b1",
-        "broadcast_start": "2027-01-22T21:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc392f4314f7",
+        "broadcast_game_key": "gam25b130cbd1",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Dundalk High School vs. Eastern Technical High School",
-        "view_url": "http://www.nfhsnetwork.com/events/eastern-technical-high-school-baltimore-md/gam915f2465b1",
-        "text_score": 1,
-        "minutes_apart": 165660,
-        "combined_score": 1
+        "broadcast_subheadline": "Eastern Technical High School vs. Dundalk High School",
+        "view_url": "http://www.nfhsnetwork.com/events/dundalk-high-school-baltimore-md/gam25b130cbd1",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam25b130cbd1",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Dundalk",
+        "publisher_key": "6d841a155b",
+        "publisher_name": "MPSSAA: Dundalk High School, Dundalk, MD",
+        "broadcast_key": "bdc392f4314f7",
+        "game_key": "gam25b130cbd1",
+        "status": "complete",
+        "pixellot_event_id": "6aa720cb270acb9a0ed1689d",
+        "pixellot_id": "5d822a95b3955207afd3886f",
+        "pixellot_key": "pxl27c43faad7",
+        "producer_key": "pdc2a2972488e",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -752,7 +1169,29 @@
         "added": 1789236554
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Barnstable",
+        "Bridgewater-Raynham Reg",
+        "Barnstable Bridgewater-Raynham Reg"
+      ],
+      "search_attempts": [
+        {
+          "term": "Barnstable",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Bridgewater-Raynham Reg",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Barnstable Bridgewater-Raynham Reg",
+          "ok": true,
+          "item_count": 23
+        }
+      ],
+      "unique_candidate_count": 56,
       "best_match": {
         "event_key": "gam2a81770b90",
         "event_title": null,
@@ -802,28 +1241,66 @@
         "added": 1789236552
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Long County",
+        "St. Vincent's Academy",
+        "Long County St. Vincent's"
+      ],
+      "search_attempts": [
+        {
+          "term": "Long County",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "St. Vincent's Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Long County St. Vincent's",
+          "ok": true,
+          "item_count": 4
+        }
+      ],
+      "unique_candidate_count": 52,
       "best_match": {
-        "event_key": "gama23a754d94",
+        "event_key": "gam302604b4e5",
         "event_title": null,
-        "sport": "Flag Football",
-        "event_start": "2026-11-09T22:00:00.000Z",
-        "publisher_name": "Savannah-Chatham County Public School District, Savannah, GA",
-        "publisher_slug": "savannahchatham-county-public-school-district-savannah-ga",
-        "association": null,
-        "broadcast_key": "bdce1f2d2fe7c",
-        "broadcast_game_key": "gama23a754d94",
-        "broadcast_start": "2026-11-09T22:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "st-vincents-academy-savannah-ga",
+        "association": "GHSA",
+        "broadcast_key": "bdc4829bf3439",
+        "broadcast_game_key": "gam302604b4e5",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Long County High School vs. Savannah Arts Academy",
-        "view_url": "http://www.nfhsnetwork.com/events/savannahchatham-county-public-school-district-savannah-ga/gama23a754d94",
-        "text_score": 0.675,
-        "minutes_apart": 59160,
-        "combined_score": 0.675
+        "broadcast_subheadline": "Long County High School vs. St. Vincent's Academy",
+        "view_url": "http://www.nfhsnetwork.com/events/st-vincents-academy-savannah-ga/gam302604b4e5",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam302604b4e5",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Georgia",
+        "city": "Savannah",
+        "publisher_key": "07301779ab",
+        "publisher_name": "GHSA: St. Vincent's Academy, Savannah, GA",
+        "broadcast_key": "bdc4829bf3439",
+        "game_key": "gam302604b4e5",
+        "status": "complete",
+        "pixellot_event_id": "6aba5ebbec24bdd84f53849b",
+        "pixellot_id": "5cdd69deabb18c07c35a55bd",
+        "pixellot_key": "pxl72de96cdc6",
+        "producer_key": "pdc0361e549b7",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -836,28 +1313,66 @@
         "added": 1789236550
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Tallwood",
+        "First Colonial",
+        "Tallwood First Colonial"
+      ],
+      "search_attempts": [
+        {
+          "term": "Tallwood",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "First Colonial",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Tallwood First Colonial",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 71,
       "best_match": {
-        "event_key": "gam11258a1eb9",
+        "event_key": "gam37c5d356bb",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-15T22:30:00.000Z",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "VHSL",
         "publisher_slug": "first-colonial-high-school-virginia-beach-va",
         "association": "VHSL",
-        "broadcast_key": "bdc03516d854e",
-        "broadcast_game_key": "gam11258a1eb9",
-        "broadcast_start": "2027-01-15T22:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc390b0765d8",
+        "broadcast_game_key": "gam37c5d356bb",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Tallwood High School vs. First Colonial High School",
-        "view_url": "http://www.nfhsnetwork.com/events/first-colonial-high-school-virginia-beach-va/gam11258a1eb9",
+        "view_url": "http://www.nfhsnetwork.com/events/first-colonial-high-school-virginia-beach-va/gam37c5d356bb",
         "text_score": 0.97,
-        "minutes_apart": 155670,
-        "combined_score": 0.97
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam37c5d356bb",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Virginia",
+        "city": "Virginia Beach",
+        "publisher_key": "265122131a",
+        "publisher_name": "VHSL: First Colonial High School, Virginia Beach, VA",
+        "broadcast_key": "bdc390b0765d8",
+        "game_key": "gam37c5d356bb",
+        "status": "complete",
+        "pixellot_event_id": "6a3c2978826709297bc98bf5",
+        "pixellot_id": "5e00830addc7ad6d771b8126",
+        "pixellot_key": "pxl7ea2e5ec7c",
+        "producer_key": "pdc1143981c0f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -870,7 +1385,29 @@
         "added": 1789236546
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Emmanuel Christian Academy",
+        "Watkinson",
+        "Emmanuel Christian Watkinson"
+      ],
+      "search_attempts": [
+        {
+          "term": "Emmanuel Christian Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Watkinson",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Emmanuel Christian Watkinson",
+          "ok": true,
+          "item_count": 0
+        }
+      ],
+      "unique_candidate_count": 50,
       "best_match": {
         "event_key": "gam9227672994",
         "event_title": null,
@@ -904,7 +1441,29 @@
         "added": 1789236541
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Winter Park HS",
+        "Olympia",
+        "Winter Park Olympia"
+      ],
+      "search_attempts": [
+        {
+          "term": "Winter Park HS",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Olympia",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Winter Park Olympia",
+          "ok": true,
+          "item_count": 15
+        }
+      ],
+      "unique_candidate_count": 61,
       "best_match": {
         "event_key": "gam4a34445be4",
         "event_title": null,
@@ -954,28 +1513,66 @@
         "added": 1789236537
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Windsor Locks",
+        "Bolton",
+        "Windsor Locks Bolton"
+      ],
+      "search_attempts": [
+        {
+          "term": "Windsor Locks",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Bolton",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Windsor Locks Bolton",
+          "ok": true,
+          "item_count": 5
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
-        "event_key": "gam5bfe521274",
+        "event_key": "gam51670877ef",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-11T23:00:00.000Z",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "CIAC",
         "publisher_slug": "bolton-high-school-bolton-ct",
         "association": "CIAC",
-        "broadcast_key": "bdc4ff1be97d1",
-        "broadcast_game_key": "gam5bfe521274",
-        "broadcast_start": "2027-01-11T23:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc07f54c6933",
+        "broadcast_game_key": "gam51670877ef",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Windsor Locks High School vs. Bolton High School",
-        "view_url": "http://www.nfhsnetwork.com/events/bolton-high-school-bolton-ct/gam5bfe521274",
+        "view_url": "http://www.nfhsnetwork.com/events/bolton-high-school-bolton-ct/gam51670877ef",
         "text_score": 0.97,
-        "minutes_apart": 149940,
-        "combined_score": 0.97
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam51670877ef",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Connecticut",
+        "city": "Bolton",
+        "publisher_key": "pub0ebe1831cd",
+        "publisher_name": "CIAC: Bolton High School, Bolton, CT",
+        "broadcast_key": "bdc07f54c6933",
+        "game_key": "gam51670877ef",
+        "status": "complete",
+        "pixellot_event_id": "6a2c26976211d625cce2dced",
+        "pixellot_id": "63b18e8fd28c80ba88f7472f",
+        "pixellot_key": "pxl315d480650",
+        "producer_key": "pdc26a8828ffa",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -988,7 +1585,29 @@
         "added": 1789236533
       },
       "search_ok": true,
-      "search_item_count": 20,
+      "search_terms": [
+        "The Greene",
+        "Berean Christian",
+        "The Greene Berean Christian"
+      ],
+      "search_attempts": [
+        {
+          "term": "The Greene",
+          "ok": true,
+          "item_count": 21
+        },
+        {
+          "term": "Berean Christian",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "The Greene Berean Christian",
+          "ok": true,
+          "item_count": 2
+        }
+      ],
+      "unique_candidate_count": 44,
       "best_match": {
         "event_key": "gam596dd5aeec",
         "event_title": null,
@@ -1038,7 +1657,29 @@
         "added": 1789236529
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "SEED of Maryland",
+        "Edmondson-Westside",
+        "SEED of Edmondson-Westside"
+      ],
+      "search_attempts": [
+        {
+          "term": "SEED of Maryland",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Edmondson-Westside",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "SEED of Edmondson-Westside",
+          "ok": true,
+          "item_count": 5
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
         "event_key": "gam63614100d0",
         "event_title": null,
@@ -1088,28 +1729,66 @@
         "added": 1789236525
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Floyd E. Kellam",
+        "Ocean Lakes",
+        "Floyd E. Ocean Lakes"
+      ],
+      "search_attempts": [
+        {
+          "term": "Floyd E. Kellam",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Ocean Lakes",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Floyd E. Ocean Lakes",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 67,
       "best_match": {
-        "event_key": "gam096062a619",
+        "event_key": "gam6b75e5d667",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-02-05T22:30:00.000Z",
+        "sport": "Field Hockey",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "VHSL",
-        "publisher_slug": "floyd-e-kellam-high-school-virginia-beach-va",
+        "publisher_slug": "ocean-lakes-high-school-virginia-beach-va",
         "association": "VHSL",
-        "broadcast_key": "bdcade6f68ca8",
-        "broadcast_game_key": "gam096062a619",
-        "broadcast_start": "2027-02-05T22:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc8b940345ed",
+        "broadcast_game_key": "gam6b75e5d667",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Ocean Lakes High School vs. Floyd E. Kellam High School",
-        "view_url": "http://www.nfhsnetwork.com/events/floyd-e-kellam-high-school-virginia-beach-va/gam096062a619",
-        "text_score": 1,
-        "minutes_apart": 185910,
-        "combined_score": 1
+        "broadcast_subheadline": "Floyd E. Kellam High School vs. Ocean Lakes High School",
+        "view_url": "http://www.nfhsnetwork.com/events/ocean-lakes-high-school-virginia-beach-va/gam6b75e5d667",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam6b75e5d667",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Virginia",
+        "city": "Virginia Beach",
+        "publisher_key": "86c894e2b7",
+        "publisher_name": "VHSL: Ocean Lakes High School, Virginia Beach, VA",
+        "broadcast_key": "bdc8b940345ed",
+        "game_key": "gam6b75e5d667",
+        "status": "complete",
+        "pixellot_event_id": "6a4fa40b4849f948d1238e89",
+        "pixellot_id": "605c4dd3b746557c3a760944",
+        "pixellot_key": "pxl8445194cef",
+        "producer_key": "pdc547853f20f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1122,28 +1801,66 @@
         "added": 1789236520
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Queen Anne's",
+        "Stephen Decatur",
+        "Queen Anne's Stephen Decatur"
+      ],
+      "search_attempts": [
+        {
+          "term": "Queen Anne's",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Stephen Decatur",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Queen Anne's Stephen Decatur",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 67,
       "best_match": {
-        "event_key": "gam75a76fb311",
+        "event_key": "gam81dfaa58ea",
         "event_title": null,
-        "sport": "Field Hockey",
-        "event_start": "2026-10-12T20:00:00.000Z",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "MPSSAA",
-        "publisher_slug": "queen-annes-high-school-centreville-md",
+        "publisher_slug": "stephen-decatur-high-school-berlin-md",
         "association": "MPSSAA",
-        "broadcast_key": "bdc9b9449d134",
-        "broadcast_game_key": "gam75a76fb311",
-        "broadcast_start": "2026-10-12T20:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdce8b113397e",
+        "broadcast_game_key": "gam81dfaa58ea",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "St. Michaels High School vs. Queen Anne's High School",
-        "view_url": "http://www.nfhsnetwork.com/events/queen-annes-high-school-centreville-md/gam75a76fb311",
-        "text_score": 0.5867,
-        "minutes_apart": 18720,
-        "combined_score": 0.5867
+        "broadcast_subheadline": "Queen Anne's High School vs. Stephen Decatur High School",
+        "view_url": "http://www.nfhsnetwork.com/events/stephen-decatur-high-school-berlin-md/gam81dfaa58ea",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam81dfaa58ea",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Berlin",
+        "publisher_key": "pub01e7852835",
+        "publisher_name": "MPSSAA: Stephen Decatur High School, Berlin, MD",
+        "broadcast_key": "bdce8b113397e",
+        "game_key": "gam81dfaa58ea",
+        "status": "complete",
+        "pixellot_event_id": null,
+        "pixellot_id": null,
+        "pixellot_key": null,
+        "producer_key": "pdcfa450720d0",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1156,28 +1873,66 @@
         "added": 1789236516
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Smyrna",
+        "Caesar Rodney",
+        "Smyrna Caesar Rodney"
+      ],
+      "search_attempts": [
+        {
+          "term": "Smyrna",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Caesar Rodney",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Smyrna Caesar Rodney",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 72,
       "best_match": {
-        "event_key": "gam8fcd5edb78",
+        "event_key": "gam8a6a87467e",
         "event_title": null,
-        "sport": "Football",
-        "event_start": "2026-11-09T21:00:00.000Z",
+        "sport": "Field Hockey",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "DIAA",
-        "publisher_slug": "smyrna-high-school-smyrna-de",
+        "publisher_slug": "caesar-rodney-high-school-camden-de",
         "association": "DIAA",
-        "broadcast_key": "bdc263b1d65e5",
-        "broadcast_game_key": "gam8fcd5edb78",
-        "broadcast_start": "2026-11-09T21:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdcce1e880402",
+        "broadcast_game_key": "gam8a6a87467e",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Dover High School vs. Smyrna High School",
-        "view_url": "http://www.nfhsnetwork.com/events/smyrna-high-school-smyrna-de/gam8fcd5edb78",
-        "text_score": 0.425,
-        "minutes_apart": 59100,
-        "combined_score": 0.425
+        "broadcast_subheadline": "Smyrna High School vs. Caesar Rodney High School",
+        "view_url": "http://www.nfhsnetwork.com/events/caesar-rodney-high-school-camden-de/gam8a6a87467e",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam8a6a87467e",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Delaware",
+        "city": "Camden",
+        "publisher_key": "b91291952d",
+        "publisher_name": "DIAA: Caesar Rodney High School, Camden, DE",
+        "broadcast_key": "bdcce1e880402",
+        "game_key": "gam8a6a87467e",
+        "status": "complete",
+        "pixellot_event_id": "6a426b571ff77a10b7367808",
+        "pixellot_id": "690324147471f9186a668d08",
+        "pixellot_key": "pxle606776b3c",
+        "producer_key": "pdc4bfe566b42",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1190,28 +1945,66 @@
         "added": 1789236512
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Glendale",
+        "Windber Area",
+        "Glendale Windber Area"
+      ],
+      "search_attempts": [
+        {
+          "term": "Glendale",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Windber Area",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Glendale Windber Area",
+          "ok": true,
+          "item_count": 6
+        }
+      ],
+      "unique_candidate_count": 56,
       "best_match": {
-        "event_key": "gam77bc59160e",
+        "event_key": "gam972bdc8601",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-28T23:00:00.000Z",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "PIAA",
-        "publisher_slug": "glendale-high-school-flinton-pa",
+        "publisher_slug": "windber-area-high-school-windber-pa",
         "association": "PIAA",
-        "broadcast_key": "bdcda7d3918b6",
-        "broadcast_game_key": "gam77bc59160e",
-        "broadcast_start": "2027-01-28T23:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdcbe9fde3087",
+        "broadcast_game_key": "gam972bdc8601",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Curwensville Area High School vs. Glendale High School",
-        "view_url": "http://www.nfhsnetwork.com/events/glendale-high-school-flinton-pa/gam77bc59160e",
-        "text_score": 0.6167,
-        "minutes_apart": 174420,
-        "combined_score": 0.6167
+        "broadcast_subheadline": "Glendale High School vs. Windber Area High School",
+        "view_url": "http://www.nfhsnetwork.com/events/windber-area-high-school-windber-pa/gam972bdc8601",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam972bdc8601",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Pennsylvania",
+        "city": "Windber",
+        "publisher_key": "pubd4fa84f971",
+        "publisher_name": "PIAA: Windber Area High School, Windber, PA",
+        "broadcast_key": "bdcbe9fde3087",
+        "game_key": "gam972bdc8601",
+        "status": "complete",
+        "pixellot_event_id": "6a8b29343ad0e9c821b9cec2",
+        "pixellot_id": "5d304db372831507a09f5c44",
+        "pixellot_key": "pxl65214bfcd6",
+        "producer_key": "pdcf49725058b",
+        "ingest_point_fingerprint": "48c2e48ec154080e9ac0",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1224,28 +2017,66 @@
         "added": 1789236508
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Walt Whitman",
+        "Lindenhurst Senior",
+        "Walt Whitman Lindenhurst Senior"
+      ],
+      "search_attempts": [
+        {
+          "term": "Walt Whitman",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Lindenhurst Senior",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Walt Whitman Lindenhurst Senior",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 73,
       "best_match": {
-        "event_key": "gam06b0e14c0e",
+        "event_key": "gama623d930ac",
         "event_title": null,
-        "sport": "Flag Football",
-        "event_start": "2026-10-19T23:00:00.000Z",
-        "publisher_name": "MPSSAA",
-        "publisher_slug": "walt-whitman-high-school-bethesda-md",
-        "association": "MPSSAA",
-        "broadcast_key": "bdc758f3932ee",
-        "broadcast_game_key": "gam06b0e14c0e",
-        "broadcast_start": "2026-10-19T23:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "NYSPHSAA",
+        "publisher_slug": "lindenhurst-senior-high-school-lindenhurst-ny",
+        "association": "NYSPHSAA",
+        "broadcast_key": "bdce553913701",
+        "broadcast_game_key": "gama623d930ac",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Northwest High School vs. Walt Whitman High School",
-        "view_url": "http://www.nfhsnetwork.com/events/walt-whitman-high-school-bethesda-md/gam06b0e14c0e",
-        "text_score": 0.5867,
-        "minutes_apart": 28980,
-        "combined_score": 0.5867
+        "broadcast_subheadline": "Walt Whitman High School vs. Lindenhurst Senior High School",
+        "view_url": "http://www.nfhsnetwork.com/events/lindenhurst-senior-high-school-lindenhurst-ny/gama623d930ac",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gama623d930ac",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "New York",
+        "city": "LINDENHURST",
+        "publisher_key": "pub815387589d",
+        "publisher_name": "NYSPHSAA: Lindenhurst Senior High School, Lindenhurst, NY",
+        "broadcast_key": "bdce553913701",
+        "game_key": "gama623d930ac",
+        "status": "complete",
+        "pixellot_event_id": "6a50fc0d841d0bdeafad6ffd",
+        "pixellot_id": "6024045167cfa85108052672",
+        "pixellot_key": "pxl911d57afde",
+        "producer_key": "pdc471a9ff8b0",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1258,7 +2089,29 @@
         "added": 1789236504
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Nashua South",
+        "Dover",
+        "Nashua South Dover"
+      ],
+      "search_attempts": [
+        {
+          "term": "Nashua South",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Dover",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Nashua South Dover",
+          "ok": true,
+          "item_count": 10
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
         "event_key": "gamb3e7fa4b9e",
         "event_title": null,
@@ -1308,28 +2161,66 @@
         "added": 1789236503
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Randallstown",
+        "Woodlawn And",
+        "Randallstown Woodlawn And"
+      ],
+      "search_attempts": [
+        {
+          "term": "Randallstown",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Woodlawn And",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Randallstown Woodlawn And",
+          "ok": true,
+          "item_count": 1
+        }
+      ],
+      "unique_candidate_count": 50,
       "best_match": {
-        "event_key": "gamde1c405949",
+        "event_key": "gamb8ebe375ea",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-02-17T21:00:00.000Z",
+        "sport": "Badminton",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "MPSSAA",
         "publisher_slug": "woodlawn-high-school-baltimore-md",
         "association": "MPSSAA",
-        "broadcast_key": "bdc05184d7e99",
-        "broadcast_game_key": "gamde1c405949",
-        "broadcast_start": "2027-02-17T21:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdcdc7d03372e",
+        "broadcast_game_key": "gamb8ebe375ea",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Randallstown High School vs. Woodlawn High School",
-        "view_url": "http://www.nfhsnetwork.com/events/woodlawn-high-school-baltimore-md/gamde1c405949",
+        "view_url": "http://www.nfhsnetwork.com/events/woodlawn-high-school-baltimore-md/gamb8ebe375ea",
         "text_score": 0.97,
-        "minutes_apart": 203100,
-        "combined_score": 0.97
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamb8ebe375ea",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Gwynn Oak",
+        "publisher_key": "4f010406cd",
+        "publisher_name": "MPSSAA: Woodlawn High School, Gwynn Oak, MD",
+        "broadcast_key": "bdcdc7d03372e",
+        "game_key": "gamb8ebe375ea",
+        "status": "complete",
+        "pixellot_event_id": "6a7c641b161c7c16ae08f789",
+        "pixellot_id": "5dde7041ed3af71864d9c0cc",
+        "pixellot_key": "pxl0f6d887994",
+        "producer_key": "pdce96dd7cc24",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1342,28 +2233,66 @@
         "added": 1789236500
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Towson",
+        "Perry Hall",
+        "Towson Perry Hall"
+      ],
+      "search_attempts": [
+        {
+          "term": "Towson",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Perry Hall",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Towson Perry Hall",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 67,
       "best_match": {
-        "event_key": "gama0a3083797",
+        "event_key": "gamc2785418b1",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-29T21:00:00.000Z",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "MPSSAA",
         "publisher_slug": "perry-hall-high-school-baltimore-md",
         "association": "MPSSAA",
-        "broadcast_key": "bdce54de37b3a",
-        "broadcast_game_key": "gama0a3083797",
-        "broadcast_start": "2027-01-29T21:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc42c74f1d40",
+        "broadcast_game_key": "gamc2785418b1",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Towson High School vs. Perry Hall High School",
-        "view_url": "http://www.nfhsnetwork.com/events/perry-hall-high-school-baltimore-md/gama0a3083797",
+        "view_url": "http://www.nfhsnetwork.com/events/perry-hall-high-school-baltimore-md/gamc2785418b1",
         "text_score": 0.97,
-        "minutes_apart": 175740,
-        "combined_score": 0.97
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamc2785418b1",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Maryland",
+        "city": "Baltimore",
+        "publisher_key": "20b3e65505",
+        "publisher_name": "MPSSAA: Perry Hall High School, Nottingham, MD",
+        "broadcast_key": "bdc42c74f1d40",
+        "game_key": "gamc2785418b1",
+        "status": "complete",
+        "pixellot_event_id": "69a8cab12134d792b14ec03d",
+        "pixellot_id": "68b5934b7ae58e2d7595a3a1",
+        "pixellot_key": "pxl60545c0992",
+        "producer_key": "pdce697e3c088",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1376,28 +2305,66 @@
         "added": 1789236496
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Stratford",
+        "New Fairfield",
+        "Stratford New Fairfield"
+      ],
+      "search_attempts": [
+        {
+          "term": "Stratford",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "New Fairfield",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Stratford New Fairfield",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 71,
       "best_match": {
-        "event_key": "gam7ff3ef3306",
+        "event_key": "gamcae9cebd36",
         "event_title": null,
-        "sport": "Lacrosse",
-        "event_start": "2027-04-13T21:00:00.000Z",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "CIAC",
-        "publisher_slug": "stratford-high-school-stratford-ct",
+        "publisher_slug": "new-fairfield-high-school-new-fairfield-ct",
         "association": "CIAC",
-        "broadcast_key": "bdc428a3a697b",
-        "broadcast_game_key": "gam7ff3ef3306",
-        "broadcast_start": "2027-04-13T21:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc077470e59d",
+        "broadcast_game_key": "gamcae9cebd36",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "New Fairfield High School vs. Stratford High School",
-        "view_url": "http://www.nfhsnetwork.com/events/stratford-high-school-stratford-ct/gam7ff3ef3306",
-        "text_score": 1,
-        "minutes_apart": 282300,
-        "combined_score": 1
+        "broadcast_subheadline": "Stratford High School vs. New Fairfield High School",
+        "view_url": "http://www.nfhsnetwork.com/events/new-fairfield-high-school-new-fairfield-ct/gamcae9cebd36",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamcae9cebd36",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Connecticut",
+        "city": "New Fairfield",
+        "publisher_key": "03eb53e673",
+        "publisher_name": "CIAC: New Fairfield High School, New Fairfield, CT",
+        "broadcast_key": "bdc077470e59d",
+        "game_key": "gamcae9cebd36",
+        "status": "complete",
+        "pixellot_event_id": "698284d51bc87ebe758e9745",
+        "pixellot_id": "6157592e32646673a9f10a3a",
+        "pixellot_key": "pxlbb1065421d",
+        "producer_key": "pdc7fdb22f46c",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1410,28 +2377,66 @@
         "added": 1789236493
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Camden County",
+        "Savannah Country Day",
+        "Camden County Savannah Country"
+      ],
+      "search_attempts": [
+        {
+          "term": "Camden County",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Savannah Country Day",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Camden County Savannah Country",
+          "ok": true,
+          "item_count": 1
+        }
+      ],
+      "unique_candidate_count": 50,
       "best_match": {
-        "event_key": "gam3d7a36e18d",
+        "event_key": "gam3a5725b205",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-26T00:30:00.000Z",
-        "publisher_name": "NCHSAA",
-        "publisher_slug": "camden-county-high-school-camden-nc",
-        "association": "NCHSAA",
-        "broadcast_key": "bdcae9bd49a97",
-        "broadcast_game_key": "gam3d7a36e18d",
-        "broadcast_start": "2027-01-26T00:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T21:00:00.000Z",
+        "publisher_name": "GHSA",
+        "publisher_slug": "savannah-country-day-school-savannah-ga",
+        "association": "GHSA",
+        "broadcast_key": "bdc0d9b350026",
+        "broadcast_game_key": "gam3a5725b205",
+        "broadcast_start": "2026-09-29T21:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Away vs. Camden County High School",
-        "view_url": "http://www.nfhsnetwork.com/events/camden-county-high-school-camden-nc/gam3d7a36e18d",
-        "text_score": 0.5667,
-        "minutes_apart": 170190,
-        "combined_score": 0.5667
+        "broadcast_subheadline": "Camden County High School vs. Savannah Country Day School",
+        "view_url": "http://www.nfhsnetwork.com/events/savannah-country-day-school-savannah-ga/gam3a5725b205",
+        "text_score": 0.97,
+        "minutes_apart": 60,
+        "combined_score": 0.97
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gam3a5725b205",
+        "local_start_time": "2026-09-29T17:00:00.000-04:00",
+        "state_name": "Georgia",
+        "city": "Savannah",
+        "publisher_key": "pube39c298aee",
+        "publisher_name": "GHSA: Savannah Country Day School, Savannah, GA",
+        "broadcast_key": "bdc0d9b350026",
+        "game_key": "gam3a5725b205",
+        "status": "complete",
+        "pixellot_event_id": "6a301946d9d8df5f36c12292",
+        "pixellot_id": "5d9463f2942f6a07dbb6dd88",
+        "pixellot_key": "pxl6a10890d12",
+        "producer_key": "pdcea9b07dd74",
+        "ingest_point_fingerprint": "48c2e48ec154080e9ac0",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1444,28 +2449,66 @@
         "added": 1789236492
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Gorham",
+        "Colebrook Academy",
+        "Gorham Colebrook Academy"
+      ],
+      "search_attempts": [
+        {
+          "term": "Gorham",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Colebrook Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Gorham Colebrook Academy",
+          "ok": true,
+          "item_count": 5
+        }
+      ],
+      "unique_candidate_count": 48,
       "best_match": {
-        "event_key": "gamfe8025bb40",
+        "event_key": "gamd74c7ae4a6",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-01-25T22:00:00.000Z",
-        "publisher_name": "NHIAA",
-        "publisher_slug": "colebrook-academy-colebrook-nh",
-        "association": "NHIAA",
-        "broadcast_key": "bdc2e99db4aa5",
-        "broadcast_game_key": "gamfe8025bb40",
-        "broadcast_start": "2027-01-25T22:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "Northeast Sports Network",
+        "publisher_slug": "northeast-sports-network",
+        "association": null,
+        "broadcast_key": "bdcc641cae198",
+        "broadcast_game_key": "gamd74c7ae4a6",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
         "broadcast_subheadline": "Gorham High School vs. Colebrook Academy",
-        "view_url": "http://www.nfhsnetwork.com/events/colebrook-academy-colebrook-nh/gamfe8025bb40",
+        "view_url": "http://www.nfhsnetwork.com/events/northeast-sports-network/gamd74c7ae4a6",
         "text_score": 0.97,
-        "minutes_apart": 170040,
-        "combined_score": 0.97
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamd74c7ae4a6",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "New Hampshire",
+        "city": "Colebrook",
+        "publisher_key": "pubd40ea4be1e",
+        "publisher_name": "Northeast Sports Network",
+        "broadcast_key": "bdcc641cae198",
+        "game_key": "gamd74c7ae4a6",
+        "status": "complete",
+        "pixellot_event_id": null,
+        "pixellot_id": null,
+        "pixellot_key": null,
+        "producer_key": "pdca02e4d1f7f",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1478,8 +2521,48 @@
         "added": 1789236487
       },
       "search_ok": true,
-      "search_item_count": 0,
-      "best_match": null,
+      "search_terms": [
+        "None BCS",
+        "Christ's Church Academy - Part",
+        "None BCS Christ's Church"
+      ],
+      "search_attempts": [
+        {
+          "term": "None BCS",
+          "ok": true,
+          "item_count": 11
+        },
+        {
+          "term": "Christ's Church Academy - Part",
+          "ok": true,
+          "item_count": 0
+        },
+        {
+          "term": "None BCS Christ's Church",
+          "ok": true,
+          "item_count": 0
+        }
+      ],
+      "unique_candidate_count": 11,
+      "best_match": {
+        "event_key": "gama83031dfaf",
+        "event_title": null,
+        "sport": "Basketball",
+        "event_start": "2026-01-09T00:00:00.000Z",
+        "publisher_name": "NJSIAA",
+        "publisher_slug": "lakeland-regional-high-school-wanaque-nj",
+        "association": "NJSIAA",
+        "broadcast_key": "bdc76671adfef",
+        "broadcast_game_key": "gama83031dfaf",
+        "broadcast_start": "2026-01-09T00:00:00.000Z",
+        "broadcast_status": "complete",
+        "broadcast_is_live": null,
+        "broadcast_subheadline": "Bergen Arts and Science Charter School vs. Lakeland Regional High School",
+        "view_url": "http://www.nfhsnetwork.com/events/lakeland-regional-high-school-wanaque-nj/gama83031dfaf",
+        "text_score": 0,
+        "minutes_apart": 379920,
+        "combined_score": 0
+      },
       "strong_match": false,
       "unity": null
     },
@@ -1494,28 +2577,66 @@
         "added": 1789236483
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Essex",
+        "South Burlington",
+        "Essex South Burlington"
+      ],
+      "search_attempts": [
+        {
+          "term": "Essex",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "South Burlington",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Essex South Burlington",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 73,
       "best_match": {
-        "event_key": "gamc84c948175",
+        "event_key": "gamead52ea562",
         "event_title": null,
-        "sport": "Baseball",
-        "event_start": "2027-04-01T20:00:00.000Z",
-        "publisher_name": "NJSIAA",
-        "publisher_slug": "montclair-high-school-montclair-nj",
-        "association": "NJSIAA",
-        "broadcast_key": "bdc16fccdd930",
-        "broadcast_game_key": "gamc84c948175",
-        "broadcast_start": "2027-04-01T20:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Field Hockey",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "VPA",
+        "publisher_slug": "south-burlington-high-school-south-burlington-vt",
+        "association": "VPA",
+        "broadcast_key": "bdcf4d9fd5acc",
+        "broadcast_game_key": "gamead52ea562",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "West Essex Regional High School vs. Montclair High School",
-        "view_url": "http://www.nfhsnetwork.com/events/montclair-high-school-montclair-nj/gamc84c948175",
-        "text_score": 0.2833,
-        "minutes_apart": 264960,
-        "combined_score": 0.2833
+        "broadcast_subheadline": "Essex High School vs. South Burlington High School",
+        "view_url": "http://www.nfhsnetwork.com/events/south-burlington-high-school-south-burlington-vt/gamead52ea562",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamead52ea562",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Vermont",
+        "city": "South Burlington",
+        "publisher_key": "e47346b770",
+        "publisher_name": "VPA: South Burlington High School, South Burlington, VT",
+        "broadcast_key": "bdcf4d9fd5acc",
+        "game_key": "gamead52ea562",
+        "status": "complete",
+        "pixellot_event_id": "6a60fab763d63dda36d1c932",
+        "pixellot_id": "5fb63d5b2b9b771c75b46f66",
+        "pixellot_key": "pxl7e5c4fc4c8",
+        "producer_key": "pdc11b5092b8d",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1528,7 +2649,29 @@
         "added": 1789236481
       },
       "search_ok": true,
-      "search_item_count": 6,
+      "search_terms": [
+        "Frederica Academy",
+        "Bradwell Institute",
+        "Frederica Academy Bradwell Institute"
+      ],
+      "search_attempts": [
+        {
+          "term": "Frederica Academy",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Bradwell Institute",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Frederica Academy Bradwell Institute",
+          "ok": true,
+          "item_count": 7
+        }
+      ],
+      "unique_candidate_count": 52,
       "best_match": {
         "event_key": "gamee5d943f7a",
         "event_title": null,
@@ -1578,28 +2721,66 @@
         "added": 1789236479
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Guilford",
+        "Xavier",
+        "Guilford Xavier"
+      ],
+      "search_attempts": [
+        {
+          "term": "Guilford",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Xavier",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Guilford Xavier",
+          "ok": true,
+          "item_count": 22
+        }
+      ],
+      "unique_candidate_count": 70,
       "best_match": {
-        "event_key": "gam8927a1f295",
+        "event_key": "gamf18f429af3",
         "event_title": null,
-        "sport": "Volleyball",
-        "event_start": "2027-04-13T23:00:00.000Z",
-        "publisher_name": "IHSA",
-        "publisher_slug": "harlem-high-school-machesney-park-il",
-        "association": "IHSA",
-        "broadcast_key": "bdc029fa87582",
-        "broadcast_game_key": "gam8927a1f295",
-        "broadcast_start": "2027-04-13T23:00:00.000Z",
-        "broadcast_status": "scheduled",
+        "sport": "Soccer",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "CIAC",
+        "publisher_slug": "xavier-high-school-middletown-ct",
+        "association": "CIAC",
+        "broadcast_key": "bdc61ccd0acc5",
+        "broadcast_game_key": "gamf18f429af3",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Guilford High School vs. Harlem High School",
-        "view_url": "http://www.nfhsnetwork.com/events/harlem-high-school-machesney-park-il/gam8927a1f295",
-        "text_score": 0.45,
-        "minutes_apart": 282420,
-        "combined_score": 0.45
+        "broadcast_subheadline": "Guilford High School vs. Xavier High School",
+        "view_url": "http://www.nfhsnetwork.com/events/xavier-high-school-middletown-ct/gamf18f429af3",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamf18f429af3",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Connecticut",
+        "city": "Middletown",
+        "publisher_key": "d2a84698f3",
+        "publisher_name": "CIAC: Xavier High School, Middletown, CT",
+        "broadcast_key": "bdc61ccd0acc5",
+        "game_key": "gamf18f429af3",
+        "status": "complete",
+        "pixellot_event_id": "6ab15f82dd94fe18a8ae7878",
+        "pixellot_id": "6a292c707404e0733835dc6c",
+        "pixellot_key": "pxlb9da5cdd63",
+        "producer_key": "pdc8f2d202a19",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1612,28 +2793,66 @@
         "added": 1789236475
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Oxford",
+        "Clarkston",
+        "Oxford Clarkston"
+      ],
+      "search_attempts": [
+        {
+          "term": "Oxford",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Clarkston",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Oxford Clarkston",
+          "ok": true,
+          "item_count": 25
+        }
+      ],
+      "unique_candidate_count": 73,
       "best_match": {
-        "event_key": "gam2fcc09b33c",
+        "event_key": "gamf94ce65d6d",
         "event_title": null,
         "sport": "Soccer",
-        "event_start": "2027-04-10T00:30:00.000Z",
-        "publisher_name": "AHSAA",
-        "publisher_slug": "pell-city-high-school-pell-city-al",
-        "association": "AHSAA",
-        "broadcast_key": "bdcb0b08813a8",
-        "broadcast_game_key": "gam2fcc09b33c",
-        "broadcast_start": "2027-04-10T00:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "event_start": "2026-09-29T20:00:00.000Z",
+        "publisher_name": "MHSAA",
+        "publisher_slug": "clarkston-high-school-clarkston-mi",
+        "association": "MHSAA",
+        "broadcast_key": "bdca89f237b4e",
+        "broadcast_game_key": "gamf94ce65d6d",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Oxford High School vs. Pell City High School",
-        "view_url": "http://www.nfhsnetwork.com/events/pell-city-high-school-pell-city-al/gam2fcc09b33c",
-        "text_score": 0.425,
-        "minutes_apart": 276750,
-        "combined_score": 0.425
+        "broadcast_subheadline": "Oxford High School vs. Clarkston High School",
+        "view_url": "http://www.nfhsnetwork.com/events/clarkston-high-school-clarkston-mi/gamf94ce65d6d",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamf94ce65d6d",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Michigan",
+        "city": "Clarkston",
+        "publisher_key": "5a682b3349",
+        "publisher_name": "MHSAA: Clarkston High School, Clarkston, MI",
+        "broadcast_key": "bdca89f237b4e",
+        "game_key": "gamf94ce65d6d",
+        "status": "complete",
+        "pixellot_event_id": "6abaa7358afc786c9e06a99b",
+        "pixellot_id": "5f62362f194749c9e205777a",
+        "pixellot_key": "pxl2856482697",
+        "producer_key": "pdc19453043ae",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     },
     {
       "provider": {
@@ -1646,28 +2865,66 @@
         "added": 1789236471
       },
       "search_ok": true,
-      "search_item_count": 25,
+      "search_terms": [
+        "Lansing Christian",
+        "Lakewood",
+        "Lansing Christian Lakewood"
+      ],
+      "search_attempts": [
+        {
+          "term": "Lansing Christian",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Lakewood",
+          "ok": true,
+          "item_count": 25
+        },
+        {
+          "term": "Lansing Christian Lakewood",
+          "ok": true,
+          "item_count": 3
+        }
+      ],
+      "unique_candidate_count": 53,
       "best_match": {
-        "event_key": "game6d24819c2",
+        "event_key": "gamff3531129c",
         "event_title": null,
-        "sport": "Basketball",
-        "event_start": "2027-02-09T22:30:00.000Z",
+        "sport": "Volleyball",
+        "event_start": "2026-09-29T20:00:00.000Z",
         "publisher_name": "MHSAA",
-        "publisher_slug": "lansing-christian-high-school-lansing-mi",
+        "publisher_slug": "lakewood-high-school-lake-odessa-mi",
         "association": "MHSAA",
-        "broadcast_key": "bdcd0b5b086cf",
-        "broadcast_game_key": "game6d24819c2",
-        "broadcast_start": "2027-02-09T22:30:00.000Z",
-        "broadcast_status": "scheduled",
+        "broadcast_key": "bdc39809f1a25",
+        "broadcast_game_key": "gamff3531129c",
+        "broadcast_start": "2026-09-29T20:00:00.000Z",
+        "broadcast_status": "complete",
         "broadcast_is_live": null,
-        "broadcast_subheadline": "Laingsburg High School vs. Lansing Christian High School",
-        "view_url": "http://www.nfhsnetwork.com/events/lansing-christian-high-school-lansing-mi/game6d24819c2",
-        "text_score": 0.6167,
-        "minutes_apart": 191670,
-        "combined_score": 0.6167
+        "broadcast_subheadline": "Lansing Christian High School vs. Lakewood",
+        "view_url": "http://www.nfhsnetwork.com/events/lakewood-high-school-lake-odessa-mi/gamff3531129c",
+        "text_score": 0.97,
+        "minutes_apart": 0,
+        "combined_score": 1.32
       },
-      "strong_match": false,
-      "unity": null
+      "strong_match": true,
+      "unity": {
+        "event_key": "gamff3531129c",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "state_name": "Michigan",
+        "city": "Lake Odessa",
+        "publisher_key": "782e3d5644",
+        "publisher_name": "MHSAA: Lakewood, Lake Odessa, MI",
+        "broadcast_key": "bdc39809f1a25",
+        "game_key": "gamff3531129c",
+        "status": "complete",
+        "pixellot_event_id": "6abab0d2bdc20d2163f5b055",
+        "pixellot_id": "6659eb64d263c785e55231ff",
+        "pixellot_key": "pxl4832564a3e",
+        "producer_key": "pdc4300587094",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4",
+        "raw_playback_url_recorded": false
+      }
     }
   ]
 }
