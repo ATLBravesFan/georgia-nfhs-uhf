@@ -167,6 +167,45 @@ async function getProvider(){
   }).filter(Boolean);
   return {base,username,password,streams};
 }
+
+function runProcess(command,args,timeoutMs=5000){
+  return new Promise(resolve=>{
+    let settled=false;
+    const stdout=[];
+    const stderr=[];
+    const child=spawn(command,args,{stdio:["ignore","pipe","pipe"]});
+    const finish=v=>{if(settled)return; settled=true; resolve(v);};
+    const timer=setTimeout(()=>{try{child.kill("SIGKILL");}catch{}},timeoutMs);
+    child.stdout.on("data",b=>stdout.push(b));
+    child.stderr.on("data",b=>stderr.push(b));
+    child.on("error",err=>{clearTimeout(timer);finish({code:null,stdout:Buffer.concat(stdout),stderr:Buffer.concat(stderr).toString(),error:String(err?.message||err)});});
+    child.on("close",code=>{clearTimeout(timer);finish({code,stdout:Buffer.concat(stdout),stderr:Buffer.concat(stderr).toString()});});
+  });
+}
+
+async function curlIpv4QuickSample(url){
+  const started=Date.now();
+  const r=await runProcess("curl",[
+    "-4","-L",
+    "--connect-timeout","1",
+    "--max-time","1",
+    "--silent","--show-error",
+    "--user-agent","Mozilla/5.0 Georgia-NFHS-Sweep/1.0",
+    "--range","0-3760",
+    url
+  ],1800);
+  const bytes=r.stdout||Buffer.alloc(0);
+  return {
+    ok:bytes.length>0,
+    status:null,
+    latency_ms:Date.now()-started,
+    bytes,
+    content_type:null,
+    curl_exit_code:r.code,
+    error:r.stderr||r.error||null
+  };
+}
+
 async function main(){
   const official=await getOfficialMetadata(EVENT_ID);
   const provider=await getProvider();
@@ -181,7 +220,7 @@ async function main(){
       : Array.from({length:Math.max(0,END_SLOT-START_SLOT+1)},(_,i)=>START_SLOT+i)
   ).filter(x=>bySlot.has(x));
 
-  console.log(`Provider-only live probe for ${EVENT_ID}: ${FAST_SWEEP ? "full NFHS activity sweep 1-5000" : explicitSlots.length ? "explicit candidate slots" : `slots ${START_SLOT}-${END_SLOT}`} (${slots.length} total), sequentially.`);
+  console.log(`Provider-only live probe for ${EVENT_ID}: ${FAST_SWEEP ? "full NFHS activity sweep 1-5000" : explicitSlots.length ? "explicit candidate slots" : `slots ${START_SLOT}-${END_SLOT}`} (${slots.length} total), ${FAST_SWEEP ? "3-way IPv4 curl probe" : "sequential probe"}.`);
   console.log("Official NFHS video is NOT accessed. Only public event metadata and the user's authorized provider streams are used.");
 
   const results=[];
@@ -193,7 +232,7 @@ async function main(){
     const row=bySlot.get(slot);
     const ext=row.container_extension||"ts";
     const target=`${provider.base}/live/${encodeURIComponent(provider.username)}/${encodeURIComponent(provider.password)}/${row.stream_id}.${ext}`;
-    const got=await fetchLimitedBytes(target,SAMPLE_BYTES,500);
+    const got=FAST_SWEEP ? await curlIpv4QuickSample(target) : await fetchLimitedBytes(target,SAMPLE_BYTES,1500);
     const ts=got.ok?tsSummary(got.bytes):{is_ts:false,packet_count:0,pids:[]};
     const probe=(got.ok && !FAST_SWEEP)?await ffprobeSummary(got.bytes,slot):null;
     return {
@@ -238,7 +277,7 @@ async function main(){
       credentials_saved:false
     },
     target_official_event:official,
-    scan:{mode:FAST_SWEEP?"full_activity_sweep":explicitSlots.length?"explicit_slots":"range",start_slot:(FAST_SWEEP||explicitSlots.length)?null:START_SLOT,end_slot:(FAST_SWEEP||explicitSlots.length)?null:END_SLOT,explicit_slots:explicitSlots.length?slots:null,slots_probed:slots.length},
+    scan:{transport:FAST_SWEEP?"curl_ipv4_1s":"node_fetch",mode:FAST_SWEEP?"full_activity_sweep":explicitSlots.length?"explicit_slots":"range",start_slot:(FAST_SWEEP||explicitSlots.length)?null:START_SLOT,end_slot:(FAST_SWEEP||explicitSlots.length)?null:END_SLOT,explicit_slots:explicitSlots.length?slots:null,slots_probed:slots.length},
     totals:{active_slots:active.length,inactive_slots:results.length-active.length,ts_slots:active.filter(x=>x.ts?.is_ts).length},
     active_slots:active,
     all_results:FAST_SWEEP?active:results
