@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:55:13.672Z",
+  "generated_at": "2026-09-30T14:58:59.306Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-13",
+  "diagnostic_version": "deep-link-14",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1498882,
+      "total": 1498903,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498882,
+      "total": 1498904,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498882,
+    "returned_total": 1498904,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -21989,6 +21989,77 @@
       "same_producer": true,
       "same_ingest": true,
       "broadcast_keys_different": true
+    }
+  },
+  "clinch_broadcast_routing_probe": {
+    "purpose": "Compare event-specific Pixellot presets and broadcast API routing for the two Sep 29 Clinch County vs Brantley County broadcasts. Raw URLs, keys, and identifiers are not written.",
+    "rows": [
+      {
+        "event_key": "gamb8ad8195a3",
+        "local_start_time": "2026-09-29T16:00:00.000-04:00",
+        "preset_ok": false,
+        "preset_error": "401 Unauthorized: {\"message\":\"Unauthorized\",\"status\":401}",
+        "preset_response_type": "object",
+        "preset_identifier_fingerprints": [],
+        "preset_response_hash": null,
+        "broadcast_api_url_ok": true,
+        "broadcast_api_url_error": null,
+        "broadcast_api_url_structure": {
+          "response_hash": "adce7e02b0bc8dce9345",
+          "url_found": true,
+          "url_hash": "19dc6ecec4cca7a49eb2",
+          "protocol": "https:",
+          "hostname_hash": "6e5708933b8686ee5583",
+          "port": null,
+          "pathname_hash": "b88d000975fcc786c5eb",
+          "path_segment_hashes": [
+            "e88199c423228a456677",
+            "b774022c8e84041dcdc2"
+          ],
+          "query_keys": []
+        }
+      },
+      {
+        "event_key": "gamc34e8e3bfe",
+        "local_start_time": "2026-09-29T17:00:00.000-04:00",
+        "preset_ok": false,
+        "preset_error": "401 Unauthorized: {\"message\":\"Unauthorized\",\"status\":401}",
+        "preset_response_type": "object",
+        "preset_identifier_fingerprints": [],
+        "preset_response_hash": null,
+        "broadcast_api_url_ok": true,
+        "broadcast_api_url_error": null,
+        "broadcast_api_url_structure": {
+          "response_hash": "e348e5a312d9547bcbff",
+          "url_found": true,
+          "url_hash": "77ebeae6305aa4fe56c3",
+          "protocol": "https:",
+          "hostname_hash": "6e5708933b8686ee5583",
+          "port": null,
+          "pathname_hash": "b683dbd3ef7ef9394cb8",
+          "path_segment_hashes": [
+            "e88199c423228a456677",
+            "f48d891ea71b2fd392c0"
+          ],
+          "query_keys": []
+        }
+      }
+    ],
+    "comparison": {
+      "preset_response_hash_equal": false,
+      "preset_equal_identifier_paths": [],
+      "preset_different_identifier_paths": [],
+      "broadcast_api_url": {
+        "both_available": true,
+        "same_full_url_hash": false,
+        "same_hostname_hash": true,
+        "same_pathname_hash": false,
+        "same_path_segment_count": true,
+        "equal_path_segment_positions": [
+          0
+        ],
+        "query_keys_equal": true
+      }
     }
   },
   "official_start_groups_to_provider_numbers": {
