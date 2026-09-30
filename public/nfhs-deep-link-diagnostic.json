@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T15:12:58.010Z",
+  "generated_at": "2026-09-30T15:22:51.368Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-15",
+  "diagnostic_version": "deep-link-16",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1498955,
+      "total": 1499008,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498955,
+      "total": 1499009,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498955,
+    "returned_total": 1499009,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "af3422cfb2860525c90d",
+            "response_hash": "3214a497c3d9cc8973e2",
             "url_found": true,
-            "url_hash": "7dd4739bb800784d2288",
+            "url_hash": "cafe9e963d227e40b538",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "54af11dea30c6ba89f91",
+            "pathname_hash": "40a27871788260ab2fc9",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "1ee458bea74c9fc53ddc",
+              "b21057111b518b08fc3e",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "f51e5a130e4a06f4af9e",
+            "response_hash": "d36d154dcacb7b037051",
             "url_found": true,
-            "url_hash": "1e28014fb376e239bdf6",
+            "url_hash": "c195143402b8a8ca2331",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "32c02c96ff2e3b6223ac",
+            "pathname_hash": "4baa8548c1fb04120710",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "f88eae817e1b8285a6a1",
+              "d175acdb56e077dba64b",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "a13951977951bc6f6d5b",
+            "response_hash": "5b2f4ca09b44e1d38566",
             "url_found": true,
-            "url_hash": "c8c0450eb5e9364f42d7",
+            "url_hash": "a59262e3a99bbf5e5005",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "a60c9b38c061e117414b",
+            "pathname_hash": "ce754610c319f07e09fc",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "85bfe2e99359531e0158",
+              "80c4e7eb12183aeb9700",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -22601,6 +22601,66 @@
           }
         ]
       }
+    ]
+  },
+  "five_pm_slot_reuse_probe": {
+    "purpose": "Test whether the provider reuses the 4 PM slot base for the 5 PM NFHS event block by comparing exact official 5 PM feed indices to observed provider slots.",
+    "exact_5pm_event_count": 483,
+    "pages_fetched": 1,
+    "stopped_because": "passed_target_time",
+    "four_pm_reference_base": 3406,
+    "target_rows": [
+      {
+        "label": "clinch_brantley_5pm",
+        "event_key": "gamc34e8e3bfe",
+        "observed_provider_slot": 3552,
+        "found_in_exact_5pm_block": true,
+        "official_feed_index": 347,
+        "implied_provider_base": 3205,
+        "projected_slot_using_4pm_base_3406": 3753,
+        "projection_error_vs_observed": 201,
+        "official_event": {
+          "event_key": "gamc34e8e3bfe",
+          "sport": "Volleyball",
+          "publisher_slugs": [
+            "brantley-county-high-school-nahunta-ga"
+          ],
+          "associations": [
+            "GHSA"
+          ],
+          "subheadlines": [
+            "Clinch County High School vs. Brantley County High School"
+          ]
+        }
+      },
+      {
+        "label": "camden_savannah_5pm",
+        "event_key": "gam3a5725b205",
+        "observed_provider_slot": 3572,
+        "found_in_exact_5pm_block": true,
+        "official_feed_index": 99,
+        "implied_provider_base": 3473,
+        "projected_slot_using_4pm_base_3406": 3505,
+        "projection_error_vs_observed": -67,
+        "official_event": {
+          "event_key": "gam3a5725b205",
+          "sport": "Volleyball",
+          "publisher_slugs": [
+            "savannah-country-day-school-savannah-ga"
+          ],
+          "associations": [
+            "GHSA"
+          ],
+          "subheadlines": [
+            "Camden County High School vs. Savannah Country Day School"
+          ]
+        }
+      }
+    ],
+    "implied_bases_equal": false,
+    "implied_base_values": [
+      3205,
+      3473
     ]
   },
   "official_start_groups_to_provider_numbers": {
