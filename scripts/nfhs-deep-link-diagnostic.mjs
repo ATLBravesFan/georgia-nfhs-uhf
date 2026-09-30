@@ -197,12 +197,19 @@ async function getProvider() {
         core: providerCore(s.name || ""),
         provider_start: start?.toISO() || null,
         provider_day: start?.toISODate() || null,
-        added: Number(s.added || 0) || null
+        added: Number(s.added || 0) || null,
+        epg_channel_id: s.epg_channel_id || null,
+        custom_sid: s.custom_sid || null,
+        tv_archive: s.tv_archive ?? null,
+        tv_archive_duration: s.tv_archive_duration ?? null,
+        container_extension: s.container_extension || null,
+        direct_source_hash: sha20(s.direct_source),
+        has_direct_source: Boolean(s.direct_source)
       };
     })
     .sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
 
-  return { category, streams };
+  return { category, streams, base, auth };
 }
 
 function chooseSamples(streams) {
@@ -3235,6 +3242,129 @@ async function probeGlobalDayOrdering(providerStreams) {
   };
 }
 
+
+function maybeDecodeProviderText(value) {
+  if (value === null || value === undefined) return null;
+  let s = String(value).trim();
+  if (!s) return null;
+
+  // Xtream providers often base64-encode EPG title/description.
+  if (/^[A-Za-z0-9+/=]+$/.test(s) && s.length >= 8 && s.length % 4 === 0) {
+    try {
+      const decoded = Buffer.from(s, "base64").toString("utf8").trim();
+      if (decoded && !/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/.test(decoded)) {
+        return decoded;
+      }
+    } catch {}
+  }
+
+  return s;
+}
+
+function compactEpgListings(payload) {
+  const list =
+    (Array.isArray(payload?.epg_listings) && payload.epg_listings) ||
+    (Array.isArray(payload?.epg_data) && payload.epg_data) ||
+    (Array.isArray(payload) && payload) ||
+    [];
+
+  return list.slice(0, 40).map(x => ({
+    id: x?.id ?? null,
+    epg_id: x?.epg_id ?? null,
+    channel_id: x?.channel_id ?? null,
+    title: maybeDecodeProviderText(x?.title),
+    description: maybeDecodeProviderText(x?.description),
+    start: x?.start ?? null,
+    end: x?.end ?? null,
+    start_timestamp: x?.start_timestamp ?? null,
+    stop_timestamp: x?.stop_timestamp ?? null,
+    now_playing: x?.now_playing ?? null,
+    has_archive: x?.has_archive ?? null
+  }));
+}
+
+async function probeProviderEpgMetadata(provider) {
+  const controlNumbers = [
+    3549, 3550, 3551, 3552, 3553, 3554, 3555, 3556, 3557, 3558,
+    3572, 3536, 3523
+  ];
+
+  const rows = [];
+
+  for (const n of controlNumbers) {
+    const stream = provider.streams.find(x => x.provider_nfhs_number === n);
+    if (!stream) {
+      rows.push({ provider_nfhs_number: n, error: "Provider slot not found." });
+      continue;
+    }
+
+    const endpoints = {};
+    for (const action of ["get_short_epg", "get_simple_data_table"]) {
+      try {
+        const url =
+          `${provider.base}/player_api.php?${provider.auth}&action=${action}&stream_id=${encodeURIComponent(stream.stream_id)}&limit=40`;
+        const data = await fetchJson(url, 30000);
+
+        endpoints[action] = {
+          ok: true,
+          top_level_keys:
+            data && typeof data === "object" && !Array.isArray(data)
+              ? Object.keys(data).sort()
+              : [],
+          listings: compactEpgListings(data)
+        };
+      } catch (err) {
+        endpoints[action] = {
+          ok: false,
+          error: String(err?.message || err).slice(0, 300)
+        };
+      }
+    }
+
+    rows.push({
+      provider_nfhs_number: n,
+      stream_id: stream.stream_id,
+      provider_title: stream.title,
+      provider_metadata: {
+        epg_channel_id: stream.epg_channel_id,
+        custom_sid: stream.custom_sid,
+        tv_archive: stream.tv_archive,
+        tv_archive_duration: stream.tv_archive_duration,
+        container_extension: stream.container_extension,
+        has_direct_source: stream.has_direct_source,
+        direct_source_hash: stream.direct_source_hash
+      },
+      endpoints
+    });
+  }
+
+  const clinchTerms = /clinch county|brantley county/i;
+  const clinchMentions = [];
+
+  for (const row of rows) {
+    for (const [action, result] of Object.entries(row.endpoints || {})) {
+      for (const listing of result?.listings || []) {
+        const text = [listing.title, listing.description].filter(Boolean).join(" ");
+        if (clinchTerms.test(text)) {
+          clinchMentions.push({
+            provider_nfhs_number: row.provider_nfhs_number,
+            action,
+            ...listing
+          });
+        }
+      }
+    }
+  }
+
+  return {
+    purpose:
+      "Inspect Xtream EPG metadata for the Clinch neighborhood and known stale-title controls. This uses only the user's authorized provider metadata APIs and never writes provider credentials or raw source URLs.",
+    controls_tested: rows.length,
+    clinch_or_brantley_epg_mentions: clinchMentions,
+    rows
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -3378,6 +3508,7 @@ async function main() {
   const georgiaSourceLaneMappings = await probeGeorgiaSourceLaneMappings(provider.streams);
   const woodlawnRandallstownSequence = await probeWoodlawnRandallstownSequence();
   const globalDayOrdering = await probeGlobalDayOrdering(provider.streams);
+  const providerEpgMetadata = await probeProviderEpgMetadata(provider);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -3423,7 +3554,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-21",
+    diagnostic_version: "deep-link-22",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -3471,6 +3602,7 @@ async function main() {
     georgia_source_lane_mapping_probe: georgiaSourceLaneMappings,
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
     global_day_ordering_probe: globalDayOrdering,
+    provider_epg_metadata_probe: providerEpgMetadata,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
@@ -3515,7 +3647,8 @@ async function main() {
         georgiaSourceLaneMappings.after_4pm_single_lane_candidates
     },
     woodlawn_randallstown_sequence_probe: woodlawnRandallstownSequence,
-    global_day_ordering_probe: globalDayOrdering
+    global_day_ordering_probe: globalDayOrdering,
+    provider_epg_metadata_probe: providerEpgMetadata
   };
 
   await fs.writeFile(
