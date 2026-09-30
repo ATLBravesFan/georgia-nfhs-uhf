@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T15:39:44.641Z",
+  "generated_at": "2026-09-30T15:54:37.458Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-19",
+  "diagnostic_version": "deep-link-20",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1499069,
+      "total": 1499140,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1499069,
+      "total": 1499140,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1499069,
+    "returned_total": 1499140,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "cab0c4b7e6590443677f",
+            "response_hash": "7e430f81927d56d118ad",
             "url_found": true,
-            "url_hash": "b038724bae8e11538640",
+            "url_hash": "3e8902f3e4eff63ede99",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "b373809c4a45d7a09acd",
+            "pathname_hash": "4ee811fcbeedbaa587f3",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "b6af5cbf0799c2a8f905",
+              "18fc10305ce4ea6552ce",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "f201c5c672d3b834b4d3",
+            "response_hash": "71397394be161d9e4c7b",
             "url_found": true,
-            "url_hash": "d36e3eb33a5d9d296d56",
+            "url_hash": "1da05040f1e454cae144",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "6c749151f614ac42ae1a",
+            "pathname_hash": "1a02b83ea53bf3841297",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "f0288621253dad74ac11",
+              "c8ae53997dca9a176bbe",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "57e5be127942cc279b1f",
+            "response_hash": "4279c77f02b105ecbe2c",
             "url_found": true,
-            "url_hash": "80733d3c260e58e83a12",
+            "url_hash": "d43a72e942ed6a6a8b7b",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "57b5ac8f280dae65d836",
+            "pathname_hash": "5bb48769170e828fc2ef",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "eb1175ede36087d6c09a",
+              "5890a1c0225681699d9e",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -22665,7 +22665,7 @@
   },
   "same_day_provider_only_match_probe": {
     "purpose": "Match the provider-only/stale 4 PM titles against the complete Sep 29 NFHS event day, avoiding false matches to other dates.",
-    "day_rows_loaded": 5616,
+    "day_rows_loaded": 5614,
     "day_pages_fetched": 12,
     "day_stop_reason": "passed_start_of_day",
     "provider_only_rows_tested": 26,
@@ -23389,7 +23389,7 @@
   "all_four_pm_titles_vs_full_day_probe": {
     "purpose": "Strictly match every provider title stamped 4:00 PM against the complete Sep 29 NFHS day using normalized matchup plus sport, ignoring the provider's displayed time.",
     "provider_4pm_title_count": 211,
-    "official_day_rows_loaded": 5616,
+    "official_day_rows_loaded": 5614,
     "unique_strict_same_day_matches": 75,
     "ambiguous_or_unmatched": 136,
     "unique_matches_actually_after_4pm": 4,
@@ -28591,7 +28591,7 @@
   "georgia_source_lane_mapping_probe": {
     "purpose": "Build Georgia event-to-provider source-lane hypotheses by finding exact same-day Georgia title matches anywhere in the provider's 5,000 NFHS streams, enriching official events through Unity, and propagating only identical hashed publisher+producer+ingest signatures. Same-source slots are hypotheses until independently validated.",
     "provider_streams_scanned": 5000,
-    "official_day_rows_loaded": 5616,
+    "official_day_rows_loaded": 5614,
     "georgia_official_rows": 175,
     "direct_unique_georgia_provider_matches": 3,
     "unique_source_signatures_with_direct_provider_anchor": 3,
@@ -31560,6 +31560,78 @@
         },
         "direct_provider_slots": [],
         "same_source_candidate_slots": []
+      }
+    ]
+  },
+  "woodlawn_randallstown_sequence_probe": {
+    "purpose": "Check whether provider slot 3552's stale Randallstown/Woodlawn badminton title could have stayed on a Woodlawn/Randallstown source that later carried girls volleyball, instead of carrying Clinch/Brantley. This is a targeted falsification test.",
+    "search_terms": [
+      "Randallstown Woodlawn",
+      "Woodlawn High School",
+      "Randallstown High School"
+    ],
+    "matching_sep29_events": 3,
+    "stale_badminton_event": {
+      "event_key": "gamb8ebe375ea",
+      "official_start": "2026-09-29T20:00:00.000Z",
+      "sport": "Badminton",
+      "subheadline": "Randallstown High School vs. Woodlawn High School",
+      "publisher_slug": "woodlawn-high-school-baltimore-md",
+      "association": "MPSSAA",
+      "source_signature_hash": "02fa8e8afcf651fc6731",
+      "source": {
+        "publisher_key_hash": "58771536f622e510b2ea",
+        "producer_key_hash": "a39d8ee8dfe3063c917a",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+      }
+    },
+    "same_source_as_stale_badminton": [],
+    "sep29_volleyball_events": [],
+    "sep29_later_volleyball_events": [],
+    "stale_badminton_source_matches_clinch_4pm": false,
+    "stale_badminton_source_matches_clinch_5pm": false,
+    "rows": [
+      {
+        "event_key": "gamb8ebe375ea",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Badminton",
+        "subheadline": "Randallstown High School vs. Woodlawn High School",
+        "publisher_slug": "woodlawn-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "02fa8e8afcf651fc6731",
+        "source": {
+          "publisher_key_hash": "58771536f622e510b2ea",
+          "producer_key_hash": "a39d8ee8dfe3063c917a",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "event_key": "gam0c109e2565",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Soccer",
+        "subheadline": "Randallstown High School vs. Milford Mill Academy",
+        "publisher_slug": "milford-mill-academy-baltimore-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "e3d6b2ca6b874a7d85d7",
+        "source": {
+          "publisher_key_hash": "b54f55257c41a5f0a063",
+          "producer_key_hash": "60e94255d664f3dff774",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "event_key": "gam0f333c2d31",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Soccer",
+        "subheadline": "Overlea High School vs. Randallstown High School",
+        "publisher_slug": "randallstown-high-school-randallstown-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "03c06512bcefa2bb576e",
+        "source": {
+          "publisher_key_hash": "fc1340bbf4a0e7b0504b",
+          "producer_key_hash": "a52ea8ee55314c5bcb28",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
       }
     ]
   },

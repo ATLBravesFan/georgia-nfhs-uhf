@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T15:39:44.641Z",
-  "diagnostic_version": "deep-link-19",
+  "generated_at": "2026-09-30T15:54:37.458Z",
+  "diagnostic_version": "deep-link-20",
   "diagnostic_only": true,
   "modifies_epg": false,
   "summary": {
@@ -220,6 +220,78 @@
         "same_source_candidate_slots": [
           3572
         ]
+      }
+    ]
+  },
+  "woodlawn_randallstown_sequence_probe": {
+    "purpose": "Check whether provider slot 3552's stale Randallstown/Woodlawn badminton title could have stayed on a Woodlawn/Randallstown source that later carried girls volleyball, instead of carrying Clinch/Brantley. This is a targeted falsification test.",
+    "search_terms": [
+      "Randallstown Woodlawn",
+      "Woodlawn High School",
+      "Randallstown High School"
+    ],
+    "matching_sep29_events": 3,
+    "stale_badminton_event": {
+      "event_key": "gamb8ebe375ea",
+      "official_start": "2026-09-29T20:00:00.000Z",
+      "sport": "Badminton",
+      "subheadline": "Randallstown High School vs. Woodlawn High School",
+      "publisher_slug": "woodlawn-high-school-baltimore-md",
+      "association": "MPSSAA",
+      "source_signature_hash": "02fa8e8afcf651fc6731",
+      "source": {
+        "publisher_key_hash": "58771536f622e510b2ea",
+        "producer_key_hash": "a39d8ee8dfe3063c917a",
+        "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+      }
+    },
+    "same_source_as_stale_badminton": [],
+    "sep29_volleyball_events": [],
+    "sep29_later_volleyball_events": [],
+    "stale_badminton_source_matches_clinch_4pm": false,
+    "stale_badminton_source_matches_clinch_5pm": false,
+    "rows": [
+      {
+        "event_key": "gamb8ebe375ea",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Badminton",
+        "subheadline": "Randallstown High School vs. Woodlawn High School",
+        "publisher_slug": "woodlawn-high-school-baltimore-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "02fa8e8afcf651fc6731",
+        "source": {
+          "publisher_key_hash": "58771536f622e510b2ea",
+          "producer_key_hash": "a39d8ee8dfe3063c917a",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "event_key": "gam0c109e2565",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Soccer",
+        "subheadline": "Randallstown High School vs. Milford Mill Academy",
+        "publisher_slug": "milford-mill-academy-baltimore-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "e3d6b2ca6b874a7d85d7",
+        "source": {
+          "publisher_key_hash": "b54f55257c41a5f0a063",
+          "producer_key_hash": "60e94255d664f3dff774",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
+      },
+      {
+        "event_key": "gam0f333c2d31",
+        "official_start": "2026-09-29T20:00:00.000Z",
+        "sport": "Soccer",
+        "subheadline": "Overlea High School vs. Randallstown High School",
+        "publisher_slug": "randallstown-high-school-randallstown-md",
+        "association": "MPSSAA",
+        "source_signature_hash": "03c06512bcefa2bb576e",
+        "source": {
+          "publisher_key_hash": "fc1340bbf4a0e7b0504b",
+          "producer_key_hash": "a52ea8ee55314c5bcb28",
+          "ingest_point_fingerprint": "4306efc2f91dc1dc6fa4"
+        }
       }
     ]
   }
