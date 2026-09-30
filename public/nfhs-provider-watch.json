@@ -1,0 +1,1529 @@
+{
+  "diagnostic_only": true,
+  "modifies_epg": false,
+  "purpose": "Track changes in the provider's 5,000 NFHS slot metadata over time so we can learn how stale titles and stream-slot reuse actually behave. No playback is opened.",
+  "history": [
+    {
+      "captured_at": "2026-09-30T16:18:05.721Z",
+      "previous_latest_title_day": null,
+      "latest_title_day": "2026-09-29",
+      "added_slot_count": 5000,
+      "removed_slot_count": 0,
+      "changed_slot_count": 0,
+      "added_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "stream_id": 2070364,
+          "title": "NFHS Network 01: Our Lady Of Lourdes High School vs. Spackenkill High School Varsity Boys Soccer @ 28 Sep 04:10 PM ET",
+          "provider_start": "2026-09-28T16:10:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238354,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 2,
+          "stream_id": 2070363,
+          "title": "NFHS Network 02: Passaic County Tech High School vs. Ramapo High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238353,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 3,
+          "stream_id": 2070362,
+          "title": "NFHS Network 03: North Brookfield High School vs. Quaboag Regional High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238353,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 4,
+          "stream_id": 2070361,
+          "title": "NFHS Network 04: South Windsor High School vs. Ellington High School Junior Varsity Girls Soccer @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238352,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 5,
+          "stream_id": 2070360,
+          "title": "NFHS Network 05: James Rhodes High School vs. East Technical High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238352,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 6,
+          "stream_id": 2070359,
+          "title": "NFHS Network 06: Hamden vs. Foran High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238351,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 7,
+          "stream_id": 2070358,
+          "title": "NFHS Network 07: Medway High School vs. Westwood High School Freshman Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238351,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 8,
+          "stream_id": 2070357,
+          "title": "NFHS Network 08: Westfield Academy vs. Academy for Classical Education Middle School Football @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238350,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 9,
+          "stream_id": 2070356,
+          "title": "NFHS Network 09: St. Raphael Academy vs. Narragansett High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238349,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 10,
+          "stream_id": 2070355,
+          "title": "NFHS Network 10: Teaneck High School vs. River Dell High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238349,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 11,
+          "stream_id": 2070354,
+          "title": "NFHS Network 11: Ridgefield High School vs. Hasbrouck Heights High School Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238348,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 12,
+          "stream_id": 2070353,
+          "title": "NFHS Network 12: Mechanicville Senior High School vs. Saratoga Central Catholic Senior High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238348,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 13,
+          "stream_id": 2070352,
+          "title": "NFHS Network 13: Elmwood Park Memorial High School vs. Rutherford High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238347,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 14,
+          "stream_id": 2070351,
+          "title": "NFHS Network 14: College Achieve Public Schools vs. Eastside High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238347,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 15,
+          "stream_id": 2070350,
+          "title": "NFHS Network 15: Away vs. East Side High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238346,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 16,
+          "stream_id": 2070349,
+          "title": "NFHS Network 16: Onteora Senior High School vs. Rhinebeck Senior High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238346,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 17,
+          "stream_id": 2070348,
+          "title": "NFHS Network 17: Southern Regional High School vs. Point Pleasant Borough High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238345,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 18,
+          "stream_id": 2070347,
+          "title": "NFHS Network 18: Twin Valley Middle High School vs. Brattleboro Union High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238345,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 19,
+          "stream_id": 2070346,
+          "title": "NFHS Network 19: First Flight High School vs. Cape Hatteras Secondary School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238344,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 20,
+          "stream_id": 2070345,
+          "title": "NFHS Network 20: Snyder High School vs. Fair Lawn High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238344,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 21,
+          "stream_id": 2070344,
+          "title": "NFHS Network 21: Cleveland High School vs. Ooltewah High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238343,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 22,
+          "stream_id": 2070343,
+          "title": "NFHS Network 22: Wyoming Valley West High School vs. Greater Nanticoke Area High School Freshman Football @ 28 Sep 04:15 PM ET",
+          "provider_start": "2026-09-28T16:15:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238343,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 23,
+          "stream_id": 2070342,
+          "title": "NFHS Network 23: Trinity Christian School vs. East Coweta High School Varsity Softball @ 28 Sep 04:20 PM ET",
+          "provider_start": "2026-09-28T16:20:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238342,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 24,
+          "stream_id": 2070341,
+          "title": "NFHS Network 24: Denbigh Baptist Christian School vs. Gateway Christian Academy Varsity Girls Volleyball @ 28 Sep 04:21 PM ET",
+          "provider_start": "2026-09-28T16:21:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238342,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 25,
+          "stream_id": 2070340,
+          "title": "NFHS Network 25: Multi-team Event Freshman Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238341,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 26,
+          "stream_id": 2070339,
+          "title": "NFHS Network 26: Mount Greylock Regional School vs. Drury High School Varsity Girls Soccer @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238341,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 27,
+          "stream_id": 2070338,
+          "title": "NFHS Network 27: South Kingstown High School vs. Lincoln High School Varsity Field Hockey @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238340,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 28,
+          "stream_id": 2070337,
+          "title": "NFHS Network 28: Lake Placid Senior High School vs. Moriah Senior High School Varsity Girls Soccer @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238340,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 29,
+          "stream_id": 2070336,
+          "title": "NFHS Network 29: Baraga Area High School vs. Dollar Bay High School Middle School Girls Basketball @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238339,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 30,
+          "stream_id": 2070335,
+          "title": "NFHS Network 30: Rockbridge Academy vs. The Gunston School Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238339,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 31,
+          "stream_id": 2070334,
+          "title": "NFHS Network 31: Don Bosco Cristo Rey High School vs. Spencerville Adventist Academy Junior Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238338,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 32,
+          "stream_id": 2070333,
+          "title": "NFHS Network 32: Roselle Catholic High School vs. Mount Saint Mary Academy Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "provider_start": "2026-09-28T16:25:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238338,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 33,
+          "stream_id": 2070332,
+          "title": "NFHS Network 33: Saranac High School vs. AuSable Valley Central High School Junior Varsity Girls Soccer @ 28 Sep 04:28 PM ET",
+          "provider_start": "2026-09-28T16:28:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238337,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 34,
+          "stream_id": 2070331,
+          "title": "NFHS Network 34: Randolph High School vs. Middleborough High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238337,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 35,
+          "stream_id": 2070330,
+          "title": "NFHS Network 35: Bethel High School vs. Joel Barlow High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238336,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 36,
+          "stream_id": 2070329,
+          "title": "NFHS Network 36: School Without Walls High School vs. DC International School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238336,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 37,
+          "stream_id": 2070328,
+          "title": "NFHS Network 37: Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238335,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 38,
+          "stream_id": 2070327,
+          "title": "NFHS Network 38: Bellingham High School vs. Medfield High School Junior Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238335,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 39,
+          "stream_id": 2070326,
+          "title": "NFHS Network 39: Atkins Academic & Technology High School vs. Oak Grove High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238334,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 40,
+          "stream_id": 2070325,
+          "title": "NFHS Network 40: Findlay High School vs. Columbian High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238334,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 41,
+          "stream_id": 2070324,
+          "title": "NFHS Network 41: Crisp County High School vs. Tiftarea Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238333,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 42,
+          "stream_id": 2070323,
+          "title": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238333,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 43,
+          "stream_id": 2070322,
+          "title": "NFHS Network 43: Coleman High School vs. Carson City-Crystal High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238332,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 44,
+          "stream_id": 2070321,
+          "title": "NFHS Network 44: Clawson High School vs. Lamphere High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238332,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 45,
+          "stream_id": 2070320,
+          "title": "NFHS Network 45: Glenn High School vs. North Davidson High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238331,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 46,
+          "stream_id": 2070319,
+          "title": "NFHS Network 46: Overhills High School vs. Smithfield- Selma High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238331,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 47,
+          "stream_id": 2070318,
+          "title": "NFHS Network 47: Shelton High School vs. North Haven High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238330,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 48,
+          "stream_id": 2070317,
+          "title": "NFHS Network 48: South Burlington High School vs. Rice Memorial High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238330,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 49,
+          "stream_id": 2070316,
+          "title": "NFHS Network 49: Assumption High School vs. Louisville Collegiate School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238329,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 50,
+          "stream_id": 2070315,
+          "title": "NFHS Network 50: Walt Whitman High School vs. Lindenhurst Senior High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238329,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 51,
+          "stream_id": 2070314,
+          "title": "NFHS Network 51: Aurora West College Preporatory Academy vs. Sheridan High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238328,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 52,
+          "stream_id": 2070313,
+          "title": "NFHS Network 52: Lamoille Union High School vs. Stowe High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238328,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 53,
+          "stream_id": 2070312,
+          "title": "NFHS Network 53: Sanderson High School vs. Cary High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238327,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 54,
+          "stream_id": 2070311,
+          "title": "NFHS Network 54: Boyd Anderson High School vs. South Plantation High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238327,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 55,
+          "stream_id": 2070310,
+          "title": "NFHS Network 55: Harvey School vs. Watkinson School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238326,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 56,
+          "stream_id": 2070309,
+          "title": "NFHS Network 56: Sanford High School vs. Biddeford High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238326,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 57,
+          "stream_id": 2070308,
+          "title": "NFHS Network 57: Saugus High School vs. Gloucester High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238325,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 58,
+          "stream_id": 2070307,
+          "title": "NFHS Network 58: Paxton School vs. Ponce de Leon HS Middle School Boys Basketball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238325,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 59,
+          "stream_id": 2070306,
+          "title": "NFHS Network 59: Faith Christian School vs. Temple Christian School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238324,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 60,
+          "stream_id": 2070305,
+          "title": "NFHS Network 60: Morristown Senior High School vs. Chateaugay Central School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238324,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 61,
+          "stream_id": 2070304,
+          "title": "NFHS Network 61: New York Mills Senior High School vs. Sauquoit Valley Senior High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238323,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 62,
+          "stream_id": 2070303,
+          "title": "NFHS Network 62: Roanoke Catholic School vs. Christiansburg High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238323,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 63,
+          "stream_id": 2070302,
+          "title": "NFHS Network 63: Forest Hills High School vs. Albemarle High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238322,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 64,
+          "stream_id": 2070301,
+          "title": "NFHS Network 64: Mattituck Senior High School vs. Center Moriches High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238322,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 65,
+          "stream_id": 2070300,
+          "title": "NFHS Network 65: Grosse Ile High School vs. Riverview Community High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238321,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 66,
+          "stream_id": 2070299,
+          "title": "NFHS Network 66: Almont High School vs. Imlay City High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238321,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 67,
+          "stream_id": 2070298,
+          "title": "NFHS Network 67: Essex High School vs. Burlington High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238320,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 68,
+          "stream_id": 2070297,
+          "title": "NFHS Network 68: Southeast Alamance vs. Eno River Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238320,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 69,
+          "stream_id": 2070295,
+          "title": "NFHS Network 69: Piedmont High School vs. Union Academy Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238319,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 70,
+          "stream_id": 2070294,
+          "title": "NFHS Network 70: Cassadaga Valley High School vs. Randolph JrSr High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238319,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 71,
+          "stream_id": 2070293,
+          "title": "NFHS Network 71: Byne Christian School vs. Scintilla Charter Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238318,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 72,
+          "stream_id": 2070292,
+          "title": "NFHS Network 72: Reagan High School vs. Mount Tabor High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238318,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 73,
+          "stream_id": 2070291,
+          "title": "NFHS Network 73: Leesville Road High School vs. Athens Drive High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238317,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 74,
+          "stream_id": 2070290,
+          "title": "NFHS Network 74: Nardin Academy vs. Buffalo Academy of the Sacred Heart Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238317,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 75,
+          "stream_id": 2070289,
+          "title": "NFHS Network 75: Great Mills High School vs. St Charles High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238316,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 76,
+          "stream_id": 2070288,
+          "title": "NFHS Network 76: Brooklyn High School vs. Valley Forge High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238316,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 77,
+          "stream_id": 2070287,
+          "title": "NFHS Network 77: Garner Magnet High School vs. Clayton High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238315,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 78,
+          "stream_id": 2070286,
+          "title": "NFHS Network 78: Faith Christian Academy vs. Roanoke Valley Christian School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238315,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 79,
+          "stream_id": 2070284,
+          "title": "NFHS Network 79: Immaculate High School vs. Masuk High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238314,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 80,
+          "stream_id": 2070283,
+          "title": "NFHS Network 80: Away vs. Urbana High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238313,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 81,
+          "stream_id": 2070282,
+          "title": "NFHS Network 81: Wheatmore High School vs. Chatham Central High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238313,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 82,
+          "stream_id": 2070281,
+          "title": "NFHS Network 82: Wallace- Rose Hill High School vs. Spring Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238312,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 83,
+          "stream_id": 2070280,
+          "title": "NFHS Network 83: Hampton High School vs. Unicoi County High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238312,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 84,
+          "stream_id": 2070279,
+          "title": "NFHS Network 84: Franklinton High School vs. Wake Forest High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238311,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 85,
+          "stream_id": 2070278,
+          "title": "NFHS Network 85: Bryan vs. Defiance Senior High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238311,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 86,
+          "stream_id": 2070277,
+          "title": "NFHS Network 86: Rogers High School vs. Providence Country Day School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238310,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 87,
+          "stream_id": 2070276,
+          "title": "NFHS Network 87: Away vs. Roxboro Community High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238310,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 88,
+          "stream_id": 2070275,
+          "title": "NFHS Network 88: Boonton High School vs. Lakeland Regional High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238309,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 89,
+          "stream_id": 2070274,
+          "title": "NFHS Network 89: Vergennes Union High School vs. Danville School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238309,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 90,
+          "stream_id": 2070273,
+          "title": "NFHS Network 90: Cardinal Gibbons High School vs. Holly Springs High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238308,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 91,
+          "stream_id": 2070272,
+          "title": "NFHS Network 91: North Point High School vs. Patuxent High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238308,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 92,
+          "stream_id": 2070271,
+          "title": "NFHS Network 92: Scranton Preparatory School vs. Abington Heights High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238307,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 93,
+          "stream_id": 2070270,
+          "title": "NFHS Network 93: Perth Amboy High School vs. The Wardlaw Hartridge School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238307,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 94,
+          "stream_id": 2070269,
+          "title": "NFHS Network 94: Plymouth Regional High School vs. Sanborn Regional High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238306,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 95,
+          "stream_id": 2070268,
+          "title": "NFHS Network 95: Howard High School vs. Hammond High School Varsity Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238306,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 96,
+          "stream_id": 2070267,
+          "title": "NFHS Network 96: Brushton Moira Senior High School vs. Saint Lawrence Central High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238305,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 97,
+          "stream_id": 2070266,
+          "title": "NFHS Network 97: Blanche Ely High School vs. Northeast High School - Oakland Park Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238305,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 98,
+          "stream_id": 2070265,
+          "title": "NFHS Network 98: Westmont Hilltop High School vs. Greater Johnstown Senior High School Junior Varsity Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238304,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 99,
+          "stream_id": 2070264,
+          "title": "NFHS Network 99: Somersworth High School vs. Hanover Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238304,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 100,
+          "stream_id": 2070263,
+          "title": "NFHS Network 100: Away vs. North Rowan High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238303,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 101,
+          "stream_id": 2070262,
+          "title": "NFHS Network 101: South Garner High School vs. Clayton High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238303,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 102,
+          "stream_id": 2070261,
+          "title": "NFHS Network 102: Howell Cheney Tech High School vs. Ella Grasso Tech High School Junior Varsity Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238302,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 103,
+          "stream_id": 2070260,
+          "title": "NFHS Network 103: Millburn High School vs. John F Kennedy High School Junior Varsity Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238302,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 104,
+          "stream_id": 2070259,
+          "title": "NFHS Network 104: Cornerstone Preparatory Academy vs. Harvester Christian Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238301,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 105,
+          "stream_id": 2070258,
+          "title": "NFHS Network 105: Northern High School vs. Westlake High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238301,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 106,
+          "stream_id": 2070257,
+          "title": "NFHS Network 106: Away vs. Gray Stone Day School Middle School Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238300,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 107,
+          "stream_id": 2070256,
+          "title": "NFHS Network 107: Monument Mountain Regional High School vs. Lee High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238300,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 108,
+          "stream_id": 2070255,
+          "title": "NFHS Network 108: Patuxent High School vs. Huntingtown High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238299,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 109,
+          "stream_id": 2070254,
+          "title": "NFHS Network 109: Toombs County High School vs. Savannah Christian Preparatory School Varsity Softball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238299,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 110,
+          "stream_id": 2070253,
+          "title": "NFHS Network 110: Livingston High School vs. Hanover Park High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238298,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 111,
+          "stream_id": 2070252,
+          "title": "NFHS Network 111: Leesville Road High School vs. Millbrook High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238298,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 112,
+          "stream_id": 2070251,
+          "title": "NFHS Network 112: Away vs. Trenton High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238297,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 113,
+          "stream_id": 2070250,
+          "title": "NFHS Network 113: Eastport-South Manor JrSr High School vs. East Hampton High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238297,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 114,
+          "stream_id": 2070249,
+          "title": "NFHS Network 114: East Duplin High School vs. Ayden-Grifton High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238296,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 115,
+          "stream_id": 2070248,
+          "title": "NFHS Network 115: Away vs. Croswell-Lexington High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238296,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 116,
+          "stream_id": 2070247,
+          "title": "NFHS Network 116: Mount Tabor High School vs. North Forsyth High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238295,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 117,
+          "stream_id": 2070246,
+          "title": "NFHS Network 117: Pope Francis Preparatory School vs. Longmeadow High School Junior Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238295,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 118,
+          "stream_id": 2070245,
+          "title": "NFHS Network 118: Multi-team Event Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238294,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 119,
+          "stream_id": 2070244,
+          "title": "NFHS Network 119: Maurice J McDonough High School vs. North Point High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238294,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 120,
+          "stream_id": 2070243,
+          "title": "NFHS Network 120: Percy Julian High School vs. Rehobeth High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238293,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 121,
+          "stream_id": 2070242,
+          "title": "NFHS Network 121: Harrisville High School vs. Hermon-Dekalb High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238293,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 122,
+          "stream_id": 2070241,
+          "title": "NFHS Network 122: Notre Dame Prep High School vs. Immaculate High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238292,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 123,
+          "stream_id": 2070240,
+          "title": "NFHS Network 123: Atkins Academic & Technology High School vs. Oak Grove High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238292,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 124,
+          "stream_id": 2070239,
+          "title": "NFHS Network 124: Greely High School vs. Brunswick High School Freshman Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238291,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 125,
+          "stream_id": 2070238,
+          "title": "NFHS Network 125: Away vs. North Branch High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238291,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 126,
+          "stream_id": 2070237,
+          "title": "NFHS Network 126: Effingham County High School vs. Richmond Hill High School Junior Varsity Softball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238290,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 127,
+          "stream_id": 2070236,
+          "title": "NFHS Network 127: The Sharon Academy Middle School Boys And Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238290,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 128,
+          "stream_id": 2070235,
+          "title": "NFHS Network 128: Pingree-Buchanan High School vs. Carrington High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238289,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 129,
+          "stream_id": 2070234,
+          "title": "NFHS Network 129: Deering High School vs. Lewiston High School Junior Varsity Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238289,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 130,
+          "stream_id": 2070233,
+          "title": "NFHS Network 130: Away vs. Mckinley High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238288,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 131,
+          "stream_id": 2070232,
+          "title": "NFHS Network 131: South Broward High School vs. Fort Lauderdale High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238288,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 132,
+          "stream_id": 2070231,
+          "title": "NFHS Network 132: Harnett Central High School vs. Southern Lee High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238287,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 133,
+          "stream_id": 2070230,
+          "title": "NFHS Network 133: Universal Academy HS vs. Victory Christian Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238287,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 134,
+          "stream_id": 2070229,
+          "title": "NFHS Network 134: Newnan High School vs. Whitewater High School Junior Varsity Softball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238286,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 135,
+          "stream_id": 2070228,
+          "title": "NFHS Network 135: St. Dominic High School vs. Sacred Heart Academy - Hempstead Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238286,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 136,
+          "stream_id": 2070227,
+          "title": "NFHS Network 136: Blackstone Valley Prep Academy vs. Central High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238285,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 137,
+          "stream_id": 2070226,
+          "title": "NFHS Network 137: Marshfield High School vs. Bridgewater-Raynham Reg High School Freshman Football @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238285,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 138,
+          "stream_id": 2070225,
+          "title": "NFHS Network 138: Multi-team Event Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238284,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 139,
+          "stream_id": 2070224,
+          "title": "NFHS Network 139: St. Mary's Ryken High School vs. St. Peter & Paul Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238284,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 140,
+          "stream_id": 2070223,
+          "title": "NFHS Network 140: Heritage High School - Wake Forest vs. Knightdale High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238283,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 141,
+          "stream_id": 2070222,
+          "title": "NFHS Network 141: Chittenango High School vs. Solvay High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238283,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 142,
+          "stream_id": 2070221,
+          "title": "NFHS Network 142: Pompano Beach High School vs. Coconut Creek High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238282,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 143,
+          "stream_id": 2070220,
+          "title": "NFHS Network 143: Oakland Christian High School vs. Hope Christian Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238282,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 144,
+          "stream_id": 2070219,
+          "title": "NFHS Network 144: La Plata High School vs. Calvert High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238281,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 145,
+          "stream_id": 2070218,
+          "title": "NFHS Network 145: Away vs. Preston High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238281,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 146,
+          "stream_id": 2070217,
+          "title": "NFHS Network 146: Broadwater Academy vs. Nandua High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238280,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 147,
+          "stream_id": 2070216,
+          "title": "NFHS Network 147: Mount Tabor High School vs. North Forsyth High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238280,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 148,
+          "stream_id": 2070215,
+          "title": "NFHS Network 148: H. H. Dow High School vs. Powers Catholic High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238279,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 149,
+          "stream_id": 2070214,
+          "title": "NFHS Network 149: Westover Christian Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238279,
+          "epg_channel_id": null,
+          "custom_sid": null
+        },
+        {
+          "provider_nfhs_number": 150,
+          "stream_id": 2070213,
+          "title": "NFHS Network 150: Dublin Coffman High School vs. St. Francis DeSales High School - Columbus Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_start": "2026-09-28T16:30:00.000-04:00",
+          "provider_day": "2026-09-28",
+          "added": 1789238278,
+          "epg_channel_id": null,
+          "custom_sid": null
+        }
+      ],
+      "removed_slots": [],
+      "changed_slots": []
+    }
+  ],
+  "last_change_at": "2026-09-30T16:18:05.721Z",
+  "current": {
+    "stream_count": 5000,
+    "latest_title_day": "2026-09-29",
+    "title_day_counts": {
+      "2026-09-28": 3328,
+      "2026-09-29": 288,
+      "undated": 1384
+    }
+  }
+}
