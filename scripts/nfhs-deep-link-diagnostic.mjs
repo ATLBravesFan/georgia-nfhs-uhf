@@ -405,6 +405,103 @@ async function enrichUnity(match) {
   }
 }
 
+
+async function probeOfficialFeed(knownRows) {
+  const sizes = [5000, 2000, 1000, 500, 250, 100];
+  let data = null;
+  let usedSize = null;
+  let error = null;
+
+  for (const size of sizes) {
+    try {
+      data = await fetchJson(`${SEARCH_BASE}/v3/search/events?size=${size}`);
+      usedSize = size;
+      break;
+    } catch (err) {
+      error = String(err?.message || err).slice(0, 300);
+    }
+  }
+
+  if (!data) {
+    return { ok: false, error };
+  }
+
+  const items = Array.isArray(data.items) ? data.items : [];
+  const topLevelMetadata = {};
+
+  for (const [k, v] of Object.entries(data)) {
+    if (k === "items") continue;
+    if (v === null || ["string", "number", "boolean"].includes(typeof v)) {
+      topLevelMetadata[k] = v;
+    } else if (Array.isArray(v)) {
+      topLevelMetadata[k] = { type: "array", length: v.length };
+    } else if (typeof v === "object") {
+      topLevelMetadata[k] = v;
+    }
+  }
+
+  const flattened = flattenSearchItems(items);
+  const eventOrder = [];
+  const seen = new Set();
+
+  for (const row of flattened) {
+    const key = row.event_key || row.broadcast_game_key;
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    eventOrder.push({
+      event_key: key,
+      start_time: row.broadcast_start || row.event_start || null,
+      publisher_slug: row.publisher_slug || null,
+      subheadline: row.broadcast_subheadline || null
+    });
+  }
+
+  const known = knownRows
+    .filter(x => x?.unity?.event_key)
+    .map(x => {
+      const eventKey = x.unity.event_key;
+      const pos = eventOrder.findIndex(e => e.event_key === eventKey);
+      return {
+        provider_nfhs_number: x.provider.provider_nfhs_number,
+        event_key: eventKey,
+        official_start: x.best_match?.broadcast_start || x.best_match?.event_start || null,
+        feed_position_zero_based: pos >= 0 ? pos : null
+      };
+    });
+
+  const found = known.filter(x => x.feed_position_zero_based !== null);
+
+  let providerVsFeedOrderAgreement = null;
+  if (found.length >= 2) {
+    const byProvider = [...found].sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+    let ok = 0;
+    let total = 0;
+    for (let i = 1; i < byProvider.length; i++) {
+      total++;
+      if (byProvider[i].feed_position_zero_based > byProvider[i - 1].feed_position_zero_based) ok++;
+    }
+    providerVsFeedOrderAgreement = {
+      agreeing_adjacent_pairs: ok,
+      total_adjacent_pairs: total,
+      percent: total ? Number((ok / total * 100).toFixed(2)) : null
+    };
+  }
+
+  return {
+    ok: true,
+    requested_size_used: usedSize,
+    item_count: items.length,
+    unique_event_count: eventOrder.length,
+    top_level_metadata: topLevelMetadata,
+    first_events: eventOrder.slice(0, 12),
+    last_events: eventOrder.slice(-12),
+    known_matches_found_in_feed: found.length,
+    known_matches_total: known.length,
+    provider_vs_feed_order_agreement: providerVsFeedOrderAgreement,
+    known_positions: known
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -526,11 +623,53 @@ async function main() {
     byStart[key].sort((a, b) => a - b);
   }
 
+  const officialFeedProbe = await probeOfficialFeed(strongRows);
+
+  const exactZeroMinuteRows = strongRows.filter(
+    x => x.best_match && x.best_match.minutes_apart === 0
+  );
+
+  const orderingChecks = (() => {
+    const rows = exactZeroMinuteRows
+      .map(x => ({
+        provider_nfhs_number: x.provider.provider_nfhs_number,
+        official_start: x.best_match.broadcast_start || x.best_match.event_start || null,
+        event_key: x.unity?.event_key || x.best_match.event_key || null
+      }))
+      .filter(x => x.official_start && x.event_key)
+      .sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+
+    const cmp = (a, b) => {
+      const ta = Date.parse(a.official_start);
+      const tb = Date.parse(b.official_start);
+      if (ta !== tb) return ta - tb;
+      return String(a.event_key).localeCompare(String(b.event_key));
+    };
+
+    let agreeing = 0;
+    let total = 0;
+    const violations = [];
+
+    for (let i = 1; i < rows.length; i++) {
+      total++;
+      if (cmp(rows[i - 1], rows[i]) <= 0) agreeing++;
+      else violations.push([rows[i - 1], rows[i]]);
+    }
+
+    return {
+      exact_zero_minute_matches: rows.length,
+      adjacent_pairs_agree_with_start_then_event_key: agreeing,
+      adjacent_pairs_total: total,
+      percent_agreement: total ? Number((agreeing / total * 100).toFixed(2)) : null,
+      violations
+    };
+  })();
+
   const payload = {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-4",
+    diagnostic_version: "deep-link-5",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -560,6 +699,8 @@ async function main() {
             )
           : null
     },
+    ordering_checks: orderingChecks,
+    official_feed_probe: officialFeedProbe,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
