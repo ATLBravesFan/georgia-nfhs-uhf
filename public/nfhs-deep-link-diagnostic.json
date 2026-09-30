@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T18:24:04.237Z",
+  "generated_at": "2026-09-30T18:54:08.964Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-24",
+  "diagnostic_version": "deep-link-25",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1500007,
+      "total": 1500096,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1500007,
+      "total": 1500096,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1500007,
+    "returned_total": 1500096,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "e965608b2a819edfa097",
+            "response_hash": "0f135c456f370fe16653",
             "url_found": true,
-            "url_hash": "07556d455c3c504e4afe",
+            "url_hash": "46eeca8513f28f48f443",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "14d9542ea1fb237edbf0",
+            "pathname_hash": "176498064c092b14b982",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "035abd9453e1f08685cb",
+              "8710a439f42405634e3b",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "460680d79016593f562c",
+            "response_hash": "ff72008af3e2140d507e",
             "url_found": true,
-            "url_hash": "02a97c633e00c4dbd35c",
+            "url_hash": "1a7780d804bf3dfe2cb3",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "da3d8916f634622d4997",
+            "pathname_hash": "b957b64f904abfab47e1",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "9442798de0d499e3ae39",
+              "eabc17b6522f1546465e",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "6afbf5ecf34f75aff18d",
+            "response_hash": "fa6ea696db0b1286b38e",
             "url_found": true,
-            "url_hash": "b1e72325d5ed82e09c2f",
+            "url_hash": "e5decd70032f91beced6",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "ad3253afd24b86c35b4b",
+            "pathname_hash": "bdd069cdb85790399705",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "c0e6923fc88580b95ca5",
+              "40f56555493737f5efa4",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -33119,7 +33119,7 @@
   "provider_playlist_metadata_probe": {
     "purpose": "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
     "ok": true,
-    "playlist_line_count": 659454,
+    "playlist_line_count": 659462,
     "nfhs_rows_found": 5000,
     "attribute_key_counts": {
       "tvg-id": 5000,
@@ -35815,6 +35815,78 @@
           "producer_key_hash": "0ea4a01bbf37daea47b4",
           "ingest_point_fingerprint": "48c2e48ec154080e9ac0"
         }
+      }
+    ]
+  },
+  "historical_source_slot_reuse_probe": {
+    "purpose": "Test whether an exact NFHS publisher+producer+ingest source signature stays on one provider slot when the same source appears in multiple directly matched historical events. This distinguishes a fixed source-lane model from event/time-based slot assignment.",
+    "historical_anchor_count": 36,
+    "unique_source_signatures": 34,
+    "repeated_source_signatures": 2,
+    "repeated_sources_fixed_to_one_slot": 0,
+    "repeated_sources_seen_on_multiple_slots": 2,
+    "repeated_sources": [
+      {
+        "source_signature_hash": "e3a45ef1377a7f8ed71c",
+        "observations": 2,
+        "unique_provider_slots": 2,
+        "provider_slots": [
+          669,
+          2660
+        ],
+        "days": [
+          "2026-09-28"
+        ],
+        "fixed_provider_slot_across_observations": false,
+        "rows": [
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 669,
+            "official_start": "2026-09-28T21:30:00.000Z",
+            "event_key": "gam3765d23052",
+            "subheadline": "South Cobb High School vs. Hillgrove High School",
+            "publisher_slug": "hillgrove-high-school-powder-springs-ga"
+          },
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 2660,
+            "official_start": "2026-09-28T23:30:00.000Z",
+            "event_key": "gam7899a43f4e",
+            "subheadline": "Campbell High School vs. Hillgrove High School",
+            "publisher_slug": "hillgrove-high-school-powder-springs-ga"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "b67360b9b53a7bf0283b",
+        "observations": 2,
+        "unique_provider_slots": 2,
+        "provider_slots": [
+          712,
+          2611
+        ],
+        "days": [
+          "2026-09-28"
+        ],
+        "fixed_provider_slot_across_observations": false,
+        "rows": [
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 712,
+            "official_start": "2026-09-28T21:30:00.000Z",
+            "event_key": "gam573c0bd877",
+            "subheadline": "Southwest DeKalb High School vs. Parkview High School",
+            "publisher_slug": "parkview-high-school-lilburn-ga"
+          },
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 2611,
+            "official_start": "2026-09-28T23:30:00.000Z",
+            "event_key": "gam2dd08e6bc2",
+            "subheadline": "Dunwoody High School vs. Parkview High School",
+            "publisher_slug": "parkview-high-school-lilburn-ga"
+          }
+        ]
       }
     ]
   },

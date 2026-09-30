@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T18:24:04.237Z",
-  "diagnostic_version": "deep-link-24",
+  "generated_at": "2026-09-30T18:54:08.964Z",
+  "diagnostic_version": "deep-link-25",
   "diagnostic_only": true,
   "modifies_epg": false,
   "summary": {
@@ -1779,7 +1779,7 @@
   "provider_playlist_metadata_probe": {
     "purpose": "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
     "ok": true,
-    "playlist_line_count": 659454,
+    "playlist_line_count": 659462,
     "nfhs_rows_found": 5000,
     "attribute_key_counts": {
       "tvg-id": 5000,
@@ -2854,6 +2854,596 @@
           "tvg-name": "NFHS Network 80: Away vs. Urbana High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
           "group-title": "USA | NFHS Network"
         }
+      }
+    ]
+  },
+  "historical_source_slot_reuse_probe": {
+    "purpose": "Test whether an exact NFHS publisher+producer+ingest source signature stays on one provider slot when the same source appears in multiple directly matched historical events. This distinguishes a fixed source-lane model from event/time-based slot assignment.",
+    "historical_anchor_count": 36,
+    "unique_source_signatures": 34,
+    "repeated_source_signatures": 2,
+    "repeated_sources_fixed_to_one_slot": 0,
+    "repeated_sources_seen_on_multiple_slots": 2,
+    "repeated_sources": [
+      {
+        "source_signature_hash": "e3a45ef1377a7f8ed71c",
+        "observations": 2,
+        "unique_provider_slots": 2,
+        "provider_slots": [
+          669,
+          2660
+        ],
+        "days": [
+          "2026-09-28"
+        ],
+        "fixed_provider_slot_across_observations": false,
+        "rows": [
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 669,
+            "official_start": "2026-09-28T21:30:00.000Z",
+            "event_key": "gam3765d23052",
+            "subheadline": "South Cobb High School vs. Hillgrove High School",
+            "publisher_slug": "hillgrove-high-school-powder-springs-ga"
+          },
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 2660,
+            "official_start": "2026-09-28T23:30:00.000Z",
+            "event_key": "gam7899a43f4e",
+            "subheadline": "Campbell High School vs. Hillgrove High School",
+            "publisher_slug": "hillgrove-high-school-powder-springs-ga"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "b67360b9b53a7bf0283b",
+        "observations": 2,
+        "unique_provider_slots": 2,
+        "provider_slots": [
+          712,
+          2611
+        ],
+        "days": [
+          "2026-09-28"
+        ],
+        "fixed_provider_slot_across_observations": false,
+        "rows": [
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 712,
+            "official_start": "2026-09-28T21:30:00.000Z",
+            "event_key": "gam573c0bd877",
+            "subheadline": "Southwest DeKalb High School vs. Parkview High School",
+            "publisher_slug": "parkview-high-school-lilburn-ga"
+          },
+          {
+            "provider_day": "2026-09-28",
+            "provider_nfhs_number": 2611,
+            "official_start": "2026-09-28T23:30:00.000Z",
+            "event_key": "gam2dd08e6bc2",
+            "subheadline": "Dunwoody High School vs. Parkview High School",
+            "publisher_slug": "parkview-high-school-lilburn-ga"
+          }
+        ]
+      }
+    ]
+  },
+  "historical_cross_day_lane_stability_probe": {
+    "purpose": "Historical falsification test: for exact provider-title matches on Sep 28 and Sep 29, compare identical NFHS publisher+producer+ingest source signatures across both days and see whether they land on the same provider slot. This tests whether source lane => provider slot persists across dates without relying on today's labels.",
+    "test_days": [
+      "2026-09-28",
+      "2026-09-29"
+    ],
+    "direct_matches_sep28": 1377,
+    "direct_matches_sep29": 116,
+    "recurring_source_signatures_across_both_days": 16,
+    "recurring_sources_with_same_provider_slot": 0,
+    "recurring_sources_with_different_provider_slots_only": 16,
+    "rows": [
+      {
+        "source_signature_hash": "bdeb4f1695ed0bfff382",
+        "sep28_slots": [
+          17,
+          1430
+        ],
+        "sep29_slots": [
+          3383
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 17,
+            "event_key": "gambba264aaa1",
+            "official_start": "2026-09-28T20:15:00.000Z",
+            "subheadline": "Southern Regional High School vs. Point Pleasant Borough High School",
+            "publisher_slug": "point-pleasant-borough-high-school-point-pleasant-borough-nj"
+          },
+          {
+            "provider_nfhs_number": 1430,
+            "event_key": "gamba31e8fd43",
+            "official_start": "2026-09-28T22:00:00.000Z",
+            "subheadline": "Neptune High School vs. Point Pleasant Borough High School",
+            "publisher_slug": "point-pleasant-borough-high-school-point-pleasant-borough-nj"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3383,
+            "event_key": "gam5b484ff502",
+            "official_start": "2026-09-29T19:45:00.000Z",
+            "subheadline": "Long Branch High School vs. Point Pleasant Borough High School",
+            "publisher_slug": "point-pleasant-borough-high-school-point-pleasant-borough-nj"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "a9c26ee4c4f9df25b820",
+        "sep28_slots": [
+          30
+        ],
+        "sep29_slots": [
+          3405
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 30,
+            "event_key": "gam9a80ee8bc8",
+            "official_start": "2026-09-28T20:25:00.000Z",
+            "subheadline": "Rockbridge Academy vs. The Gunston School",
+            "publisher_slug": "gunston-day-school-centerville-md"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3405,
+            "event_key": "gamd09ce375c4",
+            "official_start": "2026-09-29T19:55:00.000Z",
+            "subheadline": "Salisbury Christian School vs. The Gunston School",
+            "publisher_slug": "gunston-day-school-centerville-md"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "449bd194f8fa7a410ca1",
+        "sep28_slots": [
+          32,
+          1037
+        ],
+        "sep29_slots": [
+          3403
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 32,
+            "event_key": "gamabd7c636bb",
+            "official_start": "2026-09-28T20:25:00.000Z",
+            "subheadline": "Roselle Catholic High School vs. Mount Saint Mary Academy",
+            "publisher_slug": "mount-saint-mary-academy-watchung-nj"
+          },
+          {
+            "provider_nfhs_number": 1037,
+            "event_key": "gamabd7c636bb",
+            "official_start": "2026-09-28T20:25:00.000Z",
+            "subheadline": "Roselle Catholic High School vs. Mount Saint Mary Academy",
+            "publisher_slug": "mount-saint-mary-academy-watchung-nj"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3403,
+            "event_key": "gama43ba13ce6",
+            "official_start": "2026-09-29T19:55:00.000Z",
+            "subheadline": "North Hunterdon High School vs. Mount Saint Mary Academy",
+            "publisher_slug": "mount-saint-mary-academy-watchung-nj"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "24e33715daa7ed57ba0c",
+        "sep28_slots": [
+          87,
+          1218
+        ],
+        "sep29_slots": [
+          3595
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 87,
+            "event_key": "gam609b774435",
+            "official_start": "2026-09-28T20:30:00.000Z",
+            "subheadline": "Away vs. Roxboro Community High School",
+            "publisher_slug": "roxboro-community-high-school-roxboro-nc"
+          },
+          {
+            "provider_nfhs_number": 1218,
+            "event_key": "gam53a0223c61",
+            "official_start": "2026-09-28T22:00:00.000Z",
+            "subheadline": "North Carolina School of Science and Mathematics vs. Roxboro Community High School",
+            "publisher_slug": "roxboro-community-high-school-roxboro-nc"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3595,
+            "event_key": "gamed7b9a0d13",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Away vs. Roxboro Community High School",
+            "publisher_slug": "roxboro-community-high-school-roxboro-nc"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "d8e2deb4a58d9fe3dac5",
+        "sep28_slots": [
+          89
+        ],
+        "sep29_slots": [
+          3438,
+          3569,
+          3575
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 89,
+            "event_key": "gam61b1bb0aed",
+            "official_start": "2026-09-28T20:30:00.000Z",
+            "subheadline": "Vergennes Union High School vs. Danville School",
+            "publisher_slug": "northeast-sports-network"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3438,
+            "event_key": "gam195d0a5a68",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Bishop Brady High School vs. Berlin High School",
+            "publisher_slug": "northeast-sports-network"
+          },
+          {
+            "provider_nfhs_number": 3569,
+            "event_key": "gamce16de126a",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Lisbon Regional High School vs. Groveton High School",
+            "publisher_slug": "northeast-sports-network"
+          },
+          {
+            "provider_nfhs_number": 3575,
+            "event_key": "gamd74c7ae4a6",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Gorham High School vs. Colebrook Academy",
+            "publisher_slug": "northeast-sports-network"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "d2ca51b930ee4bfb1ef8",
+        "sep28_slots": [
+          102
+        ],
+        "sep29_slots": [
+          3391
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 102,
+            "event_key": "gam70628b762e",
+            "official_start": "2026-09-28T20:30:00.000Z",
+            "subheadline": "Howell Cheney Tech High School vs. Ella Grasso Tech High School",
+            "publisher_slug": "grasso-tech-high-school-groton-ct"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3391,
+            "event_key": "gama4d53296db",
+            "official_start": "2026-09-29T19:45:00.000Z",
+            "subheadline": "Windham Tech High School vs. Ella Grasso Tech High School",
+            "publisher_slug": "grasso-tech-high-school-groton-ct"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "83456e029e1f6a558d52",
+        "sep28_slots": [
+          137
+        ],
+        "sep29_slots": [
+          3452
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 137,
+            "event_key": "gama242558348",
+            "official_start": "2026-09-28T20:30:00.000Z",
+            "subheadline": "Marshfield High School vs. Bridgewater-Raynham Reg High School",
+            "publisher_slug": "bridgewaterraynham-regional-high-school-bridgewater-ma"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3452,
+            "event_key": "gam2a81770b90",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Barnstable High School vs. Bridgewater-Raynham Reg High School",
+            "publisher_slug": "bridgewaterraynham-regional-high-school-bridgewater-ma"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "70ac117271bdf943cfb5",
+        "sep28_slots": [
+          233
+        ],
+        "sep29_slots": [
+          3463
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 233,
+            "event_key": "gam8ac5ec0b82",
+            "official_start": "2026-09-28T20:55:00.000Z",
+            "subheadline": "Marathon Middle-High School",
+            "publisher_slug": "marathon-hs-marathon-fl"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3463,
+            "event_key": "gam3ba3b79ff1",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Marathon Middle-High School",
+            "publisher_slug": "marathon-hs-marathon-fl"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "b079797c42005ff80567",
+        "sep28_slots": [
+          271
+        ],
+        "sep29_slots": [
+          3418
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 271,
+            "event_key": "gam23521c8e45",
+            "official_start": "2026-09-28T21:00:00.000Z",
+            "subheadline": "Clearwater Academy International vs. Admiral Farragut Academy",
+            "publisher_slug": "admiral-farragut-high-school-st-petersburg-fl"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3418,
+            "event_key": "gam09c2679169",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Away vs. Admiral Farragut Academy",
+            "publisher_slug": "admiral-farragut-high-school-st-petersburg-fl"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "e07154e4bc80d6de719d",
+        "sep28_slots": [
+          289
+        ],
+        "sep29_slots": [
+          3505
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 289,
+            "event_key": "gam301df34957",
+            "official_start": "2026-09-28T21:00:00.000Z",
+            "subheadline": "Bishop Walsh vs. New Life Christian School",
+            "publisher_slug": "new-life-christian-school-frederick-md"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3505,
+            "event_key": "gam68ae978e5a",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "Shalom Christian Academy vs. New Life Christian School",
+            "publisher_slug": "new-life-christian-school-frederick-md"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "d8154ea2f117e5b6c3fe",
+        "sep28_slots": [
+          339
+        ],
+        "sep29_slots": [
+          3491
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 339,
+            "event_key": "gam58e2779c90",
+            "official_start": "2026-09-28T21:00:00.000Z",
+            "subheadline": "Grandview Preparatory School vs. Donna Klein Jewish High School",
+            "publisher_slug": "donna-klein-jewish-high-school-boca-raton-fl"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3491,
+            "event_key": "gam56eea4ea7d",
+            "official_start": "2026-09-29T20:00:00.000Z",
+            "subheadline": "SLAM Boca Raton vs. Donna Klein Jewish High School",
+            "publisher_slug": "donna-klein-jewish-high-school-boca-raton-fl"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "cf5da23b01588e1630f6",
+        "sep28_slots": [
+          498
+        ],
+        "sep29_slots": [
+          3353
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 498,
+            "event_key": "gamea2f18bc56",
+            "official_start": "2026-09-28T21:00:00.000Z",
+            "subheadline": "Away vs. Wakefield School",
+            "publisher_slug": "wakefield-school-the-plains-va"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3353,
+            "event_key": "gam2356e8681a",
+            "official_start": "2026-09-29T19:15:00.000Z",
+            "subheadline": "Away vs. Wakefield School",
+            "publisher_slug": "wakefield-school-the-plains-va"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "9003a13a84102cb8cc1d",
+        "sep28_slots": [
+          520
+        ],
+        "sep29_slots": [
+          3376
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 520,
+            "event_key": "gam06a0aa5a6e",
+            "official_start": "2026-09-28T21:15:00.000Z",
+            "subheadline": "Shelton High School vs. Lyman Hall High School",
+            "publisher_slug": "lyman-hall-high-school-wallingford-ct"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3376,
+            "event_key": "gam2f3e50e633",
+            "official_start": "2026-09-29T19:45:00.000Z",
+            "subheadline": "Branford High School vs. Lyman Hall High School",
+            "publisher_slug": "lyman-hall-high-school-wallingford-ct"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "0188d25ee1c85e717218",
+        "sep28_slots": [
+          1040
+        ],
+        "sep29_slots": [
+          3401
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 1040,
+            "event_key": "gam6e4689aca3",
+            "official_start": "2026-09-28T21:55:00.000Z",
+            "subheadline": "Okeechobee High School vs. Glades Day School",
+            "publisher_slug": "glades-day-high-school-belle-glade-fl"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3401,
+            "event_key": "gam8503456771",
+            "official_start": "2026-09-29T19:55:00.000Z",
+            "subheadline": "Slam Middle Palm B vs. Glades Day School",
+            "publisher_slug": "glades-day-high-school-belle-glade-fl"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "4492dc24e0c8e0c7ca94",
+        "sep28_slots": [
+          1088
+        ],
+        "sep29_slots": [
+          3373
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 1088,
+            "event_key": "gam137b7a6d6e",
+            "official_start": "2026-09-28T22:00:00.000Z",
+            "subheadline": "Plainfield High School vs. Waterford High School",
+            "publisher_slug": "waterford-high-school-waterford-ct"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3373,
+            "event_key": "gam1ba87b1cb6",
+            "official_start": "2026-09-29T19:45:00.000Z",
+            "subheadline": "E.O. Smith High School vs. Waterford High School",
+            "publisher_slug": "waterford-high-school-waterford-ct"
+          }
+        ]
+      },
+      {
+        "source_signature_hash": "67f8cf4d9a1c7332e084",
+        "sep28_slots": [
+          1286
+        ],
+        "sep29_slots": [
+          3379
+        ],
+        "same_provider_slot_across_days": false,
+        "shared_provider_slots": [],
+        "sep28_events": [
+          {
+            "provider_nfhs_number": 1286,
+            "event_key": "gam765211a4a7",
+            "official_start": "2026-09-28T22:00:00.000Z",
+            "subheadline": "Branford High School vs. Jonathan Law High School",
+            "publisher_slug": "jonathan-law-high-school-milford-ct"
+          }
+        ],
+        "sep29_events": [
+          {
+            "provider_nfhs_number": 3379,
+            "event_key": "gam541357f6ed",
+            "official_start": "2026-09-29T19:45:00.000Z",
+            "subheadline": "Branford High School vs. Jonathan Law High School",
+            "publisher_slug": "jonathan-law-high-school-milford-ct"
+          }
+        ]
       }
     ]
   },
