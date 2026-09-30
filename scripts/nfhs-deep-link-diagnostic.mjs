@@ -1520,6 +1520,123 @@ async function resolveProviderOnlyTitles(providerOnlyRows, officialOnlyRows) {
   };
 }
 
+
+async function probeBrantleyClinchSequence() {
+  const terms = ["Clinch County Brantley County", "Brantley County"];
+  const candidateMap = new Map();
+
+  for (const term of terms) {
+    try {
+      const search = await fetchJson(
+        `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(term)}&size=100`,
+        30000
+      );
+
+      for (const item of flattenSearchItems(search?.items || [])) {
+        const key = [
+          item.event_key || "",
+          item.broadcast_key || "",
+          item.broadcast_start || item.event_start || ""
+        ].join("|");
+        candidateMap.set(key, item);
+      }
+    } catch {}
+  }
+
+  const sameDay = [...candidateMap.values()]
+    .filter(x => {
+      const start = x.broadcast_start || x.event_start || "";
+      const text = cleanSpace(x.broadcast_subheadline || "");
+      return start.startsWith("2026-09-29") &&
+        /brantley county/i.test(text) &&
+        String(x.sport || "").toLowerCase() === "volleyball";
+    })
+    .sort((a, b) => String(a.broadcast_start || a.event_start || "").localeCompare(
+      String(b.broadcast_start || b.event_start || "")
+    ));
+
+  const enriched = [];
+  for (const row of sameDay) {
+    const unity = await enrichUnity(row);
+
+    enriched.push({
+      event_key: row.event_key,
+      official_start: row.broadcast_start || row.event_start || null,
+      subheadline: row.broadcast_subheadline || null,
+      association: row.association || null,
+      publisher_slug: row.publisher_slug || null,
+      safe_identity: unity && !unity.error ? {
+        publisher_key_hash: sha20(unity.publisher_key),
+        pixellot_event_id_hash: sha20(unity.pixellot_event_id),
+        pixellot_id_hash: sha20(unity.pixellot_id),
+        pixellot_key_hash: sha20(unity.pixellot_key),
+        producer_key_hash: sha20(unity.producer_key),
+        ingest_point_fingerprint: unity.ingest_point_fingerprint || null
+      } : null,
+      unity_error: unity?.error || null
+    });
+  }
+
+  const comparisons = [];
+
+  for (let i = 0; i < enriched.length; i++) {
+    for (let j = i + 1; j < enriched.length; j++) {
+      const a = enriched[i];
+      const b = enriched[j];
+      const A = a.safe_identity || {};
+      const B = b.safe_identity || {};
+
+      comparisons.push({
+        event_a: a.event_key,
+        event_b: b.event_key,
+        start_a: a.official_start,
+        start_b: b.official_start,
+        same_publisher: Boolean(A.publisher_key_hash && A.publisher_key_hash === B.publisher_key_hash),
+        same_pixellot_unit: Boolean(A.pixellot_id_hash && A.pixellot_id_hash === B.pixellot_id_hash),
+        same_pixellot_key: Boolean(A.pixellot_key_hash && A.pixellot_key_hash === B.pixellot_key_hash),
+        same_producer: Boolean(A.producer_key_hash && A.producer_key_hash === B.producer_key_hash),
+        same_ingest_fingerprint: Boolean(
+          A.ingest_point_fingerprint &&
+          A.ingest_point_fingerprint === B.ingest_point_fingerprint
+        )
+      });
+    }
+  }
+
+  return {
+    search_terms: terms,
+    same_day_brantley_volleyball_events_found: enriched.length,
+    events: enriched,
+    pairwise_identity_comparisons: comparisons
+  };
+}
+
+function summarizeSameDayProviderOnlyResolution(providerOnlyResolution) {
+  const rows = providerOnlyResolution?.rows || [];
+  const sameDay = rows
+    .filter(x => {
+      const b = x.best_match;
+      return x.strong_resolution &&
+        b?.official_start &&
+        b.official_start.startsWith("2026-09-29");
+    })
+    .map(x => ({
+      provider_nfhs_number: x.provider_nfhs_number,
+      provider_title: x.provider_title,
+      event_key: x.best_match.event_key,
+      official_start: x.best_match.official_start,
+      minutes_apart: x.best_match.minutes_apart,
+      sport: x.best_match.sport,
+      association: x.best_match.association,
+      subheadline: x.best_match.broadcast_subheadline
+    }));
+
+  return {
+    strong_same_day_resolutions: sameDay.length,
+    rows: sameDay
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -1650,6 +1767,8 @@ async function main() {
     exactFourPmBlockProbe?.two_sided_sequence_alignment?.provider_only_rows || [],
     exactFourPmBlockProbe?.two_sided_sequence_alignment?.official_only_rows || []
   );
+  const sameDayProviderOnlyResolution = summarizeSameDayProviderOnlyResolution(providerOnlyResolution);
+  const brantleyClinchSequence = await probeBrantleyClinchSequence();
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -1695,7 +1814,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-11",
+    diagnostic_version: "deep-link-12",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -1732,6 +1851,8 @@ async function main() {
     target_date_cursor_probe: targetDateCursorProbe,
     exact_four_pm_block_probe: exactFourPmBlockProbe,
     provider_only_resolution_probe: providerOnlyResolution,
+    same_day_provider_only_resolution: sameDayProviderOnlyResolution,
+    brantley_clinch_sequence_probe: brantleyClinchSequence,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
