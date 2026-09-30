@@ -1390,6 +1390,136 @@ function alignProviderToOfficialTwoSided(providerRows, officialRows) {
   };
 }
 
+
+async function resolveProviderOnlyTitles(providerOnlyRows, officialOnlyRows) {
+  const officialOnlySet = new Set((officialOnlyRows || []).map(x => x.event_key).filter(Boolean));
+  const results = [];
+
+  for (const row of providerOnlyRows || []) {
+    const core = providerCore(row.provider_title || "");
+    const searchTerms = buildSearchTerms(core);
+    const candidateMap = new Map();
+    const attempts = [];
+
+    for (const term of searchTerms) {
+      try {
+        const search = await fetchJson(
+          `${SEARCH_BASE}/v3/search/events?search_term=${encodeURIComponent(term)}&size=${SEARCH_SIZE}`,
+          30000
+        );
+
+        const flat = flattenSearchItems(search?.items || []);
+        for (const item of flat) {
+          const key = [
+            item.event_key || "",
+            item.broadcast_key || "",
+            item.broadcast_start || item.event_start || "",
+            item.publisher_slug || ""
+          ].join("|");
+          candidateMap.set(key, item);
+        }
+
+        attempts.push({
+          term,
+          ok: true,
+          item_count: Array.isArray(search?.items) ? search.items.length : 0
+        });
+      } catch (err) {
+        attempts.push({
+          term,
+          ok: false,
+          error: String(err?.message || err).slice(0, 200)
+        });
+      }
+    }
+
+    const candidates = [...candidateMap.values()];
+    let best = null;
+
+    for (const cand of candidates) {
+      const texts = [
+        cand.broadcast_subheadline,
+        cand.event_title,
+        [cand.publisher_name, cand.event_title].filter(Boolean).join(" ")
+      ].filter(Boolean);
+
+      const textScore = Math.max(0, ...texts.map(t => similarity(core, t)));
+      const providerSport = providerSportFromTitle(row.provider_title || "");
+      const sportMatch = sportEqual(providerSport, cand.sport);
+      const officialStart = cand.broadcast_start || cand.event_start || null;
+      const providerStart = parseProviderStart(row.provider_title || "")?.toISO() || null;
+      const diff = safeTimeDiffMinutes(providerStart, officialStart);
+
+      let score = textScore * 10;
+      if (sportMatch === true) score += 3;
+      else if (sportMatch === false) score -= 4;
+      if (textScore >= 0.96) score += 4;
+      if (diff !== null && diff <= 5) score += 1;
+
+      const item = {
+        ...cand,
+        text_score: Number(textScore.toFixed(4)),
+        provider_sport: providerSport,
+        sport_match: sportMatch,
+        provider_start: providerStart,
+        official_start: officialStart,
+        minutes_apart: diff === null ? null : Number(diff.toFixed(2)),
+        score: Number(score.toFixed(4))
+      };
+
+      if (!best || item.score > best.score) best = item;
+    }
+
+    const strong =
+      Boolean(best) &&
+      best.text_score >= 0.90 &&
+      best.sport_match !== false;
+
+    results.push({
+      provider_nfhs_number: row.provider_nfhs_number,
+      stream_id: row.stream_id,
+      provider_title: row.provider_title,
+      search_terms: searchTerms,
+      search_attempts: attempts,
+      strong_resolution: strong,
+      best_match: best ? {
+        event_key: best.event_key,
+        sport: best.sport,
+        broadcast_start: best.broadcast_start,
+        event_start: best.event_start,
+        official_start: best.official_start,
+        provider_start: best.provider_start,
+        minutes_apart: best.minutes_apart,
+        publisher_slug: best.publisher_slug,
+        association: best.association,
+        broadcast_subheadline: best.broadcast_subheadline,
+        text_score: best.text_score,
+        sport_match: best.sport_match,
+        was_in_four_pm_official_only_set: officialOnlySet.has(best.event_key)
+      } : null
+    });
+  }
+
+  const strong = results.filter(x => x.strong_resolution && x.best_match);
+  const crossTime = strong.filter(x =>
+    x.best_match.minutes_apart !== null && x.best_match.minutes_apart > 5
+  );
+  const rescuedOfficialOnly = strong.filter(x =>
+    x.best_match.was_in_four_pm_official_only_set
+  );
+
+  return {
+    provider_only_rows_tested: results.length,
+    strongly_resolved: strong.length,
+    unresolved: results.length - strong.length,
+    strongly_resolved_to_different_official_time: crossTime.length,
+    strongly_resolved_to_four_pm_official_only_event: rescuedOfficialOnly.length,
+    different_time_rows: crossTime,
+    rescued_four_pm_rows: rescuedOfficialOnly,
+    rows: results
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -1516,6 +1646,10 @@ async function main() {
   const searchApiControls = await probeSearchApiControls();
   const targetDateCursorProbe = await probeTargetDateCursor(strongRows);
   const exactFourPmBlockProbe = await probeExactFourPmBlock(provider.streams);
+  const providerOnlyResolution = await resolveProviderOnlyTitles(
+    exactFourPmBlockProbe?.two_sided_sequence_alignment?.provider_only_rows || [],
+    exactFourPmBlockProbe?.two_sided_sequence_alignment?.official_only_rows || []
+  );
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -1561,7 +1695,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-10",
+    diagnostic_version: "deep-link-11",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -1597,6 +1731,7 @@ async function main() {
     search_api_control_probe: searchApiControls,
     target_date_cursor_probe: targetDateCursorProbe,
     exact_four_pm_block_probe: exactFourPmBlockProbe,
+    provider_only_resolution_probe: providerOnlyResolution,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
