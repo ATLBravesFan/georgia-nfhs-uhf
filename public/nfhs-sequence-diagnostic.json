@@ -1,0 +1,1134 @@
+{
+  "generated_at": "2026-09-30T13:09:51.247Z",
+  "diagnostic_only": true,
+  "modifies_epg": false,
+  "diagnostic_version": "sequence-1",
+  "purpose": "Test whether provider NFHS channel numbers preserve the ordered NFHS Watch Events feed, quantify provider stream-number sequencing, identify skipped official events, and predict provider slots from a dominant ordinal offset. This reads metadata only and does not access protected NFHS video.",
+  "safety": {
+    "public_events_json_modified": false,
+    "provider_video_accessed": false,
+    "credentials_written_to_output": false
+  },
+  "provider": {
+    "category": "USA | NFHS Network",
+    "provider_nfhs_stream_count": 5000,
+    "internal_numbering_pattern": {
+      "most_common_stream_id_plus_nfhs_number": 2070347,
+      "count_with_most_common_sum": 607,
+      "total_streams_checked": 5000,
+      "percent_with_most_common_sum": 12.14,
+      "adjacent_number_pairs": 4999,
+      "adjacent_pairs_stream_id_decreases": 4999,
+      "adjacent_pairs_exact_stream_id_minus_one": 4912,
+      "percent_adjacent_exact_minus_one": 98.26
+    }
+  },
+  "official_watch_page": {
+    "url": "https://get.nfhsnetwork.com/watch-events",
+    "total_event_links_found": 24,
+    "upcoming_count": 12,
+    "on_demand_count": 12
+  },
+  "upcoming_sequence_analysis": {
+    "official_event_count": 12,
+    "strong_anchor_count": 0,
+    "monotonic_anchor_chain_count": 0,
+    "dominant_offset": null,
+    "dominant_offset_support": 0,
+    "anchors": [],
+    "monotonic_anchor_chain": [],
+    "transitions": [],
+    "rows": [
+      {
+        "official_index": 0,
+        "page_index": 0,
+        "event_id": "gamd7eae9b6b0",
+        "official_text": "Junior Varsity Boys SoccerPioneer vs. SkylineSep 30, 2026 | 2:30 PM UTCAnn Arbor, MI",
+        "official_core": "Pioneer vs. Skyline",
+        "best_provider_match": {
+          "provider_nfhs_number": 514,
+          "stream_id": 2069847,
+          "provider_title": "NFHS Network 514: Pioneer Senior High School vs. Starpoint High School Varsity Field Hockey @ 28 Sep 05:00 PM ET",
+          "provider_core": "Pioneer Senior High School vs. Starpoint High School Varsity Field Hockey",
+          "score": 0.4417,
+          "overlap": [
+            "pioneer"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 514,
+            "stream_id": 2069847,
+            "provider_title": "NFHS Network 514: Pioneer Senior High School vs. Starpoint High School Varsity Field Hockey @ 28 Sep 05:00 PM ET",
+            "provider_core": "Pioneer Senior High School vs. Starpoint High School Varsity Field Hockey",
+            "score": 0.4417,
+            "overlap": [
+              "pioneer"
+            ]
+          },
+          {
+            "provider_nfhs_number": 950,
+            "stream_id": 2069397,
+            "provider_title": "NFHS Network 950: Saline High School vs. Skyline High School Junior Varsity Field Hockey @ 28 Sep 05:30 PM ET",
+            "provider_core": "Saline High School vs. Skyline High School Junior Varsity Field Hockey",
+            "score": 0.4417,
+            "overlap": [
+              "skyline"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1337,
+            "stream_id": 2069007,
+            "provider_title": "NFHS Network 1337: Skyline High School vs. Strasburg High School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+            "provider_core": "Skyline High School vs. Strasburg High School Junior Varsity Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "skyline"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2177,
+            "stream_id": 2068149,
+            "provider_title": "NFHS Network 2177: Saline High School vs. Skyline High School Varsity Field Hockey @ 28 Sep 07:00 PM ET",
+            "provider_core": "Saline High School vs. Skyline High School Varsity Field Hockey",
+            "score": 0.4417,
+            "overlap": [
+              "skyline"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2569,
+            "stream_id": 2067748,
+            "provider_title": "NFHS Network 2569: Skyline High School vs. Strasburg High School Varsity Girls Volleyball @ 28 Sep 07:15 PM ET",
+            "provider_core": "Skyline High School vs. Strasburg High School Varsity Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "skyline"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 1,
+        "page_index": 1,
+        "event_id": "gamcd87b70f8b",
+        "official_text": "Varsity Boys And Girls BasketballLiberty CreekSep 30, 2026 | 2:55 PM UTCGallatin, TN",
+        "official_core": "Varsity Boys And Girls BasketballLiberty Creek",
+        "best_provider_match": {
+          "provider_nfhs_number": 42,
+          "stream_id": 2070323,
+          "provider_title": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_core": "Away vs. Middle Creek High School Junior Varsity Boys Soccer",
+          "score": 0.4417,
+          "overlap": [
+            "creek"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 42,
+            "stream_id": 2070323,
+            "provider_title": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+            "provider_core": "Away vs. Middle Creek High School Junior Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "creek"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1629,
+            "stream_id": 2068703,
+            "provider_title": "NFHS Network 1629: Away vs. Middle Creek High School Varsity Boys Soccer @ 28 Sep 06:15 PM ET",
+            "provider_core": "Away vs. Middle Creek High School Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "creek"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3352,
+            "stream_id": 2066960,
+            "provider_title": "NFHS Network 3352: Liberty Creek High School Varsity Boys And Girls Basketball @ 29 Sep 02:56 PM ET",
+            "provider_core": "Liberty Creek High School Varsity Boys And Girls Basketball",
+            "score": 0.4417,
+            "overlap": [
+              "creek"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3556,
+            "stream_id": 2066754,
+            "provider_title": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+            "provider_core": "Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "creek"
+            ]
+          },
+          {
+            "provider_nfhs_number": 504,
+            "stream_id": 2069858,
+            "provider_title": "NFHS Network 504: Kearsley High School vs. Swartz Creek High School Freshman Girls Volleyball @ 28 Sep 05:00 PM ET",
+            "provider_core": "Kearsley High School vs. Swartz Creek High School Freshman Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "creek"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 2,
+        "page_index": 2,
+        "event_id": "evt9afb565604",
+        "official_text": "Sports Show2026 Georgia High School Sports Daily ShowSeptember 30th EpisodeSep 30, 2026 | 4:00 PM UTCAtlanta, GA",
+        "official_core": "2026 Georgia High School Sports Daily ShowSeptember 30th Episode",
+        "best_provider_match": {
+          "provider_nfhs_number": 3343,
+          "stream_id": 2066969,
+          "provider_title": "NFHS Network 3343: September 29th Episode 2026 Georgia High School Sports Daily Show @ 29 Sep 12:00 PM ET",
+          "provider_core": "September 29th Episode 2026 Georgia High School Sports Daily Show",
+          "score": 0.54,
+          "overlap": [
+            "georgia",
+            "daily",
+            "episode"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 3343,
+            "stream_id": 2066969,
+            "provider_title": "NFHS Network 3343: September 29th Episode 2026 Georgia High School Sports Daily Show @ 29 Sep 12:00 PM ET",
+            "provider_core": "September 29th Episode 2026 Georgia High School Sports Daily Show",
+            "score": 0.54,
+            "overlap": [
+              "georgia",
+              "daily",
+              "episode"
+            ]
+          },
+          {
+            "provider_nfhs_number": 632,
+            "stream_id": 2069721,
+            "provider_title": "NFHS Network 632: None Georgia Christian Generals vs Community Christian Academy @ 28 Sep 05:30 PM ET",
+            "provider_core": "None Georgia Christian Generals vs Community Christian Academy",
+            "score": 0.1689,
+            "overlap": [
+              "georgia"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3448,
+            "stream_id": 2066864,
+            "provider_title": "NFHS Network 3448: North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+            "provider_core": "North Georgia Tribe vs. Sugar Hill Christian Academy Junior Varsity Girls Volleyball",
+            "score": 0.165,
+            "overlap": [
+              "georgia"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 3,
+        "page_index": 3,
+        "event_id": "evtcb0ba90a54",
+        "official_text": "AssemblyDamascus vs. Glade SpringSep 30, 2026 | 4:00 PM UTCGlade Spring, VA",
+        "official_core": "Damascus vs. Glade Spring",
+        "best_provider_match": {
+          "provider_nfhs_number": 981,
+          "stream_id": 2069366,
+          "provider_title": "NFHS Network 981: Poolesville High School vs. Damascus High School Junior Varsity Field Hockey @ 28 Sep 05:30 PM ET",
+          "provider_core": "Poolesville High School vs. Damascus High School Junior Varsity Field Hockey",
+          "score": 0.4125,
+          "overlap": [
+            "damascus"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 981,
+            "stream_id": 2069366,
+            "provider_title": "NFHS Network 981: Poolesville High School vs. Damascus High School Junior Varsity Field Hockey @ 28 Sep 05:30 PM ET",
+            "provider_core": "Poolesville High School vs. Damascus High School Junior Varsity Field Hockey",
+            "score": 0.4125,
+            "overlap": [
+              "damascus"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1229,
+            "stream_id": 2069118,
+            "provider_title": "NFHS Network 1229: Damascus Middle School vs. Galax High School Middle School Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Damascus Middle School vs. Galax High School Middle School Football",
+            "score": 0.4125,
+            "overlap": [
+              "damascus"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2029,
+            "stream_id": 2068297,
+            "provider_title": "NFHS Network 2029: Poolesville High School vs. Damascus High School Varsity Field Hockey @ 28 Sep 07:00 PM ET",
+            "provider_core": "Poolesville High School vs. Damascus High School Varsity Field Hockey",
+            "score": 0.4125,
+            "overlap": [
+              "damascus"
+            ]
+          },
+          {
+            "provider_nfhs_number": 451,
+            "stream_id": 2069912,
+            "provider_title": "NFHS Network 451: Spring Lake High School vs. Rockford High School Junior Varsity Field Hockey @ 28 Sep 05:00 PM ET",
+            "provider_core": "Spring Lake High School vs. Rockford High School Junior Varsity Field Hockey",
+            "score": 0.2867,
+            "overlap": [
+              "spring"
+            ]
+          },
+          {
+            "provider_nfhs_number": 672,
+            "stream_id": 2069676,
+            "provider_title": "NFHS Network 672: Damascus High School vs. Northwest High School Junior Varsity Girls Flag Football @ 28 Sep 05:30 PM ET",
+            "provider_core": "Damascus High School vs. Northwest High School Junior Varsity Girls Flag Football",
+            "score": 0.2867,
+            "overlap": [
+              "damascus"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 4,
+        "page_index": 4,
+        "event_id": "gamf79f9e45ef",
+        "official_text": "Freshman Girls VolleyballSouthwest vs. Chula VistaSep 30, 2026 | 5:30 PM UTCChula Vista, CA",
+        "official_core": "Southwest vs. Chula Vista",
+        "best_provider_match": {
+          "provider_nfhs_number": 1057,
+          "stream_id": 2069290,
+          "provider_title": "NFHS Network 1057: Centauri High School vs. Monte Vista High School Varsity Football @ 28 Sep 06:00 PM ET",
+          "provider_core": "Centauri High School vs. Monte Vista High School Varsity Football",
+          "score": 0.2867,
+          "overlap": [
+            "vista"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 1057,
+            "stream_id": 2069290,
+            "provider_title": "NFHS Network 1057: Centauri High School vs. Monte Vista High School Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Centauri High School vs. Monte Vista High School Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1154,
+            "stream_id": 2069193,
+            "provider_title": "NFHS Network 1154: Gunnison High School vs. Buena Vista High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Gunnison High School vs. Buena Vista High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1442,
+            "stream_id": 2068895,
+            "provider_title": "NFHS Network 1442: Away vs. Piedra Vista High School Freshman Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Away vs. Piedra Vista High School Freshman Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2521,
+            "stream_id": 2067796,
+            "provider_title": "NFHS Network 2521: Vista Grande High School vs. Buena High School Freshman Girls Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Vista Grande High School vs. Buena High School Freshman Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2813,
+            "stream_id": 2067500,
+            "provider_title": "NFHS Network 2813: Away vs. Piedra Vista High School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+            "provider_core": "Away vs. Piedra Vista High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 5,
+        "page_index": 5,
+        "event_id": "evt05adc591aa",
+        "official_text": "Other ActivitySandusky WolvesSep 30, 2026 | 5:45 PM UTCSandusky, MI",
+        "official_core": "Other ActivitySandusky Wolves",
+        "best_provider_match": {
+          "provider_nfhs_number": 2326,
+          "stream_id": 2068000,
+          "provider_title": "NFHS Network 2326: The Northwest School vs. The Overlake School Varsity Boys Other Sports @ 28 Sep 07:00 PM ET",
+          "provider_core": "The Northwest School vs. The Overlake School Varsity Boys Other Sports",
+          "score": 0.2867,
+          "overlap": [
+            "other"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 2326,
+            "stream_id": 2068000,
+            "provider_title": "NFHS Network 2326: The Northwest School vs. The Overlake School Varsity Boys Other Sports @ 28 Sep 07:00 PM ET",
+            "provider_core": "The Northwest School vs. The Overlake School Varsity Boys Other Sports",
+            "score": 0.2867,
+            "overlap": [
+              "other"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2121,
+            "stream_id": 2068205,
+            "provider_title": "NFHS Network 2121: Kidder County Wolves vs. Napoleon-GS Imperials Junior High Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Kidder County Wolves vs. Napoleon-GS Imperials Junior High Volleyball",
+            "score": 0.275,
+            "overlap": [
+              "wolves"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2904,
+            "stream_id": 2067409,
+            "provider_title": "NFHS Network 2904: None Rogers Rams vs. South Kitsap Wolves @ 28 Sep 08:00 PM ET",
+            "provider_core": "None Rogers Rams vs. South Kitsap Wolves",
+            "score": 0.2604,
+            "overlap": [
+              "wolves"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 6,
+        "page_index": 6,
+        "event_id": "gam76cc1d162a",
+        "official_text": "Varsity Girls VolleyballJackson County vs. Livingston Aca.Sep 30, 2026 | 6:00 PM UTCGainesboro, TN",
+        "official_core": "Jackson County vs. Livingston Aca.",
+        "best_provider_match": {
+          "provider_nfhs_number": 665,
+          "stream_id": 2069686,
+          "provider_title": "NFHS Network 665: Jackson High School vs. Citronelle High School Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+          "provider_core": "Jackson High School vs. Citronelle High School Junior Varsity Girls Volleyball",
+          "score": 0.4125,
+          "overlap": [
+            "jackson"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 665,
+            "stream_id": 2069686,
+            "provider_title": "NFHS Network 665: Jackson High School vs. Citronelle High School Junior Varsity Girls Volleyball @ 28 Sep 05:30 PM ET",
+            "provider_core": "Jackson High School vs. Citronelle High School Junior Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "jackson"
+            ]
+          },
+          {
+            "provider_nfhs_number": 883,
+            "stream_id": 2069464,
+            "provider_title": "NFHS Network 883: Jackson-Reed High School Junior Varsity Girls Soccer @ 28 Sep 05:30 PM ET",
+            "provider_core": "Jackson-Reed High School Junior Varsity Girls Soccer",
+            "score": 0.4125,
+            "overlap": [
+              "jackson"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1175,
+            "stream_id": 2069172,
+            "provider_title": "NFHS Network 1175: Jackson High School vs. Alexander High School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+            "provider_core": "Jackson High School vs. Alexander High School Junior Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "jackson"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2072,
+            "stream_id": 2068254,
+            "provider_title": "NFHS Network 2072: Jackson High School vs. Alexander High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Jackson High School vs. Alexander High School Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "jackson"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2647,
+            "stream_id": 2067670,
+            "provider_title": "NFHS Network 2647: Jackson High School vs. Citronelle High School Varsity Girls Volleyball @ 28 Sep 07:30 PM ET",
+            "provider_core": "Jackson High School vs. Citronelle High School Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "jackson"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 7,
+        "page_index": 7,
+        "event_id": "gam4e3677463b",
+        "official_text": "Varsity Girls VolleyballCottonwood vs. AshfordSep 30, 2026 | 6:30 PM UTCAshford, AL",
+        "official_core": "Cottonwood vs. Ashford",
+        "best_provider_match": {
+          "provider_nfhs_number": 457,
+          "stream_id": 2069906,
+          "provider_title": "NFHS Network 457: Abbeville High School vs. Cottonwood High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+          "provider_core": "Abbeville High School vs. Cottonwood High School Junior Varsity Girls Volleyball",
+          "score": 0.4417,
+          "overlap": [
+            "cottonwood"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 457,
+            "stream_id": 2069906,
+            "provider_title": "NFHS Network 457: Abbeville High School vs. Cottonwood High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+            "provider_core": "Abbeville High School vs. Cottonwood High School Junior Varsity Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "cottonwood"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1897,
+            "stream_id": 2068429,
+            "provider_title": "NFHS Network 1897: Abbeville High School vs. Cottonwood High School Varsity Girls Volleyball @ 28 Sep 06:30 PM ET",
+            "provider_core": "Abbeville High School vs. Cottonwood High School Varsity Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "cottonwood"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2144,
+            "stream_id": 2068182,
+            "provider_title": "NFHS Network 2144: Away vs. Ashford High School Junior Varsity Football @ 28 Sep 07:00 PM ET",
+            "provider_core": "Away vs. Ashford High School Junior Varsity Football",
+            "score": 0.4417,
+            "overlap": [
+              "ashford"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 8,
+        "page_index": 8,
+        "event_id": "gam8dba94474e",
+        "official_text": "Varsity Girls SoccerAway vs. MasukSep 30, 2026 | 6:30 PM UTCMonroe, CT",
+        "official_core": "Away vs. Masuk",
+        "best_provider_match": {
+          "provider_nfhs_number": 42,
+          "stream_id": 2070323,
+          "provider_title": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "provider_core": "Away vs. Middle Creek High School Junior Varsity Boys Soccer",
+          "score": 0.4417,
+          "overlap": [
+            "away"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 42,
+            "stream_id": 2070323,
+            "provider_title": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+            "provider_core": "Away vs. Middle Creek High School Junior Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "away"
+            ]
+          },
+          {
+            "provider_nfhs_number": 79,
+            "stream_id": 2070284,
+            "provider_title": "NFHS Network 79: Immaculate High School vs. Masuk High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+            "provider_core": "Immaculate High School vs. Masuk High School Varsity Field Hockey",
+            "score": 0.4417,
+            "overlap": [
+              "masuk"
+            ]
+          },
+          {
+            "provider_nfhs_number": 80,
+            "stream_id": 2070283,
+            "provider_title": "NFHS Network 80: Away vs. Urbana High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+            "provider_core": "Away vs. Urbana High School Freshman Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "away"
+            ]
+          },
+          {
+            "provider_nfhs_number": 112,
+            "stream_id": 2070251,
+            "provider_title": "NFHS Network 112: Away vs. Trenton High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+            "provider_core": "Away vs. Trenton High School Junior Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "away"
+            ]
+          },
+          {
+            "provider_nfhs_number": 130,
+            "stream_id": 2070233,
+            "provider_title": "NFHS Network 130: Away vs. Mckinley High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+            "provider_core": "Away vs. Mckinley High School Junior Varsity Girls Volleyball",
+            "score": 0.4417,
+            "overlap": [
+              "away"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 9,
+        "page_index": 9,
+        "event_id": "gamde770e7514",
+        "official_text": "Varsity Girls VolleyballIsabella vs. BillingsleySep 30, 2026 | 6:30 PM UTCBillingsley, AL",
+        "official_core": "Isabella vs. Billingsley",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 10,
+        "page_index": 10,
+        "event_id": "gam0afdf9a583",
+        "official_text": "Varsity Girls VolleyballSan Ysidro vs. SweetwaterSep 30, 2026 | 7:00 PM UTCNational City, CA",
+        "official_core": "San Ysidro vs. Sweetwater",
+        "best_provider_match": {
+          "provider_nfhs_number": 2691,
+          "stream_id": 2067624,
+          "provider_title": "NFHS Network 2691: Tamalpais High School vs. San Marin High School Freshman Girls Volleyball @ 28 Sep 07:30 PM ET",
+          "provider_core": "Tamalpais High School vs. San Marin High School Freshman Girls Volleyball",
+          "score": 0.2867,
+          "overlap": [
+            "san"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 2691,
+            "stream_id": 2067624,
+            "provider_title": "NFHS Network 2691: Tamalpais High School vs. San Marin High School Freshman Girls Volleyball @ 28 Sep 07:30 PM ET",
+            "provider_core": "Tamalpais High School vs. San Marin High School Freshman Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "san"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2996,
+            "stream_id": 2067317,
+            "provider_title": "NFHS Network 2996: Tamalpais High School vs. San Marin High School Junior Varsity Girls Volleyball @ 28 Sep 08:30 PM ET",
+            "provider_core": "Tamalpais High School vs. San Marin High School Junior Varsity Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "san"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3202,
+            "stream_id": 2067110,
+            "provider_title": "NFHS Network 3202: Mar Vista High School vs. Sweetwater High School Varsity Football @ 28 Sep 09:30 PM ET",
+            "provider_core": "Mar Vista High School vs. Sweetwater High School Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "sweetwater"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3245,
+            "stream_id": 2067067,
+            "provider_title": "NFHS Network 3245: Tamalpais High School vs. San Marin High School Varsity Girls Volleyball @ 28 Sep 09:30 PM ET",
+            "provider_core": "Tamalpais High School vs. San Marin High School Varsity Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "san"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1486,
+            "stream_id": 2068850,
+            "provider_title": "NFHS Network 1486: San Fernando High School vs. Canoga Park High School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+            "provider_core": "San Fernando High School vs. Canoga Park High School Junior Varsity Girls Volleyball",
+            "score": 0.275,
+            "overlap": [
+              "san"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 11,
+        "page_index": 11,
+        "event_id": "gam1b65ef0dfc",
+        "official_text": "Varsity Girls VolleyballSouthwest vs. Chula VistaSep 30, 2026 | 7:00 PM UTCChula Vista, CA",
+        "official_core": "Southwest vs. Chula Vista",
+        "best_provider_match": {
+          "provider_nfhs_number": 1057,
+          "stream_id": 2069290,
+          "provider_title": "NFHS Network 1057: Centauri High School vs. Monte Vista High School Varsity Football @ 28 Sep 06:00 PM ET",
+          "provider_core": "Centauri High School vs. Monte Vista High School Varsity Football",
+          "score": 0.2867,
+          "overlap": [
+            "vista"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 1057,
+            "stream_id": 2069290,
+            "provider_title": "NFHS Network 1057: Centauri High School vs. Monte Vista High School Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Centauri High School vs. Monte Vista High School Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1154,
+            "stream_id": 2069193,
+            "provider_title": "NFHS Network 1154: Gunnison High School vs. Buena Vista High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Gunnison High School vs. Buena Vista High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1442,
+            "stream_id": 2068895,
+            "provider_title": "NFHS Network 1442: Away vs. Piedra Vista High School Freshman Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Away vs. Piedra Vista High School Freshman Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2521,
+            "stream_id": 2067796,
+            "provider_title": "NFHS Network 2521: Vista Grande High School vs. Buena High School Freshman Girls Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Vista Grande High School vs. Buena High School Freshman Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2813,
+            "stream_id": 2067500,
+            "provider_title": "NFHS Network 2813: Away vs. Piedra Vista High School Junior Varsity Football @ 28 Sep 08:00 PM ET",
+            "provider_core": "Away vs. Piedra Vista High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      }
+    ]
+  },
+  "on_demand_sequence_analysis": {
+    "official_event_count": 12,
+    "strong_anchor_count": 0,
+    "monotonic_anchor_chain_count": 0,
+    "dominant_offset": null,
+    "dominant_offset_support": 0,
+    "anchors": [],
+    "monotonic_anchor_chain": [],
+    "transitions": [],
+    "rows": [
+      {
+        "official_index": 0,
+        "page_index": 12,
+        "event_id": "gam82d91da629",
+        "official_text": "Varsity Girls Volleyball1:58:29Maui Sabers vs Kamehameha Schools - Maui WarriorsSep 30, 2026 | 4:30 AM UTCKahului, HI",
+        "official_core": "1:58:29Maui Sabers vs Kamehameha Schools - Maui Warriors",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 1,
+        "page_index": 13,
+        "event_id": "gam1032e19962",
+        "official_text": "Varsity Girls Flag Football2:08:51South Anchorage vs. A.J. DimondSep 30, 2026 | 3:30 AM UTCAnchorage, AK",
+        "official_core": "2:08:51South Anchorage vs. A.J. Dimond",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 2,
+        "page_index": 14,
+        "event_id": "gam30afd0e448",
+        "official_text": "Varsity Girls Volleyball2:13:29West Anchorage vs. A.J. DimondSep 30, 2026 | 3:30 AM UTCAnchorage, AK",
+        "official_core": "2:13:29West Anchorage vs. A.J. Dimond",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 3,
+        "page_index": 15,
+        "event_id": "gam7dd18f3c69",
+        "official_text": "Varsity Girls Volleyball3:15:20South Anchorage vs. ChugiakSep 30, 2026 | 3:30 AM UTCEagle River, AK",
+        "official_core": "3:15:20South Anchorage vs. Chugiak",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 4,
+        "page_index": 16,
+        "event_id": "gamf072d19c95",
+        "official_text": "Varsity Girls Flag Football3:03:08Eagle River vs. ChugiakSep 30, 2026 | 3:30 AM UTCChugiak, AK",
+        "official_core": "3:03:08Eagle River vs. Chugiak",
+        "best_provider_match": {
+          "provider_nfhs_number": 1079,
+          "stream_id": 2069268,
+          "provider_title": "NFHS Network 1079: Rapid River High School Middle School Girls Basketball @ 28 Sep 06:00 PM ET",
+          "provider_core": "Rapid River High School Middle School Girls Basketball",
+          "score": 0.4125,
+          "overlap": [
+            "river"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 1079,
+            "stream_id": 2069268,
+            "provider_title": "NFHS Network 1079: Rapid River High School Middle School Girls Basketball @ 28 Sep 06:00 PM ET",
+            "provider_core": "Rapid River High School Middle School Girls Basketball",
+            "score": 0.4125,
+            "overlap": [
+              "river"
+            ]
+          },
+          {
+            "provider_nfhs_number": 10,
+            "stream_id": 2070355,
+            "provider_title": "NFHS Network 10: Teaneck High School vs. River Dell High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+            "provider_core": "Teaneck High School vs. River Dell High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "river"
+            ]
+          },
+          {
+            "provider_nfhs_number": 342,
+            "stream_id": 2070021,
+            "provider_title": "NFHS Network 342: Away vs. Rocky River High School Junior Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+            "provider_core": "Away vs. Rocky River High School Junior Varsity Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "river"
+            ]
+          },
+          {
+            "provider_nfhs_number": 379,
+            "stream_id": 2069984,
+            "provider_title": "NFHS Network 379: Benton High School vs. River Ridge High School Middle School Girls Volleyball @ 28 Sep 05:00 PM ET",
+            "provider_core": "Benton High School vs. River Ridge High School Middle School Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "river"
+            ]
+          },
+          {
+            "provider_nfhs_number": 382,
+            "stream_id": 2069981,
+            "provider_title": "NFHS Network 382: Away vs. Rocky River High School Varsity Girls Volleyball @ 28 Sep 05:00 PM ET",
+            "provider_core": "Away vs. Rocky River High School Varsity Girls Volleyball",
+            "score": 0.2867,
+            "overlap": [
+              "river"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 5,
+        "page_index": 17,
+        "event_id": "gamf179c32eeb",
+        "official_text": "Varsity Girls Volleyball2:42:07Service vs. BartlettSep 30, 2026 | 3:30 AM UTCAnchorage, AK",
+        "official_core": "2:42:07Service vs. Bartlett",
+        "best_provider_match": {
+          "provider_nfhs_number": 659,
+          "stream_id": 2069692,
+          "provider_title": "NFHS Network 659: Hampshire High School vs. Bartlett High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+          "provider_core": "Hampshire High School vs. Bartlett High School Junior Varsity Boys Soccer",
+          "score": 0.4417,
+          "overlap": [
+            "bartlett"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 659,
+            "stream_id": 2069692,
+            "provider_title": "NFHS Network 659: Hampshire High School vs. Bartlett High School Junior Varsity Boys Soccer @ 28 Sep 05:30 PM ET",
+            "provider_core": "Hampshire High School vs. Bartlett High School Junior Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "bartlett"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2587,
+            "stream_id": 2067730,
+            "provider_title": "NFHS Network 2587: Hampshire High School vs. Bartlett High School Varsity Boys Soccer @ 28 Sep 07:30 PM ET",
+            "provider_core": "Hampshire High School vs. Bartlett High School Varsity Boys Soccer",
+            "score": 0.4417,
+            "overlap": [
+              "bartlett"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 6,
+        "page_index": 18,
+        "event_id": "evt5d3ca0b1d8",
+        "official_text": "Sports ShowSports ShowSep 30, 2026 | 3:00 AM UTCPhoenix, AZ",
+        "official_core": "",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 7,
+        "page_index": 19,
+        "event_id": "gamfcacba29e8",
+        "official_text": "Varsity Boys Basketball3:03:21Monte Vista vs. CoronadoSep 30, 2026 | 3:00 AM UTCCoronado, CA",
+        "official_core": "3:03:21Monte Vista vs. Coronado",
+        "best_provider_match": {
+          "provider_nfhs_number": 2080,
+          "stream_id": 2068246,
+          "provider_title": "NFHS Network 2080: Cortez High School vs. Coronado High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+          "provider_core": "Cortez High School vs. Coronado High School Varsity Girls Volleyball",
+          "score": 0.4125,
+          "overlap": [
+            "coronado"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 2080,
+            "stream_id": 2068246,
+            "provider_title": "NFHS Network 2080: Cortez High School vs. Coronado High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Cortez High School vs. Coronado High School Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "coronado"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2630,
+            "stream_id": 2067687,
+            "provider_title": "NFHS Network 2630: Liberty High School vs. Coronado High School Varsity Girls Soccer @ 28 Sep 07:30 PM ET",
+            "provider_core": "Liberty High School vs. Coronado High School Varsity Girls Soccer",
+            "score": 0.4125,
+            "overlap": [
+              "coronado"
+            ]
+          },
+          {
+            "provider_nfhs_number": 3080,
+            "stream_id": 2067233,
+            "provider_title": "NFHS Network 3080: Liberty High School vs. Coronado High School Junior Varsity Girls Soccer @ 28 Sep 09:00 PM ET",
+            "provider_core": "Liberty High School vs. Coronado High School Junior Varsity Girls Soccer",
+            "score": 0.4125,
+            "overlap": [
+              "coronado"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1057,
+            "stream_id": 2069290,
+            "provider_title": "NFHS Network 1057: Centauri High School vs. Monte Vista High School Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Centauri High School vs. Monte Vista High School Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1154,
+            "stream_id": 2069193,
+            "provider_title": "NFHS Network 1154: Gunnison High School vs. Buena Vista High School Junior Varsity Football @ 28 Sep 06:00 PM ET",
+            "provider_core": "Gunnison High School vs. Buena Vista High School Junior Varsity Football",
+            "score": 0.2867,
+            "overlap": [
+              "vista"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 8,
+        "page_index": 20,
+        "event_id": "gamfd3a191516",
+        "official_text": "Junior Varsity Girls Volleyball1:03:27Maui Sabers vs Kamehameha Schools - Maui WarriorsSep 30, 2026 | 3:00 AM UTCKahului, HI",
+        "official_core": "1:03:27Maui Sabers vs Kamehameha Schools - Maui Warriors",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 9,
+        "page_index": 21,
+        "event_id": "gam90fc037f25",
+        "official_text": "Varsity Girls Volleyball1:33:03Compass CharterSep 30, 2026 | 2:50 AM UTCMeridian, ID",
+        "official_core": "1:33:03Compass Charter",
+        "best_provider_match": {
+          "provider_nfhs_number": 37,
+          "stream_id": 2070328,
+          "provider_title": "NFHS Network 37: Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "provider_core": "Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball",
+          "score": 0.4125,
+          "overlap": [
+            "charter"
+          ]
+        },
+        "strong_anchor": false,
+        "top_provider_matches": [
+          {
+            "provider_nfhs_number": 37,
+            "stream_id": 2070328,
+            "provider_title": "NFHS Network 37: Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+            "provider_core": "Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "charter"
+            ]
+          },
+          {
+            "provider_nfhs_number": 719,
+            "stream_id": 2069628,
+            "provider_title": "NFHS Network 719: Chamblee Charter High School vs. Lovett School Middle School Softball @ 28 Sep 05:30 PM ET",
+            "provider_core": "Chamblee Charter High School vs. Lovett School Middle School Softball",
+            "score": 0.4125,
+            "overlap": [
+              "charter"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1227,
+            "stream_id": 2069120,
+            "provider_title": "NFHS Network 1227: Breakthrough Charter School vs. Montevallo High School Junior Varsity Girls Volleyball @ 28 Sep 06:00 PM ET",
+            "provider_core": "Breakthrough Charter School vs. Montevallo High School Junior Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "charter"
+            ]
+          },
+          {
+            "provider_nfhs_number": 1712,
+            "stream_id": 2068616,
+            "provider_title": "NFHS Network 1712: Away vs. Pinnacle Charter School Middle School Boys Soccer @ 28 Sep 06:30 PM ET",
+            "provider_core": "Away vs. Pinnacle Charter School Middle School Boys Soccer",
+            "score": 0.4125,
+            "overlap": [
+              "charter"
+            ]
+          },
+          {
+            "provider_nfhs_number": 2471,
+            "stream_id": 2067851,
+            "provider_title": "NFHS Network 2471: Breakthrough Charter School vs. Montevallo High School Varsity Girls Volleyball @ 28 Sep 07:00 PM ET",
+            "provider_core": "Breakthrough Charter School vs. Montevallo High School Varsity Girls Volleyball",
+            "score": 0.4125,
+            "overlap": [
+              "charter"
+            ]
+          }
+        ],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 10,
+        "page_index": 22,
+        "event_id": "gam10233fe9ba",
+        "official_text": "Varsity Girls Volleyball4:19:01Sitka vs. Mt. EdgecumbeSep 30, 2026 | 2:45 AM UTCSitka, AK",
+        "official_core": "4:19:01Sitka vs. Mt. Edgecumbe",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      },
+      {
+        "official_index": 11,
+        "page_index": 23,
+        "event_id": "gam9091010295",
+        "official_text": "Varsity Girls Football3:01:36Granada vs. SRVHSSep 30, 2026 | 2:45 AM UTCDanville, CA",
+        "official_core": "3:01:36Granada vs. SRVHS",
+        "best_provider_match": null,
+        "strong_anchor": false,
+        "top_provider_matches": [],
+        "predicted_provider_number": null
+      }
+    ]
+  }
+}
