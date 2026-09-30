@@ -2970,6 +2970,135 @@ async function probeGeorgiaSourceLaneMappings(providerStreams) {
 
 
 
+
+async function probeHistoricalCrossDayLaneStability(providerStreams) {
+  const testDays = ["2026-09-28", "2026-09-29"];
+  const dayData = new Map();
+  for (const day of testDays) dayData.set(day, await fetchOfficialDayEvents(day));
+
+  const strictByDay = new Map();
+  for (const day of testDays) {
+    const idx = new Map();
+    for (const row of dayData.get(day)?.rows || []) {
+      const sportKey = normalize(row.sport || "");
+      for (const title of [row.broadcast_subheadline, row.event_title].filter(Boolean)) {
+        const matchupKey = strictMatchupKey(title);
+        if (!matchupKey) continue;
+        const k = `${sportKey}::${matchupKey}`;
+        if (!idx.has(k)) idx.set(k, []);
+        idx.get(k).push(row);
+      }
+    }
+    strictByDay.set(day, idx);
+  }
+
+  const directByDay = new Map(testDays.map(d => [d, []]));
+
+  for (const p of providerStreams) {
+    if (!testDays.includes(p.provider_day)) continue;
+    const sport = providerSportFromTitle(p.title || "");
+    const matchupKey = strictMatchupKey(p.title || "");
+    if (!sport || !matchupKey) continue;
+
+    const k = `${normalize(sport)}::${matchupKey}`;
+    const candidates = [...new Map(
+      (strictByDay.get(p.provider_day)?.get(k) || []).map(x => [
+        [x.event_key, x.official_start, x.publisher_slug].join("|"),
+        x
+      ])
+    ).values()];
+
+    if (candidates.length !== 1) continue;
+    const hit = candidates[0];
+
+    directByDay.get(p.provider_day).push({
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_day: p.provider_day,
+      provider_title: p.title,
+      event_key: hit.event_key,
+      official_start: hit.official_start,
+      sport: hit.sport,
+      subheadline: hit.broadcast_subheadline,
+      publisher_slug: hit.publisher_slug,
+      association: hit.association
+    });
+  }
+
+  const ids = [...new Set(
+    testDays.flatMap(d => directByDay.get(d).map(x => x.event_key)).filter(Boolean)
+  )];
+
+  const unityByEvent = new Map();
+  for (const id of ids) unityByEvent.set(id, await enrichUnity({ event_key: id }));
+
+  const enrichedByDay = new Map();
+  for (const day of testDays) {
+    const rows = directByDay.get(day).map(x => {
+      const unity = unityByEvent.get(x.event_key);
+      return {
+        ...x,
+        source_signature_hash: sha20(safeSourceSignature(unity))
+      };
+    }).filter(x => x.source_signature_hash);
+    enrichedByDay.set(day, rows);
+  }
+
+  const bySig = new Map();
+  for (const day of testDays) {
+    for (const row of enrichedByDay.get(day)) {
+      if (!bySig.has(row.source_signature_hash)) bySig.set(row.source_signature_hash, {});
+      if (!bySig.get(row.source_signature_hash)[day]) bySig.get(row.source_signature_hash)[day] = [];
+      bySig.get(row.source_signature_hash)[day].push(row);
+    }
+  }
+
+  const recurring = [];
+  for (const [sig, days] of bySig) {
+    if (!days[testDays[0]]?.length || !days[testDays[1]]?.length) continue;
+
+    const slots28 = [...new Set(days[testDays[0]].map(x => x.provider_nfhs_number))].sort((a,b)=>a-b);
+    const slots29 = [...new Set(days[testDays[1]].map(x => x.provider_nfhs_number))].sort((a,b)=>a-b);
+    const sharedSlots = slots28.filter(x => slots29.includes(x));
+
+    recurring.push({
+      source_signature_hash: sig,
+      sep28_slots: slots28,
+      sep29_slots: slots29,
+      same_provider_slot_across_days: sharedSlots.length > 0,
+      shared_provider_slots: sharedSlots,
+      sep28_events: days[testDays[0]].map(x => ({
+        provider_nfhs_number: x.provider_nfhs_number,
+        event_key: x.event_key,
+        official_start: x.official_start,
+        subheadline: x.subheadline,
+        publisher_slug: x.publisher_slug
+      })),
+      sep29_events: days[testDays[1]].map(x => ({
+        provider_nfhs_number: x.provider_nfhs_number,
+        event_key: x.event_key,
+        official_start: x.official_start,
+        subheadline: x.subheadline,
+        publisher_slug: x.publisher_slug
+      }))
+    });
+  }
+
+  recurring.sort((a,b) => Number(b.same_provider_slot_across_days) - Number(a.same_provider_slot_across_days));
+
+  return {
+    purpose:
+      "Historical falsification test: for exact provider-title matches on Sep 28 and Sep 29, compare identical NFHS publisher+producer+ingest source signatures across both days and see whether they land on the same provider slot. This tests whether source lane => provider slot persists across dates without relying on today's labels.",
+    test_days: testDays,
+    direct_matches_sep28: enrichedByDay.get(testDays[0]).length,
+    direct_matches_sep29: enrichedByDay.get(testDays[1]).length,
+    recurring_source_signatures_across_both_days: recurring.length,
+    recurring_sources_with_same_provider_slot: recurring.filter(x => x.same_provider_slot_across_days).length,
+    recurring_sources_with_different_provider_slots_only: recurring.filter(x => !x.same_provider_slot_across_days).length,
+    rows: recurring
+  };
+}
+
 async function probeCrossDaySourceLaneMappings(providerStreams) {
   const now = DateTime.now().setZone(EASTERN);
   const today = now.toISODate();
@@ -3920,6 +4049,7 @@ async function main() {
   const providerEpgMetadata = await probeProviderEpgMetadata(provider);
   const providerPlaylistMetadata = await probeProviderPlaylistMetadata(provider);
   const crossDaySourceLaneMappings = await probeCrossDaySourceLaneMappings(provider.streams);
+  const historicalCrossDayLaneStability = await probeHistoricalCrossDayLaneStability(provider.streams);
   const historicalSourceSlotReuse = summarizeHistoricalSourceSlotReuse(crossDaySourceLaneMappings);
 
   const exactZeroMinuteRows = strongRows.filter(
@@ -4066,6 +4196,7 @@ async function main() {
     provider_epg_metadata_probe: providerEpgMetadata,
     provider_playlist_metadata_probe: providerPlaylistMetadata,
     historical_source_slot_reuse_probe: historicalSourceSlotReuse,
+    historical_cross_day_lane_stability_probe: historicalCrossDayLaneStability,
     cross_day_source_lane_mapping_probe: {
       purpose: crossDaySourceLaneMappings.purpose,
       today: crossDaySourceLaneMappings.today,
