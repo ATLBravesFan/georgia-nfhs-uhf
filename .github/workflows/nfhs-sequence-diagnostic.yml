@@ -1,0 +1,48 @@
+name: NFHS Provider Sequence Diagnostic
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nfhs-provider-sequence-diagnostic
+  cancel-in-progress: true
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run sequence diagnostic
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+          NFHS_CATEGORY_NAME: ${{ vars.NFHS_CATEGORY_NAME }}
+        run: node scripts/nfhs-sequence-diagnostic.mjs
+
+      - name: Publish sequence diagnostic only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/nfhs-sequence-diagnostic.json
+          if git diff --cached --quiet; then
+            echo "No sequence diagnostic changes to publish."
+            exit 0
+          fi
+          git commit -m "Update NFHS provider sequence diagnostic"
+          git push
