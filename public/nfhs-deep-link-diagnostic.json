@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T13:30:11.190Z",
+  "generated_at": "2026-09-30T13:37:26.625Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-1",
+  "diagnostic_version": "deep-link-2",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
