@@ -1,0 +1,564 @@
+{
+  "generated_at": "2026-09-30T13:30:11.190Z",
+  "diagnostic_only": true,
+  "modifies_epg": false,
+  "diagnostic_version": "deep-link-1",
+  "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
+  "safety": {
+    "public_events_json_modified": false,
+    "provider_video_accessed": false,
+    "nfhs_video_accessed": false,
+    "signed_playback_urls_saved": false,
+    "credentials_written_to_output": false
+  },
+  "provider": {
+    "category": "USA | NFHS Network",
+    "nfhs_stream_count": 5000,
+    "latest_title_day": "2026-09-29",
+    "latest_title_day_stream_count": 288
+  },
+  "summary": {
+    "samples_tested": 41,
+    "search_api_successes": 0,
+    "strong_official_matches": 0,
+    "near_exact_metadata_matches": 0,
+    "strong_matches_with_unity_event": 0,
+    "provider_number_vs_official_start_pearson": null
+  },
+  "official_start_groups_to_provider_numbers": {},
+  "rows": [
+    {
+      "provider": {
+        "provider_nfhs_number": 3329,
+        "stream_id": 2066983,
+        "title": "NFHS Network 3329: Kealakehe High School vs. Kea'au High School Varsity Girls Volleyball @ 29 Sep 12:00 AM ET",
+        "core": "Kealakehe High School vs. Kea'au High School Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T00:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236627
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3337,
+        "stream_id": 2066975,
+        "title": "NFHS Network 3337: Hart High School vs. Fremont High School Freshman Girls Volleyball @ 29 Sep 05:30 AM ET",
+        "core": "Hart High School vs. Fremont High School Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T05:30:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236623
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3343,
+        "stream_id": 2066969,
+        "title": "NFHS Network 3343: September 29th Episode 2026 Georgia High School Sports Daily Show @ 29 Sep 12:00 PM ET",
+        "core": "September 29th Episode 2026 Georgia High School Sports Daily Show",
+        "provider_start": "2026-09-29T12:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236620
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3345,
+        "stream_id": 2066967,
+        "title": "NFHS Network 3345: KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball @ 29 Sep 12:00 PM ET",
+        "core": "KIPP Atlanta Collegiate vs. Wesleyan School Varsity Softball",
+        "provider_start": "2026-09-29T12:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236619
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3354,
+        "stream_id": 2066958,
+        "title": "NFHS Network 3354: Rising Sun High School vs. Bel Air High School Junior Varsity Boys Soccer @ 29 Sep 03:20 PM ET",
+        "core": "Rising Sun High School vs. Bel Air High School Junior Varsity Boys Soccer",
+        "provider_start": "2026-09-29T15:20:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236614
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3362,
+        "stream_id": 2066950,
+        "title": "NFHS Network 3362: Shrewsbury High School vs. Doherty Memorial High School Junior Varsity Boys Soccer @ 29 Sep 03:30 PM ET",
+        "core": "Shrewsbury High School vs. Doherty Memorial High School Junior Varsity Boys Soccer",
+        "provider_start": "2026-09-29T15:30:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236610
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3370,
+        "stream_id": 2066942,
+        "title": "NFHS Network 3370: Greeley West High School vs. Poudre High School Junior Varsity Boys Soccer @ 29 Sep 03:45 PM ET",
+        "core": "Greeley West High School vs. Poudre High School Junior Varsity Boys Soccer",
+        "provider_start": "2026-09-29T15:45:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236606
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3378,
+        "stream_id": 2066934,
+        "title": "NFHS Network 3378: Tradition Preparatory High School Varsity Girls Volleyball @ 29 Sep 03:45 PM ET",
+        "core": "Tradition Preparatory High School Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T15:45:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236591
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3386,
+        "stream_id": 2066926,
+        "title": "NFHS Network 3386: Waterbury Career Academy vs. Naugatuck High School Freshman Girls Volleyball @ 29 Sep 03:45 PM ET",
+        "core": "Waterbury Career Academy vs. Naugatuck High School Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T15:45:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236587
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3395,
+        "stream_id": 2066917,
+        "title": "NFHS Network 3395: Audubon High School vs. Riverside High School Varsity Boys Soccer @ 29 Sep 03:45 PM ET",
+        "core": "Audubon High School vs. Riverside High School Varsity Boys Soccer",
+        "provider_start": "2026-09-29T15:45:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236583
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3403,
+        "stream_id": 2066909,
+        "title": "NFHS Network 3403: North Hunterdon High School vs. Mount Saint Mary Academy Freshman Girls Volleyball @ 29 Sep 03:55 PM ET",
+        "core": "North Hunterdon High School vs. Mount Saint Mary Academy Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T15:55:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236579
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3411,
+        "stream_id": 2066901,
+        "title": "NFHS Network 3411: Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Hampden Academy vs. Messalonskee High School Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236575
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3419,
+        "stream_id": 2066893,
+        "title": "NFHS Network 3419: Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Blessed Trinity School vs. Redeemer Christian School Middle School Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236571
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3427,
+        "stream_id": 2066885,
+        "title": "NFHS Network 3427: Edward Little High School vs. Biddeford High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Edward Little High School vs. Biddeford High School Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236567
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3436,
+        "stream_id": 2066876,
+        "title": "NFHS Network 3436: James M. Bennett High School vs. Queen Anne's High School Junior Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "core": "James M. Bennett High School vs. Queen Anne's High School Junior Varsity Girls Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236562
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3444,
+        "stream_id": 2066868,
+        "title": "NFHS Network 3444: Eastern Technical High School vs. Dundalk High School Varsity Girls Flag Football @ 29 Sep 04:00 PM ET",
+        "core": "Eastern Technical High School vs. Dundalk High School Varsity Girls Flag Football",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236558
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3452,
+        "stream_id": 2066860,
+        "title": "NFHS Network 3452: Barnstable High School vs. Bridgewater-Raynham Reg High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Barnstable High School vs. Bridgewater-Raynham Reg High School Varsity Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236554
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3455,
+        "stream_id": 2066857,
+        "title": "NFHS Network 3455: Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Long County High School vs. St. Vincent's Academy Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236552
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3460,
+        "stream_id": 2066852,
+        "title": "NFHS Network 3460: Tallwood High School vs. First Colonial High School Varsity Boys Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Tallwood High School vs. First Colonial High School Varsity Boys Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236550
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3468,
+        "stream_id": 2066844,
+        "title": "NFHS Network 3468: Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Emmanuel Christian Academy vs. Watkinson School Middle School Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236546
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3477,
+        "stream_id": 2066835,
+        "title": "NFHS Network 3477: Winter Park HS vs. Olympia High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Winter Park HS vs. Olympia High School Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236541
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3485,
+        "stream_id": 2066827,
+        "title": "NFHS Network 3485: Windsor Locks High School vs. Bolton High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Windsor Locks High School vs. Bolton High School Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236537
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3493,
+        "stream_id": 2066819,
+        "title": "NFHS Network 3493: The Greene School vs. Berean Christian School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "The Greene School vs. Berean Christian School Middle School Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236533
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3501,
+        "stream_id": 2066811,
+        "title": "NFHS Network 3501: SEED School of Maryland vs. Edmondson-Westside High School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "SEED School of Maryland vs. Edmondson-Westside High School Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236529
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3509,
+        "stream_id": 2066803,
+        "title": "NFHS Network 3509: Floyd E. Kellam High School vs. Ocean Lakes High School Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "core": "Floyd E. Kellam High School vs. Ocean Lakes High School Varsity Field Hockey",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236525
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3518,
+        "stream_id": 2066794,
+        "title": "NFHS Network 3518: Queen Anne's High School vs. Stephen Decatur High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Queen Anne's High School vs. Stephen Decatur High School Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236520
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3526,
+        "stream_id": 2066786,
+        "title": "NFHS Network 3526: Smyrna High School vs. Caesar Rodney High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "core": "Smyrna High School vs. Caesar Rodney High School Junior Varsity Field Hockey",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236516
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3534,
+        "stream_id": 2066777,
+        "title": "NFHS Network 3534: Glendale High School vs. Windber Area High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Glendale High School vs. Windber Area High School Middle School Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236512
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3542,
+        "stream_id": 2066769,
+        "title": "NFHS Network 3542: Walt Whitman High School vs. Lindenhurst Senior High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Walt Whitman High School vs. Lindenhurst Senior High School Varsity Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236508
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3550,
+        "stream_id": 2066760,
+        "title": "NFHS Network 3550: Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236504
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3552,
+        "stream_id": 2066758,
+        "title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "core": "Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236503
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3559,
+        "stream_id": 2066751,
+        "title": "NFHS Network 3559: Towson High School vs. Perry Hall High School Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Towson High School vs. Perry Hall High School Varsity Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236500
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3567,
+        "stream_id": 2066742,
+        "title": "NFHS Network 3567: Stratford High School vs. New Fairfield High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Stratford High School vs. New Fairfield High School Junior Varsity Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236496
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236493
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3575,
+        "stream_id": 2066734,
+        "title": "NFHS Network 3575: Gorham High School vs. Colebrook Academy Varsity Girls Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Gorham High School vs. Colebrook Academy Varsity Girls Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236492
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3583,
+        "stream_id": 2066725,
+        "title": "NFHS Network 3583: None BCS vs. Christ's Church Academy - Part 1 @ 29 Sep 04:00 PM ET",
+        "core": "None BCS vs. Christ's Church Academy - Part 1",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236487
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3591,
+        "stream_id": 2066717,
+        "title": "NFHS Network 3591: Essex High School vs. South Burlington High School Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "core": "Essex High School vs. South Burlington High School Varsity Field Hockey",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236483
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3596,
+        "stream_id": 2066711,
+        "title": "NFHS Network 3596: Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Frederica Academy vs. Bradwell Institute Junior Varsity Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236481
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3600,
+        "stream_id": 2066707,
+        "title": "NFHS Network 3600: Guilford High School vs. Xavier High School Freshman Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Guilford High School vs. Xavier High School Freshman Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236479
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3608,
+        "stream_id": 2066698,
+        "title": "NFHS Network 3608: Oxford High School vs. Clarkston High School Freshman Boys Soccer @ 29 Sep 04:00 PM ET",
+        "core": "Oxford High School vs. Clarkston High School Freshman Boys Soccer",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236475
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    },
+    {
+      "provider": {
+        "provider_nfhs_number": 3616,
+        "stream_id": 2066690,
+        "title": "NFHS Network 3616: Lansing Christian High School vs. Lakewood Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "core": "Lansing Christian High School vs. Lakewood Freshman Girls Volleyball",
+        "provider_start": "2026-09-29T16:00:00.000-04:00",
+        "provider_day": "2026-09-29",
+        "added": 1789236471
+      },
+      "search_ok": false,
+      "search_error": "400 Bad Request: {\"error\":\"search_term must contain at most 5 words\"}"
+    }
+  ]
+}
