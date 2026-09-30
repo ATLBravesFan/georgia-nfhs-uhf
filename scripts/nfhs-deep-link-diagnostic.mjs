@@ -502,6 +502,199 @@ async function probeOfficialFeed(knownRows) {
   };
 }
 
+
+function pickSafeFields(obj) {
+  if (!obj || typeof obj !== "object" || Array.isArray(obj)) return obj;
+  const keep = [
+    "key","game_key","event_key","broadcast_key","start_time","local_start_time",
+    "status","headline","subheadline","pixellot_event_id","pixellot_id",
+    "producer_key","publisher_key","sport","state_name","city"
+  ];
+  const out = {};
+  for (const k of keep) {
+    if (obj[k] !== undefined && obj[k] !== null) out[k] = obj[k];
+  }
+  return out;
+}
+
+function collectKnownIds(strongRows) {
+  const map = new Map();
+  for (const x of strongRows) {
+    const n = x?.provider?.provider_nfhs_number;
+    if (!Number.isFinite(n)) continue;
+
+    const vals = [
+      ["event_key", x?.unity?.event_key],
+      ["broadcast_key", x?.unity?.broadcast_key],
+      ["game_key", x?.unity?.game_key],
+      ["pixellot_event_id", x?.unity?.pixellot_event_id]
+    ];
+
+    for (const [kind, value] of vals) {
+      if (value) map.set(String(value), { kind, provider_nfhs_number: n });
+    }
+  }
+  return map;
+}
+
+function inspectJsonForKnownIds(data, knownMap) {
+  const hits = [];
+  const arraySummaries = [];
+  const seenArrays = new Set();
+  let nodes = 0;
+  const MAX_NODES = 200000;
+
+  function walk(value, path, depth) {
+    if (nodes++ > MAX_NODES || depth > 10) return;
+
+    if (typeof value === "string") {
+      const hit = knownMap.get(value);
+      if (hit) hits.push({ path, value, ...hit });
+      return;
+    }
+
+    if (!value || typeof value !== "object") return;
+
+    if (Array.isArray(value)) {
+      if (!seenArrays.has(value)) {
+        seenArrays.add(value);
+        arraySummaries.push({
+          path,
+          length: value.length,
+          first_safe: value.length ? pickSafeFields(value[0]) : null,
+          last_safe: value.length ? pickSafeFields(value[value.length - 1]) : null
+        });
+      }
+      for (let i = 0; i < value.length; i++) walk(value[i], `${path}[${i}]`, depth + 1);
+      return;
+    }
+
+    for (const [k, v] of Object.entries(value)) {
+      walk(v, path ? `${path}.${k}` : k, depth + 1);
+    }
+  }
+
+  walk(data, "$", 0);
+
+  const providerOrder = hits
+    .map(h => {
+      const m = h.path.match(/\[(\d+)\]/);
+      return m ? { ...h, first_array_index: Number(m[1]) } : { ...h, first_array_index: null };
+    })
+    .filter(h => h.first_array_index !== null)
+    .sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+
+  let agreement = null;
+  if (providerOrder.length >= 2) {
+    let ok = 0;
+    let total = 0;
+    for (let i = 1; i < providerOrder.length; i++) {
+      if (providerOrder[i].provider_nfhs_number === providerOrder[i - 1].provider_nfhs_number) continue;
+      total++;
+      if (providerOrder[i].first_array_index > providerOrder[i - 1].first_array_index) ok++;
+    }
+    agreement = {
+      agreeing_adjacent_provider_pairs: ok,
+      total_adjacent_provider_pairs: total,
+      percent: total ? Number((ok / total * 100).toFixed(2)) : null
+    };
+  }
+
+  return {
+    known_id_hits: hits.length,
+    hits: hits.slice(0, 250),
+    array_summaries: arraySummaries.slice(0, 50),
+    provider_order_vs_first_array_index: agreement
+  };
+}
+
+async function probeUnityFleetFeeds(strongRows) {
+  const knownMap = collectKnownIds(strongRows);
+  const endpoints = [
+    "/v2/upcoming",
+    "/v2/upcoming_by_quality",
+    "/v2/current_by_quality"
+  ];
+  const results = [];
+
+  for (const path of endpoints) {
+    try {
+      const data = await fetchJson(`${UNITY_BASE}${path}`, 30000);
+      const inspected = inspectJsonForKnownIds(data, knownMap);
+      results.push({
+        endpoint: path,
+        ok: true,
+        top_level_type: Array.isArray(data) ? "array" : typeof data,
+        top_level_length: Array.isArray(data) ? data.length : null,
+        top_level_keys: data && typeof data === "object" && !Array.isArray(data)
+          ? Object.keys(data).slice(0, 50)
+          : null,
+        ...inspected
+      });
+    } catch (err) {
+      results.push({
+        endpoint: path,
+        ok: false,
+        error: String(err?.message || err).slice(0, 400)
+      });
+    }
+  }
+
+  return results;
+}
+
+function decodeCursor(cursor) {
+  if (!cursor) return null;
+  try {
+    return JSON.parse(Buffer.from(cursor, "base64").toString("utf8"));
+  } catch {
+    return null;
+  }
+}
+
+async function probeSearchApiControls() {
+  const queries = [
+    { name: "default", qs: "size=5" },
+    { name: "sort_start_asc", qs: "size=5&sort=start_time%3Aasc" },
+    { name: "sort_start_asc_key_asc", qs: "size=5&sort=start_time%3Aasc%7Ckey.keyword%3Aasc" },
+    { name: "start_100000", qs: "size=5&start=100000" },
+    { name: "start_500000", qs: "size=5&start=500000" }
+  ];
+
+  const out = [];
+
+  for (const q of queries) {
+    try {
+      const data = await fetchJson(`${SEARCH_BASE}/v3/search/events?${q.qs}`, 30000);
+      const items = Array.isArray(data?.items) ? data.items : [];
+      out.push({
+        name: q.name,
+        ok: true,
+        start: data?.start ?? null,
+        size: data?.size ?? null,
+        total: data?.total ?? null,
+        cursor_decoded: decodeCursor(data?.cursor),
+        first: items.length ? {
+          key: items[0]?.key || null,
+          start_time: items[0]?.start_time || null
+        } : null,
+        last: items.length ? {
+          key: items[items.length - 1]?.key || null,
+          start_time: items[items.length - 1]?.start_time || null
+        } : null
+      });
+    } catch (err) {
+      out.push({
+        name: q.name,
+        ok: false,
+        error: String(err?.message || err).slice(0, 400)
+      });
+    }
+  }
+
+  return out;
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -624,6 +817,8 @@ async function main() {
   }
 
   const officialFeedProbe = await probeOfficialFeed(strongRows);
+  const unityFleetFeeds = await probeUnityFleetFeeds(strongRows);
+  const searchApiControls = await probeSearchApiControls();
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -669,7 +864,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-5",
+    diagnostic_version: "deep-link-6",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -701,6 +896,8 @@ async function main() {
     },
     ordering_checks: orderingChecks,
     official_feed_probe: officialFeedProbe,
+    unity_fleet_feed_probe: unityFleetFeeds,
+    search_api_control_probe: searchApiControls,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
