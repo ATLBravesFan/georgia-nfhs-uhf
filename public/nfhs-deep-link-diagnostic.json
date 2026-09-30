@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T14:58:59.306Z",
+  "generated_at": "2026-09-30T15:12:58.010Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-14",
+  "diagnostic_version": "deep-link-15",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1498903,
+      "total": 1498955,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1498904,
+      "total": 1498955,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1498904,
+    "returned_total": 1498955,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22061,6 +22061,547 @@
         "query_keys_equal": true
       }
     }
+  },
+  "official_playback_vs_provider_relay_probe": {
+    "purpose": "Resolve official NFHS playback/API routing for known controls and compare only hashed URL structure against the provider relay redirect. Raw provider credentials and raw NFHS/provider URLs are never written.",
+    "provider_connections_are_sequential": true,
+    "rows": [
+      {
+        "provider_nfhs_number": 3552,
+        "stream_id": 2066758,
+        "provider_title": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "provider_relay": {
+          "ok": true,
+          "status": 302,
+          "redirected": true,
+          "redirect_structure": {
+            "response_hash": "af3422cfb2860525c90d",
+            "url_found": true,
+            "url_hash": "7dd4739bb800784d2288",
+            "protocol": "https:",
+            "hostname_hash": "e4c76a94a371027f6639",
+            "port": null,
+            "pathname_hash": "54af11dea30c6ba89f91",
+            "path_segment_hashes": [
+              "aba4cc9b8af82df5d4ef",
+              "247610f4dedd4ab7247d",
+              "1ee458bea74c9fc53ddc",
+              "205d48a0fdc195306e35"
+            ],
+            "query_keys": [],
+            "query_value_hashes": []
+          },
+          "content_type": "text/html; charset=utf-8"
+        },
+        "candidates": [
+          {
+            "label": "stale_title_event",
+            "event_key": "gamb8ebe375ea",
+            "official": {
+              "event_key": "gamb8ebe375ea",
+              "ok": true,
+              "local_start_time": "2026-09-29T16:00:00.000-04:00",
+              "publisher_key_hash": "58771536f622e510b2ea",
+              "producer_key_hash": "a39d8ee8dfe3063c917a",
+              "broadcast_key_hash": "336057f8d9a3def55363",
+              "ingest_structure": {
+                "response_hash": "435451d44cf0215e56bf",
+                "url_found": false
+              },
+              "playback_ok": true,
+              "playback_error": null,
+              "playback_structure": {
+                "response_hash": "dd7fbbb9c506fc0af78d",
+                "url_found": true,
+                "url_hash": "bbf6f9b03bdfa05c325e",
+                "protocol": "https:",
+                "hostname_hash": "a379749ebb0610c470c3",
+                "port": null,
+                "pathname_hash": "6af2c7734ce128fdf0ef",
+                "path_segment_hashes": [
+                  "35f6721424e1d4557ac4",
+                  "00ac631eb3e8f4e1f250"
+                ],
+                "query_keys": [
+                  "hlsid"
+                ],
+                "query_value_hashes": [
+                  {
+                    "key": "hlsid",
+                    "value_hash": "d1e2cc2331828bad9647"
+                  }
+                ]
+              },
+              "broadcast_api_url_ok": true,
+              "broadcast_api_url_error": null,
+              "broadcast_api_url_structure": {
+                "response_hash": "b09a44338af9ff56d36e",
+                "url_found": false
+              }
+            },
+            "comparisons": {
+              "provider_vs_playback": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_broadcast_api_url": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_ingest": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              }
+            }
+          },
+          {
+            "label": "clinch_4pm",
+            "event_key": "gamb8ad8195a3",
+            "official": {
+              "event_key": "gamb8ad8195a3",
+              "ok": true,
+              "local_start_time": "2026-09-29T16:00:00.000-04:00",
+              "publisher_key_hash": "9c5d09184e5e72abd8d0",
+              "producer_key_hash": "d16bab7ae7ee4565257f",
+              "broadcast_key_hash": "b774022c8e84041dcdc2",
+              "ingest_structure": {
+                "response_hash": "b895e79a80d8170ef5ce",
+                "url_found": false
+              },
+              "playback_ok": true,
+              "playback_error": null,
+              "playback_structure": {
+                "response_hash": "eff84508a944cea52dfa",
+                "url_found": true,
+                "url_hash": "7409000a0ae72e8ad1b4",
+                "protocol": "https:",
+                "hostname_hash": "beb9a8f96307831a973a",
+                "port": null,
+                "pathname_hash": "d8357e93a75b949e0281",
+                "path_segment_hashes": [
+                  "e88199c423228a456677",
+                  "b774022c8e84041dcdc2",
+                  "df4fedcf2916c520d641"
+                ],
+                "query_keys": [],
+                "query_value_hashes": []
+              },
+              "broadcast_api_url_ok": true,
+              "broadcast_api_url_error": null,
+              "broadcast_api_url_structure": {
+                "response_hash": "adce7e02b0bc8dce9345",
+                "url_found": true,
+                "url_hash": "19dc6ecec4cca7a49eb2",
+                "protocol": "https:",
+                "hostname_hash": "6e5708933b8686ee5583",
+                "port": null,
+                "pathname_hash": "b88d000975fcc786c5eb",
+                "path_segment_hashes": [
+                  "e88199c423228a456677",
+                  "b774022c8e84041dcdc2"
+                ],
+                "query_keys": [],
+                "query_value_hashes": []
+              }
+            },
+            "comparisons": {
+              "provider_vs_playback": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_broadcast_api_url": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_ingest": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              }
+            }
+          },
+          {
+            "label": "clinch_5pm",
+            "event_key": "gamc34e8e3bfe",
+            "official": {
+              "event_key": "gamc34e8e3bfe",
+              "ok": true,
+              "local_start_time": "2026-09-29T17:00:00.000-04:00",
+              "publisher_key_hash": "9c5d09184e5e72abd8d0",
+              "producer_key_hash": "d16bab7ae7ee4565257f",
+              "broadcast_key_hash": "f48d891ea71b2fd392c0",
+              "ingest_structure": {
+                "response_hash": "b895e79a80d8170ef5ce",
+                "url_found": false
+              },
+              "playback_ok": true,
+              "playback_error": null,
+              "playback_structure": {
+                "response_hash": "79d93d7c666a8a4f3632",
+                "url_found": true,
+                "url_hash": "c0462d5f48893740e0cd",
+                "protocol": "https:",
+                "hostname_hash": "beb9a8f96307831a973a",
+                "port": null,
+                "pathname_hash": "5171c3251d42c6091ca0",
+                "path_segment_hashes": [
+                  "e88199c423228a456677",
+                  "f48d891ea71b2fd392c0",
+                  "df4fedcf2916c520d641"
+                ],
+                "query_keys": [],
+                "query_value_hashes": []
+              },
+              "broadcast_api_url_ok": true,
+              "broadcast_api_url_error": null,
+              "broadcast_api_url_structure": {
+                "response_hash": "e348e5a312d9547bcbff",
+                "url_found": true,
+                "url_hash": "77ebeae6305aa4fe56c3",
+                "protocol": "https:",
+                "hostname_hash": "6e5708933b8686ee5583",
+                "port": null,
+                "pathname_hash": "b683dbd3ef7ef9394cb8",
+                "path_segment_hashes": [
+                  "e88199c423228a456677",
+                  "f48d891ea71b2fd392c0"
+                ],
+                "query_keys": [],
+                "query_value_hashes": []
+              }
+            },
+            "comparisons": {
+              "provider_vs_playback": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_broadcast_api_url": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_ingest": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              }
+            }
+          }
+        ]
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "provider_title": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_relay": {
+          "ok": true,
+          "status": 302,
+          "redirected": true,
+          "redirect_structure": {
+            "response_hash": "f51e5a130e4a06f4af9e",
+            "url_found": true,
+            "url_hash": "1e28014fb376e239bdf6",
+            "protocol": "https:",
+            "hostname_hash": "e4c76a94a371027f6639",
+            "port": null,
+            "pathname_hash": "32c02c96ff2e3b6223ac",
+            "path_segment_hashes": [
+              "aba4cc9b8af82df5d4ef",
+              "247610f4dedd4ab7247d",
+              "f88eae817e1b8285a6a1",
+              "19837f47b96bbd7f5ab2"
+            ],
+            "query_keys": [],
+            "query_value_hashes": []
+          },
+          "content_type": "text/html; charset=utf-8"
+        },
+        "candidates": [
+          {
+            "label": "camden_savannah_5pm",
+            "event_key": "gam3a5725b205",
+            "official": {
+              "event_key": "gam3a5725b205",
+              "ok": true,
+              "local_start_time": "2026-09-29T17:00:00.000-04:00",
+              "publisher_key_hash": "baecbccb6262afa6f68a",
+              "producer_key_hash": "0ea4a01bbf37daea47b4",
+              "broadcast_key_hash": "df4a10df171f158adc88",
+              "ingest_structure": {
+                "response_hash": "b895e79a80d8170ef5ce",
+                "url_found": false
+              },
+              "playback_ok": true,
+              "playback_error": null,
+              "playback_structure": {
+                "response_hash": "cfc9bdbb06faccdabf66",
+                "url_found": true,
+                "url_hash": "a22c7a972164c2d84022",
+                "protocol": "https:",
+                "hostname_hash": "bc41896af95f20b71f82",
+                "port": null,
+                "pathname_hash": "c93d995cb83c9602f82b",
+                "path_segment_hashes": [
+                  "970145b953e4510b96da",
+                  "00ac631eb3e8f4e1f250"
+                ],
+                "query_keys": [
+                  "hlsid"
+                ],
+                "query_value_hashes": [
+                  {
+                    "key": "hlsid",
+                    "value_hash": "d1e2cc2331828bad9647"
+                  }
+                ]
+              },
+              "broadcast_api_url_ok": true,
+              "broadcast_api_url_error": null,
+              "broadcast_api_url_structure": {
+                "response_hash": "b09a44338af9ff56d36e",
+                "url_found": false
+              }
+            },
+            "comparisons": {
+              "provider_vs_playback": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_broadcast_api_url": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_ingest": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              }
+            }
+          }
+        ]
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "provider_title": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "provider_relay": {
+          "ok": true,
+          "status": 302,
+          "redirected": true,
+          "redirect_structure": {
+            "response_hash": "a13951977951bc6f6d5b",
+            "url_found": true,
+            "url_hash": "c8c0450eb5e9364f42d7",
+            "protocol": "https:",
+            "hostname_hash": "e4c76a94a371027f6639",
+            "port": null,
+            "pathname_hash": "a60c9b38c061e117414b",
+            "path_segment_hashes": [
+              "aba4cc9b8af82df5d4ef",
+              "247610f4dedd4ab7247d",
+              "85bfe2e99359531e0158",
+              "a9292e7b9261ade8dcc3"
+            ],
+            "query_keys": [],
+            "query_value_hashes": []
+          },
+          "content_type": "text/html; charset=utf-8"
+        },
+        "candidates": [
+          {
+            "label": "grove_carmel_650pm",
+            "event_key": "gam3ba7a342c5",
+            "official": {
+              "event_key": "gam3ba7a342c5",
+              "ok": true,
+              "local_start_time": "2026-09-29T18:50:00.000-04:00",
+              "publisher_key_hash": "66f5656ce46f7e41015e",
+              "producer_key_hash": "8a5c88b273f9724e50ab",
+              "broadcast_key_hash": "01e442c8b51d115b78ab",
+              "ingest_structure": {
+                "response_hash": "b895e79a80d8170ef5ce",
+                "url_found": false
+              },
+              "playback_ok": true,
+              "playback_error": null,
+              "playback_structure": {
+                "response_hash": "38b1181df55af3e8db1f",
+                "url_found": true,
+                "url_hash": "05cd207e402cab0be40e",
+                "protocol": "https:",
+                "hostname_hash": "b0efc3f1926f59739997",
+                "port": null,
+                "pathname_hash": "046224e8319cdaf95803",
+                "path_segment_hashes": [
+                  "720d9f27d03223096bd8",
+                  "00ac631eb3e8f4e1f250"
+                ],
+                "query_keys": [
+                  "hlsid"
+                ],
+                "query_value_hashes": [
+                  {
+                    "key": "hlsid",
+                    "value_hash": "d1e2cc2331828bad9647"
+                  }
+                ]
+              },
+              "broadcast_api_url_ok": true,
+              "broadcast_api_url_error": null,
+              "broadcast_api_url_structure": {
+                "response_hash": "b09a44338af9ff56d36e",
+                "url_found": false
+              }
+            },
+            "comparisons": {
+              "provider_vs_playback": {
+                "both_urls_found": true,
+                "same_protocol": true,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_broadcast_api_url": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              },
+              "provider_vs_ingest": {
+                "both_urls_found": false,
+                "same_protocol": false,
+                "same_hostname_hash": false,
+                "same_pathname_hash": false,
+                "same_path_segment_count": false,
+                "shared_path_segment_count": 0,
+                "shared_path_segment_hashes": [],
+                "same_first_path_segment": false,
+                "same_last_path_segment": false,
+                "shared_query_value_count": 0,
+                "shared_query_value_hashes": []
+              }
+            }
+          }
+        ]
+      }
+    ]
   },
   "official_start_groups_to_provider_numbers": {
     "2026-09-29T04:00:00.000Z": [
