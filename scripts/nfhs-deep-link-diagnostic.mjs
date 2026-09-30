@@ -818,6 +818,216 @@ async function probeTargetDateCursor(strongRows) {
   }
 }
 
+
+async function probeExactFourPmBlock(providerStreams) {
+  const targetIso = "2026-09-29T20:00:00.000Z";
+  const targetMillis = DateTime.fromISO(targetIso, { setZone: true }).toMillis();
+  const initialCursor = encodeSearchCursor(targetIso, "");
+  const official = [];
+  let cursor = initialCursor;
+  let pages = 0;
+  let stoppedBecause = null;
+
+  while (cursor && pages < 12) {
+    const data = await fetchJson(
+      `${SEARCH_BASE}/v3/search/events?size=500&cursor=${encodeURIComponent(cursor)}`,
+      30000
+    );
+    pages++;
+
+    const items = Array.isArray(data?.items) ? data.items : [];
+    if (!items.length) {
+      stoppedBecause = "empty_page";
+      break;
+    }
+
+    let sawOlder = false;
+
+    for (const event of items) {
+      const dt = DateTime.fromISO(event?.start_time || "", { setZone: true });
+      if (!dt.isValid) continue;
+      const ms = dt.toMillis();
+
+      if (ms < targetMillis) {
+        sawOlder = true;
+        continue;
+      }
+      if (ms > targetMillis) continue;
+
+      const pubs = Array.isArray(event?.publishers) ? event.publishers : [];
+      const broadcasts = [];
+
+      for (const pub of pubs) {
+        for (const b of (Array.isArray(pub?.broadcasts) ? pub.broadcasts : [])) {
+          const bdt = DateTime.fromISO(b?.start_time || event?.start_time || "", { setZone: true });
+          if (!bdt.isValid || bdt.toMillis() !== targetMillis) continue;
+
+          broadcasts.push({
+            broadcast_key: b?.key || null,
+            game_key: b?.game_key || event?.key || null,
+            subheadline: b?.subheadline || null,
+            status: b?.status || null,
+            is_live: b?.is_live ?? null,
+            view_url_present: Boolean(b?.view_url),
+            publisher_slug: pub?.slug || null,
+            publisher_name: pub?.headline_short_name || pub?.formatted_name || null,
+            association: pub?.state_association_acronym || null
+          });
+        }
+      }
+
+      official.push({
+        event_key: event?.key || null,
+        start_time: event?.start_time || null,
+        sport: event?.sport || null,
+        broadcast_count: broadcasts.length,
+        broadcasts
+      });
+    }
+
+    if (sawOlder) {
+      stoppedBecause = "passed_target_time";
+      break;
+    }
+
+    cursor = data?.cursor || null;
+    if (!cursor) {
+      stoppedBecause = "no_cursor";
+      break;
+    }
+  }
+
+  official.sort((a, b) => String(a.event_key || "").localeCompare(String(b.event_key || "")));
+  official.forEach((x, i) => { x.full_feed_index = i; });
+
+  const broadcastBearing = official.filter(x => x.broadcast_count > 0);
+  broadcastBearing.forEach((x, i) => { x.broadcast_feed_index = i; });
+
+  const provider4pm = providerStreams
+    .filter(x => {
+      const dt = DateTime.fromISO(x.provider_start || "", { setZone: true });
+      return dt.isValid && dt.toUTC().toMillis() === targetMillis;
+    })
+    .sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+
+  const candidates = [];
+  for (const event of broadcastBearing) {
+    for (const b of event.broadcasts) {
+      candidates.push({
+        event_key: event.event_key,
+        full_feed_index: event.full_feed_index,
+        broadcast_feed_index: event.broadcast_feed_index,
+        sport: event.sport,
+        broadcast_key: b.broadcast_key,
+        subheadline: b.subheadline,
+        publisher_slug: b.publisher_slug,
+        association: b.association,
+        status: b.status,
+        view_url_present: b.view_url_present
+      });
+    }
+  }
+
+  const matches = provider4pm.map(p => {
+    let best = null;
+    for (const cand of candidates) {
+      const score = similarity(p.core, cand.subheadline || "");
+      if (!best || score > best.text_score) best = { ...cand, text_score: score };
+    }
+    const strong = Boolean(best) && best.text_score >= 0.90;
+    return {
+      provider_nfhs_number: p.provider_nfhs_number,
+      stream_id: p.stream_id,
+      provider_title: p.title,
+      best_match: best,
+      strong_match: strong
+    };
+  });
+
+  const strong = matches.filter(x => x.strong_match && x.best_match);
+  const onePerEvent = [];
+  const used = new Set();
+
+  for (const m of [...strong].sort((a, b) =>
+    b.best_match.text_score - a.best_match.text_score ||
+    a.provider_nfhs_number - b.provider_nfhs_number
+  )) {
+    if (used.has(m.best_match.event_key)) continue;
+    used.add(m.best_match.event_key);
+    onePerEvent.push(m);
+  }
+
+  onePerEvent.sort((a, b) => a.provider_nfhs_number - b.provider_nfhs_number);
+
+  function compareIndex(field) {
+    if (onePerEvent.length < 2) return null;
+    let increasing = 0;
+    let exactGap = 0;
+    let total = 0;
+    const pairs = [];
+
+    for (let i = 1; i < onePerEvent.length; i++) {
+      const a = onePerEvent[i - 1];
+      const b = onePerEvent[i];
+      const ai = a.best_match[field];
+      const bi = b.best_match[field];
+      if (!Number.isFinite(ai) || !Number.isFinite(bi)) continue;
+
+      total++;
+      if (bi > ai) increasing++;
+
+      const providerGap = b.provider_nfhs_number - a.provider_nfhs_number;
+      const feedGap = bi - ai;
+      if (providerGap === feedGap) exactGap++;
+
+      pairs.push({
+        from_provider: a.provider_nfhs_number,
+        to_provider: b.provider_nfhs_number,
+        from_event: a.best_match.event_key,
+        to_event: b.best_match.event_key,
+        provider_gap: providerGap,
+        feed_gap: feedGap,
+        gap_difference: providerGap - feedGap
+      });
+    }
+
+    return {
+      increasing_pairs: increasing,
+      total_pairs: total,
+      percent_increasing: total ? Number((increasing / total * 100).toFixed(2)) : null,
+      exact_gap_pairs: exactGap,
+      percent_exact_gap: total ? Number((exactGap / total * 100).toFixed(2)) : null,
+      pairs
+    };
+  }
+
+  const providerRankVsOfficialRank = onePerEvent.map((m, i) => ({
+    provider_rank: i,
+    provider_nfhs_number: m.provider_nfhs_number,
+    event_key: m.best_match.event_key,
+    full_feed_index: m.best_match.full_feed_index,
+    broadcast_feed_index: m.best_match.broadcast_feed_index,
+    text_score: m.best_match.text_score
+  }));
+
+  return {
+    ok: true,
+    target_start: targetIso,
+    pages_fetched: pages,
+    stopped_because: stoppedBecause,
+    official_events_exact_time: official.length,
+    official_events_with_broadcasts: broadcastBearing.length,
+    official_broadcast_candidates: candidates.length,
+    provider_titles_exact_time: provider4pm.length,
+    strong_local_matches: strong.length,
+    unique_event_strong_matches: onePerEvent.length,
+    full_feed_order_check: compareIndex("full_feed_index"),
+    broadcast_feed_order_check: compareIndex("broadcast_feed_index"),
+    matched_positions: providerRankVsOfficialRank,
+    unmatched_provider_samples: matches.filter(x => !x.strong_match).slice(0, 30)
+  };
+}
+
 function pearson(xs, ys) {
   if (xs.length !== ys.length || xs.length < 2) return null;
   const n = xs.length;
@@ -943,6 +1153,7 @@ async function main() {
   const unityFleetFeeds = await probeUnityFleetFeeds(strongRows);
   const searchApiControls = await probeSearchApiControls();
   const targetDateCursorProbe = await probeTargetDateCursor(strongRows);
+  const exactFourPmBlockProbe = await probeExactFourPmBlock(provider.streams);
 
   const exactZeroMinuteRows = strongRows.filter(
     x => x.best_match && x.best_match.minutes_apart === 0
@@ -988,7 +1199,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     diagnostic_only: true,
     modifies_epg: false,
-    diagnostic_version: "deep-link-7",
+    diagnostic_version: "deep-link-8",
     purpose:
       "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
     safety: {
@@ -1023,6 +1234,7 @@ async function main() {
     unity_fleet_feed_probe: unityFleetFeeds,
     search_api_control_probe: searchApiControls,
     target_date_cursor_probe: targetDateCursorProbe,
+    exact_four_pm_block_probe: exactFourPmBlockProbe,
     official_start_groups_to_provider_numbers: byStart,
     rows
   };
