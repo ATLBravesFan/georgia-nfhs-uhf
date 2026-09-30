@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-30T16:06:30.615Z",
+  "generated_at": "2026-09-30T16:12:26.214Z",
   "diagnostic_only": true,
   "modifies_epg": false,
-  "diagnostic_version": "deep-link-22",
+  "diagnostic_version": "deep-link-23",
   "purpose": "Use NFHS Search API and Unity API to convert provider channel titles back into official NFHS event/broadcast identifiers, then test whether provider slot numbering tracks official event start ordering. No media URLs or protected video are saved.",
   "safety": {
     "public_events_json_modified": false,
@@ -41,7 +41,7 @@
       "start": 0,
       "size": 500,
       "cursor": "eyJ2ZXJzaW9uIjoxLCJzb3J0Ijoic3RhcnRfdGltZTpkZXNjfGtleS5rZXl3b3JkOmFzYyIsInZhbHVlcyI6WzE4MzcyOTI0MDAwMDAsImdhbWU5ZjFlYTljMmUiXX0=",
-      "total": 1499218,
+      "total": 1499246,
       "api_version": "v3"
     },
     "first_events": [
@@ -463,7 +463,7 @@
       "ok": true,
       "start": 0,
       "size": 5,
-      "total": 1499218,
+      "total": 1499246,
       "cursor_decoded": {
         "version": 1,
         "sort": "start_time:desc|key.keyword:asc",
@@ -527,7 +527,7 @@
     "target_cursor_start": "2026-09-29T21:05:00.000Z",
     "returned_start": 0,
     "returned_size": 500,
-    "returned_total": 1499218,
+    "returned_total": 1499246,
     "returned_cursor_decoded": {
       "version": 1,
       "sort": "start_time:desc|key.keyword:asc",
@@ -22075,17 +22075,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "49c9ab25bfba9ea32b58",
+            "response_hash": "30a6a664f2506c51b65a",
             "url_found": true,
-            "url_hash": "8cbf271399d4158bfb46",
+            "url_hash": "4434ee2ebc7941ae37e8",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "06a71c2768f814724851",
+            "pathname_hash": "98d088585b636272156f",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "99bed040f24a46a1fd4a",
+              "9889356eb21d579d4cb0",
               "205d48a0fdc195306e35"
             ],
             "query_keys": [],
@@ -22376,17 +22376,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "6d88ca3bfd8c3607aa90",
+            "response_hash": "2fb22637b551dff9af47",
             "url_found": true,
-            "url_hash": "e955a39d81687fd9448a",
+            "url_hash": "7dd4d26272e4db80af15",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "bbd29ed35fa5895c7a63",
+            "pathname_hash": "9d982ab5aa3b374dfb2b",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "dde874afd86bbbbb21de",
+              "3273fd283dd2a0bc1faf",
               "19837f47b96bbd7f5ab2"
             ],
             "query_keys": [],
@@ -22493,17 +22493,17 @@
           "status": 302,
           "redirected": true,
           "redirect_structure": {
-            "response_hash": "80abc6fbe14b715f9044",
+            "response_hash": "7e51968951ab58cd8a66",
             "url_found": true,
-            "url_hash": "caaebcc8ac2110cff024",
+            "url_hash": "f037348d65fe55e047fa",
             "protocol": "https:",
             "hostname_hash": "e4c76a94a371027f6639",
             "port": null,
-            "pathname_hash": "1867e9c34ce83128a31e",
+            "pathname_hash": "a763f444b9c8c64f339c",
             "path_segment_hashes": [
               "aba4cc9b8af82df5d4ef",
               "247610f4dedd4ab7247d",
-              "5d1be6964c2b65e7551a",
+              "3cf44684a859022fc06b",
               "a9292e7b9261ade8dcc3"
             ],
             "query_keys": [],
@@ -33112,6 +33112,1087 @@
             ],
             "listings": []
           }
+        }
+      }
+    ]
+  },
+  "provider_playlist_metadata_probe": {
+    "purpose": "Inspect authorized provider M3U metadata for identifiers not exposed by player_api.php. Raw playlist URLs and credentials are never written.",
+    "ok": true,
+    "playlist_line_count": 658930,
+    "nfhs_rows_found": 5000,
+    "attribute_key_counts": {
+      "tvg-id": 5000,
+      "tvg-name": 5000,
+      "tvg-logo": 5000,
+      "group-title": 5000
+    },
+    "nonempty_attribute_key_counts": {
+      "tvg-name": 5000,
+      "tvg-logo": 5000,
+      "group-title": 5000
+    },
+    "clinch_or_brantley_attribute_mentions": [],
+    "target_rows": [
+      {
+        "provider_nfhs_number": 3523,
+        "stream_id": 2066789,
+        "display_name": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3523: Penns Manor Area High School vs. Cambria Heights High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3536,
+        "stream_id": 2066775,
+        "display_name": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3536: Grove Christian School vs. Carmel School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3549,
+        "stream_id": 2066761,
+        "display_name": "NFHS Network 3549: Tekamah-Herman High School vs. Homer High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3549: Tekamah-Herman High School vs. Homer High School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3550,
+        "stream_id": 2066760,
+        "display_name": "NFHS Network 3550: Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3550: Nashua High School South vs. Dover High School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3551,
+        "stream_id": 2066759,
+        "display_name": "NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3551: Windham High School vs. Biddeford High School Junior Varsity Field Hockey @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3552,
+        "stream_id": 2066758,
+        "display_name": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3552: Randallstown High School vs. Woodlawn High School Varsity Boys And Girls Badminton @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3553,
+        "stream_id": 2066757,
+        "display_name": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3553: Away vs. Saint Stephen's Episcopal School Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3554,
+        "stream_id": 2066756,
+        "display_name": "NFHS Network 3554: Pomperaug High School vs. Weston High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3554: Pomperaug High School vs. Weston High School Junior Varsity Boys Soccer @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3555,
+        "stream_id": 2066755,
+        "display_name": "NFHS Network 3555: Mid Vermont Christian School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3555: Mid Vermont Christian School Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3556,
+        "stream_id": 2066754,
+        "display_name": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3556: Sanderson High School vs. Middle Creek High School Freshman Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3557,
+        "stream_id": 2066753,
+        "display_name": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3557: Thales Academy Rolesville vs. St. Thomas More Academy Middle School Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3558,
+        "stream_id": 2066752,
+        "display_name": "NFHS Network 3558: Hollidaysburg Area High School vs. Bishop Guilfoyle Academy Middle School Girls Soccer @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3558: Hollidaysburg Area High School vs. Bishop Guilfoyle Academy Middle School Girls Soccer @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3572,
+        "stream_id": 2066737,
+        "display_name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+        "attrs": {
+          "tvg-id": "",
+          "tvg-name": "NFHS Network 3572: Camden County High School vs. Savannah Country Day School Junior Varsity Girls Volleyball @ 29 Sep 04:00 PM ET",
+          "tvg-logo": {
+            "is_url": true,
+            "hostname_hash": "2a04bacf67486f9594c9",
+            "pathname_hash": "7b00d784f0599512b7dc",
+            "path_segment_hashes": [
+              "64330525d6aaf3cb84e6",
+              "aa5ab35a9174c2062b7f",
+              "ebfc58125a5bd52ec33a"
+            ],
+            "query_keys": []
+          },
+          "group-title": "USA | NFHS Network"
+        }
+      }
+    ],
+    "target_attribute_comparisons": [
+      {
+        "provider_a": 3523,
+        "provider_b": 3536,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3536,
+        "provider_b": 3549,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3549,
+        "provider_b": 3550,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3550,
+        "provider_b": 3551,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3551,
+        "provider_b": 3552,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3552,
+        "provider_b": 3553,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3553,
+        "provider_b": 3554,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3554,
+        "provider_b": 3555,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3555,
+        "provider_b": 3556,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3556,
+        "provider_b": 3557,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3557,
+        "provider_b": 3558,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      },
+      {
+        "provider_a": 3558,
+        "provider_b": 3572,
+        "same_attribute_keys": [
+          "group-title",
+          "tvg-id",
+          "tvg-logo"
+        ],
+        "different_attribute_keys": [
+          "tvg-name"
+        ]
+      }
+    ],
+    "identifier_rows_sample": [
+      {
+        "provider_nfhs_number": 1,
+        "stream_id": 2070364,
+        "identifiers": {
+          "tvg-name": "NFHS Network 01: Our Lady Of Lourdes High School vs. Spackenkill High School Varsity Boys Soccer @ 28 Sep 04:10 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 2,
+        "stream_id": 2070363,
+        "identifiers": {
+          "tvg-name": "NFHS Network 02: Passaic County Tech High School vs. Ramapo High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 3,
+        "stream_id": 2070362,
+        "identifiers": {
+          "tvg-name": "NFHS Network 03: North Brookfield High School vs. Quaboag Regional High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 4,
+        "stream_id": 2070361,
+        "identifiers": {
+          "tvg-name": "NFHS Network 04: South Windsor High School vs. Ellington High School Junior Varsity Girls Soccer @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 5,
+        "stream_id": 2070360,
+        "identifiers": {
+          "tvg-name": "NFHS Network 05: James Rhodes High School vs. East Technical High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 6,
+        "stream_id": 2070359,
+        "identifiers": {
+          "tvg-name": "NFHS Network 06: Hamden vs. Foran High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 7,
+        "stream_id": 2070358,
+        "identifiers": {
+          "tvg-name": "NFHS Network 07: Medway High School vs. Westwood High School Freshman Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 8,
+        "stream_id": 2070357,
+        "identifiers": {
+          "tvg-name": "NFHS Network 08: Westfield Academy vs. Academy for Classical Education Middle School Football @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 9,
+        "stream_id": 2070356,
+        "identifiers": {
+          "tvg-name": "NFHS Network 09: St. Raphael Academy vs. Narragansett High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 10,
+        "stream_id": 2070355,
+        "identifiers": {
+          "tvg-name": "NFHS Network 10: Teaneck High School vs. River Dell High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 11,
+        "stream_id": 2070354,
+        "identifiers": {
+          "tvg-name": "NFHS Network 11: Ridgefield High School vs. Hasbrouck Heights High School Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 12,
+        "stream_id": 2070353,
+        "identifiers": {
+          "tvg-name": "NFHS Network 12: Mechanicville Senior High School vs. Saratoga Central Catholic Senior High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 13,
+        "stream_id": 2070352,
+        "identifiers": {
+          "tvg-name": "NFHS Network 13: Elmwood Park Memorial High School vs. Rutherford High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 14,
+        "stream_id": 2070351,
+        "identifiers": {
+          "tvg-name": "NFHS Network 14: College Achieve Public Schools vs. Eastside High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 15,
+        "stream_id": 2070350,
+        "identifiers": {
+          "tvg-name": "NFHS Network 15: Away vs. East Side High School Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 16,
+        "stream_id": 2070349,
+        "identifiers": {
+          "tvg-name": "NFHS Network 16: Onteora Senior High School vs. Rhinebeck Senior High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 17,
+        "stream_id": 2070348,
+        "identifiers": {
+          "tvg-name": "NFHS Network 17: Southern Regional High School vs. Point Pleasant Borough High School Varsity Field Hockey @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 18,
+        "stream_id": 2070347,
+        "identifiers": {
+          "tvg-name": "NFHS Network 18: Twin Valley Middle High School vs. Brattleboro Union High School Junior Varsity Boys Soccer @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 19,
+        "stream_id": 2070346,
+        "identifiers": {
+          "tvg-name": "NFHS Network 19: First Flight High School vs. Cape Hatteras Secondary School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 20,
+        "stream_id": 2070345,
+        "identifiers": {
+          "tvg-name": "NFHS Network 20: Snyder High School vs. Fair Lawn High School Junior Varsity Football @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 21,
+        "stream_id": 2070344,
+        "identifiers": {
+          "tvg-name": "NFHS Network 21: Cleveland High School vs. Ooltewah High School Junior Varsity Girls Volleyball @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 22,
+        "stream_id": 2070343,
+        "identifiers": {
+          "tvg-name": "NFHS Network 22: Wyoming Valley West High School vs. Greater Nanticoke Area High School Freshman Football @ 28 Sep 04:15 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 23,
+        "stream_id": 2070342,
+        "identifiers": {
+          "tvg-name": "NFHS Network 23: Trinity Christian School vs. East Coweta High School Varsity Softball @ 28 Sep 04:20 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 24,
+        "stream_id": 2070341,
+        "identifiers": {
+          "tvg-name": "NFHS Network 24: Denbigh Baptist Christian School vs. Gateway Christian Academy Varsity Girls Volleyball @ 28 Sep 04:21 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 25,
+        "stream_id": 2070340,
+        "identifiers": {
+          "tvg-name": "NFHS Network 25: Multi-team Event Freshman Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 26,
+        "stream_id": 2070339,
+        "identifiers": {
+          "tvg-name": "NFHS Network 26: Mount Greylock Regional School vs. Drury High School Varsity Girls Soccer @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 27,
+        "stream_id": 2070338,
+        "identifiers": {
+          "tvg-name": "NFHS Network 27: South Kingstown High School vs. Lincoln High School Varsity Field Hockey @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 28,
+        "stream_id": 2070337,
+        "identifiers": {
+          "tvg-name": "NFHS Network 28: Lake Placid Senior High School vs. Moriah Senior High School Varsity Girls Soccer @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 29,
+        "stream_id": 2070336,
+        "identifiers": {
+          "tvg-name": "NFHS Network 29: Baraga Area High School vs. Dollar Bay High School Middle School Girls Basketball @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 30,
+        "stream_id": 2070335,
+        "identifiers": {
+          "tvg-name": "NFHS Network 30: Rockbridge Academy vs. The Gunston School Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 31,
+        "stream_id": 2070334,
+        "identifiers": {
+          "tvg-name": "NFHS Network 31: Don Bosco Cristo Rey High School vs. Spencerville Adventist Academy Junior Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 32,
+        "stream_id": 2070333,
+        "identifiers": {
+          "tvg-name": "NFHS Network 32: Roselle Catholic High School vs. Mount Saint Mary Academy Varsity Girls Volleyball @ 28 Sep 04:25 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 33,
+        "stream_id": 2070332,
+        "identifiers": {
+          "tvg-name": "NFHS Network 33: Saranac High School vs. AuSable Valley Central High School Junior Varsity Girls Soccer @ 28 Sep 04:28 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 34,
+        "stream_id": 2070331,
+        "identifiers": {
+          "tvg-name": "NFHS Network 34: Randolph High School vs. Middleborough High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 35,
+        "stream_id": 2070330,
+        "identifiers": {
+          "tvg-name": "NFHS Network 35: Bethel High School vs. Joel Barlow High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 36,
+        "stream_id": 2070329,
+        "identifiers": {
+          "tvg-name": "NFHS Network 36: School Without Walls High School vs. DC International School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 37,
+        "stream_id": 2070328,
+        "identifiers": {
+          "tvg-name": "NFHS Network 37: Victory Charter School vs. Somerset Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 38,
+        "stream_id": 2070327,
+        "identifiers": {
+          "tvg-name": "NFHS Network 38: Bellingham High School vs. Medfield High School Junior Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 39,
+        "stream_id": 2070326,
+        "identifiers": {
+          "tvg-name": "NFHS Network 39: Atkins Academic & Technology High School vs. Oak Grove High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 40,
+        "stream_id": 2070325,
+        "identifiers": {
+          "tvg-name": "NFHS Network 40: Findlay High School vs. Columbian High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 41,
+        "stream_id": 2070324,
+        "identifiers": {
+          "tvg-name": "NFHS Network 41: Crisp County High School vs. Tiftarea Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 42,
+        "stream_id": 2070323,
+        "identifiers": {
+          "tvg-name": "NFHS Network 42: Away vs. Middle Creek High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 43,
+        "stream_id": 2070322,
+        "identifiers": {
+          "tvg-name": "NFHS Network 43: Coleman High School vs. Carson City-Crystal High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 44,
+        "stream_id": 2070321,
+        "identifiers": {
+          "tvg-name": "NFHS Network 44: Clawson High School vs. Lamphere High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 45,
+        "stream_id": 2070320,
+        "identifiers": {
+          "tvg-name": "NFHS Network 45: Glenn High School vs. North Davidson High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 46,
+        "stream_id": 2070319,
+        "identifiers": {
+          "tvg-name": "NFHS Network 46: Overhills High School vs. Smithfield- Selma High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 47,
+        "stream_id": 2070318,
+        "identifiers": {
+          "tvg-name": "NFHS Network 47: Shelton High School vs. North Haven High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 48,
+        "stream_id": 2070317,
+        "identifiers": {
+          "tvg-name": "NFHS Network 48: South Burlington High School vs. Rice Memorial High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 49,
+        "stream_id": 2070316,
+        "identifiers": {
+          "tvg-name": "NFHS Network 49: Assumption High School vs. Louisville Collegiate School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 50,
+        "stream_id": 2070315,
+        "identifiers": {
+          "tvg-name": "NFHS Network 50: Walt Whitman High School vs. Lindenhurst Senior High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 51,
+        "stream_id": 2070314,
+        "identifiers": {
+          "tvg-name": "NFHS Network 51: Aurora West College Preporatory Academy vs. Sheridan High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 52,
+        "stream_id": 2070313,
+        "identifiers": {
+          "tvg-name": "NFHS Network 52: Lamoille Union High School vs. Stowe High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 53,
+        "stream_id": 2070312,
+        "identifiers": {
+          "tvg-name": "NFHS Network 53: Sanderson High School vs. Cary High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 54,
+        "stream_id": 2070311,
+        "identifiers": {
+          "tvg-name": "NFHS Network 54: Boyd Anderson High School vs. South Plantation High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 55,
+        "stream_id": 2070310,
+        "identifiers": {
+          "tvg-name": "NFHS Network 55: Harvey School vs. Watkinson School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 56,
+        "stream_id": 2070309,
+        "identifiers": {
+          "tvg-name": "NFHS Network 56: Sanford High School vs. Biddeford High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 57,
+        "stream_id": 2070308,
+        "identifiers": {
+          "tvg-name": "NFHS Network 57: Saugus High School vs. Gloucester High School Varsity Girls Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 58,
+        "stream_id": 2070307,
+        "identifiers": {
+          "tvg-name": "NFHS Network 58: Paxton School vs. Ponce de Leon HS Middle School Boys Basketball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 59,
+        "stream_id": 2070306,
+        "identifiers": {
+          "tvg-name": "NFHS Network 59: Faith Christian School vs. Temple Christian School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 60,
+        "stream_id": 2070305,
+        "identifiers": {
+          "tvg-name": "NFHS Network 60: Morristown Senior High School vs. Chateaugay Central School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 61,
+        "stream_id": 2070304,
+        "identifiers": {
+          "tvg-name": "NFHS Network 61: New York Mills Senior High School vs. Sauquoit Valley Senior High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 62,
+        "stream_id": 2070303,
+        "identifiers": {
+          "tvg-name": "NFHS Network 62: Roanoke Catholic School vs. Christiansburg High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 63,
+        "stream_id": 2070302,
+        "identifiers": {
+          "tvg-name": "NFHS Network 63: Forest Hills High School vs. Albemarle High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 64,
+        "stream_id": 2070301,
+        "identifiers": {
+          "tvg-name": "NFHS Network 64: Mattituck Senior High School vs. Center Moriches High School Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 65,
+        "stream_id": 2070300,
+        "identifiers": {
+          "tvg-name": "NFHS Network 65: Grosse Ile High School vs. Riverview Community High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 66,
+        "stream_id": 2070299,
+        "identifiers": {
+          "tvg-name": "NFHS Network 66: Almont High School vs. Imlay City High School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 67,
+        "stream_id": 2070298,
+        "identifiers": {
+          "tvg-name": "NFHS Network 67: Essex High School vs. Burlington High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 68,
+        "stream_id": 2070297,
+        "identifiers": {
+          "tvg-name": "NFHS Network 68: Southeast Alamance vs. Eno River Academy Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 69,
+        "stream_id": 2070295,
+        "identifiers": {
+          "tvg-name": "NFHS Network 69: Piedmont High School vs. Union Academy Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 70,
+        "stream_id": 2070294,
+        "identifiers": {
+          "tvg-name": "NFHS Network 70: Cassadaga Valley High School vs. Randolph JrSr High School Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 71,
+        "stream_id": 2070293,
+        "identifiers": {
+          "tvg-name": "NFHS Network 71: Byne Christian School vs. Scintilla Charter Academy Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 72,
+        "stream_id": 2070292,
+        "identifiers": {
+          "tvg-name": "NFHS Network 72: Reagan High School vs. Mount Tabor High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 73,
+        "stream_id": 2070291,
+        "identifiers": {
+          "tvg-name": "NFHS Network 73: Leesville Road High School vs. Athens Drive High School Varsity Girls Flag Football @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 74,
+        "stream_id": 2070290,
+        "identifiers": {
+          "tvg-name": "NFHS Network 74: Nardin Academy vs. Buffalo Academy of the Sacred Heart Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 75,
+        "stream_id": 2070289,
+        "identifiers": {
+          "tvg-name": "NFHS Network 75: Great Mills High School vs. St Charles High School Junior Varsity Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 76,
+        "stream_id": 2070288,
+        "identifiers": {
+          "tvg-name": "NFHS Network 76: Brooklyn High School vs. Valley Forge High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 77,
+        "stream_id": 2070287,
+        "identifiers": {
+          "tvg-name": "NFHS Network 77: Garner Magnet High School vs. Clayton High School Junior Varsity Boys Soccer @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 78,
+        "stream_id": 2070286,
+        "identifiers": {
+          "tvg-name": "NFHS Network 78: Faith Christian Academy vs. Roanoke Valley Christian School Middle School Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 79,
+        "stream_id": 2070284,
+        "identifiers": {
+          "tvg-name": "NFHS Network 79: Immaculate High School vs. Masuk High School Varsity Field Hockey @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
+        }
+      },
+      {
+        "provider_nfhs_number": 80,
+        "stream_id": 2070283,
+        "identifiers": {
+          "tvg-name": "NFHS Network 80: Away vs. Urbana High School Freshman Girls Volleyball @ 28 Sep 04:30 PM ET",
+          "group-title": "USA | NFHS Network"
         }
       }
     ]
