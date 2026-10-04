@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-03T20:12:56.971-04:00",
-  "eastern_date": "2026-10-03",
+  "generated_at": "2026-10-04T03:32:48.670-04:00",
+  "eastern_date": "2026-10-04",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 29,
-  "georgia_channel_count": 2,
-  "currently_live_estimate": 1,
+  "georgia_channel_count": 0,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 27,
-  "placeholder_active": false,
+  "completed_today_but_still_visible": 0,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,50 +25,5 @@
     }
   },
   "school_name_count": 662,
-  "channels": [
-    {
-      "id": "ga-nfhs-2069613",
-      "stream_id": 2069613,
-      "extension": "ts",
-      "original_name": "NFHS Network 734: Elkton Charter School vs. Central Christian High School Varsity Girls Volleyball @ 3 Oct 05:30 PM ET",
-      "name": "Elkton Charter School vs. Central Christian High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-03T17:30:00.000-04:00",
-      "stop": "2026-10-03T20:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Elkton Charter School",
-        "Central Christian High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Central Christian High School",
-          "core": "central christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069585",
-      "stream_id": 2069585,
-      "extension": "ts",
-      "original_name": "NFHS Network 762: Lincoln County High School vs. South Charleston High School Varsity Boys Soccer @ 3 Oct 06:00 PM ET",
-      "name": "Lincoln County High School vs. South Charleston High School Varsity Boys Soccer",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-03T18:00:00.000-04:00",
-      "stop": "2026-10-03T20:30:00.000-04:00",
-      "sport": "Soccer",
-      "teams": [
-        "Lincoln County High School",
-        "South Charleston High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lincoln County High School",
-          "core": "lincoln county",
-          "confidence": 2
-        }
-      ]
-    }
-  ]
+  "channels": []
 }
