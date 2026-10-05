@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-04T16:36:57.364-04:00",
+  "generated_at": "2026-10-04T20:18:18.926-04:00",
   "eastern_date": "2026-10-04",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 2,
-  "georgia_channel_count": 2,
+  "georgia_channel_count": 1,
   "currently_live_estimate": 0,
   "upcoming_next_7_days": 1,
-  "completed_today_but_still_visible": 0,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,33 +26,6 @@
   },
   "school_name_count": 662,
   "channels": [
-    {
-      "id": "ga-nfhs-2070354",
-      "stream_id": 2070354,
-      "extension": "ts",
-      "original_name": "NFHS Network 11: Marietta High School vs. Hillgrove High School Varsity Boys Lacrosse @ 4 Oct 02:00 PM ET",
-      "name": "Marietta High School vs. Hillgrove High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-04T14:00:00.000-04:00",
-      "stop": "2026-10-04T16:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Marietta High School",
-        "Hillgrove High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Marietta High School",
-          "core": "marietta",
-          "confidence": 1
-        },
-        {
-          "team": "Hillgrove High School",
-          "core": "hillgrove",
-          "confidence": 1
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070332",
       "stream_id": 2070332,
