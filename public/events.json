@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T23:43:39.150-04:00",
-  "eastern_date": "2026-10-05",
+  "generated_at": "2026-10-06T06:52:58.567-04:00",
+  "eastern_date": "2026-10-06",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
@@ -8,7 +8,7 @@
   "georgia_channel_count": 0,
   "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 1,
+  "completed_today_but_still_visible": 0,
   "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
