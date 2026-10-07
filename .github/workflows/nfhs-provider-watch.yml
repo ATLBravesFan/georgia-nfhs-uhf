@@ -43,15 +43,39 @@ jobs:
           NFHS_CATEGORY_NAME: ${{ vars.NFHS_CATEGORY_NAME }}
         run: node scripts/nfhs-provider-watch.mjs
 
-      - name: Publish watch data only when changed
+      - name: Detect provider metadata changes
+        id: provider_changes
+        run: |
+          git add public/nfhs-provider-state.json public/nfhs-provider-watch.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No provider metadata changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Provider metadata changed; rebuilding Georgia NFHS EPG now."
+          fi
+
+      - name: Rebuild Georgia NFHS EPG immediately
+        if: steps.provider_changes.outputs.changed == 'true'
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+          NFHS_CATEGORY_NAME: ${{ vars.NFHS_CATEGORY_NAME }}
+          GHSA_DIRECTORY_URL: ${{ vars.GHSA_DIRECTORY_URL }}
+          LOOKAHEAD_DAYS: "7"
+        run: node scripts/update-nfhs.mjs
+
+      - name: Publish watch and EPG data when changed
+        if: steps.provider_changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/nfhs-provider-state.json public/nfhs-provider-watch.json 2>/dev/null || true
+          git add public/nfhs-provider-state.json public/nfhs-provider-watch.json public/events.json 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No provider metadata changes to publish."
+            echo "Nothing changed after rebuild."
             exit 0
           fi
-          git commit -m "Update NFHS provider metadata watch"
+          git commit -m "Update NFHS provider metadata and Georgia EPG"
           git pull --rebase origin main
           git push
