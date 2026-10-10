@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dvc-reservation-monitor",
+  "main": "src/entry.js",
+  "compatibility_date": "2026-10-10",
+  "triggers": {
+    "crons": ["* * * * *"]
+  },
+  "kv_namespaces": [
+    {
+      "binding": "STATE",
+      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+    }
+  ],
+  "vars": {
+    "EMAIL_FROM_NAME": "DVC Monitor"
+  }
+}
