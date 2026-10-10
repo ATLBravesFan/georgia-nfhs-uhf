@@ -5,11 +5,13 @@ on:
     paths:
       - "dvc-monitor/**"
       - ".github/workflows/dvc-browser-backups.yml"
+      - ".github/workflows/dvc-rental-store-website-backup.yml"
       - ".github/workflows/dvc-monitor-check.yml"
   pull_request:
     paths:
       - "dvc-monitor/**"
       - ".github/workflows/dvc-browser-backups.yml"
+      - ".github/workflows/dvc-rental-store-website-backup.yml"
       - ".github/workflows/dvc-monitor-check.yml"
 
 permissions:
