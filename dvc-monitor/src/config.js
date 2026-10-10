@@ -1,5 +1,24 @@
+const KEYHOLDER_BASE = "https://api.keyholdervacations.com/v2/dvc/rental/confirmed-reservations";
+
 export const URLS = {
-  rentalStoreApi: "https://api.keyholdervacations.com/v2/dvc/rental/confirmed-reservations",
+  get rentalStoreApi() {
+    // Keep the API window rolling so the watch never goes stale. The previous
+    // ChangeDetection URL used the same broad occupancy/night/price limits but
+    // fixed dates; this generates current dates on every run instead.
+    const start = new Date();
+    start.setUTCDate(start.getUTCDate() - 1);
+    const end = new Date();
+    end.setUTCDate(end.getUTCDate() + 420);
+
+    const url = new URL(KEYHOLDER_BASE);
+    url.searchParams.set("dateRangeStart", start.toISOString().slice(0, 10));
+    url.searchParams.set("dateRangeEnd", end.toISOString().slice(0, 10));
+    url.searchParams.set("minimumOccupancy", "1");
+    url.searchParams.set("maxNumberOfNights", "30");
+    url.searchParams.set("minNumberOfNights", "1");
+    url.searchParams.set("maxTotalPrice", "150000");
+    return url.toString();
+  },
   davids: "https://dvcrequest.com/dvc-guests/confirmed-reservations-for-rent/",
   dvcRental: "https://dvc-rental.com/deals/",
   dvcShop: "https://rentals.dvcshop.com/confirmed-reservations/",
