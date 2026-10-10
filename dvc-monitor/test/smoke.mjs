@@ -7,6 +7,9 @@ assert.equal(WATCHES.rentalStoreNightly.match({ nightly: 200.99 }), true);
 assert.equal(WATCHES.rentalStoreNightly.match({ nightly: 201.00 }), false);
 assert.equal(WATCHES.rentalStorePoints.match({ pointPrice: 11.99 }), true);
 assert.equal(WATCHES.rentalStorePoints.match({ pointPrice: 12.00 }), false);
+assert.equal(WATCHES.rentalStoreAll.interval, "10 minutes");
+assert.equal(WATCHES.rentalStoreAll.match({ nightly: 999, pointPrice: 40 }), true);
+assert.equal(WATCHES.rentalStoreAll.priceChanges, true);
 assert.equal(WATCHES.davids.match({ nightly: 299.99, room: "Deluxe Studio", pointPrice: 24 }), true);
 assert.equal(WATCHES.davids.match({ nightly: 300, room: "Deluxe Studio", pointPrice: 24 }), false);
 assert.equal(WATCHES.davids.match({ nightly: 450, room: "Two Bedroom - Standard", pointPrice: 16.99 }), true);
@@ -31,6 +34,7 @@ assert.equal(keyholder[0].nights, 4);
 assert.equal(keyholder[0].nightly, 200);
 assert.equal(keyholder[0].pointPrice, 10);
 assert.equal(keyholder[0].bookingUrl.endsWith("/a0fTEST123/"), true);
+assert.equal(WATCHES.rentalStoreAll.match(keyholder[0]), true);
 
 const davids = parseDavids(`
   <a href="/dvc-guests/confirmed-reservations-for-rent/10052397">Request Now</a>
