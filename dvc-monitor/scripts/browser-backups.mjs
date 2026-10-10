@@ -13,14 +13,19 @@ if (!new Set(["all", "rental-store", "dvc-rental"]).has(JOB)) {
   throw new Error(`Unknown DVC_BROWSER_JOB: ${JOB}`);
 }
 
-const browser = await chromium.launch({ headless: true, executablePath: CHROME, args: ["--no-sandbox", "--disable-dev-shm-usage"] });
+const browser = await chromium.launch({
+  headless: true,
+  executablePath: CHROME,
+  args: ["--no-sandbox", "--disable-dev-shm-usage"],
+});
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 
 try {
   if (JOB === "all" || JOB === "rental-store") {
     const rentalStore = await scrapeRentalStore(context);
     console.log(`DVC Rental Store website: ${rentalStore.length} usable reservations`);
-    if (rentalStore.length) await ingest("/ingest/dvc-rental-store-website", rentalStore);
+    if (!rentalStore.length) throw new Error("DVC Rental Store website backup returned zero reservations");
+    await ingest("/ingest/dvc-rental-store-website", rentalStore);
   }
 
   if (JOB === "all" || JOB === "dvc-rental") {
@@ -47,18 +52,23 @@ async function scrapeRentalStore(context) {
     }
   });
 
-  await page.goto("https://dvcrentalstore.com/guests/reservations/", { waitUntil: "domcontentloaded", timeout: 60000 });
+  // This is the public browse page ChangeDetection was using for the
+  // website-only inventory that does not always appear in the API.
+  await page.goto("https://dvcrentalstore.com/guests/browse-confirmed-reservations/", {
+    waitUntil: "domcontentloaded",
+    timeout: 60000,
+  });
   await page.waitForTimeout(8000);
 
-  // Also inspect rendered reservation links in case the website's data endpoint changes.
-  const rendered = await page.locator('a[href*="/guests/reservations/"]').evaluateAll((anchors) => anchors.map((a) => {
-    const href = a.href;
-    let node = a;
-    let text = (a.innerText || "").trim();
-    for (let i = 0; i < 6 && node?.parentElement; i += 1) {
+  // Also inspect rendered reservation links in case the site's JSON endpoint changes.
+  const rendered = await page.locator('a[href*="/guests/reservations/"]').evaluateAll((anchors) => anchors.map((anchor) => {
+    const href = anchor.href;
+    let node = anchor;
+    let text = (anchor.innerText || "").trim();
+    for (let index = 0; index < 7 && node?.parentElement; index += 1) {
       node = node.parentElement;
       const candidate = (node.innerText || "").replace(/\s+/g, " ").trim();
-      if (candidate.length > text.length && candidate.length < 1500) text = candidate;
+      if (candidate.length > text.length && candidate.length < 1800) text = candidate;
       if (/\$[\d,]+/.test(candidate) && /\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4}|\d{4}-\d{2}-\d{2}/.test(candidate)) break;
     }
     return { href, text };
@@ -120,10 +130,18 @@ function parseRenderedRentalStore(row) {
   if (!id) return null;
   const text = clean(row.text);
   const dates = text.match(/(\d{4}-\d{2}-\d{2}|\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})\s*(?:→|-|to)\s*(\d{4}-\d{2}-\d{2}|\d{1,2}[\/-]\d{1,2}[\/-]\d{2,4})/i);
-  const prices = [...text.matchAll(/\$\s*([\d,]+(?:\.\d+)?)/g)].map((m) => number(m[1])).filter(Number.isFinite);
+  const prices = [...text.matchAll(/\$\s*([\d,]+(?:\.\d+)?)/g)].map((match) => number(match[1])).filter(Number.isFinite);
   const nights = number(text.match(/(\d+)\s*nights?/i)?.[1]);
   const total = prices.length ? Math.max(...prices) : null;
-  return { id, checkIn: dates ? dateOnly(dates[1]) : null, checkOut: dates ? dateOnly(dates[2]) : null, nights, total, nightly: divide(total, nights), bookingUrl: row.href };
+  return {
+    id,
+    checkIn: dates ? dateOnly(dates[1]) : null,
+    checkOut: dates ? dateOnly(dates[2]) : null,
+    nights,
+    total,
+    nightly: divide(total, nights),
+    bookingUrl: row.href,
+  };
 }
 
 async function scrapeDvcRental(context) {
@@ -131,13 +149,24 @@ async function scrapeDvcRental(context) {
   await page.goto("https://dvc-rental.com/deals", { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForTimeout(2500);
 
-  const expected = await page.locator("body").innerText().then((text) => number(text.match(/(\d+)\s+confirmed reservations/i)?.[1]));
+  const bodyText = await page.locator("body").innerText();
+  const expected = number(
+    bodyText.match(/Showing\s+\d+\s*[–-]\s*\d+\s+of\s+(\d+)/i)?.[1] ||
+    bodyText.match(/(\d+)\s+confirmed reservations/i)?.[1],
+  );
+  const pageSize = number(bodyText.match(/Showing\s+\d+\s*[–-]\s*(\d+)\s+of\s+\d+/i)?.[1]) || 50;
+  const totalPages = Number.isFinite(expected) ? Math.max(1, Math.ceil(expected / pageSize)) : 2;
+
   const rows = [];
   rows.push(...await collectDvcRentalPage(page));
 
-  const pageTwo = page.getByRole("button", { name: /^2$/ }).last();
-  if (await pageTwo.count()) {
-    await pageTwo.click();
+  for (let pageNumber = 2; pageNumber <= totalPages; pageNumber += 1) {
+    const pageButton = page.getByRole("button", { name: new RegExp(`^${pageNumber}$`) }).last();
+    if (!(await pageButton.count())) {
+      if (Number.isFinite(expected)) throw new Error(`DVC-Rental pagination button ${pageNumber} was not found`);
+      break;
+    }
+    await pageButton.click();
     await page.waitForTimeout(1500);
     rows.push(...await collectDvcRentalPage(page));
   }
@@ -152,7 +181,10 @@ async function scrapeDvcRental(context) {
 }
 
 async function collectDvcRentalPage(page) {
-  const cards = await page.locator('a[href*="/deals/DVC"]').evaluateAll((anchors) => anchors.map((a) => ({ href: a.href, text: (a.innerText || "").replace(/\s+/g, " ").trim() })));
+  const cards = await page.locator('a[href*="/deals/DVC"]').evaluateAll((anchors) => anchors.map((anchor) => ({
+    href: anchor.href,
+    text: (anchor.innerText || "").replace(/\s+/g, " ").trim(),
+  })));
   return cards.map(parseDvcRentalCard).filter(Boolean);
 }
 
@@ -213,17 +245,49 @@ function splitRoom(value) {
   return match ? [clean(text.slice(0, match.index)), clean(text.slice(match.index))] : [text, ""];
 }
 
-function clean(value) { return String(value ?? "").replace(/\s+/g, " ").trim(); }
-function first(...values) { for (const value of values) if (value !== undefined && value !== null && String(value).trim()) return value; return null; }
-function numberFirst(...values) { for (const value of values) { const parsed = number(value); if (Number.isFinite(parsed)) return parsed; } return null; }
-function number(value) { if (value === undefined || value === null || value === "") return null; const parsed = Number(String(value).replace(/[$,\s]/g, "")); return Number.isFinite(parsed) ? parsed : null; }
-function divide(a, b) { return Number.isFinite(a) && Number.isFinite(b) && b ? a / b : null; }
-function diffNights(a, b) { if (!a || !b) return null; const n = Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86400000); return n > 0 ? n : null; }
+function clean(value) {
+  return String(value ?? "").replace(/\s+/g, " ").trim();
+}
+
+function first(...values) {
+  for (const value of values) if (value !== undefined && value !== null && String(value).trim()) return value;
+  return null;
+}
+
+function numberFirst(...values) {
+  for (const value of values) {
+    const parsed = number(value);
+    if (Number.isFinite(parsed)) return parsed;
+  }
+  return null;
+}
+
+function number(value) {
+  if (value === undefined || value === null || value === "") return null;
+  const parsed = Number(String(value).replace(/[$,\s]/g, ""));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function divide(a, b) {
+  return Number.isFinite(a) && Number.isFinite(b) && b ? a / b : null;
+}
+
+function diffNights(a, b) {
+  if (!a || !b) return null;
+  const nights = Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86400000);
+  return nights > 0 ? nights : null;
+}
+
 function dateOnly(value) {
   if (!value) return null;
   const text = String(value).trim();
-  const iso = text.match(/^(\d{4}-\d{2}-\d{2})/); if (iso) return iso[1];
+  const exactIso = text.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (exactIso) return exactIso[1];
   const slash = text.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})$/);
-  if (slash) { const year = slash[3].length === 2 ? `20${slash[3]}` : slash[3]; return `${year}-${slash[1].padStart(2, "0")}-${slash[2].padStart(2, "0")}`; }
-  const date = new Date(`${text} 12:00:00 UTC`); return Number.isNaN(date.getTime()) ? null : date.toISOString().slice(0, 10);
+  if (slash) {
+    const year = slash[3].length === 2 ? `20${slash[3]}` : slash[3];
+    return `${year}-${slash[1].padStart(2, "0")}-${slash[2].padStart(2, "0")}`;
+  }
+  const date = new Date(`${text} 12:00:00 UTC`);
+  return Number.isNaN(date.getTime()) ? null : date.toISOString().slice(0, 10);
 }
