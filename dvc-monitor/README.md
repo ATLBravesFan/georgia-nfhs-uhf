@@ -1,160 +1,145 @@
 # Free DVC reservation monitor
 
-This replaces the ChangeDetection DVC watches with a Cloudflare Worker plus GitHub Actions browser jobs. Both priority DVC Rental Store watches **and the DVC Rental Store website backup** run every minute. The remaining browser/HTTP watches run every 10 minutes.
+This replaces the current ChangeDetection DVC watches with a Cloudflare Worker plus two small GitHub Actions browser jobs. The two priority DVC Rental Store API watches run every minute. David's, DVC-Rental, and DVC Shop run every 10 minutes. A separate DVC Rental Store website backup runs every 5 minutes so website-only inventory is still covered.
 
 ## Watches reproduced
 
 | Watch | Schedule | Alert rule | Price changes? |
 |---|---:|---|---:|
-| DVC Rental Store under $200 | Every minute | Nightly price < $200 | Yes |
-| DVC Rental Store under $12 per point | Every minute | Price/point < $12 | Yes |
-| DVC Rental Store website backup | Every minute | Website-only listing < $200/night | Yes |
-| David's Vacation Rentals | Every 10 minutes | < $300/night OR 1/2/3-bedroom < $17/point | Yes |
-| DVC-Rental New Confirmed Reservations | Every 10 minutes | Any new confirmed reservation | No |
-| DVC Shop | Every 10 minutes | Any new available confirmed reservation | No |
+| DVC Rental Store under $200 | Every minute | Current cutoff is nightly **< $201.00** | Yes |
+| DVC Rental Store under $12 per point | Every minute | Price/point **< $12.00** | Yes |
+| DVC Rental Store website backup | Every 5 minutes | Website-only listing nightly **< $201.00** | Yes |
+| David's Vacation Rentals | Every 10 minutes | Any room **< $300/night** OR 1/2/3-bedroom **< $17/point** | Yes |
+| DVC-Rental New Confirmed Reservations | Every 10 minutes | Any newly listed confirmed reservation, all pages, no price filter | No |
+| DVC Shop | Every 10 minutes | Any newly listed available confirmed reservation | No |
 
-Behavior is intentionally the same as the preferred ChangeDetection notifications:
+The alert behavior mirrors the preferred ChangeDetection behavior:
 
-- First successful run creates a baseline and sends **no mass email**.
+- The first successful run establishes a baseline and sends no mass email.
 - New qualifying reservations send an email.
-- Price changes send an email only on watches configured for price changes.
-- Removals do not send an email.
+- Genuine price changes send an email only on the watches configured for price changes.
+- Removals never send an email.
 - Unchanged reservations never repeat.
-- If one DVC Rental Store reservation matches both the nightly and point-price watches, it is sent once and the email lists both matches.
-- The DVC Rental Store API and website backup share the same alert-deduplication key, so they do not double-notify the same reservation at the same price.
-- Every email contains a clickable direct booking link when the source exposes one.
+- DVC Rental Store API and website snapshots share one alert-deduplication namespace, so the same reservation at the same price does not generate duplicate emails.
+- If one DVC Rental Store reservation matches both priority filters, one email entry is sent and lists both matching watches.
+- Every notification includes the direct booking URL when the source exposes one.
+- No emojis are added to the reservation lines.
 
 ## Architecture
 
 ### Cloudflare Worker
 
-`src/index.js` runs from a cron trigger every minute.
+`src/index.js` runs every minute.
 
-Every minute it:
+Every minute it checks the Keyholder/DVC Rental Store API once and evaluates both priority filters from that single response. The API date window rolls automatically, so the monitor does not go stale because of a hard-coded end date.
 
-1. checks the Keyholder/DVC Rental Store API once and evaluates both priority filters from that response; and
-2. dispatches the **DVC Rental Store website backup** GitHub browser workflow.
+Every 10 minutes it also fetches and parses David's and DVC Shop directly.
 
-Every ten minutes it also checks David's and DVC Shop using lightweight HTTP requests.
+Cloudflare KV stores:
 
-Cloudflare KV stores the current snapshot, alert fingerprints, and a small status/heartbeat record. The Worker exposes a status page at its root URL and JSON at `/health`.
+- the last full snapshot for each source;
+- per-reservation alert fingerprints;
+- the status/heartbeat record shown at the Worker root URL and `/health`.
 
 ### GitHub browser jobs
 
-There are now two separate browser workflows:
+Two browser-backed workflows cover pages that need real pagination/rendering:
 
-- `.github/workflows/dvc-rental-store-website-backup.yml` — the Rental Store website backup. The Cloudflare Worker dispatches it **every minute**. Its own GitHub cron also runs every five minutes as a safety fallback.
-- `.github/workflows/dvc-browser-backups.yml` — DVC-Rental pagination, every 10 minutes.
+- `.github/workflows/dvc-rental-store-website-backup.yml` — checks the DVC Rental Store public browse page every 5 minutes for website-only inventory.
+- `.github/workflows/dvc-browser-backups.yml` — walks every DVC-Rental results page every 10 minutes.
 
-The browser script supports separate jobs using `DVC_BROWSER_JOB`, so the every-minute Rental Store backup does not need to re-run the heavier DVC-Rental pagination each time.
-
-The DVC-Rental browser snapshot is rejected if the page advertises more reservations than the parser successfully collected.
+DVC-Rental snapshots are rejected instead of saved if the page advertises more reservations than the browser parser actually collected. That prevents an incomplete page load from being mistaken for dozens of removals.
 
 ## One-time setup
 
-Do not disable ChangeDetection until the new monitor has completed at least one baseline and one successful test cycle.
+Keep ChangeDetection running until the replacement has established its baselines and the status page shows successful checks.
 
 ### 1. Create a Cloudflare KV namespace
 
-In Cloudflare, create one Workers KV namespace named something like:
+Create one Workers KV namespace, for example:
 
 `DVC_MONITOR_STATE`
 
-Copy its namespace ID. In `wrangler.jsonc`, replace:
+Copy its namespace ID and replace this value in `wrangler.jsonc`:
 
 `REPLACE_WITH_YOUR_KV_NAMESPACE_ID`
 
-with that ID.
+### 2. Create a free Brevo transactional-email key
 
-The namespace ID is not a password, but the email/API secrets below are private and should never be committed to GitHub.
+Verify the email address you want alerts sent **from**, then create a Brevo API key.
 
-### 2. Create a free Brevo sender and API key
+The Worker needs these values:
 
-Create/verify the email address you want the alert to come **from**, then create a Brevo transactional-email API key.
-
-The Worker needs these secrets/variables:
-
-- `BREVO_API_KEY` — Secret
-- `EMAIL_TO` — the address that should receive DVC alerts
-- `EMAIL_FROM` — the verified sender address in Brevo
-- `ADMIN_TOKEN` — Secret; any long random string
-- `INGEST_TOKEN` — Secret; any different long random string
-- `GITHUB_DISPATCH_TOKEN` — Secret; a fine-grained GitHub token allowed to run Actions in `ATLBravesFan/georgia-nfhs-uhf`
+- `BREVO_API_KEY` — secret
+- `EMAIL_TO` — destination email address
+- `EMAIL_FROM` — Brevo-verified sender email
+- `ADMIN_TOKEN` — any long random secret
+- `INGEST_TOKEN` — a different long random secret
 - `EMAIL_FROM_NAME` — already defaults to `DVC Monitor`
 
-`GITHUB_DISPATCH_TOKEN` is what lets the Worker start the Rental Store browser workflow every minute. Do not paste the token into source code or into chat; add it directly as a Cloudflare secret.
+Never commit the secret values to GitHub.
 
 ### 3. Deploy the Worker
 
-From the `dvc-monitor` folder, the Wrangler deployment is:
+From the `dvc-monitor` folder:
 
 ```bash
 npm install
 npx wrangler deploy
 ```
 
-Then add the variables/secrets in Cloudflare under the Worker's **Settings → Variables and Secrets**. The cron schedule is already in `wrangler.jsonc` as `* * * * *`.
+Then add the Worker secrets/variables in Cloudflare under **Settings → Variables and Secrets**. The one-minute cron trigger is already defined in `wrangler.jsonc`.
 
-After deployment, opening the Worker URL should show the DVC Monitor status page.
+After deployment, opening the Worker URL should show the monitor status page.
 
-### 4. Add two GitHub Actions secrets
+### 4. Add GitHub Actions secrets for the browser jobs
 
-In this repository go to:
+Repository → **Settings → Secrets and variables → Actions**:
 
-**Settings → Secrets and variables → Actions → New repository secret**
+- `DVC_MONITOR_BASE_URL` — the deployed Worker URL
+- `DVC_MONITOR_INGEST_TOKEN` — exactly the same value used for the Worker's `INGEST_TOKEN`
 
-Add:
+### 5. Establish baselines
 
-- `DVC_MONITOR_BASE_URL` — your Worker URL, such as `https://dvc-reservation-monitor.example.workers.dev`
-- `DVC_MONITOR_INGEST_TOKEN` — exactly the same private value you used for the Worker's `INGEST_TOKEN`
-
-### 5. Run a baseline
-
-After the Worker is deployed, either wait for its first cron run or send an authorized POST to `/run?mode=all` using `ADMIN_TOKEN`.
-
-The first successful snapshot for each source becomes its baseline. That is deliberate: existing reservations are not dumped into your inbox as if they were new.
-
-For the browser-backed sources, run both workflows once manually:
+Run both browser workflows once manually:
 
 - **DVC Rental Store website backup**
 - **DVC-Rental browser watch**
 
-Confirm both finish with a green check.
+The Worker itself will establish the DVC Rental Store API, David's, and DVC Shop baselines on its scheduled runs.
 
-### 6. Verify before canceling ChangeDetection
+Existing reservations are intentionally treated as baseline data, not as new alerts.
 
-For a day or two, leave the old ChangeDetection watches enabled while this monitor runs in parallel. Check the Worker's status page periodically. Once the sources show successful checks and you receive a real/test email, the old DVC watches can be disabled.
+### 6. Verify before disabling ChangeDetection
 
-## Email format
+Run both systems in parallel for at least several checks. Confirm the Worker status page shows successful source counts and that the two GitHub browser workflows finish successfully. After that, the old DVC ChangeDetection watches can be disabled.
 
-A DVC Rental Store alert is formatted along these lines:
+## Email example
 
 ```text
 PRICE CHANGE
-A0F... | Old Key West | Deluxe Studio | 2027-05-12 → 2027-05-15 | 3 nights | $189.33/night | $11.74/point | $568 total
+A0F... | Old Key West | Deluxe Studio | 2027-05-12 → 2027-05-15 | 3 nights | $200.33/night | $11.74/point | $601 total
 Matches: DVC Rental Store under $200 + DVC Rental Store under $12 per point
-Previous: $205/night | $12.50/point | $615 total
+Previous: $212/night | $12.50/point | $636 total
 Book this reservation
 https://dvcrentalstore.com/guests/reservations/A0F.../
 ```
 
-No removals are emailed.
-
 ## Files
 
-- `src/config.js` — watch thresholds and rolling Rental Store API date window
-- `src/parsers.js` — source-specific parsing and formatting
-- `src/index.js` — Worker scheduler, one-minute website-workflow dispatch, state, dedupe and email delivery
-- `scripts/browser-backups.mjs` — real-browser collection with separate Rental Store and DVC-Rental modes
-- `wrangler.jsonc` — Cloudflare Worker/KV/cron configuration
-- `.github/workflows/dvc-rental-store-website-backup.yml` — every-minute-dispatched Rental Store website backup, plus five-minute cron fallback
-- `.github/workflows/dvc-browser-backups.yml` — ten-minute DVC-Rental pagination workflow
-- `.github/workflows/dvc-monitor-check.yml` — syntax check
+- `src/config.js` — exact watch thresholds and source URLs
+- `src/parsers.js` — source-specific parsing and clean reservation formatting
+- `src/index.js` — scheduler, state, dedupe, price-change detection, email delivery, status page
+- `scripts/browser-backups.mjs` — DVC Rental Store website and DVC-Rental browser collection
+- `test/smoke.mjs` — tests the exact threshold boundaries and parser basics
+- `wrangler.jsonc` — Cloudflare Worker, KV binding, and one-minute cron
+- `.github/workflows/dvc-rental-store-website-backup.yml` — five-minute Rental Store website backup
+- `.github/workflows/dvc-browser-backups.yml` — ten-minute DVC-Rental pagination
+- `.github/workflows/dvc-monitor-check.yml` — syntax + smoke tests
 
-## Safety / failure behavior
+## Failure behavior
 
-- A parser returning zero reservations is treated as an error instead of overwriting a good baseline with an empty snapshot.
-- DVC-Rental's browser snapshot is rejected if the advertised total count is larger than the parsed count.
-- Alert fingerprints are written only **after** Brevo accepts the email, so a temporary email failure will not silently mark the alert as delivered.
-- The DVC Rental Store website and API share alert fingerprints to prevent duplicate emails.
-- If the one-minute GitHub dispatch is unavailable, the website backup still has a five-minute GitHub cron fallback.
+- A source returning zero usable reservations errors instead of replacing a good baseline with an empty snapshot.
+- DVC-Rental rejects incomplete pagination.
+- Alert fingerprints are stored only after Brevo accepts the message, so an email outage does not silently mark an alert delivered.
+- DVC Rental Store website and API alerts dedupe against the same reservation ID + price fingerprint.
