@@ -18,12 +18,13 @@ The alert behavior mirrors the preferred ChangeDetection behavior:
 
 - The first successful run establishes a baseline and sends no mass email.
 - New qualifying reservations send an email.
-- Genuine price changes send an email only on watches configured for price changes.
+- Genuine price changes send an email only on the watches configured for price changes.
 - Removals never send an email.
 - Unchanged reservations never repeat.
 - DVC Rental Store API, all-reservations, and website snapshots share one alert-deduplication namespace, so the same reservation at the same price does not generate duplicate emails.
 - If one DVC Rental Store reservation matches both priority filters, one email entry is sent and lists both matching watches.
 - The 10-minute all-reservations watch still catches higher-priced reservations that do not qualify for either one-minute price filter.
+- The all-reservations watch monitors the whole inventory; it does **not** resend the entire inventory every 10 minutes. It emails only newly added reservations and price changes.
 - Every notification includes the direct booking URL when the source exposes one.
 - No emojis are added to the reservation lines.
 
