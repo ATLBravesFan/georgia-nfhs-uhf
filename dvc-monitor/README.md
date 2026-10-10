@@ -1,6 +1,6 @@
 # Free DVC reservation monitor
 
-This replaces the ChangeDetection DVC watches with a Cloudflare Worker plus a small GitHub Actions browser backup. The priority DVC Rental Store watches run every minute without a virtual-browser queue. The browser-backed watches run every 10 minutes.
+This replaces the ChangeDetection DVC watches with a Cloudflare Worker plus GitHub Actions browser jobs. Both priority DVC Rental Store watches **and the DVC Rental Store website backup** run every minute. The remaining browser/HTTP watches run every 10 minutes.
 
 ## Watches reproduced
 
@@ -8,10 +8,10 @@ This replaces the ChangeDetection DVC watches with a Cloudflare Worker plus a sm
 |---|---:|---|---:|
 | DVC Rental Store under $200 | Every minute | Nightly price < $200 | Yes |
 | DVC Rental Store under $12 per point | Every minute | Price/point < $12 | Yes |
+| DVC Rental Store website backup | Every minute | Website-only listing < $200/night | Yes |
 | David's Vacation Rentals | Every 10 minutes | < $300/night OR 1/2/3-bedroom < $17/point | Yes |
 | DVC-Rental New Confirmed Reservations | Every 10 minutes | Any new confirmed reservation | No |
 | DVC Shop | Every 10 minutes | Any new available confirmed reservation | No |
-| DVC Rental Store website backup | Every 10 minutes | Website-only listing < $200/night | Yes |
 
 Behavior is intentionally the same as the preferred ChangeDetection notifications:
 
@@ -30,20 +30,25 @@ Behavior is intentionally the same as the preferred ChangeDetection notification
 
 `src/index.js` runs from a cron trigger every minute.
 
-Every minute it checks the Keyholder/DVC Rental Store API once and evaluates both priority filters from that one response. Every ten minutes it also checks David's and DVC Shop using lightweight HTTP requests.
+Every minute it:
 
-Cloudflare KV stores the current snapshot, alert fingerprints, and a small status/heartbeat record. The Worker exposes a simple status page at its root URL and JSON at `/health`.
+1. checks the Keyholder/DVC Rental Store API once and evaluates both priority filters from that response; and
+2. dispatches the **DVC Rental Store website backup** GitHub browser workflow.
 
-### GitHub browser backup
+Every ten minutes it also checks David's and DVC Shop using lightweight HTTP requests.
 
-`.github/workflows/dvc-browser-backups.yml` runs at minutes 3, 13, 23, 33, 43 and 53 of every hour. It uses the Chrome browser already present on GitHub's runner.
+Cloudflare KV stores the current snapshot, alert fingerprints, and a small status/heartbeat record. The Worker exposes a status page at its root URL and JSON at `/health`.
 
-It handles two jobs that are better done with a browser:
+### GitHub browser jobs
 
-1. DVC Rental Store website backup, including data the rendered page exposes outside the primary API.
-2. DVC-Rental pagination so all confirmed reservations are collected, not just the first 50 shown on page 1.
+There are now two separate browser workflows:
 
-The browser script refuses to ingest an incomplete DVC-Rental snapshot when the page advertises more reservations than it successfully parsed.
+- `.github/workflows/dvc-rental-store-website-backup.yml` — the Rental Store website backup. The Cloudflare Worker dispatches it **every minute**. Its own GitHub cron also runs every five minutes as a safety fallback.
+- `.github/workflows/dvc-browser-backups.yml` — DVC-Rental pagination, every 10 minutes.
+
+The browser script supports separate jobs using `DVC_BROWSER_JOB`, so the every-minute Rental Store backup does not need to re-run the heavier DVC-Rental pagination each time.
+
+The DVC-Rental browser snapshot is rejected if the page advertises more reservations than the parser successfully collected.
 
 ## One-time setup
 
@@ -74,7 +79,10 @@ The Worker needs these secrets/variables:
 - `EMAIL_FROM` — the verified sender address in Brevo
 - `ADMIN_TOKEN` — Secret; any long random string
 - `INGEST_TOKEN` — Secret; any different long random string
+- `GITHUB_DISPATCH_TOKEN` — Secret; a fine-grained GitHub token allowed to run Actions in `ATLBravesFan/georgia-nfhs-uhf`
 - `EMAIL_FROM_NAME` — already defaults to `DVC Monitor`
+
+`GITHUB_DISPATCH_TOKEN` is what lets the Worker start the Rental Store browser workflow every minute. Do not paste the token into source code or into chat; add it directly as a Cloudflare secret.
 
 ### 3. Deploy the Worker
 
@@ -106,7 +114,12 @@ After the Worker is deployed, either wait for its first cron run or send an auth
 
 The first successful snapshot for each source becomes its baseline. That is deliberate: existing reservations are not dumped into your inbox as if they were new.
 
-For the browser-backed sources, open GitHub **Actions → DVC browser backups → Run workflow** once. Confirm it finishes with a green check.
+For the browser-backed sources, run both workflows once manually:
+
+- **DVC Rental Store website backup**
+- **DVC-Rental browser watch**
+
+Confirm both finish with a green check.
 
 ### 6. Verify before canceling ChangeDetection
 
@@ -129,12 +142,13 @@ No removals are emailed.
 
 ## Files
 
-- `src/config.js` — watch thresholds and schedules
+- `src/config.js` — watch thresholds and rolling Rental Store API date window
 - `src/parsers.js` — source-specific parsing and formatting
-- `src/index.js` — Worker scheduler, state, dedupe and email delivery
-- `scripts/browser-backups.mjs` — real-browser collection for website backup and DVC-Rental pagination
+- `src/index.js` — Worker scheduler, one-minute website-workflow dispatch, state, dedupe and email delivery
+- `scripts/browser-backups.mjs` — real-browser collection with separate Rental Store and DVC-Rental modes
 - `wrangler.jsonc` — Cloudflare Worker/KV/cron configuration
-- `.github/workflows/dvc-browser-backups.yml` — ten-minute browser backup schedule
+- `.github/workflows/dvc-rental-store-website-backup.yml` — every-minute-dispatched Rental Store website backup, plus five-minute cron fallback
+- `.github/workflows/dvc-browser-backups.yml` — ten-minute DVC-Rental pagination workflow
 - `.github/workflows/dvc-monitor-check.yml` — syntax check
 
 ## Safety / failure behavior
@@ -143,3 +157,4 @@ No removals are emailed.
 - DVC-Rental's browser snapshot is rejected if the advertised total count is larger than the parsed count.
 - Alert fingerprints are written only **after** Brevo accepts the email, so a temporary email failure will not silently mark the alert as delivered.
 - The DVC Rental Store website and API share alert fingerprints to prevent duplicate emails.
+- If the one-minute GitHub dispatch is unavailable, the website backup still has a five-minute GitHub cron fallback.
