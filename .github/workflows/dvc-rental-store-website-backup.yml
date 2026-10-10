@@ -1,14 +1,16 @@
 name: DVC Rental Store website backup
 
 on:
-  # GitHub's scheduler itself is kept as a five-minute safety net. The Cloudflare
-  # Worker dispatches this workflow every minute through workflow_dispatch.
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: dvc-rental-store-website-backup
+  cancel-in-progress: true
 
 jobs:
   scrape:
