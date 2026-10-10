@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-10T15:37:13.817-04:00",
+  "generated_at": "2026-10-10T19:03:48.987-04:00",
   "eastern_date": "2026-10-10",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 19,
-  "georgia_channel_count": 19,
-  "currently_live_estimate": 10,
-  "upcoming_next_7_days": 9,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 9,
+  "currently_live_estimate": 4,
+  "upcoming_next_7_days": 4,
+  "completed_today_but_still_visible": 10,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -27,208 +27,6 @@
   "school_name_count": 663,
   "channels": [
     {
-      "id": "ga-nfhs-2070264",
-      "stream_id": 2070264,
-      "extension": "ts",
-      "original_name": "NFHS Network 99: San Lorenzo Valley High School vs. St Francis High School Junior Varsity Football @ 10 Oct 01:00 PM ET",
-      "name": "San Lorenzo Valley High School vs. St Francis High School Junior Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T13:00:00.000-04:00",
-      "stop": "2026-10-10T16:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "San Lorenzo Valley High School",
-        "St Francis High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070157",
-      "stream_id": 2070157,
-      "extension": "ts",
-      "original_name": "NFHS Network 206: Christian Heritage School Middle School Football @ 10 Oct 01:30 PM ET",
-      "name": "Christian Heritage School Middle School Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T13:30:00.000-04:00",
-      "stop": "2026-10-10T17:00:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Christian Heritage School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Christian Heritage School",
-          "core": "christian heritage",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070147",
-      "stream_id": 2070147,
-      "extension": "ts",
-      "original_name": "NFHS Network 216: Forest Park High School vs. Lake Linden-Hubbell High School Varsity Football @ 10 Oct 01:30 PM ET",
-      "name": "Forest Park High School vs. Lake Linden-Hubbell High School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T13:30:00.000-04:00",
-      "stop": "2026-10-10T17:00:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Forest Park High School",
-        "Lake Linden-Hubbell High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Forest Park High School",
-          "core": "forest park",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070135",
-      "stream_id": 2070135,
-      "extension": "ts",
-      "original_name": "NFHS Network 228: Plains High School vs. Lincoln County Freshman Girls Volleyball @ 10 Oct 02:00 PM ET",
-      "name": "Plains High School vs. Lincoln County Freshman Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T14:00:00.000-04:00",
-      "stop": "2026-10-10T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Plains High School",
-        "Lincoln County"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lincoln County",
-          "core": "lincoln county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070124",
-      "stream_id": 2070124,
-      "extension": "ts",
-      "original_name": "NFHS Network 239: Specially Fit Academy vs. Mt. Bethel Christian Academy Varsity Football @ 10 Oct 02:00 PM ET",
-      "name": "Specially Fit Academy vs. Mt. Bethel Christian Academy Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T14:00:00.000-04:00",
-      "stop": "2026-10-10T17:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Specially Fit Academy",
-        "Mt. Bethel Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Mt. Bethel Christian Academy",
-          "core": "mt bethel christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070068",
-      "stream_id": 2070068,
-      "extension": "ts",
-      "original_name": "NFHS Network 295: Erie High School vs. St Francis High School Varsity Football @ 10 Oct 02:00 PM ET",
-      "name": "Erie High School vs. St Francis High School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T14:00:00.000-04:00",
-      "stop": "2026-10-10T17:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Erie High School",
-        "St Francis High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070062",
-      "stream_id": 2070062,
-      "extension": "ts",
-      "original_name": "NFHS Network 301: Harvester Christian Academy vs. Sugar Hill Christian Academy 2026 Girls Volleyball Quarterfinal @ 10 Oct 02:00 PM ET",
-      "name": "Harvester Christian Academy vs. Sugar Hill Christian Academy 2026 Girls Volleyball Quarterfinal",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T14:00:00.000-04:00",
-      "stop": "2026-10-10T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Harvester Christian Academy",
-        "Sugar Hill Christian Academy 2026 Girls Volleyball Quarterfinal"
-      ],
-      "matched_schools": [
-        {
-          "team": "Harvester Christian Academy",
-          "core": "harvester christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070049",
-      "stream_id": 2070049,
-      "extension": "ts",
-      "original_name": "NFHS Network 314: Chattahoochee High School vs. Centennial High School Varsity Boys Lacrosse @ 10 Oct 02:15 PM ET",
-      "name": "Chattahoochee High School vs. Centennial High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T14:15:00.000-04:00",
-      "stop": "2026-10-10T16:45:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Chattahoochee High School",
-        "Centennial High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Chattahoochee High School",
-          "core": "chattahoochee",
-          "confidence": 1
-        },
-        {
-          "team": "Centennial High School",
-          "core": "centennial",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069919",
-      "stream_id": 2069919,
-      "extension": "ts",
-      "original_name": "NFHS Network 444: Plains High School vs. Lincoln County Junior Varsity Girls Volleyball @ 10 Oct 03:30 PM ET",
-      "name": "Plains High School vs. Lincoln County Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T15:30:00.000-04:00",
-      "stop": "2026-10-10T18:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Plains High School",
-        "Lincoln County"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lincoln County",
-          "core": "lincoln county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
       "id": "ga-nfhs-2069917",
       "stream_id": 2069917,
       "extension": "ts",
@@ -246,28 +44,6 @@
         {
           "team": "St Francis High School",
           "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069905",
-      "stream_id": 2069905,
-      "extension": "ts",
-      "original_name": "NFHS Network 458: Away vs. Heritage Christian Academy Junior Varsity Girls Volleyball @ 10 Oct 03:45 PM ET",
-      "name": "Away vs. Heritage Christian Academy Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T15:45:00.000-04:00",
-      "stop": "2026-10-10T18:15:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Heritage Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Heritage Christian Academy",
-          "core": "heritage christian academy",
           "confidence": 2
         }
       ]
