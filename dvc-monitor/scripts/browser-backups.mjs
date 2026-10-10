@@ -3,22 +3,31 @@ import { chromium } from "playwright-core";
 const BASE_URL = process.env.DVC_MONITOR_BASE_URL;
 const TOKEN = process.env.DVC_MONITOR_INGEST_TOKEN;
 const CHROME = process.env.CHROME_PATH || "/usr/bin/google-chrome";
+const JOB = process.env.DVC_BROWSER_JOB || "all";
 
 if (!BASE_URL || !TOKEN) {
   throw new Error("DVC_MONITOR_BASE_URL and DVC_MONITOR_INGEST_TOKEN are required");
+}
+
+if (!new Set(["all", "rental-store", "dvc-rental"]).has(JOB)) {
+  throw new Error(`Unknown DVC_BROWSER_JOB: ${JOB}`);
 }
 
 const browser = await chromium.launch({ headless: true, executablePath: CHROME, args: ["--no-sandbox", "--disable-dev-shm-usage"] });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 
 try {
-  const rentalStore = await scrapeRentalStore(context);
-  console.log(`DVC Rental Store website: ${rentalStore.length} usable reservations`);
-  if (rentalStore.length) await ingest("/ingest/dvc-rental-store-website", rentalStore);
+  if (JOB === "all" || JOB === "rental-store") {
+    const rentalStore = await scrapeRentalStore(context);
+    console.log(`DVC Rental Store website: ${rentalStore.length} usable reservations`);
+    if (rentalStore.length) await ingest("/ingest/dvc-rental-store-website", rentalStore);
+  }
 
-  const dvcRental = await scrapeDvcRental(context);
-  console.log(`DVC-Rental: ${dvcRental.length} reservations across all pages`);
-  await ingest("/ingest/dvc-rental", dvcRental);
+  if (JOB === "all" || JOB === "dvc-rental") {
+    const dvcRental = await scrapeDvcRental(context);
+    console.log(`DVC-Rental: ${dvcRental.length} reservations across all pages`);
+    await ingest("/ingest/dvc-rental", dvcRental);
+  }
 } finally {
   await browser.close();
 }
