@@ -1,6 +1,9 @@
 import { URLS, WATCHES } from "./config.js";
 import { parseKeyholder, parseExternalRentalStore, parseDavids, parseDvcShop, fingerprint, formatListing, priceSummary, byId } from "./parsers.js";
 
+const RENTAL_STORE_BACKUP_WORKFLOW = "dvc-rental-store-website-backup.yml";
+const GITHUB_REPO = "ATLBravesFan/georgia-nfhs-uhf";
+
 export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runScheduled(env, new Date(event.scheduledTime || Date.now())));
@@ -41,15 +44,19 @@ export default {
 
 async function runScheduled(env, now) {
   const result = {};
+
   try {
     result.rentalStore = await pollRentalStore(env);
   } catch (error) {
     result.rentalStore = { ok: false, error: errorMessage(error) };
   }
 
-  // The priority Rental Store watches run every minute. David's and DVC Shop
-  // are lightweight HTTP watches and run every 10 minutes. DVC-Rental itself
-  // is browser-backed in GitHub Actions so pagination is complete.
+  // Trigger the real-browser Rental Store website backup every minute.
+  // GitHub's own cron remains a five-minute safety net in case a dispatch fails.
+  result.rentalStoreWebsiteDispatch = await dispatchRentalStoreWebsiteBackup(env);
+
+  // David's and DVC Shop are lightweight HTTP watches and run every 10 minutes.
+  // DVC-Rental stays browser-backed on its own 10-minute workflow.
   if (now.getUTCMinutes() % 10 === 0) result.slower = await pollSlowerHttpSources(env);
 
   // Limit KV status writes while still keeping a useful heartbeat.
@@ -61,10 +68,43 @@ async function runScheduled(env, now) {
 
 async function runManual(env, mode) {
   if (mode === "rental-store") return { rentalStore: await pollRentalStore(env) };
+  if (mode === "website-backup-dispatch") return { rentalStoreWebsiteDispatch: await dispatchRentalStoreWebsiteBackup(env) };
   if (mode === "slow") return { slower: await pollSlowerHttpSources(env) };
   return {
     rentalStore: await pollRentalStore(env),
+    rentalStoreWebsiteDispatch: await dispatchRentalStoreWebsiteBackup(env),
     slower: await pollSlowerHttpSources(env),
+  };
+}
+
+async function dispatchRentalStoreWebsiteBackup(env) {
+  if (!env.GITHUB_DISPATCH_TOKEN) {
+    return { ok: false, skipped: true, error: "GITHUB_DISPATCH_TOKEN not configured" };
+  }
+
+  const response = await fetch(
+    `https://api.github.com/repos/${GITHUB_REPO}/actions/workflows/${RENTAL_STORE_BACKUP_WORKFLOW}/dispatches`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_DISPATCH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "DVC-Reservation-Monitor",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    },
+  );
+
+  if (response.status === 204) {
+    return { ok: true, dispatchedAt: new Date().toISOString() };
+  }
+
+  return {
+    ok: false,
+    status: response.status,
+    error: (await response.text()).slice(0, 300),
   };
 }
 
@@ -149,6 +189,7 @@ async function processRentalStoreWebsite(env, rows) {
   const sent = await sendEvents(env, "dvc-rental-store", "DVC Rental Store", events, true);
   await mergeStatus(env, {
     rentalStoreWebsiteBackup: {
+      interval: "1 minute",
       checkedAt: new Date().toISOString(),
       count: rows.length,
       under200: qualifying.length,
@@ -332,6 +373,11 @@ async function statusResponse(env, html) {
   const payload = {
     ok: true,
     cron: "every minute",
+    rentalStoreWebsiteBackup: {
+      interval: "1 minute",
+      trigger: "Cloudflare Worker dispatches GitHub browser workflow",
+      githubCronFallback: "5 minutes",
+    },
     watches: Object.values(WATCHES).map((watch) => ({
       title: watch.title,
       interval: watch.interval,
@@ -342,7 +388,7 @@ async function statusResponse(env, html) {
 
   if (!html) return json(payload);
   return new Response(
-    `<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>DVC Monitor</title></head><body style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px"><h1>DVC Monitor</h1><p>Rental Store priority watches: every minute. Other watches: every 10 minutes.</p><pre style="white-space:pre-wrap;background:#f5f5f5;padding:16px;border-radius:8px">${escapeHtml(JSON.stringify(payload, null, 2))}</pre></body></html>`,
+    `<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>DVC Monitor</title></head><body style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px"><h1>DVC Monitor</h1><p>DVC Rental Store API + website backup: every minute. Other watches: every 10 minutes.</p><pre style="white-space:pre-wrap;background:#f5f5f5;padding:16px;border-radius:8px">${escapeHtml(JSON.stringify(payload, null, 2))}</pre></body></html>`,
     { headers: { "content-type": "text/html;charset=utf-8" } },
   );
 }
