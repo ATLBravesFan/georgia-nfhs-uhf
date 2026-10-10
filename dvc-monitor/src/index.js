@@ -44,9 +44,10 @@ export default {
 
 async function runScheduled(env, now) {
   const result = {};
+  const tenMinuteCycle = now.getUTCMinutes() % 10 === 0;
 
   try {
-    result.rentalStore = await pollRentalStore(env);
+    result.rentalStore = await pollRentalStore(env, tenMinuteCycle);
   } catch (error) {
     result.rentalStore = { ok: false, error: errorMessage(error) };
   }
@@ -57,21 +58,21 @@ async function runScheduled(env, now) {
 
   // David's and DVC Shop are lightweight HTTP watches and run every 10 minutes.
   // DVC-Rental stays browser-backed on its own 10-minute workflow.
-  if (now.getUTCMinutes() % 10 === 0) result.slower = await pollSlowerHttpSources(env);
+  if (tenMinuteCycle) result.slower = await pollSlowerHttpSources(env);
 
   // Limit KV status writes while still keeping a useful heartbeat.
-  if (now.getUTCMinutes() % 3 === 0 || now.getUTCMinutes() % 10 === 0) {
+  if (now.getUTCMinutes() % 3 === 0 || tenMinuteCycle) {
     await saveStatus(env, result);
   }
   return result;
 }
 
 async function runManual(env, mode) {
-  if (mode === "rental-store") return { rentalStore: await pollRentalStore(env) };
+  if (mode === "rental-store") return { rentalStore: await pollRentalStore(env, true) };
   if (mode === "website-backup-dispatch") return { rentalStoreWebsiteDispatch: await dispatchRentalStoreWebsiteBackup(env) };
   if (mode === "slow") return { slower: await pollSlowerHttpSources(env) };
   return {
-    rentalStore: await pollRentalStore(env),
+    rentalStore: await pollRentalStore(env, true),
     rentalStoreWebsiteDispatch: await dispatchRentalStoreWebsiteBackup(env),
     slower: await pollSlowerHttpSources(env),
   };
@@ -108,7 +109,7 @@ async function dispatchRentalStoreWebsiteBackup(env) {
   };
 }
 
-async function pollRentalStore(env) {
+async function pollRentalStore(env, includeAllReservationsWatch = false) {
   const response = await fetch(URLS.rentalStoreApi, {
     headers: { Accept: "application/json", "User-Agent": "DVC-Monitor/1.0" },
   });
@@ -120,10 +121,12 @@ async function pollRentalStore(env) {
   const stateKey = "state:rental-store-api";
   const previous = await readState(env, stateKey);
   const current = byId(rows);
+  let allReservations10m = null;
 
   if (!previous) {
     await putState(env, stateKey, current);
-    return rentalStoreCounts(rows, true, 0);
+    if (includeAllReservationsWatch) allReservations10m = await processRentalStoreAllWatch(env, rows);
+    return rentalStoreCounts(rows, true, 0, allReservations10m);
   }
 
   const events = [];
@@ -140,10 +143,51 @@ async function pollRentalStore(env) {
 
   await putIfChanged(env, stateKey, previous, current);
   const sent = await sendEvents(env, "dvc-rental-store", "DVC Rental Store", events, true);
-  return rentalStoreCounts(rows, false, sent);
+
+  if (includeAllReservationsWatch) {
+    allReservations10m = await processRentalStoreAllWatch(env, rows);
+  }
+
+  return rentalStoreCounts(rows, false, sent, allReservations10m);
 }
 
-function rentalStoreCounts(rows, baseline, alerts) {
+async function processRentalStoreAllWatch(env, rows) {
+  const stateKey = "state:rental-store-all-10m";
+  const previous = await readState(env, stateKey);
+  const current = byId(rows);
+
+  if (!previous) {
+    await putState(env, stateKey, current);
+    return { ok: true, count: rows.length, baseline: true, alerts: 0 };
+  }
+
+  const events = [];
+  for (const listing of rows) {
+    const old = previous[listing.id];
+    if (!old) {
+      events.push({ type: "NEW", listing });
+    } else if (WATCHES.rentalStoreAll.priceChanges && fingerprint(old) !== fingerprint(listing)) {
+      events.push({ type: "PRICE CHANGE", listing, previous: old });
+    }
+  }
+
+  await putIfChanged(env, stateKey, previous, current);
+
+  // Use the same Rental Store dedupe namespace as the fast filtered watches.
+  // If a cheap reservation already triggered the 1-minute watch, the 10-minute
+  // all-reservations watch will not send a duplicate email for the same price.
+  const sent = await sendEvents(
+    env,
+    "dvc-rental-store",
+    WATCHES.rentalStoreAll.title,
+    events,
+    false,
+  );
+
+  return { ok: true, count: rows.length, baseline: false, alerts: sent };
+}
+
+function rentalStoreCounts(rows, baseline, alerts, allReservations10m = null) {
   return {
     ok: true,
     count: rows.length,
@@ -151,6 +195,7 @@ function rentalStoreCounts(rows, baseline, alerts) {
     alerts,
     under200: rows.filter(WATCHES.rentalStoreNightly.match).length,
     under12pt: rows.filter(WATCHES.rentalStorePoints.match).length,
+    ...(allReservations10m ? { allReservations10m } : {}),
   };
 }
 
@@ -388,7 +433,7 @@ async function statusResponse(env, html) {
 
   if (!html) return json(payload);
   return new Response(
-    `<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>DVC Monitor</title></head><body style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px"><h1>DVC Monitor</h1><p>DVC Rental Store API + website backup: every minute. Other watches: every 10 minutes.</p><pre style="white-space:pre-wrap;background:#f5f5f5;padding:16px;border-radius:8px">${escapeHtml(JSON.stringify(payload, null, 2))}</pre></body></html>`,
+    `<html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>DVC Monitor</title></head><body style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px"><h1>DVC Monitor</h1><p>DVC Rental Store API + website backup: every minute. DVC Rental Store all-reservations watch and other watches: every 10 minutes.</p><pre style="white-space:pre-wrap;background:#f5f5f5;padding:16px;border-radius:8px">${escapeHtml(JSON.stringify(payload, null, 2))}</pre></body></html>`,
     { headers: { "content-type": "text/html;charset=utf-8" } },
   );
 }
