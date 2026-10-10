@@ -40,6 +40,13 @@ export const WATCHES = {
     // Current watch is strict "under $12", not $12-or-less.
     match: r => Number.isFinite(r.pointPrice) && r.pointPrice < 12,
   },
+  rentalStoreAll: {
+    title: "DVC Rental Store - All Reservations",
+    interval: "10 minutes",
+    priceChanges: true,
+    // Every currently available confirmed reservation, regardless of price.
+    match: () => true,
+  },
   davids: {
     title: "David's Vacation Rentals",
     interval: "10 minutes",
