@@ -1,0 +1,28 @@
+name: DVC monitor check
+
+on:
+  push:
+    paths:
+      - "dvc-monitor/**"
+      - ".github/workflows/dvc-browser-backups.yml"
+      - ".github/workflows/dvc-monitor-check.yml"
+  pull_request:
+    paths:
+      - "dvc-monitor/**"
+      - ".github/workflows/dvc-browser-backups.yml"
+      - ".github/workflows/dvc-monitor-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check JavaScript syntax
+        working-directory: dvc-monitor
+        run: npm run check
