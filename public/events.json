@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-11T10:08:10.335-04:00",
+  "generated_at": "2026-10-11T12:57:39.582-04:00",
   "eastern_date": "2026-10-11",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 11,
-  "georgia_channel_count": 11,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 10,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 10,
+  "currently_live_estimate": 4,
+  "upcoming_next_7_days": 6,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,33 +26,6 @@
   },
   "school_name_count": 663,
   "channels": [
-    {
-      "id": "ga-nfhs-2070362",
-      "stream_id": 2070362,
-      "extension": "ts",
-      "original_name": "NFHS Network 03: Hillgrove High School vs. Harrison High School Varsity Boys Lacrosse @ 11 Oct 09:00 AM ET",
-      "name": "Hillgrove High School vs. Harrison High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T09:00:00.000-04:00",
-      "stop": "2026-10-11T11:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Hillgrove High School",
-        "Harrison High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Hillgrove High School",
-          "core": "hillgrove",
-          "confidence": 1
-        },
-        {
-          "team": "Harrison High School",
-          "core": "harrison",
-          "confidence": 1
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070356",
       "stream_id": 2070356,
