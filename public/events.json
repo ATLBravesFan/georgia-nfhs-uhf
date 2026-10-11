@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-11T12:57:39.582-04:00",
+  "generated_at": "2026-10-11T17:11:36.397-04:00",
   "eastern_date": "2026-10-11",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 11,
-  "georgia_channel_count": 10,
-  "currently_live_estimate": 4,
-  "upcoming_next_7_days": 6,
-  "completed_today_but_still_visible": 1,
+  "georgia_channel_count": 3,
+  "currently_live_estimate": 2,
+  "upcoming_next_7_days": 1,
+  "completed_today_but_still_visible": 8,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,190 +26,6 @@
   },
   "school_name_count": 663,
   "channels": [
-    {
-      "id": "ga-nfhs-2070356",
-      "stream_id": 2070356,
-      "extension": "ts",
-      "original_name": "NFHS Network 09: Harrison High School vs. Pope High School Varsity Boys Lacrosse @ 11 Oct 10:30 AM ET",
-      "name": "Harrison High School vs. Pope High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T10:30:00.000-04:00",
-      "stop": "2026-10-11T13:00:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Harrison High School",
-        "Pope High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Harrison High School",
-          "core": "harrison",
-          "confidence": 1
-        },
-        {
-          "team": "Pope High School",
-          "core": "pope",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070354",
-      "stream_id": 2070354,
-      "extension": "ts",
-      "original_name": "NFHS Network 11: Pope High School vs. Hillgrove High School Varsity Boys Lacrosse @ 11 Oct 12:00 PM ET",
-      "name": "Pope High School vs. Hillgrove High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T12:00:00.000-04:00",
-      "stop": "2026-10-11T14:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Pope High School",
-        "Hillgrove High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Pope High School",
-          "core": "pope",
-          "confidence": 1
-        },
-        {
-          "team": "Hillgrove High School",
-          "core": "hillgrove",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070353",
-      "stream_id": 2070353,
-      "extension": "ts",
-      "original_name": "NFHS Network 12: Chattahoochee High School vs. Centennial High School Varsity Boys Lacrosse @ 11 Oct 12:00 PM ET",
-      "name": "Chattahoochee High School vs. Centennial High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T12:00:00.000-04:00",
-      "stop": "2026-10-11T14:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Chattahoochee High School",
-        "Centennial High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Chattahoochee High School",
-          "core": "chattahoochee",
-          "confidence": 1
-        },
-        {
-          "team": "Centennial High School",
-          "core": "centennial",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070352",
-      "stream_id": 2070352,
-      "extension": "ts",
-      "original_name": "NFHS Network 13: Away vs. North Cobb Christian School Varsity Boys Lacrosse @ 11 Oct 12:00 PM ET",
-      "name": "Away vs. North Cobb Christian School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T12:00:00.000-04:00",
-      "stop": "2026-10-11T14:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Away",
-        "North Cobb Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Cobb Christian School",
-          "core": "north cobb christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070349",
-      "stream_id": 2070349,
-      "extension": "ts",
-      "original_name": "NFHS Network 16: Creekview High School vs. West Forsyth High School Varsity Boys Lacrosse @ 11 Oct 01:00 PM ET",
-      "name": "Creekview High School vs. West Forsyth High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T13:00:00.000-04:00",
-      "stop": "2026-10-11T15:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Creekview High School",
-        "West Forsyth High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Creekview High School",
-          "core": "creekview",
-          "confidence": 1
-        },
-        {
-          "team": "West Forsyth High School",
-          "core": "west forsyth",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070346",
-      "stream_id": 2070346,
-      "extension": "ts",
-      "original_name": "NFHS Network 19: South Forsyth High School vs. Etowah High School Varsity Boys Lacrosse @ 11 Oct 01:55 PM ET",
-      "name": "South Forsyth High School vs. Etowah High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T13:55:00.000-04:00",
-      "stop": "2026-10-11T16:25:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "South Forsyth High School",
-        "Etowah High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "South Forsyth High School",
-          "core": "south forsyth",
-          "confidence": 2
-        },
-        {
-          "team": "Etowah High School",
-          "core": "etowah",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070345",
-      "stream_id": 2070345,
-      "extension": "ts",
-      "original_name": "NFHS Network 20: Sequoyah High School vs. North Cobb Christian School Varsity Boys Lacrosse @ 11 Oct 02:00 PM ET",
-      "name": "Sequoyah High School vs. North Cobb Christian School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T14:00:00.000-04:00",
-      "stop": "2026-10-11T16:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Sequoyah High School",
-        "North Cobb Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Sequoyah High School",
-          "core": "sequoyah",
-          "confidence": 1
-        },
-        {
-          "team": "North Cobb Christian School",
-          "core": "north cobb christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070341",
       "stream_id": 2070341,
