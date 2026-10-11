@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-10T19:03:48.987-04:00",
+  "generated_at": "2026-10-10T22:44:49.006-04:00",
   "eastern_date": "2026-10-10",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 19,
-  "georgia_channel_count": 9,
-  "currently_live_estimate": 4,
-  "upcoming_next_7_days": 4,
-  "completed_today_but_still_visible": 10,
+  "georgia_channel_count": 4,
+  "currently_live_estimate": 1,
+  "upcoming_next_7_days": 3,
+  "completed_today_but_still_visible": 15,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,121 +26,6 @@
   },
   "school_name_count": 663,
   "channels": [
-    {
-      "id": "ga-nfhs-2069917",
-      "stream_id": 2069917,
-      "extension": "ts",
-      "original_name": "NFHS Network 446: San Lorenzo Valley High School vs. St Francis High School Varsity Football @ 10 Oct 03:30 PM ET",
-      "name": "San Lorenzo Valley High School vs. St Francis High School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T15:30:00.000-04:00",
-      "stop": "2026-10-10T19:00:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "San Lorenzo Valley High School",
-        "St Francis High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069859",
-      "stream_id": 2069859,
-      "extension": "ts",
-      "original_name": "NFHS Network 503: Trinity Christian School vs. Washington High School Varsity Football @ 10 Oct 04:00 PM ET",
-      "name": "Trinity Christian School vs. Washington High School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T16:00:00.000-04:00",
-      "stop": "2026-10-10T19:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Trinity Christian School",
-        "Washington High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Trinity Christian School",
-          "core": "trinity christian",
-          "confidence": 1
-        },
-        {
-          "team": "Washington High School",
-          "core": "washington",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069821",
-      "stream_id": 2069821,
-      "extension": "ts",
-      "original_name": "NFHS Network 539: Julesburg High School vs. Heritage Christian Academy Varsity Girls Volleyball @ 10 Oct 04:45 PM ET",
-      "name": "Julesburg High School vs. Heritage Christian Academy Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T16:45:00.000-04:00",
-      "stop": "2026-10-10T19:15:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Julesburg High School",
-        "Heritage Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Heritage Christian Academy",
-          "core": "heritage christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069813",
-      "stream_id": 2069813,
-      "extension": "ts",
-      "original_name": "NFHS Network 546: Worland High School vs. Mountain View High School Varsity Girls Volleyball @ 10 Oct 05:00 PM ET",
-      "name": "Worland High School vs. Mountain View High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T17:00:00.000-04:00",
-      "stop": "2026-10-10T19:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Worland High School",
-        "Mountain View High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Mountain View High School",
-          "core": "mountain view",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069802",
-      "stream_id": 2069802,
-      "extension": "ts",
-      "original_name": "NFHS Network 556: Plains High School vs. Lincoln County Varsity Girls Volleyball @ 10 Oct 05:00 PM ET",
-      "name": "Plains High School vs. Lincoln County Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T17:00:00.000-04:00",
-      "stop": "2026-10-10T19:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Plains High School",
-        "Lincoln County"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lincoln County",
-          "core": "lincoln county",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2069645",
       "stream_id": 2069645,
