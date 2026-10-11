@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-10T22:44:49.006-04:00",
-  "eastern_date": "2026-10-10",
+  "generated_at": "2026-10-11T06:24:34.946-04:00",
+  "eastern_date": "2026-10-11",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 19,
-  "georgia_channel_count": 4,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 3,
-  "completed_today_but_still_visible": 15,
+  "georgia_channel_count": 2,
+  "currently_live_estimate": 0,
+  "upcoming_next_7_days": 2,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,50 +26,6 @@
   },
   "school_name_count": 663,
   "channels": [
-    {
-      "id": "ga-nfhs-2069645",
-      "stream_id": 2069645,
-      "extension": "ts",
-      "original_name": "NFHS Network 702: Dawson County High School vs. Custer County District Varsity Football @ 10 Oct 09:00 PM ET",
-      "name": "Dawson County High School vs. Custer County District Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-10T21:00:00.000-04:00",
-      "stop": "2026-10-11T00:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Dawson County High School",
-        "Custer County District"
-      ],
-      "matched_schools": [
-        {
-          "team": "Dawson County High School",
-          "core": "dawson county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069618",
-      "stream_id": 2069618,
-      "extension": "ts",
-      "original_name": "NFHS Network 729: Lincoln County vs. Libby High School Middle School Football @ 11 Oct 01:00 AM ET",
-      "name": "Lincoln County vs. Libby High School Middle School Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T01:00:00.000-04:00",
-      "stop": "2026-10-11T04:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Lincoln County",
-        "Libby High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lincoln County",
-          "core": "lincoln county",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2069610",
       "stream_id": 2069610,
