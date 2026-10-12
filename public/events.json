@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-11T17:11:36.397-04:00",
+  "generated_at": "2026-10-11T20:48:41.059-04:00",
   "eastern_date": "2026-10-11",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 11,
-  "georgia_channel_count": 3,
-  "currently_live_estimate": 2,
+  "georgia_channel_count": 1,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 1,
-  "completed_today_but_still_visible": 8,
+  "completed_today_but_still_visible": 10,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,60 +26,6 @@
   },
   "school_name_count": 663,
   "channels": [
-    {
-      "id": "ga-nfhs-2070341",
-      "stream_id": 2070341,
-      "extension": "ts",
-      "original_name": "NFHS Network 24: Etowah High School vs. West Forsyth High School Varsity Boys Lacrosse @ 11 Oct 02:50 PM ET",
-      "name": "Etowah High School vs. West Forsyth High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T14:50:00.000-04:00",
-      "stop": "2026-10-11T17:20:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "Etowah High School",
-        "West Forsyth High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Etowah High School",
-          "core": "etowah",
-          "confidence": 1
-        },
-        {
-          "team": "West Forsyth High School",
-          "core": "west forsyth",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070337",
-      "stream_id": 2070337,
-      "extension": "ts",
-      "original_name": "NFHS Network 28: South Forsyth High School vs. West Forsyth High School Varsity Boys Lacrosse @ 11 Oct 04:40 PM ET",
-      "name": "South Forsyth High School vs. West Forsyth High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-11T16:40:00.000-04:00",
-      "stop": "2026-10-11T19:10:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "South Forsyth High School",
-        "West Forsyth High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "South Forsyth High School",
-          "core": "south forsyth",
-          "confidence": 2
-        },
-        {
-          "team": "West Forsyth High School",
-          "core": "west forsyth",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070327",
       "stream_id": 2070327,
