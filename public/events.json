@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-11T20:48:41.059-04:00",
-  "eastern_date": "2026-10-11",
+  "generated_at": "2026-10-12T04:14:42.261-04:00",
+  "eastern_date": "2026-10-12",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 11,
-  "georgia_channel_count": 1,
+  "georgia_channel_count": 0,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 1,
-  "completed_today_but_still_visible": 10,
-  "placeholder_active": false,
+  "upcoming_next_7_days": 0,
+  "completed_today_but_still_visible": 1,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,28 +25,5 @@
     }
   },
   "school_name_count": 663,
-  "channels": [
-    {
-      "id": "ga-nfhs-2070327",
-      "stream_id": 2070327,
-      "extension": "ts",
-      "original_name": "NFHS Network 38: Away vs. Friendship Christian School Middle School Girls Volleyball @ 12 Oct 12:01 AM ET",
-      "name": "Away vs. Friendship Christian School Middle School Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-12T00:01:00.000-04:00",
-      "stop": "2026-10-12T02:31:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Friendship Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Friendship Christian School",
-          "core": "friendship christian",
-          "confidence": 2
-        }
-      ]
-    }
-  ]
+  "channels": []
 }
