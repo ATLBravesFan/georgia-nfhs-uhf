@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-16T10:23:50.004-04:00",
+  "generated_at": "2026-10-16T15:07:18.874-04:00",
   "eastern_date": "2026-10-16",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 84,
-  "georgia_channel_count": 33,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 33,
-  "completed_today_but_still_visible": 1,
+  "georgia_channel_count": 32,
+  "currently_live_estimate": 7,
+  "upcoming_next_7_days": 25,
+  "completed_today_but_still_visible": 2,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,28 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2068104",
-      "stream_id": 2068104,
-      "extension": "ts",
-      "original_name": "NFHS Network 2222: Peoples Baptist Academy vs. Old Suwanee Christian School 2026 Girls Volleyball Semifinal @ 16 Oct 11:15 AM ET",
-      "name": "Peoples Baptist Academy vs. Old Suwanee Christian School 2026 Girls Volleyball Semifinal",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T11:15:00.000-04:00",
-      "stop": "2026-10-16T13:45:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Peoples Baptist Academy",
-        "Old Suwanee Christian School 2026 Girls Volleyball Semifinal"
-      ],
-      "matched_schools": [
-        {
-          "team": "Peoples Baptist Academy",
-          "core": "peoples baptist academy",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2068086",
       "stream_id": 2068086,
