@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-15T21:26:28.901-04:00",
+  "generated_at": "2026-10-15T22:06:18.464-04:00",
   "eastern_date": "2026-10-15",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 84,
-  "georgia_channel_count": 84,
-  "currently_live_estimate": 46,
-  "upcoming_next_7_days": 38,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 74,
+  "currently_live_estimate": 35,
+  "upcoming_next_7_days": 34,
+  "completed_today_but_still_visible": 10,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -93,93 +93,6 @@
       ]
     },
     {
-      "id": "ga-nfhs-2070200",
-      "stream_id": 2070200,
-      "extension": "ts",
-      "original_name": "NFHS Network 163: Grace Christian Academy Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Grace Christian Academy Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Grace Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Grace Christian Academy",
-          "core": "grace christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070199",
-      "stream_id": 2070199,
-      "extension": "ts",
-      "original_name": "NFHS Network 164: The First Academy vs. Orangewood Christian School 2026 FHSAA Girls Volleyball Playoffs @ 15 Oct 07:00 PM ET",
-      "name": "The First Academy vs. Orangewood Christian School 2026 FHSAA Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "The First Academy",
-        "Orangewood Christian School 2026 FHSAA Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "The First Academy",
-          "core": "first academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070194",
-      "stream_id": 2070194,
-      "extension": "ts",
-      "original_name": "NFHS Network 169: Jefferson Academy vs. St. Mary's Academy Junior Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Jefferson Academy vs. St. Mary's Academy Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Jefferson Academy",
-        "St. Mary's Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "St. Mary's Academy",
-          "core": "st mary s academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070161",
-      "stream_id": 2070161,
-      "extension": "ts",
-      "original_name": "NFHS Network 202: Freedom High School - Woodbridge vs. Forest Park High School Varsity Field Hockey @ 15 Oct 07:00 PM ET",
-      "name": "Freedom High School - Woodbridge vs. Forest Park High School Varsity Field Hockey",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Field Hockey",
-      "teams": [
-        "Freedom High School - Woodbridge",
-        "Forest Park High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Forest Park High School",
-          "core": "forest park",
-          "confidence": 2
-        }
-      ]
-    },
-    {
       "id": "ga-nfhs-2070156",
       "stream_id": 2070156,
       "extension": "ts",
@@ -197,94 +110,6 @@
         {
           "team": "Calvary Day School",
           "core": "calvary day",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070122",
-      "stream_id": 2070122,
-      "extension": "ts",
-      "original_name": "NFHS Network 241: Falls Church High School vs. Mount Vernon High School Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Falls Church High School vs. Mount Vernon High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Falls Church High School",
-        "Mount Vernon High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Mount Vernon High School",
-          "core": "mt vernon",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070097",
-      "stream_id": 2070097,
-      "extension": "ts",
-      "original_name": "NFHS Network 266: Morgan County High School vs. Magoffin County High School Junior Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Morgan County High School vs. Magoffin County High School Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Morgan County High School",
-        "Magoffin County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Morgan County High School",
-          "core": "morgan county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070063",
-      "stream_id": 2070063,
-      "extension": "ts",
-      "original_name": "NFHS Network 300: Veritas Academy vs. Brazos Christian School Junior Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Veritas Academy vs. Brazos Christian School Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Veritas Academy",
-        "Brazos Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Veritas Academy",
-          "core": "veritas academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069958",
-      "stream_id": 2069958,
-      "extension": "ts",
-      "original_name": "NFHS Network 405: Hiland vs. Central Christian High School Varsity Boys Soccer @ 15 Oct 07:00 PM ET",
-      "name": "Hiland vs. Central Christian High School Varsity Boys Soccer",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Soccer",
-      "teams": [
-        "Hiland",
-        "Central Christian High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Central Christian High School",
-          "core": "central christian",
           "confidence": 2
         }
       ]
@@ -313,28 +138,6 @@
           "team": "Decatur High School",
           "core": "decatur",
           "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069823",
-      "stream_id": 2069823,
-      "extension": "ts",
-      "original_name": "NFHS Network 537: Colgan High School vs. Forest Park High School Varsity Girls Volleyball @ 15 Oct 07:00 PM ET",
-      "name": "Colgan High School vs. Forest Park High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:00:00.000-04:00",
-      "stop": "2026-10-15T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Colgan High School",
-        "Forest Park High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Forest Park High School",
-          "core": "forest park",
-          "confidence": 2
         }
       ]
     },
@@ -383,28 +186,6 @@
         {
           "team": "Union Grove High School",
           "core": "union grove",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069689",
-      "stream_id": 2069689,
-      "extension": "ts",
-      "original_name": "NFHS Network 662: Highlands Latin School vs. Whitefield Academy Varsity Girls Volleyball @ 15 Oct 07:15 PM ET",
-      "name": "Highlands Latin School vs. Whitefield Academy Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-15T19:15:00.000-04:00",
-      "stop": "2026-10-15T21:45:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Highlands Latin School",
-        "Whitefield Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Whitefield Academy",
-          "core": "whitefield academy",
           "confidence": 2
         }
       ]
