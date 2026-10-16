@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-15T19:13:43.338-04:00",
+  "generated_at": "2026-10-15T21:26:28.901-04:00",
   "eastern_date": "2026-10-15",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 32,
-  "georgia_channel_count": 32,
-  "currently_live_estimate": 15,
-  "upcoming_next_7_days": 17,
+  "total_georgia_matches_found": 84,
+  "georgia_channel_count": 84,
+  "currently_live_estimate": 46,
+  "upcoming_next_7_days": 38,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -741,6 +741,1208 @@
           "team": "St. Mary's Academy",
           "core": "st mary s academy",
           "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069143",
+      "stream_id": 2069143,
+      "extension": "ts",
+      "original_name": "NFHS Network 1204: Grace Christian Academy vs. Goodpasture Christian School Varsity Football @ 15 Oct 08:00 PM ET",
+      "name": "Grace Christian Academy vs. Goodpasture Christian School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T23:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Grace Christian Academy",
+        "Goodpasture Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Grace Christian Academy",
+          "core": "grace christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069142",
+      "stream_id": 2069142,
+      "extension": "ts",
+      "original_name": "NFHS Network 1205: Liberty County High School vs. Blountstown High School Varsity Girls Volleyball @ 15 Oct 08:00 PM ET",
+      "name": "Liberty County High School vs. Blountstown High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Liberty County High School",
+        "Blountstown High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Liberty County High School",
+          "core": "liberty county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069139",
+      "stream_id": 2069139,
+      "extension": "ts",
+      "original_name": "NFHS Network 1208: Sacred Heart Preparatory vs. The King's Academy Junior Varsity Girls Volleyball @ 15 Oct 08:00 PM ET",
+      "name": "Sacred Heart Preparatory vs. The King's Academy Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Sacred Heart Preparatory",
+        "The King's Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "The King's Academy",
+          "core": "king s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069130",
+      "stream_id": 2069130,
+      "extension": "ts",
+      "original_name": "NFHS Network 1217: Lighthouse Christian School vs. Castleford High School 2026 IHSAA - IDAHO Girls Volleyball Playoffs @ 15 Oct 08:00 PM ET",
+      "name": "Lighthouse Christian School vs. Castleford High School 2026 IHSAA - IDAHO Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Lighthouse Christian School",
+        "Castleford High School 2026 IHSAA - IDAHO Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lighthouse Christian School",
+          "core": "lighthouse christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069048",
+      "stream_id": 2069048,
+      "extension": "ts",
+      "original_name": "NFHS Network 1298: Jackson County High School vs. Eagleville High School 2026 TSSAA Girls Volleyball Playoffs @ 15 Oct 08:00 PM ET",
+      "name": "Jackson County High School vs. Eagleville High School 2026 TSSAA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Jackson County High School",
+        "Eagleville High School 2026 TSSAA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Jackson County High School",
+          "core": "jackson county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069036",
+      "stream_id": 2069036,
+      "extension": "ts",
+      "original_name": "NFHS Network 1310: Hiram High School vs. Riverwood Varsity Girls Flag Football @ 15 Oct 08:00 PM ET",
+      "name": "Hiram High School vs. Riverwood Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T23:30:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Hiram High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "Hiram High School",
+          "core": "hiram",
+          "confidence": 1
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069015",
+      "stream_id": 2069015,
+      "extension": "ts",
+      "original_name": "NFHS Network 1330: Mountain View High School vs. Owyhee High School Freshman Football @ 15 Oct 08:00 PM ET",
+      "name": "Mountain View High School vs. Owyhee High School Freshman Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T23:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Mountain View High School",
+        "Owyhee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068991",
+      "stream_id": 2068991,
+      "extension": "ts",
+      "original_name": "NFHS Network 1352: Cudahy High School vs. Saint Francis High School Varsity Football @ 15 Oct 08:00 PM ET",
+      "name": "Cudahy High School vs. Saint Francis High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T23:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Cudahy High School",
+        "Saint Francis High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Saint Francis High School",
+          "core": "st francis",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068969",
+      "stream_id": 2068969,
+      "extension": "ts",
+      "original_name": "NFHS Network 1373: St. Mary's Academy vs. Tualatin High School Junior Varsity Girls Volleyball @ 15 Oct 08:00 PM ET",
+      "name": "St. Mary's Academy vs. Tualatin High School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:00:00.000-04:00",
+      "stop": "2026-10-15T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "St. Mary's Academy",
+        "Tualatin High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "St. Mary's Academy",
+          "core": "st mary s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068876",
+      "stream_id": 2068876,
+      "extension": "ts",
+      "original_name": "NFHS Network 1460: Woodstock High School vs. Sprayberry High School Varsity Girls Flag Football @ 15 Oct 08:30 PM ET",
+      "name": "Woodstock High School vs. Sprayberry High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:30:00.000-04:00",
+      "stop": "2026-10-16T00:00:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Woodstock High School",
+        "Sprayberry High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Woodstock High School",
+          "core": "woodstock",
+          "confidence": 1
+        },
+        {
+          "team": "Sprayberry High School",
+          "core": "sprayberry",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068811",
+      "stream_id": 2068811,
+      "extension": "ts",
+      "original_name": "NFHS Network 1524: Hopkins County Central High School vs. Webster County High School Varsity Girls Volleyball @ 15 Oct 08:30 PM ET",
+      "name": "Hopkins County Central High School vs. Webster County High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T20:30:00.000-04:00",
+      "stop": "2026-10-15T23:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Hopkins County Central High School",
+        "Webster County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Webster County High School",
+          "core": "webster county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068535",
+      "stream_id": 2068535,
+      "extension": "ts",
+      "original_name": "NFHS Network 1793: Westwood High School vs. Perry High School Varsity Girls Flag Football @ 15 Oct 09:00 PM ET",
+      "name": "Westwood High School vs. Perry High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T21:00:00.000-04:00",
+      "stop": "2026-10-16T00:30:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Westwood High School",
+        "Perry High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Westwood High School",
+          "core": "westwood",
+          "confidence": 1
+        },
+        {
+          "team": "Perry High School",
+          "core": "perry",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068506",
+      "stream_id": 2068506,
+      "extension": "ts",
+      "original_name": "NFHS Network 1822: Everett Alvarez High School vs. St Francis High School Varsity Girls Volleyball @ 15 Oct 09:00 PM ET",
+      "name": "Everett Alvarez High School vs. St Francis High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T21:00:00.000-04:00",
+      "stop": "2026-10-15T23:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Everett Alvarez High School",
+        "St Francis High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "St Francis High School",
+          "core": "st francis",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068451",
+      "stream_id": 2068451,
+      "extension": "ts",
+      "original_name": "NFHS Network 1876: Portland Adventist Academy vs. Horizon Christian High School Varsity Girls Volleyball @ 15 Oct 09:15 PM ET",
+      "name": "Portland Adventist Academy vs. Horizon Christian High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T21:15:00.000-04:00",
+      "stop": "2026-10-15T23:45:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Portland Adventist Academy",
+        "Horizon Christian High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Horizon Christian High School",
+          "core": "horizon christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068445",
+      "stream_id": 2068445,
+      "extension": "ts",
+      "original_name": "NFHS Network 1882: St. Mary's Academy vs. Tualatin High School Varsity Girls Volleyball @ 15 Oct 09:30 PM ET",
+      "name": "St. Mary's Academy vs. Tualatin High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T21:30:00.000-04:00",
+      "stop": "2026-10-16T00:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "St. Mary's Academy",
+        "Tualatin High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "St. Mary's Academy",
+          "core": "st mary s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068398",
+      "stream_id": 2068398,
+      "extension": "ts",
+      "original_name": "NFHS Network 1928: Sacred Heart Preparatory vs. The King's Academy Varsity Girls Volleyball @ 15 Oct 09:30 PM ET",
+      "name": "Sacred Heart Preparatory vs. The King's Academy Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T21:30:00.000-04:00",
+      "stop": "2026-10-16T00:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Sacred Heart Preparatory",
+        "The King's Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "The King's Academy",
+          "core": "king s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068300",
+      "stream_id": 2068300,
+      "extension": "ts",
+      "original_name": "NFHS Network 2026: Fayette County High School vs. Whitewater High School Junior Varsity Football @ 15 Oct 10:00 PM ET",
+      "name": "Fayette County High School vs. Whitewater High School Junior Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T22:00:00.000-04:00",
+      "stop": "2026-10-16T01:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Fayette County High School",
+        "Whitewater High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fayette County High School",
+          "core": "fayette county",
+          "confidence": 2
+        },
+        {
+          "team": "Whitewater High School",
+          "core": "whitewater",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068246",
+      "stream_id": 2068246,
+      "extension": "ts",
+      "original_name": "NFHS Network 2080: Mount Vernon High School vs. Oak Harbor High School Varsity Girls Soccer @ 15 Oct 10:00 PM ET",
+      "name": "Mount Vernon High School vs. Oak Harbor High School Varsity Girls Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-15T22:00:00.000-04:00",
+      "stop": "2026-10-16T00:30:00.000-04:00",
+      "sport": "Soccer",
+      "teams": [
+        "Mount Vernon High School",
+        "Oak Harbor High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Vernon High School",
+          "core": "mt vernon",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068144",
+      "stream_id": 2068144,
+      "extension": "ts",
+      "original_name": "NFHS Network 2182: Forest Park High School vs. Gar-Field High School Varsity Football @ 16 Oct 12:01 AM ET",
+      "name": "Forest Park High School vs. Gar-Field High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T00:01:00.000-04:00",
+      "stop": "2026-10-16T03:31:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Forest Park High School",
+        "Gar-Field High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Forest Park High School",
+          "core": "forest park",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068104",
+      "stream_id": 2068104,
+      "extension": "ts",
+      "original_name": "NFHS Network 2222: Peoples Baptist Academy vs. Old Suwanee Christian School 2026 Girls Volleyball Semifinal @ 16 Oct 11:15 AM ET",
+      "name": "Peoples Baptist Academy vs. Old Suwanee Christian School 2026 Girls Volleyball Semifinal",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T11:15:00.000-04:00",
+      "stop": "2026-10-16T13:45:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Peoples Baptist Academy",
+        "Old Suwanee Christian School 2026 Girls Volleyball Semifinal"
+      ],
+      "matched_schools": [
+        {
+          "team": "Peoples Baptist Academy",
+          "core": "peoples baptist academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068086",
+      "stream_id": 2068086,
+      "extension": "ts",
+      "original_name": "NFHS Network 2240: Mountain View High School vs. Pinedale High School Freshman Girls Volleyball @ 16 Oct 12:57 PM ET",
+      "name": "Mountain View High School vs. Pinedale High School Freshman Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T12:57:00.000-04:00",
+      "stop": "2026-10-16T15:27:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Mountain View High School",
+        "Pinedale High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068068",
+      "stream_id": 2068068,
+      "extension": "ts",
+      "original_name": "NFHS Network 2258: Mountain View High School vs. Pinedale High School Junior Varsity Girls Volleyball @ 16 Oct 01:57 PM ET",
+      "name": "Mountain View High School vs. Pinedale High School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T13:57:00.000-04:00",
+      "stop": "2026-10-16T16:27:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Mountain View High School",
+        "Pinedale High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068066",
+      "stream_id": 2068066,
+      "extension": "ts",
+      "original_name": "NFHS Network 2260: Thompson Falls High School vs. Lincoln County Junior Varsity Girls Volleyball @ 16 Oct 02:00 PM ET",
+      "name": "Thompson Falls High School vs. Lincoln County Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T14:00:00.000-04:00",
+      "stop": "2026-10-16T16:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Thompson Falls High School",
+        "Lincoln County"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lincoln County",
+          "core": "lincoln county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068065",
+      "stream_id": 2068065,
+      "extension": "ts",
+      "original_name": "NFHS Network 2261: Calvary Day School vs. Westchester Country Day School Middle School Girls Volleyball @ 16 Oct 02:00 PM ET",
+      "name": "Calvary Day School vs. Westchester Country Day School Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T14:00:00.000-04:00",
+      "stop": "2026-10-16T16:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Calvary Day School",
+        "Westchester Country Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068058",
+      "stream_id": 2068058,
+      "extension": "ts",
+      "original_name": "NFHS Network 2268: Whitefield Academy vs. Athens Academy 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 02:00 PM ET",
+      "name": "Whitefield Academy vs. Athens Academy 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T14:00:00.000-04:00",
+      "stop": "2026-10-16T16:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Whitefield Academy",
+        "Athens Academy 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068048",
+      "stream_id": 2068048,
+      "extension": "ts",
+      "original_name": "NFHS Network 2278: Mountain View High School vs. Pinedale High School Varsity Girls Volleyball @ 16 Oct 02:57 PM ET",
+      "name": "Mountain View High School vs. Pinedale High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T14:57:00.000-04:00",
+      "stop": "2026-10-16T17:27:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Mountain View High School",
+        "Pinedale High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068026",
+      "stream_id": 2068026,
+      "extension": "ts",
+      "original_name": "NFHS Network 2300: Unity Christian High School Varsity Girls Volleyball @ 16 Oct 03:00 PM ET",
+      "name": "Unity Christian High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T15:00:00.000-04:00",
+      "stop": "2026-10-16T17:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Unity Christian High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Unity Christian High School",
+          "core": "unity christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068014",
+      "stream_id": 2068014,
+      "extension": "ts",
+      "original_name": "NFHS Network 2312: Salem Christian High School vs. Bethlehem Christian School Middle School Girls Volleyball @ 16 Oct 03:30 PM ET",
+      "name": "Salem Christian High School vs. Bethlehem Christian School Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T15:30:00.000-04:00",
+      "stop": "2026-10-16T18:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Salem Christian High School",
+        "Bethlehem Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Salem Christian High School",
+          "core": "salem christian",
+          "confidence": 2
+        },
+        {
+          "team": "Bethlehem Christian School",
+          "core": "bethlehem christian",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067946",
+      "stream_id": 2067946,
+      "extension": "ts",
+      "original_name": "NFHS Network 2380: Away vs. Crossroads Christian School Junior Varsity Girls Volleyball @ 16 Oct 04:00 PM ET",
+      "name": "Away vs. Crossroads Christian School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:00:00.000-04:00",
+      "stop": "2026-10-16T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Away",
+        "Crossroads Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Crossroads Christian School",
+          "core": "crossroads christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067933",
+      "stream_id": 2067933,
+      "extension": "ts",
+      "original_name": "NFHS Network 2393: West Laurens High School vs. Northwest Whitfield High School 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 04:00 PM ET",
+      "name": "West Laurens High School vs. Northwest Whitfield High School 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:00:00.000-04:00",
+      "stop": "2026-10-16T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "West Laurens High School",
+        "Northwest Whitfield High School 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Laurens High School",
+          "core": "west laurens",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067876",
+      "stream_id": 2067876,
+      "extension": "ts",
+      "original_name": "NFHS Network 2447: Taylor County High School vs. AR Johnson Magnet High School 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 04:00 PM ET",
+      "name": "Taylor County High School vs. AR Johnson Magnet High School 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:00:00.000-04:00",
+      "stop": "2026-10-16T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Taylor County High School",
+        "AR Johnson Magnet High School 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Taylor County High School",
+          "core": "taylor county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067801",
+      "stream_id": 2067801,
+      "extension": "ts",
+      "original_name": "NFHS Network 2517: Calvary Day School vs. Westchester Country Day School Varsity Girls Volleyball @ 16 Oct 04:30 PM ET",
+      "name": "Calvary Day School vs. Westchester Country Day School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:30:00.000-04:00",
+      "stop": "2026-10-16T19:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Calvary Day School",
+        "Westchester Country Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067788",
+      "stream_id": 2067788,
+      "extension": "ts",
+      "original_name": "NFHS Network 2529: St Francis High School vs. St. Joseph's Collegiate High School Junior Varsity Boys Soccer @ 16 Oct 04:30 PM ET",
+      "name": "St Francis High School vs. St. Joseph's Collegiate High School Junior Varsity Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:30:00.000-04:00",
+      "stop": "2026-10-16T19:00:00.000-04:00",
+      "sport": "Soccer",
+      "teams": [
+        "St Francis High School",
+        "St. Joseph's Collegiate High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "St Francis High School",
+          "core": "st francis",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067787",
+      "stream_id": 2067787,
+      "extension": "ts",
+      "original_name": "NFHS Network 2530: Calvary Day School vs. Westchester Country Day School Middle School Boys Soccer @ 16 Oct 04:30 PM ET",
+      "name": "Calvary Day School vs. Westchester Country Day School Middle School Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T16:30:00.000-04:00",
+      "stop": "2026-10-16T19:00:00.000-04:00",
+      "sport": "Soccer",
+      "teams": [
+        "Calvary Day School",
+        "Westchester Country Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067726",
+      "stream_id": 2067726,
+      "extension": "ts",
+      "original_name": "NFHS Network 2591: Dawson County High School vs. Havre High School Varsity Girls Volleyball - Part 1 @ 16 Oct 05:00 PM ET",
+      "name": "Dawson County High School vs. Havre High School Varsity Girls Volleyball - Part 1",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T19:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Dawson County High School",
+        "Havre High School Varsity Girls Volleyball - Part 1"
+      ],
+      "matched_schools": [
+        {
+          "team": "Dawson County High School",
+          "core": "dawson county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067719",
+      "stream_id": 2067719,
+      "extension": "ts",
+      "original_name": "NFHS Network 2598: Cedar Grove High School vs. Franklin County High School 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 05:00 PM ET",
+      "name": "Cedar Grove High School vs. Franklin County High School 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T19:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Cedar Grove High School",
+        "Franklin County High School 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Cedar Grove High School",
+          "core": "cedar grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067716",
+      "stream_id": 2067716,
+      "extension": "ts",
+      "original_name": "NFHS Network 2601: Salem Christian High School vs. Bethlehem Christian School Varsity Girls Volleyball @ 16 Oct 05:00 PM ET",
+      "name": "Salem Christian High School vs. Bethlehem Christian School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T19:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Salem Christian High School",
+        "Bethlehem Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Salem Christian High School",
+          "core": "salem christian",
+          "confidence": 2
+        },
+        {
+          "team": "Bethlehem Christian School",
+          "core": "bethlehem christian",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067665",
+      "stream_id": 2067665,
+      "extension": "ts",
+      "original_name": "NFHS Network 2652: Union Grove High School Varsity Girls Flag Football @ 16 Oct 05:00 PM ET",
+      "name": "Union Grove High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T20:30:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Union Grove High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Union Grove High School",
+          "core": "union grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067661",
+      "stream_id": 2067661,
+      "extension": "ts",
+      "original_name": "NFHS Network 2656: Commerce High School vs. Mount Vernon High School Varsity Girls Volleyball @ 16 Oct 05:00 PM ET",
+      "name": "Commerce High School vs. Mount Vernon High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T19:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Commerce High School",
+        "Mount Vernon High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Commerce High School",
+          "core": "commerce",
+          "confidence": 1
+        },
+        {
+          "team": "Mount Vernon High School",
+          "core": "mt vernon",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067648",
+      "stream_id": 2067648,
+      "extension": "ts",
+      "original_name": "NFHS Network 2669: Heritage Christian Academy vs. Howardsville Christian School Junior Varsity Girls Volleyball @ 16 Oct 05:00 PM ET",
+      "name": "Heritage Christian Academy vs. Howardsville Christian School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:00:00.000-04:00",
+      "stop": "2026-10-16T19:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Heritage Christian Academy",
+        "Howardsville Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Heritage Christian Academy",
+          "core": "heritage christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067597",
+      "stream_id": 2067597,
+      "extension": "ts",
+      "original_name": "NFHS Network 2716: Forsyth Central High School vs. Etowah High School 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 05:30 PM ET",
+      "name": "Forsyth Central High School vs. Etowah High School 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:30:00.000-04:00",
+      "stop": "2026-10-16T20:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Forsyth Central High School",
+        "Etowah High School 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Forsyth Central High School",
+          "core": "forsyth central",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067561",
+      "stream_id": 2067561,
+      "extension": "ts",
+      "original_name": "NFHS Network 2752: Louisville Collegiate School vs. Whitefield Academy Freshman Girls Volleyball @ 16 Oct 05:30 PM ET",
+      "name": "Louisville Collegiate School vs. Whitefield Academy Freshman Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:30:00.000-04:00",
+      "stop": "2026-10-16T20:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Louisville Collegiate School",
+        "Whitefield Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067552",
+      "stream_id": 2067552,
+      "extension": "ts",
+      "original_name": "NFHS Network 2761: Away vs. Friendship Christian School Middle School Boys Soccer @ 16 Oct 05:30 PM ET",
+      "name": "Away vs. Friendship Christian School Middle School Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T17:30:00.000-04:00",
+      "stop": "2026-10-16T20:00:00.000-04:00",
+      "sport": "Soccer",
+      "teams": [
+        "Away",
+        "Friendship Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Friendship Christian School",
+          "core": "friendship christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067453",
+      "stream_id": 2067453,
+      "extension": "ts",
+      "original_name": "NFHS Network 2860: Heritage Christian Academy vs. Howardsville Christian School Varsity Girls Volleyball @ 16 Oct 06:00 PM ET",
+      "name": "Heritage Christian Academy vs. Howardsville Christian School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:00:00.000-04:00",
+      "stop": "2026-10-16T20:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Heritage Christian Academy",
+        "Howardsville Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Heritage Christian Academy",
+          "core": "heritage christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067431",
+      "stream_id": 2067431,
+      "extension": "ts",
+      "original_name": "NFHS Network 2882: Villa Rica High School vs. Carroll County Central High School 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 06:00 PM ET",
+      "name": "Villa Rica High School vs. Carroll County Central High School 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:00:00.000-04:00",
+      "stop": "2026-10-16T20:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Villa Rica High School",
+        "Carroll County Central High School 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Villa Rica High School",
+          "core": "villa rica",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067415",
+      "stream_id": 2067415,
+      "extension": "ts",
+      "original_name": "NFHS Network 2898: Mount Vernon School vs. Eagle's Landing Christian Academy 2026 GHSA Girls Volleyball Playoffs @ 16 Oct 06:00 PM ET",
+      "name": "Mount Vernon School vs. Eagle's Landing Christian Academy 2026 GHSA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:00:00.000-04:00",
+      "stop": "2026-10-16T20:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Mount Vernon School",
+        "Eagle's Landing Christian Academy 2026 GHSA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Vernon School",
+          "core": "mt vernon",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067322",
+      "stream_id": 2067322,
+      "extension": "ts",
+      "original_name": "NFHS Network 2991: Mountain Vista High School vs. St. Mary's Academy Varsity Field Hockey @ 16 Oct 06:15 PM ET",
+      "name": "Mountain Vista High School vs. St. Mary's Academy Varsity Field Hockey",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:15:00.000-04:00",
+      "stop": "2026-10-16T20:45:00.000-04:00",
+      "sport": "Field Hockey",
+      "teams": [
+        "Mountain Vista High School",
+        "St. Mary's Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "St. Mary's Academy",
+          "core": "st mary s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067310",
+      "stream_id": 2067310,
+      "extension": "ts",
+      "original_name": "NFHS Network 3003: Rabun County High School vs. Commerce High School Varsity Football @ 16 Oct 06:25 PM ET",
+      "name": "Rabun County High School vs. Commerce High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:25:00.000-04:00",
+      "stop": "2026-10-16T21:55:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Rabun County High School",
+        "Commerce High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Rabun County High School",
+          "core": "rabun county",
+          "confidence": 2
+        },
+        {
+          "team": "Commerce High School",
+          "core": "commerce",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067307",
+      "stream_id": 2067307,
+      "extension": "ts",
+      "original_name": "NFHS Network 3006: Franklin County High School vs. Northside High School Varsity Football @ 16 Oct 06:30 PM ET",
+      "name": "Franklin County High School vs. Northside High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T22:00:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Franklin County High School",
+        "Northside High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Franklin County High School",
+          "core": "franklin county",
+          "confidence": 1
+        },
+        {
+          "team": "Northside High School",
+          "core": "northside",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067259",
+      "stream_id": 2067259,
+      "extension": "ts",
+      "original_name": "NFHS Network 3054: Fideles Christian School vs. Young Americans Christian School Varsity Football @ 16 Oct 06:30 PM ET",
+      "name": "Fideles Christian School vs. Young Americans Christian School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T22:00:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Fideles Christian School",
+        "Young Americans Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fideles Christian School",
+          "core": "fideles christian",
+          "confidence": 2
+        },
+        {
+          "team": "Young Americans Christian School",
+          "core": "young americans christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067224",
+      "stream_id": 2067224,
+      "extension": "ts",
+      "original_name": "NFHS Network 3089: Commerce High School vs. Mount Vernon High School Junior Varsity Girls Volleyball @ 16 Oct 06:30 PM ET",
+      "name": "Commerce High School vs. Mount Vernon High School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T21:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Commerce High School",
+        "Mount Vernon High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Commerce High School",
+          "core": "commerce",
+          "confidence": 1
+        },
+        {
+          "team": "Mount Vernon High School",
+          "core": "mt vernon",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067207",
+      "stream_id": 2067207,
+      "extension": "ts",
+      "original_name": "NFHS Network 3105: Cherokee High School vs. Wheeler High School Varsity Football @ 16 Oct 06:30 PM ET",
+      "name": "Cherokee High School vs. Wheeler High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T22:00:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Cherokee High School",
+        "Wheeler High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Cherokee High School",
+          "core": "cherokee",
+          "confidence": 1
+        },
+        {
+          "team": "Wheeler High School",
+          "core": "wheeler",
+          "confidence": 1
         }
       ]
     }
