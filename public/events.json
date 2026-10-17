@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-16T18:18:50.218-04:00",
+  "generated_at": "2026-10-16T22:00:15.531-04:00",
   "eastern_date": "2026-10-16",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 31,
-  "georgia_channel_count": 9,
-  "currently_live_estimate": 7,
-  "upcoming_next_7_days": 1,
-  "completed_today_but_still_visible": 2,
+  "total_georgia_matches_found": 84,
+  "georgia_channel_count": 4,
+  "currently_live_estimate": 0,
+  "upcoming_next_7_days": 0,
+  "completed_today_but_still_visible": 30,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 457
     },
     "GIAA": {
       "ok": true,
@@ -24,191 +24,59 @@
       "count": 146
     }
   },
-  "school_name_count": 240,
+  "school_name_count": 664,
   "channels": [
     {
-      "id": "ga-nfhs-2068014",
-      "stream_id": 2068014,
+      "id": "ga-nfhs-2067310",
+      "stream_id": 2067310,
       "extension": "ts",
-      "original_name": "NFHS Network 2312: Salem Christian High School vs. Bethlehem Christian School Middle School Girls Volleyball @ 16 Oct 03:30 PM ET",
-      "name": "Salem Christian High School vs. Bethlehem Christian School Middle School Girls Volleyball",
+      "original_name": "NFHS Network 3003: Rabun County High School vs. Commerce High School Varsity Football @ 16 Oct 06:25 PM ET",
+      "name": "Rabun County High School vs. Commerce High School Varsity Football",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T15:30:00.000-04:00",
-      "stop": "2026-10-16T18:00:00.000-04:00",
-      "sport": "Volleyball",
+      "start": "2026-10-16T18:25:00.000-04:00",
+      "stop": "2026-10-16T21:55:00.000-04:00",
+      "sport": "Football",
       "teams": [
-        "Salem Christian High School",
-        "Bethlehem Christian School"
+        "Rabun County High School",
+        "Commerce High School"
       ],
       "matched_schools": [
         {
-          "team": "Salem Christian High School",
-          "core": "salem christian",
+          "team": "Rabun County High School",
+          "core": "rabun county",
           "confidence": 2
         },
         {
-          "team": "Bethlehem Christian School",
-          "core": "bethlehem christian",
+          "team": "Commerce High School",
+          "core": "commerce",
           "confidence": 1
         }
       ]
     },
     {
-      "id": "ga-nfhs-2067946",
-      "stream_id": 2067946,
+      "id": "ga-nfhs-2067307",
+      "stream_id": 2067307,
       "extension": "ts",
-      "original_name": "NFHS Network 2380: Away vs. Crossroads Christian School Junior Varsity Girls Volleyball @ 16 Oct 04:00 PM ET",
-      "name": "Away vs. Crossroads Christian School Junior Varsity Girls Volleyball",
+      "original_name": "NFHS Network 3006: Franklin County High School vs. Northside High School Varsity Football @ 16 Oct 06:30 PM ET",
+      "name": "Franklin County High School vs. Northside High School Varsity Football",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T16:00:00.000-04:00",
-      "stop": "2026-10-16T18:30:00.000-04:00",
-      "sport": "Volleyball",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T22:00:00.000-04:00",
+      "sport": "Football",
       "teams": [
-        "Away",
-        "Crossroads Christian School"
+        "Franklin County High School",
+        "Northside High School"
       ],
       "matched_schools": [
         {
-          "team": "Crossroads Christian School",
-          "core": "crossroads christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067788",
-      "stream_id": 2067788,
-      "extension": "ts",
-      "original_name": "NFHS Network 2529: St Francis High School vs. St. Joseph's Collegiate High School Junior Varsity Boys Soccer @ 16 Oct 04:30 PM ET",
-      "name": "St Francis High School vs. St. Joseph's Collegiate High School Junior Varsity Boys Soccer",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T16:30:00.000-04:00",
-      "stop": "2026-10-16T19:00:00.000-04:00",
-      "sport": "Soccer",
-      "teams": [
-        "St Francis High School",
-        "St. Joseph's Collegiate High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067716",
-      "stream_id": 2067716,
-      "extension": "ts",
-      "original_name": "NFHS Network 2601: Salem Christian High School vs. Bethlehem Christian School Varsity Girls Volleyball @ 16 Oct 05:00 PM ET",
-      "name": "Salem Christian High School vs. Bethlehem Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T17:00:00.000-04:00",
-      "stop": "2026-10-16T19:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Salem Christian High School",
-        "Bethlehem Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Salem Christian High School",
-          "core": "salem christian",
-          "confidence": 2
+          "team": "Franklin County High School",
+          "core": "franklin county",
+          "confidence": 1
         },
         {
-          "team": "Bethlehem Christian School",
-          "core": "bethlehem christian",
+          "team": "Northside High School",
+          "core": "northside",
           "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067648",
-      "stream_id": 2067648,
-      "extension": "ts",
-      "original_name": "NFHS Network 2669: Heritage Christian Academy vs. Howardsville Christian School Junior Varsity Girls Volleyball @ 16 Oct 05:00 PM ET",
-      "name": "Heritage Christian Academy vs. Howardsville Christian School Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T17:00:00.000-04:00",
-      "stop": "2026-10-16T19:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Heritage Christian Academy",
-        "Howardsville Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Heritage Christian Academy",
-          "core": "heritage christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067552",
-      "stream_id": 2067552,
-      "extension": "ts",
-      "original_name": "NFHS Network 2761: Away vs. Friendship Christian School Middle School Boys Soccer @ 16 Oct 05:30 PM ET",
-      "name": "Away vs. Friendship Christian School Middle School Boys Soccer",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T17:30:00.000-04:00",
-      "stop": "2026-10-16T20:00:00.000-04:00",
-      "sport": "Soccer",
-      "teams": [
-        "Away",
-        "Friendship Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Friendship Christian School",
-          "core": "friendship christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067453",
-      "stream_id": 2067453,
-      "extension": "ts",
-      "original_name": "NFHS Network 2860: Heritage Christian Academy vs. Howardsville Christian School Varsity Girls Volleyball @ 16 Oct 06:00 PM ET",
-      "name": "Heritage Christian Academy vs. Howardsville Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T18:00:00.000-04:00",
-      "stop": "2026-10-16T20:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Heritage Christian Academy",
-        "Howardsville Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Heritage Christian Academy",
-          "core": "heritage christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067322",
-      "stream_id": 2067322,
-      "extension": "ts",
-      "original_name": "NFHS Network 2991: Mountain Vista High School vs. St. Mary's Academy Varsity Field Hockey @ 16 Oct 06:15 PM ET",
-      "name": "Mountain Vista High School vs. St. Mary's Academy Varsity Field Hockey",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-16T18:15:00.000-04:00",
-      "stop": "2026-10-16T20:45:00.000-04:00",
-      "sport": "Field Hockey",
-      "teams": [
-        "Mountain Vista High School",
-        "St. Mary's Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "St. Mary's Academy",
-          "core": "st mary s academy",
-          "confidence": 2
         }
       ]
     },
@@ -236,6 +104,33 @@
           "team": "Young Americans Christian School",
           "core": "young americans christian",
           "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067207",
+      "stream_id": 2067207,
+      "extension": "ts",
+      "original_name": "NFHS Network 3105: Cherokee High School vs. Wheeler High School Varsity Football @ 16 Oct 06:30 PM ET",
+      "name": "Cherokee High School vs. Wheeler High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-16T18:30:00.000-04:00",
+      "stop": "2026-10-16T22:00:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Cherokee High School",
+        "Wheeler High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Cherokee High School",
+          "core": "cherokee",
+          "confidence": 1
+        },
+        {
+          "team": "Wheeler High School",
+          "core": "wheeler",
+          "confidence": 1
         }
       ]
     }
