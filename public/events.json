@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-17T09:20:43.759-04:00",
+  "generated_at": "2026-10-17T12:44:08.471-04:00",
   "eastern_date": "2026-10-17",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 42,
-  "georgia_channel_count": 42,
-  "currently_live_estimate": 2,
-  "upcoming_next_7_days": 40,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 39,
+  "currently_live_estimate": 11,
+  "upcoming_next_7_days": 26,
+  "completed_today_but_still_visible": 3,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,71 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070293",
-      "stream_id": 2070293,
-      "extension": "ts",
-      "original_name": "NFHS Network 71: Unity Christian High School Varsity Girls Volleyball @ 17 Oct 09:00 AM ET",
-      "name": "Unity Christian High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T09:00:00.000-04:00",
-      "stop": "2026-10-17T11:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Unity Christian High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Unity Christian High School",
-          "core": "unity christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070283",
-      "stream_id": 2070283,
-      "extension": "ts",
-      "original_name": "NFHS Network 80: Kewanee High School vs. Putnam County High School Junior Varsity Girls Volleyball @ 17 Oct 09:00 AM ET",
-      "name": "Kewanee High School vs. Putnam County High School Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T09:00:00.000-04:00",
-      "stop": "2026-10-17T11:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Kewanee High School",
-        "Putnam County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Putnam County High School",
-          "core": "putnam county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070257",
-      "stream_id": 2070257,
-      "extension": "ts",
-      "original_name": "NFHS Network 106: Glynn Academy vs. Milton High School 2026 GHSA Girls Volleyball Playoffs @ 17 Oct 09:30 AM ET",
-      "name": "Glynn Academy vs. Milton High School 2026 GHSA Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T09:30:00.000-04:00",
-      "stop": "2026-10-17T12:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Glynn Academy",
-        "Milton High School 2026 GHSA Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Glynn Academy",
-          "core": "glynn academy",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070245",
       "stream_id": 2070245,
