@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-17T19:36:38.675-04:00",
+  "generated_at": "2026-10-17T21:59:43.859-04:00",
   "eastern_date": "2026-10-17",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 42,
-  "georgia_channel_count": 9,
-  "currently_live_estimate": 7,
-  "upcoming_next_7_days": 2,
-  "completed_today_but_still_visible": 33,
+  "georgia_channel_count": 3,
+  "currently_live_estimate": 3,
+  "upcoming_next_7_days": 0,
+  "completed_today_but_still_visible": 39,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,138 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2069220",
-      "stream_id": 2069220,
-      "extension": "ts",
-      "original_name": "NFHS Network 1127: Dawson County High School vs. Glasgow High School Varsity Girls Volleyball - Part 2 @ 17 Oct 06:00 PM ET",
-      "name": "Dawson County High School vs. Glasgow High School Varsity Girls Volleyball - Part 2",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T18:00:00.000-04:00",
-      "stop": "2026-10-17T20:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Dawson County High School",
-        "Glasgow High School Varsity Girls Volleyball - Part 2"
-      ],
-      "matched_schools": [
-        {
-          "team": "Dawson County High School",
-          "core": "dawson county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069139",
-      "stream_id": 2069139,
-      "extension": "ts",
-      "original_name": "NFHS Network 1208: Away vs. Camden County High School Varsity Girls Volleyball @ 17 Oct 07:00 PM ET",
-      "name": "Away vs. Camden County High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T19:00:00.000-04:00",
-      "stop": "2026-10-17T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Camden County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Camden County High School",
-          "core": "camden county",
-          "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069132",
-      "stream_id": 2069132,
-      "extension": "ts",
-      "original_name": "NFHS Network 1215: Away vs. Warren County High School Varsity Girls Volleyball @ 17 Oct 07:00 PM ET",
-      "name": "Away vs. Warren County High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T19:00:00.000-04:00",
-      "stop": "2026-10-17T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Warren County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Warren County High School",
-          "core": "warren county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069121",
-      "stream_id": 2069121,
-      "extension": "ts",
-      "original_name": "NFHS Network 1226: East Forsyth High School vs. South Iredell High School Varsity Girls Volleyball @ 17 Oct 07:00 PM ET",
-      "name": "East Forsyth High School vs. South Iredell High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T19:00:00.000-04:00",
-      "stop": "2026-10-17T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "East Forsyth High School",
-        "South Iredell High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "East Forsyth High School",
-          "core": "east forsyth",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069096",
-      "stream_id": 2069096,
-      "extension": "ts",
-      "original_name": "NFHS Network 1251: Away vs. Chapel Hill High School Varsity Girls Volleyball @ 17 Oct 07:00 PM ET",
-      "name": "Away vs. Chapel Hill High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T19:00:00.000-04:00",
-      "stop": "2026-10-17T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Chapel Hill High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Chapel Hill High School",
-          "core": "chapel hill",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069070",
-      "stream_id": 2069070,
-      "extension": "ts",
-      "original_name": "NFHS Network 1277: Away vs. West Forsyth High School Varsity Girls Volleyball @ 17 Oct 07:00 PM ET",
-      "name": "Away vs. West Forsyth High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-17T19:00:00.000-04:00",
-      "stop": "2026-10-17T21:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "West Forsyth High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "West Forsyth High School",
-          "core": "west forsyth",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2069037",
       "stream_id": 2069037,
