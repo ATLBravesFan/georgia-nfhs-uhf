@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-19T17:50:07.117-04:00",
+  "generated_at": "2026-10-19T19:07:08.932-04:00",
   "eastern_date": "2026-10-19",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 32,
-  "georgia_channel_count": 24,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 23,
+  "total_georgia_matches_found": 33,
+  "georgia_channel_count": 33,
+  "currently_live_estimate": 24,
+  "upcoming_next_7_days": 9,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -564,6 +564,224 @@
         {
           "team": "Grace Christian High School",
           "core": "grace christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069211",
+      "stream_id": 2069211,
+      "extension": "ts",
+      "original_name": "NFHS Network 1136: Warner Robins High School vs. Parkview High School Varsity Girls Flag Football @ 19 Oct 07:30 PM ET",
+      "name": "Warner Robins High School vs. Parkview High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:30:00.000-04:00",
+      "stop": "2026-10-19T23:00:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Warner Robins High School",
+        "Parkview High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Warner Robins High School",
+          "core": "warner robins",
+          "confidence": 2
+        },
+        {
+          "team": "Parkview High School",
+          "core": "parkview",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069173",
+      "stream_id": 2069173,
+      "extension": "ts",
+      "original_name": "NFHS Network 1174: Horizon Christian High School vs. Riverdale High School Junior Varsity Girls Volleyball @ 19 Oct 07:30 PM ET",
+      "name": "Horizon Christian High School vs. Riverdale High School Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:30:00.000-04:00",
+      "stop": "2026-10-19T22:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Horizon Christian High School",
+        "Riverdale High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Horizon Christian High School",
+          "core": "horizon christian",
+          "confidence": 2
+        },
+        {
+          "team": "Riverdale High School",
+          "core": "riverdale",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069162",
+      "stream_id": 2069162,
+      "extension": "ts",
+      "original_name": "NFHS Network 1185: Brantley County High School vs. Pierce County High School 2026 GHSA Softball Playoffs @ 19 Oct 07:30 PM ET",
+      "name": "Brantley County High School vs. Pierce County High School 2026 GHSA Softball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:30:00.000-04:00",
+      "stop": "2026-10-19T22:30:00.000-04:00",
+      "sport": "Softball",
+      "teams": [
+        "Brantley County High School",
+        "Pierce County High School 2026 GHSA Softball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brantley County High School",
+          "core": "brantley county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069144",
+      "stream_id": 2069144,
+      "extension": "ts",
+      "original_name": "NFHS Network 1203: Whitefield Academy vs. Bullitt Central High School 2026 KHSAA Girls Volleyball Playoffs @ 19 Oct 07:30 PM ET",
+      "name": "Whitefield Academy vs. Bullitt Central High School 2026 KHSAA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:30:00.000-04:00",
+      "stop": "2026-10-19T22:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Whitefield Academy",
+        "Bullitt Central High School 2026 KHSAA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069135",
+      "stream_id": 2069135,
+      "extension": "ts",
+      "original_name": "NFHS Network 1212: Perry High School vs. Mary Persons High School Varsity Girls Flag Football @ 19 Oct 07:30 PM ET",
+      "name": "Perry High School vs. Mary Persons High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:30:00.000-04:00",
+      "stop": "2026-10-19T23:00:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Perry High School",
+        "Mary Persons High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Perry High School",
+          "core": "perry",
+          "confidence": 1
+        },
+        {
+          "team": "Mary Persons High School",
+          "core": "mary persons",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069117",
+      "stream_id": 2069117,
+      "extension": "ts",
+      "original_name": "NFHS Network 1230: Wheeler High School vs. Riverwood Junior Varsity Girls Flag Football @ 19 Oct 07:45 PM ET",
+      "name": "Wheeler High School vs. Riverwood Junior Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:45:00.000-04:00",
+      "stop": "2026-10-19T23:15:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Wheeler High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wheeler High School",
+          "core": "wheeler",
+          "confidence": 1
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069115",
+      "stream_id": 2069115,
+      "extension": "ts",
+      "original_name": "NFHS Network 1232: Horizon Christian School vs. Lyle High School Varsity Girls Volleyball @ 19 Oct 07:45 PM ET",
+      "name": "Horizon Christian School vs. Lyle High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T19:45:00.000-04:00",
+      "stop": "2026-10-19T22:15:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Horizon Christian School",
+        "Lyle High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Horizon Christian School",
+          "core": "horizon christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069098",
+      "stream_id": 2069098,
+      "extension": "ts",
+      "original_name": "NFHS Network 1249: Oregon Episcopal School vs. Horizon Christian High School Middle School Girls Volleyball @ 19 Oct 08:00 PM ET",
+      "name": "Oregon Episcopal School vs. Horizon Christian High School Middle School Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T20:00:00.000-04:00",
+      "stop": "2026-10-19T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Oregon Episcopal School",
+        "Horizon Christian High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Horizon Christian High School",
+          "core": "horizon christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068983",
+      "stream_id": 2068983,
+      "extension": "ts",
+      "original_name": "NFHS Network 1360: Montgomery County High School vs. Paris High School 2026 KHSAA Girls Volleyball Playoffs @ 19 Oct 08:00 PM ET",
+      "name": "Montgomery County High School vs. Paris High School 2026 KHSAA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-19T20:00:00.000-04:00",
+      "stop": "2026-10-19T22:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Montgomery County High School",
+        "Paris High School 2026 KHSAA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Montgomery County High School",
+          "core": "montgomery county",
           "confidence": 2
         }
       ]
