@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-22T18:24:09.093-04:00",
+  "generated_at": "2026-10-22T18:50:50.868-04:00",
   "eastern_date": "2026-10-22",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 108,
-  "georgia_channel_count": 108,
-  "currently_live_estimate": 64,
-  "upcoming_next_7_days": 44,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 105,
+  "currently_live_estimate": 67,
+  "upcoming_next_7_days": 37,
+  "completed_today_but_still_visible": 3,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,28 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070283",
-      "stream_id": 2070283,
-      "extension": "ts",
-      "original_name": "NFHS Network 80: Notre Dame Academy vs. Falmouth Junior Varsity Girls Volleyball @ 22 Oct 04:00 PM ET",
-      "name": "Notre Dame Academy vs. Falmouth Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-22T16:00:00.000-04:00",
-      "stop": "2026-10-22T18:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Notre Dame Academy",
-        "Falmouth"
-      ],
-      "matched_schools": [
-        {
-          "team": "Notre Dame Academy",
-          "core": "notre dame academy",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070279",
       "stream_id": 2070279,
@@ -72,50 +50,6 @@
           "team": "Valdosta High School",
           "core": "valdosta",
           "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070265",
-      "stream_id": 2070265,
-      "extension": "ts",
-      "original_name": "NFHS Network 98: Away vs. Crossroads Christian School Varsity Girls Volleyball @ 22 Oct 04:00 PM ET",
-      "name": "Away vs. Crossroads Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-22T16:00:00.000-04:00",
-      "stop": "2026-10-22T18:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Crossroads Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Crossroads Christian School",
-          "core": "crossroads christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070173",
-      "stream_id": 2070173,
-      "extension": "ts",
-      "original_name": "NFHS Network 190: Marion County vs Meek 2026 AHSAA 1A Volleyball North Regional Game #5 @ 22 Oct 04:00 PM ET",
-      "name": "Marion County vs Meek 2026 AHSAA 1A Volleyball North Regional Game #5",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-22T16:00:00.000-04:00",
-      "stop": "2026-10-22T18:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Marion County",
-        "Meek 2026 AHSAA 1A Volleyball North Regional Game #5"
-      ],
-      "matched_schools": [
-        {
-          "team": "Marion County",
-          "core": "marion county",
-          "confidence": 2
         }
       ]
     },
