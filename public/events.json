@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-22T10:44:53.185-04:00",
+  "generated_at": "2026-10-22T15:08:15.192-04:00",
   "eastern_date": "2026-10-22",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 33,
-  "georgia_channel_count": 0,
+  "total_georgia_matches_found": 3,
+  "georgia_channel_count": 3,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "upcoming_next_7_days": 3,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,5 +25,77 @@
     }
   },
   "school_name_count": 664,
-  "channels": []
+  "channels": [
+    {
+      "id": "ga-nfhs-2070283",
+      "stream_id": 2070283,
+      "extension": "ts",
+      "original_name": "NFHS Network 80: Notre Dame Academy vs. Falmouth Junior Varsity Girls Volleyball @ 22 Oct 04:00 PM ET",
+      "name": "Notre Dame Academy vs. Falmouth Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-22T16:00:00.000-04:00",
+      "stop": "2026-10-22T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Notre Dame Academy",
+        "Falmouth"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070279",
+      "stream_id": 2070279,
+      "extension": "ts",
+      "original_name": "NFHS Network 84: Camden County High School vs. Valdosta High School Varsity Girls Flag Football @ 22 Oct 04:00 PM ET",
+      "name": "Camden County High School vs. Valdosta High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-22T16:00:00.000-04:00",
+      "stop": "2026-10-22T19:30:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Camden County High School",
+        "Valdosta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Camden County High School",
+          "core": "camden county",
+          "confidence": 3
+        },
+        {
+          "team": "Valdosta High School",
+          "core": "valdosta",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070265",
+      "stream_id": 2070265,
+      "extension": "ts",
+      "original_name": "NFHS Network 98: Away vs. Crossroads Christian School Varsity Girls Volleyball @ 22 Oct 04:00 PM ET",
+      "name": "Away vs. Crossroads Christian School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-22T16:00:00.000-04:00",
+      "stop": "2026-10-22T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Away",
+        "Crossroads Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Crossroads Christian School",
+          "core": "crossroads christian",
+          "confidence": 2
+        }
+      ]
+    }
+  ]
 }
