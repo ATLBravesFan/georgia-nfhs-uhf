@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-23T10:31:28.456-04:00",
+  "generated_at": "2026-10-23T11:52:03.629-04:00",
   "eastern_date": "2026-10-23",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
+  "total_georgia_matches_found": 4,
+  "georgia_channel_count": 4,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "upcoming_next_7_days": 4,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -20,10 +20,99 @@
       "count": 79
     },
     "GAPPS": {
-      "ok": true,
-      "count": 146
+      "ok": false,
+      "error": "This operation was aborted"
     }
   },
-  "school_name_count": 664,
-  "channels": []
+  "school_name_count": 537,
+  "channels": [
+    {
+      "id": "ga-nfhs-2070353",
+      "stream_id": 2070353,
+      "extension": "ts",
+      "original_name": "NFHS Network 12: Spring Garden High School vs. Marion County High School Varsity Girls Volleyball @ 23 Oct 12:00 PM ET",
+      "name": "Spring Garden High School vs. Marion County High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-23T12:00:00.000-04:00",
+      "stop": "2026-10-23T14:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Spring Garden High School",
+        "Marion County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070233",
+      "stream_id": 2070233,
+      "extension": "ts",
+      "original_name": "NFHS Network 130: Calvary Christian vs. Community Christian Academy 2026 Girls Volleyball Semifinal @ 23 Oct 03:00 PM ET",
+      "name": "Calvary Christian vs. Community Christian Academy 2026 Girls Volleyball Semifinal",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-23T15:00:00.000-04:00",
+      "stop": "2026-10-23T17:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Calvary Christian",
+        "Community Christian Academy 2026 Girls Volleyball Semifinal"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Christian",
+          "core": "calvary christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070194",
+      "stream_id": 2070194,
+      "extension": "ts",
+      "original_name": "NFHS Network 169: Mount Pisgah Christian School vs. Mt. Bethel Christian Academy Varsity Football @ 23 Oct 03:45 PM ET",
+      "name": "Mount Pisgah Christian School vs. Mt. Bethel Christian Academy Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-23T15:45:00.000-04:00",
+      "stop": "2026-10-23T19:15:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Mount Pisgah Christian School",
+        "Mt. Bethel Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Pisgah Christian School",
+          "core": "mt pisgah christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070171",
+      "stream_id": 2070171,
+      "extension": "ts",
+      "original_name": "NFHS Network 192: GRACE Christian School vs. Asheville Christian Academy 2026 NCISAA Girls Volleyball Playoffs @ 23 Oct 04:00 PM ET",
+      "name": "GRACE Christian School vs. Asheville Christian Academy 2026 NCISAA Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-23T16:00:00.000-04:00",
+      "stop": "2026-10-23T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "GRACE Christian School",
+        "Asheville Christian Academy 2026 NCISAA Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "GRACE Christian School",
+          "core": "grace christian",
+          "confidence": 2
+        }
+      ]
+    }
+  ]
 }
