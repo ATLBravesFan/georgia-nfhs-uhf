@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23T15:37:47.782-04:00",
+  "generated_at": "2026-10-23T18:44:12.043-04:00",
   "eastern_date": "2026-10-23",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 175,
-  "georgia_channel_count": 174,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 173,
-  "completed_today_but_still_visible": 1,
+  "georgia_channel_count": 173,
+  "currently_live_estimate": 15,
+  "upcoming_next_7_days": 157,
+  "completed_today_but_still_visible": 2,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,28 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070233",
-      "stream_id": 2070233,
-      "extension": "ts",
-      "original_name": "NFHS Network 130: Calvary Christian vs. Community Christian Academy 2026 Girls Volleyball Semifinal @ 23 Oct 03:00 PM ET",
-      "name": "Calvary Christian vs. Community Christian Academy 2026 Girls Volleyball Semifinal",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-23T15:00:00.000-04:00",
-      "stop": "2026-10-23T17:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Calvary Christian",
-        "Community Christian Academy 2026 Girls Volleyball Semifinal"
-      ],
-      "matched_schools": [
-        {
-          "team": "Calvary Christian",
-          "core": "calvary christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070194",
       "stream_id": 2070194,
