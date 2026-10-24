@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T15:57:03.391-04:00",
+  "generated_at": "2026-10-24T18:11:27.954-04:00",
   "eastern_date": "2026-10-24",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 30,
-  "georgia_channel_count": 12,
-  "currently_live_estimate": 9,
-  "upcoming_next_7_days": 3,
-  "completed_today_but_still_visible": 18,
+  "georgia_channel_count": 5,
+  "currently_live_estimate": 4,
+  "upcoming_next_7_days": 0,
+  "completed_today_but_still_visible": 25,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,165 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2069883",
-      "stream_id": 2069883,
-      "extension": "ts",
-      "original_name": "NFHS Network 480: King's Ridge Christian School vs. Fellowship Christian School Middle School Football @ 24 Oct 01:00 PM ET",
-      "name": "King's Ridge Christian School vs. Fellowship Christian School Middle School Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T13:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "King's Ridge Christian School",
-        "Fellowship Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "King's Ridge Christian School",
-          "core": "king s ridge christian",
-          "confidence": 2
-        },
-        {
-          "team": "Fellowship Christian School",
-          "core": "fellowship christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069855",
-      "stream_id": 2069855,
-      "extension": "ts",
-      "original_name": "NFHS Network 507: Aptos High School vs. St Francis High School Junior Varsity Football @ 24 Oct 01:00 PM ET",
-      "name": "Aptos High School vs. St Francis High School Junior Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T13:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Aptos High School",
-        "St Francis High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069738",
-      "stream_id": 2069738,
-      "extension": "ts",
-      "original_name": "NFHS Network 616: Coahulla Creek High School vs. Pierce County High School 2026 GHSA Girls Volleyball Playoffs @ 24 Oct 02:00 PM ET",
-      "name": "Coahulla Creek High School vs. Pierce County High School 2026 GHSA Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T14:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Coahulla Creek High School",
-        "Pierce County High School 2026 GHSA Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Coahulla Creek High School",
-          "core": "coahulla creek",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069737",
-      "stream_id": 2069737,
-      "extension": "ts",
-      "original_name": "NFHS Network 617: North Paulding High School vs. Harrison High School 2026 GHSA Girls Volleyball Playoffs @ 24 Oct 02:00 PM ET",
-      "name": "North Paulding High School vs. Harrison High School 2026 GHSA Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T14:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "North Paulding High School",
-        "Harrison High School 2026 GHSA Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Paulding High School",
-          "core": "north paulding",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069716",
-      "stream_id": 2069716,
-      "extension": "ts",
-      "original_name": "NFHS Network 637: Mineral County High School vs. Excel Christian School Varsity Girls Volleyball @ 24 Oct 02:00 PM ET",
-      "name": "Mineral County High School vs. Excel Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T14:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Mineral County High School",
-        "Excel Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Excel Christian School",
-          "core": "excel christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069662",
-      "stream_id": 2069662,
-      "extension": "ts",
-      "original_name": "NFHS Network 685: Crossroads Christian School vs. Lee Christian School Varsity Girls Volleyball @ 24 Oct 02:00 PM ET",
-      "name": "Crossroads Christian School vs. Lee Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T14:00:00.000-04:00",
-      "stop": "2026-10-24T16:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Crossroads Christian School",
-        "Lee Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Crossroads Christian School",
-          "core": "crossroads christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069563",
-      "stream_id": 2069563,
-      "extension": "ts",
-      "original_name": "NFHS Network 784: Fergus High School vs. Dawson County High School Freshman Girls Volleyball @ 24 Oct 03:00 PM ET",
-      "name": "Fergus High School vs. Dawson County High School Freshman Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T15:00:00.000-04:00",
-      "stop": "2026-10-24T17:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Fergus High School",
-        "Dawson County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Dawson County High School",
-          "core": "dawson county",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2069433",
       "stream_id": 2069433,
