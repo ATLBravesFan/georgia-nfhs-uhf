@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T09:42:27.628-04:00",
+  "generated_at": "2026-10-24T13:04:44.487-04:00",
   "eastern_date": "2026-10-24",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 30,
-  "georgia_channel_count": 30,
-  "currently_live_estimate": 2,
-  "upcoming_next_7_days": 28,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 27,
+  "currently_live_estimate": 16,
+  "upcoming_next_7_days": 10,
+  "completed_today_but_still_visible": 3,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -27,33 +27,6 @@
   "school_name_count": 664,
   "channels": [
     {
-      "id": "ga-nfhs-2070333",
-      "stream_id": 2070333,
-      "extension": "ts",
-      "original_name": "NFHS Network 32: Johns Creek High School vs. Fellowship Christian School Middle School Football @ 24 Oct 09:00 AM ET",
-      "name": "Johns Creek High School vs. Fellowship Christian School Middle School Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T09:00:00.000-04:00",
-      "stop": "2026-10-24T12:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Johns Creek High School",
-        "Fellowship Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Johns Creek High School",
-          "core": "johns creek",
-          "confidence": 2
-        },
-        {
-          "team": "Fellowship Christian School",
-          "core": "fellowship christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
       "id": "ga-nfhs-2070280",
       "stream_id": 2070280,
       "extension": "ts",
@@ -70,50 +43,6 @@
         {
           "team": "Union Grove High School",
           "core": "union grove",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070257",
-      "stream_id": 2070257,
-      "extension": "ts",
-      "original_name": "NFHS Network 106: Marion County High School vs. Hubbertville School Junior Varsity Boys Basketball @ 24 Oct 10:00 AM ET",
-      "name": "Marion County High School vs. Hubbertville School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T10:00:00.000-04:00",
-      "stop": "2026-10-24T12:30:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Marion County High School",
-        "Hubbertville School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Marion County High School",
-          "core": "marion county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070218",
-      "stream_id": 2070218,
-      "extension": "ts",
-      "original_name": "NFHS Network 145: Mountain View High School vs. Brooke Point High School Varsity Boys Basketball @ 24 Oct 10:00 AM ET",
-      "name": "Mountain View High School vs. Brooke Point High School Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T10:00:00.000-04:00",
-      "stop": "2026-10-24T12:30:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Mountain View High School",
-        "Brooke Point High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Mountain View High School",
-          "core": "mountain view",
           "confidence": 2
         }
       ]
