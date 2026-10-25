@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-24T18:11:27.954-04:00",
+  "generated_at": "2026-10-24T22:10:53.362-04:00",
   "eastern_date": "2026-10-24",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 30,
-  "georgia_channel_count": 5,
-  "currently_live_estimate": 4,
+  "georgia_channel_count": 0,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 25,
-  "placeholder_active": false,
+  "completed_today_but_still_visible": 30,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,116 +25,5 @@
     }
   },
   "school_name_count": 664,
-  "channels": [
-    {
-      "id": "ga-nfhs-2069433",
-      "stream_id": 2069433,
-      "extension": "ts",
-      "original_name": "NFHS Network 914: Aptos High School vs. St Francis High School Varsity Football @ 24 Oct 03:30 PM ET",
-      "name": "Aptos High School vs. St Francis High School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T15:30:00.000-04:00",
-      "stop": "2026-10-24T19:00:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Aptos High School",
-        "St Francis High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St Francis High School",
-          "core": "st francis",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069432",
-      "stream_id": 2069432,
-      "extension": "ts",
-      "original_name": "NFHS Network 915: Savannah Arts Academy vs. Armuchee High School 2026 GHSA Girls Volleyball Playoffs @ 24 Oct 03:30 PM ET",
-      "name": "Savannah Arts Academy vs. Armuchee High School 2026 GHSA Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T15:30:00.000-04:00",
-      "stop": "2026-10-24T18:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Savannah Arts Academy",
-        "Armuchee High School 2026 GHSA Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Savannah Arts Academy",
-          "core": "savannah arts academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069331",
-      "stream_id": 2069331,
-      "extension": "ts",
-      "original_name": "NFHS Network 1016: Fergus High School vs. Dawson County High School Junior Varsity Girls Volleyball @ 24 Oct 04:30 PM ET",
-      "name": "Fergus High School vs. Dawson County High School Junior Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T16:30:00.000-04:00",
-      "stop": "2026-10-24T19:00:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Fergus High School",
-        "Dawson County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Dawson County High School",
-          "core": "dawson county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069250",
-      "stream_id": 2069250,
-      "extension": "ts",
-      "original_name": "NFHS Network 1097: Away vs. GRACE Christian School Varsity Football @ 24 Oct 06:00 PM ET",
-      "name": "Away vs. GRACE Christian School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T18:00:00.000-04:00",
-      "stop": "2026-10-24T21:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Away",
-        "GRACE Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "GRACE Christian School",
-          "core": "grace christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069238",
-      "stream_id": 2069238,
-      "extension": "ts",
-      "original_name": "NFHS Network 1109: Fergus High School vs. Dawson County High School Varsity Girls Volleyball @ 24 Oct 06:00 PM ET",
-      "name": "Fergus High School vs. Dawson County High School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-24T18:00:00.000-04:00",
-      "stop": "2026-10-24T20:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Fergus High School",
-        "Dawson County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Dawson County High School",
-          "core": "dawson county",
-          "confidence": 2
-        }
-      ]
-    }
-  ]
+  "channels": []
 }
