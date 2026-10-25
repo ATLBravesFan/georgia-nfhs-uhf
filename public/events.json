@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-25T16:07:04.364-04:00",
+  "generated_at": "2026-10-25T19:40:25.343-04:00",
   "eastern_date": "2026-10-25",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 1,
-  "georgia_channel_count": 1,
-  "currently_live_estimate": 1,
+  "georgia_channel_count": 0,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 0,
-  "placeholder_active": false,
+  "completed_today_but_still_visible": 1,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,33 +25,5 @@
     }
   },
   "school_name_count": 664,
-  "channels": [
-    {
-      "id": "ga-nfhs-2070343",
-      "stream_id": 2070343,
-      "extension": "ts",
-      "original_name": "NFHS Network 22: South Forsyth High School vs. West Forsyth High School Varsity Boys Lacrosse @ 25 Oct 04:00 PM ET",
-      "name": "South Forsyth High School vs. West Forsyth High School Varsity Boys Lacrosse",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-25T16:00:00.000-04:00",
-      "stop": "2026-10-25T18:30:00.000-04:00",
-      "sport": "Lacrosse",
-      "teams": [
-        "South Forsyth High School",
-        "West Forsyth High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "South Forsyth High School",
-          "core": "south forsyth",
-          "confidence": 2
-        },
-        {
-          "team": "West Forsyth High School",
-          "core": "west forsyth",
-          "confidence": 2
-        }
-      ]
-    }
-  ]
+  "channels": []
 }
