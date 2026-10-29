@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-29T14:40:22.251-04:00",
+  "generated_at": "2026-10-29T16:43:35.215-04:00",
   "eastern_date": "2026-10-29",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 114,
-  "georgia_channel_count": 114,
-  "currently_live_estimate": 3,
-  "upcoming_next_7_days": 111,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 111,
+  "currently_live_estimate": 11,
+  "upcoming_next_7_days": 100,
+  "completed_today_but_still_visible": 3,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,72 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070363",
-      "stream_id": 2070363,
-      "extension": "ts",
-      "original_name": "NFHS Network 02: Jeff Davis vs Bacon County 2026 GHSA 2A Fast Pitch Softball Championship Game #6 @ 29 Oct 12:30 PM ET",
-      "name": "Jeff Davis vs Bacon County 2026 GHSA 2A Fast Pitch Softball Championship Game #6",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-29T12:30:00.000-04:00",
-      "stop": "2026-10-29T15:30:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Jeff Davis",
-        "Bacon County 2026 GHSA 2A Fast Pitch Softball Championship Game #6"
-      ],
-      "matched_schools": [
-        {
-          "team": "Jeff Davis",
-          "core": "jeff davis",
-          "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070362",
-      "stream_id": 2070362,
-      "extension": "ts",
-      "original_name": "NFHS Network 03: Emanuel County Institute vs Trion 2026 GHSA 1A Fast Pitch Softball Championship Game #6 @ 29 Oct 12:30 PM ET",
-      "name": "Emanuel County Institute vs Trion 2026 GHSA 1A Fast Pitch Softball Championship Game #6",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-29T12:30:00.000-04:00",
-      "stop": "2026-10-29T15:30:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Emanuel County Institute",
-        "Trion 2026 GHSA 1A Fast Pitch Softball Championship Game #6"
-      ],
-      "matched_schools": [
-        {
-          "team": "Emanuel County Institute",
-          "core": "emanuel county institute",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070355",
-      "stream_id": 2070355,
-      "extension": "ts",
-      "original_name": "NFHS Network 10: Away vs. Crossroads Christian School Varsity Girls Volleyball @ 29 Oct 01:00 PM ET",
-      "name": "Away vs. Crossroads Christian School Varsity Girls Volleyball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-29T13:00:00.000-04:00",
-      "stop": "2026-10-29T15:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Away",
-        "Crossroads Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Crossroads Christian School",
-          "core": "crossroads christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070328",
       "stream_id": 2070328,
