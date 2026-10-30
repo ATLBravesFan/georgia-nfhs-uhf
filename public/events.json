@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-30T11:48:03.484-04:00",
+  "generated_at": "2026-10-30T16:14:56.628-04:00",
   "eastern_date": "2026-10-30",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 170,
-  "georgia_channel_count": 170,
-  "currently_live_estimate": 7,
-  "upcoming_next_7_days": 163,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 163,
+  "currently_live_estimate": 10,
+  "upcoming_next_7_days": 153,
+  "completed_today_but_still_visible": 7,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,160 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070350",
-      "stream_id": 2070350,
-      "extension": "ts",
-      "original_name": "NFHS Network 15: Bacon County vs Mt. Zion High School - Carroll 2026 GHSA 2A Fast Pitch Softball Championship Game #9 @ 30 Oct 11:00 AM ET",
-      "name": "Bacon County vs Mt. Zion High School - Carroll 2026 GHSA 2A Fast Pitch Softball Championship Game #9",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Bacon County",
-        "Mt. Zion High School - Carroll 2026 GHSA 2A Fast Pitch Softball Championship Game #9"
-      ],
-      "matched_schools": [
-        {
-          "team": "Bacon County",
-          "core": "bacon county",
-          "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070349",
-      "stream_id": 2070349,
-      "extension": "ts",
-      "original_name": "NFHS Network 16: Morgan County vs Worth County 2026 GHSA 3A Fast Pitch Softball Championship Game #10 @ 30 Oct 11:00 AM ET",
-      "name": "Morgan County vs Worth County 2026 GHSA 3A Fast Pitch Softball Championship Game #10",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Morgan County",
-        "Worth County 2026 GHSA 3A Fast Pitch Softball Championship Game #10"
-      ],
-      "matched_schools": [
-        {
-          "team": "Morgan County",
-          "core": "morgan county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070346",
-      "stream_id": 2070346,
-      "extension": "ts",
-      "original_name": "NFHS Network 19: Banks County vs Vidalia 2026 GHSA 2A Fast Pitch Softball Championship Game #10 @ 30 Oct 11:00 AM ET",
-      "name": "Banks County vs Vidalia 2026 GHSA 2A Fast Pitch Softball Championship Game #10",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Banks County",
-        "Vidalia 2026 GHSA 2A Fast Pitch Softball Championship Game #10"
-      ],
-      "matched_schools": [
-        {
-          "team": "Banks County",
-          "core": "banks county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070344",
-      "stream_id": 2070344,
-      "extension": "ts",
-      "original_name": "NFHS Network 21: Lanier County vs Irwin County 2026 GHSA 1A Fast Pitch Softball Championship Game #10 @ 30 Oct 11:00 AM ET",
-      "name": "Lanier County vs Irwin County 2026 GHSA 1A Fast Pitch Softball Championship Game #10",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Lanier County",
-        "Irwin County 2026 GHSA 1A Fast Pitch Softball Championship Game #10"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lanier County",
-          "core": "lanier county",
-          "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070342",
-      "stream_id": 2070342,
-      "extension": "ts",
-      "original_name": "NFHS Network 23: Emanuel County Institute vs Bowdon 2026 GHSA 1A Fast Pitch Softball Championship Game #9 @ 30 Oct 11:00 AM ET",
-      "name": "Emanuel County Institute vs Bowdon 2026 GHSA 1A Fast Pitch Softball Championship Game #9",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Emanuel County Institute",
-        "Bowdon 2026 GHSA 1A Fast Pitch Softball Championship Game #9"
-      ],
-      "matched_schools": [
-        {
-          "team": "Emanuel County Institute",
-          "core": "emanuel county institute",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070341",
-      "stream_id": 2070341,
-      "extension": "ts",
-      "original_name": "NFHS Network 24: Pike County vs Appling County 2026 GHSA 3A Fast Pitch Softball Championship Game #9 @ 30 Oct 11:00 AM ET",
-      "name": "Pike County vs Appling County 2026 GHSA 3A Fast Pitch Softball Championship Game #9",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Pike County",
-        "Appling County 2026 GHSA 3A Fast Pitch Softball Championship Game #9"
-      ],
-      "matched_schools": [
-        {
-          "team": "Pike County",
-          "core": "pike county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070337",
-      "stream_id": 2070337,
-      "extension": "ts",
-      "original_name": "NFHS Network 28: Providence Christian vs Pace Academy 2026 GHSA Private Fast Pitch Softball Championship Game #9 @ 30 Oct 11:00 AM ET",
-      "name": "Providence Christian vs Pace Academy 2026 GHSA Private Fast Pitch Softball Championship Game #9",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-30T11:00:00.000-04:00",
-      "stop": "2026-10-30T14:00:00.000-04:00",
-      "sport": "Softball",
-      "teams": [
-        "Providence Christian",
-        "Pace Academy 2026 GHSA Private Fast Pitch Softball Championship Game #9"
-      ],
-      "matched_schools": [
-        {
-          "team": "Providence Christian",
-          "core": "providence christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070274",
       "stream_id": 2070274,
