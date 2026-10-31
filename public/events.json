@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-31T12:00:30.588-04:00",
+  "generated_at": "2026-10-31T14:17:17.694-04:00",
   "eastern_date": "2026-10-31",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 21,
-  "georgia_channel_count": 21,
-  "currently_live_estimate": 8,
-  "upcoming_next_7_days": 13,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 18,
+  "currently_live_estimate": 10,
+  "upcoming_next_7_days": 7,
+  "completed_today_but_still_visible": 3,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,72 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070297",
-      "stream_id": 2070297,
-      "extension": "ts",
-      "original_name": "NFHS Network 68: Away vs. Marion County High School Middle School Boys Basketball @ 31 Oct 11:00 AM ET",
-      "name": "Away vs. Marion County High School Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T11:00:00.000-04:00",
-      "stop": "2026-10-31T13:30:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Marion County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Marion County High School",
-          "core": "marion county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070295",
-      "stream_id": 2070295,
-      "extension": "ts",
-      "original_name": "NFHS Network 69: Enterprise High School vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "name": "Enterprise High School vs. Wayne County High School Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T11:00:00.000-04:00",
-      "stop": "2026-10-31T13:30:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Enterprise High School",
-        "Wayne County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Wayne County High School",
-          "core": "wayne county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070280",
-      "stream_id": 2070280,
-      "extension": "ts",
-      "original_name": "NFHS Network 83: United High School vs. Central Christian High School Varsity Boys Soccer @ 31 Oct 11:00 AM ET",
-      "name": "United High School vs. Central Christian High School Varsity Boys Soccer",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T11:00:00.000-04:00",
-      "stop": "2026-10-31T13:30:00.000-04:00",
-      "sport": "Soccer",
-      "teams": [
-        "United High School",
-        "Central Christian High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Central Christian High School",
-          "core": "central christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070263",
       "stream_id": 2070263,
