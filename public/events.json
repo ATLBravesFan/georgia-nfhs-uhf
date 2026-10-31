@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-31T09:59:36.772-04:00",
+  "generated_at": "2026-10-31T12:00:30.588-04:00",
   "eastern_date": "2026-10-31",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 3,
-  "georgia_channel_count": 3,
-  "currently_live_estimate": 3,
-  "upcoming_next_7_days": 0,
+  "total_georgia_matches_found": 21,
+  "georgia_channel_count": 21,
+  "currently_live_estimate": 8,
+  "upcoming_next_7_days": 13,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -27,67 +27,477 @@
   "school_name_count": 664,
   "channels": [
     {
-      "id": "ga-nfhs-2070308",
-      "stream_id": 2070308,
+      "id": "ga-nfhs-2070297",
+      "stream_id": 2070297,
       "extension": "ts",
-      "original_name": "NFHS Network 57: Away vs. Jones County High School Varsity Boys Wrestling @ 31 Oct 08:00 AM ET",
-      "name": "Away vs. Jones County High School Varsity Boys Wrestling",
+      "original_name": "NFHS Network 68: Away vs. Marion County High School Middle School Boys Basketball @ 31 Oct 11:00 AM ET",
+      "name": "Away vs. Marion County High School Middle School Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T08:00:00.000-04:00",
-      "stop": "2026-10-31T11:00:00.000-04:00",
-      "sport": "Wrestling",
+      "start": "2026-10-31T11:00:00.000-04:00",
+      "stop": "2026-10-31T13:30:00.000-04:00",
+      "sport": "Basketball",
       "teams": [
         "Away",
-        "Jones County High School"
+        "Marion County High School"
       ],
       "matched_schools": [
         {
-          "team": "Jones County High School",
-          "core": "jones county",
+          "team": "Marion County High School",
+          "core": "marion county",
           "confidence": 2
         }
       ]
     },
     {
-      "id": "ga-nfhs-2070301",
-      "stream_id": 2070301,
+      "id": "ga-nfhs-2070295",
+      "stream_id": 2070295,
       "extension": "ts",
-      "original_name": "NFHS Network 64: Away vs. Colquitt County High School Varsity Boys Wrestling @ 31 Oct 09:00 AM ET",
-      "name": "Away vs. Colquitt County High School Varsity Boys Wrestling",
+      "original_name": "NFHS Network 69: Enterprise High School vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
+      "name": "Enterprise High School vs. Wayne County High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T09:00:00.000-04:00",
-      "stop": "2026-10-31T12:00:00.000-04:00",
-      "sport": "Wrestling",
+      "start": "2026-10-31T11:00:00.000-04:00",
+      "stop": "2026-10-31T13:30:00.000-04:00",
+      "sport": "Basketball",
       "teams": [
-        "Away",
-        "Colquitt County High School"
+        "Enterprise High School",
+        "Wayne County High School"
       ],
       "matched_schools": [
         {
-          "team": "Colquitt County High School",
-          "core": "colquitt county",
-          "confidence": 3
+          "team": "Wayne County High School",
+          "core": "wayne county",
+          "confidence": 2
         }
       ]
     },
     {
-      "id": "ga-nfhs-2070294",
-      "stream_id": 2070294,
+      "id": "ga-nfhs-2070280",
+      "stream_id": 2070280,
       "extension": "ts",
-      "original_name": "NFHS Network 70: Away vs. Whitefield Academy Middle School Boys Basketball @ 31 Oct 09:00 AM ET",
-      "name": "Away vs. Whitefield Academy Middle School Boys Basketball",
+      "original_name": "NFHS Network 83: United High School vs. Central Christian High School Varsity Boys Soccer @ 31 Oct 11:00 AM ET",
+      "name": "United High School vs. Central Christian High School Varsity Boys Soccer",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T09:00:00.000-04:00",
-      "stop": "2026-10-31T11:30:00.000-04:00",
-      "sport": "Basketball",
+      "start": "2026-10-31T11:00:00.000-04:00",
+      "stop": "2026-10-31T13:30:00.000-04:00",
+      "sport": "Soccer",
       "teams": [
-        "Away",
-        "Whitefield Academy"
+        "United High School",
+        "Central Christian High School"
       ],
       "matched_schools": [
         {
-          "team": "Whitefield Academy",
-          "core": "whitefield academy",
+          "team": "Central Christian High School",
+          "core": "central christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070263",
+      "stream_id": 2070263,
+      "extension": "ts",
+      "original_name": "NFHS Network 100: North Forsyth High School vs. Asheboro High School 2026 NCHSAA Girls Flag Football Playoffs @ 31 Oct 11:00 AM ET",
+      "name": "North Forsyth High School vs. Asheboro High School 2026 NCHSAA Girls Flag Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T11:00:00.000-04:00",
+      "stop": "2026-10-31T14:30:00.000-04:00",
+      "sport": "Flag Football",
+      "teams": [
+        "North Forsyth High School",
+        "Asheboro High School 2026 NCHSAA Girls Flag Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Forsyth High School",
+          "core": "north forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070225",
+      "stream_id": 2070225,
+      "extension": "ts",
+      "original_name": "NFHS Network 138: Enterprise High School vs. Wayne County High School Varsity Boys Basketball @ 31 Oct 11:45 AM ET",
+      "name": "Enterprise High School vs. Wayne County High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T11:45:00.000-04:00",
+      "stop": "2026-10-31T14:15:00.000-04:00",
+      "sport": "Basketball",
+      "teams": [
+        "Enterprise High School",
+        "Wayne County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wayne County High School",
+          "core": "wayne county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070212",
+      "stream_id": 2070212,
+      "extension": "ts",
+      "original_name": "NFHS Network 151: King's Ridge Christian School vs. Mt. Bethel Christian Academy Varsity Football @ 31 Oct 12:00 PM ET",
+      "name": "King's Ridge Christian School vs. Mt. Bethel Christian Academy Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T12:00:00.000-04:00",
+      "stop": "2026-10-31T15:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "King's Ridge Christian School",
+        "Mt. Bethel Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "King's Ridge Christian School",
+          "core": "king s ridge christian",
+          "confidence": 2
+        },
+        {
+          "team": "Mt. Bethel Christian Academy",
+          "core": "mt bethel christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070204",
+      "stream_id": 2070204,
+      "extension": "ts",
+      "original_name": "NFHS Network 159: Campbell High School vs. Carrollton High School Middle School Football @ 31 Oct 12:00 PM ET",
+      "name": "Campbell High School vs. Carrollton High School Middle School Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T12:00:00.000-04:00",
+      "stop": "2026-10-31T15:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Campbell High School",
+        "Carrollton High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Campbell High School",
+          "core": "campbell",
+          "confidence": 1
+        },
+        {
+          "team": "Carrollton High School",
+          "core": "carrollton",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070150",
+      "stream_id": 2070150,
+      "extension": "ts",
+      "original_name": "NFHS Network 213: Notre Dame Academy Middle School Boys Basketball @ 31 Oct 12:00 PM ET",
+      "name": "Notre Dame Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T12:00:00.000-04:00",
+      "stop": "2026-10-31T14:30:00.000-04:00",
+      "sport": "Basketball",
+      "teams": [
+        "Notre Dame Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070098",
+      "stream_id": 2070098,
+      "extension": "ts",
+      "original_name": "NFHS Network 265: Enfield Middle S.T.E.A.M. Academy vs. Warren County High School Junior Varsity Football @ 31 Oct 12:45 PM ET",
+      "name": "Enfield Middle S.T.E.A.M. Academy vs. Warren County High School Junior Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T12:45:00.000-04:00",
+      "stop": "2026-10-31T16:15:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Enfield Middle S.T.E.A.M. Academy",
+        "Warren County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Warren County High School",
+          "core": "warren county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069989",
+      "stream_id": 2069989,
+      "extension": "ts",
+      "original_name": "NFHS Network 374: Coahulla Creek vs Morgan County 2026 GHSA 3A Girls Volleyball Championship @ 31 Oct 01:30 PM ET",
+      "name": "Coahulla Creek vs Morgan County 2026 GHSA 3A Girls Volleyball Championship",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T13:30:00.000-04:00",
+      "stop": "2026-10-31T16:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Coahulla Creek",
+        "Morgan County 2026 GHSA 3A Girls Volleyball Championship"
+      ],
+      "matched_schools": [
+        {
+          "team": "Coahulla Creek",
+          "core": "coahulla creek",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069950",
+      "stream_id": 2069950,
+      "extension": "ts",
+      "original_name": "NFHS Network 413: Wayne County High School vs. Northeast Lauderdale High School Junior Varsity Boys Basketball @ 31 Oct 02:00 PM ET",
+      "name": "Wayne County High School vs. Northeast Lauderdale High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T14:00:00.000-04:00",
+      "stop": "2026-10-31T16:30:00.000-04:00",
+      "sport": "Basketball",
+      "teams": [
+        "Wayne County High School",
+        "Northeast Lauderdale High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wayne County High School",
+          "core": "wayne county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069945",
+      "stream_id": 2069945,
+      "extension": "ts",
+      "original_name": "NFHS Network 418: Heritage Christian Academy vs. Byers High School Varsity Girls Volleyball @ 31 Oct 02:00 PM ET",
+      "name": "Heritage Christian Academy vs. Byers High School Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T14:00:00.000-04:00",
+      "stop": "2026-10-31T16:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Heritage Christian Academy",
+        "Byers High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Heritage Christian Academy",
+          "core": "heritage christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069926",
+      "stream_id": 2069926,
+      "extension": "ts",
+      "original_name": "NFHS Network 437: The King's Academy vs. Menlo School Junior Varsity Football @ 31 Oct 02:00 PM ET",
+      "name": "The King's Academy vs. Menlo School Junior Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T14:00:00.000-04:00",
+      "stop": "2026-10-31T17:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "The King's Academy",
+        "Menlo School"
+      ],
+      "matched_schools": [
+        {
+          "team": "The King's Academy",
+          "core": "king s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069913",
+      "stream_id": 2069913,
+      "extension": "ts",
+      "original_name": "NFHS Network 450: Thompson Falls High School vs. Lincoln County Junior Varsity Girls Volleyball @ 31 Oct 02:00 PM ET",
+      "name": "Thompson Falls High School vs. Lincoln County Junior Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T14:00:00.000-04:00",
+      "stop": "2026-10-31T16:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Thompson Falls High School",
+        "Lincoln County"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lincoln County",
+          "core": "lincoln county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069698",
+      "stream_id": 2069698,
+      "extension": "ts",
+      "original_name": "NFHS Network 654: Thompson Falls High School vs. Lincoln County Varsity Girls Volleyball @ 31 Oct 03:30 PM ET",
+      "name": "Thompson Falls High School vs. Lincoln County Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T15:30:00.000-04:00",
+      "stop": "2026-10-31T18:00:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Thompson Falls High School",
+        "Lincoln County"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lincoln County",
+          "core": "lincoln county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069694",
+      "stream_id": 2069694,
+      "extension": "ts",
+      "original_name": "NFHS Network 657: Northeast Lauderdale High School vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 03:30 PM ET",
+      "name": "Northeast Lauderdale High School vs. Wayne County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T15:30:00.000-04:00",
+      "stop": "2026-10-31T18:00:00.000-04:00",
+      "sport": "Basketball",
+      "teams": [
+        "Northeast Lauderdale High School",
+        "Wayne County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wayne County High School",
+          "core": "wayne county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069687",
+      "stream_id": 2069687,
+      "extension": "ts",
+      "original_name": "NFHS Network 664: Wesleyan School vs. KIPP Atlanta Collegiate Varsity Football @ 31 Oct 03:45 PM ET",
+      "name": "Wesleyan School vs. KIPP Atlanta Collegiate Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T15:45:00.000-04:00",
+      "stop": "2026-10-31T19:15:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "Wesleyan School",
+        "KIPP Atlanta Collegiate"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wesleyan School",
+          "core": "wesleyan",
+          "confidence": 1
+        },
+        {
+          "team": "KIPP Atlanta Collegiate",
+          "core": "kipp atlanta collegiate",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069622",
+      "stream_id": 2069622,
+      "extension": "ts",
+      "original_name": "NFHS Network 725: Limon High School vs. Heritage Christian Academy Varsity Girls Volleyball @ 31 Oct 04:00 PM ET",
+      "name": "Limon High School vs. Heritage Christian Academy Varsity Girls Volleyball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T16:00:00.000-04:00",
+      "stop": "2026-10-31T18:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Limon High School",
+        "Heritage Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Heritage Christian Academy",
+          "core": "heritage christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069592",
+      "stream_id": 2069592,
+      "extension": "ts",
+      "original_name": "NFHS Network 755: Away vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 04:15 PM ET",
+      "name": "Away vs. Wayne County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T16:15:00.000-04:00",
+      "stop": "2026-10-31T18:45:00.000-04:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Wayne County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wayne County High School",
+          "core": "wayne county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069567",
+      "stream_id": 2069567,
+      "extension": "ts",
+      "original_name": "NFHS Network 780: The King's Academy vs. Menlo School Varsity Football @ 31 Oct 05:00 PM ET",
+      "name": "The King's Academy vs. Menlo School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T17:00:00.000-04:00",
+      "stop": "2026-10-31T20:30:00.000-04:00",
+      "sport": "Football",
+      "teams": [
+        "The King's Academy",
+        "Menlo School"
+      ],
+      "matched_schools": [
+        {
+          "team": "The King's Academy",
+          "core": "king s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069439",
+      "stream_id": 2069439,
+      "extension": "ts",
+      "original_name": "NFHS Network 908: Mountain View High School vs. Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs @ 31 Oct 10:00 PM ET",
+      "name": "Mountain View High School vs. Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-10-31T22:00:00.000-04:00",
+      "stop": "2026-11-01T00:30:00.000-04:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Mountain View High School",
+        "Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
           "confidence": 2
         }
       ]
