@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-31T03:41:43.663-04:00",
+  "generated_at": "2026-10-31T06:58:35.189-04:00",
   "eastern_date": "2026-10-31",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 6,
-  "georgia_channel_count": 6,
+  "total_georgia_matches_found": 3,
+  "georgia_channel_count": 3,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 6,
+  "upcoming_next_7_days": 3,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -31,28 +31,6 @@
       "stream_id": 2070308,
       "extension": "ts",
       "original_name": "NFHS Network 57: Away vs. Jones County High School Varsity Boys Wrestling @ 31 Oct 08:00 AM ET",
-      "name": "Away vs. Jones County High School Varsity Boys Wrestling",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T08:00:00.000-04:00",
-      "stop": "2026-10-31T11:00:00.000-04:00",
-      "sport": "Wrestling",
-      "teams": [
-        "Away",
-        "Jones County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Jones County High School",
-          "core": "jones county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067720",
-      "stream_id": 2067720,
-      "extension": "ts",
-      "original_name": "NFHS Network 2597: Away vs. Jones County High School Varsity Boys Wrestling @ 31 Oct 08:00 AM ET",
       "name": "Away vs. Jones County High School Varsity Boys Wrestling",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-10-31T08:00:00.000-04:00",
@@ -97,50 +75,6 @@
       "stream_id": 2070294,
       "extension": "ts",
       "original_name": "NFHS Network 70: Away vs. Whitefield Academy Middle School Boys Basketball @ 31 Oct 09:00 AM ET",
-      "name": "Away vs. Whitefield Academy Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T09:00:00.000-04:00",
-      "stop": "2026-10-31T11:30:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Whitefield Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Whitefield Academy",
-          "core": "whitefield academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067713",
-      "stream_id": 2067713,
-      "extension": "ts",
-      "original_name": "NFHS Network 2604: Away vs. Colquitt County High School Varsity Boys Wrestling @ 31 Oct 09:00 AM ET",
-      "name": "Away vs. Colquitt County High School Varsity Boys Wrestling",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T09:00:00.000-04:00",
-      "stop": "2026-10-31T12:00:00.000-04:00",
-      "sport": "Wrestling",
-      "teams": [
-        "Away",
-        "Colquitt County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Colquitt County High School",
-          "core": "colquitt county",
-          "confidence": 3
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2067707",
-      "stream_id": 2067707,
-      "extension": "ts",
-      "original_name": "NFHS Network 2610: Away vs. Whitefield Academy Middle School Boys Basketball @ 31 Oct 09:00 AM ET",
       "name": "Away vs. Whitefield Academy Middle School Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-10-31T09:00:00.000-04:00",
