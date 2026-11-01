@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-31T23:03:22.406-04:00",
-  "eastern_date": "2026-10-31",
+  "generated_at": "2026-11-01T03:01:55.196-05:00",
+  "eastern_date": "2026-11-01",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 21,
-  "georgia_channel_count": 1,
-  "currently_live_estimate": 1,
+  "total_georgia_matches_found": 18,
+  "georgia_channel_count": 0,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 20,
-  "placeholder_active": false,
+  "completed_today_but_still_visible": 0,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,28 +25,5 @@
     }
   },
   "school_name_count": 664,
-  "channels": [
-    {
-      "id": "ga-nfhs-2069439",
-      "stream_id": 2069439,
-      "extension": "ts",
-      "original_name": "NFHS Network 908: Mountain View High School vs. Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs @ 31 Oct 10:00 PM ET",
-      "name": "Mountain View High School vs. Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T22:00:00.000-04:00",
-      "stop": "2026-11-01T00:30:00.000-04:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Mountain View High School",
-        "Cupertino High School 2026 CIFCCS Girls Volleyball Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Mountain View High School",
-          "core": "mountain view",
-          "confidence": 2
-        }
-      ]
-    }
-  ]
+  "channels": []
 }

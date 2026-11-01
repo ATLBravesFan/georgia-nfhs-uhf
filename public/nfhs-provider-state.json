@@ -1,19 +1,19 @@
 {
-  "captured_at": "2026-10-31T16:00:30.167Z",
+  "captured_at": "2026-11-01T08:01:54.794Z",
   "category": "USA | NFHS Network",
   "stream_count": 5000,
   "title_day_counts": {
-    "2026-10-31": 913,
-    "2026-11-01": 13,
-    "undated": 4074
+    "2026-10-31": 821,
+    "2026-11-01": 20,
+    "undated": 4159
   },
   "rows": [
     {
       "provider_nfhs_number": 1,
       "stream_id": 2070364,
-      "title": "NFHS Network 01: Elk County Catholic High School vs. DuBois Area High School Middle School Girls Basketball @ 31 Oct 10:15 AM ET",
-      "provider_start": "2026-10-31T10:15:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 01: Capital High School vs. Timberline High School 2026 WIAA Football Playoffs @ 1 Nov 01:30 AM ET",
+      "provider_start": "2026-11-01T01:30:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238354,
       "epg_channel_id": null,
       "custom_sid": null
@@ -21,9 +21,9 @@
     {
       "provider_nfhs_number": 2,
       "stream_id": 2070363,
-      "title": "NFHS Network 02: Brookwood High School Middle School Boys Basketball @ 31 Oct 10:15 AM ET",
-      "provider_start": "2026-10-31T10:15:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 02: Fountain Hills High School Middle School Football - Part 2 @ 1 Nov 02:00 AM ET",
+      "provider_start": "2026-11-01T02:00:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -31,9 +31,9 @@
     {
       "provider_nfhs_number": 3,
       "stream_id": 2070362,
-      "title": "NFHS Network 03: All Performances Varsity Coed Band Competition @ 31 Oct 10:30 AM ET",
-      "provider_start": "2026-10-31T10:30:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 03: Kingston High School vs. Franklin Pierce High School 2026 WIAA Girls Soccer Playoffs @ 1 Nov 02:00 AM ET",
+      "provider_start": "2026-11-01T02:00:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -41,9 +41,9 @@
     {
       "provider_nfhs_number": 4,
       "stream_id": 2070361,
-      "title": "NFHS Network 04: Multi-team Event Varsity Coed Cheerleading And Dance @ 31 Oct 10:30 AM ET",
-      "provider_start": "2026-10-31T10:30:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 04: Rock Canyon High School vs. Fossil Ridge High School Junior Varsity Boys Basketball @ 1 Nov 06:00 AM ET",
+      "provider_start": "2026-11-01T06:00:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -51,9 +51,9 @@
     {
       "provider_nfhs_number": 5,
       "stream_id": 2070360,
-      "title": "NFHS Network 05: Away vs. East Webster High School Varsity Girls Basketball @ 31 Oct 10:30 AM ET",
-      "provider_start": "2026-10-31T10:30:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 05: Harvey School Middle School Boys Ice Hockey @ 1 Nov 09:05 AM ET",
+      "provider_start": "2026-11-01T09:05:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -61,9 +61,9 @@
     {
       "provider_nfhs_number": 6,
       "stream_id": 2070359,
-      "title": "NFHS Network 06: Cheshire High School vs. North Haven High School 2026 CIAC Girls Volleyball Quarterfinal @ 31 Oct 10:45 AM ET",
-      "provider_start": "2026-10-31T10:45:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 06: Bow High School vs. Laconia High School Middle School Football @ 1 Nov 10:00 AM ET",
+      "provider_start": "2026-11-01T10:00:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -71,9 +71,9 @@
     {
       "provider_nfhs_number": 7,
       "stream_id": 2070358,
-      "title": "NFHS Network 07: Pensacola Catholic HS vs. Fort Walton Beach High School Varsity Girls Soccer @ 31 Oct 10:45 AM ET",
-      "provider_start": "2026-10-31T10:45:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 07: All Cheers Varsity Girls Cheerleading And Dance @ 1 Nov 10:00 AM ET",
+      "provider_start": "2026-11-01T10:00:00.000-05:00",
+      "provider_day": "2026-11-01",
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -81,9 +81,9 @@
     {
       "provider_nfhs_number": 8,
       "stream_id": 2070357,
-      "title": "NFHS Network 08: South Pontotoc High School vs. East Union Attendance Center Varsity Boys Basketball @ 31 Oct 10:45 AM ET",
-      "provider_start": "2026-10-31T10:45:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 08: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238350,
       "epg_channel_id": null,
       "custom_sid": null
@@ -91,9 +91,9 @@
     {
       "provider_nfhs_number": 9,
       "stream_id": 2070356,
-      "title": "NFHS Network 09: Harlowton High School vs. Roundup High School Middle School Boys And Girls Basketball @ 31 Oct 10:45 AM ET",
-      "provider_start": "2026-10-31T10:45:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 09: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -101,9 +101,9 @@
     {
       "provider_nfhs_number": 10,
       "stream_id": 2070355,
-      "title": "NFHS Network 10: Lowell High School vs. North Andover High School Junior Varsity Football @ 31 Oct 10:45 AM ET",
-      "provider_start": "2026-10-31T10:45:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 10: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -111,9 +111,9 @@
     {
       "provider_nfhs_number": 11,
       "stream_id": 2070354,
-      "title": "NFHS Network 11: Roy-Winifred High School Middle School Boys Basketball @ 31 Oct 10:50 AM ET",
-      "provider_start": "2026-10-31T10:50:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 11: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -121,9 +121,9 @@
     {
       "provider_nfhs_number": 12,
       "stream_id": 2070353,
-      "title": "NFHS Network 12: Hobson-Moore Moore MT vs. Roy-Winifred High School Middle School Girls Basketball @ 31 Oct 10:50 AM ET",
-      "provider_start": "2026-10-31T10:50:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 12: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -131,9 +131,9 @@
     {
       "provider_nfhs_number": 13,
       "stream_id": 2070352,
-      "title": "NFHS Network 13: Bainville School vs. Savage High School Middle School Boys And Girls Basketball @ 31 Oct 10:55 AM ET",
-      "provider_start": "2026-10-31T10:55:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 13: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -141,9 +141,9 @@
     {
       "provider_nfhs_number": 14,
       "stream_id": 2070351,
-      "title": "NFHS Network 14: North Star High School vs. Box Elder High School Middle School Coed Basketball @ 31 Oct 10:55 AM ET",
-      "provider_start": "2026-10-31T10:55:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 14: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -151,9 +151,9 @@
     {
       "provider_nfhs_number": 15,
       "stream_id": 2070350,
-      "title": "NFHS Network 15: Burney High School Middle School Girls Basketball @ 31 Oct 10:58 AM ET",
-      "provider_start": "2026-10-31T10:58:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 15: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -161,9 +161,9 @@
     {
       "provider_nfhs_number": 16,
       "stream_id": 2070349,
-      "title": "NFHS Network 16: Holy Cross High School vs. Blue Ridge High School 2026 PIAA Girls Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 16: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -171,9 +171,9 @@
     {
       "provider_nfhs_number": 17,
       "stream_id": 2070348,
-      "title": "NFHS Network 17: All Races Varsity Boys And Girls Cross Country @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 17: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -181,9 +181,9 @@
     {
       "provider_nfhs_number": 18,
       "stream_id": 2070347,
-      "title": "NFHS Network 18: Follett High School vs. Groom High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 18: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -191,9 +191,9 @@
     {
       "provider_nfhs_number": 19,
       "stream_id": 2070346,
-      "title": "NFHS Network 19: Centaurus High School vs. Westminster High School Freshman Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 19: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -201,9 +201,9 @@
     {
       "provider_nfhs_number": 20,
       "stream_id": 2070345,
-      "title": "NFHS Network 20: Culbertson High School vs. Circle High School Middle School Boys And Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 20: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -211,9 +211,9 @@
     {
       "provider_nfhs_number": 21,
       "stream_id": 2070344,
-      "title": "NFHS Network 21: 2026 IHSA Boys Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 21: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -221,9 +221,9 @@
     {
       "provider_nfhs_number": 22,
       "stream_id": 2070343,
-      "title": "NFHS Network 22: Away vs. Rockville High School Varsity Boys Soccer @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 22: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -231,9 +231,9 @@
     {
       "provider_nfhs_number": 23,
       "stream_id": 2070342,
-      "title": "NFHS Network 23: Shawsheen Valley Technical High School vs. Greater New Bedford RVT High School Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 23: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -241,9 +241,9 @@
     {
       "provider_nfhs_number": 24,
       "stream_id": 2070341,
-      "title": "NFHS Network 24: Pinedale High School vs. Lyman High School 2026 WHSAA Girls Volleyball Regional @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 24: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -251,9 +251,9 @@
     {
       "provider_nfhs_number": 25,
       "stream_id": 2070340,
-      "title": "NFHS Network 25: Nonnewaug High School vs. Naugatuck High School Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 25: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -261,9 +261,9 @@
     {
       "provider_nfhs_number": 26,
       "stream_id": 2070339,
-      "title": "NFHS Network 26: Arundel High School vs. Stephen Decatur High School 2026 MPSSAA Girls Soccer Regional @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 26: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -271,9 +271,9 @@
     {
       "provider_nfhs_number": 27,
       "stream_id": 2070338,
-      "title": "NFHS Network 27: Multi-team Event Middle School Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 27: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -281,9 +281,9 @@
     {
       "provider_nfhs_number": 28,
       "stream_id": 2070337,
-      "title": "NFHS Network 28: Olmsted Falls vs. Avon High School 2026 OHSAA Girls Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 28: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -291,9 +291,9 @@
     {
       "provider_nfhs_number": 29,
       "stream_id": 2070336,
-      "title": "NFHS Network 29: Holy Redeemer High School vs. Lakeland High School 2026 PIAA Girls Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 29: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -301,9 +301,9 @@
     {
       "provider_nfhs_number": 30,
       "stream_id": 2070335,
-      "title": "NFHS Network 30: Rock Hill vs Carolina Forest 2026 SCHSL 5A Boys Volleyball Championship @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 30: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -311,9 +311,9 @@
     {
       "provider_nfhs_number": 31,
       "stream_id": 2070334,
-      "title": "NFHS Network 31: Slaton ISD vs. Monterey High School Junior Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 31: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -321,9 +321,9 @@
     {
       "provider_nfhs_number": 32,
       "stream_id": 2070333,
-      "title": "NFHS Network 32: Away vs. Holly Springs High School Varsity Girls Flag Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 32: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -331,9 +331,9 @@
     {
       "provider_nfhs_number": 33,
       "stream_id": 2070332,
-      "title": "NFHS Network 33: None SCC Girls Volleyball Quarterfinals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 33: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238337,
       "epg_channel_id": null,
       "custom_sid": null
@@ -341,9 +341,9 @@
     {
       "provider_nfhs_number": 34,
       "stream_id": 2070331,
-      "title": "NFHS Network 34: Portsmouth High School vs. North Kingstown High School Freshman Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 34: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238337,
       "epg_channel_id": null,
       "custom_sid": null
@@ -351,9 +351,9 @@
     {
       "provider_nfhs_number": 35,
       "stream_id": 2070330,
-      "title": "NFHS Network 35: Kress High School vs. Petersburg High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 35: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238336,
       "epg_channel_id": null,
       "custom_sid": null
@@ -361,9 +361,9 @@
     {
       "provider_nfhs_number": 36,
       "stream_id": 2070329,
-      "title": "NFHS Network 36: Harriman High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 36: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238336,
       "epg_channel_id": null,
       "custom_sid": null
@@ -371,9 +371,9 @@
     {
       "provider_nfhs_number": 37,
       "stream_id": 2070328,
-      "title": "NFHS Network 37: Sanderson High School vs. Cary High School Varsity Girls Flag Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 37: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238335,
       "epg_channel_id": null,
       "custom_sid": null
@@ -381,9 +381,9 @@
     {
       "provider_nfhs_number": 38,
       "stream_id": 2070327,
-      "title": "NFHS Network 38: Wickliffe high school vs. United High School 2026 OHSAA Girls Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 38: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238335,
       "epg_channel_id": null,
       "custom_sid": null
@@ -391,9 +391,9 @@
     {
       "provider_nfhs_number": 39,
       "stream_id": 2070326,
-      "title": "NFHS Network 39: Central Cabarrus High School vs. Jay M. Robinson High School Varsity Girls Flag Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 39: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238334,
       "epg_channel_id": null,
       "custom_sid": null
@@ -401,9 +401,9 @@
     {
       "provider_nfhs_number": 40,
       "stream_id": 2070325,
-      "title": "NFHS Network 40: Choteau High School vs. Shelby High School Middle School Boys Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 40: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238334,
       "epg_channel_id": null,
       "custom_sid": null
@@ -411,9 +411,9 @@
     {
       "provider_nfhs_number": 41,
       "stream_id": 2070324,
-      "title": "NFHS Network 41: Ron Brown High School vs. Anacostia High School Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 41: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238333,
       "epg_channel_id": null,
       "custom_sid": null
@@ -421,9 +421,9 @@
     {
       "provider_nfhs_number": 42,
       "stream_id": 2070323,
-      "title": "NFHS Network 42: Away vs. Abington Heights High School 2026 PIAA Girls Soccer Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 42: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238333,
       "epg_channel_id": null,
       "custom_sid": null
@@ -431,9 +431,9 @@
     {
       "provider_nfhs_number": 43,
       "stream_id": 2070322,
-      "title": "NFHS Network 43: Allegany-Limestone/Hinsdale vs Lafayette International 2026 NYSPHSAA Section VI B Boys Soccer Finals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 43: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238332,
       "epg_channel_id": null,
       "custom_sid": null
@@ -441,9 +441,9 @@
     {
       "provider_nfhs_number": 44,
       "stream_id": 2070321,
-      "title": "NFHS Network 44: Smyrna High School vs. St. Georges Technical High School Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 44: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238332,
       "epg_channel_id": null,
       "custom_sid": null
@@ -451,9 +451,9 @@
     {
       "provider_nfhs_number": 45,
       "stream_id": 2070320,
-      "title": "NFHS Network 45: Away vs. North Greene High School Middle School Boys Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 45: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238331,
       "epg_channel_id": null,
       "custom_sid": null
@@ -461,9 +461,9 @@
     {
       "provider_nfhs_number": 46,
       "stream_id": 2070319,
-      "title": "NFHS Network 46: McNicholas High School vs. Carroll High School Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 46: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238331,
       "epg_channel_id": null,
       "custom_sid": null
@@ -471,9 +471,9 @@
     {
       "provider_nfhs_number": 47,
       "stream_id": 2070318,
-      "title": "NFHS Network 47: Sparta High School vs. Morris Knolls High School Junior Varsity Field Hockey @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 47: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238330,
       "epg_channel_id": null,
       "custom_sid": null
@@ -481,9 +481,9 @@
     {
       "provider_nfhs_number": 48,
       "stream_id": 2070317,
-      "title": "NFHS Network 48: Post High School vs. Spur High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 48: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238330,
       "epg_channel_id": null,
       "custom_sid": null
@@ -491,9 +491,9 @@
     {
       "provider_nfhs_number": 49,
       "stream_id": 2070316,
-      "title": "NFHS Network 49: Advanced Math and Science Academy Charter School vs. Quaboag Regional High School Varsity Girls Soccer @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 49: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238329,
       "epg_channel_id": null,
       "custom_sid": null
@@ -501,9 +501,9 @@
     {
       "provider_nfhs_number": 50,
       "stream_id": 2070315,
-      "title": "NFHS Network 50: Lingle-Fort Laramie High School vs. Moorcroft Secondary School 2026 WHSAA Girls Volleyball Regional @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 50: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238329,
       "epg_channel_id": null,
       "custom_sid": null
@@ -511,9 +511,9 @@
     {
       "provider_nfhs_number": 51,
       "stream_id": 2070314,
-      "title": "NFHS Network 51: Springboro vs. Mason High School Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 51: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238328,
       "epg_channel_id": null,
       "custom_sid": null
@@ -521,9 +521,9 @@
     {
       "provider_nfhs_number": 52,
       "stream_id": 2070313,
-      "title": "NFHS Network 52: Away Team vs. Home Team 2026 WHSAA Girls Volleyball Postseason Tournament @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 52: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238328,
       "epg_channel_id": null,
       "custom_sid": null
@@ -531,9 +531,9 @@
     {
       "provider_nfhs_number": 53,
       "stream_id": 2070312,
-      "title": "NFHS Network 53: Cheyenne South High School vs. Laramie High School 2026 WHSAA Girls Volleyball Regional @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 53: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238327,
       "epg_channel_id": null,
       "custom_sid": null
@@ -541,9 +541,9 @@
     {
       "provider_nfhs_number": 54,
       "stream_id": 2070311,
-      "title": "NFHS Network 54: Princeton High School vs. Celina High School Junior Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 54: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238327,
       "epg_channel_id": null,
       "custom_sid": null
@@ -551,9 +551,9 @@
     {
       "provider_nfhs_number": 55,
       "stream_id": 2070310,
-      "title": "NFHS Network 55: Del Norte Jr/Sr High School vs. Meeker High School Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 55: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238326,
       "epg_channel_id": null,
       "custom_sid": null
@@ -561,9 +561,9 @@
     {
       "provider_nfhs_number": 56,
       "stream_id": 2070309,
-      "title": "NFHS Network 56: Nipmuc Regional High School vs. Quaboag Regional High School Varsity Field Hockey @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 56: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238326,
       "epg_channel_id": null,
       "custom_sid": null
@@ -571,9 +571,9 @@
     {
       "provider_nfhs_number": 57,
       "stream_id": 2070308,
-      "title": "NFHS Network 57: Green Mountain High School vs. Conifer High School Junior Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 57: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238325,
       "epg_channel_id": null,
       "custom_sid": null
@@ -581,9 +581,9 @@
     {
       "provider_nfhs_number": 58,
       "stream_id": 2070307,
-      "title": "NFHS Network 58: Away vs. Nolensville High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 58: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238325,
       "epg_channel_id": null,
       "custom_sid": null
@@ -591,9 +591,9 @@
     {
       "provider_nfhs_number": 59,
       "stream_id": 2070306,
-      "title": "NFHS Network 59: Middletown High School vs. Pilgrim High School Junior Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 59: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238324,
       "epg_channel_id": null,
       "custom_sid": null
@@ -601,9 +601,9 @@
     {
       "provider_nfhs_number": 60,
       "stream_id": 2070305,
-      "title": "NFHS Network 60: Reagan vs Cardinal Gibbons 2026 NCHSAA 7A Womens Volleyball Championship @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 60: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238324,
       "epg_channel_id": null,
       "custom_sid": null
@@ -611,9 +611,9 @@
     {
       "provider_nfhs_number": 61,
       "stream_id": 2070304,
-      "title": "NFHS Network 61: Columbia Heights Education Campus vs. Eastern High School Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 61: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238323,
       "epg_channel_id": null,
       "custom_sid": null
@@ -621,9 +621,9 @@
     {
       "provider_nfhs_number": 62,
       "stream_id": 2070303,
-      "title": "NFHS Network 62: Middle Park High School vs. North Fork High School Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 62: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238323,
       "epg_channel_id": null,
       "custom_sid": null
@@ -631,9 +631,9 @@
     {
       "provider_nfhs_number": 63,
       "stream_id": 2070302,
-      "title": "NFHS Network 63: Denver City High School vs. Whiteface High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 63: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238322,
       "epg_channel_id": null,
       "custom_sid": null
@@ -641,9 +641,9 @@
     {
       "provider_nfhs_number": 64,
       "stream_id": 2070301,
-      "title": "NFHS Network 64: Springboro vs. Mason High School 2026 OHSAA Girls Volleyball Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 64: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238322,
       "epg_channel_id": null,
       "custom_sid": null
@@ -651,9 +651,9 @@
     {
       "provider_nfhs_number": 65,
       "stream_id": 2070300,
-      "title": "NFHS Network 65: Riverheads High School vs. Wilson Memorial High School 2026 VHSL Girls Volleyball Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 65: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238321,
       "epg_channel_id": null,
       "custom_sid": null
@@ -661,9 +661,9 @@
     {
       "provider_nfhs_number": 66,
       "stream_id": 2070299,
-      "title": "NFHS Network 66: Slidell High School vs. Metairie Park Country Day School Junior Varsity Girls Volleyball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 66: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238321,
       "epg_channel_id": null,
       "custom_sid": null
@@ -671,9 +671,9 @@
     {
       "provider_nfhs_number": 67,
       "stream_id": 2070298,
-      "title": "NFHS Network 67: West Seneca vs Lancaster 2026 NYSPHSAA Section VI AAA Girls Soccer Finals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 67: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238320,
       "epg_channel_id": null,
       "custom_sid": null
@@ -681,9 +681,9 @@
     {
       "provider_nfhs_number": 68,
       "stream_id": 2070297,
-      "title": "NFHS Network 68: Away vs. Marion County High School Middle School Boys Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 68: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238320,
       "epg_channel_id": null,
       "custom_sid": null
@@ -691,9 +691,9 @@
     {
       "provider_nfhs_number": 69,
       "stream_id": 2070295,
-      "title": "NFHS Network 69: Enterprise High School vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 69: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238319,
       "epg_channel_id": null,
       "custom_sid": null
@@ -701,9 +701,9 @@
     {
       "provider_nfhs_number": 70,
       "stream_id": 2070294,
-      "title": "NFHS Network 70: Away vs. Lorenzo High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 70: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238319,
       "epg_channel_id": null,
       "custom_sid": null
@@ -711,9 +711,9 @@
     {
       "provider_nfhs_number": 71,
       "stream_id": 2070293,
-      "title": "NFHS Network 71: Cape Henlopen High School vs. Polytech High School Varsity Boys Soccer @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 71: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238318,
       "epg_channel_id": null,
       "custom_sid": null
@@ -721,9 +721,9 @@
     {
       "provider_nfhs_number": 72,
       "stream_id": 2070292,
-      "title": "NFHS Network 72: Denver South High School vs. Brighton High School Freshman Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 72: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238318,
       "epg_channel_id": null,
       "custom_sid": null
@@ -731,9 +731,9 @@
     {
       "provider_nfhs_number": 73,
       "stream_id": 2070291,
-      "title": "NFHS Network 73: Hayfield Secondary School 2026 VHSL Coed Cheerleading And Dance Regional @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 73: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238317,
       "epg_channel_id": null,
       "custom_sid": null
@@ -741,9 +741,9 @@
     {
       "provider_nfhs_number": 74,
       "stream_id": 2070290,
-      "title": "NFHS Network 74: Bishop Brady High School vs. Epping High School Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 74: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238317,
       "epg_channel_id": null,
       "custom_sid": null
@@ -751,9 +751,9 @@
     {
       "provider_nfhs_number": 75,
       "stream_id": 2070289,
-      "title": "NFHS Network 75: Holy Cross School vs. John Curtis Christian School Middle School Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 75: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238316,
       "epg_channel_id": null,
       "custom_sid": null
@@ -761,9 +761,9 @@
     {
       "provider_nfhs_number": 76,
       "stream_id": 2070288,
-      "title": "NFHS Network 76: Severance High School vs. Broomfield High School Sophomore Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 76: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238316,
       "epg_channel_id": null,
       "custom_sid": null
@@ -771,9 +771,9 @@
     {
       "provider_nfhs_number": 77,
       "stream_id": 2070287,
-      "title": "NFHS Network 77: Hagerman vs. Valley 2026 IDHSAA 2A Girls Volleyball Championship Match #11 @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 77: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238315,
       "epg_channel_id": null,
       "custom_sid": null
@@ -781,9 +781,9 @@
     {
       "provider_nfhs_number": 78,
       "stream_id": 2070286,
-      "title": "NFHS Network 78: Bluffton High School vs. Frankton High School Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 78: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238315,
       "epg_channel_id": null,
       "custom_sid": null
@@ -791,9 +791,9 @@
     {
       "provider_nfhs_number": 79,
       "stream_id": 2070284,
-      "title": "NFHS Network 79: Daleville High School vs. Northside Methodist Academy Middle School Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 79: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238314,
       "epg_channel_id": null,
       "custom_sid": null
@@ -801,9 +801,9 @@
     {
       "provider_nfhs_number": 80,
       "stream_id": 2070283,
-      "title": "NFHS Network 80: Mount Notre Dame 2026 OHSAA Girls Volleyball Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 80: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238313,
       "epg_channel_id": null,
       "custom_sid": null
@@ -811,9 +811,9 @@
     {
       "provider_nfhs_number": 81,
       "stream_id": 2070282,
-      "title": "NFHS Network 81: Blackwell vs. Zephyr vs. Robert Lee High School Junior Varsity Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 81: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238313,
       "epg_channel_id": null,
       "custom_sid": null
@@ -821,9 +821,9 @@
     {
       "provider_nfhs_number": 82,
       "stream_id": 2070281,
-      "title": "NFHS Network 82: Burnt Hills vs Bethlehem 2026 NYSPHSAA Section 2 AA Boys Soccer Finals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 82: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238312,
       "epg_channel_id": null,
       "custom_sid": null
@@ -831,9 +831,9 @@
     {
       "provider_nfhs_number": 83,
       "stream_id": 2070280,
-      "title": "NFHS Network 83: United High School vs. Central Christian High School Varsity Boys Soccer @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 83: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238312,
       "epg_channel_id": null,
       "custom_sid": null
@@ -841,9 +841,9 @@
     {
       "provider_nfhs_number": 84,
       "stream_id": 2070279,
-      "title": "NFHS Network 84: Notre Dame Prep High School vs. Bethel High School Junior Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 84: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238311,
       "epg_channel_id": null,
       "custom_sid": null
@@ -851,9 +851,9 @@
     {
       "provider_nfhs_number": 85,
       "stream_id": 2070278,
-      "title": "NFHS Network 85: Hartford vs Northville 2026 NYSPHSAA Section 2 D Boys Soccer Finals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 85: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238311,
       "epg_channel_id": null,
       "custom_sid": null
@@ -861,9 +861,9 @@
     {
       "provider_nfhs_number": 86,
       "stream_id": 2070277,
-      "title": "NFHS Network 86: Lovett vs Hebron Christian 2026 GHSA Private Girls Volleyball Championship @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 86: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238310,
       "epg_channel_id": null,
       "custom_sid": null
@@ -871,9 +871,9 @@
     {
       "provider_nfhs_number": 87,
       "stream_id": 2070276,
-      "title": "NFHS Network 87: Northport vs West Islip 2026 NYSPHSAA Section XI AA Girls Soccer Finals @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 87: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238310,
       "epg_channel_id": null,
       "custom_sid": null
@@ -881,9 +881,9 @@
     {
       "provider_nfhs_number": 88,
       "stream_id": 2070275,
-      "title": "NFHS Network 88: Rocky Mountain High School vs. Fort Collins High School Freshman Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 88: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238309,
       "epg_channel_id": null,
       "custom_sid": null
@@ -891,9 +891,9 @@
     {
       "provider_nfhs_number": 89,
       "stream_id": 2070274,
-      "title": "NFHS Network 89: Sharon High School vs. Joseph Case High School Junior Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 89: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238309,
       "epg_channel_id": null,
       "custom_sid": null
@@ -901,9 +901,9 @@
     {
       "provider_nfhs_number": 90,
       "stream_id": 2070273,
-      "title": "NFHS Network 90: Wilson Preparatory Academy 2026 NCHSAA Girls Flag Football Playoffs @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 90: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238308,
       "epg_channel_id": null,
       "custom_sid": null
@@ -911,9 +911,9 @@
     {
       "provider_nfhs_number": 91,
       "stream_id": 2070272,
-      "title": "NFHS Network 91: Away vs. St. Mary's Episcopal School Middle School Girls Basketball @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 91: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238308,
       "epg_channel_id": null,
       "custom_sid": null
@@ -921,9 +921,9 @@
     {
       "provider_nfhs_number": 92,
       "stream_id": 2070271,
-      "title": "NFHS Network 92: Rockville High School vs. Windsor Locks High School Junior Varsity Football @ 31 Oct 11:00 AM ET",
-      "provider_start": "2026-10-31T11:00:00.000-04:00",
-      "provider_day": "2026-10-31",
+      "title": "NFHS Network 92: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238307,
       "epg_channel_id": null,
       "custom_sid": null
@@ -9182,7 +9182,7 @@
       "provider_nfhs_number": 918,
       "stream_id": 2069429,
       "title": "NFHS Network 918: La Cueva High School vs. Sandia High School Varsity Football @ 1 Nov 01:00 AM ET",
-      "provider_start": "2026-11-01T01:00:00.000-04:00",
+      "provider_start": "2026-11-01T01:00:00.000-05:00",
       "provider_day": "2026-11-01",
       "added": 1789237877,
       "epg_channel_id": null,
@@ -9192,7 +9192,7 @@
       "provider_nfhs_number": 919,
       "stream_id": 2069428,
       "title": "NFHS Network 919: Campolindo High School Middle School Boys Other Sports @ 1 Nov 01:00 AM ET",
-      "provider_start": "2026-11-01T01:00:00.000-04:00",
+      "provider_start": "2026-11-01T01:00:00.000-05:00",
       "provider_day": "2026-11-01",
       "added": 1789237877,
       "epg_channel_id": null,
@@ -9202,7 +9202,7 @@
       "provider_nfhs_number": 920,
       "stream_id": 2069427,
       "title": "NFHS Network 920: Capital High School vs. Timberline High School 2026 WIAA Football Playoffs @ 1 Nov 01:30 AM ET",
-      "provider_start": "2026-11-01T01:30:00.000-04:00",
+      "provider_start": "2026-11-01T01:30:00.000-05:00",
       "provider_day": "2026-11-01",
       "added": 1789237876,
       "epg_channel_id": null,
