@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-31T18:55:12.950-04:00",
+  "generated_at": "2026-10-31T23:03:22.406-04:00",
   "eastern_date": "2026-10-31",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 21,
-  "georgia_channel_count": 4,
-  "currently_live_estimate": 2,
-  "upcoming_next_7_days": 1,
-  "completed_today_but_still_visible": 17,
+  "georgia_channel_count": 1,
+  "currently_live_estimate": 1,
+  "upcoming_next_7_days": 0,
+  "completed_today_but_still_visible": 20,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,77 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2069687",
-      "stream_id": 2069687,
-      "extension": "ts",
-      "original_name": "NFHS Network 664: Wesleyan School vs. KIPP Atlanta Collegiate Varsity Football @ 31 Oct 03:45 PM ET",
-      "name": "Wesleyan School vs. KIPP Atlanta Collegiate Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T15:45:00.000-04:00",
-      "stop": "2026-10-31T19:15:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "Wesleyan School",
-        "KIPP Atlanta Collegiate"
-      ],
-      "matched_schools": [
-        {
-          "team": "Wesleyan School",
-          "core": "wesleyan",
-          "confidence": 1
-        },
-        {
-          "team": "KIPP Atlanta Collegiate",
-          "core": "kipp atlanta collegiate",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069592",
-      "stream_id": 2069592,
-      "extension": "ts",
-      "original_name": "NFHS Network 755: Away vs. Wayne County High School Varsity Girls Basketball @ 31 Oct 04:15 PM ET",
-      "name": "Away vs. Wayne County High School Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T16:15:00.000-04:00",
-      "stop": "2026-10-31T18:45:00.000-04:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Wayne County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Wayne County High School",
-          "core": "wayne county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2069567",
-      "stream_id": 2069567,
-      "extension": "ts",
-      "original_name": "NFHS Network 780: The King's Academy vs. Menlo School Varsity Football @ 31 Oct 05:00 PM ET",
-      "name": "The King's Academy vs. Menlo School Varsity Football",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-10-31T17:00:00.000-04:00",
-      "stop": "2026-10-31T20:30:00.000-04:00",
-      "sport": "Football",
-      "teams": [
-        "The King's Academy",
-        "Menlo School"
-      ],
-      "matched_schools": [
-        {
-          "team": "The King's Academy",
-          "core": "king s academy",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2069439",
       "stream_id": 2069439,
