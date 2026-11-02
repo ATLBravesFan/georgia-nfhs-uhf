@@ -1,18 +1,17 @@
 {
-  "captured_at": "2026-11-01T14:56:54.063Z",
+  "captured_at": "2026-11-02T09:38:16.255Z",
   "category": "USA | NFHS Network",
   "stream_count": 5000,
   "title_day_counts": {
-    "2026-11-01": 7,
-    "undated": 4993
+    "undated": 5000
   },
   "rows": [
     {
       "provider_nfhs_number": 1,
       "stream_id": 2070364,
-      "title": "NFHS Network 01: Capital High School vs. Timberline High School 2026 WIAA Football Playoffs @ 1 Nov 01:30 AM ET",
-      "provider_start": "2026-11-01T01:30:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 01: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238354,
       "epg_channel_id": null,
       "custom_sid": null
@@ -20,9 +19,9 @@
     {
       "provider_nfhs_number": 2,
       "stream_id": 2070363,
-      "title": "NFHS Network 02: Fountain Hills High School Middle School Football - Part 2 @ 1 Nov 02:00 AM ET",
-      "provider_start": "2026-11-01T02:00:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 02: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -30,9 +29,9 @@
     {
       "provider_nfhs_number": 3,
       "stream_id": 2070362,
-      "title": "NFHS Network 03: Kingston High School vs. Franklin Pierce High School 2026 WIAA Girls Soccer Playoffs @ 1 Nov 02:00 AM ET",
-      "provider_start": "2026-11-01T02:00:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 03: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -40,9 +39,9 @@
     {
       "provider_nfhs_number": 4,
       "stream_id": 2070361,
-      "title": "NFHS Network 04: Rock Canyon High School vs. Fossil Ridge High School Junior Varsity Boys Basketball @ 1 Nov 06:00 AM ET",
-      "provider_start": "2026-11-01T06:00:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 04: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -50,9 +49,9 @@
     {
       "provider_nfhs_number": 5,
       "stream_id": 2070360,
-      "title": "NFHS Network 05: Harvey School Middle School Boys Ice Hockey @ 1 Nov 09:05 AM ET",
-      "provider_start": "2026-11-01T09:05:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 05: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -60,9 +59,9 @@
     {
       "provider_nfhs_number": 6,
       "stream_id": 2070359,
-      "title": "NFHS Network 06: Bow High School vs. Laconia High School Middle School Football @ 1 Nov 10:00 AM ET",
-      "provider_start": "2026-11-01T10:00:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 06: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -70,9 +69,9 @@
     {
       "provider_nfhs_number": 7,
       "stream_id": 2070358,
-      "title": "NFHS Network 07: All Cheers Varsity Girls Cheerleading And Dance @ 1 Nov 10:00 AM ET",
-      "provider_start": "2026-11-01T10:00:00.000-05:00",
-      "provider_day": "2026-11-01",
+      "title": "NFHS Network 07: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null

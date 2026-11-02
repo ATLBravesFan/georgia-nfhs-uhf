@@ -203062,15 +203062,145 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-02T09:38:16.255Z",
+      "previous_latest_title_day": "2026-11-01",
+      "latest_title_day": null,
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 7,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: Capital High School vs. Timberline High School 2026 WIAA Football Playoffs @ 1 Nov 01:30 AM ET",
+              "after": "NFHS Network 01: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T01:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: Fountain Hills High School Middle School Football - Part 2 @ 1 Nov 02:00 AM ET",
+              "after": "NFHS Network 02: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: Kingston High School vs. Franklin Pierce High School 2026 WIAA Girls Soccer Playoffs @ 1 Nov 02:00 AM ET",
+              "after": "NFHS Network 03: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Rock Canyon High School vs. Fossil Ridge High School Junior Varsity Boys Basketball @ 1 Nov 06:00 AM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T06:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: Harvey School Middle School Boys Ice Hockey @ 1 Nov 09:05 AM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T09:05:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: Bow High School vs. Laconia High School Middle School Football @ 1 Nov 10:00 AM ET",
+              "after": "NFHS Network 06: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T10:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: All Cheers Varsity Girls Cheerleading And Dance @ 1 Nov 10:00 AM ET",
+              "after": "NFHS Network 07: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-01T10:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-01",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-01T14:56:54.063Z",
+  "last_change_at": "2026-11-02T09:38:16.255Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": "2026-11-01",
+    "latest_title_day": null,
     "title_day_counts": {
-      "2026-11-01": 7,
-      "undated": 4993
+      "undated": 5000
     }
   }
 }
