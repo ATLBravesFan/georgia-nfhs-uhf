@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-03T12:25:04.749-05:00",
+  "generated_at": "2026-11-03T17:40:14.125-05:00",
   "eastern_date": "2026-11-03",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 33,
-  "georgia_channel_count": 33,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 33,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 32,
+  "currently_live_estimate": 3,
+  "upcoming_next_7_days": 29,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,27 +26,6 @@
   },
   "school_name_count": 664,
   "channels": [
-    {
-      "id": "ga-nfhs-2070339",
-      "stream_id": 2070339,
-      "extension": "ts",
-      "original_name": "NFHS Network 26: Furtah Preparatory School Junior Varsity Boys Basketball @ 3 Nov 02:30 PM ET",
-      "name": "Furtah Preparatory School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-03T14:30:00.000-05:00",
-      "stop": "2026-11-03T17:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Furtah Preparatory School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Furtah Preparatory School",
-          "core": "furtah preparatory",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070301",
       "stream_id": 2070301,
