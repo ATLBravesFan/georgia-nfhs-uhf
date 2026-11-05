@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-04T14:01:39.127-05:00",
+  "generated_at": "2026-11-04T19:36:23.827-05:00",
   "eastern_date": "2026-11-04",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 20,
   "georgia_channel_count": 20,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 20,
+  "currently_live_estimate": 14,
+  "upcoming_next_7_days": 5,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
