@@ -246122,14 +246122,3546 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-06T23:17:22.060Z",
+      "previous_latest_title_day": null,
+      "latest_title_day": "2026-11-06",
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 207,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: NO EVENT",
+              "after": "NFHS Network 01: Ridgeview High School Middle School Girls Basketball @ 6 Nov 07:20 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:20:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: NO EVENT",
+              "after": "NFHS Network 02: McIntosh County Academy vs. Portal Middle High School Varsity Football @ 6 Nov 07:20 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:20:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: NO EVENT",
+              "after": "NFHS Network 03: Fleming Island High School Varsity Boys And Girls Basketball - Part 2 @ 6 Nov 07:20 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:20:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: NO EVENT",
+              "after": "NFHS Network 04: Pilot Rock High School vs. Enterprise High School Middle School Boys Basketball @ 6 Nov 07:24 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:24:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: NO EVENT",
+              "after": "NFHS Network 05: North Star High School vs. St Jude Thaddeus School Middle School Boys And Girls Basketball @ 6 Nov 07:25 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:25:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: NO EVENT",
+              "after": "NFHS Network 06: Commerce High School vs. Providence Christian Academy Varsity Football @ 6 Nov 07:25 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:25:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: NO EVENT",
+              "after": "NFHS Network 07: Jefferson County High School vs. Maryville High School Varsity Football @ 6 Nov 07:25 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:25:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: NO EVENT",
+              "after": "NFHS Network 08: Beaver Falls Area High School vs. McGuffey High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: NO EVENT",
+              "after": "NFHS Network 09: Gateway High School vs. West Allegheny High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: NO EVENT",
+              "after": "NFHS Network 10: Webster County High School vs. Byne Christian School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: NO EVENT",
+              "after": "NFHS Network 11: Falls Church High School vs. Justice High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: NO EVENT",
+              "after": "NFHS Network 12: Holy Rosery Academy Middle School Boys And Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: NO EVENT",
+              "after": "NFHS Network 13: Away vs. Oxford High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: NO EVENT",
+              "after": "NFHS Network 14: Frazier High School vs. Washington High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: NO EVENT",
+              "after": "NFHS Network 15: Evanston Township vs. East Aurora 2026 IHSA 3A Boys Soccer Semifinals #1 @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: NO EVENT",
+              "after": "NFHS Network 16: Hernando High School vs. Weeki Wachee High School Varsity Boys Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: NO EVENT",
+              "after": "NFHS Network 17: Timberview High School vs. Bowie High School - Arlington Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: NO EVENT",
+              "after": "NFHS Network 18: New Garden Friends School Varsity Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: NO EVENT",
+              "after": "NFHS Network 19: Away vs. Geneva High School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 20,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 20: NO EVENT",
+              "after": "NFHS Network 20: Marquette Senior High School vs. Escanaba High School Varsity Boys Ice Hockey @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 21,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 21: NO EVENT",
+              "after": "NFHS Network 21: Waynesburg Central High School vs. Aliquippa High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 22,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 22: NO EVENT",
+              "after": "NFHS Network 22: James H Blake High School vs. Laurel High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 23,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 23: NO EVENT",
+              "after": "NFHS Network 23: Monessen High School vs. Jeannette High School 2026 Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 24,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 24: NO EVENT",
+              "after": "NFHS Network 24: Hanover vs. Merrimack Valley High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 25,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 25: NO EVENT",
+              "after": "NFHS Network 25: Truckee High School vs. Virgin Valley High School 2026 NIAA Girls Volleyball Semifinal @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 26,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 26: NO EVENT",
+              "after": "NFHS Network 26: McKeel Academy vs. Lake Wales High School Junior Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 27,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 27: NO EVENT",
+              "after": "NFHS Network 27: Cloudland High School vs. Greenback School 2026 TSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 28,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 28: NO EVENT",
+              "after": "NFHS Network 28: Togiak School vs. Chief Ivan Blunka School Varsity Girls Volleyball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 29,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 29: NO EVENT",
+              "after": "NFHS Network 29: Weaver High School vs. Donoho School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 30,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 30: NO EVENT",
+              "after": "NFHS Network 30: Gulf Shores High School vs. Faith Academy Varsity Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 31,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 31: NO EVENT",
+              "after": "NFHS Network 31: Away vs. Brindlee Mountain High School Middle School Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 32,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 32: NO EVENT",
+              "after": "NFHS Network 32: Avella Area High School vs. Fort Cherry High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 33,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 33: NO EVENT",
+              "after": "NFHS Network 33: Forrest County Agricultural High School vs. Pearl River Central High School Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 34,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 34: NO EVENT",
+              "after": "NFHS Network 34: Blackstone Valley Regional Vocational Technical High School vs. Gloucester High School 2026 MIAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 35,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 35: NO EVENT",
+              "after": "NFHS Network 35: Cicero-North Syracuse High School vs. Christian Brothers Academy - Syracuse 2026 NYSPHSAASIII Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 36,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 36: NO EVENT",
+              "after": "NFHS Network 36: Joppatowne High School vs. Hereford High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 37,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 37: NO EVENT",
+              "after": "NFHS Network 37: James O'Neill vs. The Mount Academy 2026 NYSPHSAA Section IX B Girls Volleyball Finals @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 38,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 38: NO EVENT",
+              "after": "NFHS Network 38: Exeter-West Greenwich High School vs. Toll Gate High School 2026 RIIL Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 39,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 39: NO EVENT",
+              "after": "NFHS Network 39: Goodman High School vs. Wausaukee High School Middle School Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 40,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 40: NO EVENT",
+              "after": "NFHS Network 40: East Meadow High School vs. Farmingdale Senior High School 2026 Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 41,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 41: NO EVENT",
+              "after": "NFHS Network 41: Angleton High School vs. Barbers Hill High School Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 42,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 42: NO EVENT",
+              "after": "NFHS Network 42: Holy Cross High School vs. Woodland Regional High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 43,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 43: NO EVENT",
+              "after": "NFHS Network 43: Circle High School vs. Fairview High School Middle School Boys And Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 44,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 44: NO EVENT",
+              "after": "NFHS Network 44: Pope High School vs. Kell High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 45,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 45: NO EVENT",
+              "after": "NFHS Network 45: Richard Montgomery High School vs. Quince Orchard High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 46,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 46: NO EVENT",
+              "after": "NFHS Network 46: Lovell vs Mountain View 2026 WHSAA 3A Girls Volleyball Championship @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 47,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 47: NO EVENT",
+              "after": "NFHS Network 47: Uxbridge High School Varsity Field Hockey @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 48,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 48: NO EVENT",
+              "after": "NFHS Network 48: Minor High School vs. Talladega High School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 49,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 49: NO EVENT",
+              "after": "NFHS Network 49: Multi-team Event Varsity Girls Volleyball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 50,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 50: NO EVENT",
+              "after": "NFHS Network 50: Weston High School vs. Pomperaug High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 51,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 51: NO EVENT",
+              "after": "NFHS Network 51: Gulf Breeze High School vs. Biloxi High School Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 52,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 52: NO EVENT",
+              "after": "NFHS Network 52: Lee High School vs. Abingdon High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 53,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 53: NO EVENT",
+              "after": "NFHS Network 53: Linden High School vs. Lake Fenton High School 2026 MHSAA Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 54,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 54: NO EVENT",
+              "after": "NFHS Network 54: Timnath High School 2026 CHSAA Girls Volleyball Regional @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 55,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 55: NO EVENT",
+              "after": "NFHS Network 55: Galena Park North Shore High School vs. Shadow Creek High School Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 56,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 56: NO EVENT",
+              "after": "NFHS Network 56: Pell City High School vs. Russellville High School 2026 Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 57,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 57: NO EVENT",
+              "after": "NFHS Network 57: Hoover High School Junior Varsity Boys Wrestling @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 58,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 58: NO EVENT",
+              "after": "NFHS Network 58: Cokeville vs Upton 2026 WHSAA 1A Girls Volleyball Championship @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 59,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 59: NO EVENT",
+              "after": "NFHS Network 59: Northside Christian School vs. Ascension Christian High School 2026 LHSAA Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 60,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 60: NO EVENT",
+              "after": "NFHS Network 60: Montgomery Blair High School vs. Paint Branch High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 61,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 61: NO EVENT",
+              "after": "NFHS Network 61: None Varsity Girls Volleyball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 62,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 62: NO EVENT",
+              "after": "NFHS Network 62: Away vs. Austwell-Tivoli High School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 63,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 63: NO EVENT",
+              "after": "NFHS Network 63: Muskegon Catholic Central High School vs. Mason County Eastern High School 2026 MHSAA Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 64,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 64: NO EVENT",
+              "after": "NFHS Network 64: Away vs. Savoy High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 65,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 65: NO EVENT",
+              "after": "NFHS Network 65: James H Blake High School vs. Richard Montgomery High School 2026 MPSSAA Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 66,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 66: NO EVENT",
+              "after": "NFHS Network 66: Away vs. Midlothian High School Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 67,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 67: NO EVENT",
+              "after": "NFHS Network 67: Woodstock Academy High School vs. New London High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 68,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 68: NO EVENT",
+              "after": "NFHS Network 68: Diman Regional Vocational Technical High School vs. Somerset Berkley Regional High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 69,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 69: NO EVENT",
+              "after": "NFHS Network 69: Hingham High School vs. Milton High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 70,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 70: NO EVENT",
+              "after": "NFHS Network 70: Cody vs Thunder Basin 2026 WHSAA 4A Girls Volleyball Championship @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 71,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 71: NO EVENT",
+              "after": "NFHS Network 71: Mountain Ridge High School vs. Fort Hill High School 2026 MPSSAA Girls Volleyball Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 72,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 72: NO EVENT",
+              "after": "NFHS Network 72: Riverwood vs. Pace Academy Junior Varsity Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 73,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 73: NO EVENT",
+              "after": "NFHS Network 73: None Chesapeake Cougars vs Reservoir Gators @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 74,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 74: NO EVENT",
+              "after": "NFHS Network 74: Away vs. Travis High School - Fort Bend Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 75,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 75: NO EVENT",
+              "after": "NFHS Network 75: Away vs. Roby High School Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 76,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 76: NO EVENT",
+              "after": "NFHS Network 76: Escambia High School vs. West Florida High School - Tech Junior Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 77,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 77: NO EVENT",
+              "after": "NFHS Network 77: Kemmerer vs Southeast 2026 WHSAA 2A Girls Volleyball Championship @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 78,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 78: NO EVENT",
+              "after": "NFHS Network 78: Fort Morgan High School vs. Glenwood Springs High School Varsity Girls Volleyball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 79,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 79: NO EVENT",
+              "after": "NFHS Network 79: Branford High School vs. Guilford High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 80,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 80: NO EVENT",
+              "after": "NFHS Network 80: Notre Dame High School - Elmira Varsity Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 81,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 81: NO EVENT",
+              "after": "NFHS Network 81: Land O' Lakes High School vs. Anclote High School Varsity Boys Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 82,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 82: NO EVENT",
+              "after": "NFHS Network 82: Sport and Medical Sciences Academy vs. Stafford High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 83,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 83: NO EVENT",
+              "after": "NFHS Network 83: North Caroline High School vs. Largo High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 84,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 84: NO EVENT",
+              "after": "NFHS Network 84: West Greene High School vs. Eagleton College and Career Academy 2026 TSSAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 85,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 85: NO EVENT",
+              "after": "NFHS Network 85: Cheshire High School vs. Mark T Sheehan High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 86,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 86: NO EVENT",
+              "after": "NFHS Network 86: Danbury High School vs. Van Vleck High School Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 87,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 87: NO EVENT",
+              "after": "NFHS Network 87: Nolan Catholic High School vs. Everman High School Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 88,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 88: NO EVENT",
+              "after": "NFHS Network 88: Burgettstown Area High School vs. Bethlehem Center High School 2026 WPIAL Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 89,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 89: NO EVENT",
+              "after": "NFHS Network 89: Gulf Shores High School vs. Faith Christian School Varsity Boys Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 90,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 90: NO EVENT",
+              "after": "NFHS Network 90: Katy High School vs. Bush High School - Fort Bend Junior Varsity Girls Basketball @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 91,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 91: NO EVENT",
+              "after": "NFHS Network 91: Ridgeland High School vs. Vicksburg High School Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 92,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 92: NO EVENT",
+              "after": "NFHS Network 92: East Laurens High School vs. Dublin High School Varsity Football @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 93,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 93: NO EVENT",
+              "after": "NFHS Network 93: Philipsburg Osceola Area High School vs. Central High School - Martinsburg 2026 PIAA Football Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 94,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 94: NO EVENT",
+              "after": "NFHS Network 94: Santa Fe Catholic High School vs. Lake Gibson High School Varsity Girls Soccer @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 95,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 95: NO EVENT",
+              "after": "NFHS Network 95: Wheaton High School vs. Urbana High School 2026 MPSSAA Boys Soccer Playoffs @ 6 Nov 07:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 96,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 96: NO EVENT",
+              "after": "NFHS Network 96: Princeton High School vs. Prosper High School Varsity Football @ 6 Nov 07:35 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:35:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 97,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 97: NO EVENT",
+              "after": "NFHS Network 97: Deep Run High School vs. Mills E. Godwin High School Varsity Football @ 6 Nov 07:35 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:35:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 98,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 98: NO EVENT",
+              "after": "NFHS Network 98: Armada High School vs. Frankenmuth High School 2026 MHSAA Football Playoffs @ 6 Nov 07:40 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:40:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 99,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 99: NO EVENT",
+              "after": "NFHS Network 99: Chautauqua Lake Senior High School vs. Falconer Senior High School 2026 NYSPHSAASVI Football Semifinal @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 100,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 100: NO EVENT",
+              "after": "NFHS Network 100: Cozad High School vs. Syracuse High School 2026 NSAA Football Quarterfinal @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 101,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 101: NO EVENT",
+              "after": "NFHS Network 101: 2026 Winter Sports Warrior Madness 2026 Winter Sports WARRIOR MADNESS @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 102,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 102: NO EVENT",
+              "after": "NFHS Network 102: Caesar Rodney High School vs. Cape Henlopen High School Varsity Football @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 103,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 103: NO EVENT",
+              "after": "NFHS Network 103: Indian Springs School vs. Westminster School at Oak Mountain Varsity Girls Basketball @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 104,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 104: NO EVENT",
+              "after": "NFHS Network 104: Everett Area High School vs. North Star High School 2026 PIAA Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 105,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 105: NO EVENT",
+              "after": "NFHS Network 105: Fort LeBoeuf High School vs. Corry Area High School 2026 Football Quarterfinal @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 106,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 106: NO EVENT",
+              "after": "NFHS Network 106: Rocky Mountain Lutheran High School vs. Swink High School 2026 Girls Volleyball Regional @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 107,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 107: NO EVENT",
+              "after": "NFHS Network 107: Powder River County High School vs. Forsyth High School Middle School Boys Basketball @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 108,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 108: NO EVENT",
+              "after": "NFHS Network 108: Olivet High School vs. Belding High School 2026 MHSAA Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 109,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 109: NO EVENT",
+              "after": "NFHS Network 109: Hicks High School vs. Simpson High School Varsity Boys And Girls Basketball @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 110,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 110: NO EVENT",
+              "after": "NFHS Network 110: Butternut High School vs. South Shore High School Middle School Boys Basketball @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 111,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 111: NO EVENT",
+              "after": "NFHS Network 111: Chilhowie High School vs. Holston High School Varsity Football @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 112,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 112: NO EVENT",
+              "after": "NFHS Network 112: Veribest High School vs. Fort Davis High School 2026 UIL Girls Volleyball Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 113,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 113: NO EVENT",
+              "after": "NFHS Network 113: West Muskingum vs. Indian Valley 2026 Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 114,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 114: NO EVENT",
+              "after": "NFHS Network 114: Humble High School vs. West Fork High School Junior Varsity Girls Basketball @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 115,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 115: NO EVENT",
+              "after": "NFHS Network 115: Strasburg High School vs. Central High School - Woodstock Varsity Football @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 116,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 116: NO EVENT",
+              "after": "NFHS Network 116: Moon Area High School vs. Thomas Jefferson High School 2026 WPIAL Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 117,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 117: NO EVENT",
+              "after": "NFHS Network 117: Lewis and Clark High School vs. Puyallup High School 2026 WIAA Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 118,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 118: NO EVENT",
+              "after": "NFHS Network 118: Northern Garrett High School vs. Mountain Ridge High School 2026 MPSSAA Football Playoffs @ 6 Nov 07:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 119,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 119: NO EVENT",
+              "after": "NFHS Network 119: Northern Bedford County High School vs. Conemaugh Township Area High School 2026 PIAA Football Playoffs @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 120,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 120: NO EVENT",
+              "after": "NFHS Network 120: Agra High School vs. Carney High School Varsity Girls Basketball @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 121,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 121: NO EVENT",
+              "after": "NFHS Network 121: Central High School vs. Cyril High School Varsity Football @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 122,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 122: NO EVENT",
+              "after": "NFHS Network 122: Butler High School vs. Hasbrouck Heights High School 2026 NJSIAA Football Playoffs @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 123,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 123: NO EVENT",
+              "after": "NFHS Network 123: Leander Glenn High School vs. Montgomery High School 2026 UIL Girls Volleyball Playoffs @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 124,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 124: NO EVENT",
+              "after": "NFHS Network 124: Wallace High School vs. Southwest High School 2026 NSAA Football Playoffs @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 125,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 125: NO EVENT",
+              "after": "NFHS Network 125: Weir High School vs. Brooke High School Varsity Football @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 126,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 126: NO EVENT",
+              "after": "NFHS Network 126: South Christian High School vs. Lakeshore High School 2026 MHSAA Football Playoffs @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 127,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 127: NO EVENT",
+              "after": "NFHS Network 127: Coleman High School vs. Turner High School Varsity Boys And Girls Basketball @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 128,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 128: NO EVENT",
+              "after": "NFHS Network 128: Teaneck High School vs. Middletown North High School 2026 NJSIAA North Jersey Sect. 2 Group 4 Football Semifinal @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 129,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 129: NO EVENT",
+              "after": "NFHS Network 129: Lebanon High School Middle School Boys Basketball @ 6 Nov 07:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 130,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 130: NO EVENT",
+              "after": "NFHS Network 130: Bokoshe High School vs. McCurtain High School Varsity Girls Basketball @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 131,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 131: NO EVENT",
+              "after": "NFHS Network 131: Crofton High School vs. Ravenna High School 2026 NSAA Football Quarterfinal @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 132,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 132: NO EVENT",
+              "after": "NFHS Network 132: Woodbridge Senior High School vs. Gar-Field High School Varsity Football @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 133,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 133: NO EVENT",
+              "after": "NFHS Network 133: Copper Basin High School vs. Clay County High School 2026 TSSAA Football Playoffs @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 134,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 134: NO EVENT",
+              "after": "NFHS Network 134: Jackson High School vs. Steubenville High School 2026 OHSAA Football Quarterfinal @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 135,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 135: NO EVENT",
+              "after": "NFHS Network 135: Newcomerstown High School vs. Monroe Central High School 2026 Football Playoffs @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 136,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 136: NO EVENT",
+              "after": "NFHS Network 136: Prince Avenue Christian School vs. Rabun County High School Varsity Football @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 137,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 137: NO EVENT",
+              "after": "NFHS Network 137: Tri-County (co-op w/ Oakland & Kansas HS) vs. Windsor High School Middle School Boys Basketball @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 138,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 138: NO EVENT",
+              "after": "NFHS Network 138: F.C. Boyd Christian School vs. Van Buren County High School Middle School Boys And Girls Basketball @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 139,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 139: NO EVENT",
+              "after": "NFHS Network 139: Stonewall High School vs. Tupelo High School Varsity Girls Basketball @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 140,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 140: NO EVENT",
+              "after": "NFHS Network 140: Ludington High School vs. Kenowa Hills High School 2026 MHSAA Football Playoffs @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 141,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 141: NO EVENT",
+              "after": "NFHS Network 141: Episcopal School of Jacksonville vs. Seffner Christian Academy 2026 FHSAA Football Playoffs @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 142,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 142: NO EVENT",
+              "after": "NFHS Network 142: Santa Fe Unit School vs. Richland High School Middle School Girls Basketball @ 6 Nov 07:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T19:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 143,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 143: NO EVENT",
+              "after": "NFHS Network 143: presented by the FRA Student Broadcast Team 2026 FRAllege Game Day @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 144,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 144: NO EVENT",
+              "after": "NFHS Network 144: Away vs. J.H. Rose High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 145,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 145: NO EVENT",
+              "after": "NFHS Network 145: Away vs. Lowville Academy High School 2026 NYSPHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 146,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 146: NO EVENT",
+              "after": "NFHS Network 146: Away vs. Big Walnut Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 147,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 147: NO EVENT",
+              "after": "NFHS Network 147: Yates Center High School vs. Clifton Clyde High School 2026 KSHSAA Football Regional @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 148,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 148: NO EVENT",
+              "after": "NFHS Network 148: Central Cabarrus High School vs. Ashbrook High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 149,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 149: NO EVENT",
+              "after": "NFHS Network 149: Salisbury High School vs. West Stanly High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 150,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 150: NO EVENT",
+              "after": "NFHS Network 150: George Rogers Clark High School vs. Paul Laurence Dunbar High School 2026 KHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 151,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 151: NO EVENT",
+              "after": "NFHS Network 151: East Davidson High School vs. West Davidson High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 152,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 152: NO EVENT",
+              "after": "NFHS Network 152: Deckerville Community High School vs. Dryden High School 2026 MHSAA Football Regional @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 153,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 153: NO EVENT",
+              "after": "NFHS Network 153: Grace Christian School vs. Grove Christian School 2026 VISAA Girls Volleyball Championship @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 154,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 154: NO EVENT",
+              "after": "NFHS Network 154: Montrose High School vs. Marine City High School 2026 MHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 155,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 155: NO EVENT",
+              "after": "NFHS Network 155: Away vs. Midway High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 156,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 156: NO EVENT",
+              "after": "NFHS Network 156: Martins Ferry High School vs. Barnesville High School 2026 OHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 157,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 157: NO EVENT",
+              "after": "NFHS Network 157: Away vs. Fultondale High School Middle School Boys Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 158,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 158: NO EVENT",
+              "after": "NFHS Network 158: Arcanum High School vs. Graham Local High School 2026 OHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 159,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 159: NO EVENT",
+              "after": "NFHS Network 159: Hawken High School vs. Notre Dame Cathedral Latin School 2026 OHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 160,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 160: NO EVENT",
+              "after": "NFHS Network 160: Skowhegan Area High School vs. Cony High School 2026 MPA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 161,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 161: NO EVENT",
+              "after": "NFHS Network 161: Wakefield High School vs. McLean High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 162,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 162: NO EVENT",
+              "after": "NFHS Network 162: Maynard High School vs. Murdock High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 163,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 163: NO EVENT",
+              "after": "NFHS Network 163: Traverse City St. Francis High School vs. Kingsley Area High School 2026 Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 164,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 164: NO EVENT",
+              "after": "NFHS Network 164: Allen High School vs. Wilson High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 165,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 165: NO EVENT",
+              "after": "NFHS Network 165: Coopersville High School vs. DeWitt High School 2026 MHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 166,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 166: NO EVENT",
+              "after": "NFHS Network 166: Willow Spring High School vs. Green Hope High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 167,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 167: NO EVENT",
+              "after": "NFHS Network 167: Dominion High School vs. Park View High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 168,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 168: NO EVENT",
+              "after": "NFHS Network 168: Salisbury High School vs. Higbee High School Middle School Boys And Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 169,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 169: NO EVENT",
+              "after": "NFHS Network 169: Monroe Area High School vs. West Hall High School Varsity Football (Monroe Area TV) @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 170,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 170: NO EVENT",
+              "after": "NFHS Network 170: Terry Sanford High School vs. Franklinton High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 171,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 171: NO EVENT",
+              "after": "NFHS Network 171: Westmoreland High School vs. Rappahannock High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 172,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 172: NO EVENT",
+              "after": "NFHS Network 172: South Lyon East High School vs. South Lyon High School 2026 MHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 173,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 173: NO EVENT",
+              "after": "NFHS Network 173: Westminster Schools vs. Greater Atlanta Christian School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 174,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 174: NO EVENT",
+              "after": "NFHS Network 174: East Columbus High School vs. Winston-Salem Prep Academy High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 175,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 175: NO EVENT",
+              "after": "NFHS Network 175: Shady Side Academy vs. Belle Vernon Area High School 2026 WPIAL Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 176,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 176: NO EVENT",
+              "after": "NFHS Network 176: Away vs. Southern Alamance High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 177,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 177: NO EVENT",
+              "after": "NFHS Network 177: Center Point High School vs. Tarrant High School Varsity Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 178,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 178: NO EVENT",
+              "after": "NFHS Network 178: Away vs. Pearl River Central High School Varsity Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 179,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 179: NO EVENT",
+              "after": "NFHS Network 179: Jamestown High School vs. New Kent High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 180,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 180: NO EVENT",
+              "after": "NFHS Network 180: Fayette Academy vs. Concord Christian School 2026 TSSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 181,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 181: NO EVENT",
+              "after": "NFHS Network 181: Away vs. Homestead High School Junior Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 182,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 182: NO EVENT",
+              "after": "NFHS Network 182: Broadway High School vs. Harrisonburg High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 183,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 183: NO EVENT",
+              "after": "NFHS Network 183: Orchard Park High School vs. West Seneca West Senior High School 2026 NYSPHSAASVI Football Semifinal @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 184,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 184: NO EVENT",
+              "after": "NFHS Network 184: Fort Cobb-Broxton High School vs. Navajo High School Varsity Boys And Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 185,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 185: NO EVENT",
+              "after": "NFHS Network 185: Macon County High School vs. Chattahoochee Co. High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 186,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 186: NO EVENT",
+              "after": "NFHS Network 186: Away vs. Hickory Flat High School Varsity Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 187,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 187: NO EVENT",
+              "after": "NFHS Network 187: Kenton Ridge vs. Wyoming High School 2026 OHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 188,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 188: NO EVENT",
+              "after": "NFHS Network 188: Away vs. Northwest Halifax High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 189,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 189: NO EVENT",
+              "after": "NFHS Network 189: Pickerington North High School vs. Worthington Kilbourne High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 190,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 190: NO EVENT",
+              "after": "NFHS Network 190: Union Area High School vs. Clairton High School 2026 Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 191,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 191: NO EVENT",
+              "after": "NFHS Network 191: Away vs. West Craven High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 192,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 192: NO EVENT",
+              "after": "NFHS Network 192: North Country Union vs. Colchester 2026 VPA Div 2 Football Semifinal #1 @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 193,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 193: NO EVENT",
+              "after": "NFHS Network 193: John Bapst Memorial High School vs. Maine Central Institute 2026 MPA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 194,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 194: NO EVENT",
+              "after": "NFHS Network 194: Hereford High School vs. Dimmitt High School Varsity Girls Basketball @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 195,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 195: NO EVENT",
+              "after": "NFHS Network 195: Elkin High School vs. Cherryville High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 196,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 196: NO EVENT",
+              "after": "NFHS Network 196: Overhills High School vs. Holly Springs High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 197,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 197: NO EVENT",
+              "after": "NFHS Network 197: Forestview High School vs. Forest Hills High School 2026 NCHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 198,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 198: NO EVENT",
+              "after": "NFHS Network 198: Eastern Guilford High School vs. Glenn High School 2026 Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 199,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 199: NO EVENT",
+              "after": "NFHS Network 199: Grand Blanc High School vs. Clarkston High School 2026 Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 200,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 200: NO EVENT",
+              "after": "NFHS Network 200: Ishpeming High School vs. Pickford High School 2026 MHSAA Football Regional @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 201,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 201: NO EVENT",
+              "after": "NFHS Network 201: Away vs. Tunstall High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 202,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 202: NO EVENT",
+              "after": "NFHS Network 202: C.D. Hylton High School vs. Forest Park High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 203,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 203: NO EVENT",
+              "after": "NFHS Network 203: Navarre High School vs. Lincoln High School Varsity Girls Soccer @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 204,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 204: NO EVENT",
+              "after": "NFHS Network 204: Vermilion vs. Keystone High School 2026 OHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 205,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 205: NO EVENT",
+              "after": "NFHS Network 205: Away vs. William Amos Hough High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 206,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 206: NO EVENT",
+              "after": "NFHS Network 206: Attica High School vs. Axtell High School 2026 KSHSAA Football Playoffs @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 207,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 207: NO EVENT",
+              "after": "NFHS Network 207: Stone Bridge High School vs. Briar Woods High School Varsity Football @ 6 Nov 08:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-06T20:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-06"
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-06T11:34:50.817Z",
+  "last_change_at": "2026-11-06T23:17:22.060Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": null,
+    "latest_title_day": "2026-11-06",
     "title_day_counts": {
-      "undated": 5000
+      "2026-11-06": 207,
+      "undated": 4793
     }
   }
 }

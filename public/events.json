@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-06T15:08:44.348-05:00",
+  "generated_at": "2026-11-06T18:17:22.547-05:00",
   "eastern_date": "2026-11-06",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
+  "total_georgia_matches_found": 11,
+  "georgia_channel_count": 11,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "upcoming_next_7_days": 11,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,5 +25,273 @@
     }
   },
   "school_name_count": 664,
-  "channels": []
+  "channels": [
+    {
+      "id": "ga-nfhs-2070363",
+      "stream_id": 2070363,
+      "extension": "ts",
+      "original_name": "NFHS Network 02: McIntosh County Academy vs. Portal Middle High School Varsity Football @ 6 Nov 07:20 PM ET",
+      "name": "McIntosh County Academy vs. Portal Middle High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:20:00.000-05:00",
+      "stop": "2026-11-06T22:50:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "McIntosh County Academy",
+        "Portal Middle High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "McIntosh County Academy",
+          "core": "mcintosh county academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070355",
+      "stream_id": 2070355,
+      "extension": "ts",
+      "original_name": "NFHS Network 10: Webster County High School vs. Byne Christian School Varsity Girls Basketball @ 6 Nov 07:30 PM ET",
+      "name": "Webster County High School vs. Byne Christian School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:30:00.000-05:00",
+      "stop": "2026-11-06T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Webster County High School",
+        "Byne Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Webster County High School",
+          "core": "webster county",
+          "confidence": 2
+        },
+        {
+          "team": "Byne Christian School",
+          "core": "byne christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070321",
+      "stream_id": 2070321,
+      "extension": "ts",
+      "original_name": "NFHS Network 44: Pope High School vs. Kell High School Varsity Football @ 6 Nov 07:30 PM ET",
+      "name": "Pope High School vs. Kell High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:30:00.000-05:00",
+      "stop": "2026-11-06T23:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Pope High School",
+        "Kell High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pope High School",
+          "core": "pope",
+          "confidence": 1
+        },
+        {
+          "team": "Kell High School",
+          "core": "kell",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070292",
+      "stream_id": 2070292,
+      "extension": "ts",
+      "original_name": "NFHS Network 72: Riverwood vs. Pace Academy Junior Varsity Boys Basketball @ 6 Nov 07:30 PM ET",
+      "name": "Riverwood vs. Pace Academy Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:30:00.000-05:00",
+      "stop": "2026-11-06T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Riverwood",
+        "Pace Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        },
+        {
+          "team": "Pace Academy",
+          "core": "pace academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070271",
+      "stream_id": 2070271,
+      "extension": "ts",
+      "original_name": "NFHS Network 92: East Laurens High School vs. Dublin High School Varsity Football @ 6 Nov 07:30 PM ET",
+      "name": "East Laurens High School vs. Dublin High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:30:00.000-05:00",
+      "stop": "2026-11-06T23:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "East Laurens High School",
+        "Dublin High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Laurens High School",
+          "core": "east laurens",
+          "confidence": 2
+        },
+        {
+          "team": "Dublin High School",
+          "core": "dublin",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070227",
+      "stream_id": 2070227,
+      "extension": "ts",
+      "original_name": "NFHS Network 136: Prince Avenue Christian School vs. Rabun County High School Varsity Football @ 6 Nov 07:55 PM ET",
+      "name": "Prince Avenue Christian School vs. Rabun County High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T19:55:00.000-05:00",
+      "stop": "2026-11-06T23:25:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Prince Avenue Christian School",
+        "Rabun County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Prince Avenue Christian School",
+          "core": "prince avenue christian",
+          "confidence": 2
+        },
+        {
+          "team": "Rabun County High School",
+          "core": "rabun county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070210",
+      "stream_id": 2070210,
+      "extension": "ts",
+      "original_name": "NFHS Network 153: Grace Christian School vs. Grove Christian School 2026 VISAA Girls Volleyball Championship @ 6 Nov 08:00 PM ET",
+      "name": "Grace Christian School vs. Grove Christian School 2026 VISAA Girls Volleyball Championship",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T20:00:00.000-05:00",
+      "stop": "2026-11-06T22:30:00.000-05:00",
+      "sport": "Volleyball",
+      "teams": [
+        "Grace Christian School",
+        "Grove Christian School 2026 VISAA Girls Volleyball Championship"
+      ],
+      "matched_schools": [
+        {
+          "team": "Grace Christian School",
+          "core": "grace christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070194",
+      "stream_id": 2070194,
+      "extension": "ts",
+      "original_name": "NFHS Network 169: Monroe Area High School vs. West Hall High School Varsity Football (Monroe Area TV) @ 6 Nov 08:00 PM ET",
+      "name": "Monroe Area High School vs. West Hall High School Varsity Football (Monroe Area TV)",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T20:00:00.000-05:00",
+      "stop": "2026-11-06T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Monroe Area High School",
+        "West Hall High School Varsity Football (Monroe Area TV)"
+      ],
+      "matched_schools": [
+        {
+          "team": "Monroe Area High School",
+          "core": "monroe area",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070190",
+      "stream_id": 2070190,
+      "extension": "ts",
+      "original_name": "NFHS Network 173: Westminster Schools vs. Greater Atlanta Christian School Varsity Football @ 6 Nov 08:00 PM ET",
+      "name": "Westminster Schools vs. Greater Atlanta Christian School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T20:00:00.000-05:00",
+      "stop": "2026-11-06T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Westminster Schools",
+        "Greater Atlanta Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greater Atlanta Christian School",
+          "core": "greater atlanta christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070178",
+      "stream_id": 2070178,
+      "extension": "ts",
+      "original_name": "NFHS Network 185: Macon County High School vs. Chattahoochee Co. High School Varsity Football @ 6 Nov 08:00 PM ET",
+      "name": "Macon County High School vs. Chattahoochee Co. High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T20:00:00.000-05:00",
+      "stop": "2026-11-06T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Macon County High School",
+        "Chattahoochee Co. High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Macon County High School",
+          "core": "macon county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070161",
+      "stream_id": 2070161,
+      "extension": "ts",
+      "original_name": "NFHS Network 202: C.D. Hylton High School vs. Forest Park High School Varsity Football @ 6 Nov 08:00 PM ET",
+      "name": "C.D. Hylton High School vs. Forest Park High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-06T20:00:00.000-05:00",
+      "stop": "2026-11-06T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "C.D. Hylton High School",
+        "Forest Park High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Forest Park High School",
+          "core": "forest park",
+          "confidence": 2
+        }
+      ]
+    }
+  ]
 }
