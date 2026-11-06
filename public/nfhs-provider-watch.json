@@ -245549,15 +245549,587 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-06T11:34:50.817Z",
+      "previous_latest_title_day": "2026-11-05",
+      "latest_title_day": null,
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 33,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: Island Coast High School vs. Immokalee High School Varsity Girls Soccer @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 01: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: Away vs. Richland High School Varsity Girls Soccer @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 02: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: Away vs. West Morris Central High School 2026 NJSIAA Field Hockey Playoffs @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 03: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Blessed Sacrament Huguenot Catholic School vs. Fuqua School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: Away vs. Loudoun County High School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: Away vs. Lansing Christian High School Middle School Boys Basketball @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 06: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: Plum High School vs. Penn-Trafford High School 2026 WPIAL Girls Soccer Playoffs @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 07: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: Away vs. Fort Defiance High School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
+              "after": "NFHS Network 08: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T01:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: James River High School vs. Appomattox County High School 2026 VHSL Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
+              "after": "NFHS Network 09: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: Away vs. Wolcott Tech High School 2026 CIAC Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
+              "after": "NFHS Network 10: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: Sulphur Springs High School vs. Sanger High School Varsity Girls Volleyball @ 5 Nov 02:01 AM ET",
+              "after": "NFHS Network 11: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: Axtell High School vs. Alvord High School Varsity Girls Volleyball @ 5 Nov 02:01 AM ET",
+              "after": "NFHS Network 12: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: Away vs. Gretna High School 2026 VHSL Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
+              "after": "NFHS Network 13: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: Mead High School vs. Kamiakin High School 2026 WIAA Girls Volleyball Playoffs @ 5 Nov 04:00 AM ET",
+              "after": "NFHS Network 14: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: Franklin Pierce High School vs. Orting High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:00 AM ET",
+              "after": "NFHS Network 15: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: Lewis and Clark High School vs. Gonzaga Preparatory School 2026 WIAA Girls Volleyball Playoffs @ 5 Nov 04:00 AM ET",
+              "after": "NFHS Network 16: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: Steilacoom High School vs. Fife High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:00 AM ET",
+              "after": "NFHS Network 17: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: Away vs. Coupeville High School 2026 WIAA Boys Soccer Playoffs @ 5 Nov 04:00 AM ET",
+              "after": "NFHS Network 18: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: University High School vs. Ridgeline High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:01 AM ET",
+              "after": "NFHS Network 19: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T04:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 20,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 20: Wheaton Warrenville South High School Middle School Boys Basketball @ 5 Nov 07:30 AM ET",
+              "after": "NFHS Network 20: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T07:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 21,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 21: James Monroe vs Wheeling Central Catholic 2026 WVSSAC AA-A Girls Soccer Semifinals #1 @ 5 Nov 10:30 AM ET",
+              "after": "NFHS Network 21: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T10:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 22,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 22: SCHSL Executive Committee Meeting @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 22: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 23,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 23: Sandhills/Thedford vs St. Mary's 2026 NSAA Class D2 Girls Volleyball Quarterfinals #1 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 23: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 24,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 24: AIA Schools AIA Boys Div II Championship – Diving @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 24: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 25,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 25: Wilcox-Hildreth vs Mullen 2026 NSAA Class D2 Girls Volleyball Quarterfinals #2 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 25: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 26,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 26: Green Bay N.E.W Lutheran vs Central Wisconsin Christian 2026 WIAA Div 5 Girls Volleyball Semifinals #2 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 26: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 27,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 27: Legacy vs Fleming Island 2026 FHSAA 4A Girls Volleyball Semifinals #1 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 27: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 28,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 28: Shady Spring vs Nitro 2026 WVSSAC AAA Boys Soccer Semifinal #1 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 28: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 29,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 29: Seneca vs Turtle Lake 2026 WIAA Div 5 Girls Volleyball Semifinals #1 @ 5 Nov 11:00 AM ET",
+              "after": "NFHS Network 29: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 30,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 30: Fergus High School vs. Laurel High School 2026 MHSA Girls Volleyball Postseason Tournament @ 5 Nov 12:00 PM ET",
+              "after": "NFHS Network 30: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 31,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 31: Kinta High School vs. Buffalo Valley High School Middle School Boys And Girls Basketball @ 5 Nov 12:00 PM ET",
+              "after": "NFHS Network 31: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 32,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 32: Pascack Hills High School vs. Lyndhurst High School 2026 NJSIAA Girls Volleyball Postseason Tournament @ 5 Nov 12:00 PM ET",
+              "after": "NFHS Network 32: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 33,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 33: Hot Springs High School vs. Manhattan Christian High School 2026 MHSA Girls Volleyball Postseason Tournament @ 5 Nov 12:45 PM ET",
+              "after": "NFHS Network 33: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-05T12:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-05",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-05T10:42:01.632Z",
+  "last_change_at": "2026-11-06T11:34:50.817Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": "2026-11-05",
+    "latest_title_day": null,
     "title_day_counts": {
-      "2026-11-05": 33,
-      "undated": 4967
+      "undated": 5000
     }
   }
 }

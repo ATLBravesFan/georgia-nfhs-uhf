@@ -1,18 +1,17 @@
 {
-  "captured_at": "2026-11-05T10:42:01.632Z",
+  "captured_at": "2026-11-06T11:34:50.817Z",
   "category": "USA | NFHS Network",
   "stream_count": 5000,
   "title_day_counts": {
-    "2026-11-05": 33,
-    "undated": 4967
+    "undated": 5000
   },
   "rows": [
     {
       "provider_nfhs_number": 1,
       "stream_id": 2070364,
-      "title": "NFHS Network 01: Island Coast High School vs. Immokalee High School Varsity Girls Soccer @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 01: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238354,
       "epg_channel_id": null,
       "custom_sid": null
@@ -20,9 +19,9 @@
     {
       "provider_nfhs_number": 2,
       "stream_id": 2070363,
-      "title": "NFHS Network 02: Away vs. Richland High School Varsity Girls Soccer @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 02: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -30,9 +29,9 @@
     {
       "provider_nfhs_number": 3,
       "stream_id": 2070362,
-      "title": "NFHS Network 03: Away vs. West Morris Central High School 2026 NJSIAA Field Hockey Playoffs @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 03: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -40,9 +39,9 @@
     {
       "provider_nfhs_number": 4,
       "stream_id": 2070361,
-      "title": "NFHS Network 04: Blessed Sacrament Huguenot Catholic School vs. Fuqua School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 04: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -50,9 +49,9 @@
     {
       "provider_nfhs_number": 5,
       "stream_id": 2070360,
-      "title": "NFHS Network 05: Away vs. Loudoun County High School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 05: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -60,9 +59,9 @@
     {
       "provider_nfhs_number": 6,
       "stream_id": 2070359,
-      "title": "NFHS Network 06: Away vs. Lansing Christian High School Middle School Boys Basketball @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 06: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -70,9 +69,9 @@
     {
       "provider_nfhs_number": 7,
       "stream_id": 2070358,
-      "title": "NFHS Network 07: Plum High School vs. Penn-Trafford High School 2026 WPIAL Girls Soccer Playoffs @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 07: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -80,9 +79,9 @@
     {
       "provider_nfhs_number": 8,
       "stream_id": 2070357,
-      "title": "NFHS Network 08: Away vs. Fort Defiance High School Varsity Girls Volleyball @ 5 Nov 01:01 AM ET",
-      "provider_start": "2026-11-05T01:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 08: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238350,
       "epg_channel_id": null,
       "custom_sid": null
@@ -90,9 +89,9 @@
     {
       "provider_nfhs_number": 9,
       "stream_id": 2070356,
-      "title": "NFHS Network 09: James River High School vs. Appomattox County High School 2026 VHSL Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
-      "provider_start": "2026-11-05T02:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 09: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -100,9 +99,9 @@
     {
       "provider_nfhs_number": 10,
       "stream_id": 2070355,
-      "title": "NFHS Network 10: Away vs. Wolcott Tech High School 2026 CIAC Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
-      "provider_start": "2026-11-05T02:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 10: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -110,9 +109,9 @@
     {
       "provider_nfhs_number": 11,
       "stream_id": 2070354,
-      "title": "NFHS Network 11: Sulphur Springs High School vs. Sanger High School Varsity Girls Volleyball @ 5 Nov 02:01 AM ET",
-      "provider_start": "2026-11-05T02:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 11: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -120,9 +119,9 @@
     {
       "provider_nfhs_number": 12,
       "stream_id": 2070353,
-      "title": "NFHS Network 12: Axtell High School vs. Alvord High School Varsity Girls Volleyball @ 5 Nov 02:01 AM ET",
-      "provider_start": "2026-11-05T02:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 12: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -130,9 +129,9 @@
     {
       "provider_nfhs_number": 13,
       "stream_id": 2070352,
-      "title": "NFHS Network 13: Away vs. Gretna High School 2026 VHSL Girls Volleyball Playoffs @ 5 Nov 02:01 AM ET",
-      "provider_start": "2026-11-05T02:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 13: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -140,9 +139,9 @@
     {
       "provider_nfhs_number": 14,
       "stream_id": 2070351,
-      "title": "NFHS Network 14: Mead High School vs. Kamiakin High School 2026 WIAA Girls Volleyball Playoffs @ 5 Nov 04:00 AM ET",
-      "provider_start": "2026-11-05T04:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 14: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -150,9 +149,9 @@
     {
       "provider_nfhs_number": 15,
       "stream_id": 2070350,
-      "title": "NFHS Network 15: Franklin Pierce High School vs. Orting High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:00 AM ET",
-      "provider_start": "2026-11-05T04:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 15: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -160,9 +159,9 @@
     {
       "provider_nfhs_number": 16,
       "stream_id": 2070349,
-      "title": "NFHS Network 16: Lewis and Clark High School vs. Gonzaga Preparatory School 2026 WIAA Girls Volleyball Playoffs @ 5 Nov 04:00 AM ET",
-      "provider_start": "2026-11-05T04:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 16: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -170,9 +169,9 @@
     {
       "provider_nfhs_number": 17,
       "stream_id": 2070348,
-      "title": "NFHS Network 17: Steilacoom High School vs. Fife High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:00 AM ET",
-      "provider_start": "2026-11-05T04:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 17: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -180,9 +179,9 @@
     {
       "provider_nfhs_number": 18,
       "stream_id": 2070347,
-      "title": "NFHS Network 18: Away vs. Coupeville High School 2026 WIAA Boys Soccer Playoffs @ 5 Nov 04:00 AM ET",
-      "provider_start": "2026-11-05T04:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 18: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -190,9 +189,9 @@
     {
       "provider_nfhs_number": 19,
       "stream_id": 2070346,
-      "title": "NFHS Network 19: University High School vs. Ridgeline High School 2026 WIAA Girls Soccer Playoffs @ 5 Nov 04:01 AM ET",
-      "provider_start": "2026-11-05T04:01:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 19: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -200,9 +199,9 @@
     {
       "provider_nfhs_number": 20,
       "stream_id": 2070345,
-      "title": "NFHS Network 20: Wheaton Warrenville South High School Middle School Boys Basketball @ 5 Nov 07:30 AM ET",
-      "provider_start": "2026-11-05T07:30:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 20: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -210,9 +209,9 @@
     {
       "provider_nfhs_number": 21,
       "stream_id": 2070344,
-      "title": "NFHS Network 21: James Monroe vs Wheeling Central Catholic 2026 WVSSAC AA-A Girls Soccer Semifinals #1 @ 5 Nov 10:30 AM ET",
-      "provider_start": "2026-11-05T10:30:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 21: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -220,9 +219,9 @@
     {
       "provider_nfhs_number": 22,
       "stream_id": 2070343,
-      "title": "NFHS Network 22: SCHSL Executive Committee Meeting @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 22: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -230,9 +229,9 @@
     {
       "provider_nfhs_number": 23,
       "stream_id": 2070342,
-      "title": "NFHS Network 23: Sandhills/Thedford vs St. Mary's 2026 NSAA Class D2 Girls Volleyball Quarterfinals #1 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 23: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -240,9 +239,9 @@
     {
       "provider_nfhs_number": 24,
       "stream_id": 2070341,
-      "title": "NFHS Network 24: AIA Schools AIA Boys Div II Championship – Diving @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 24: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -250,9 +249,9 @@
     {
       "provider_nfhs_number": 25,
       "stream_id": 2070340,
-      "title": "NFHS Network 25: Wilcox-Hildreth vs Mullen 2026 NSAA Class D2 Girls Volleyball Quarterfinals #2 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 25: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -260,9 +259,9 @@
     {
       "provider_nfhs_number": 26,
       "stream_id": 2070339,
-      "title": "NFHS Network 26: Green Bay N.E.W Lutheran vs Central Wisconsin Christian 2026 WIAA Div 5 Girls Volleyball Semifinals #2 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 26: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -270,9 +269,9 @@
     {
       "provider_nfhs_number": 27,
       "stream_id": 2070338,
-      "title": "NFHS Network 27: Legacy vs Fleming Island 2026 FHSAA 4A Girls Volleyball Semifinals #1 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 27: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -280,9 +279,9 @@
     {
       "provider_nfhs_number": 28,
       "stream_id": 2070337,
-      "title": "NFHS Network 28: Shady Spring vs Nitro 2026 WVSSAC AAA Boys Soccer Semifinal #1 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 28: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -290,9 +289,9 @@
     {
       "provider_nfhs_number": 29,
       "stream_id": 2070336,
-      "title": "NFHS Network 29: Seneca vs Turtle Lake 2026 WIAA Div 5 Girls Volleyball Semifinals #1 @ 5 Nov 11:00 AM ET",
-      "provider_start": "2026-11-05T11:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 29: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -300,9 +299,9 @@
     {
       "provider_nfhs_number": 30,
       "stream_id": 2070335,
-      "title": "NFHS Network 30: Fergus High School vs. Laurel High School 2026 MHSA Girls Volleyball Postseason Tournament @ 5 Nov 12:00 PM ET",
-      "provider_start": "2026-11-05T12:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 30: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -310,9 +309,9 @@
     {
       "provider_nfhs_number": 31,
       "stream_id": 2070334,
-      "title": "NFHS Network 31: Kinta High School vs. Buffalo Valley High School Middle School Boys And Girls Basketball @ 5 Nov 12:00 PM ET",
-      "provider_start": "2026-11-05T12:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 31: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -320,9 +319,9 @@
     {
       "provider_nfhs_number": 32,
       "stream_id": 2070333,
-      "title": "NFHS Network 32: Pascack Hills High School vs. Lyndhurst High School 2026 NJSIAA Girls Volleyball Postseason Tournament @ 5 Nov 12:00 PM ET",
-      "provider_start": "2026-11-05T12:00:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 32: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -330,9 +329,9 @@
     {
       "provider_nfhs_number": 33,
       "stream_id": 2070332,
-      "title": "NFHS Network 33: Hot Springs High School vs. Manhattan Christian High School 2026 MHSA Girls Volleyball Postseason Tournament @ 5 Nov 12:45 PM ET",
-      "provider_start": "2026-11-05T12:45:00.000-05:00",
-      "provider_day": "2026-11-05",
+      "title": "NFHS Network 33: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238337,
       "epg_channel_id": null,
       "custom_sid": null
