@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "scripts/update-nfhs.mjs"
+      - "scripts/build-epg.mjs"
       - ".github/workflows/update-nfhs.yml"
   schedule:
     - cron: "0 */2 * * *"
@@ -45,14 +46,18 @@ jobs:
           LOOKAHEAD_DAYS: "7"
         run: node scripts/update-nfhs.mjs
 
+      - name: Build enhanced XMLTV EPG
+        run: node scripts/build-epg.mjs
+
       - name: Publish updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/events.json
+          git add public/events.json public/epg.xml
           if git diff --cached --quiet; then
             echo "No changes to publish."
             exit 0
           fi
-          git commit -m "Update Georgia NFHS data"
+          git commit -m "Update Georgia NFHS data and enhanced EPG"
+          git pull --rebase origin main
           git push
