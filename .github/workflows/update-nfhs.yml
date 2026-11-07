@@ -2,6 +2,12 @@ name: Update Georgia NFHS data
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update-nfhs.mjs"
+      - ".github/workflows/update-nfhs.yml"
   schedule:
     - cron: "0 */2 * * *"
 
