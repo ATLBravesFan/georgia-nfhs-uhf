@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-07T02:57:33.146-05:00",
+  "generated_at": "2026-11-07T04:54:05.101-05:00",
   "eastern_date": "2026-11-07",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 164,
+  "total_georgia_matches_found": 32,
   "georgia_channel_count": 32,
   "currently_live_estimate": 0,
   "upcoming_next_7_days": 32,
@@ -27,10 +27,10 @@
   "school_name_count": 665,
   "channels": [
     {
-      "id": "ga-nfhs-2068472",
-      "stream_id": 2068472,
+      "id": "ga-nfhs-2070347",
+      "stream_id": 2070347,
       "extension": "ts",
-      "original_name": "NFHS Network 1856: Away vs. Upson-Lee High School Varsity Boys Wrestling @ 7 Nov 09:00 AM ET",
+      "original_name": "NFHS Network 18: Away vs. Upson-Lee High School Varsity Boys Wrestling @ 7 Nov 09:00 AM ET",
       "name": "Away vs. Upson-Lee High School Varsity Boys Wrestling",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T09:00:00.000-05:00",
@@ -49,10 +49,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068440",
-      "stream_id": 2068440,
+      "id": "ga-nfhs-2070316",
+      "stream_id": 2070316,
       "extension": "ts",
-      "original_name": "NFHS Network 1887: Away vs. Banks County High School Middle School Boys Wrestling @ 7 Nov 10:00 AM ET",
+      "original_name": "NFHS Network 49: Away vs. Banks County High School Middle School Boys Wrestling @ 7 Nov 10:00 AM ET",
       "name": "Away vs. Banks County High School Middle School Boys Wrestling",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T10:00:00.000-05:00",
@@ -71,10 +71,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068426",
-      "stream_id": 2068426,
+      "id": "ga-nfhs-2070303",
+      "stream_id": 2070303,
       "extension": "ts",
-      "original_name": "NFHS Network 1900: Northside Methodist Academy vs. Providence Christian School Middle School Boys Basketball @ 7 Nov 10:30 AM ET",
+      "original_name": "NFHS Network 62: Northside Methodist Academy vs. Providence Christian School Middle School Boys Basketball @ 7 Nov 10:30 AM ET",
       "name": "Northside Methodist Academy vs. Providence Christian School Middle School Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T10:30:00.000-05:00",
@@ -93,10 +93,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068406",
-      "stream_id": 2068406,
+      "id": "ga-nfhs-2070281",
+      "stream_id": 2070281,
       "extension": "ts",
-      "original_name": "NFHS Network 1920: Commerce Middle School vs. Athens Academy Middle School Girls Basketball @ 7 Nov 11:00 AM ET",
+      "original_name": "NFHS Network 82: Commerce Middle School vs. Athens Academy Middle School Girls Basketball @ 7 Nov 11:00 AM ET",
       "name": "Commerce Middle School vs. Athens Academy Middle School Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T11:00:00.000-05:00",
@@ -120,10 +120,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068399",
-      "stream_id": 2068399,
+      "id": "ga-nfhs-2070274",
+      "stream_id": 2070274,
       "extension": "ts",
-      "original_name": "NFHS Network 1927: Monroe Area High School Junior Varsity Boys Basketball @ 7 Nov 11:00 AM ET",
+      "original_name": "NFHS Network 89: Monroe Area High School Junior Varsity Boys Basketball @ 7 Nov 11:00 AM ET",
       "name": "Monroe Area High School Junior Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T11:00:00.000-05:00",
@@ -141,10 +141,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068249",
-      "stream_id": 2068249,
+      "id": "ga-nfhs-2070124",
+      "stream_id": 2070124,
       "extension": "ts",
-      "original_name": "NFHS Network 2077: Commerce Middle School vs. Athens Academy Middle School Boys Basketball @ 7 Nov 12:00 PM ET",
+      "original_name": "NFHS Network 239: Commerce Middle School vs. Athens Academy Middle School Boys Basketball @ 7 Nov 12:00 PM ET",
       "name": "Commerce Middle School vs. Athens Academy Middle School Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T12:00:00.000-05:00",
@@ -168,10 +168,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068178",
-      "stream_id": 2068178,
+      "id": "ga-nfhs-2070053",
+      "stream_id": 2070053,
       "extension": "ts",
-      "original_name": "NFHS Network 2148: LaFayette High School vs. Southeast Whitfield High School Varsity Boys Basketball @ 7 Nov 01:00 PM ET",
+      "original_name": "NFHS Network 310: LaFayette High School vs. Southeast Whitfield High School Varsity Boys Basketball @ 7 Nov 01:00 PM ET",
       "name": "LaFayette High School vs. Southeast Whitfield High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T13:00:00.000-05:00",
@@ -195,10 +195,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068148",
-      "stream_id": 2068148,
+      "id": "ga-nfhs-2070023",
+      "stream_id": 2070023,
       "extension": "ts",
-      "original_name": "NFHS Network 2178: Clarke Central High School vs. Evans High School Varsity Girls Flag Football @ 7 Nov 01:00 PM ET",
+      "original_name": "NFHS Network 340: Clarke Central High School vs. Evans High School Varsity Girls Flag Football @ 7 Nov 01:00 PM ET",
       "name": "Clarke Central High School vs. Evans High School Varsity Girls Flag Football",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T13:00:00.000-05:00",
@@ -222,10 +222,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068096",
-      "stream_id": 2068096,
+      "id": "ga-nfhs-2069971",
+      "stream_id": 2069971,
       "extension": "ts",
-      "original_name": "NFHS Network 2230: River Ridge High School vs. Denmark High School Freshman Boys Basketball @ 7 Nov 01:30 PM ET",
+      "original_name": "NFHS Network 392: River Ridge High School vs. Denmark High School Freshman Boys Basketball @ 7 Nov 01:30 PM ET",
       "name": "River Ridge High School vs. Denmark High School Freshman Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T13:30:00.000-05:00",
@@ -249,10 +249,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2068047",
-      "stream_id": 2068047,
+      "id": "ga-nfhs-2069922",
+      "stream_id": 2069922,
       "extension": "ts",
-      "original_name": "NFHS Network 2279: Scotts Valley High School vs. St Francis High School Junior Varsity Football @ 7 Nov 02:00 PM ET",
+      "original_name": "NFHS Network 441: Scotts Valley High School vs. St Francis High School Junior Varsity Football @ 7 Nov 02:00 PM ET",
       "name": "Scotts Valley High School vs. St Francis High School Junior Varsity Football",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:00:00.000-05:00",
@@ -271,10 +271,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067984",
-      "stream_id": 2067984,
+      "id": "ga-nfhs-2069858",
+      "stream_id": 2069858,
       "extension": "ts",
-      "original_name": "NFHS Network 2342: North Springs High School vs. Chattahoochee High School Junior Varsity Boys Basketball @ 7 Nov 02:00 PM ET",
+      "original_name": "NFHS Network 504: North Springs High School vs. Chattahoochee High School Junior Varsity Boys Basketball @ 7 Nov 02:00 PM ET",
       "name": "North Springs High School vs. Chattahoochee High School Junior Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:00:00.000-05:00",
@@ -298,10 +298,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067965",
-      "stream_id": 2067965,
+      "id": "ga-nfhs-2069838",
+      "stream_id": 2069838,
       "extension": "ts",
-      "original_name": "NFHS Network 2361: Away vs. Providence Christian School Middle School Girls Basketball @ 7 Nov 02:15 PM ET",
+      "original_name": "NFHS Network 523: Away vs. Providence Christian School Middle School Girls Basketball @ 7 Nov 02:15 PM ET",
       "name": "Away vs. Providence Christian School Middle School Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:15:00.000-05:00",
@@ -320,10 +320,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067959",
-      "stream_id": 2067959,
+      "id": "ga-nfhs-2069831",
+      "stream_id": 2069831,
       "extension": "ts",
-      "original_name": "NFHS Network 2367: Cross Keys High School vs. Lakeside High School - DeKalb Varsity Boys Basketball @ 7 Nov 02:30 PM ET",
+      "original_name": "NFHS Network 529: Cross Keys High School vs. Lakeside High School - DeKalb Varsity Boys Basketball @ 7 Nov 02:30 PM ET",
       "name": "Cross Keys High School vs. Lakeside High School - DeKalb Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:30:00.000-05:00",
@@ -347,10 +347,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067943",
-      "stream_id": 2067943,
+      "id": "ga-nfhs-2069814",
+      "stream_id": 2069814,
       "extension": "ts",
-      "original_name": "NFHS Network 2383: Holy Innocents' Episcopal School vs. Greater Atlanta Christian School Junior Varsity Boys Basketball @ 7 Nov 02:30 PM ET",
+      "original_name": "NFHS Network 545: Holy Innocents' Episcopal School vs. Greater Atlanta Christian School Junior Varsity Boys Basketball @ 7 Nov 02:30 PM ET",
       "name": "Holy Innocents' Episcopal School vs. Greater Atlanta Christian School Junior Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:30:00.000-05:00",
@@ -369,10 +369,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067923",
-      "stream_id": 2067923,
+      "id": "ga-nfhs-2069793",
+      "stream_id": 2069793,
       "extension": "ts",
-      "original_name": "NFHS Network 2403: Pelham High School vs. Mary Persons High School Varsity Girls Basketball @ 7 Nov 02:55 PM ET",
+      "original_name": "NFHS Network 565: Pelham High School vs. Mary Persons High School Varsity Girls Basketball @ 7 Nov 02:55 PM ET",
       "name": "Pelham High School vs. Mary Persons High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T14:55:00.000-05:00",
@@ -396,10 +396,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067895",
-      "stream_id": 2067895,
+      "id": "ga-nfhs-2069765",
+      "stream_id": 2069765,
       "extension": "ts",
-      "original_name": "NFHS Network 2429: Southeast Bulloch High School vs. Calvary Day School Varsity Girls Basketball @ 7 Nov 03:00 PM ET",
+      "original_name": "NFHS Network 591: Southeast Bulloch High School vs. Calvary Day School Varsity Girls Basketball @ 7 Nov 03:00 PM ET",
       "name": "Southeast Bulloch High School vs. Calvary Day School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T15:00:00.000-05:00",
@@ -423,10 +423,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067891",
-      "stream_id": 2067891,
+      "id": "ga-nfhs-2069761",
+      "stream_id": 2069761,
       "extension": "ts",
-      "original_name": "NFHS Network 2433: Northeast Jones High School vs. Greene County High School Varsity Girls Basketball @ 7 Nov 03:00 PM ET",
+      "original_name": "NFHS Network 595: Northeast Jones High School vs. Greene County High School Varsity Girls Basketball @ 7 Nov 03:00 PM ET",
       "name": "Northeast Jones High School vs. Greene County High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T15:00:00.000-05:00",
@@ -445,10 +445,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067688",
-      "stream_id": 2067688,
+      "id": "ga-nfhs-2069556",
+      "stream_id": 2069556,
       "extension": "ts",
-      "original_name": "NFHS Network 2629: Carrollton High School vs. Tift County High School Varsity Boys Basketball @ 7 Nov 04:00 PM ET",
+      "original_name": "NFHS Network 791: Carrollton High School vs. Tift County High School Varsity Boys Basketball @ 7 Nov 04:00 PM ET",
       "name": "Carrollton High School vs. Tift County High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T16:00:00.000-05:00",
@@ -472,10 +472,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067618",
-      "stream_id": 2067618,
+      "id": "ga-nfhs-2069488",
+      "stream_id": 2069488,
       "extension": "ts",
-      "original_name": "NFHS Network 2697: Pelham High School vs. Mary Persons High School Varsity Boys Basketball @ 7 Nov 04:20 PM ET",
+      "original_name": "NFHS Network 859: Pelham High School vs. Mary Persons High School Varsity Boys Basketball @ 7 Nov 04:20 PM ET",
       "name": "Pelham High School vs. Mary Persons High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T16:20:00.000-05:00",
@@ -499,10 +499,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067600",
-      "stream_id": 2067600,
+      "id": "ga-nfhs-2069471",
+      "stream_id": 2069471,
       "extension": "ts",
-      "original_name": "NFHS Network 2714: Scotts Valley High School vs. St Francis High School Varsity Football @ 7 Nov 04:30 PM ET",
+      "original_name": "NFHS Network 876: Scotts Valley High School vs. St Francis High School Varsity Football @ 7 Nov 04:30 PM ET",
       "name": "Scotts Valley High School vs. St Francis High School Varsity Football",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T16:30:00.000-05:00",
@@ -521,10 +521,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067593",
-      "stream_id": 2067593,
+      "id": "ga-nfhs-2069465",
+      "stream_id": 2069465,
       "extension": "ts",
-      "original_name": "NFHS Network 2720: Georgiana School vs. Providence Christian School Middle School Boys Basketball @ 7 Nov 04:45 PM ET",
+      "original_name": "NFHS Network 882: Georgiana School vs. Providence Christian School Middle School Boys Basketball @ 7 Nov 04:45 PM ET",
       "name": "Georgiana School vs. Providence Christian School Middle School Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T16:45:00.000-05:00",
@@ -543,10 +543,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067587",
-      "stream_id": 2067587,
+      "id": "ga-nfhs-2069459",
+      "stream_id": 2069459,
       "extension": "ts",
-      "original_name": "NFHS Network 2726: Away vs. Early County High School Varsity Girls Basketball @ 7 Nov 05:00 PM ET",
+      "original_name": "NFHS Network 888: Away vs. Early County High School Varsity Girls Basketball @ 7 Nov 05:00 PM ET",
       "name": "Away vs. Early County High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:00:00.000-05:00",
@@ -565,10 +565,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067585",
-      "stream_id": 2067585,
+      "id": "ga-nfhs-2069457",
+      "stream_id": 2069457,
       "extension": "ts",
-      "original_name": "NFHS Network 2728: Berrien High School vs. Valdosta High School Varsity Boys Basketball @ 7 Nov 05:00 PM ET",
+      "original_name": "NFHS Network 890: Berrien High School vs. Valdosta High School Varsity Boys Basketball @ 7 Nov 05:00 PM ET",
       "name": "Berrien High School vs. Valdosta High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:00:00.000-05:00",
@@ -592,10 +592,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067545",
-      "stream_id": 2067545,
+      "id": "ga-nfhs-2069417",
+      "stream_id": 2069417,
       "extension": "ts",
-      "original_name": "NFHS Network 2768: North Springs High School vs. Chattahoochee High School Varsity Boys Basketball @ 7 Nov 05:00 PM ET",
+      "original_name": "NFHS Network 930: North Springs High School vs. Chattahoochee High School Varsity Boys Basketball @ 7 Nov 05:00 PM ET",
       "name": "North Springs High School vs. Chattahoochee High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:00:00.000-05:00",
@@ -619,10 +619,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067516",
-      "stream_id": 2067516,
+      "id": "ga-nfhs-2069388",
+      "stream_id": 2069388,
       "extension": "ts",
-      "original_name": "NFHS Network 2797: South Gwinnett High School vs. Hillgrove High School Varsity Girls Basketball @ 7 Nov 05:00 PM ET",
+      "original_name": "NFHS Network 959: South Gwinnett High School vs. Hillgrove High School Varsity Girls Basketball @ 7 Nov 05:00 PM ET",
       "name": "South Gwinnett High School vs. Hillgrove High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:00:00.000-05:00",
@@ -646,10 +646,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067515",
-      "stream_id": 2067515,
+      "id": "ga-nfhs-2069387",
+      "stream_id": 2069387,
       "extension": "ts",
-      "original_name": "NFHS Network 2798: North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs @ 7 Nov 05:00 PM ET",
+      "original_name": "NFHS Network 960: North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs @ 7 Nov 05:00 PM ET",
       "name": "North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:00:00.000-05:00",
@@ -668,10 +668,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067484",
-      "stream_id": 2067484,
+      "id": "ga-nfhs-2069356",
+      "stream_id": 2069356,
       "extension": "ts",
-      "original_name": "NFHS Network 2829: None Bainbridge Bearcats vs Colquitt County Packers @ 7 Nov 05:30 PM ET",
+      "original_name": "NFHS Network 991: None Bainbridge Bearcats vs Colquitt County Packers @ 7 Nov 05:30 PM ET",
       "name": "None Bainbridge Bearcats vs Colquitt County Packers",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:30:00.000-05:00",
@@ -690,10 +690,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067479",
-      "stream_id": 2067479,
+      "id": "ga-nfhs-2069351",
+      "stream_id": 2069351,
       "extension": "ts",
-      "original_name": "NFHS Network 2834: Rome High School vs. Pepperell High School Varsity Boys Wrestling @ 7 Nov 05:30 PM ET",
+      "original_name": "NFHS Network 996: Rome High School vs. Pepperell High School Varsity Boys Wrestling @ 7 Nov 05:30 PM ET",
       "name": "Rome High School vs. Pepperell High School Varsity Boys Wrestling",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T17:30:00.000-05:00",
@@ -717,10 +717,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067464",
-      "stream_id": 2067464,
+      "id": "ga-nfhs-2069336",
+      "stream_id": 2069336,
       "extension": "ts",
-      "original_name": "NFHS Network 2849: Marion County High School vs. West Point High School Varsity Boys Basketball @ 7 Nov 06:00 PM ET",
+      "original_name": "NFHS Network 1011: Marion County High School vs. West Point High School Varsity Boys Basketball @ 7 Nov 06:00 PM ET",
       "name": "Marion County High School vs. West Point High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T18:00:00.000-05:00",
@@ -739,10 +739,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067403",
-      "stream_id": 2067403,
+      "id": "ga-nfhs-2069275",
+      "stream_id": 2069275,
       "extension": "ts",
-      "original_name": "NFHS Network 2910: Bainbridge High School vs. Early County High School Varsity Boys Basketball @ 7 Nov 06:30 PM ET",
+      "original_name": "NFHS Network 1072: Bainbridge High School vs. Early County High School Varsity Boys Basketball @ 7 Nov 06:30 PM ET",
       "name": "Bainbridge High School vs. Early County High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T18:30:00.000-05:00",
@@ -766,10 +766,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067382",
-      "stream_id": 2067382,
+      "id": "ga-nfhs-2069254",
+      "stream_id": 2069254,
       "extension": "ts",
-      "original_name": "NFHS Network 2931: North Springs High School vs. Chattahoochee High School Varsity Girls Basketball @ 7 Nov 07:00 PM ET",
+      "original_name": "NFHS Network 1093: North Springs High School vs. Chattahoochee High School Varsity Girls Basketball @ 7 Nov 07:00 PM ET",
       "name": "North Springs High School vs. Chattahoochee High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T19:00:00.000-05:00",
@@ -793,10 +793,10 @@
       ]
     },
     {
-      "id": "ga-nfhs-2067379",
-      "stream_id": 2067379,
+      "id": "ga-nfhs-2069251",
+      "stream_id": 2069251,
       "extension": "ts",
-      "original_name": "NFHS Network 2934: Colquitt County High School vs. Bainbridge High School Varsity Girls Basketball @ 7 Nov 07:00 PM ET",
+      "original_name": "NFHS Network 1096: Colquitt County High School vs. Bainbridge High School Varsity Girls Basketball @ 7 Nov 07:00 PM ET",
       "name": "Colquitt County High School vs. Bainbridge High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-07T19:00:00.000-05:00",
