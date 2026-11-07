@@ -372,8 +372,11 @@ function createOutputStreams(provider, aliases) {
     const stop = start ? start.plus({ minutes: durationMinutes(name) }) : null;
     if (start && start > maxStart) continue;
     if (start && stop < now.minus({ minutes: 20 })) {
+      // Keep finished events in the playlist until 5 AM the following
+      // Eastern day so the enhanced XMLTV guide can display "Event ended".
+      const visibleUntil = stop.plus({ days: 1 }).startOf("day").plus({ hours: 5 });
+      if (now >= visibleUntil) continue;
       if (start.hasSame(now, "day")) completedTodayButVisible++;
-      continue;
     }
 
     const ext = cleanSpace(s.container_extension || "ts").replace(/^\./, "") || "ts";
