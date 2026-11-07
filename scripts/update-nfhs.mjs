@@ -12,7 +12,7 @@ const LOOKAHEAD_DAYS = Math.max(1, Math.min(14, Number(process.env.LOOKAHEAD_DAY
 const FALLBACK_GEORGIA_SCHOOLS = [
   "Lowndes", "Valdosta", "Camden County", "Colquitt County", "Tift County",
   "Coffee", "Ware County", "Pierce County", "Brooks County", "Berrien", "Cook",
-  "Bacon County", "Appling County", "Brantley County", "Charlton County", "Clinch County",
+  "Bacon County", "Appling County", "Providence Christian Academy", "Brantley County", "Charlton County", "Clinch County",
   "Atkinson County", "Lanier County", "Echols County", "Irwin County", "Jeff Davis",
   "Thomas County Central", "Thomasville", "Bainbridge", "Cairo", "Worth County",
   "Lee County", "Houston County", "Veterans", "Northside, Warner Robins", "Warner Robins",
@@ -33,7 +33,9 @@ const AMBIGUOUS_CORES = new Set([
   "lee county", "baker county", "houston county", "worth county", "union county",
   "washington county", "jefferson county", "jasper county", "madison county", "franklin county",
   // Nationally duplicated names that can otherwise produce false Georgia matches.
-  "river ridge", "blessed trinity", "st mary s", "bethlehem christian academy", "bethlehem christian"
+  "river ridge", "blessed trinity", "st mary s", "bethlehem christian academy", "bethlehem christian",
+  // Names shared with schools in other states; require a second Georgia school match.
+  "forest park", "grace christian"
 ]);
 
 const LOCAL_PRIORITY = new Set([
