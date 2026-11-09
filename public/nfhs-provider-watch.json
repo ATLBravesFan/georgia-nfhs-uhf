@@ -281701,15 +281701,349 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-09T15:58:21.996Z",
+      "previous_latest_title_day": "2026-11-08",
+      "latest_title_day": null,
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 19,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: Midwest Central Middle School Middle School Boys Basketball @ 8 Nov 01:30 AM ET",
+              "after": "NFHS Network 01: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T01:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: Sierra Vista High School vs. Reno High School 2026 NIAA Girls Soccer Championship @ 8 Nov 01:50 AM ET",
+              "after": "NFHS Network 02: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T01:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: Archbishop Riordan High School vs. Castilleja High School 2026 CIFCCS Girls Flag Football Division III Championship @ 8 Nov 02:00 AM ET",
+              "after": "NFHS Network 03: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Loganville High School Middle School Girls Basketball - Part 2 @ 8 Nov 02:00 AM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: Chaparral High School vs. Sunrise Mountain High School 2026 NIAA Boys Soccer Championship @ 8 Nov 03:50 AM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T03:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: Morning Session - All Races Varsity Boys And Girls Swimming And Diving @ 8 Nov 09:30 AM ET",
+              "after": "NFHS Network 06: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T09:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: Morning Session - All Dives Varsity Boys And Girls Swimming And Diving @ 8 Nov 09:30 AM ET",
+              "after": "NFHS Network 07: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T09:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: Away vs. duPont Manual High School Varsity Girls Basketball @ 8 Nov 10:00 AM ET",
+              "after": "NFHS Network 08: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T10:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: All Competition Varsity Coed Spirit @ 8 Nov 11:00 AM ET",
+              "after": "NFHS Network 09: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: Away vs. Thomas Worthington High School Varsity Field Hockey @ 8 Nov 11:00 AM ET",
+              "after": "NFHS Network 10: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: NORTH HAMPTON INDIANS VS IRVINGTON GOLDEN KNIGHTS 2026 POP WARNER DIVISION 10U Football Regional @ 8 Nov 11:00 AM ET",
+              "after": "NFHS Network 11: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: Little Falls vs. Greenwich 2026 NYSPHSAA C Field Hockey Regional Finals (Section 2) @ 8 Nov 12:00 PM ET",
+              "after": "NFHS Network 12: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: TBA vs TBA 2026 NYSPHSAA Section IV AAA Girls Volleyball Finals @ 8 Nov 12:00 PM ET",
+              "after": "NFHS Network 13: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: Rondout Valley vs. Pawling 2026 NYSPHSAA C Field Hockey Regional Finals (Sect. I) @ 8 Nov 12:00 PM ET",
+              "after": "NFHS Network 14: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: La Salle Academy vs North Kingstown 2026 RIIL Div 1 Boys Soccer Championship @ 8 Nov 01:00 PM ET",
+              "after": "NFHS Network 15: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: FRANKLIN WARRIORS VS WEST WARD HAWKS 2026 POP WARNER DIVISION 8U Football Regional @ 8 Nov 01:00 PM ET",
+              "after": "NFHS Network 16: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: Novato Killer Bees vs. San Marin Ponies Middle School Football @ 8 Nov 01:00 PM ET",
+              "after": "NFHS Network 17: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: TBA vs TBA 2026 NYSPHSAA Section VIII A Girls Volleyball Finals @ 8 Nov 01:00 PM ET",
+              "after": "NFHS Network 18: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: Palos Verdes High School Varsity Field Hockey @ 8 Nov 01:00 PM ET",
+              "after": "NFHS Network 19: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-08T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-08",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-08T09:32:45.790Z",
+  "last_change_at": "2026-11-09T15:58:21.996Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": "2026-11-08",
+    "latest_title_day": null,
     "title_day_counts": {
-      "2026-11-08": 19,
-      "undated": 4981
+      "undated": 5000
     }
   }
 }
