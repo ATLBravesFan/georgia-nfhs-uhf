@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10T10:38:30.182-05:00",
+  "generated_at": "2026-11-10T14:03:59.168-05:00",
   "eastern_date": "2026-11-10",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 3,
-  "georgia_channel_count": 3,
+  "total_georgia_matches_found": 113,
+  "georgia_channel_count": 113,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 3,
+  "upcoming_next_7_days": 113,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -97,6 +97,2794 @@
         {
           "team": "Friendship Christian School",
           "core": "friendship christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070319",
+      "stream_id": 2070319,
+      "extension": "ts",
+      "original_name": "NFHS Network 46: Mount Dora Christian Academy vs. The First Academy Middle School Boys Soccer @ 10 Nov 05:00 PM ET",
+      "name": "Mount Dora Christian Academy vs. The First Academy Middle School Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:00:00.000-05:00",
+      "stop": "2026-11-10T19:30:00.000-05:00",
+      "sport": "Soccer",
+      "teams": [
+        "Mount Dora Christian Academy",
+        "The First Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "The First Academy",
+          "core": "first academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070315",
+      "stream_id": 2070315,
+      "extension": "ts",
+      "original_name": "NFHS Network 50: Tabernacle Christian School vs. Calvary Christian Junior Varsity Boys Basketball @ 10 Nov 05:00 PM ET",
+      "name": "Tabernacle Christian School vs. Calvary Christian Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:00:00.000-05:00",
+      "stop": "2026-11-10T19:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tabernacle Christian School",
+        "Calvary Christian"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Christian",
+          "core": "calvary christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070313",
+      "stream_id": 2070313,
+      "extension": "ts",
+      "original_name": "NFHS Network 52: Notre Dame Academy vs. Killian Hill Christian School Middle School Boys Basketball @ 10 Nov 05:00 PM ET",
+      "name": "Notre Dame Academy vs. Killian Hill Christian School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:00:00.000-05:00",
+      "stop": "2026-11-10T19:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Notre Dame Academy",
+        "Killian Hill Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        },
+        {
+          "team": "Killian Hill Christian School",
+          "core": "killian hill christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070306",
+      "stream_id": 2070306,
+      "extension": "ts",
+      "original_name": "NFHS Network 59: Tallulah Falls School vs. Sugar Hill Christian Academy Middle School Girls Basketball @ 10 Nov 05:00 PM ET",
+      "name": "Tallulah Falls School vs. Sugar Hill Christian Academy Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:00:00.000-05:00",
+      "stop": "2026-11-10T19:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tallulah Falls School",
+        "Sugar Hill Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Tallulah Falls School",
+          "core": "tallulah falls",
+          "confidence": 2
+        },
+        {
+          "team": "Sugar Hill Christian Academy",
+          "core": "sugar hill christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070302",
+      "stream_id": 2070302,
+      "extension": "ts",
+      "original_name": "NFHS Network 63: Creekside Christian Academy Middle School Girls Basketball @ 10 Nov 05:00 PM ET",
+      "name": "Creekside Christian Academy Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:00:00.000-05:00",
+      "stop": "2026-11-10T19:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Creekside Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekside Christian Academy",
+          "core": "creekside christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070275",
+      "stream_id": 2070275,
+      "extension": "ts",
+      "original_name": "NFHS Network 88: Chestatee High School vs. North Oconee High School Junior Varsity Girls Basketball @ 10 Nov 05:24 PM ET",
+      "name": "Chestatee High School vs. North Oconee High School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:24:00.000-05:00",
+      "stop": "2026-11-10T19:54:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Chestatee High School",
+        "North Oconee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Chestatee High School",
+          "core": "chestatee",
+          "confidence": 1
+        },
+        {
+          "team": "North Oconee High School",
+          "core": "north oconee",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070272",
+      "stream_id": 2070272,
+      "extension": "ts",
+      "original_name": "NFHS Network 91: None Lanier Lightning vs Flowery Branch High School @ 10 Nov 05:30 PM ET",
+      "name": "None Lanier Lightning vs Flowery Branch High School",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "High School Sports",
+      "teams": [
+        "Lanier Lightning",
+        "Flowery Branch High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Flowery Branch High School",
+          "core": "flowery branch",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070271",
+      "stream_id": 2070271,
+      "extension": "ts",
+      "original_name": "NFHS Network 92: KIPP Atlanta Collegiate vs. Tri-Cities High School Junior Varsity Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "KIPP Atlanta Collegiate vs. Tri-Cities High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "KIPP Atlanta Collegiate",
+        "Tri-Cities High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "KIPP Atlanta Collegiate",
+          "core": "kipp atlanta collegiate",
+          "confidence": 2
+        },
+        {
+          "team": "Tri-Cities High School",
+          "core": "tri cities",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070268",
+      "stream_id": 2070268,
+      "extension": "ts",
+      "original_name": "NFHS Network 95: Calvary Day School vs. Davidson Day School Junior Varsity Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Calvary Day School vs. Davidson Day School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Calvary Day School",
+        "Davidson Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070266",
+      "stream_id": 2070266,
+      "extension": "ts",
+      "original_name": "NFHS Network 97: Grace Christian Academy vs. Harding Academy Varsity Boys Soccer @ 10 Nov 05:30 PM ET",
+      "name": "Grace Christian Academy vs. Harding Academy Varsity Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Soccer",
+      "teams": [
+        "Grace Christian Academy",
+        "Harding Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Grace Christian Academy",
+          "core": "grace christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070263",
+      "stream_id": 2070263,
+      "extension": "ts",
+      "original_name": "NFHS Network 100: Seckinger High School vs. Alpharetta High School Junior Varsity Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Seckinger High School vs. Alpharetta High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Seckinger High School",
+        "Alpharetta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Seckinger High School",
+          "core": "seckinger",
+          "confidence": 1
+        },
+        {
+          "team": "Alpharetta High School",
+          "core": "alpharetta",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070259",
+      "stream_id": 2070259,
+      "extension": "ts",
+      "original_name": "NFHS Network 104: Excel Christian Academy vs. Cornerstone Preparatory Academy Middle School Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Excel Christian Academy vs. Cornerstone Preparatory Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Excel Christian Academy",
+        "Cornerstone Preparatory Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Excel Christian Academy",
+          "core": "excel christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Cornerstone Preparatory Academy",
+          "core": "cornerstone preparatory academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070257",
+      "stream_id": 2070257,
+      "extension": "ts",
+      "original_name": "NFHS Network 106: Fellowship Christian School vs. Mt. Bethel Christian Academy Junior Varsity Girls Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Fellowship Christian School vs. Mt. Bethel Christian Academy Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fellowship Christian School",
+        "Mt. Bethel Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fellowship Christian School",
+          "core": "fellowship christian",
+          "confidence": 2
+        },
+        {
+          "team": "Mt. Bethel Christian Academy",
+          "core": "mt bethel christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070256",
+      "stream_id": 2070256,
+      "extension": "ts",
+      "original_name": "NFHS Network 107: Oakwood Christian Academy vs. Southeast Whitfield High School Junior Varsity Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Oakwood Christian Academy vs. Southeast Whitfield High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Oakwood Christian Academy",
+        "Southeast Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Oakwood Christian Academy",
+          "core": "oakwood christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Southeast Whitfield High School",
+          "core": "southeast whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070252",
+      "stream_id": 2070252,
+      "extension": "ts",
+      "original_name": "NFHS Network 111: Etowah High School vs. Lassiter High School Junior Varsity Girls Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Etowah High School vs. Lassiter High School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Etowah High School",
+        "Lassiter High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Etowah High School",
+          "core": "etowah",
+          "confidence": 1
+        },
+        {
+          "team": "Lassiter High School",
+          "core": "lassiter",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070241",
+      "stream_id": 2070241,
+      "extension": "ts",
+      "original_name": "NFHS Network 122: Southeast Bulloch High School vs. Woodville-Tompkins High School Junior Varsity Boys Basketball @ 10 Nov 05:30 PM ET",
+      "name": "Southeast Bulloch High School vs. Woodville-Tompkins High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:30:00.000-05:00",
+      "stop": "2026-11-10T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Southeast Bulloch High School",
+        "Woodville-Tompkins High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southeast Bulloch High School",
+          "core": "southeast bulloch",
+          "confidence": 2
+        },
+        {
+          "team": "Woodville-Tompkins High School",
+          "core": "woodville tompkins",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070230",
+      "stream_id": 2070230,
+      "extension": "ts",
+      "original_name": "NFHS Network 133: Pinewood Christian Academy vs. David Emanuel Academy Middle School Boys And Girls Basketball @ 10 Nov 05:55 PM ET",
+      "name": "Pinewood Christian Academy vs. David Emanuel Academy Middle School Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T17:55:00.000-05:00",
+      "stop": "2026-11-10T20:25:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Pinewood Christian Academy",
+        "David Emanuel Academy Middle School Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pinewood Christian Academy",
+          "core": "pinewood christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070220",
+      "stream_id": 2070220,
+      "extension": "ts",
+      "original_name": "NFHS Network 143: Marion County High School vs. Hubbertville School Junior Varsity Girls Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Marion County High School vs. Hubbertville School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Marion County High School",
+        "Hubbertville School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070210",
+      "stream_id": 2070210,
+      "extension": "ts",
+      "original_name": "NFHS Network 153: Worth County High School vs. Pelham High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "Worth County High School vs. Pelham High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Worth County High School",
+        "Pelham High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Worth County High School",
+          "core": "worth county",
+          "confidence": 1
+        },
+        {
+          "team": "Pelham High School",
+          "core": "pelham",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070200",
+      "stream_id": 2070200,
+      "extension": "ts",
+      "original_name": "NFHS Network 163: Brooks County High School vs. Scintilla Charter Academy Varsity Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Brooks County High School vs. Scintilla Charter Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Brooks County High School",
+        "Scintilla Charter Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brooks County High School",
+          "core": "brooks county",
+          "confidence": 3
+        },
+        {
+          "team": "Scintilla Charter Academy",
+          "core": "scintilla charter academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070198",
+      "stream_id": 2070198,
+      "extension": "ts",
+      "original_name": "NFHS Network 165: Metter High School vs. Woodville-Tompkins High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "Metter High School vs. Woodville-Tompkins High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Metter High School",
+        "Woodville-Tompkins High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Metter High School",
+          "core": "metter",
+          "confidence": 1
+        },
+        {
+          "team": "Woodville-Tompkins High School",
+          "core": "woodville tompkins",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070182",
+      "stream_id": 2070182,
+      "extension": "ts",
+      "original_name": "NFHS Network 181: Cook High School vs. Valdosta High School Junior Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "Cook High School vs. Valdosta High School Junior Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Cook High School",
+        "Valdosta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Cook High School",
+          "core": "cook",
+          "confidence": 3
+        },
+        {
+          "team": "Valdosta High School",
+          "core": "valdosta",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070168",
+      "stream_id": 2070168,
+      "extension": "ts",
+      "original_name": "NFHS Network 195: Tallulah Falls School vs. Sugar Hill Christian Academy Middle School Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Tallulah Falls School vs. Sugar Hill Christian Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tallulah Falls School",
+        "Sugar Hill Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Tallulah Falls School",
+          "core": "tallulah falls",
+          "confidence": 2
+        },
+        {
+          "team": "Sugar Hill Christian Academy",
+          "core": "sugar hill christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070166",
+      "stream_id": 2070166,
+      "extension": "ts",
+      "original_name": "NFHS Network 197: Fayette County High School vs. Whitewater High School Freshman Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Fayette County High School vs. Whitewater High School Freshman Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fayette County High School",
+        "Whitewater High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fayette County High School",
+          "core": "fayette county",
+          "confidence": 2
+        },
+        {
+          "team": "Whitewater High School",
+          "core": "whitewater",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070152",
+      "stream_id": 2070152,
+      "extension": "ts",
+      "original_name": "NFHS Network 211: Away vs. Providence Christian School Middle School Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Away vs. Providence Christian School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Providence Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Providence Christian School",
+          "core": "providence christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070151",
+      "stream_id": 2070151,
+      "extension": "ts",
+      "original_name": "NFHS Network 212: North Forsyth High School vs. East Forsyth High School Junior Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "North Forsyth High School vs. East Forsyth High School Junior Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "North Forsyth High School",
+        "East Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Forsyth High School",
+          "core": "north forsyth",
+          "confidence": 2
+        },
+        {
+          "team": "East Forsyth High School",
+          "core": "east forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070139",
+      "stream_id": 2070139,
+      "extension": "ts",
+      "original_name": "NFHS Network 224: Evans High School vs. West Forsyth High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "Evans High School vs. West Forsyth High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Evans High School",
+        "West Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Evans High School",
+          "core": "evans",
+          "confidence": 1
+        },
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070135",
+      "stream_id": 2070135,
+      "extension": "ts",
+      "original_name": "NFHS Network 228: Johnson County High School vs. Damascus Middle School Middle School Boys And Girls Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Johnson County High School vs. Damascus Middle School Middle School Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Johnson County High School",
+        "Damascus Middle School Middle School Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Johnson County High School",
+          "core": "johnson county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070132",
+      "stream_id": 2070132,
+      "extension": "ts",
+      "original_name": "NFHS Network 231: H. V. Jenkins High School vs. Liberty County High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "H. V. Jenkins High School vs. Liberty County High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "H. V. Jenkins High School",
+        "Liberty County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Liberty County High School",
+          "core": "liberty county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070112",
+      "stream_id": 2070112,
+      "extension": "ts",
+      "original_name": "NFHS Network 251: Creekside Christian Academy Middle School Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Creekside Christian Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Creekside Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekside Christian Academy",
+          "core": "creekside christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070109",
+      "stream_id": 2070109,
+      "extension": "ts",
+      "original_name": "NFHS Network 254: East Jackson High School vs. Gainesville High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "East Jackson High School vs. Gainesville High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "East Jackson High School",
+        "Gainesville High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Jackson High School",
+          "core": "east jackson",
+          "confidence": 2
+        },
+        {
+          "team": "Gainesville High School",
+          "core": "gainesville",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070096",
+      "stream_id": 2070096,
+      "extension": "ts",
+      "original_name": "NFHS Network 267: Dacula High School vs. Buford High School Varsity Girls Flag Football @ 10 Nov 06:00 PM ET",
+      "name": "Dacula High School vs. Buford High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Dacula High School",
+        "Buford High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Dacula High School",
+          "core": "dacula",
+          "confidence": 1
+        },
+        {
+          "team": "Buford High School",
+          "core": "buford",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070095",
+      "stream_id": 2070095,
+      "extension": "ts",
+      "original_name": "NFHS Network 268: Killian Hill Christian School vs. Monsignor Donovan Catholic High School Varsity Girls Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Killian Hill Christian School vs. Monsignor Donovan Catholic High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Killian Hill Christian School",
+        "Monsignor Donovan Catholic High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Killian Hill Christian School",
+          "core": "killian hill christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070082",
+      "stream_id": 2070082,
+      "extension": "ts",
+      "original_name": "NFHS Network 281: Notre Dame Academy vs. Killian Hill Christian School Junior Varsity Boys Basketball @ 10 Nov 06:00 PM ET",
+      "name": "Notre Dame Academy vs. Killian Hill Christian School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:00:00.000-05:00",
+      "stop": "2026-11-10T20:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Notre Dame Academy",
+        "Killian Hill Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        },
+        {
+          "team": "Killian Hill Christian School",
+          "core": "killian hill christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070078",
+      "stream_id": 2070078,
+      "extension": "ts",
+      "original_name": "NFHS Network 285: Tabernacle Christian School vs. Calvary Christian Varsity Girls Basketball @ 10 Nov 06:15 PM ET",
+      "name": "Tabernacle Christian School vs. Calvary Christian Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:15:00.000-05:00",
+      "stop": "2026-11-10T20:45:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tabernacle Christian School",
+        "Calvary Christian"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Christian",
+          "core": "calvary christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070077",
+      "stream_id": 2070077,
+      "extension": "ts",
+      "original_name": "NFHS Network 286: Berkmar High School vs. Central Gwinnett High School Varsity Girls Basketball @ 10 Nov 06:15 PM ET",
+      "name": "Berkmar High School vs. Central Gwinnett High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:15:00.000-05:00",
+      "stop": "2026-11-10T20:45:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Berkmar High School",
+        "Central Gwinnett High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Berkmar High School",
+          "core": "berkmar",
+          "confidence": 1
+        },
+        {
+          "team": "Central Gwinnett High School",
+          "core": "central gwinnett",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070074",
+      "stream_id": 2070074,
+      "extension": "ts",
+      "original_name": "NFHS Network 289: Fulton Science Academy vs. Heritage Prep School Varsity Boys And Girls Basketball @ 10 Nov 06:15 PM ET",
+      "name": "Fulton Science Academy vs. Heritage Prep School Varsity Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:15:00.000-05:00",
+      "stop": "2026-11-10T20:45:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fulton Science Academy",
+        "Heritage Prep School Varsity Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fulton Science Academy",
+          "core": "fulton science academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070048",
+      "stream_id": 2070048,
+      "extension": "ts",
+      "original_name": "NFHS Network 315: Wesleyan School vs. Pace Academy Varsity Girls Basketball @ 10 Nov 06:30 PM ET",
+      "name": "Wesleyan School vs. Pace Academy Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:30:00.000-05:00",
+      "stop": "2026-11-10T21:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Wesleyan School",
+        "Pace Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Wesleyan School",
+          "core": "wesleyan",
+          "confidence": 1
+        },
+        {
+          "team": "Pace Academy",
+          "core": "pace academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2070020",
+      "stream_id": 2070020,
+      "extension": "ts",
+      "original_name": "NFHS Network 343: Winder-Barrow High School vs. Social Circle High School Varsity Boys And Girls Basketball @ 10 Nov 06:30 PM ET",
+      "name": "Winder-Barrow High School vs. Social Circle High School Varsity Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:30:00.000-05:00",
+      "stop": "2026-11-10T21:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Winder-Barrow High School",
+        "Social Circle High School Varsity Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Winder-Barrow High School",
+          "core": "winder barrow",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069981",
+      "stream_id": 2069981,
+      "extension": "ts",
+      "original_name": "NFHS Network 382: Dodge County High School vs. Swainsboro High School Varsity Girls Flag Football @ 10 Nov 06:30 PM ET",
+      "name": "Dodge County High School vs. Swainsboro High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Dodge County High School",
+        "Swainsboro High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Dodge County High School",
+          "core": "dodge county",
+          "confidence": 2
+        },
+        {
+          "team": "Swainsboro High School",
+          "core": "swainsboro",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069963",
+      "stream_id": 2069963,
+      "extension": "ts",
+      "original_name": "NFHS Network 400: Pinecrest Academy vs. Cornerstone Preparatory Academy Varsity Girls Basketball @ 10 Nov 06:30 PM ET",
+      "name": "Pinecrest Academy vs. Cornerstone Preparatory Academy Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:30:00.000-05:00",
+      "stop": "2026-11-10T21:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Pinecrest Academy",
+        "Cornerstone Preparatory Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pinecrest Academy",
+          "core": "pinecrest academy",
+          "confidence": 2
+        },
+        {
+          "team": "Cornerstone Preparatory Academy",
+          "core": "cornerstone preparatory academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069926",
+      "stream_id": 2069926,
+      "extension": "ts",
+      "original_name": "NFHS Network 437: Paideia School vs. Lovett School Varsity Girls Basketball @ 10 Nov 06:30 PM ET",
+      "name": "Paideia School vs. Lovett School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:30:00.000-05:00",
+      "stop": "2026-11-10T21:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Paideia School",
+        "Lovett School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Paideia School",
+          "core": "paideia",
+          "confidence": 1
+        },
+        {
+          "team": "Lovett School",
+          "core": "lovett",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069902",
+      "stream_id": 2069902,
+      "extension": "ts",
+      "original_name": "NFHS Network 461: Hapeville Charter Career Academy vs. Creekside Christian Academy Junior Varsity Boys Basketball @ 10 Nov 06:45 PM ET",
+      "name": "Hapeville Charter Career Academy vs. Creekside Christian Academy Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:45:00.000-05:00",
+      "stop": "2026-11-10T21:15:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Hapeville Charter Career Academy",
+        "Creekside Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekside Christian Academy",
+          "core": "creekside christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069899",
+      "stream_id": 2069899,
+      "extension": "ts",
+      "original_name": "NFHS Network 464: Seckinger High School vs. Alpharetta High School Varsity Girls Basketball @ 10 Nov 06:45 PM ET",
+      "name": "Seckinger High School vs. Alpharetta High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:45:00.000-05:00",
+      "stop": "2026-11-10T21:15:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Seckinger High School",
+        "Alpharetta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Seckinger High School",
+          "core": "seckinger",
+          "confidence": 1
+        },
+        {
+          "team": "Alpharetta High School",
+          "core": "alpharetta",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069883",
+      "stream_id": 2069883,
+      "extension": "ts",
+      "original_name": "NFHS Network 480: Chestatee High School vs. North Oconee High School Varsity Girls Basketball @ 10 Nov 06:55 PM ET",
+      "name": "Chestatee High School vs. North Oconee High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T18:55:00.000-05:00",
+      "stop": "2026-11-10T21:25:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Chestatee High School",
+        "North Oconee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Chestatee High School",
+          "core": "chestatee",
+          "confidence": 1
+        },
+        {
+          "team": "North Oconee High School",
+          "core": "north oconee",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069860",
+      "stream_id": 2069860,
+      "extension": "ts",
+      "original_name": "NFHS Network 502: Oakwood Christian Academy vs. Southeast Whitfield High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Oakwood Christian Academy vs. Southeast Whitfield High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Oakwood Christian Academy",
+        "Southeast Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Oakwood Christian Academy",
+          "core": "oakwood christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Southeast Whitfield High School",
+          "core": "southeast whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069848",
+      "stream_id": 2069848,
+      "extension": "ts",
+      "original_name": "NFHS Network 513: Brunswick High School vs. Memorial Day School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Brunswick High School vs. Memorial Day School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Brunswick High School",
+        "Memorial Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brunswick High School",
+          "core": "brunswick",
+          "confidence": 1
+        },
+        {
+          "team": "Memorial Day School",
+          "core": "memorial day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069842",
+      "stream_id": 2069842,
+      "extension": "ts",
+      "original_name": "NFHS Network 519: Southeast Bulloch High School vs. Groves High School Varsity Girls Flag Football @ 10 Nov 07:00 PM ET",
+      "name": "Southeast Bulloch High School vs. Groves High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Southeast Bulloch High School",
+        "Groves High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southeast Bulloch High School",
+          "core": "southeast bulloch",
+          "confidence": 2
+        },
+        {
+          "team": "Groves High School",
+          "core": "groves",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069837",
+      "stream_id": 2069837,
+      "extension": "ts",
+      "original_name": "NFHS Network 524: Pebblebrook High School vs. Chattahoochee High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Pebblebrook High School vs. Chattahoochee High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Pebblebrook High School",
+        "Chattahoochee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pebblebrook High School",
+          "core": "pebblebrook",
+          "confidence": 1
+        },
+        {
+          "team": "Chattahoochee High School",
+          "core": "chattahoochee",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069835",
+      "stream_id": 2069835,
+      "extension": "ts",
+      "original_name": "NFHS Network 525: South Effingham High School vs. Grovetown High School Varsity Girls Flag Football @ 10 Nov 07:00 PM ET",
+      "name": "South Effingham High School vs. Grovetown High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "South Effingham High School",
+        "Grovetown High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "South Effingham High School",
+          "core": "south effingham",
+          "confidence": 2
+        },
+        {
+          "team": "Grovetown High School",
+          "core": "grovetown",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069830",
+      "stream_id": 2069830,
+      "extension": "ts",
+      "original_name": "NFHS Network 530: KIPP Atlanta Collegiate vs. Tri-Cities High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "KIPP Atlanta Collegiate vs. Tri-Cities High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "KIPP Atlanta Collegiate",
+        "Tri-Cities High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "KIPP Atlanta Collegiate",
+          "core": "kipp atlanta collegiate",
+          "confidence": 2
+        },
+        {
+          "team": "Tri-Cities High School",
+          "core": "tri cities",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069802",
+      "stream_id": 2069802,
+      "extension": "ts",
+      "original_name": "NFHS Network 556: Peachtree Ridge High School vs. St Francis High School Varsity Boys Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Peachtree Ridge High School vs. St Francis High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Peachtree Ridge High School",
+        "St Francis High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Peachtree Ridge High School",
+          "core": "peachtree ridge",
+          "confidence": 2
+        },
+        {
+          "team": "St Francis High School",
+          "core": "st francis",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069760",
+      "stream_id": 2069760,
+      "extension": "ts",
+      "original_name": "NFHS Network 596: North Paulding High School vs. Coahulla Creek High School Varsity Boys Basketball @ 10 Nov 07:00 PM ET",
+      "name": "North Paulding High School vs. Coahulla Creek High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Paulding High School",
+        "Coahulla Creek High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Paulding High School",
+          "core": "north paulding",
+          "confidence": 2
+        },
+        {
+          "team": "Coahulla Creek High School",
+          "core": "coahulla creek",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069730",
+      "stream_id": 2069730,
+      "extension": "ts",
+      "original_name": "NFHS Network 624: Laurel High School vs. Greene County High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Laurel High School vs. Greene County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Laurel High School",
+        "Greene County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greene County High School",
+          "core": "greene county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069727",
+      "stream_id": 2069727,
+      "extension": "ts",
+      "original_name": "NFHS Network 627: Away vs. New Manchester High School Varsity Boys Wrestling @ 10 Nov 07:00 PM ET",
+      "name": "Away vs. New Manchester High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "New Manchester High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "New Manchester High School",
+          "core": "new manchester",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069720",
+      "stream_id": 2069720,
+      "extension": "ts",
+      "original_name": "NFHS Network 633: West Hall High School vs. Riverwood Junior Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "West Hall High School vs. Riverwood Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "West Hall High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Hall High School",
+          "core": "west hall",
+          "confidence": 2
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069718",
+      "stream_id": 2069718,
+      "extension": "ts",
+      "original_name": "NFHS Network 635: Mount Dora Christian Academy vs. The First Academy Varsity Boys Soccer @ 10 Nov 07:00 PM ET",
+      "name": "Mount Dora Christian Academy vs. The First Academy Varsity Boys Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Soccer",
+      "teams": [
+        "Mount Dora Christian Academy",
+        "The First Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "The First Academy",
+          "core": "first academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069699",
+      "stream_id": 2069699,
+      "extension": "ts",
+      "original_name": "NFHS Network 653: Troup County High School vs. Northgate High School Varsity Boys And Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Troup County High School vs. Northgate High School Varsity Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Troup County High School",
+        "Northgate High School Varsity Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Troup County High School",
+          "core": "troup county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069694",
+      "stream_id": 2069694,
+      "extension": "ts",
+      "original_name": "NFHS Network 657: Marion County High School vs. Winston County High School Middle School Boys Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Marion County High School vs. Winston County High School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Marion County High School",
+        "Winston County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069689",
+      "stream_id": 2069689,
+      "extension": "ts",
+      "original_name": "NFHS Network 662: Bremen High School vs. Harris County High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Bremen High School vs. Harris County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Bremen High School",
+        "Harris County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Bremen High School",
+          "core": "bremen",
+          "confidence": 1
+        },
+        {
+          "team": "Harris County High School",
+          "core": "harris county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069682",
+      "stream_id": 2069682,
+      "extension": "ts",
+      "original_name": "NFHS Network 667: Colquitt County High School vs. Miller County High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Colquitt County High School vs. Miller County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Colquitt County High School",
+        "Miller County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Colquitt County High School",
+          "core": "colquitt county",
+          "confidence": 3
+        },
+        {
+          "team": "Miller County High School",
+          "core": "miller county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069679",
+      "stream_id": 2069679,
+      "extension": "ts",
+      "original_name": "NFHS Network 669: Notre Dame Academy vs. Westwood High School 2026 MIAA Field Hockey Playoffs @ 10 Nov 07:00 PM ET",
+      "name": "Notre Dame Academy vs. Westwood High School 2026 MIAA Field Hockey Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Field Hockey",
+      "teams": [
+        "Notre Dame Academy",
+        "Westwood High School 2026 MIAA Field Hockey Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069641",
+      "stream_id": 2069641,
+      "extension": "ts",
+      "original_name": "NFHS Network 706: Kennesaw Mountain High School vs. South Cobb High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Kennesaw Mountain High School vs. South Cobb High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Kennesaw Mountain High School",
+        "South Cobb High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Kennesaw Mountain High School",
+          "core": "kennesaw mountain",
+          "confidence": 2
+        },
+        {
+          "team": "South Cobb High School",
+          "core": "south cobb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069619",
+      "stream_id": 2069619,
+      "extension": "ts",
+      "original_name": "NFHS Network 728: Creekview High School vs. West Forsyth High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Creekview High School vs. West Forsyth High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Creekview High School",
+        "West Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekview High School",
+          "core": "creekview",
+          "confidence": 1
+        },
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069613",
+      "stream_id": 2069613,
+      "extension": "ts",
+      "original_name": "NFHS Network 734: Stonehaven School vs. Mt. Bethel Christian Academy Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Stonehaven School vs. Mt. Bethel Christian Academy Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Stonehaven School",
+        "Mt. Bethel Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Stonehaven School",
+          "core": "stonehaven",
+          "confidence": 1
+        },
+        {
+          "team": "Mt. Bethel Christian Academy",
+          "core": "mt bethel christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069611",
+      "stream_id": 2069611,
+      "extension": "ts",
+      "original_name": "NFHS Network 736: Union Grove High School vs. Decatur High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Union Grove High School vs. Decatur High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Union Grove High School",
+        "Decatur High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Union Grove High School",
+          "core": "union grove",
+          "confidence": 2
+        },
+        {
+          "team": "Decatur High School",
+          "core": "decatur",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069595",
+      "stream_id": 2069595,
+      "extension": "ts",
+      "original_name": "NFHS Network 752: Southeast Bulloch High School vs. Woodville-Tompkins High School Varsity Boys Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Southeast Bulloch High School vs. Woodville-Tompkins High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Southeast Bulloch High School",
+        "Woodville-Tompkins High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southeast Bulloch High School",
+          "core": "southeast bulloch",
+          "confidence": 2
+        },
+        {
+          "team": "Woodville-Tompkins High School",
+          "core": "woodville tompkins",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069583",
+      "stream_id": 2069583,
+      "extension": "ts",
+      "original_name": "NFHS Network 764: Etowah High School vs. Lassiter High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Etowah High School vs. Lassiter High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Etowah High School",
+        "Lassiter High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Etowah High School",
+          "core": "etowah",
+          "confidence": 1
+        },
+        {
+          "team": "Lassiter High School",
+          "core": "lassiter",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069582",
+      "stream_id": 2069582,
+      "extension": "ts",
+      "original_name": "NFHS Network 765: Whitewater High School vs. Lithia Springs High School Varsity Girls Flag Football @ 10 Nov 07:00 PM ET",
+      "name": "Whitewater High School vs. Lithia Springs High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Whitewater High School",
+        "Lithia Springs High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitewater High School",
+          "core": "whitewater",
+          "confidence": 1
+        },
+        {
+          "team": "Lithia Springs High School",
+          "core": "lithia springs",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069579",
+      "stream_id": 2069579,
+      "extension": "ts",
+      "original_name": "NFHS Network 768: Greater Atlanta Christian School vs. Milton High School Varsity Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Greater Atlanta Christian School vs. Milton High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Greater Atlanta Christian School",
+        "Milton High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greater Atlanta Christian School",
+          "core": "greater atlanta christian",
+          "confidence": 2
+        },
+        {
+          "team": "Milton High School",
+          "core": "milton",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069578",
+      "stream_id": 2069578,
+      "extension": "ts",
+      "original_name": "NFHS Network 769: Away vs. Providence Christian School Middle School Girls Basketball @ 10 Nov 07:00 PM ET",
+      "name": "Away vs. Providence Christian School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:00:00.000-05:00",
+      "stop": "2026-11-10T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Providence Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Providence Christian School",
+          "core": "providence christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069565",
+      "stream_id": 2069565,
+      "extension": "ts",
+      "original_name": "NFHS Network 782: Terra Verde Discovery School vs. Community Christian School Middle School Boys Basketball @ 10 Nov 07:10 PM ET",
+      "name": "Terra Verde Discovery School vs. Community Christian School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:10:00.000-05:00",
+      "stop": "2026-11-10T21:40:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Terra Verde Discovery School",
+        "Community Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Community Christian School",
+          "core": "community christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069556",
+      "stream_id": 2069556,
+      "extension": "ts",
+      "original_name": "NFHS Network 791: Fayette County High School vs. Whitewater High School Junior Varsity Boys Basketball @ 10 Nov 07:15 PM ET",
+      "name": "Fayette County High School vs. Whitewater High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:15:00.000-05:00",
+      "stop": "2026-11-10T21:45:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fayette County High School",
+        "Whitewater High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fayette County High School",
+          "core": "fayette county",
+          "confidence": 2
+        },
+        {
+          "team": "Whitewater High School",
+          "core": "whitewater",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069544",
+      "stream_id": 2069544,
+      "extension": "ts",
+      "original_name": "NFHS Network 803: Jackson County Middle School vs Livingston Middle School Middle School Basketball vs Livingston @ 10 Nov 07:30 PM ET",
+      "name": "Jackson County Middle School vs Livingston Middle School Middle School Basketball vs Livingston",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Jackson County",
+        "Livingston"
+      ],
+      "matched_schools": [
+        {
+          "team": "Jackson County",
+          "core": "jackson county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069536",
+      "stream_id": 2069536,
+      "extension": "ts",
+      "original_name": "NFHS Network 811: St. Andrew's High School vs. Forest High School Varsity Girls Soccer @ 10 Nov 07:30 PM ET",
+      "name": "St. Andrew's High School vs. Forest High School Varsity Girls Soccer",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Soccer",
+      "teams": [
+        "St. Andrew's High School",
+        "Forest High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "St. Andrew's High School",
+          "core": "st andrew s",
+          "confidence": 2
+        },
+        {
+          "team": "Forest High School",
+          "core": "forest",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069525",
+      "stream_id": 2069525,
+      "extension": "ts",
+      "original_name": "NFHS Network 822: Whitefield Academy vs. Portland Christian School Middle School Girls Basketball @ 10 Nov 07:30 PM ET",
+      "name": "Whitefield Academy vs. Portland Christian School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Whitefield Academy",
+        "Portland Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069486",
+      "stream_id": 2069486,
+      "extension": "ts",
+      "original_name": "NFHS Network 861: Notre Dame Academy vs. Killian Hill Christian School Varsity Boys Basketball @ 10 Nov 07:30 PM ET",
+      "name": "Notre Dame Academy vs. Killian Hill Christian School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Notre Dame Academy",
+        "Killian Hill Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Notre Dame Academy",
+          "core": "notre dame academy",
+          "confidence": 2
+        },
+        {
+          "team": "Killian Hill Christian School",
+          "core": "killian hill christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069483",
+      "stream_id": 2069483,
+      "extension": "ts",
+      "original_name": "NFHS Network 864: Calvary Day School vs. Davidson Day School Varsity Boys Basketball @ 10 Nov 07:30 PM ET",
+      "name": "Calvary Day School vs. Davidson Day School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Calvary Day School",
+        "Davidson Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069482",
+      "stream_id": 2069482,
+      "extension": "ts",
+      "original_name": "NFHS Network 865: Dodge County High School vs. Swainsboro High School Junior Varsity Girls Flag Football @ 10 Nov 07:30 PM ET",
+      "name": "Dodge County High School vs. Swainsboro High School Junior Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Dodge County High School",
+        "Swainsboro High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Dodge County High School",
+          "core": "dodge county",
+          "confidence": 2
+        },
+        {
+          "team": "Swainsboro High School",
+          "core": "swainsboro",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069469",
+      "stream_id": 2069469,
+      "extension": "ts",
+      "original_name": "NFHS Network 878: Tallulah Falls School vs. Sugar Hill Christian Academy Junior Varsity Boys Basketball @ 10 Nov 07:30 PM ET",
+      "name": "Tallulah Falls School vs. Sugar Hill Christian Academy Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T22:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tallulah Falls School",
+        "Sugar Hill Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Tallulah Falls School",
+          "core": "tallulah falls",
+          "confidence": 2
+        },
+        {
+          "team": "Sugar Hill Christian Academy",
+          "core": "sugar hill christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069435",
+      "stream_id": 2069435,
+      "extension": "ts",
+      "original_name": "NFHS Network 912: Kennesaw Mountain High School vs. Hillgrove High School Junior Varsity Girls Flag Football @ 10 Nov 07:30 PM ET",
+      "name": "Kennesaw Mountain High School vs. Hillgrove High School Junior Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Kennesaw Mountain High School",
+        "Hillgrove High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Kennesaw Mountain High School",
+          "core": "kennesaw mountain",
+          "confidence": 2
+        },
+        {
+          "team": "Hillgrove High School",
+          "core": "hillgrove",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069419",
+      "stream_id": 2069419,
+      "extension": "ts",
+      "original_name": "NFHS Network 928: Tabernacle Christian School vs. Calvary Christian Varsity Boys Basketball @ 10 Nov 07:45 PM ET",
+      "name": "Tabernacle Christian School vs. Calvary Christian Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:45:00.000-05:00",
+      "stop": "2026-11-10T22:15:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Tabernacle Christian School",
+        "Calvary Christian"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Christian",
+          "core": "calvary christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069412",
+      "stream_id": 2069412,
+      "extension": "ts",
+      "original_name": "NFHS Network 935: Lambert High School vs. Denmark High School Varsity Girls Flag Football @ 10 Nov 07:45 PM ET",
+      "name": "Lambert High School vs. Denmark High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:45:00.000-05:00",
+      "stop": "2026-11-10T23:15:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Lambert High School",
+        "Denmark High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lambert High School",
+          "core": "lambert",
+          "confidence": 1
+        },
+        {
+          "team": "Denmark High School",
+          "core": "denmark",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069408",
+      "stream_id": 2069408,
+      "extension": "ts",
+      "original_name": "NFHS Network 939: Scholars Guild Academy vs. Monsignor Donovan Catholic High School Varsity Boys Basketball @ 10 Nov 07:50 PM ET",
+      "name": "Scholars Guild Academy vs. Monsignor Donovan Catholic High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T19:50:00.000-05:00",
+      "stop": "2026-11-10T22:20:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Scholars Guild Academy",
+        "Monsignor Donovan Catholic High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Scholars Guild Academy",
+          "core": "scholars guild academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069389",
+      "stream_id": 2069389,
+      "extension": "ts",
+      "original_name": "NFHS Network 958: Away vs. Excel Christian School Middle School Boys Basketball @ 10 Nov 08:00 PM ET",
+      "name": "Away vs. Excel Christian School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Excel Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Excel Christian School",
+          "core": "excel christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069347",
+      "stream_id": 2069347,
+      "extension": "ts",
+      "original_name": "NFHS Network 1000: Excel Christian Academy vs. Cornerstone Preparatory Academy Varsity Boys Basketball @ 10 Nov 08:00 PM ET",
+      "name": "Excel Christian Academy vs. Cornerstone Preparatory Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Excel Christian Academy",
+        "Cornerstone Preparatory Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Excel Christian Academy",
+          "core": "excel christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Cornerstone Preparatory Academy",
+          "core": "cornerstone preparatory academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069305",
+      "stream_id": 2069305,
+      "extension": "ts",
+      "original_name": "NFHS Network 1042: Paideia School vs. Lovett School Varsity Boys Basketball @ 10 Nov 08:00 PM ET",
+      "name": "Paideia School vs. Lovett School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Paideia School",
+        "Lovett School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Paideia School",
+          "core": "paideia",
+          "confidence": 1
+        },
+        {
+          "team": "Lovett School",
+          "core": "lovett",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069303",
+      "stream_id": 2069303,
+      "extension": "ts",
+      "original_name": "NFHS Network 1044: Destiny Christian School vs. Community Christian School Middle School Girls Basketball @ 10 Nov 08:00 PM ET",
+      "name": "Destiny Christian School vs. Community Christian School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Destiny Christian School",
+        "Community Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Community Christian School",
+          "core": "community christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069268",
+      "stream_id": 2069268,
+      "extension": "ts",
+      "original_name": "NFHS Network 1079: Calvary Day School vs. Richmond Hill High School Varsity Football @ 10 Nov 08:00 PM ET",
+      "name": "Calvary Day School vs. Richmond Hill High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Calvary Day School",
+        "Richmond Hill High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Day School",
+          "core": "calvary day",
+          "confidence": 2
+        },
+        {
+          "team": "Richmond Hill High School",
+          "core": "richmond hill",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069234",
+      "stream_id": 2069234,
+      "extension": "ts",
+      "original_name": "NFHS Network 1113: West Forsyth High School vs. Statesboro High School Varsity Girls Flag Football @ 10 Nov 08:00 PM ET",
+      "name": "West Forsyth High School vs. Statesboro High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T23:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "West Forsyth High School",
+        "Statesboro High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        },
+        {
+          "team": "Statesboro High School",
+          "core": "statesboro",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069211",
+      "stream_id": 2069211,
+      "extension": "ts",
+      "original_name": "NFHS Network 1136: Griffin High School vs. Whitewater High School Varsity Girls Flag Football @ 10 Nov 08:00 PM ET",
+      "name": "Griffin High School vs. Whitewater High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T23:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Griffin High School",
+        "Whitewater High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Griffin High School",
+          "core": "griffin",
+          "confidence": 1
+        },
+        {
+          "team": "Whitewater High School",
+          "core": "whitewater",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069172",
+      "stream_id": 2069172,
+      "extension": "ts",
+      "original_name": "NFHS Network 1175: Trinity Christian School vs. First Presbyterian Day School Varsity Girls Basketball @ 10 Nov 08:00 PM ET",
+      "name": "Trinity Christian School vs. First Presbyterian Day School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:00:00.000-05:00",
+      "stop": "2026-11-10T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Trinity Christian School",
+        "First Presbyterian Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Trinity Christian School",
+          "core": "trinity christian",
+          "confidence": 1
+        },
+        {
+          "team": "First Presbyterian Day School",
+          "core": "first presbyterian day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069089",
+      "stream_id": 2069089,
+      "extension": "ts",
+      "original_name": "NFHS Network 1258: Seckinger High School vs. Alpharetta High School Varsity Boys Basketball @ 10 Nov 08:20 PM ET",
+      "name": "Seckinger High School vs. Alpharetta High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:20:00.000-05:00",
+      "stop": "2026-11-10T22:50:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Seckinger High School",
+        "Alpharetta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Seckinger High School",
+          "core": "seckinger",
+          "confidence": 1
+        },
+        {
+          "team": "Alpharetta High School",
+          "core": "alpharetta",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069080",
+      "stream_id": 2069080,
+      "extension": "ts",
+      "original_name": "NFHS Network 1267: Marion County High School vs. Winston County High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Marion County High School vs. Winston County High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Marion County High School",
+        "Winston County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069077",
+      "stream_id": 2069077,
+      "extension": "ts",
+      "original_name": "NFHS Network 1270: Kennesaw Mountain High School vs. South Cobb High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Kennesaw Mountain High School vs. South Cobb High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Kennesaw Mountain High School",
+        "South Cobb High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Kennesaw Mountain High School",
+          "core": "kennesaw mountain",
+          "confidence": 2
+        },
+        {
+          "team": "South Cobb High School",
+          "core": "south cobb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069076",
+      "stream_id": 2069076,
+      "extension": "ts",
+      "original_name": "NFHS Network 1271: West Hall High School vs. Riverwood Varsity Girls Basketball @ 10 Nov 08:30 PM ET",
+      "name": "West Hall High School vs. Riverwood Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "West Hall High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Hall High School",
+          "core": "west hall",
+          "confidence": 2
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069069",
+      "stream_id": 2069069,
+      "extension": "ts",
+      "original_name": "NFHS Network 1278: Dougherty Comprehensive High School vs. Valdosta High School Varsity Girls Flag Football @ 10 Nov 08:30 PM ET",
+      "name": "Dougherty Comprehensive High School vs. Valdosta High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-11T00:00:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Dougherty Comprehensive High School",
+        "Valdosta High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Valdosta High School",
+          "core": "valdosta",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069054",
+      "stream_id": 2069054,
+      "extension": "ts",
+      "original_name": "NFHS Network 1292: Fideles Christian School vs. The King's Academy Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Fideles Christian School vs. The King's Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fideles Christian School",
+        "The King's Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fideles Christian School",
+          "core": "fideles christian",
+          "confidence": 2
+        },
+        {
+          "team": "The King's Academy",
+          "core": "king s academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069050",
+      "stream_id": 2069050,
+      "extension": "ts",
+      "original_name": "NFHS Network 1296: Hapeville Charter Career Academy vs. Creekside Christian Academy Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Hapeville Charter Career Academy vs. Creekside Christian Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Hapeville Charter Career Academy",
+        "Creekside Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekside Christian Academy",
+          "core": "creekside christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069027",
+      "stream_id": 2069027,
+      "extension": "ts",
+      "original_name": "NFHS Network 1318: Bremen High School vs. Harris County High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Bremen High School vs. Harris County High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Bremen High School",
+        "Harris County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Bremen High School",
+          "core": "bremen",
+          "confidence": 1
+        },
+        {
+          "team": "Harris County High School",
+          "core": "harris county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069026",
+      "stream_id": 2069026,
+      "extension": "ts",
+      "original_name": "NFHS Network 1319: Creekview High School vs. West Forsyth High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Creekview High School vs. West Forsyth High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Creekview High School",
+        "West Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Creekview High School",
+          "core": "creekview",
+          "confidence": 1
+        },
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069025",
+      "stream_id": 2069025,
+      "extension": "ts",
+      "original_name": "NFHS Network 1320: Etowah High School vs. Lassiter High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Etowah High School vs. Lassiter High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Etowah High School",
+        "Lassiter High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Etowah High School",
+          "core": "etowah",
+          "confidence": 1
+        },
+        {
+          "team": "Lassiter High School",
+          "core": "lassiter",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069017",
+      "stream_id": 2069017,
+      "extension": "ts",
+      "original_name": "NFHS Network 1328: Union Grove High School vs. Decatur High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Union Grove High School vs. Decatur High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Union Grove High School",
+        "Decatur High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Union Grove High School",
+          "core": "union grove",
+          "confidence": 2
+        },
+        {
+          "team": "Decatur High School",
+          "core": "decatur",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069006",
+      "stream_id": 2069006,
+      "extension": "ts",
+      "original_name": "NFHS Network 1338: Oakwood Christian Academy vs. Southeast Whitfield High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Oakwood Christian Academy vs. Southeast Whitfield High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Oakwood Christian Academy",
+        "Southeast Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Oakwood Christian Academy",
+          "core": "oakwood christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Southeast Whitfield High School",
+          "core": "southeast whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069005",
+      "stream_id": 2069005,
+      "extension": "ts",
+      "original_name": "NFHS Network 1339: KIPP Atlanta Collegiate vs. Tri-Cities High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "KIPP Atlanta Collegiate vs. Tri-Cities High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "KIPP Atlanta Collegiate",
+        "Tri-Cities High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "KIPP Atlanta Collegiate",
+          "core": "kipp atlanta collegiate",
+          "confidence": 2
+        },
+        {
+          "team": "Tri-Cities High School",
+          "core": "tri cities",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069002",
+      "stream_id": 2069002,
+      "extension": "ts",
+      "original_name": "NFHS Network 1342: Beaufort High School vs. Woodville-Tompkins High School Varsity Girls Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Beaufort High School vs. Woodville-Tompkins High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Beaufort High School",
+        "Woodville-Tompkins High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Woodville-Tompkins High School",
+          "core": "woodville tompkins",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068990",
+      "stream_id": 2068990,
+      "extension": "ts",
+      "original_name": "NFHS Network 1353: Stonehaven School vs. Mt. Bethel Christian Academy Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Stonehaven School vs. Mt. Bethel Christian Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Stonehaven School",
+        "Mt. Bethel Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Stonehaven School",
+          "core": "stonehaven",
+          "confidence": 1
+        },
+        {
+          "team": "Mt. Bethel Christian Academy",
+          "core": "mt bethel christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068967",
+      "stream_id": 2068967,
+      "extension": "ts",
+      "original_name": "NFHS Network 1375: Berkmar High School vs. Central Gwinnett High School Varsity Boys Basketball @ 10 Nov 08:30 PM ET",
+      "name": "Berkmar High School vs. Central Gwinnett High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:30:00.000-05:00",
+      "stop": "2026-11-10T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Berkmar High School",
+        "Central Gwinnett High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Berkmar High School",
+          "core": "berkmar",
+          "confidence": 1
+        },
+        {
+          "team": "Central Gwinnett High School",
+          "core": "central gwinnett",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068962",
+      "stream_id": 2068962,
+      "extension": "ts",
+      "original_name": "NFHS Network 1379: Discovery High School vs. Buford High School Varsity Girls Flag Football @ 10 Nov 08:40 PM ET",
+      "name": "Discovery High School vs. Buford High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T20:40:00.000-05:00",
+      "stop": "2026-11-11T00:10:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Discovery High School",
+        "Buford High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Discovery High School",
+          "core": "discovery",
+          "confidence": 1
+        },
+        {
+          "team": "Buford High School",
+          "core": "buford",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068835",
+      "stream_id": 2068835,
+      "extension": "ts",
+      "original_name": "NFHS Network 1500: Griffin High School vs. Lithia Springs High School Varsity Girls Flag Football @ 10 Nov 09:00 PM ET",
+      "name": "Griffin High School vs. Lithia Springs High School Varsity Girls Flag Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-10T21:00:00.000-05:00",
+      "stop": "2026-11-11T00:30:00.000-05:00",
+      "sport": "Flag Football",
+      "teams": [
+        "Griffin High School",
+        "Lithia Springs High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Griffin High School",
+          "core": "griffin",
+          "confidence": 1
+        },
+        {
+          "team": "Lithia Springs High School",
+          "core": "lithia springs",
           "confidence": 2
         }
       ]
