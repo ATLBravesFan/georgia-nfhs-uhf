@@ -282036,14 +282036,775 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-10T15:38:29.667Z",
+      "previous_latest_title_day": null,
+      "latest_title_day": "2026-11-10",
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 44,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: NO EVENT",
+              "after": "NFHS Network 01: Fayetteville Academy Assembly @ 10 Nov 11:45 AM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T11:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: NO EVENT",
+              "after": "NFHS Network 02: Douglas High School Assembly @ 10 Nov 12:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T12:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: NO EVENT",
+              "after": "NFHS Network 03: Beach High School Assembly @ 10 Nov 12:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T12:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: NO EVENT",
+              "after": "NFHS Network 04: Whitesboro High School vs. Buffalo Valley High School Middle School Boys And Girls Basketball @ 10 Nov 12:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T12:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: NO EVENT",
+              "after": "NFHS Network 05: Nov 10th Episode 2026 Georgia High School Sports Daily Show @ 10 Nov 01:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T13:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: NO EVENT",
+              "after": "NFHS Network 06: Big Valley High School Other Activity @ 10 Nov 01:29 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T13:29:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: NO EVENT",
+              "after": "NFHS Network 07: 11/10/26 LO-AM @ 10 Nov 01:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T13:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: NO EVENT",
+              "after": "NFHS Network 08: Holmes County High School Ceremony @ 10 Nov 02:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T14:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: NO EVENT",
+              "after": "NFHS Network 09: Northside High School vs. Greenland High School Varsity Girls Basketball @ 10 Nov 02:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T14:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: NO EVENT",
+              "after": "NFHS Network 10: Wayne vs. Philip Barbour 2026 WVSSAC AA Girls Volleyball Quarterfinals #3 @ 10 Nov 02:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T14:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: NO EVENT",
+              "after": "NFHS Network 11: Summit Christian vs. East Hardy 2026 WVSSAC A Girls Volleyball Quarterfinals #3 @ 10 Nov 02:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T14:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: NO EVENT",
+              "after": "NFHS Network 12: Rockwood High School Varsity Boys Basketball @ 10 Nov 02:50 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T14:50:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: NO EVENT",
+              "after": "NFHS Network 13: Cromwell High School vs. Joel Barlow High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: NO EVENT",
+              "after": "NFHS Network 14: Away vs. Watkinson School Varsity Girls Soccer @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: NO EVENT",
+              "after": "NFHS Network 15: St. Paul Catholic High School vs. Stonington High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: NO EVENT",
+              "after": "NFHS Network 16: Central Lake High School vs. East Jordan High School Middle School Boys Basketball @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: NO EVENT",
+              "after": "NFHS Network 17: Lakeview High School vs. East Hampton High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: NO EVENT",
+              "after": "NFHS Network 18: Away vs. Red Level High School Middle School Boys Basketball @ 10 Nov 03:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: NO EVENT",
+              "after": "NFHS Network 19: Smithfield High School Event @ 10 Nov 03:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 20,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 20: NO EVENT",
+              "after": "NFHS Network 20: Bacon Academy High School vs. Suffield High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 03:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 21,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 21: NO EVENT",
+              "after": "NFHS Network 21: Afternoon Session Varsity Coed Band Competition @ 10 Nov 03:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T15:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 22,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 22: NO EVENT",
+              "after": "NFHS Network 22: Lakewood High School Varsity Girls Basketball - Part 1 @ 10 Nov 04:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 23,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 23: NO EVENT",
+              "after": "NFHS Network 23: South Harrison vs. James Monroe 2026 WVSSAC AA Girls Volleyball Quarterfinals #4 @ 10 Nov 04:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 24,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 24: NO EVENT",
+              "after": "NFHS Network 24: Morton High School vs. Crescent High School 2026 WIAA Football Playoffs @ 10 Nov 04:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 25,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 25: NO EVENT",
+              "after": "NFHS Network 25: Greenbrier West vs. Madonna 2026 WVSSAC A Girls Volleyball Quarterfinals #4 @ 10 Nov 04:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 26,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 26: NO EVENT",
+              "after": "NFHS Network 26: Calvary Christian Junior Varsity Girls Basketball @ 10 Nov 04:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 27,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 27: NO EVENT",
+              "after": "NFHS Network 27: Sarasota School of Arts and Sciences Middle School Boys And Girls Basketball @ 10 Nov 04:15 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:15:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 28,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 28: NO EVENT",
+              "after": "NFHS Network 28: McKenzie High School vs. Florala High School Middle School Boys Basketball @ 10 Nov 04:15 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:15:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 29,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 29: NO EVENT",
+              "after": "NFHS Network 29: Mountain Brook High School Signing Day - Part 1 @ 10 Nov 04:20 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:20:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 30,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 30: NO EVENT",
+              "after": "NFHS Network 30: Oakes High School Ceremony @ 10 Nov 04:25 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:25:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 31,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 31: NO EVENT",
+              "after": "NFHS Network 31: Seymour High School vs. New Fairfield High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 32,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 32: NO EVENT",
+              "after": "NFHS Network 32: Easley Christian School Varsity Boys Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 33,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 33: NO EVENT",
+              "after": "NFHS Network 33: Keystone Oaks High School vs. Beaver Area High School Middle School Girls Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 34,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 34: NO EVENT",
+              "after": "NFHS Network 34: Sheets Memorial Christian School vs. Union Grove Christian School Middle School Girls Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 35,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 35: NO EVENT",
+              "after": "NFHS Network 35: Away vs. Miami Coral Park Sr High School Varsity Girls Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 36,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 36: NO EVENT",
+              "after": "NFHS Network 36: North Broward Preparatory School vs. Somerset Academy Junior Varsity Boys Soccer @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 37,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 37: NO EVENT",
+              "after": "NFHS Network 37: Gibbs High School vs. Plant High School Varsity Girls Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 38,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 38: NO EVENT",
+              "after": "NFHS Network 38: Greenville Middle/High School vs. Piscataquis Community Secondary School Middle School Boys And Girls Basketball @ 10 Nov 04:30 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 39,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 39: NO EVENT",
+              "after": "NFHS Network 39: Faith Baptist Christian Academy Middle School Boys Basketball @ 10 Nov 04:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 40,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 40: NO EVENT",
+              "after": "NFHS Network 40: Fulton Science Academy vs. Heritage Prep School Junior Varsity Boys Basketball @ 10 Nov 04:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 41,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 41: NO EVENT",
+              "after": "NFHS Network 41: Victory Baptist School vs. Friendship Christian School Middle School Boys Basketball @ 10 Nov 04:45 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:45:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 42,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 42: NO EVENT",
+              "after": "NFHS Network 42: Water Valley High School Assembly @ 10 Nov 04:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 43,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 43: NO EVENT",
+              "after": "NFHS Network 43: True North Classical Academy vs. Marathon Middle-High School Varsity Boys Soccer @ 10 Nov 04:55 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T16:55:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 44,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 44: NO EVENT",
+              "after": "NFHS Network 44: Rocky Hill High School vs. Masuk High School 2026 CIAC Girls Soccer Playoffs @ 10 Nov 05:00 PM ET"
+            },
+            "provider_start": {
+              "before": null,
+              "after": "2026-11-10T17:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": null,
+              "after": "2026-11-10"
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-09T15:58:21.996Z",
+  "last_change_at": "2026-11-10T15:38:29.667Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": null,
+    "latest_title_day": "2026-11-10",
     "title_day_counts": {
-      "undated": 5000
+      "2026-11-10": 44,
+      "undated": 4956
     }
   }
 }
