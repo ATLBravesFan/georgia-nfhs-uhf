@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-10T16:26:33.337-05:00",
+  "generated_at": "2026-11-10T19:18:02.295-05:00",
   "eastern_date": "2026-11-10",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 113,
-  "georgia_channel_count": 113,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 112,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 112,
+  "currently_live_estimate": 73,
+  "upcoming_next_7_days": 37,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,27 +26,6 @@
   },
   "school_name_count": 665,
   "channels": [
-    {
-      "id": "ga-nfhs-2070339",
-      "stream_id": 2070339,
-      "extension": "ts",
-      "original_name": "NFHS Network 26: Calvary Christian Junior Varsity Girls Basketball @ 10 Nov 04:00 PM ET",
-      "name": "Calvary Christian Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-10T16:00:00.000-05:00",
-      "stop": "2026-11-10T18:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Calvary Christian"
-      ],
-      "matched_schools": [
-        {
-          "team": "Calvary Christian",
-          "core": "calvary christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070325",
       "stream_id": 2070325,
