@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-13T10:27:25.213-05:00",
+  "generated_at": "2026-11-13T13:54:30.922-05:00",
   "eastern_date": "2026-11-13",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 45,
-  "georgia_channel_count": 45,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 45,
+  "total_georgia_matches_found": 143,
+  "georgia_channel_count": 143,
+  "currently_live_estimate": 1,
+  "upcoming_next_7_days": 142,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -1140,6 +1140,2280 @@
         {
           "team": "Abundant Life Christian Academy",
           "core": "abundant life christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069502",
+      "stream_id": 2069502,
+      "extension": "ts",
+      "original_name": "NFHS Network 845: Southwest DeKalb High School vs. Tucker High School 2026 Football Playoffs @ 13 Nov 07:45 PM ET",
+      "name": "Southwest DeKalb High School vs. Tucker High School 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T19:45:00.000-05:00",
+      "stop": "2026-11-13T23:15:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Southwest DeKalb High School",
+        "Tucker High School 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southwest DeKalb High School",
+          "core": "southwest dekalb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069495",
+      "stream_id": 2069495,
+      "extension": "ts",
+      "original_name": "NFHS Network 852: Brookwood High School vs. Central Gwinnett High School Varsity Boys Basketball @ 13 Nov 07:50 PM ET",
+      "name": "Brookwood High School vs. Central Gwinnett High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T19:50:00.000-05:00",
+      "stop": "2026-11-13T22:20:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Brookwood High School",
+        "Central Gwinnett High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brookwood High School",
+          "core": "brookwood",
+          "confidence": 1
+        },
+        {
+          "team": "Central Gwinnett High School",
+          "core": "central gwinnett",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069491",
+      "stream_id": 2069491,
+      "extension": "ts",
+      "original_name": "NFHS Network 856: Unity Christian High School vs. Kenowa Hills High School 2026 MHSAA Football Regional @ 13 Nov 07:55 PM ET",
+      "name": "Unity Christian High School vs. Kenowa Hills High School 2026 MHSAA Football Regional",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T19:55:00.000-05:00",
+      "stop": "2026-11-13T23:25:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Unity Christian High School",
+        "Kenowa Hills High School 2026 MHSAA Football Regional"
+      ],
+      "matched_schools": [
+        {
+          "team": "Unity Christian High School",
+          "core": "unity christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069477",
+      "stream_id": 2069477,
+      "extension": "ts",
+      "original_name": "NFHS Network 870: North Murray High School vs. Ringgold High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "North Murray High School vs. Ringgold High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "North Murray High School",
+        "Ringgold High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Murray High School",
+          "core": "north murray",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069448",
+      "stream_id": 2069448,
+      "extension": "ts",
+      "original_name": "NFHS Network 899: Friendship Christian School vs. Concord Christian School 2026 TSSAA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Friendship Christian School vs. Concord Christian School 2026 TSSAA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Friendship Christian School",
+        "Concord Christian School 2026 TSSAA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Friendship Christian School",
+          "core": "friendship christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069433",
+      "stream_id": 2069433,
+      "extension": "ts",
+      "original_name": "NFHS Network 914: Montgomery County vs. Emanuel County Institute 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Montgomery County vs. Emanuel County Institute 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Montgomery County",
+        "Emanuel County Institute 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Montgomery County",
+          "core": "montgomery county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069431",
+      "stream_id": 2069431,
+      "extension": "ts",
+      "original_name": "NFHS Network 916: Baker County High School vs. Byne Christian School Varsity Boys Basketball @ 13 Nov 08:00 PM ET",
+      "name": "Baker County High School vs. Byne Christian School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Baker County High School",
+        "Byne Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Baker County High School",
+          "core": "baker county",
+          "confidence": 1
+        },
+        {
+          "team": "Byne Christian School",
+          "core": "byne christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069379",
+      "stream_id": 2069379,
+      "extension": "ts",
+      "original_name": "NFHS Network 968: Cook High School vs. Fannin County High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Cook High School vs. Fannin County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Cook High School",
+        "Fannin County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Cook High School",
+          "core": "cook",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069320",
+      "stream_id": 2069320,
+      "extension": "ts",
+      "original_name": "NFHS Network 1027: Woodward Academy vs. Langston Hughes High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Woodward Academy vs. Langston Hughes High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Woodward Academy",
+        "Langston Hughes High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Woodward Academy",
+          "core": "woodward academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069311",
+      "stream_id": 2069311,
+      "extension": "ts",
+      "original_name": "NFHS Network 1036: Crisp County High School vs. Stephens County High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Crisp County High School vs. Stephens County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Crisp County High School",
+        "Stephens County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Crisp County High School",
+          "core": "crisp county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069273",
+      "stream_id": 2069273,
+      "extension": "ts",
+      "original_name": "NFHS Network 1074: Gordon Central High School vs. Southeast Whitfield High School Varsity Girls Basketball @ 13 Nov 08:00 PM ET",
+      "name": "Gordon Central High School vs. Southeast Whitfield High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Gordon Central High School",
+        "Southeast Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Gordon Central High School",
+          "core": "gordon central",
+          "confidence": 2
+        },
+        {
+          "team": "Southeast Whitfield High School",
+          "core": "southeast whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069260",
+      "stream_id": 2069260,
+      "extension": "ts",
+      "original_name": "NFHS Network 1087: Away vs. West Forsyth High School Varsity Football @ 13 Nov 08:00 PM ET",
+      "name": "Away vs. West Forsyth High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Away",
+        "West Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069252",
+      "stream_id": 2069252,
+      "extension": "ts",
+      "original_name": "NFHS Network 1095: Warner Robins High School vs. Jefferson High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Warner Robins High School vs. Jefferson High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Warner Robins High School",
+        "Jefferson High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Warner Robins High School",
+          "core": "warner robins",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069219",
+      "stream_id": 2069219,
+      "extension": "ts",
+      "original_name": "NFHS Network 1128: Villa Rica High School vs. Cass High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Villa Rica High School vs. Cass High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Villa Rica High School",
+        "Cass High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Villa Rica High School",
+          "core": "villa rica",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069209",
+      "stream_id": 2069209,
+      "extension": "ts",
+      "original_name": "NFHS Network 1138: Brooks County High School vs. Lucy C Laney High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Brooks County High School vs. Lucy C Laney High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Brooks County High School",
+        "Lucy C Laney High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brooks County High School",
+          "core": "brooks county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069208",
+      "stream_id": 2069208,
+      "extension": "ts",
+      "original_name": "NFHS Network 1139: Gordon Lee High School vs. Commerce High School 2026 Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Gordon Lee High School vs. Commerce High School 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Gordon Lee High School",
+        "Commerce High School 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Gordon Lee High School",
+          "core": "gordon lee",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069172",
+      "stream_id": 2069172,
+      "extension": "ts",
+      "original_name": "NFHS Network 1175: Mount Paran Christian School vs. Greater Atlanta Christian School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Mount Paran Christian School vs. Greater Atlanta Christian School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Mount Paran Christian School",
+        "Greater Atlanta Christian School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Paran Christian School",
+          "core": "mt paran christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069171",
+      "stream_id": 2069171,
+      "extension": "ts",
+      "original_name": "NFHS Network 1176: Macon County High School vs. Alcoa High School 2026 TSSAA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Macon County High School vs. Alcoa High School 2026 TSSAA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Macon County High School",
+        "Alcoa High School 2026 TSSAA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Macon County High School",
+          "core": "macon county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069166",
+      "stream_id": 2069166,
+      "extension": "ts",
+      "original_name": "NFHS Network 1181: Away vs. Heritage Christian Academy Middle School Boys Basketball @ 13 Nov 08:00 PM ET",
+      "name": "Away vs. Heritage Christian Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Heritage Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Heritage Christian Academy",
+          "core": "heritage christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069152",
+      "stream_id": 2069152,
+      "extension": "ts",
+      "original_name": "NFHS Network 1195: Cape Fear Academy vs. Crossroads Christian School Varsity Boys Basketball @ 13 Nov 08:00 PM ET",
+      "name": "Cape Fear Academy vs. Crossroads Christian School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Cape Fear Academy",
+        "Crossroads Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Crossroads Christian School",
+          "core": "crossroads christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069145",
+      "stream_id": 2069145,
+      "extension": "ts",
+      "original_name": "NFHS Network 1202: Richmond Hill High School vs. North Paulding High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "Richmond Hill High School vs. North Paulding High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Richmond Hill High School",
+        "North Paulding High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Richmond Hill High School",
+          "core": "richmond hill",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069141",
+      "stream_id": 2069141,
+      "extension": "ts",
+      "original_name": "NFHS Network 1206: South Gwinnett High School vs. Parkview High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "name": "South Gwinnett High School vs. Parkview High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T23:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "South Gwinnett High School",
+        "Parkview High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "South Gwinnett High School",
+          "core": "south gwinnett",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2069011",
+      "stream_id": 2069011,
+      "extension": "ts",
+      "original_name": "NFHS Network 1333: East Hall High School vs. Banks County High School Varsity Girls Basketball @ 13 Nov 08:00 PM ET",
+      "name": "East Hall High School vs. Banks County High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:00:00.000-05:00",
+      "stop": "2026-11-13T22:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "East Hall High School",
+        "Banks County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Hall High School",
+          "core": "east hall",
+          "confidence": 2
+        },
+        {
+          "team": "Banks County High School",
+          "core": "banks county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068975",
+      "stream_id": 2068975,
+      "extension": "ts",
+      "original_name": "NFHS Network 1367: Miller Grove High School vs. Hapeville Charter Career Academy 2026 Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "Miller Grove High School vs. Hapeville Charter Career Academy 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Miller Grove High School",
+        "Hapeville Charter Career Academy 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Miller Grove High School",
+          "core": "miller grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068961",
+      "stream_id": 2068961,
+      "extension": "ts",
+      "original_name": "NFHS Network 1380: Tift County High School vs. Coffee High School 2026 GHSA Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "Tift County High School vs. Coffee High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Tift County High School",
+        "Coffee High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Tift County High School",
+          "core": "tift county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068958",
+      "stream_id": 2068958,
+      "extension": "ts",
+      "original_name": "NFHS Network 1383: Dade County High School vs. Social Circle High School 2026 GHSA Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "Dade County High School vs. Social Circle High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Dade County High School",
+        "Social Circle High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Dade County High School",
+          "core": "dade county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068957",
+      "stream_id": 2068957,
+      "extension": "ts",
+      "original_name": "NFHS Network 1384: Bacon County High School vs. Heard County High School 2026 GHSA Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "Bacon County High School vs. Heard County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Bacon County High School",
+        "Heard County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Bacon County High School",
+          "core": "bacon county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068953",
+      "stream_id": 2068953,
+      "extension": "ts",
+      "original_name": "NFHS Network 1388: Collins Hill High School vs. Newton High School 2026 Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "Collins Hill High School vs. Newton High School 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Collins Hill High School",
+        "Newton High School 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Collins Hill High School",
+          "core": "collins hill",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068952",
+      "stream_id": 2068952,
+      "extension": "ts",
+      "original_name": "NFHS Network 1389: South Gwinnett High School vs. Parkview High School 2026 Football Playoffs @ 13 Nov 08:15 PM ET",
+      "name": "South Gwinnett High School vs. Parkview High School 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:15:00.000-05:00",
+      "stop": "2026-11-13T23:45:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "South Gwinnett High School",
+        "Parkview High School 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "South Gwinnett High School",
+          "core": "south gwinnett",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068950",
+      "stream_id": 2068950,
+      "extension": "ts",
+      "original_name": "NFHS Network 1391: New Manchester High School vs. Heritage High School - Conyers 2026 GHSA Football Playoffs @ 13 Nov 08:20 PM ET",
+      "name": "New Manchester High School vs. Heritage High School - Conyers 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:20:00.000-05:00",
+      "stop": "2026-11-13T23:50:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "New Manchester High School",
+        "Heritage High School - Conyers 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "New Manchester High School",
+          "core": "new manchester",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068936",
+      "stream_id": 2068936,
+      "extension": "ts",
+      "original_name": "NFHS Network 1404: Burke County High School vs. G.W. Carver STEM High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Burke County High School vs. G.W. Carver STEM High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Burke County High School",
+        "G.W. Carver STEM High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Burke County High School",
+          "core": "burke county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068929",
+      "stream_id": 2068929,
+      "extension": "ts",
+      "original_name": "NFHS Network 1410: Johns Creek High School vs. Pope High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Johns Creek High School vs. Pope High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Johns Creek High School",
+        "Pope High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Johns Creek High School",
+          "core": "johns creek",
+          "confidence": 2
+        },
+        {
+          "team": "Pope High School",
+          "core": "pope",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068923",
+      "stream_id": 2068923,
+      "extension": "ts",
+      "original_name": "NFHS Network 1416: Pace Academy vs. Christian Heritage School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Pace Academy vs. Christian Heritage School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Pace Academy",
+        "Christian Heritage School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pace Academy",
+          "core": "pace academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068916",
+      "stream_id": 2068916,
+      "extension": "ts",
+      "original_name": "NFHS Network 1422: McIntosh County Academy vs. Clinch County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "McIntosh County Academy vs. Clinch County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "McIntosh County Academy",
+        "Clinch County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "McIntosh County Academy",
+          "core": "mcintosh county academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068902",
+      "stream_id": 2068902,
+      "extension": "ts",
+      "original_name": "NFHS Network 1435: Athens Academy vs. King's Ridge Christian School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Athens Academy vs. King's Ridge Christian School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Athens Academy",
+        "King's Ridge Christian School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Athens Academy",
+          "core": "athens academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068896",
+      "stream_id": 2068896,
+      "extension": "ts",
+      "original_name": "NFHS Network 1441: Greene County High School vs. Johnson County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Greene County High School vs. Johnson County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Greene County High School",
+        "Johnson County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greene County High School",
+          "core": "greene county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068892",
+      "stream_id": 2068892,
+      "extension": "ts",
+      "original_name": "NFHS Network 1445: Mount Pisgah Christian School vs. Whitefield Academy 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Mount Pisgah Christian School vs. Whitefield Academy 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Mount Pisgah Christian School",
+        "Whitefield Academy 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Pisgah Christian School",
+          "core": "mt pisgah christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068891",
+      "stream_id": 2068891,
+      "extension": "ts",
+      "original_name": "NFHS Network 1446: North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "North Forsyth High School",
+        "Carrollton High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Forsyth High School",
+          "core": "north forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068886",
+      "stream_id": 2068886,
+      "extension": "ts",
+      "original_name": "NFHS Network 1450: North Atlanta High School vs. North Gwinnett High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "North Atlanta High School vs. North Gwinnett High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "North Atlanta High School",
+        "North Gwinnett High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Atlanta High School",
+          "core": "north atlanta",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068882",
+      "stream_id": 2068882,
+      "extension": "ts",
+      "original_name": "NFHS Network 1454: Westside High School - Augusta vs. Pierce County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Westside High School - Augusta vs. Pierce County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Westside High School - Augusta",
+        "Pierce County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Westside High School - Augusta",
+          "core": "westside augusta",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068880",
+      "stream_id": 2068880,
+      "extension": "ts",
+      "original_name": "NFHS Network 1456: Jenkins County High School vs. Warren County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Jenkins County High School vs. Warren County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Jenkins County High School",
+        "Warren County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Jenkins County High School",
+          "core": "jenkins county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068879",
+      "stream_id": 2068879,
+      "extension": "ts",
+      "original_name": "NFHS Network 1457: Glenn Hills High School vs. Westminster Schools of Augusta Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Glenn Hills High School vs. Westminster Schools of Augusta Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Glenn Hills High School",
+        "Westminster Schools of Augusta"
+      ],
+      "matched_schools": [
+        {
+          "team": "Glenn Hills High School",
+          "core": "glenn hills",
+          "confidence": 2
+        },
+        {
+          "team": "Westminster Schools of Augusta",
+          "core": "westminster schools of augusta",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068851",
+      "stream_id": 2068851,
+      "extension": "ts",
+      "original_name": "NFHS Network 1485: Stone Mountain High School vs. Martin Luther King Jr. High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Stone Mountain High School vs. Martin Luther King Jr. High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Stone Mountain High School",
+        "Martin Luther King Jr. High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Stone Mountain High School",
+          "core": "stone mountain",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068838",
+      "stream_id": 2068838,
+      "extension": "ts",
+      "original_name": "NFHS Network 1497: North Springs High School vs. Riverwood Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "North Springs High School vs. Riverwood Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Springs High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Springs High School",
+          "core": "north springs",
+          "confidence": 2
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068827",
+      "stream_id": 2068827,
+      "extension": "ts",
+      "original_name": "NFHS Network 1508: Fulton Science Academy vs. Cornerstone Preparatory Academy Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Fulton Science Academy vs. Cornerstone Preparatory Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fulton Science Academy",
+        "Cornerstone Preparatory Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fulton Science Academy",
+          "core": "fulton science academy",
+          "confidence": 2
+        },
+        {
+          "team": "Cornerstone Preparatory Academy",
+          "core": "cornerstone preparatory academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068824",
+      "stream_id": 2068824,
+      "extension": "ts",
+      "original_name": "NFHS Network 1511: North Forsyth High School vs. John Motley Morehead High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "North Forsyth High School vs. John Motley Morehead High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Forsyth High School",
+        "John Motley Morehead High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Forsyth High School",
+          "core": "north forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068819",
+      "stream_id": 2068819,
+      "extension": "ts",
+      "original_name": "NFHS Network 1516: Southland Academy vs. Southwest Georgia Academy 2026 GHSA Football Semifinal @ 13 Nov 08:30 PM ET",
+      "name": "Southland Academy vs. Southwest Georgia Academy 2026 GHSA Football Semifinal",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Southland Academy",
+        "Southwest Georgia Academy 2026 GHSA Football Semifinal"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southland Academy",
+          "core": "southland academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068810",
+      "stream_id": 2068810,
+      "extension": "ts",
+      "original_name": "NFHS Network 1525: Landmark Christian School vs. Fellowship Christian School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Landmark Christian School vs. Fellowship Christian School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Landmark Christian School",
+        "Fellowship Christian School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Landmark Christian School",
+          "core": "landmark christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068808",
+      "stream_id": 2068808,
+      "extension": "ts",
+      "original_name": "NFHS Network 1527: Screven County High School vs. Swainsboro High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Screven County High School vs. Swainsboro High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Screven County High School",
+        "Swainsboro High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Screven County High School",
+          "core": "screven county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068799",
+      "stream_id": 2068799,
+      "extension": "ts",
+      "original_name": "NFHS Network 1536: Mountain View High School vs. Chattahoochee High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Mountain View High School vs. Chattahoochee High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Mountain View High School",
+        "Chattahoochee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mountain View High School",
+          "core": "mountain view",
+          "confidence": 2
+        },
+        {
+          "team": "Chattahoochee High School",
+          "core": "chattahoochee",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068794",
+      "stream_id": 2068794,
+      "extension": "ts",
+      "original_name": "NFHS Network 1541: B.E.S.T. Academy vs. Trion High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "B.E.S.T. Academy vs. Trion High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "B.E.S.T. Academy",
+        "Trion High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "B.E.S.T. Academy",
+          "core": "b e s t academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068793",
+      "stream_id": 2068793,
+      "extension": "ts",
+      "original_name": "NFHS Network 1542: East Coweta High School vs. Denmark High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "East Coweta High School vs. Denmark High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "East Coweta High School",
+        "Denmark High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Coweta High School",
+          "core": "east coweta",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068792",
+      "stream_id": 2068792,
+      "extension": "ts",
+      "original_name": "NFHS Network 1543: Miller Grove High School vs. Hapeville Charter Career Academy 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Miller Grove High School vs. Hapeville Charter Career Academy 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Miller Grove High School",
+        "Hapeville Charter Career Academy 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Miller Grove High School",
+          "core": "miller grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068791",
+      "stream_id": 2068791,
+      "extension": "ts",
+      "original_name": "NFHS Network 1544: Fideles Christian School vs. East Forsyth High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Fideles Christian School vs. East Forsyth High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Fideles Christian School",
+        "East Forsyth High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fideles Christian School",
+          "core": "fideles christian",
+          "confidence": 2
+        },
+        {
+          "team": "East Forsyth High School",
+          "core": "east forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068786",
+      "stream_id": 2068786,
+      "extension": "ts",
+      "original_name": "NFHS Network 1549: South Effingham High School vs. Clarke Central High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "South Effingham High School vs. Clarke Central High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "South Effingham High School",
+        "Clarke Central High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "South Effingham High School",
+          "core": "south effingham",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068778",
+      "stream_id": 2068778,
+      "extension": "ts",
+      "original_name": "NFHS Network 1557: Ridgeland High School vs. Coahulla Creek High School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Ridgeland High School vs. Coahulla Creek High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Ridgeland High School",
+        "Coahulla Creek High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Ridgeland High School",
+          "core": "ridgeland",
+          "confidence": 1
+        },
+        {
+          "team": "Coahulla Creek High School",
+          "core": "coahulla creek",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068777",
+      "stream_id": 2068777,
+      "extension": "ts",
+      "original_name": "NFHS Network 1558: Northside High School - Columbus vs. Milton High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Northside High School - Columbus vs. Milton High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Northside High School - Columbus",
+        "Milton High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Northside High School - Columbus",
+          "core": "northside columbus",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068774",
+      "stream_id": 2068774,
+      "extension": "ts",
+      "original_name": "NFHS Network 1561: Away vs. Valwood School Varsity Football @ 13 Nov 08:30 PM ET",
+      "name": "Away vs. Valwood School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Away",
+        "Valwood School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Valwood School",
+          "core": "valwood",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068772",
+      "stream_id": 2068772,
+      "extension": "ts",
+      "original_name": "NFHS Network 1563: Taylor County High School vs. Holmes County High School 2026 FHSAA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Taylor County High School vs. Holmes County High School 2026 FHSAA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Taylor County High School",
+        "Holmes County High School 2026 FHSAA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Taylor County High School",
+          "core": "taylor county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068757",
+      "stream_id": 2068757,
+      "extension": "ts",
+      "original_name": "NFHS Network 1577: Glascock County High School vs. Portal Middle High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Glascock County High School vs. Portal Middle High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Glascock County High School",
+        "Portal Middle High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Glascock County High School",
+          "core": "glascock county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068756",
+      "stream_id": 2068756,
+      "extension": "ts",
+      "original_name": "NFHS Network 1578: Southwest DeKalb High School vs. Tucker High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Southwest DeKalb High School vs. Tucker High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Southwest DeKalb High School",
+        "Tucker High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Southwest DeKalb High School",
+          "core": "southwest dekalb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068742",
+      "stream_id": 2068742,
+      "extension": "ts",
+      "original_name": "NFHS Network 1591: Rabun County High School vs. Fitzgerald High School College and Career Academy 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Rabun County High School vs. Fitzgerald High School College and Career Academy 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Rabun County High School",
+        "Fitzgerald High School College and Career Academy 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Rabun County High School",
+          "core": "rabun county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068740",
+      "stream_id": 2068740,
+      "extension": "ts",
+      "original_name": "NFHS Network 1593: Telfair County High School vs. Randolph Clay High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Telfair County High School vs. Randolph Clay High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Telfair County High School",
+        "Randolph Clay High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Telfair County High School",
+          "core": "telfair county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068737",
+      "stream_id": 2068737,
+      "extension": "ts",
+      "original_name": "NFHS Network 1596: Pike County High School vs. Hephzibah High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Pike County High School vs. Hephzibah High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Pike County High School",
+        "Hephzibah High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pike County High School",
+          "core": "pike county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068736",
+      "stream_id": 2068736,
+      "extension": "ts",
+      "original_name": "NFHS Network 1597: Shaw High School vs. Brookstone School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Shaw High School vs. Brookstone School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Shaw High School",
+        "Brookstone School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Shaw High School",
+          "core": "shaw",
+          "confidence": 1
+        },
+        {
+          "team": "Brookstone School",
+          "core": "brookstone",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068735",
+      "stream_id": 2068735,
+      "extension": "ts",
+      "original_name": "NFHS Network 1598: North Georgia Christian Academy vs. Sugar Hill Christian Academy Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "North Georgia Christian Academy vs. Sugar Hill Christian Academy Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Georgia Christian Academy",
+        "Sugar Hill Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Georgia Christian Academy",
+          "core": "north georgia christian academy",
+          "confidence": 2
+        },
+        {
+          "team": "Sugar Hill Christian Academy",
+          "core": "sugar hill christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068733",
+      "stream_id": 2068733,
+      "extension": "ts",
+      "original_name": "NFHS Network 1600: Millennium Charter Academy vs. Calvary Christian Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Millennium Charter Academy vs. Calvary Christian Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Millennium Charter Academy",
+        "Calvary Christian"
+      ],
+      "matched_schools": [
+        {
+          "team": "Calvary Christian",
+          "core": "calvary christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068714",
+      "stream_id": 2068714,
+      "extension": "ts",
+      "original_name": "NFHS Network 1618: Away vs. Memorial Day School Varsity Boys Basketball @ 13 Nov 08:30 PM ET",
+      "name": "Away vs. Memorial Day School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-13T23:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Memorial Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Memorial Day School",
+          "core": "memorial day",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068713",
+      "stream_id": 2068713,
+      "extension": "ts",
+      "original_name": "NFHS Network 1619: Lake Oconee Academy vs. Charlton County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "name": "Lake Oconee Academy vs. Charlton County High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Lake Oconee Academy",
+        "Charlton County High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lake Oconee Academy",
+          "core": "lake oconee academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068707",
+      "stream_id": 2068707,
+      "extension": "ts",
+      "original_name": "NFHS Network 1625: Brookstone School vs. Bulloch Academy Varsity Football @ 13 Nov 08:30 PM ET",
+      "name": "Brookstone School vs. Bulloch Academy Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Brookstone School",
+        "Bulloch Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brookstone School",
+          "core": "brookstone",
+          "confidence": 1
+        },
+        {
+          "team": "Bulloch Academy",
+          "core": "bulloch academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068697",
+      "stream_id": 2068697,
+      "extension": "ts",
+      "original_name": "NFHS Network 1634: Grace Christian Academy vs. Franklin Road Academy 2026 TSSAA Football Quarterfinal @ 13 Nov 08:45 PM ET",
+      "name": "Grace Christian Academy vs. Franklin Road Academy 2026 TSSAA Football Quarterfinal",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:45:00.000-05:00",
+      "stop": "2026-11-14T00:15:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Grace Christian Academy",
+        "Franklin Road Academy 2026 TSSAA Football Quarterfinal"
+      ],
+      "matched_schools": [
+        {
+          "team": "Grace Christian Academy",
+          "core": "grace christian academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068696",
+      "stream_id": 2068696,
+      "extension": "ts",
+      "original_name": "NFHS Network 1635: West Forsyth High School vs. Valdosta High School 2026 Football Playoffs @ 13 Nov 08:45 PM ET",
+      "name": "West Forsyth High School vs. Valdosta High School 2026 Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T20:45:00.000-05:00",
+      "stop": "2026-11-14T00:15:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "West Forsyth High School",
+        "Valdosta High School 2026 Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068527",
+      "stream_id": 2068527,
+      "extension": "ts",
+      "original_name": "NFHS Network 1801: West Forsyth High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 13 Nov 09:00 PM ET",
+      "name": "West Forsyth High School vs. Valdosta High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:00:00.000-05:00",
+      "stop": "2026-11-14T00:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "West Forsyth High School",
+        "Valdosta High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068446",
+      "stream_id": 2068446,
+      "extension": "ts",
+      "original_name": "NFHS Network 1881: Fayette County High School vs. Vinemont High School 2026 AHSAA Football Playoffs @ 13 Nov 09:00 PM ET",
+      "name": "Fayette County High School vs. Vinemont High School 2026 AHSAA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:00:00.000-05:00",
+      "stop": "2026-11-14T00:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Fayette County High School",
+        "Vinemont High School 2026 AHSAA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Fayette County High School",
+          "core": "fayette county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068396",
+      "stream_id": 2068396,
+      "extension": "ts",
+      "original_name": "NFHS Network 1930: Walnut Grove High School vs. Braswell High School 2026 UIL Football Playoffs @ 13 Nov 09:00 PM ET",
+      "name": "Walnut Grove High School vs. Braswell High School 2026 UIL Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:00:00.000-05:00",
+      "stop": "2026-11-14T00:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Walnut Grove High School",
+        "Braswell High School 2026 UIL Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Walnut Grove High School",
+          "core": "walnut grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068364",
+      "stream_id": 2068364,
+      "extension": "ts",
+      "original_name": "NFHS Network 1962: Mt. Zion High School - Jonesboro vs. Troup County High School Varsity Football @ 13 Nov 09:00 PM ET",
+      "name": "Mt. Zion High School - Jonesboro vs. Troup County High School Varsity Football",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:00:00.000-05:00",
+      "stop": "2026-11-14T00:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "Mt. Zion High School - Jonesboro",
+        "Troup County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mt. Zion High School - Jonesboro",
+          "core": "mt zion jonesboro",
+          "confidence": 2
+        },
+        {
+          "team": "Troup County High School",
+          "core": "troup county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068284",
+      "stream_id": 2068284,
+      "extension": "ts",
+      "original_name": "NFHS Network 2042: East Hall High School vs. Banks County High School Varsity Boys Basketball @ 13 Nov 09:30 PM ET",
+      "name": "East Hall High School vs. Banks County High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "East Hall High School",
+        "Banks County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Hall High School",
+          "core": "east hall",
+          "confidence": 2
+        },
+        {
+          "team": "Banks County High School",
+          "core": "banks county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068229",
+      "stream_id": 2068229,
+      "extension": "ts",
+      "original_name": "NFHS Network 2097: Gordon Central High School vs. Southeast Whitfield High School Varsity Boys Basketball @ 13 Nov 09:30 PM ET",
+      "name": "Gordon Central High School vs. Southeast Whitfield High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T21:30:00.000-05:00",
+      "stop": "2026-11-14T00:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Gordon Central High School",
+        "Southeast Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Gordon Central High School",
+          "core": "gordon central",
+          "confidence": 2
+        },
+        {
+          "team": "Southeast Whitfield High School",
+          "core": "southeast whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2068055",
+      "stream_id": 2068055,
+      "extension": "ts",
+      "original_name": "NFHS Network 2271: Providence Classical Christian School vs. Evergreen Lutheran High School 2026 WIAA Girls Soccer Playoffs @ 13 Nov 10:55 PM ET",
+      "name": "Providence Classical Christian School vs. Evergreen Lutheran High School 2026 WIAA Girls Soccer Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-13T22:55:00.000-05:00",
+      "stop": "2026-11-14T01:25:00.000-05:00",
+      "sport": "Soccer",
+      "teams": [
+        "Providence Classical Christian School",
+        "Evergreen Lutheran High School 2026 WIAA Girls Soccer Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "Providence Classical Christian School",
+          "core": "providence classical christian",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067884",
+      "stream_id": 2067884,
+      "extension": "ts",
+      "original_name": "NFHS Network 2440: Away vs. Marion County High School Middle School Boys Basketball @ 14 Nov 01:00 AM ET",
+      "name": "Away vs. Marion County High School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T01:00:00.000-05:00",
+      "stop": "2026-11-14T03:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Marion County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067878",
+      "stream_id": 2067878,
+      "extension": "ts",
+      "original_name": "NFHS Network 2445: Athens Christian School vs. Banks County High School Junior Varsity Boys Basketball @ 14 Nov 01:01 AM ET",
+      "name": "Athens Christian School vs. Banks County High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T01:01:00.000-05:00",
+      "stop": "2026-11-14T03:31:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Athens Christian School",
+        "Banks County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Athens Christian School",
+          "core": "athens christian",
+          "confidence": 2
+        },
+        {
+          "team": "Banks County High School",
+          "core": "banks county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067858",
+      "stream_id": 2067858,
+      "extension": "ts",
+      "original_name": "NFHS Network 2464: Away vs. Upson-Lee High School Varsity Boys Wrestling @ 14 Nov 09:00 AM ET",
+      "name": "Away vs. Upson-Lee High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T09:00:00.000-05:00",
+      "stop": "2026-11-14T12:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "Upson-Lee High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Upson-Lee High School",
+          "core": "upson lee",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067857",
+      "stream_id": 2067857,
+      "extension": "ts",
+      "original_name": "NFHS Network 2465: Gordon Central High School vs. Northwest Whitfield High School Varsity Boys Wrestling @ 14 Nov 09:00 AM ET",
+      "name": "Gordon Central High School vs. Northwest Whitfield High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T09:00:00.000-05:00",
+      "stop": "2026-11-14T12:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Gordon Central High School",
+        "Northwest Whitfield High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Gordon Central High School",
+          "core": "gordon central",
+          "confidence": 2
+        },
+        {
+          "team": "Northwest Whitfield High School",
+          "core": "northwest whitfield",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067835",
+      "stream_id": 2067835,
+      "extension": "ts",
+      "original_name": "NFHS Network 2486: Centennial High School vs. Riverwood Freshman Boys Basketball @ 14 Nov 10:00 AM ET",
+      "name": "Centennial High School vs. Riverwood Freshman Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T10:00:00.000-05:00",
+      "stop": "2026-11-14T12:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Centennial High School",
+        "Riverwood"
+      ],
+      "matched_schools": [
+        {
+          "team": "Centennial High School",
+          "core": "centennial",
+          "confidence": 1
+        },
+        {
+          "team": "Riverwood",
+          "core": "riverwood",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067833",
+      "stream_id": 2067833,
+      "extension": "ts",
+      "original_name": "NFHS Network 2488: Walnut Grove High School Varsity Boys Wrestling @ 14 Nov 10:00 AM ET",
+      "name": "Walnut Grove High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T10:00:00.000-05:00",
+      "stop": "2026-11-14T13:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Walnut Grove High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Walnut Grove High School",
+          "core": "walnut grove",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067814",
+      "stream_id": 2067814,
+      "extension": "ts",
+      "original_name": "NFHS Network 2504: Away vs. Pace Academy Varsity Boys Wrestling @ 14 Nov 10:00 AM ET",
+      "name": "Away vs. Pace Academy Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T10:00:00.000-05:00",
+      "stop": "2026-11-14T13:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "Pace Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pace Academy",
+          "core": "pace academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067802",
+      "stream_id": 2067802,
+      "extension": "ts",
+      "original_name": "NFHS Network 2516: Away vs. Brantley County High School Varsity Boys Wrestling @ 14 Nov 10:45 AM ET",
+      "name": "Away vs. Brantley County High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T10:45:00.000-05:00",
+      "stop": "2026-11-14T13:45:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "Brantley County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Brantley County High School",
+          "core": "brantley county",
+          "confidence": 3
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067794",
+      "stream_id": 2067794,
+      "extension": "ts",
+      "original_name": "NFHS Network 2523: North Cobb High School vs. Carrollton High School 2026 GHSA Football Playoffs @ 14 Nov 11:00 AM ET",
+      "name": "North Cobb High School vs. Carrollton High School 2026 GHSA Football Playoffs",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T14:30:00.000-05:00",
+      "sport": "Football",
+      "teams": [
+        "North Cobb High School",
+        "Carrollton High School 2026 GHSA Football Playoffs"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Cobb High School",
+          "core": "north cobb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067793",
+      "stream_id": 2067793,
+      "extension": "ts",
+      "original_name": "NFHS Network 2524: Christian Academy Of Indiana vs. Whitefield Academy Middle School Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Christian Academy Of Indiana vs. Whitefield Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Christian Academy Of Indiana",
+        "Whitefield Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067792",
+      "stream_id": 2067792,
+      "extension": "ts",
+      "original_name": "NFHS Network 2525: Away vs. Central-Talbotton High School Middle School Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Away vs. Central-Talbotton High School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Central-Talbotton High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Central-Talbotton High School",
+          "core": "central talbotton",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067790",
+      "stream_id": 2067790,
+      "extension": "ts",
+      "original_name": "NFHS Network 2527: Arabia Mountain High School vs. Decatur High School Junior Varsity Girls Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Arabia Mountain High School vs. Decatur High School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Arabia Mountain High School",
+        "Decatur High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Arabia Mountain High School",
+          "core": "arabia mountain",
+          "confidence": 2
+        },
+        {
+          "team": "Decatur High School",
+          "core": "decatur",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067783",
+      "stream_id": 2067783,
+      "extension": "ts",
+      "original_name": "NFHS Network 2534: Crawford County High School vs. Chattahoochee Co. High School Middle School Boys And Girls Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Crawford County High School vs. Chattahoochee Co. High School Middle School Boys And Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Crawford County High School",
+        "Chattahoochee Co. High School Middle School Boys And"
+      ],
+      "matched_schools": [
+        {
+          "team": "Crawford County High School",
+          "core": "crawford county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067780",
+      "stream_id": 2067780,
+      "extension": "ts",
+      "original_name": "NFHS Network 2537: Away vs. Marion County High School Middle School Girls Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Away vs. Marion County High School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Marion County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Marion County High School",
+          "core": "marion county",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067776",
+      "stream_id": 2067776,
+      "extension": "ts",
+      "original_name": "NFHS Network 2541: Greater Atlanta Christian School vs. Pace Academy Junior Varsity Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Greater Atlanta Christian School vs. Pace Academy Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Greater Atlanta Christian School",
+        "Pace Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greater Atlanta Christian School",
+          "core": "greater atlanta christian",
+          "confidence": 2
+        },
+        {
+          "team": "Pace Academy",
+          "core": "pace academy",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067764",
+      "stream_id": 2067764,
+      "extension": "ts",
+      "original_name": "NFHS Network 2553: Walton High School vs. Denmark High School Freshman Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Walton High School vs. Denmark High School Freshman Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Walton High School",
+        "Denmark High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Walton High School",
+          "core": "walton",
+          "confidence": 1
+        },
+        {
+          "team": "Denmark High School",
+          "core": "denmark",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067737",
+      "stream_id": 2067737,
+      "extension": "ts",
+      "original_name": "NFHS Network 2580: Alpharetta High School vs. Milton High School Freshman Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Alpharetta High School vs. Milton High School Freshman Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Alpharetta High School",
+        "Milton High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Alpharetta High School",
+          "core": "alpharetta",
+          "confidence": 1
+        },
+        {
+          "team": "Milton High School",
+          "core": "milton",
+          "confidence": 1
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067706",
+      "stream_id": 2067706,
+      "extension": "ts",
+      "original_name": "NFHS Network 2611: North Cobb High School vs. Cartersville High School Varsity Baseball - Part 1 @ 14 Nov 11:00 AM ET",
+      "name": "North Cobb High School vs. Cartersville High School Varsity Baseball - Part 1",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T14:00:00.000-05:00",
+      "sport": "Baseball",
+      "teams": [
+        "North Cobb High School",
+        "Cartersville High School Varsity Baseball - Part 1"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Cobb High School",
+          "core": "north cobb",
+          "confidence": 2
+        }
+      ]
+    },
+    {
+      "id": "ga-nfhs-2067704",
+      "stream_id": 2067704,
+      "extension": "ts",
+      "original_name": "NFHS Network 2613: Monroe Area High School Junior Varsity Boys Basketball @ 14 Nov 11:00 AM ET",
+      "name": "Monroe Area High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-14T11:00:00.000-05:00",
+      "stop": "2026-11-14T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Monroe Area High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Monroe Area High School",
+          "core": "monroe area",
           "confidence": 2
         }
       ]
