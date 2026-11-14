@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "streams": {
+    "2069219": {
+      "original_name": "NFHS Network 1128: Villa Rica High School vs. Cass High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:34.548Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069252": {
+      "original_name": "NFHS Network 1095: Warner Robins High School vs. Jefferson High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:26.997Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069260": {
+      "original_name": "NFHS Network 1087: Away vs. West Forsyth High School Varsity Football @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:26.547Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069311": {
+      "original_name": "NFHS Network 1036: Crisp County High School vs. Stephens County High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:18.996Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069320": {
+      "original_name": "NFHS Network 1027: Woodward Academy vs. Langston Hughes High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:18.546Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069379": {
+      "original_name": "NFHS Network 968: Cook High School vs. Fannin County High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:10.996Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 403
+    },
+    "2069433": {
+      "original_name": "NFHS Network 914: Montgomery County vs. Emanuel County Institute 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:10.545Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069448": {
+      "original_name": "NFHS Network 899: Friendship Christian School vs. Concord Christian School 2026 TSSAA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:10.533Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069477": {
+      "original_name": "NFHS Network 870: North Murray High School vs. Ringgold High School 2026 GHSA Football Playoffs @ 13 Nov 08:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:02.544Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 404
+    },
+    "2069491": {
+      "original_name": "NFHS Network 856: Unity Christian High School vs. Kenowa Hills High School 2026 MHSAA Football Regional @ 13 Nov 07:55 PM ET",
+      "last_checked_at": "2026-11-14T01:47:02.459Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 404
+    },
+    "2069502": {
+      "original_name": "NFHS Network 845: Southwest DeKalb High School vs. Tucker High School 2026 Football Playoffs @ 13 Nov 07:45 PM ET",
+      "last_checked_at": "2026-11-14T01:47:02.532Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069704": {
+      "original_name": "NFHS Network 648: Camden County High School vs. Grayson High School 2026 GHSA Football Playoffs @ 13 Nov 07:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:02.404Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069956": {
+      "original_name": "NFHS Network 407: Baker County High School vs. Byne Christian School Varsity Girls Basketball @ 13 Nov 06:30 PM ET",
+      "last_checked_at": "2026-11-14T01:47:35.022Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 404
+    },
+    "2069972": {
+      "original_name": "NFHS Network 391: Brookwood High School vs. Central Gwinnett High School Varsity Girls Basketball @ 13 Nov 06:20 PM ET",
+      "last_checked_at": "2026-11-14T01:47:42.599Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070006": {
+      "original_name": "NFHS Network 357: Walnut Grove High School Junior Varsity Boys Wrestling @ 13 Nov 06:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:34.599Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 404
+    },
+    "2070013": {
+      "original_name": "NFHS Network 350: Away vs. Stone Mountain High School Varsity Boys Wrestling @ 13 Nov 06:00 PM ET",
+      "last_checked_at": "2026-11-14T01:47:34.997Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    }
+  },
+  "last_run_at": "2026-11-14T01:47:42.599Z",
+  "last_run_checks": 16,
+  "last_run_outcomes": {
+    "network_error": 11,
+    "http_error": 5
+  }
+}
