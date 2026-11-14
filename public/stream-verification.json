@@ -354,11 +354,126 @@
       "last_result": "network_error",
       "last_video_at": null,
       "consecutive_failures": 1
+    },
+    "2070052": {
+      "original_name": "NFHS Network 311: Oconee County High School vs. Northwest Whitfield High School 2026 GHSA Football Playoffs @ 14 Nov 06:00 PM ET",
+      "last_checked_at": "2026-11-14T23:51:41.870Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070068": {
+      "original_name": "NFHS Network 295: White County High School vs. Spencer High School 2026 GHSA Football Playoffs @ 14 Nov 06:00 PM ET",
+      "last_checked_at": "2026-11-14T23:51:39.315Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 403
+    },
+    "2070128": {
+      "original_name": "NFHS Network 235: Away vs. Colquitt County High School Junior Varsity Boys Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:51:39.024Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070152": {
+      "original_name": "NFHS Network 211: West Forsyth High School vs. Davie County High School Junior Varsity Girls Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:52:29.874Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070154": {
+      "original_name": "NFHS Network 209: Miller County High School vs. Valdosta High School Varsity Boys Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:51:39.017Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070157": {
+      "original_name": "NFHS Network 206: Away vs. East Forsyth High School Varsity Boys Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:52:27.318Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070159": {
+      "original_name": "NFHS Network 204: Walton High School vs. Denmark High School Varsity Boys Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:52:21.873Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070185": {
+      "original_name": "NFHS Network 178: Wakeland High School vs. Walnut Grove High School Varsity Boys Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:52:19.318Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070186": {
+      "original_name": "NFHS Network 177: Pope High School vs. Gainesville High School Varsity Girls Basketball @ 14 Nov 05:00 PM ET",
+      "last_checked_at": "2026-11-14T23:52:13.873Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070240": {
+      "original_name": "NFHS Network 123: Pataula Charter Academy vs. Central-Talbotton High School Varsity Boys Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:52:11.318Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070245": {
+      "original_name": "NFHS Network 118: North Hall High School vs. North Oconee High School Varsity Girls Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:52:05.873Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070247": {
+      "original_name": "NFHS Network 116: North Cobb High School vs. Cartersville High School Varsity Boys Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:52:03.319Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070250": {
+      "original_name": "NFHS Network 113: Gainesville High School vs. Dacula High School Varsity Boys Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:51:57.872Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070251": {
+      "original_name": "NFHS Network 112: Gordon Lee High School vs. Oakwood Christian Academy Varsity Boys Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:51:55.318Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070253": {
+      "original_name": "NFHS Network 110: Monroe Area High School vs. Mountain View High School Varsity Girls Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:51:49.871Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2070264": {
+      "original_name": "NFHS Network 99: Groves High School vs. Richmond Hill High School Varsity Boys Basketball @ 14 Nov 04:30 PM ET",
+      "last_checked_at": "2026-11-14T23:51:47.317Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
     }
   },
-  "last_run_at": "2026-11-14T08:08:32.543Z",
-  "last_run_checks": 2,
+  "last_run_at": "2026-11-14T23:52:29.874Z",
+  "last_run_checks": 16,
   "last_run_outcomes": {
-    "network_error": 2
+    "video_not_decodable": 3,
+    "http_error": 1,
+    "network_error": 12
   }
 }
