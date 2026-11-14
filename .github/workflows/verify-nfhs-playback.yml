@@ -1,0 +1,68 @@
+name: Verify Georgia NFHS playback
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/verify-nfhs-playback.mjs"
+      - "scripts/playback-status.mjs"
+      - ".github/workflows/verify-nfhs-playback.yml"
+  schedule:
+    # Check a bounded rotation every 15 minutes; add Friday football checks.
+    - cron: "7,22,37,52 * * * *"
+    # Friday late afternoon/evening across Eastern daylight and standard time.
+    - cron: "2,12,17,27,32,42,47,57 21-23 * * 5"
+    - cron: "2,12,17,27,32,42,47,57 0-5 * * 6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: georgia-nfhs-playback-verifier
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check scripts/playback-status.mjs
+          node --check scripts/verify-nfhs-playback.mjs
+          node --check scripts/update-nfhs.mjs
+
+      - name: Check video probe availability
+        run: ffprobe -version | head -1
+
+      - name: Verify a limited set of scheduled-live Georgia streams
+        env:
+          XTREAM_BASE_URL: ${{ secrets.XTREAM_BASE_URL }}
+          XTREAM_USERNAME: ${{ secrets.XTREAM_USERNAME }}
+          XTREAM_PASSWORD: ${{ secrets.XTREAM_PASSWORD }}
+          NFHS_MAX_CHECKS: "16"
+        run: node scripts/verify-nfhs-playback.mjs
+
+      - name: Publish verification metadata and annotated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/stream-verification.json public/events.json
+          if git diff --cached --quiet; then
+            echo "No playback status changes."
+            exit 0
+          fi
+          git commit -m "Refresh Georgia NFHS playback verification"
+          git pull --rebase origin main
+          git push
