@@ -1,6 +1,100 @@
 {
   "version": 1,
   "streams": {
+    "2068527": {
+      "original_name": "NFHS Network 1801: West Forsyth High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 13 Nov 09:00 PM ET",
+      "last_checked_at": "2026-11-14T02:04:34.903Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068696": {
+      "original_name": "NFHS Network 1635: West Forsyth High School vs. Valdosta High School 2026 Football Playoffs @ 13 Nov 08:45 PM ET",
+      "last_checked_at": "2026-11-14T02:04:34.959Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 502
+    },
+    "2068713": {
+      "original_name": "NFHS Network 1619: Lake Oconee Academy vs. Charlton County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:33.157Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068742": {
+      "original_name": "NFHS Network 1591: Rabun County High School vs. Fitzgerald High School College and Career Academy 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:33.237Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068774": {
+      "original_name": "NFHS Network 1561: Away vs. Valwood School Varsity Football @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:31.834Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 403
+    },
+    "2068882": {
+      "original_name": "NFHS Network 1454: Westside High School - Augusta vs. Pierce County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:31.463Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068891": {
+      "original_name": "NFHS Network 1446: North Forsyth High School vs. Carrollton High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:38.628Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068892": {
+      "original_name": "NFHS Network 1445: Mount Pisgah Christian School vs. Whitefield Academy 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:38.430Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 1,
+      "http_status": 502
+    },
+    "2068896": {
+      "original_name": "NFHS Network 1441: Greene County High School vs. Johnson County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:37.558Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068902": {
+      "original_name": "NFHS Network 1435: Athens Academy vs. King's Ridge Christian School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:37.599Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068916": {
+      "original_name": "NFHS Network 1422: McIntosh County Academy vs. Clinch County High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:31.414Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068923": {
+      "original_name": "NFHS Network 1416: Pace Academy vs. Christian Heritage School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:36.076Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068936": {
+      "original_name": "NFHS Network 1404: Burke County High School vs. G.W. Carver STEM High School 2026 GHSA Football Playoffs @ 13 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-14T02:04:36.551Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
     "2068950": {
       "original_name": "NFHS Network 1391: New Manchester High School vs. Heritage High School - Conyers 2026 GHSA Football Playoffs @ 13 Nov 08:20 PM ET",
       "last_checked_at": "2026-11-14T01:51:54.569Z",
@@ -168,7 +262,22 @@
     },
     "2069704": {
       "original_name": "NFHS Network 648: Camden County High School vs. Grayson High School 2026 GHSA Football Playoffs @ 13 Nov 07:00 PM ET",
-      "last_checked_at": "2026-11-14T01:47:02.404Z",
+      "last_checked_at": "2026-11-14T02:04:34.953Z",
+      "last_result": "http_error",
+      "last_video_at": null,
+      "consecutive_failures": 2,
+      "http_status": 404
+    },
+    "2069823": {
+      "original_name": "NFHS Network 537: Eagle's Landing Christian Academy vs. Morrow High School Varsity Girls Basketball @ 13 Nov 07:00 PM ET",
+      "last_checked_at": "2026-11-14T02:04:46.629Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069855": {
+      "original_name": "NFHS Network 507: Ridgeland High School vs. Coahulla Creek High School Varsity Girls Basketball @ 13 Nov 06:55 PM ET",
+      "last_checked_at": "2026-11-14T02:04:46.431Z",
       "last_result": "network_error",
       "last_video_at": null,
       "consecutive_failures": 1
@@ -233,11 +342,11 @@
       "consecutive_failures": 1
     }
   },
-  "last_run_at": "2026-11-14T01:52:10.364Z",
+  "last_run_at": "2026-11-14T02:04:46.629Z",
   "last_run_checks": 16,
   "last_run_outcomes": {
-    "video_not_decodable": 9,
-    "network_error": 5,
-    "http_error": 2
+    "video_not_decodable": 10,
+    "http_error": 4,
+    "network_error": 2
   }
 }

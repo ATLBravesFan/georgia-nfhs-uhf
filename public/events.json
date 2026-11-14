@@ -402,9 +402,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:46.431Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -436,9 +436,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:46.629Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -738,7 +738,7 @@
       "stream_id": 2069704,
       "extension": "ts",
       "original_name": "NFHS Network 648: Camden County High School vs. Grayson High School 2026 GHSA Football Playoffs @ 13 Nov 07:00 PM ET",
-      "name": "Camden County High School vs. Grayson High School 2026 GHSA Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Camden County High School vs. Grayson High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-13T19:00:00.000-05:00",
       "stop": "2026-11-13T22:30:00.000-05:00",
@@ -755,10 +755,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-14T01:47:02.404Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-14T02:04:34.953Z",
         "last_video_at": null,
-        "reason": "network_error",
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -1805,9 +1805,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:36.551Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -1868,9 +1868,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:36.076Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -1897,9 +1897,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:31.414Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -1926,9 +1926,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:37.599Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -1955,9 +1955,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:37.558Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -1984,9 +1984,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:38.430Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -2013,9 +2013,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:38.628Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -2071,9 +2071,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:31.463Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -2623,9 +2623,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:31.834Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -2710,9 +2710,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:33.237Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -2923,9 +2923,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:33.157Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -2986,9 +2986,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:34.959Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -3015,9 +3015,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-14T02:04:34.903Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -3766,6 +3766,6 @@
       }
     }
   ],
-  "playback_checked_at": "2026-11-14T01:52:10.364Z",
+  "playback_checked_at": "2026-11-14T02:04:46.629Z",
   "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
 }
