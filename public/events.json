@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-13T16:32:09.723-05:00",
+  "generated_at": "2026-11-13T19:32:14.354-05:00",
   "eastern_date": "2026-11-13",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 143,
-  "georgia_channel_count": 143,
-  "currently_live_estimate": 3,
-  "upcoming_next_7_days": 139,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 139,
+  "currently_live_estimate": 35,
+  "upcoming_next_7_days": 98,
+  "completed_today_but_still_visible": 4,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,104 +26,6 @@
   },
   "school_name_count": 665,
   "channels": [
-    {
-      "id": "ga-nfhs-2070320",
-      "stream_id": 2070320,
-      "extension": "ts",
-      "original_name": "NFHS Network 45: Lafayette Christian vs Metairie Park Country Day 2026 LHSAA Div IV Girls Volleyball Semifinals #1 @ 13 Nov 01:50 PM ET",
-      "name": "Lafayette Christian vs Metairie Park Country Day 2026 LHSAA Div IV Girls Volleyball Semifinals #1",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T13:50:00.000-05:00",
-      "stop": "2026-11-13T16:20:00.000-05:00",
-      "sport": "Volleyball",
-      "teams": [
-        "Lafayette Christian",
-        "Metairie Park Country Day 2026 LHSAA Div IV Girls Volleyball Semifinals #1"
-      ],
-      "matched_schools": [
-        {
-          "team": "Lafayette Christian",
-          "core": "lafayette christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070204",
-      "stream_id": 2070204,
-      "extension": "ts",
-      "original_name": "NFHS Network 159: St. Andrew's School vs. Woodville-Tompkins High School Varsity Girls Basketball @ 13 Nov 04:30 PM ET",
-      "name": "St. Andrew's School vs. Woodville-Tompkins High School Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T16:30:00.000-05:00",
-      "stop": "2026-11-13T19:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "St. Andrew's School",
-        "Woodville-Tompkins High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "St. Andrew's School",
-          "core": "st andrew s",
-          "confidence": 2
-        },
-        {
-          "team": "Woodville-Tompkins High School",
-          "core": "woodville tompkins",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070198",
-      "stream_id": 2070198,
-      "extension": "ts",
-      "original_name": "NFHS Network 165: North Georgia Christian Academy vs. Sugar Hill Christian Academy Middle School Girls Basketball @ 13 Nov 04:30 PM ET",
-      "name": "North Georgia Christian Academy vs. Sugar Hill Christian Academy Middle School Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T16:30:00.000-05:00",
-      "stop": "2026-11-13T19:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "North Georgia Christian Academy",
-        "Sugar Hill Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Georgia Christian Academy",
-          "core": "north georgia christian academy",
-          "confidence": 2
-        },
-        {
-          "team": "Sugar Hill Christian Academy",
-          "core": "sugar hill christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070196",
-      "stream_id": 2070196,
-      "extension": "ts",
-      "original_name": "NFHS Network 167: Millennium Charter Academy vs. Calvary Christian Junior Varsity Girls Basketball @ 13 Nov 04:30 PM ET",
-      "name": "Millennium Charter Academy vs. Calvary Christian Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T16:30:00.000-05:00",
-      "stop": "2026-11-13T19:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Millennium Charter Academy",
-        "Calvary Christian"
-      ],
-      "matched_schools": [
-        {
-          "team": "Calvary Christian",
-          "core": "calvary christian",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070180",
       "stream_id": 2070180,
