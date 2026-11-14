@@ -163,6 +163,10 @@ async function main() {
   const state = await readJson(PLAYBACK_STATE_PATH, { version: 1, streams: {} });
   if (!state.streams || typeof state.streams !== "object") state.streams = {};
   const { selected, eligibleCount } = selectCandidates(events.channels, state, now);
+  if (!selected.length) {
+    console.log(JSON.stringify({ eligible_now: eligibleCount, checked: 0, note: "Nothing eligible for a stream probe; no files modified." }));
+    return;
+  }
   const outcomes = {};
   let next = 0;
   await Promise.all(Array.from({ length: Math.min(CONCURRENCY, selected.length) }, async () => {
