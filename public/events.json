@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-13T20:46:20.456-05:00",
+  "generated_at": "2026-11-13T20:49:23.323-05:00",
   "eastern_date": "2026-11-13",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 143,
-  "georgia_channel_count": 129,
-  "currently_live_estimate": 99,
-  "upcoming_next_7_days": 26,
-  "completed_today_but_still_visible": 14,
+  "total_georgia_matches_found": 137,
+  "georgia_channel_count": 122,
+  "currently_live_estimate": 94,
+  "upcoming_next_7_days": 25,
+  "completed_today_but_still_visible": 15,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -44,35 +44,6 @@
         {
           "team": "Banks County High School",
           "core": "banks county",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2070062",
-      "stream_id": 2070062,
-      "extension": "ts",
-      "original_name": "NFHS Network 301: Providence Christian School vs. Ashford High School Junior Varsity Girls Basketball @ 13 Nov 05:58 PM ET",
-      "name": "Providence Christian School vs. Ashford High School Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:58:00.000-05:00",
-      "stop": "2026-11-13T20:28:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Providence Christian School",
-        "Ashford High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Providence Christian School",
-          "core": "providence christian",
           "confidence": 2
         }
       ],
@@ -1072,35 +1043,6 @@
       }
     },
     {
-      "id": "ga-nfhs-2069491",
-      "stream_id": 2069491,
-      "extension": "ts",
-      "original_name": "NFHS Network 856: Unity Christian High School vs. Kenowa Hills High School 2026 MHSAA Football Regional @ 13 Nov 07:55 PM ET",
-      "name": "Unity Christian High School vs. Kenowa Hills High School 2026 MHSAA Football Regional",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T19:55:00.000-05:00",
-      "stop": "2026-11-13T23:25:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Unity Christian High School",
-        "Kenowa Hills High School 2026 MHSAA Football Regional"
-      ],
-      "matched_schools": [
-        {
-          "team": "Unity Christian High School",
-          "core": "unity christian",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-14T01:47:02.459Z",
-        "last_video_at": null,
-        "reason": "http_error",
-        "matchup_confirmed": false
-      }
-    },
-    {
       "id": "ga-nfhs-2069477",
       "stream_id": 2069477,
       "extension": "ts",
@@ -1126,35 +1068,6 @@
         "checked_at": "2026-11-14T01:47:02.544Z",
         "last_video_at": null,
         "reason": "http_error",
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2069448",
-      "stream_id": 2069448,
-      "extension": "ts",
-      "original_name": "NFHS Network 899: Friendship Christian School vs. Concord Christian School 2026 TSSAA Football Playoffs @ 13 Nov 08:00 PM ET",
-      "name": "Friendship Christian School vs. Concord Christian School 2026 TSSAA Football Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T20:00:00.000-05:00",
-      "stop": "2026-11-13T23:30:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Friendship Christian School",
-        "Concord Christian School 2026 TSSAA Football Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Friendship Christian School",
-          "core": "friendship christian",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-14T01:47:10.533Z",
-        "last_video_at": null,
-        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -1505,35 +1418,6 @@
         {
           "team": "Mount Paran Christian School",
           "core": "mt paran christian",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2069171",
-      "stream_id": 2069171,
-      "extension": "ts",
-      "original_name": "NFHS Network 1176: Macon County High School vs. Alcoa High School 2026 TSSAA Football Playoffs @ 13 Nov 08:00 PM ET",
-      "name": "Macon County High School vs. Alcoa High School 2026 TSSAA Football Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T20:00:00.000-05:00",
-      "stop": "2026-11-13T23:30:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Macon County High School",
-        "Alcoa High School 2026 TSSAA Football Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Macon County High School",
-          "core": "macon county",
           "confidence": 2
         }
       ],
@@ -2746,35 +2630,6 @@
       }
     },
     {
-      "id": "ga-nfhs-2068772",
-      "stream_id": 2068772,
-      "extension": "ts",
-      "original_name": "NFHS Network 1563: Taylor County High School vs. Holmes County High School 2026 FHSAA Football Playoffs @ 13 Nov 08:30 PM ET",
-      "name": "Taylor County High School vs. Holmes County High School 2026 FHSAA Football Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T20:30:00.000-05:00",
-      "stop": "2026-11-14T00:00:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Taylor County High School",
-        "Holmes County High School 2026 FHSAA Football Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Taylor County High School",
-          "core": "taylor county",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
       "id": "ga-nfhs-2068757",
       "stream_id": 2068757,
       "extension": "ts",
@@ -3109,35 +2964,6 @@
       }
     },
     {
-      "id": "ga-nfhs-2068697",
-      "stream_id": 2068697,
-      "extension": "ts",
-      "original_name": "NFHS Network 1634: Grace Christian Academy vs. Franklin Road Academy 2026 TSSAA Football Quarterfinal @ 13 Nov 08:45 PM ET",
-      "name": "Grace Christian Academy vs. Franklin Road Academy 2026 TSSAA Football Quarterfinal",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T20:45:00.000-05:00",
-      "stop": "2026-11-14T00:15:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Grace Christian Academy",
-        "Franklin Road Academy 2026 TSSAA Football Quarterfinal"
-      ],
-      "matched_schools": [
-        {
-          "team": "Grace Christian Academy",
-          "core": "grace christian academy",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
       "id": "ga-nfhs-2068696",
       "stream_id": 2068696,
       "extension": "ts",
@@ -3213,35 +3039,6 @@
         {
           "team": "Fayette County High School",
           "core": "fayette county",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2068396",
-      "stream_id": 2068396,
-      "extension": "ts",
-      "original_name": "NFHS Network 1930: Walnut Grove High School vs. Braswell High School 2026 UIL Football Playoffs @ 13 Nov 09:00 PM ET",
-      "name": "Walnut Grove High School vs. Braswell High School 2026 UIL Football Playoffs",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T21:00:00.000-05:00",
-      "stop": "2026-11-14T00:30:00.000-05:00",
-      "sport": "Football",
-      "teams": [
-        "Walnut Grove High School",
-        "Braswell High School 2026 UIL Football Playoffs"
-      ],
-      "matched_schools": [
-        {
-          "team": "Walnut Grove High School",
-          "core": "walnut grove",
           "confidence": 2
         }
       ],
@@ -3968,7 +3765,5 @@
         "matchup_confirmed": false
       }
     }
-  ],
-  "playback_checked_at": "2026-11-14T01:47:42.599Z",
-  "playback_verification_method": "short provider sample with ffprobe; matchup identity not confirmed"
+  ]
 }
