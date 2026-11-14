@@ -1,6 +1,20 @@
 {
   "version": 1,
   "streams": {
+    "2067878": {
+      "original_name": "NFHS Network 2445: Athens Christian School vs. Banks County High School Junior Varsity Boys Basketball @ 14 Nov 01:01 AM ET",
+      "last_checked_at": "2026-11-14T08:08:32.542Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2067884": {
+      "original_name": "NFHS Network 2440: Away vs. Marion County High School Middle School Boys Basketball @ 14 Nov 01:00 AM ET",
+      "last_checked_at": "2026-11-14T08:08:32.492Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
     "2068527": {
       "original_name": "NFHS Network 1801: West Forsyth High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 13 Nov 09:00 PM ET",
       "last_checked_at": "2026-11-14T02:04:34.903Z",
@@ -342,11 +356,9 @@
       "consecutive_failures": 1
     }
   },
-  "last_run_at": "2026-11-14T02:04:46.629Z",
-  "last_run_checks": 16,
+  "last_run_at": "2026-11-14T08:08:32.543Z",
+  "last_run_checks": 2,
   "last_run_outcomes": {
-    "video_not_decodable": 10,
-    "http_error": 4,
     "network_error": 2
   }
 }
