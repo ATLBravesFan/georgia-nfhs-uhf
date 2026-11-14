@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-13T19:32:14.354-05:00",
+  "generated_at": "2026-11-13T20:46:20.456-05:00",
   "eastern_date": "2026-11-13",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 143,
-  "georgia_channel_count": 139,
-  "currently_live_estimate": 35,
-  "upcoming_next_7_days": 98,
-  "completed_today_but_still_visible": 4,
+  "georgia_channel_count": 129,
+  "currently_live_estimate": 99,
+  "upcoming_next_7_days": 26,
+  "completed_today_but_still_visible": 14,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,185 +26,6 @@
   },
   "school_name_count": 665,
   "channels": [
-    {
-      "id": "ga-nfhs-2070180",
-      "stream_id": 2070180,
-      "extension": "ts",
-      "original_name": "NFHS Network 183: Brookwood High School vs. Central Gwinnett High School Junior Varsity Girls Basketball @ 13 Nov 04:50 PM ET",
-      "name": "Brookwood High School vs. Central Gwinnett High School Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T16:50:00.000-05:00",
-      "stop": "2026-11-13T19:20:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Brookwood High School",
-        "Central Gwinnett High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Brookwood High School",
-          "core": "brookwood",
-          "confidence": 1
-        },
-        {
-          "team": "Central Gwinnett High School",
-          "core": "central gwinnett",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070170",
-      "stream_id": 2070170,
-      "extension": "ts",
-      "original_name": "NFHS Network 193: Wesleyan School vs. Providence Christian Academy Middle School Boys Basketball @ 13 Nov 05:00 PM ET",
-      "name": "Wesleyan School vs. Providence Christian Academy Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:00:00.000-05:00",
-      "stop": "2026-11-13T19:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Wesleyan School",
-        "Providence Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Wesleyan School",
-          "core": "wesleyan",
-          "confidence": 1
-        },
-        {
-          "team": "Providence Christian Academy",
-          "core": "providence christian academy",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070168",
-      "stream_id": 2070168,
-      "extension": "ts",
-      "original_name": "NFHS Network 195: Away vs. Crossroads Christian School Junior Varsity Boys Basketball @ 13 Nov 05:00 PM ET",
-      "name": "Away vs. Crossroads Christian School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:00:00.000-05:00",
-      "stop": "2026-11-13T19:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Crossroads Christian School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Crossroads Christian School",
-          "core": "crossroads christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070160",
-      "stream_id": 2070160,
-      "extension": "ts",
-      "original_name": "NFHS Network 203: East Hall High School vs. Banks County High School Junior Varsity Girls Basketball @ 13 Nov 05:00 PM ET",
-      "name": "East Hall High School vs. Banks County High School Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:00:00.000-05:00",
-      "stop": "2026-11-13T19:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "East Hall High School",
-        "Banks County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "East Hall High School",
-          "core": "east hall",
-          "confidence": 2
-        },
-        {
-          "team": "Banks County High School",
-          "core": "banks county",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070155",
-      "stream_id": 2070155,
-      "extension": "ts",
-      "original_name": "NFHS Network 208: LaGrange Academy vs. Heritage Prep School Junior Varsity Boys Basketball @ 13 Nov 05:00 PM ET",
-      "name": "LaGrange Academy vs. Heritage Prep School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:00:00.000-05:00",
-      "stop": "2026-11-13T19:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "LaGrange Academy",
-        "Heritage Prep School"
-      ],
-      "matched_schools": [
-        {
-          "team": "LaGrange Academy",
-          "core": "lagrange academy",
-          "confidence": 2
-        },
-        {
-          "team": "Heritage Prep School",
-          "core": "heritage prep",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070147",
-      "stream_id": 2070147,
-      "extension": "ts",
-      "original_name": "NFHS Network 216: Gordon Central High School vs. Southeast Whitfield High School Junior Varsity Girls Basketball @ 13 Nov 05:00 PM ET",
-      "name": "Gordon Central High School vs. Southeast Whitfield High School Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:00:00.000-05:00",
-      "stop": "2026-11-13T19:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Gordon Central High School",
-        "Southeast Whitfield High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Gordon Central High School",
-          "core": "gordon central",
-          "confidence": 2
-        },
-        {
-          "team": "Southeast Whitfield High School",
-          "core": "southeast whitfield",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070117",
-      "stream_id": 2070117,
-      "extension": "ts",
-      "original_name": "NFHS Network 246: North Forsyth High School vs. John Motley Morehead High School Junior Varsity Boys Basketball @ 13 Nov 05:30 PM ET",
-      "name": "North Forsyth High School vs. John Motley Morehead High School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:30:00.000-05:00",
-      "stop": "2026-11-13T20:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "North Forsyth High School",
-        "John Motley Morehead High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Forsyth High School",
-          "core": "north forsyth",
-          "confidence": 2
-        }
-      ]
-    },
     {
       "id": "ga-nfhs-2070106",
       "stream_id": 2070106,
@@ -225,83 +46,14 @@
           "core": "banks county",
           "confidence": 2
         }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070098",
-      "stream_id": 2070098,
-      "extension": "ts",
-      "original_name": "NFHS Network 265: Valor Christian Academy vs. Archer High School Freshman Boys Basketball @ 13 Nov 05:30 PM ET",
-      "name": "Valor Christian Academy vs. Archer High School Freshman Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:30:00.000-05:00",
-      "stop": "2026-11-13T20:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Valor Christian Academy",
-        "Archer High School"
       ],
-      "matched_schools": [
-        {
-          "team": "Valor Christian Academy",
-          "core": "valor christian academy",
-          "confidence": 2
-        },
-        {
-          "team": "Archer High School",
-          "core": "archer",
-          "confidence": 1
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070093",
-      "stream_id": 2070093,
-      "extension": "ts",
-      "original_name": "NFHS Network 270: Millennium Charter Academy vs. Calvary Christian Junior Varsity Boys Basketball @ 13 Nov 05:30 PM ET",
-      "name": "Millennium Charter Academy vs. Calvary Christian Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:30:00.000-05:00",
-      "stop": "2026-11-13T20:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Millennium Charter Academy",
-        "Calvary Christian"
-      ],
-      "matched_schools": [
-        {
-          "team": "Calvary Christian",
-          "core": "calvary christian",
-          "confidence": 2
-        }
-      ]
-    },
-    {
-      "id": "ga-nfhs-2070092",
-      "stream_id": 2070092,
-      "extension": "ts",
-      "original_name": "NFHS Network 271: North Georgia Christian Academy vs. Sugar Hill Christian Academy Middle School Boys Basketball @ 13 Nov 05:30 PM ET",
-      "name": "North Georgia Christian Academy vs. Sugar Hill Christian Academy Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-13T17:30:00.000-05:00",
-      "stop": "2026-11-13T20:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "North Georgia Christian Academy",
-        "Sugar Hill Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Georgia Christian Academy",
-          "core": "north georgia christian academy",
-          "confidence": 2
-        },
-        {
-          "team": "Sugar Hill Christian Academy",
-          "core": "sugar hill christian academy",
-          "confidence": 2
-        }
-      ]
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2070062",
@@ -323,7 +75,14 @@
           "core": "providence christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2070013",
@@ -345,7 +104,14 @@
           "core": "stone mountain",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2070006",
@@ -366,7 +132,14 @@
           "core": "walnut grove",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2070001",
@@ -393,7 +166,14 @@
           "core": "cornerstone preparatory academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069987",
@@ -420,7 +200,14 @@
           "core": "king s academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069972",
@@ -447,7 +234,14 @@
           "core": "central gwinnett",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069956",
@@ -474,7 +268,14 @@
           "core": "byne christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069914",
@@ -501,7 +302,14 @@
           "core": "southeast whitfield",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069905",
@@ -523,7 +331,14 @@
           "core": "crossroads christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069883",
@@ -550,7 +365,14 @@
           "core": "banks county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069870",
@@ -572,7 +394,14 @@
           "core": "heritage christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069855",
@@ -599,7 +428,14 @@
           "core": "coahulla creek",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069823",
@@ -626,7 +462,14 @@
           "core": "morrow",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069788",
@@ -653,7 +496,14 @@
           "core": "westminster schools of augusta",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069783",
@@ -680,7 +530,14 @@
           "core": "sugar hill christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069773",
@@ -707,7 +564,14 @@
           "core": "chattahoochee",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069756",
@@ -734,7 +598,14 @@
           "core": "pope",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069750",
@@ -756,7 +627,14 @@
           "core": "calvary christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069735",
@@ -778,7 +656,14 @@
           "core": "crawford county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069730",
@@ -805,7 +690,14 @@
           "core": "archer",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069728",
@@ -832,7 +724,14 @@
           "core": "brookstone",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069713",
@@ -854,7 +753,14 @@
           "core": "lagrange academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069704",
@@ -876,7 +782,14 @@
           "core": "camden county",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069696",
@@ -898,7 +811,14 @@
           "core": "stone mountain",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069684",
@@ -925,7 +845,14 @@
           "core": "east forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069675",
@@ -946,7 +873,14 @@
           "core": "first preparatory christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069647",
@@ -973,7 +907,14 @@
           "core": "riverwood",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069639",
@@ -995,7 +936,14 @@
           "core": "north forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069621",
@@ -1022,7 +970,14 @@
           "core": "cornerstone preparatory academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069534",
@@ -1044,7 +999,14 @@
           "core": "abundant life christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069502",
@@ -1066,7 +1028,14 @@
           "core": "southwest dekalb",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069495",
@@ -1093,7 +1062,14 @@
           "core": "central gwinnett",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069491",
@@ -1115,7 +1091,14 @@
           "core": "unity christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069477",
@@ -1137,7 +1120,14 @@
           "core": "north murray",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069448",
@@ -1159,7 +1149,14 @@
           "core": "friendship christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069433",
@@ -1181,7 +1178,14 @@
           "core": "montgomery county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069431",
@@ -1208,7 +1212,14 @@
           "core": "byne christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069379",
@@ -1230,7 +1241,14 @@
           "core": "cook",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069320",
@@ -1252,7 +1270,14 @@
           "core": "woodward academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069311",
@@ -1274,7 +1299,14 @@
           "core": "crisp county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069273",
@@ -1301,7 +1333,14 @@
           "core": "southeast whitfield",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069260",
@@ -1323,7 +1362,14 @@
           "core": "west forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069252",
@@ -1345,7 +1391,14 @@
           "core": "warner robins",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069219",
@@ -1367,7 +1420,14 @@
           "core": "villa rica",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069209",
@@ -1389,7 +1449,14 @@
           "core": "brooks county",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069208",
@@ -1411,7 +1478,14 @@
           "core": "gordon lee",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069172",
@@ -1433,7 +1507,14 @@
           "core": "mt paran christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069171",
@@ -1455,7 +1536,14 @@
           "core": "macon county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069166",
@@ -1477,7 +1565,14 @@
           "core": "heritage christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069152",
@@ -1499,7 +1594,14 @@
           "core": "crossroads christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069145",
@@ -1521,7 +1623,14 @@
           "core": "richmond hill",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069141",
@@ -1543,7 +1652,14 @@
           "core": "south gwinnett",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2069011",
@@ -1570,7 +1686,14 @@
           "core": "banks county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068975",
@@ -1592,7 +1715,14 @@
           "core": "miller grove",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068961",
@@ -1614,7 +1744,14 @@
           "core": "tift county",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068958",
@@ -1636,7 +1773,14 @@
           "core": "dade county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068957",
@@ -1658,7 +1802,14 @@
           "core": "bacon county",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068953",
@@ -1680,7 +1831,14 @@
           "core": "collins hill",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068952",
@@ -1702,7 +1860,14 @@
           "core": "south gwinnett",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068950",
@@ -1724,7 +1889,14 @@
           "core": "new manchester",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068936",
@@ -1746,7 +1918,14 @@
           "core": "burke county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068929",
@@ -1773,7 +1952,14 @@
           "core": "pope",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068923",
@@ -1795,7 +1981,14 @@
           "core": "pace academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068916",
@@ -1817,7 +2010,14 @@
           "core": "mcintosh county academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068902",
@@ -1839,7 +2039,14 @@
           "core": "athens academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068896",
@@ -1861,7 +2068,14 @@
           "core": "greene county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068892",
@@ -1883,7 +2097,14 @@
           "core": "mt pisgah christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068891",
@@ -1905,7 +2126,14 @@
           "core": "north forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068886",
@@ -1927,7 +2155,14 @@
           "core": "north atlanta",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068882",
@@ -1949,7 +2184,14 @@
           "core": "westside augusta",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068880",
@@ -1971,7 +2213,14 @@
           "core": "jenkins county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068879",
@@ -1998,7 +2247,14 @@
           "core": "westminster schools of augusta",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068851",
@@ -2020,7 +2276,14 @@
           "core": "stone mountain",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068838",
@@ -2047,7 +2310,14 @@
           "core": "riverwood",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068827",
@@ -2074,7 +2344,14 @@
           "core": "cornerstone preparatory academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068824",
@@ -2096,7 +2373,14 @@
           "core": "north forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068819",
@@ -2118,7 +2402,14 @@
           "core": "southland academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068810",
@@ -2140,7 +2431,14 @@
           "core": "landmark christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068808",
@@ -2162,7 +2460,14 @@
           "core": "screven county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068799",
@@ -2189,7 +2494,14 @@
           "core": "chattahoochee",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068794",
@@ -2211,7 +2523,14 @@
           "core": "b e s t academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068793",
@@ -2233,7 +2552,14 @@
           "core": "east coweta",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068792",
@@ -2255,7 +2581,14 @@
           "core": "miller grove",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068791",
@@ -2282,7 +2615,14 @@
           "core": "east forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068786",
@@ -2304,7 +2644,14 @@
           "core": "south effingham",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068778",
@@ -2331,7 +2678,14 @@
           "core": "coahulla creek",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068777",
@@ -2353,7 +2707,14 @@
           "core": "northside columbus",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068774",
@@ -2375,7 +2736,14 @@
           "core": "valwood",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068772",
@@ -2397,7 +2765,14 @@
           "core": "taylor county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068757",
@@ -2419,7 +2794,14 @@
           "core": "glascock county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068756",
@@ -2441,7 +2823,14 @@
           "core": "southwest dekalb",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068742",
@@ -2463,7 +2852,14 @@
           "core": "rabun county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068740",
@@ -2485,7 +2881,14 @@
           "core": "telfair county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068737",
@@ -2507,7 +2910,14 @@
           "core": "pike county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068736",
@@ -2534,7 +2944,14 @@
           "core": "brookstone",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068735",
@@ -2561,7 +2978,14 @@
           "core": "sugar hill christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068733",
@@ -2583,7 +3007,14 @@
           "core": "calvary christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068714",
@@ -2605,7 +3036,14 @@
           "core": "memorial day",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068713",
@@ -2627,7 +3065,14 @@
           "core": "lake oconee academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068707",
@@ -2654,7 +3099,14 @@
           "core": "bulloch academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068697",
@@ -2676,7 +3128,14 @@
           "core": "grace christian academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068696",
@@ -2698,7 +3157,14 @@
           "core": "west forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068527",
@@ -2720,7 +3186,14 @@
           "core": "west forsyth",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068446",
@@ -2742,7 +3215,14 @@
           "core": "fayette county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068396",
@@ -2764,7 +3244,14 @@
           "core": "walnut grove",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068364",
@@ -2791,7 +3278,14 @@
           "core": "troup county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068284",
@@ -2818,7 +3312,14 @@
           "core": "banks county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068229",
@@ -2845,7 +3346,14 @@
           "core": "southeast whitfield",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2068055",
@@ -2867,7 +3375,14 @@
           "core": "providence classical christian",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067884",
@@ -2889,7 +3404,14 @@
           "core": "marion county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067878",
@@ -2916,7 +3438,14 @@
           "core": "banks county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067858",
@@ -2938,7 +3467,14 @@
           "core": "upson lee",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067857",
@@ -2965,7 +3501,14 @@
           "core": "northwest whitfield",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067835",
@@ -2992,7 +3535,14 @@
           "core": "riverwood",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067833",
@@ -3013,7 +3563,14 @@
           "core": "walnut grove",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067814",
@@ -3035,7 +3592,14 @@
           "core": "pace academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067802",
@@ -3057,7 +3621,14 @@
           "core": "brantley county",
           "confidence": 3
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067794",
@@ -3079,7 +3650,14 @@
           "core": "north cobb",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067793",
@@ -3101,7 +3679,14 @@
           "core": "whitefield academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067792",
@@ -3123,7 +3708,14 @@
           "core": "central talbotton",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067790",
@@ -3150,7 +3742,14 @@
           "core": "decatur",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067783",
@@ -3172,7 +3771,14 @@
           "core": "crawford county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067780",
@@ -3194,7 +3800,14 @@
           "core": "marion county",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067776",
@@ -3221,7 +3834,14 @@
           "core": "pace academy",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067764",
@@ -3248,7 +3868,14 @@
           "core": "denmark",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067737",
@@ -3275,7 +3902,14 @@
           "core": "milton",
           "confidence": 1
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067706",
@@ -3297,7 +3931,14 @@
           "core": "north cobb",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     },
     {
       "id": "ga-nfhs-2067704",
@@ -3318,7 +3959,14 @@
           "core": "monroe area",
           "confidence": 2
         }
-      ]
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
     }
   ]
 }
