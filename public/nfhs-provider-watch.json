@@ -333680,16 +333680,2442 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-14T08:05:19.341Z",
+      "previous_latest_title_day": "2026-11-14",
+      "latest_title_day": "2026-11-14",
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 142,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: All Cheers Varsity Coed Cheerleading And Dance @ 13 Nov 11:30 AM ET",
+              "after": "NFHS Network 01: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: New Caney Independent School District Shared Varsity Coed Swimming And Diving @ 13 Nov 11:40 AM ET",
+              "after": "NFHS Network 02: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T11:40:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: San Marcos Academy Varsity Boys Basketball @ 13 Nov 11:45 AM ET",
+              "after": "NFHS Network 03: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T11:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Bob Rittierodt & Mary Beil MHSA Volleyball Tournament Show @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: TBA vs TBA 2026 IHSAA Class 1A Football Semifinals #1 @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: Fort Sumner/House vs Mora 2026 NMAA 1A Girls Volleyball Championship Match #16 @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 06: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: The Montfort Academy Varsity Coed Basketball @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 07: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: Rich High School vs. Lyman High School Middle School Girls Basketball @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 08: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: Riverside Academy vs Epsicopal of Acadiana 2026 LHSAA Div V Girls Volleyball Semifinals #2 @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 09: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: Ascension Catholic vs Westminster Christian 2026 LHSAA Div V Girls Volleyball Semifinals #1 @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 10: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: St. Thomas More vs Elk Point-Jefferson 2026 SDHSAA 11B Football Championship @ 13 Nov 12:00 PM ET",
+              "after": "NFHS Network 11: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: Arvada West vs. Rocky Mountain 2026 CHSAA 5A Girls Volleyball Championship Match J @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 12: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: Ignacio vs. Yuma 2026 CHSAA 2A Girls Volleyball Championship Match J @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 13: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: Okawville vs. Stockton 2026 IHSA 1A Girls Volleyball Semifinals #2 @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 14: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: Platte Valley vs. University 2026 CHSAA 3A Girls Volleyball Championship Match J @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 15: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: Caliche vs. Plateau Valley 2026 CHSAA 1A Girls Volleyball Championship Match J @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 16: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: Arvada West High School vs. Rocky Mountain High School Varsity Girls Volleyball @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 17: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: Coldwater vs. Meadowbrook 2026 OHSAA Div V Girls Volleyball Semifinals #1 @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 18: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: Battle Mountain vs. Lewis-Palmer 2026 CHSAA 4A Girls Volleyball Championship Match J @ 13 Nov 12:30 PM ET",
+              "after": "NFHS Network 19: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T12:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 20,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 20: Nov 13th Episode 2026 Georgia High School Sports Daily Show @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 20: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 21,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 21: Sage Valley vs. Sundance Secondary School Middle School Girls Basketball @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 21: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 22,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 22: Ramah vs Tatum 2026 NMAA 2A Girls Volleyball Championship Match #15 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 22: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 23,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 23: Old Rochester Regional High School vs. Hudson High School Varsity Football @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 23: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 24,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 24: Naches Valley vs. Chelan 2026 WIAA 1A Girls Volleyball Championship Game #4 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 24: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 25,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 25: Santa Teresa vs. Los Alamos 2026 NMAA 4A Girls Volleyball Championship Match #15 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 25: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 26,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 26: Belen vs. Artesia 2026 NMAA 4A Girls Volleyball Championship Match #14 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 26: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 27,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 27: Manzano vs. Silver 2026 NMAA 4A Girls Volleyball Championship Match #16 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 27: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 28,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 28: Kirtland Central vs. Portales 2026 NMAA 4A Girls Volleyball Championship Match #13 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 28: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 29,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 29: Mariemont vs. Liberty Benton 2026 OHSAA Div IV Girls Soccer Championship @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 29: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 30,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 30: Clovis Christian vs Elida 2026 NMAA 1A Girls Volleyball Championship Match #15 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 30: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 31,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 31: Glacier vs CMR MHSA 2026 CLASS AA VOLLEYBALL STATE TOURNAMENT @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 31: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 32,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 32: Choteau vs Shepherd MHSA 2026 CLASS B VOLLEYBALL STATE TOURNAMENT @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 32: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 33,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 33: Melstone vs Jordan MHSA 2026 CLASS C VOLLEYBALL STATE TOURNAMENT @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 33: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 34,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 34: West Grand Middle School vs. North Park High School Middle School Boys Basketball @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 34: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 35,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 35: Kalama vs. Meridian 2026 WIAA 1A Girls Volleyball Championship Game #5 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 35: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 36,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 36: Drummond High School vs. Sheridan High School Middle School Boys Basketball @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 36: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 37,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 37: Seton Catholic vs. Lynden Christian 2026 WIAA 1A Girls Volleyball Championship Game #3 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 37: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 38,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 38: All Dives Varsity Girls Swimming And Diving @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 38: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 39,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 39: Varsity Boys Basketball @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 39: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 40,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 40: Laurel vs Custer Co MHSA 2026 CLASS A VOLLEYBALL STATE TOURNAMENT @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 40: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 41,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 41: Hoquiam vs. Lakeside 2026 WIAA 1A Girls Volleyball Championship Game #1 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 41: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 42,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 42: St. Ursula vs. Seton 2026 OHSAA Div I Girls Volleyball Championship Finals @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 42: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 43,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 43: Connell vs. Cascade Christian 2026 WIAA 1A Girls Volleyball Championship Game #2 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 43: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 44,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 44: Santa Rosa vs. Tucumcari 2026 NMAA 2A Girls Volleyball Championship Match #16 @ 13 Nov 01:00 PM ET",
+              "after": "NFHS Network 44: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 45,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 45: Lafayette Christian vs Metairie Park Country Day 2026 LHSAA Div IV Girls Volleyball Semifinals #1 @ 13 Nov 01:50 PM ET",
+              "after": "NFHS Network 45: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 46,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 46: Iota vs Archbishop Hannan 2026 LHSAA Div III Girls Volleyball Semifinals #2 @ 13 Nov 01:50 PM ET",
+              "after": "NFHS Network 46: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 47,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 47: Haynes Academy vs University Lab 2026 LHSAA Div III Girls Volleyball Semifinals #1 @ 13 Nov 01:50 PM ET",
+              "after": "NFHS Network 47: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 48,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 48: John Curtis Christian vs Dunham 2026 LHSAA Div IV Girls Volleyball Semifinals #2 @ 13 Nov 01:50 PM ET",
+              "after": "NFHS Network 48: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 49,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 49: 11/13/26 LO-AM @ 13 Nov 01:55 PM ET",
+              "after": "NFHS Network 49: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T13:55:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 50,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 50: TBD vs TBD 2026 CHSAA 3A Girls Volleyball Championship Match K @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 50: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 51,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 51: Rock Canyon High School vs. Cherry Creek High School Varsity Girls Volleyball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 51: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 52,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 52: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #1 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 52: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 53,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 53: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #6 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 53: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 54,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 54: TBD vs TBD 2026 CHSAA 4A Girls Volleyball Championship Match K @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 54: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 55,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 55: West Fork High School Junior Varsity Girls Basketball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 55: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 56,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 56: Prairie High School vs. Hi-Plains High School Varsity Girls Volleyball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 56: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 57,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 57: TBD vs TBD 2026 CHSAA 5A Girls Volleyball Championship Match K @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 57: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 58,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 58: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #3 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 58: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 59,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 59: Breese Central vs Rochester 2026 IHSA 2A Girls Volleyball Semifinals #1 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 59: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 60,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 60: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #7 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 60: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 61,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 61: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #2 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 61: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 62,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 62: HEM Junior-Senior High School vs. Little Snake River Valley School Middle School Girls Basketball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 62: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 63,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 63: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #8 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 63: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 64,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 64: McNicholas vs. NDCL 2026 OHSAA Div III Girls Volleyball Semifinals #1 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 64: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 65,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 65: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #11 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 65: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 66,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 66: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #9 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 66: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 67,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 67: McNicholas High School 2026 OHSAA Girls Volleyball Semifinal @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 67: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 68,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 68: Eaton High School vs. Alamosa High School Varsity Girls Volleyball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 68: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 69,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 69: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #10 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 69: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 70,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 70: TBD vs TBD 2026 CHSAA 1A Girls Volleyball Championship Match K @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 70: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 71,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 71: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #12 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 71: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 72,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 72: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #4 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 72: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 73,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 73: Piscataway High School vs. Irvington High School 2026 NJSIAA Football Playoffs @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 73: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 74,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 74: Away vs. Palisade High School Varsity Girls Volleyball @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 74: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 75,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 75: TBD vs TBD 2026 CHSAA 2A Girls Volleyball Championship Match K @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 75: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 76,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 76: ASAA Wrestling 2026 Lancer Smith Memorial Tournament - Mat #5 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 76: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 77,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 77: Roy/Mosquero vs Quemado 2026 NMAA 1A Girls Volleyball Championship Match #18 @ 13 Nov 02:00 PM ET",
+              "after": "NFHS Network 77: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 78,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 78: Spur High School Varsity Girls Basketball - Part 2 @ 13 Nov 02:10 PM ET",
+              "after": "NFHS Network 78: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:10:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 79,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 79: North Providence High School Pep Rally @ 13 Nov 02:30 PM ET",
+              "after": "NFHS Network 79: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 80,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 80: Versailles vs. South Range 2026 OHSAA Div V Girls Volleyball Semifinals #2 @ 13 Nov 02:30 PM ET",
+              "after": "NFHS Network 80: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 81,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 81: All Dives Varsity Boys Swimming And Diving @ 13 Nov 02:30 PM ET",
+              "after": "NFHS Network 81: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 82,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 82: Pine Eagle High School vs. Cove High School Middle School Boys And Girls Basketball @ 13 Nov 02:30 PM ET",
+              "after": "NFHS Network 82: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 83,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 83: Eastside Prep vs. Cashmere 2026 WIAA 1A Girls Volleyball Championship Game #8 @ 13 Nov 02:45 PM ET",
+              "after": "NFHS Network 83: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 84,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 84: Selah vs. Sehome 2026 WIAA 2A Girls Volleyball Championship Game #1 @ 13 Nov 02:45 PM ET",
+              "after": "NFHS Network 84: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 85,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 85: Annie Wright vs. King's 2026 WIAA 1A Girls Volleyball Championship Game #7 @ 13 Nov 02:45 PM ET",
+              "after": "NFHS Network 85: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 86,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 86: University Prep vs. La Center 2026 WIAA 1A Girls Volleyball Championship Game #6 @ 13 Nov 02:45 PM ET",
+              "after": "NFHS Network 86: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 87,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 87: North Kitsap vs. Pullman 2026 WIAA 2A Girls Volleyball Championship Game #2 @ 13 Nov 02:45 PM ET",
+              "after": "NFHS Network 87: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T14:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 88,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 88: Cibola vs. Centennial 2026 NMAA 5A Girls Volleyball Championship Match #16 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 88: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 89,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 89: St. Martin's Episcopal School A Team vs. Aged Warriors Volleyball Match @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 89: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 90,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 90: Big Horn vs Cokeville 2026 WHSAA 2A State Football Championship @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 90: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 91,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 91: Lennox vs Sioux Falls Christian 2026 SDHSAA 11A Football Championship @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 91: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 92,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 92: Juneau-Douglas vs. Wasilla 2026 ASAA 4A Volleyball Championship - Game #7 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 92: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 93,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 93: Fairfield vs Plains MHSA 2026 CLASS B VOLLEYBALL STATE TOURNAMENT @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 93: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 94,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 94: Sentinel vs Big Sky MHSA 2026 CLASS AA VOLLEYBALL STATE TOURNAMENT @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 94: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 95,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 95: Parkway High School vs. Dalton Varsity Girls Volleyball @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 95: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 96,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 96: Havre vs Billings Central MHSA 2026 CLASS A VOLLEYBALL STATE TOURNAMENT @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 96: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 97,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 97: Nome vs. Barrow 2026 ASAA 3A Volleyball Championship - Game #7 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 97: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 98,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 98: Morrisville Senior High School vs. South Lewis High School Varsity Football @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 98: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 99,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 99: Rio Rancho vs. Los Lunas 2026 NMAA 5A Girls Volleyball Championship Match #15 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 99: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 100,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 100: Parkway vs. Dalton 2026 OHSAA Div VI Girls Volleyball Championship Finals @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 100: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 101,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 101: Organ Mtn vs. Volcano Vista 2026 NMAA 5A Girls Volleyball Championship Match #14 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 101: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 102,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 102: Darlington School vs. Mt. Bethel Christian Academy 2026 GHSA Football Playoffs @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 102: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 103,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 103: South Lewis vs Morrisville/Madison/Stockbridge 2026 NYSPHSAA Section III 8-Man Football Finals @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 103: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 104,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 104: Mesilla Valley Christian vs Legacy Academy 2026 NMAA 2A Girls Volleyball Championship Match #17 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 104: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 105,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 105: Logan vs Melrose 2026 NMAA 1A Girls Volleyball Championship Match #17 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 105: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 106,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 106: Away vs. Gorham High School Freshman Boys Soccer @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 106: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 107,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 107: Away vs. Clarenceville High School Varsity Girls Volleyball @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 107: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 108,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 108: Clovis vs. Piedra Vista 2026 NMAA 5A Girls Volleyball Championship Match #13 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 108: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 109,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 109: Rehoboth vs. Gateway 2026 NMAA 2A Girls Volleyball Championship Match #18 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 109: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 110,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 110: Chautauqua Lake/Westfield/Brocton vs Barker/Roy-Hart 2026 NYSPHSAA Section VI C Football Finals @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 110: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 111,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 111: Varsity Boys And Girls Basketball - Part 2 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 111: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 112,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 112: Randolph High School vs. Chatham High School 2026 NJSIAA Girls Soccer Final @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 112: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 113,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 113: CJI vs Valley Christian MHSA 2026 CLASS C VOLLEYBALL STATE TOURNAMENT @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 113: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 114,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 114: Homedale High School vs. Caldwell High School Junior Varsity Girls Basketball @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 114: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 115,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 115: TBA vs TBA 2026 IHSAA Class 1A Football Semifinals #2 @ 13 Nov 03:00 PM ET",
+              "after": "NFHS Network 115: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 116,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 116: Flagler vs. Swink 2026 CHSAA 1A Girls Volleyball Championship Match L @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 116: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 117,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 117: Frisco High School vs. Lake Dallas High School Varsity Boys Basketball @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 117: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 118,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 118: Tri-Valley vs. Richmond-Burton 2026 IHSA 2A Girls Volleyball Semifinals #2 @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 118: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 119,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 119: Sedgwick County vs. Vail Christian 2026 CHSAA 2A Girls Volleyball Championship Match L @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 119: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 120,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 120: TBD vs TBD 2026 CHSAA 3A Girls Volleyball Championship Match L @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 120: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 121,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 121: Mullen vs. Niwot 2026 CHSAA 4A Girls Volleyball Championship Match L @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 121: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 122,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 122: Flagler High School vs. Swink High School Varsity Girls Volleyball @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 122: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 123,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 123: Legacy vs. Lutheran 2026 CHSAA 5A Girls Volleyball Championship Match L @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 123: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 124,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 124: Away vs. Vail Christian High School Varsity Girls Volleyball @ 13 Nov 03:30 PM ET",
+              "after": "NFHS Network 124: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 125,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 125: St. Michael the Archangel vs Academy of Our Lady 2026 LHSAA Div II Girls Volleyball Semifinals #2 @ 13 Nov 03:40 PM ET",
+              "after": "NFHS Network 125: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:40:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 126,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 126: St. Thomas More vs. Teurlings Catholic 2026 LHSAA Div II Girls Volleyball Semifinals #1 @ 13 Nov 03:40 PM ET",
+              "after": "NFHS Network 126: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:40:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 127,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 127: Tallulah Academy Pep Rally @ 13 Nov 03:45 PM ET",
+              "after": "NFHS Network 127: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 128,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 128: James Clemens High School vs. Bob Jones High School Varsity Boys Wrestling @ 13 Nov 03:45 PM ET",
+              "after": "NFHS Network 128: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 129,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 129: Granada High School vs. Cheyenne Wells High School 2026 CHSAA Football Playoffs @ 13 Nov 03:50 PM ET",
+              "after": "NFHS Network 129: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T15:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 130,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 130: Big Walnut 2026 OHSAA Girls Volleyball Semifinal @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 130: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 131,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 131: TBA vs TBA 2026 NMAA 1A Girls Volleyball Championship Match #20 @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 131: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 132,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 132: Ridgewood High School vs. Livingston High School 2026 NJSIAA Football Final @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 132: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 133,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 133: New Life Academy vs. Trinity Christian School Varsity Boys And Girls Basketball @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 133: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 134,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 134: May High School vs. Winters High School Varsity Girls Basketball @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 134: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 135,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 135: Milano High School vs. Dime Box High School Varsity Girls Basketball @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 135: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 136,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 136: Lewiston Porter vs. Averill Park 2026 NYSPHSAA Class A Boys Soccer Semifinals #1 @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 136: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 137,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 137: Away vs. Flat Rock High School Varsity Girls Volleyball @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 137: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 138,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 138: DCIS Montbello vs. Cherry Creek High School 2026 CHSAA Football Playoffs @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 138: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 139,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 139: Ottawa Hills vs. Chippewa 2026 OHSAA Div V Girls Soccer Championship @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 139: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 140,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 140: Newcastle High School vs. Slidell High School Varsity Girls Basketball @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 140: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 141,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 141: Harlem High School vs. Havre High School Middle School Boys Basketball - Part 1 @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 141: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 142,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 142: Away vs. Lake Highland Prep School Varsity Boys Wrestling @ 13 Nov 04:00 PM ET",
+              "after": "NFHS Network 142: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-13T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-13",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-13T21:32:09.249Z",
+  "last_change_at": "2026-11-14T08:05:19.341Z",
   "current": {
     "stream_count": 5000,
     "latest_title_day": "2026-11-14",
     "title_day_counts": {
-      "2026-11-13": 2432,
+      "2026-11-13": 2290,
       "2026-11-14": 188,
-      "undated": 2380
+      "undated": 2522
     }
   }
 }
