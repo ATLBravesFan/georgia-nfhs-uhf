@@ -28,8 +28,8 @@ function isEligible(e, now) {
 
 function isPriority(e) {
   const title = String(e.original_name || e.name || "");
-  const local = /\\b(Lowndes|Valdosta|Pierce County|Ware County|Brooks County|Cook High|Tift County|Coffee High|Colquitt County|Camden County|Clinch County|Bacon County|Valwood)\\b/i;
-  return /\\bFootball\\b/i.test(title) || local.test(title);
+  const local = /\b(Lowndes|Valdosta|Pierce County|Ware County|Brooks County|Cook High|Tift County|Coffee High|Colquitt County|Camden County|Clinch County|Bacon County|Valwood)\b/i;
+  return /\bFootball\b/i.test(title) || local.test(title);
 }
 
 function sortOldestFirst(a, b, state) {
@@ -150,10 +150,10 @@ async function verifyOne(e, authBase) {
 }
 
 async function main() {
-  const base = String(process.env.XTREAM_BASE_URL || "").trim().replace(/\\/+$/, "");
+  const base = String(process.env.XTREAM_BASE_URL || "").trim().replace(/\/+$/, "");
   const user = process.env.XTREAM_USERNAME || "";
   const pass = process.env.XTREAM_PASSWORD || "";
-  if (!base || !user || !pass || !/^https?:\\/\\//i.test(base)) {
+  if (!base || !user || !pass || !/^https?:\/\//i.test(base)) {
     throw new Error("Authorized Xtream credentials/base URL missing or invalid.");
   }
   const authBase = base + "/live/" + encodeURIComponent(user) + "/" + encodeURIComponent(pass);
@@ -192,8 +192,8 @@ async function main() {
   events.channels = events.channels.map(e => decorateChannel(e, state, Date.now()));
   events.playback_checked_at = state.last_run_at;
   events.playback_verification_method = "short provider sample with ffprobe; matchup identity not confirmed";
-  await fs.writeFile(PLAYBACK_STATE_PATH, JSON.stringify(state, null, 2) + "\\n");
-  await fs.writeFile(EVENTS_PATH, JSON.stringify(events, null, 2) + "\\n");
+  await fs.writeFile(PLAYBACK_STATE_PATH, JSON.stringify(state, null, 2) + "\n");
+  await fs.writeFile(EVENTS_PATH, JSON.stringify(events, null, 2) + "\n");
   console.log(JSON.stringify({ eligible_now: eligibleCount, checked: selected.length, outcomes,
     note: "Network-only failure is not evidence that UHF or the underlying game is offline." }));
 }
