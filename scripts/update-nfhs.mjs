@@ -296,6 +296,12 @@ function scoreTeamAgainstAliases(team, aliases) {
 }
 
 function isGeorgiaEvent(name, aliases) {
+  // Tournament labels explicitly identifying other states override shared school names.
+  // This prevents out-of-state playoffs being presented as Georgia games.
+  if (/\b(?:TSSAA|MHSAA|FHSAA|VHSL|MPSSAA|PIAA|OHSAA|IHSAA|KHSAA|NCHSAA|SCHSL|CIF|UIL)\b/i.test(name) &&
+      !/\b(?:GHSA|GIAA|GAPPS)\b/i.test(name)) {
+    return { keep: false, teams: eventTeams(name), matches: [] };
+  }
   const teams = eventTeams(name);
   const scored = teams.map(t => ({ team: t, ...scoreTeamAgainstAliases(t, aliases) }));
   const matches = scored.filter(x => x.matched);
