@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T07:29:12.712-05:00",
+  "generated_at": "2026-11-14T11:13:24.573-05:00",
   "eastern_date": "2026-11-14",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
@@ -25,7 +25,5 @@
     }
   },
   "school_name_count": 665,
-  "channels": [],
-  "playback_checked_at": "2026-11-14T08:08:32.543Z",
-  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
+  "channels": []
 }
