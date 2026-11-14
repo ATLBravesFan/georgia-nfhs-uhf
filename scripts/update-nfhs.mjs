@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import * as cheerio from "cheerio";
 import { DateTime } from "luxon";
+import { decorateChannel, PLAYBACK_STATE_PATH } from "./playback-status.mjs";
 
 const EASTERN = "America/New_York";
 const DEFAULT_CATEGORY = "USA | NFHS Network";
@@ -405,6 +406,10 @@ async function main() {
   const now = DateTime.now().setZone(EASTERN);
   const [provider, schoolData] = await Promise.all([getNfhsStreams(), getGeorgiaSchoolAliases()]);
   const { output, totalGeorgiaMatches, completedTodayButVisible } = createOutputStreams(provider, schoolData.aliases);
+  let playbackState = { streams: {} };
+  try { playbackState = JSON.parse(await fs.readFile(PLAYBACK_STATE_PATH, "utf8")); }
+  catch (err) { if (err?.code !== "ENOENT") console.warn("Playback state unavailable; using unverified labels."); }
+  const decoratedOutput = output.map(e => decorateChannel(e, playbackState, now.toMillis()));
   const currentlyLive = output.filter(x => x.start && x.stop && DateTime.fromISO(x.start) <= now && DateTime.fromISO(x.stop) >= now).length;
   const upcoming = output.filter(x => x.start && DateTime.fromISO(x.start) > now).length;
   const payload = {
@@ -421,7 +426,7 @@ async function main() {
     placeholder_active: output.length === 0,
     directory_sources: schoolData.sourceStatus,
     school_name_count: schoolData.names.length,
-    channels: output
+    channels: decoratedOutput
   };
   await fs.mkdir("public", { recursive: true });
   await fs.writeFile("public/events.json", JSON.stringify(payload, null, 2) + "\n", "utf8");
