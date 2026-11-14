@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/verify-nfhs-playback.mjs"
       - "scripts/playback-status.mjs"
+      - "scripts/apply-nfhs-playback.mjs"
       - ".github/workflows/verify-nfhs-playback.yml"
   schedule:
     # Check a bounded rotation every 15 minutes; add Friday football checks.
@@ -41,6 +42,7 @@ jobs:
         run: |
           node --check scripts/playback-status.mjs
           node --check scripts/verify-nfhs-playback.mjs
+          node --check scripts/apply-nfhs-playback.mjs
           node --check scripts/update-nfhs.mjs
 
       - name: Check video probe availability
@@ -54,15 +56,29 @@ jobs:
           NFHS_MAX_CHECKS: "16"
         run: node scripts/verify-nfhs-playback.mjs
 
-      - name: Publish verification metadata and annotated playlist
+      - name: Publish to the newest playlist, retrying concurrent updates
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/stream-verification.json public/events.json
-          if git diff --cached --quiet; then
-            echo "No playback status changes."
-            exit 0
-          fi
-          git commit -m "Refresh Georgia NFHS playback verification"
-          git pull --rebase origin main
-          git push
+          # Preserve probe results before resetting to the newest main.
+          cp public/stream-verification.json "$RUNNER_TEMP/nfhs-verified.json"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/nfhs-verified.json" public/stream-verification.json
+            node scripts/apply-nfhs-playback.mjs
+            git add public/stream-verification.json public/events.json
+            if git diff --cached --quiet; then
+              echo "No playback metadata changes."
+              exit 0
+            fi
+            git commit -m "Refresh Georgia NFHS playback verification"
+            if git push origin HEAD:main; then
+              echo "Published playback status."
+              exit 0
+            fi
+            echo "Main moved during publish; retrying with the updated playlist ($attempt/5)."
+          done
+          echo "Could not safely publish verification after five attempts."
+          exit 1
