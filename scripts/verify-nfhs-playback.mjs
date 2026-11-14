@@ -47,13 +47,17 @@ function selectCandidates(channels, state, now) {
     if (!r || r.original_name !== e.original_name) return true;
     return now - (Date.parse(r.last_checked_at || "") || 0) >= MIN_RECHECK_MS;
   });
-  const priority = eligible.filter(isPriority).sort((a, b) => sortOldestFirst(a, b, state));
-  const other = eligible.filter(e => !isPriority(e)).sort((a, b) => sortOldestFirst(a, b, state));
-  const primaryCount = Math.min(priority.length, Math.ceil(MAX_CHECKS * 0.75));
-  const selected = priority.slice(0, primaryCount);
-  const rest = other.slice(0, MAX_CHECKS - selected.length);
-  selected.push(...rest);
-  if (selected.length < MAX_CHECKS) selected.push(...priority.slice(primaryCount, primaryCount + MAX_CHECKS - selected.length));
+  // Prioritize nearby South Georgia games after an outage, followed by other football.
+  // Never starve the rest of the Georgia schedule: rotate by last checked time.
+  const localRe = /\b(Lowndes|Valdosta|Pierce County|Ware County|Brooks County|Cook High|Tift County|Coffee High|Colquitt County|Camden County|Clinch County|Bacon County|Valwood|McIntosh County|Fitzgerald|Charlton County|Thomas County Central)\b/i;
+  const local = eligible.filter(e => localRe.test(e.original_name || e.name || "")).sort((a,b) => sortOldestFirst(a,b,state));
+  const football = eligible.filter(e => !localRe.test(e.original_name || e.name || "") && isPriority(e)).sort((a,b) => sortOldestFirst(a,b,state));
+  const other = eligible.filter(e => !localRe.test(e.original_name || e.name || "") && !isPriority(e)).sort((a,b) => sortOldestFirst(a,b,state));
+  const selected = local.slice(0, Math.min(8, MAX_CHECKS));
+  selected.push(...football.slice(0, Math.min(6, MAX_CHECKS - selected.length)));
+  selected.push(...other.slice(0, MAX_CHECKS - selected.length));
+  if (selected.length < MAX_CHECKS) selected.push(...local.slice(8, 8 + MAX_CHECKS - selected.length));
+  if (selected.length < MAX_CHECKS) selected.push(...football.slice(6, 6 + MAX_CHECKS - selected.length));
   return { selected, eligibleCount: eligible.length };
 }
 
