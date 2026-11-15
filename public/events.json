@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-15T05:39:51.181-05:00",
+  "generated_at": "2026-11-15T11:41:24.523-05:00",
   "eastern_date": "2026-11-15",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
+  "total_georgia_matches_found": 1,
+  "georgia_channel_count": 1,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "upcoming_next_7_days": 1,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,7 +25,40 @@
     }
   },
   "school_name_count": 665,
-  "channels": [],
-  "playback_checked_at": "2026-11-15T04:14:47.390Z",
-  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
+  "channels": [
+    {
+      "id": "ga-nfhs-2070327",
+      "stream_id": 2070327,
+      "extension": "ts",
+      "original_name": "NFHS Network 38: Pope High School vs. Walton High School Middle School Girls Basketball @ 15 Nov 03:00 PM ET",
+      "name": "Pope High School vs. Walton High School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-15T15:00:00.000-05:00",
+      "stop": "2026-11-15T17:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Pope High School",
+        "Walton High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pope High School",
+          "core": "pope",
+          "confidence": 1
+        },
+        {
+          "team": "Walton High School",
+          "core": "walton",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    }
+  ]
 }
