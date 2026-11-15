@@ -282,9 +282,44 @@
       "consecutive_failures": 2,
       "http_status": 404
     },
+    "2069779": {
+      "original_name": "NFHS Network 578: Tri-Cities High School vs. Norcross High School Varsity Boys Basketball @ 14 Nov 09:30 PM ET",
+      "last_checked_at": "2026-11-15T04:14:47.389Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069802": {
+      "original_name": "NFHS Network 556: Lambert High School vs. Banks County High School Varsity Boys Basketball @ 14 Nov 09:00 PM ET",
+      "last_checked_at": "2026-11-15T04:14:39.432Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069804": {
+      "original_name": "NFHS Network 554: Georgia-Cumberland Academy vs. The King's Academy Varsity Girls Basketball @ 14 Nov 09:00 PM ET",
+      "last_checked_at": "2026-11-15T04:14:39.388Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
     "2069823": {
       "original_name": "NFHS Network 537: Eagle's Landing Christian Academy vs. Morrow High School Varsity Girls Basketball @ 13 Nov 07:00 PM ET",
       "last_checked_at": "2026-11-14T02:04:46.629Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069840": {
+      "original_name": "NFHS Network 521: North Clayton High School vs. Mary Persons High School 2026 GHSA Football Playoffs @ 14 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-15T04:14:31.432Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069845": {
+      "original_name": "NFHS Network 516: North Clayton High School vs. Mary Persons High School 2026 Football Playoffs @ 14 Nov 08:15 PM ET",
+      "last_checked_at": "2026-11-15T04:14:31.387Z",
       "last_result": "network_error",
       "last_video_at": null,
       "consecutive_failures": 1
@@ -469,11 +504,9 @@
       "consecutive_failures": 1
     }
   },
-  "last_run_at": "2026-11-14T23:52:29.874Z",
-  "last_run_checks": 16,
+  "last_run_at": "2026-11-15T04:14:47.390Z",
+  "last_run_checks": 5,
   "last_run_outcomes": {
-    "video_not_decodable": 3,
-    "http_error": 1,
-    "network_error": 12
+    "network_error": 5
   }
 }
