@@ -25,5 +25,7 @@
     }
   },
   "school_name_count": 665,
-  "channels": []
+  "channels": [],
+  "playback_checked_at": "2026-11-15T04:14:47.390Z",
+  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
 }
