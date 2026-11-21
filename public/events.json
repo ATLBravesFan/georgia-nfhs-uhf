@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T08:51:31.970-05:00",
+  "generated_at": "2026-11-21T11:58:04.761-05:00",
   "eastern_date": "2026-11-21",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 17,
-  "georgia_channel_count": 17,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 16,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 15,
+  "currently_live_estimate": 9,
+  "upcoming_next_7_days": 6,
+  "completed_today_but_still_visible": 2,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,64 +26,6 @@
   },
   "school_name_count": 665,
   "channels": [
-    {
-      "id": "ga-nfhs-2070356",
-      "stream_id": 2070356,
-      "extension": "ts",
-      "original_name": "NFHS Network 09: Away vs. Jones County High School Varsity Boys Wrestling @ 21 Nov 08:00 AM ET",
-      "name": "Away vs. Jones County High School Varsity Boys Wrestling",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T08:00:00.000-05:00",
-      "stop": "2026-11-21T11:00:00.000-05:00",
-      "sport": "Wrestling",
-      "teams": [
-        "Away",
-        "Jones County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Jones County High School",
-          "core": "jones county",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2070334",
-      "stream_id": 2070334,
-      "extension": "ts",
-      "original_name": "NFHS Network 31: Away vs. Whitefield Academy Middle School Boys Basketball @ 21 Nov 09:00 AM ET",
-      "name": "Away vs. Whitefield Academy Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T09:00:00.000-05:00",
-      "stop": "2026-11-21T11:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Whitefield Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Whitefield Academy",
-          "core": "whitefield academy",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
     {
       "id": "ga-nfhs-2070315",
       "stream_id": 2070315,
