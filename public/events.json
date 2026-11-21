@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T04:38:14.669-05:00",
+  "generated_at": "2026-11-21T08:51:31.970-05:00",
   "eastern_date": "2026-11-21",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "total_georgia_matches_found": 17,
+  "georgia_channel_count": 17,
+  "currently_live_estimate": 1,
+  "upcoming_next_7_days": 16,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,7 +25,539 @@
     }
   },
   "school_name_count": 665,
-  "channels": [],
-  "playback_checked_at": "2026-11-21T04:58:47.440Z",
-  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
+  "channels": [
+    {
+      "id": "ga-nfhs-2070356",
+      "stream_id": 2070356,
+      "extension": "ts",
+      "original_name": "NFHS Network 09: Away vs. Jones County High School Varsity Boys Wrestling @ 21 Nov 08:00 AM ET",
+      "name": "Away vs. Jones County High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T08:00:00.000-05:00",
+      "stop": "2026-11-21T11:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "Jones County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Jones County High School",
+          "core": "jones county",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070334",
+      "stream_id": 2070334,
+      "extension": "ts",
+      "original_name": "NFHS Network 31: Away vs. Whitefield Academy Middle School Boys Basketball @ 21 Nov 09:00 AM ET",
+      "name": "Away vs. Whitefield Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T09:00:00.000-05:00",
+      "stop": "2026-11-21T11:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Whitefield Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070315",
+      "stream_id": 2070315,
+      "extension": "ts",
+      "original_name": "NFHS Network 50: Kentucky Country Day School vs. Whitefield Academy Middle School Boys Basketball @ 21 Nov 10:00 AM ET",
+      "name": "Kentucky Country Day School vs. Whitefield Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T10:00:00.000-05:00",
+      "stop": "2026-11-21T12:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Kentucky Country Day School",
+        "Whitefield Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Whitefield Academy",
+          "core": "whitefield academy",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070314",
+      "stream_id": 2070314,
+      "extension": "ts",
+      "original_name": "NFHS Network 51: Away vs. North Cobb Christian School Varsity Boys Wrestling @ 21 Nov 10:00 AM ET",
+      "name": "Away vs. North Cobb Christian School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T10:00:00.000-05:00",
+      "stop": "2026-11-21T13:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "North Cobb Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Cobb Christian School",
+          "core": "north cobb christian",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070304",
+      "stream_id": 2070304,
+      "extension": "ts",
+      "original_name": "NFHS Network 61: Pope High School vs. Campbell High School Middle School Girls Basketball @ 21 Nov 10:00 AM ET",
+      "name": "Pope High School vs. Campbell High School Middle School Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T10:00:00.000-05:00",
+      "stop": "2026-11-21T12:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Pope High School",
+        "Campbell High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Pope High School",
+          "core": "pope",
+          "confidence": 1
+        },
+        {
+          "team": "Campbell High School",
+          "core": "campbell",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070273",
+      "stream_id": 2070273,
+      "extension": "ts",
+      "original_name": "NFHS Network 90: Putnam County High School vs. Burke County High School Junior Varsity Coed Basketball @ 21 Nov 10:50 AM ET",
+      "name": "Putnam County High School vs. Burke County High School Junior Varsity Coed Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T10:50:00.000-05:00",
+      "stop": "2026-11-21T13:20:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Putnam County High School",
+        "Burke County High School Junior Varsity Coed"
+      ],
+      "matched_schools": [
+        {
+          "team": "Putnam County High School",
+          "core": "putnam county",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070259",
+      "stream_id": 2070259,
+      "extension": "ts",
+      "original_name": "NFHS Network 104: North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Girls Basketball @ 21 Nov 11:00 AM ET",
+      "name": "North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T11:00:00.000-05:00",
+      "stop": "2026-11-21T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Atlanta High School",
+        "Maynard H Jackson High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Atlanta High School",
+          "core": "north atlanta",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070224",
+      "stream_id": 2070224,
+      "extension": "ts",
+      "original_name": "NFHS Network 139: Decatur High School vs. Meadowcreek High School Freshman Boys Basketball @ 21 Nov 11:00 AM ET",
+      "name": "Decatur High School vs. Meadowcreek High School Freshman Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T11:00:00.000-05:00",
+      "stop": "2026-11-21T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Decatur High School",
+        "Meadowcreek High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Decatur High School",
+          "core": "decatur",
+          "confidence": 1
+        },
+        {
+          "team": "Meadowcreek High School",
+          "core": "meadowcreek",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070220",
+      "stream_id": 2070220,
+      "extension": "ts",
+      "original_name": "NFHS Network 143: Lumpkin County High School vs. Gainesville High School Middle School Boys Basketball @ 21 Nov 11:00 AM ET",
+      "name": "Lumpkin County High School vs. Gainesville High School Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T11:00:00.000-05:00",
+      "stop": "2026-11-21T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Lumpkin County High School",
+        "Gainesville High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Lumpkin County High School",
+          "core": "lumpkin county",
+          "confidence": 2
+        },
+        {
+          "team": "Gainesville High School",
+          "core": "gainesville",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070218",
+      "stream_id": 2070218,
+      "extension": "ts",
+      "original_name": "NFHS Network 145: Mount Vernon High School vs. Westerville Central High School Varsity Boys Basketball @ 21 Nov 11:00 AM ET",
+      "name": "Mount Vernon High School vs. Westerville Central High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T11:00:00.000-05:00",
+      "stop": "2026-11-21T13:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Mount Vernon High School",
+        "Westerville Central High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Mount Vernon High School",
+          "core": "mt vernon",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070175",
+      "stream_id": 2070175,
+      "extension": "ts",
+      "original_name": "NFHS Network 188: Gordon Lee High School vs. Adairsville High School Varsity Boys Basketball @ 21 Nov 11:30 AM ET",
+      "name": "Gordon Lee High School vs. Adairsville High School Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T11:30:00.000-05:00",
+      "stop": "2026-11-21T14:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Gordon Lee High School",
+        "Adairsville High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Gordon Lee High School",
+          "core": "gordon lee",
+          "confidence": 2
+        },
+        {
+          "team": "Adairsville High School",
+          "core": "adairsville",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070084",
+      "stream_id": 2070084,
+      "extension": "ts",
+      "original_name": "NFHS Network 279: Flowery Branch High School vs. Dunwoody High School Varsity Girls Basketball @ 21 Nov 12:20 PM ET",
+      "name": "Flowery Branch High School vs. Dunwoody High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T12:20:00.000-05:00",
+      "stop": "2026-11-21T14:50:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Flowery Branch High School",
+        "Dunwoody High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Flowery Branch High School",
+          "core": "flowery branch",
+          "confidence": 2
+        },
+        {
+          "team": "Dunwoody High School",
+          "core": "dunwoody",
+          "confidence": 1
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070081",
+      "stream_id": 2070081,
+      "extension": "ts",
+      "original_name": "NFHS Network 282: North Gwinnett vs. Fellowship Christian School Junior Varsity Girls Basketball @ 21 Nov 12:25 PM ET",
+      "name": "North Gwinnett vs. Fellowship Christian School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T12:25:00.000-05:00",
+      "stop": "2026-11-21T14:55:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Gwinnett",
+        "Fellowship Christian School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Gwinnett",
+          "core": "north gwinnett",
+          "confidence": 2
+        },
+        {
+          "team": "Fellowship Christian School",
+          "core": "fellowship christian",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070062",
+      "stream_id": 2070062,
+      "extension": "ts",
+      "original_name": "NFHS Network 301: North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Boys Basketball @ 21 Nov 12:30 PM ET",
+      "name": "North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T12:30:00.000-05:00",
+      "stop": "2026-11-21T15:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "North Atlanta High School",
+        "Maynard H Jackson High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "North Atlanta High School",
+          "core": "north atlanta",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070061",
+      "stream_id": 2070061,
+      "extension": "ts",
+      "original_name": "NFHS Network 302: Greater Atlanta Christian School vs. Providence Christian Academy Middle School Boys Basketball @ 21 Nov 12:30 PM ET",
+      "name": "Greater Atlanta Christian School vs. Providence Christian Academy Middle School Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T12:30:00.000-05:00",
+      "stop": "2026-11-21T15:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Greater Atlanta Christian School",
+        "Providence Christian Academy"
+      ],
+      "matched_schools": [
+        {
+          "team": "Greater Atlanta Christian School",
+          "core": "greater atlanta christian",
+          "confidence": 2
+        },
+        {
+          "team": "Providence Christian Academy",
+          "core": "providence christian academy",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070026",
+      "stream_id": 2070026,
+      "extension": "ts",
+      "original_name": "NFHS Network 337: Away vs. Harris County High School Junior Varsity Boys Basketball @ 21 Nov 01:00 PM ET",
+      "name": "Away vs. Harris County High School Junior Varsity Boys Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T13:00:00.000-05:00",
+      "stop": "2026-11-21T15:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Away",
+        "Harris County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Harris County High School",
+          "core": "harris county",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2069965",
+      "stream_id": 2069965,
+      "extension": "ts",
+      "original_name": "NFHS Network 398: Trion High School vs. Gordon Central High School Junior Varsity Girls Basketball @ 21 Nov 01:00 PM ET",
+      "name": "Trion High School vs. Gordon Central High School Junior Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-21T13:00:00.000-05:00",
+      "stop": "2026-11-21T15:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "Trion High School",
+        "Gordon Central High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Trion High School",
+          "core": "trion",
+          "confidence": 1
+        },
+        {
+          "team": "Gordon Central High School",
+          "core": "gordon central",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    }
+  ]
 }
