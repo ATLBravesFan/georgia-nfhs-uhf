@@ -1,12 +1,47 @@
 {
   "version": 1,
   "streams": {
-    "2067996": {
-      "original_name": "NFHS Network 2330: East Coweta High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 20 Nov 09:00 PM ET",
-      "last_checked_at": "2026-11-21T04:04:16.091Z",
+    "2067604": {
+      "original_name": "NFHS Network 2710: Away vs. Mountain View High School Varsity Girls Basketball @ 20 Nov 10:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:31.723Z",
       "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 2
+      "consecutive_failures": 1
+    },
+    "2067804": {
+      "original_name": "NFHS Network 2514: Northside-Northport High School vs. Fayette County High School Varsity Boys Basketball @ 20 Nov 09:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:31.439Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2067817": {
+      "original_name": "NFHS Network 2502: Forsyth Central High School vs. Banks County High School Varsity Boys Basketball @ 20 Nov 09:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:23.722Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2067884": {
+      "original_name": "NFHS Network 2440: Winder-Barrow High School vs. Loganville High School Varsity Boys Basketball @ 20 Nov 09:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:23.438Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2067912": {
+      "original_name": "NFHS Network 2413: Providence Christian School vs. Houston Academy Varsity Boys Basketball @ 20 Nov 09:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:15.722Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2067996": {
+      "original_name": "NFHS Network 2330: East Coweta High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 20 Nov 09:00 PM ET",
+      "last_checked_at": "2026-11-21T04:57:51.434Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 3
     },
     "2068121": {
       "original_name": "NFHS Network 2205: Away vs. Mountain View High School Junior Varsity Girls Basketball @ 20 Nov 09:00 PM ET",
@@ -43,6 +78,13 @@
       "last_video_at": null,
       "consecutive_failures": 2
     },
+    "2068447": {
+      "original_name": "NFHS Network 1880: Lumpkin County High School vs. Columbia High School 2026 Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:47.439Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
     "2068452": {
       "original_name": "NFHS Network 1875: Bacon County High School vs. Brantley County High School Varsity Boys Basketball @ 20 Nov 08:30 PM ET",
       "last_checked_at": "2026-11-21T01:56:53.785Z",
@@ -50,13 +92,69 @@
       "last_video_at": null,
       "consecutive_failures": 1
     },
+    "2068460": {
+      "original_name": "NFHS Network 1868: Mitchell County High School vs. Trion High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:39.724Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068472": {
+      "original_name": "NFHS Network 1856: Schley County High School vs. Randolph Clay High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:39.439Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068495": {
+      "original_name": "NFHS Network 1833: North Hall High School vs. Sandy Creek High School 2026 Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:15.437Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068510": {
+      "original_name": "NFHS Network 1818: Stephens County High School vs. Hart County High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:07.721Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068511": {
+      "original_name": "NFHS Network 1817: Clarke Central High School vs. Creekside High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:58:07.436Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
     "2068519": {
       "original_name": "NFHS Network 1809: Charlton County High School vs. Bowdon High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
-      "last_checked_at": "2026-11-21T04:04:08.090Z",
+      "last_checked_at": "2026-11-21T04:57:51.398Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 3
+    },
+    "2068527": {
+      "original_name": "NFHS Network 1801: Whitefield Academy vs. Fellowship Christian School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:57:59.722Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068558": {
+      "original_name": "NFHS Network 1770: Peachtree Ridge High School vs. Newton High School 2026 Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:57:59.435Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2068610": {
+      "original_name": "NFHS Network 1718: Warren County High School vs. Taylor County High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-21T04:57:51.722Z",
       "last_result": "http_error",
       "last_video_at": null,
-      "consecutive_failures": 2,
-      "http_status": 404
+      "consecutive_failures": 1,
+      "http_status": 403
     },
     "2068642": {
       "original_name": "NFHS Network 1686: Christian Heritage School vs. Wesleyan School 2026 GHSA Football Playoffs @ 20 Nov 08:15 PM ET",
@@ -306,10 +404,10 @@
       "consecutive_failures": 1
     }
   },
-  "last_run_at": "2026-11-21T04:04:48.676Z",
+  "last_run_at": "2026-11-21T04:58:47.440Z",
   "last_run_checks": 16,
   "last_run_outcomes": {
-    "network_error": 11,
-    "http_error": 5
+    "network_error": 15,
+    "http_error": 1
   }
 }
