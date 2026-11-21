@@ -152,5 +152,7 @@
         "matchup_confirmed": false
       }
     }
-  ]
+  ],
+  "playback_checked_at": "2026-11-21T19:46:50.152Z",
+  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
 }
