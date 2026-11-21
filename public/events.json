@@ -3786,7 +3786,7 @@
       "stream_id": 2069105,
       "extension": "ts",
       "original_name": "NFHS Network 1242: Cook High School vs. Heard County High School 2026 Football Playoffs @ 20 Nov 07:55 PM ET",
-      "name": "Cook High School vs. Heard County High School 2026 Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Cook High School vs. Heard County High School 2026 Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T19:55:00.000-05:00",
       "stop": "2026-11-20T23:25:00.000-05:00",
@@ -3803,10 +3803,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:42.871Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:07.978Z",
         "last_video_at": null,
-        "reason": "video_not_decodable",
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -3999,7 +3999,7 @@
       "stream_id": 2069065,
       "extension": "ts",
       "original_name": "NFHS Network 1282: Ware County High School vs. Dalton High School 2026 GHSA Football Playoffs @ 20 Nov 08:00 PM ET",
-      "name": "Ware County High School vs. Dalton High School 2026 GHSA Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Ware County High School vs. Dalton High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T20:00:00.000-05:00",
       "stop": "2026-11-20T23:30:00.000-05:00",
@@ -4016,10 +4016,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:43.628Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:08.004Z",
         "last_video_at": null,
-        "reason": "video_not_decodable",
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -4057,7 +4057,7 @@
       "stream_id": 2069028,
       "extension": "ts",
       "original_name": "NFHS Network 1317: Clinch County High School vs. Johnson County High School 2026 GHSA Football Playoffs @ 20 Nov 08:00 PM ET",
-      "name": "Clinch County High School vs. Johnson County High School 2026 GHSA Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Clinch County High School vs. Johnson County High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T20:00:00.000-05:00",
       "stop": "2026-11-20T23:30:00.000-05:00",
@@ -4074,10 +4074,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:44.137Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:08.463Z",
         "last_video_at": null,
-        "reason": "video_not_decodable",
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -4317,9 +4317,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:16.543Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -4380,9 +4380,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:24.464Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -4496,9 +4496,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:24.543Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -4675,9 +4675,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:24.673Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -4704,9 +4704,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:24.847Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -4733,9 +4733,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:32.674Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -5190,7 +5190,7 @@
       "stream_id": 2068519,
       "extension": "ts",
       "original_name": "NFHS Network 1809: Charlton County High School vs. Bowdon High School 2026 GHSA Football Playoffs @ 20 Nov 08:30 PM ET",
-      "name": "Charlton County High School vs. Bowdon High School 2026 GHSA Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Charlton County High School vs. Bowdon High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T20:30:00.000-05:00",
       "stop": "2026-11-21T00:00:00.000-05:00",
@@ -5207,10 +5207,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:45.784Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:08.090Z",
         "last_video_at": null,
-        "reason": "video_not_decodable",
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -6014,7 +6014,7 @@
       "stream_id": 2068315,
       "extension": "ts",
       "original_name": "NFHS Network 2011: Hapeville Charter Career Academy vs. Valdosta High School Varsity Boys Basketball @ 20 Nov 08:45 PM ET",
-      "name": "Hapeville Charter Career Academy vs. Valdosta High School Varsity Boys Basketball",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | Hapeville Charter Career Academy vs. Valdosta High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T20:45:00.000-05:00",
       "stop": "2026-11-20T23:15:00.000-05:00",
@@ -6031,8 +6031,8 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:57.623Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:16.463Z",
         "last_video_at": null,
         "reason": "network_error",
         "matchup_confirmed": false
@@ -6066,9 +6066,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:32.848Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -6095,9 +6095,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:40.675Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -6153,9 +6153,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:40.847Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -6240,9 +6240,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-21T04:04:48.676Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -6280,7 +6280,7 @@
       "stream_id": 2067996,
       "extension": "ts",
       "original_name": "NFHS Network 2330: East Coweta High School vs. Valdosta High School 2026 GHSA Football Playoffs @ 20 Nov 09:00 PM ET",
-      "name": "East Coweta High School vs. Valdosta High School 2026 GHSA Football Playoffs",
+      "name": "⚠️ PLAYBACK UNCONFIRMED | East Coweta High School vs. Valdosta High School 2026 GHSA Football Playoffs",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
       "start": "2026-11-20T21:00:00.000-05:00",
       "stop": "2026-11-21T00:30:00.000-05:00",
@@ -6297,10 +6297,10 @@
         }
       ],
       "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T01:56:55.030Z",
+        "status": "probe_failed",
+        "checked_at": "2026-11-21T04:04:16.091Z",
         "last_video_at": null,
-        "reason": "video_not_decodable",
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -7061,6 +7061,6 @@
       }
     }
   ],
-  "playback_checked_at": "2026-11-21T01:57:07.910Z",
+  "playback_checked_at": "2026-11-21T04:04:48.676Z",
   "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
 }
