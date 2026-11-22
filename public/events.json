@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-21T15:17:24.155-05:00",
+  "generated_at": "2026-11-21T20:45:47.292-05:00",
   "eastern_date": "2026-11-21",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 17,
-  "georgia_channel_count": 4,
-  "currently_live_estimate": 2,
+  "georgia_channel_count": 0,
+  "currently_live_estimate": 0,
   "upcoming_next_7_days": 0,
-  "completed_today_but_still_visible": 13,
-  "placeholder_active": false,
+  "completed_today_but_still_visible": 17,
+  "placeholder_active": true,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,134 +25,5 @@
     }
   },
   "school_name_count": 665,
-  "channels": [
-    {
-      "id": "ga-nfhs-2070062",
-      "stream_id": 2070062,
-      "extension": "ts",
-      "original_name": "NFHS Network 301: North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Boys Basketball @ 21 Nov 12:30 PM ET",
-      "name": "North Atlanta High School vs. Maynard H Jackson High School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T12:30:00.000-05:00",
-      "stop": "2026-11-21T15:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "North Atlanta High School",
-        "Maynard H Jackson High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Atlanta High School",
-          "core": "north atlanta",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T19:46:42.125Z",
-        "last_video_at": null,
-        "reason": "network_error",
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2070061",
-      "stream_id": 2070061,
-      "extension": "ts",
-      "original_name": "NFHS Network 302: Greater Atlanta Christian School vs. Providence Christian Academy Middle School Boys Basketball @ 21 Nov 12:30 PM ET",
-      "name": "Greater Atlanta Christian School vs. Providence Christian Academy Middle School Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T12:30:00.000-05:00",
-      "stop": "2026-11-21T15:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Greater Atlanta Christian School",
-        "Providence Christian Academy"
-      ],
-      "matched_schools": [
-        {
-          "team": "Greater Atlanta Christian School",
-          "core": "greater atlanta christian",
-          "confidence": 2
-        },
-        {
-          "team": "Providence Christian Academy",
-          "core": "providence christian academy",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T19:46:42.150Z",
-        "last_video_at": null,
-        "reason": "network_error",
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2070026",
-      "stream_id": 2070026,
-      "extension": "ts",
-      "original_name": "NFHS Network 337: Away vs. Harris County High School Junior Varsity Boys Basketball @ 21 Nov 01:00 PM ET",
-      "name": "Away vs. Harris County High School Junior Varsity Boys Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T13:00:00.000-05:00",
-      "stop": "2026-11-21T15:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Away",
-        "Harris County High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Harris County High School",
-          "core": "harris county",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T19:46:42.517Z",
-        "last_video_at": null,
-        "reason": "http_error",
-        "matchup_confirmed": false
-      }
-    },
-    {
-      "id": "ga-nfhs-2069965",
-      "stream_id": 2069965,
-      "extension": "ts",
-      "original_name": "NFHS Network 398: Trion High School vs. Gordon Central High School Junior Varsity Girls Basketball @ 21 Nov 01:00 PM ET",
-      "name": "Trion High School vs. Gordon Central High School Junior Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-21T13:00:00.000-05:00",
-      "stop": "2026-11-21T15:30:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "Trion High School",
-        "Gordon Central High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "Trion High School",
-          "core": "trion",
-          "confidence": 1
-        },
-        {
-          "team": "Gordon Central High School",
-          "core": "gordon central",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-21T19:46:50.152Z",
-        "last_video_at": null,
-        "reason": "network_error",
-        "matchup_confirmed": false
-      }
-    }
-  ],
-  "playback_checked_at": "2026-11-21T19:46:50.152Z",
-  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
+  "channels": []
 }
