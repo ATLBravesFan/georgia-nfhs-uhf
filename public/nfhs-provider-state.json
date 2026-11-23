@@ -1,19 +1,18 @@
 {
-  "captured_at": "2026-11-22T17:44:34.201Z",
+  "captured_at": "2026-11-23T13:00:04.711Z",
   "category": "USA | NFHS Network",
   "stream_count": 5000,
   "title_day_counts": {
-    "2026-11-22": 35,
-    "2026-11-23": 9,
-    "undated": 4956
+    "2026-11-23": 5,
+    "undated": 4995
   },
   "rows": [
     {
       "provider_nfhs_number": 1,
       "stream_id": 2070364,
-      "title": "NFHS Network 01: Old Saybrook vs. Stonington 2025 CIAC S Girls Soccer Championship @ 22 Nov 10:30 AM ET",
-      "provider_start": "2026-11-22T10:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 01: Chula Vista High School vs. El Cajon Valley High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
+      "provider_start": "2026-11-23T04:01:00.000-05:00",
+      "provider_day": "2026-11-23",
       "added": 1789238354,
       "epg_channel_id": null,
       "custom_sid": null
@@ -21,9 +20,9 @@
     {
       "provider_nfhs_number": 2,
       "stream_id": 2070363,
-      "title": "NFHS Network 02: Hillel Academy of Pittsburgh vs. Fuchs Mizrachi School Varsity Boys Basketball @ 22 Nov 11:00 AM ET",
-      "provider_start": "2026-11-22T11:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 02: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
+      "provider_start": "2026-11-23T04:01:00.000-05:00",
+      "provider_day": "2026-11-23",
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -31,9 +30,9 @@
     {
       "provider_nfhs_number": 3,
       "stream_id": 2070362,
-      "title": "NFHS Network 03: Philipsburg Osceola Area High School Varsity Boys Basketball @ 22 Nov 11:00 AM ET",
-      "provider_start": "2026-11-22T11:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 03: Poplar Springs High School vs. Wicksburg High School Varsity Girls Basketball @ 23 Nov 05:00 AM ET",
+      "provider_start": "2026-11-23T05:00:00.000-05:00",
+      "provider_day": "2026-11-23",
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -41,9 +40,9 @@
     {
       "provider_nfhs_number": 4,
       "stream_id": 2070361,
-      "title": "NFHS Network 04: Penfield vs. Shenendehowa 2026 NYSPHSAA Div 1 Boys Volleyball Semifinals #1 @ 22 Nov 12:00 PM ET",
-      "provider_start": "2026-11-22T12:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 04: Brewer High School vs. Hanceville High School Varsity Boys Basketball @ 23 Nov 05:00 AM ET",
+      "provider_start": "2026-11-23T05:00:00.000-05:00",
+      "provider_day": "2026-11-23",
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -51,9 +50,9 @@
     {
       "provider_nfhs_number": 5,
       "stream_id": 2070360,
-      "title": "NFHS Network 05: Massapequa vs. Liverpool 2026 NYSPHSAA Div 1 Boys Volleyball Semifinals #2 @ 22 Nov 12:00 PM ET",
-      "provider_start": "2026-11-22T12:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 05: Hemlock High School vs. Shepherd High School Junior Varsity Boys Basketball @ 23 Nov 06:30 AM ET",
+      "provider_start": "2026-11-23T06:30:00.000-05:00",
+      "provider_day": "2026-11-23",
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -61,9 +60,9 @@
     {
       "provider_nfhs_number": 6,
       "stream_id": 2070359,
-      "title": "NFHS Network 06: Fuchs Mizrachi School Varsity Boys Basketball @ 22 Nov 12:15 PM ET",
-      "provider_start": "2026-11-22T12:15:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 06: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -71,9 +70,9 @@
     {
       "provider_nfhs_number": 7,
       "stream_id": 2070358,
-      "title": "NFHS Network 07: Portville vs. Port Jefferson 2026 NYSPHSAA Class C Girls Volleyball Championship Finals @ 22 Nov 12:30 PM ET",
-      "provider_start": "2026-11-22T12:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 07: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238351,
       "epg_channel_id": null,
       "custom_sid": null
@@ -81,9 +80,9 @@
     {
       "provider_nfhs_number": 8,
       "stream_id": 2070357,
-      "title": "NFHS Network 08: Williamsville South vs Plainedge 2026 NYSPHSAA Class A Girls Volleyball Championship Finals @ 22 Nov 12:30 PM ET",
-      "provider_start": "2026-11-22T12:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 08: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238350,
       "epg_channel_id": null,
       "custom_sid": null
@@ -91,9 +90,9 @@
     {
       "provider_nfhs_number": 9,
       "stream_id": 2070356,
-      "title": "NFHS Network 09: Greenwich vs. Staples 2025 CIAC LL Boys Soccer Championship @ 22 Nov 12:45 PM ET",
-      "provider_start": "2026-11-22T12:45:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 09: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -101,9 +100,9 @@
     {
       "provider_nfhs_number": 10,
       "stream_id": 2070355,
-      "title": "NFHS Network 10: Palos Verdes High School Varsity Field Hockey @ 22 Nov 01:00 PM ET",
-      "provider_start": "2026-11-22T13:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 10: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238349,
       "epg_channel_id": null,
       "custom_sid": null
@@ -111,9 +110,9 @@
     {
       "provider_nfhs_number": 11,
       "stream_id": 2070354,
-      "title": "NFHS Network 11: Saint Joseph Hill Academy Middle School Boys And Girls Basketball - Part 1 @ 22 Nov 01:30 PM ET",
-      "provider_start": "2026-11-22T13:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 11: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -121,9 +120,9 @@
     {
       "provider_nfhs_number": 12,
       "stream_id": 2070353,
-      "title": "NFHS Network 12: Away vs. Flushing High School Varsity Boys Basketball @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 12: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238348,
       "epg_channel_id": null,
       "custom_sid": null
@@ -131,9 +130,9 @@
     {
       "provider_nfhs_number": 13,
       "stream_id": 2070352,
-      "title": "NFHS Network 13: Legacy Early College vs. Blue Ridge High School Varsity Girls Basketball @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 13: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -141,9 +140,9 @@
     {
       "provider_nfhs_number": 14,
       "stream_id": 2070351,
-      "title": "NFHS Network 14: TBA vs TBA 2026 NYSPHSAA Div 2 Boys Volleyball Championship @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 14: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238347,
       "epg_channel_id": null,
       "custom_sid": null
@@ -151,9 +150,9 @@
     {
       "provider_nfhs_number": 15,
       "stream_id": 2070350,
-      "title": "NFHS Network 15: TBA vs TBA 2026 NYSPHSAA Div 1 Boys Volleyball Championship @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 15: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -161,9 +160,9 @@
     {
       "provider_nfhs_number": 16,
       "stream_id": 2070349,
-      "title": "NFHS Network 16: Monsignor Scanlan High School vs. St. Edmund Preparatory High School Freshman Boys Basketball @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 16: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238346,
       "epg_channel_id": null,
       "custom_sid": null
@@ -171,9 +170,9 @@
     {
       "provider_nfhs_number": 17,
       "stream_id": 2070348,
-      "title": "NFHS Network 17: All Races Varsity Girls Swimming And Diving @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 17: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -181,9 +180,9 @@
     {
       "provider_nfhs_number": 18,
       "stream_id": 2070347,
-      "title": "NFHS Network 18: South Pointe High School Middle School Football @ 22 Nov 02:00 PM ET",
-      "provider_start": "2026-11-22T14:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 18: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238345,
       "epg_channel_id": null,
       "custom_sid": null
@@ -191,9 +190,9 @@
     {
       "provider_nfhs_number": 19,
       "stream_id": 2070346,
-      "title": "NFHS Network 19: Harvey School Middle School Boys Ice Hockey - Part 1 @ 22 Nov 02:15 PM ET",
-      "provider_start": "2026-11-22T14:15:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 19: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -201,9 +200,9 @@
     {
       "provider_nfhs_number": 20,
       "stream_id": 2070345,
-      "title": "NFHS Network 20: Pomperaug vs. Simsbury 2025 CIAC L Girls Soccer Championship @ 22 Nov 03:00 PM ET",
-      "provider_start": "2026-11-22T15:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 20: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238344,
       "epg_channel_id": null,
       "custom_sid": null
@@ -211,9 +210,9 @@
     {
       "provider_nfhs_number": 21,
       "stream_id": 2070344,
-      "title": "NFHS Network 21: Eastside High School vs. Nation Ford High School Varsity Girls Basketball @ 22 Nov 03:30 PM ET",
-      "provider_start": "2026-11-22T15:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 21: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -221,9 +220,9 @@
     {
       "provider_nfhs_number": 22,
       "stream_id": 2070343,
-      "title": "NFHS Network 22: Todd County Central High School Meet the Rebels @ 22 Nov 04:00 PM ET",
-      "provider_start": "2026-11-22T16:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 22: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238343,
       "epg_channel_id": null,
       "custom_sid": null
@@ -231,9 +230,9 @@
     {
       "provider_nfhs_number": 23,
       "stream_id": 2070342,
-      "title": "NFHS Network 23: Dr. Phillips High School vs. Vero Beach High School 2026 FHSAA Football Playoffs @ 22 Nov 04:00 PM ET",
-      "provider_start": "2026-11-22T16:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 23: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -241,9 +240,9 @@
     {
       "provider_nfhs_number": 24,
       "stream_id": 2070341,
-      "title": "NFHS Network 24: Evergreen High School vs. Mead High School 2026 CHSAA Class 3A State Football Quarterfinal @ 22 Nov 04:00 PM ET",
-      "provider_start": "2026-11-22T16:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 24: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238342,
       "epg_channel_id": null,
       "custom_sid": null
@@ -251,9 +250,9 @@
     {
       "provider_nfhs_number": 25,
       "stream_id": 2070340,
-      "title": "NFHS Network 25: Toms River East High School vs. Ramapo High School Varsity Boys Soccer @ 22 Nov 04:00 PM ET",
-      "provider_start": "2026-11-22T16:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 25: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -261,9 +260,9 @@
     {
       "provider_nfhs_number": 26,
       "stream_id": 2070339,
-      "title": "NFHS Network 26: Mauldin High School vs. Dorman High School Varsity Girls Basketball @ 22 Nov 05:00 PM ET",
-      "provider_start": "2026-11-22T17:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 26: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238341,
       "epg_channel_id": null,
       "custom_sid": null
@@ -271,9 +270,9 @@
     {
       "provider_nfhs_number": 27,
       "stream_id": 2070338,
-      "title": "NFHS Network 27: Berlin vs Bethel 2025 CIAC L Boys Soccer Championship @ 22 Nov 05:15 PM ET",
-      "provider_start": "2026-11-22T17:15:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 27: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -281,9 +280,9 @@
     {
       "provider_nfhs_number": 28,
       "stream_id": 2070337,
-      "title": "NFHS Network 28: Harvey School Middle School Boys Ice Hockey - Part 2 @ 22 Nov 05:15 PM ET",
-      "provider_start": "2026-11-22T17:15:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 28: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238340,
       "epg_channel_id": null,
       "custom_sid": null
@@ -291,9 +290,9 @@
     {
       "provider_nfhs_number": 29,
       "stream_id": 2070336,
-      "title": "NFHS Network 29: Eastside High School vs. Travelers Rest High School Varsity Boys Basketball @ 22 Nov 05:30 PM ET",
-      "provider_start": "2026-11-22T17:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 29: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -301,9 +300,9 @@
     {
       "provider_nfhs_number": 30,
       "stream_id": 2070335,
-      "title": "NFHS Network 30: Saint Joseph Hill Academy Middle School Boys And Girls Basketball - Part 2 @ 22 Nov 05:30 PM ET",
-      "provider_start": "2026-11-22T17:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 30: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238339,
       "epg_channel_id": null,
       "custom_sid": null
@@ -311,9 +310,9 @@
     {
       "provider_nfhs_number": 31,
       "stream_id": 2070334,
-      "title": "NFHS Network 31: Daniel High School vs. Greenville High School Varsity Girls Basketball @ 22 Nov 06:30 PM ET",
-      "provider_start": "2026-11-22T18:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 31: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -321,9 +320,9 @@
     {
       "provider_nfhs_number": 32,
       "stream_id": 2070333,
-      "title": "NFHS Network 32: Away vs. Oak Ridge HS Varsity Boys Basketball @ 22 Nov 06:30 PM ET",
-      "provider_start": "2026-11-22T18:30:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 32: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238338,
       "epg_channel_id": null,
       "custom_sid": null
@@ -331,9 +330,9 @@
     {
       "provider_nfhs_number": 33,
       "stream_id": 2070332,
-      "title": "NFHS Network 33: Kress High School vs. Silverton High School Junior Varsity Boys Basketball @ 22 Nov 06:50 PM ET",
-      "provider_start": "2026-11-22T18:50:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 33: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238337,
       "epg_channel_id": null,
       "custom_sid": null
@@ -341,9 +340,9 @@
     {
       "provider_nfhs_number": 34,
       "stream_id": 2070331,
-      "title": "NFHS Network 34: Away vs. Shepherd High School Varsity Girls Volleyball @ 22 Nov 08:00 PM ET",
-      "provider_start": "2026-11-22T20:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 34: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238337,
       "epg_channel_id": null,
       "custom_sid": null
@@ -351,9 +350,9 @@
     {
       "provider_nfhs_number": 35,
       "stream_id": 2070330,
-      "title": "NFHS Network 35: Middle School Coed Soccer - Part 1 @ 22 Nov 10:00 PM ET",
-      "provider_start": "2026-11-22T22:00:00.000-05:00",
-      "provider_day": "2026-11-22",
+      "title": "NFHS Network 35: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238336,
       "epg_channel_id": null,
       "custom_sid": null
@@ -361,9 +360,9 @@
     {
       "provider_nfhs_number": 36,
       "stream_id": 2070329,
-      "title": "NFHS Network 36: Middle School Coed Soccer - Part 2 @ 23 Nov 01:00 AM ET",
-      "provider_start": "2026-11-23T01:00:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 36: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238336,
       "epg_channel_id": null,
       "custom_sid": null
@@ -371,9 +370,9 @@
     {
       "provider_nfhs_number": 37,
       "stream_id": 2070328,
-      "title": "NFHS Network 37: Christiansburg High School vs. Harrisonburg High School Varsity Girls Basketball @ 23 Nov 01:01 AM ET",
-      "provider_start": "2026-11-23T01:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 37: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238335,
       "epg_channel_id": null,
       "custom_sid": null
@@ -381,9 +380,9 @@
     {
       "provider_nfhs_number": 38,
       "stream_id": 2070327,
-      "title": "NFHS Network 38: Fryeburg Academy vs. Lewiston High School Junior Varsity Girls Basketball @ 23 Nov 01:01 AM ET",
-      "provider_start": "2026-11-23T01:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 38: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238335,
       "epg_channel_id": null,
       "custom_sid": null
@@ -391,9 +390,9 @@
     {
       "provider_nfhs_number": 39,
       "stream_id": 2070326,
-      "title": "NFHS Network 39: Warrensburg-Latham High School vs. Cerro Gordo High School Varsity Boys Basketball @ 23 Nov 02:01 AM ET",
-      "provider_start": "2026-11-23T02:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 39: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238334,
       "epg_channel_id": null,
       "custom_sid": null
@@ -401,9 +400,9 @@
     {
       "provider_nfhs_number": 40,
       "stream_id": 2070325,
-      "title": "NFHS Network 40: Chula Vista High School vs. El Cajon Valley High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
-      "provider_start": "2026-11-23T04:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 40: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238334,
       "epg_channel_id": null,
       "custom_sid": null
@@ -411,9 +410,9 @@
     {
       "provider_nfhs_number": 41,
       "stream_id": 2070324,
-      "title": "NFHS Network 41: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
-      "provider_start": "2026-11-23T04:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 41: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238333,
       "epg_channel_id": null,
       "custom_sid": null
@@ -421,9 +420,9 @@
     {
       "provider_nfhs_number": 42,
       "stream_id": 2070323,
-      "title": "NFHS Network 42: Poplar Springs High School vs. Wicksburg High School Varsity Girls Basketball @ 23 Nov 05:00 AM ET",
-      "provider_start": "2026-11-23T05:00:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 42: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238333,
       "epg_channel_id": null,
       "custom_sid": null
@@ -431,9 +430,9 @@
     {
       "provider_nfhs_number": 43,
       "stream_id": 2070322,
-      "title": "NFHS Network 43: Brewer High School vs. Hanceville High School Varsity Boys Basketball @ 23 Nov 05:00 AM ET",
-      "provider_start": "2026-11-23T05:00:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 43: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238332,
       "epg_channel_id": null,
       "custom_sid": null
@@ -441,9 +440,9 @@
     {
       "provider_nfhs_number": 44,
       "stream_id": 2070321,
-      "title": "NFHS Network 44: Hemlock High School vs. Shepherd High School Junior Varsity Boys Basketball @ 23 Nov 06:30 AM ET",
-      "provider_start": "2026-11-23T06:30:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 44: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238332,
       "epg_channel_id": null,
       "custom_sid": null
