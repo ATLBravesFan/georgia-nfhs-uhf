@@ -395636,15 +395636,111 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-24T10:27:40.048Z",
+      "previous_latest_title_day": "2026-11-23",
+      "latest_title_day": null,
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 5,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: Chula Vista High School vs. El Cajon Valley High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
+              "after": "NFHS Network 01: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-23T04:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-23",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
+              "after": "NFHS Network 02: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-23T04:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-23",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: Poplar Springs High School vs. Wicksburg High School Varsity Girls Basketball @ 23 Nov 05:00 AM ET",
+              "after": "NFHS Network 03: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-23T05:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-23",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Brewer High School vs. Hanceville High School Varsity Boys Basketball @ 23 Nov 05:00 AM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-23T05:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-23",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: Hemlock High School vs. Shepherd High School Junior Varsity Boys Basketball @ 23 Nov 06:30 AM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-23T06:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-23",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-23T13:00:04.711Z",
+  "last_change_at": "2026-11-24T10:27:40.048Z",
   "current": {
     "stream_count": 5000,
-    "latest_title_day": "2026-11-23",
+    "latest_title_day": null,
     "title_day_counts": {
-      "2026-11-23": 5,
-      "undated": 4995
+      "undated": 5000
     }
   }
 }

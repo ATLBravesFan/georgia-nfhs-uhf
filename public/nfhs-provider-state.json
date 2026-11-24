@@ -1,18 +1,17 @@
 {
-  "captured_at": "2026-11-23T13:00:04.711Z",
+  "captured_at": "2026-11-24T10:27:40.048Z",
   "category": "USA | NFHS Network",
   "stream_count": 5000,
   "title_day_counts": {
-    "2026-11-23": 5,
-    "undated": 4995
+    "undated": 5000
   },
   "rows": [
     {
       "provider_nfhs_number": 1,
       "stream_id": 2070364,
-      "title": "NFHS Network 01: Chula Vista High School vs. El Cajon Valley High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
-      "provider_start": "2026-11-23T04:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 01: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238354,
       "epg_channel_id": null,
       "custom_sid": null
@@ -20,9 +19,9 @@
     {
       "provider_nfhs_number": 2,
       "stream_id": 2070363,
-      "title": "NFHS Network 02: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 23 Nov 04:01 AM ET",
-      "provider_start": "2026-11-23T04:01:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 02: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -30,9 +29,9 @@
     {
       "provider_nfhs_number": 3,
       "stream_id": 2070362,
-      "title": "NFHS Network 03: Poplar Springs High School vs. Wicksburg High School Varsity Girls Basketball @ 23 Nov 05:00 AM ET",
-      "provider_start": "2026-11-23T05:00:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 03: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238353,
       "epg_channel_id": null,
       "custom_sid": null
@@ -40,9 +39,9 @@
     {
       "provider_nfhs_number": 4,
       "stream_id": 2070361,
-      "title": "NFHS Network 04: Brewer High School vs. Hanceville High School Varsity Boys Basketball @ 23 Nov 05:00 AM ET",
-      "provider_start": "2026-11-23T05:00:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 04: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
@@ -50,9 +49,9 @@
     {
       "provider_nfhs_number": 5,
       "stream_id": 2070360,
-      "title": "NFHS Network 05: Hemlock High School vs. Shepherd High School Junior Varsity Boys Basketball @ 23 Nov 06:30 AM ET",
-      "provider_start": "2026-11-23T06:30:00.000-05:00",
-      "provider_day": "2026-11-23",
+      "title": "NFHS Network 05: NO EVENT",
+      "provider_start": null,
+      "provider_day": null,
       "added": 1789238352,
       "epg_channel_id": null,
       "custom_sid": null
