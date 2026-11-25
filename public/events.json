@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-25T05:39:54.351-05:00",
+  "generated_at": "2026-11-25T08:35:48.713-05:00",
   "eastern_date": "2026-11-25",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 0,
-  "georgia_channel_count": 0,
+  "total_georgia_matches_found": 2,
+  "georgia_channel_count": 2,
   "currently_live_estimate": 0,
-  "upcoming_next_7_days": 0,
+  "upcoming_next_7_days": 2,
   "completed_today_but_still_visible": 0,
-  "placeholder_active": true,
+  "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
       "ok": true,
@@ -25,5 +25,64 @@
     }
   },
   "school_name_count": 665,
-  "channels": []
+  "channels": [
+    {
+      "id": "ga-nfhs-2070363",
+      "stream_id": 2070363,
+      "extension": "ts",
+      "original_name": "NFHS Network 02: Away vs. South Effingham High School Varsity Boys Wrestling @ 25 Nov 09:00 AM ET",
+      "name": "Away vs. South Effingham High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-25T09:00:00.000-05:00",
+      "stop": "2026-11-25T12:00:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "South Effingham High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "South Effingham High School",
+          "core": "south effingham",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070349",
+      "stream_id": 2070349,
+      "extension": "ts",
+      "original_name": "NFHS Network 16: Away vs. Jackson County High School Varsity Boys Wrestling @ 25 Nov 10:30 AM ET",
+      "name": "Away vs. Jackson County High School Varsity Boys Wrestling",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-25T10:30:00.000-05:00",
+      "stop": "2026-11-25T13:30:00.000-05:00",
+      "sport": "Wrestling",
+      "teams": [
+        "Away",
+        "Jackson County High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "Jackson County High School",
+          "core": "jackson county",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    }
+  ]
 }
