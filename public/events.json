@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T15:48:49.483-05:00",
+  "generated_at": "2026-11-25T17:42:23.941-05:00",
   "eastern_date": "2026-11-25",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
   "total_georgia_matches_found": 4,
-  "georgia_channel_count": 4,
-  "currently_live_estimate": 1,
-  "upcoming_next_7_days": 3,
-  "completed_today_but_still_visible": 0,
+  "georgia_channel_count": 3,
+  "currently_live_estimate": 2,
+  "upcoming_next_7_days": 1,
+  "completed_today_but_still_visible": 1,
   "placeholder_active": false,
   "directory_sources": {
     "GHSA": {
@@ -26,35 +26,6 @@
   },
   "school_name_count": 665,
   "channels": [
-    {
-      "id": "ga-nfhs-2070323",
-      "stream_id": 2070323,
-      "extension": "ts",
-      "original_name": "NFHS Network 42: North Forsyth High School vs. South Stokes High School Varsity Girls Basketball @ 25 Nov 02:30 PM ET",
-      "name": "North Forsyth High School vs. South Stokes High School Varsity Girls Basketball",
-      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-25T14:30:00.000-05:00",
-      "stop": "2026-11-25T17:00:00.000-05:00",
-      "sport": "Basketball",
-      "teams": [
-        "North Forsyth High School",
-        "South Stokes High School"
-      ],
-      "matched_schools": [
-        {
-          "team": "North Forsyth High School",
-          "core": "north forsyth",
-          "confidence": 2
-        }
-      ],
-      "playback_verification": {
-        "status": "unverified",
-        "checked_at": null,
-        "last_video_at": null,
-        "reason": null,
-        "matchup_confirmed": false
-      }
-    },
     {
       "id": "ga-nfhs-2070276",
       "stream_id": 2070276,
