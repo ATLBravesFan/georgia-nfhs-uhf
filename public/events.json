@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-25T08:35:48.713-05:00",
+  "generated_at": "2026-11-25T15:48:49.483-05:00",
   "eastern_date": "2026-11-25",
   "lookahead_days": 7,
   "category": "USA | NFHS Network",
   "source_stream_count": 5000,
-  "total_georgia_matches_found": 2,
-  "georgia_channel_count": 2,
-  "currently_live_estimate": 0,
-  "upcoming_next_7_days": 2,
+  "total_georgia_matches_found": 4,
+  "georgia_channel_count": 4,
+  "currently_live_estimate": 1,
+  "upcoming_next_7_days": 3,
   "completed_today_but_still_visible": 0,
   "placeholder_active": false,
   "directory_sources": {
@@ -27,23 +27,23 @@
   "school_name_count": 665,
   "channels": [
     {
-      "id": "ga-nfhs-2070363",
-      "stream_id": 2070363,
+      "id": "ga-nfhs-2070323",
+      "stream_id": 2070323,
       "extension": "ts",
-      "original_name": "NFHS Network 02: Away vs. South Effingham High School Varsity Boys Wrestling @ 25 Nov 09:00 AM ET",
-      "name": "Away vs. South Effingham High School Varsity Boys Wrestling",
+      "original_name": "NFHS Network 42: North Forsyth High School vs. South Stokes High School Varsity Girls Basketball @ 25 Nov 02:30 PM ET",
+      "name": "North Forsyth High School vs. South Stokes High School Varsity Girls Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-25T09:00:00.000-05:00",
-      "stop": "2026-11-25T12:00:00.000-05:00",
-      "sport": "Wrestling",
+      "start": "2026-11-25T14:30:00.000-05:00",
+      "stop": "2026-11-25T17:00:00.000-05:00",
+      "sport": "Basketball",
       "teams": [
-        "Away",
-        "South Effingham High School"
+        "North Forsyth High School",
+        "South Stokes High School"
       ],
       "matched_schools": [
         {
-          "team": "South Effingham High School",
-          "core": "south effingham",
+          "team": "North Forsyth High School",
+          "core": "north forsyth",
           "confidence": 2
         }
       ],
@@ -56,23 +56,81 @@
       }
     },
     {
-      "id": "ga-nfhs-2070349",
-      "stream_id": 2070349,
+      "id": "ga-nfhs-2070276",
+      "stream_id": 2070276,
       "extension": "ts",
-      "original_name": "NFHS Network 16: Away vs. Jackson County High School Varsity Boys Wrestling @ 25 Nov 10:30 AM ET",
-      "name": "Away vs. Jackson County High School Varsity Boys Wrestling",
+      "original_name": "NFHS Network 87: Elmwood Jr Sr High School vs. Putnam County High School Varsity Boys Basketball @ 25 Nov 04:00 PM ET",
+      "name": "Elmwood Jr Sr High School vs. Putnam County High School Varsity Boys Basketball",
       "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
-      "start": "2026-11-25T10:30:00.000-05:00",
-      "stop": "2026-11-25T13:30:00.000-05:00",
-      "sport": "Wrestling",
+      "start": "2026-11-25T16:00:00.000-05:00",
+      "stop": "2026-11-25T18:30:00.000-05:00",
+      "sport": "Basketball",
       "teams": [
-        "Away",
-        "Jackson County High School"
+        "Elmwood Jr Sr High School",
+        "Putnam County High School"
       ],
       "matched_schools": [
         {
-          "team": "Jackson County High School",
-          "core": "jackson county",
+          "team": "Putnam County High School",
+          "core": "putnam county",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070207",
+      "stream_id": 2070207,
+      "extension": "ts",
+      "original_name": "NFHS Network 156: East Forsyth High School vs. Reagan High School Varsity Girls Basketball @ 25 Nov 05:30 PM ET",
+      "name": "East Forsyth High School vs. Reagan High School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-25T17:30:00.000-05:00",
+      "stop": "2026-11-25T20:00:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "East Forsyth High School",
+        "Reagan High School"
+      ],
+      "matched_schools": [
+        {
+          "team": "East Forsyth High School",
+          "core": "east forsyth",
+          "confidence": 2
+        }
+      ],
+      "playback_verification": {
+        "status": "unverified",
+        "checked_at": null,
+        "last_video_at": null,
+        "reason": null,
+        "matchup_confirmed": false
+      }
+    },
+    {
+      "id": "ga-nfhs-2070121",
+      "stream_id": 2070121,
+      "extension": "ts",
+      "original_name": "NFHS Network 242: West Forsyth High School vs. Forsyth Country Day School Varsity Girls Basketball @ 25 Nov 07:00 PM ET",
+      "name": "West Forsyth High School vs. Forsyth Country Day School Varsity Girls Basketball",
+      "logo": "https://cdn.iptvboss.pro/logos/USA/NFHS001.alt.png",
+      "start": "2026-11-25T19:00:00.000-05:00",
+      "stop": "2026-11-25T21:30:00.000-05:00",
+      "sport": "Basketball",
+      "teams": [
+        "West Forsyth High School",
+        "Forsyth Country Day School"
+      ],
+      "matched_schools": [
+        {
+          "team": "West Forsyth High School",
+          "core": "west forsyth",
           "confidence": 2
         }
       ],
@@ -84,7 +142,5 @@
         "matchup_confirmed": false
       }
     }
-  ],
-  "playback_checked_at": "2026-11-25T01:03:54.574Z",
-  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
+  ]
 }
