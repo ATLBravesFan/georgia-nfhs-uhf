@@ -428557,16 +428557,1013 @@
           }
         }
       ]
+    },
+    {
+      "captured_at": "2026-11-27T14:53:17.319Z",
+      "previous_latest_title_day": "2026-11-27",
+      "latest_title_day": "2026-11-27",
+      "added_slot_count": 0,
+      "removed_slot_count": 0,
+      "changed_slot_count": 58,
+      "added_slots": [],
+      "removed_slots": [],
+      "changed_slots": [
+        {
+          "provider_nfhs_number": 1,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 01: Francis T Maloney High School vs. OH Platt High School Varsity Football @ 26 Nov 10:45 AM ET",
+              "after": "NFHS Network 01: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 27 Nov 04:01 AM ET"
+            },
+            "provider_start": {
+              "before": "2026-11-26T10:45:00.000-05:00",
+              "after": "2026-11-27T04:01:00.000-05:00"
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": "2026-11-27"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 2,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 02: LIVE Thanksgiving Football Coverage CIAC Football Feast @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 02: Barron Collier High School Varsity Boys And Girls Basketball @ 27 Nov 04:30 AM ET"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": "2026-11-27T04:30:00.000-05:00"
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": "2026-11-27"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 3,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 03: Away vs. Hamilton-Wenham Regional High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 03: Away vs. Powers Catholic High School Varsity Coed Basketball @ 27 Nov 07:00 AM ET"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": "2026-11-27T07:00:00.000-05:00"
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": "2026-11-27"
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 4,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 04: Millbury Memorial High School vs. Oxford High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 04: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 5,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 05: Lawrence High School vs. Central Catholic High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 05: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 6,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 06: Bellingham High School vs. Norton High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 06: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 7,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 07: Franklin County Technical High School vs. Smith Vocational and Agricultural High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 07: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 8,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 08: Northbridge High School vs. Uxbridge High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 08: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 9,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 09: Joseph Case High School vs. Somerset Berkley Regional High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 09: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 10,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 10: Middleborough High School vs. Carver Middle High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 10: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 11,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 11: Danvers High School vs. Gloucester High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 11: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 12,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 12: Amesbury High School vs. Newburyport High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 12: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 13,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 13: East Longmeadow High School vs. Longmeadow High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 13: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 14,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 14: Ledyard High School vs. Robert E Fitch High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 14: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 15,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 15: Westerly High School vs. Stonington High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 15: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 16,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 16: Away vs. Tiverton High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 16: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 17,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 17: Ansonia High School vs. Naugatuck High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 17: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 18,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 18: Shelton High School vs. Amity Regional High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 18: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 19,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 19: Athol High School vs. Ralph C Mahar Regional High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 19: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 20,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 20: Southington High School vs. Cheshire High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 20: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 21,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 21: Valley Panthers vs. Griswold/Wheeler Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 21: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 22,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 22: Lyman Hall High School vs. Mark T Sheehan High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 22: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 23,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 23: Wareham High School vs. Bourne High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 23: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 24,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 24: Dover-Sherborn High School vs. Medfield High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 24: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 25,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 25: Hingham High School vs. Scituate High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 25: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 26,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 26: Burrillville High School vs. Ponaganset High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 26: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 27,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 27: Dartmouth High School vs. Fairhaven High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 27: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 28,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 28: Burncoat High School vs. Doherty Memorial High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 28: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 29,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 29: Cranston High School West vs. Cranston High School East Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 29: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 30,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 30: Andover High School vs. North Andover High School Varsity Football @ 26 Nov 11:00 AM ET",
+              "after": "NFHS Network 30: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 31,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 31: Torrington High School vs. Watertown High School Varsity Football @ 26 Nov 11:15 AM ET",
+              "after": "NFHS Network 31: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:15:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 32,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 32: Oxford High School vs. Derby High School Varsity Football @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 32: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 33,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 33: Foran High School vs. Jonathan Law High School Varsity Football @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 33: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 34,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 34: Notre Dame-West Haven High School vs. Hamden Varsity Football @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 34: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 35,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 35: None DCIAA HS Football Championship (Turkey Bowl) #3 Dunbar vs #1 Coolidge @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 35: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 36,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 36: Nonnewaug High School vs. The Gilbert School Varsity Football @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 36: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 37,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 37: East Orange Campus High School vs. Barringer Academy of S.T.E.A.M Varsity Football @ 26 Nov 11:30 AM ET",
+              "after": "NFHS Network 37: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 38,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 38: Haddon Township High School vs. Audubon High School Varsity Football @ 26 Nov 11:50 AM ET",
+              "after": "NFHS Network 38: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T11:50:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 39,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 39: Lincoln vs. Lowell 2026 CIF-SFCS Girls Flag Football Championship @ 26 Nov 01:30 PM ET",
+              "after": "NFHS Network 39: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T13:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 40,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 40: Francis T Maloney High School vs. OH Platt High School Varsity Football - Part 2 @ 26 Nov 01:45 PM ET",
+              "after": "NFHS Network 40: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T13:45:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 41,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 41: Lowell vs. Balboa 2026 CIF-SFCS Football Championship @ 26 Nov 03:00 PM ET",
+              "after": "NFHS Network 41: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T15:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 42,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 42: Oakland High School Freshman Boys Basketball @ 26 Nov 04:00 PM ET",
+              "after": "NFHS Network 42: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T16:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 43,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 43: Lake Region High School vs. Fort Meade High School Varsity Girls Soccer @ 26 Nov 07:00 PM ET",
+              "after": "NFHS Network 43: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T19:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 44,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 44: Pilgrim High School vs. Toll Gate High School Varsity Football @ 26 Nov 07:30 PM ET",
+              "after": "NFHS Network 44: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T19:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 45,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 45: Bigfork High School vs. Libby High School Varsity Boys Basketball @ 26 Nov 09:00 PM ET",
+              "after": "NFHS Network 45: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T21:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 46,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 46: Mulberry High School vs. Fort Meade High School Varsity Girls Soccer @ 26 Nov 09:00 PM ET",
+              "after": "NFHS Network 46: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T21:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 47,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 47: Away vs. Illinois Math and Science Academy Varsity Girls Basketball @ 26 Nov 09:00 PM ET",
+              "after": "NFHS Network 47: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T21:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 48,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 48: Laguna Hills High School vs. San Juan Hills High School Varsity Boys Basketball @ 26 Nov 09:30 PM ET",
+              "after": "NFHS Network 48: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T21:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 49,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 49: Bigfork High School vs. Libby High School Varsity Girls Basketball @ 26 Nov 10:30 PM ET",
+              "after": "NFHS Network 49: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-26T22:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-26",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 50,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 50: La Cueva High School vs. Albuquerque High School Junior Varsity Boys Basketball - Part 2 @ 27 Nov 12:00 AM ET",
+              "after": "NFHS Network 50: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T00:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 51,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 51: Grace Christian High School vs. Service High School Varsity Boys Basketball @ 27 Nov 12:30 AM ET",
+              "after": "NFHS Network 51: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T00:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 52,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 52: TEST- Science Hill @ Riverdale Riverdale HS- TEST EVENT ONLY @ 27 Nov 02:00 AM ET",
+              "after": "NFHS Network 52: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 53,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 53: Falls City High School vs. La Villa High School 2026 UIL Football Regional @ 27 Nov 02:00 AM ET",
+              "after": "NFHS Network 53: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T02:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 54,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 54: Away vs. West Haven High School Varsity Boys Track And Field @ 27 Nov 02:01 AM ET",
+              "after": "NFHS Network 54: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 55,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 55: Away vs. Oak Grove High School Varsity Football @ 27 Nov 02:01 AM ET",
+              "after": "NFHS Network 55: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T02:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 56,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 56: Away vs. St. John Bosco High School Junior Varsity Boys Basketball @ 27 Nov 04:01 AM ET",
+              "after": "NFHS Network 56: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T04:01:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 57,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 57: Barron Collier High School Varsity Boys And Girls Basketball @ 27 Nov 04:30 AM ET",
+              "after": "NFHS Network 57: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T04:30:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        },
+        {
+          "provider_nfhs_number": 58,
+          "changes": {
+            "title": {
+              "before": "NFHS Network 58: Away vs. Powers Catholic High School Varsity Coed Basketball @ 27 Nov 07:00 AM ET",
+              "after": "NFHS Network 58: NO EVENT"
+            },
+            "provider_start": {
+              "before": "2026-11-27T07:00:00.000-05:00",
+              "after": null
+            },
+            "provider_day": {
+              "before": "2026-11-27",
+              "after": null
+            }
+          }
+        }
+      ]
     }
   ],
-  "last_change_at": "2026-11-26T14:18:02.853Z",
+  "last_change_at": "2026-11-27T14:53:17.319Z",
   "current": {
     "stream_count": 5000,
     "latest_title_day": "2026-11-27",
     "title_day_counts": {
-      "2026-11-26": 49,
-      "2026-11-27": 9,
-      "undated": 4942
+      "2026-11-27": 3,
+      "undated": 4997
     }
   }
 }
