@@ -146,9 +146,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:46.732Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -180,9 +180,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:04.776Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -209,9 +209,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:48.622Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -238,9 +238,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:54.732Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -272,9 +272,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:05.359Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -301,9 +301,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:56.622Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "network_error",
         "matchup_confirmed": false
       }
     },
@@ -330,9 +330,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:55.854Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -359,9 +359,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:56.775Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -388,9 +388,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:57.358Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     },
@@ -417,9 +417,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:39.227Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -446,9 +446,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:02:40.621Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -475,9 +475,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:06.326Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -504,9 +504,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:06.598Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -533,9 +533,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:06.716Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -562,9 +562,9 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:06.896Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "video_not_decodable",
         "matchup_confirmed": false
       }
     },
@@ -683,11 +683,13 @@
       ],
       "playback_verification": {
         "status": "unverified",
-        "checked_at": null,
+        "checked_at": "2026-11-28T03:03:06.428Z",
         "last_video_at": null,
-        "reason": null,
+        "reason": "http_error",
         "matchup_confirmed": false
       }
     }
-  ]
+  ],
+  "playback_checked_at": "2026-11-28T03:03:06.896Z",
+  "playback_verification_method": "Short authorized-provider media sample and ffprobe; actual matchup identity is not confirmed"
 }
