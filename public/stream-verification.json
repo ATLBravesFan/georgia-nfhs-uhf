@@ -3,11 +3,32 @@
   "streams": {
     "2069846": {
       "original_name": "NFHS Network 515: Tattnall County High School vs. Savannah High School Varsity Boys Basketball @ 27 Nov 09:30 PM ET",
-      "last_checked_at": "2026-11-28T03:03:06.428Z",
+      "last_checked_at": "2026-11-28T03:36:12.771Z",
+      "last_result": "video_not_decodable",
+      "last_video_at": null,
+      "consecutive_failures": 2
+    },
+    "2069951": {
+      "original_name": "NFHS Network 412: Stephens County High School vs. Northeast High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-28T03:36:02.853Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069955": {
+      "original_name": "NFHS Network 408: Macon County High School vs. Johnson County High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-28T03:35:55.271Z",
+      "last_result": "network_error",
+      "last_video_at": null,
+      "consecutive_failures": 1
+    },
+    "2069956": {
+      "original_name": "NFHS Network 407: Whitefield Academy vs. Holy Innocents' Episcopal School 2026 GHSA Football Playoffs @ 27 Nov 08:30 PM ET",
+      "last_checked_at": "2026-11-28T03:35:47.270Z",
       "last_result": "http_error",
       "last_video_at": null,
       "consecutive_failures": 1,
-      "http_status": 502
+      "http_status": 403
     },
     "2069965": {
       "original_name": "NFHS Network 398: KIPP Atlanta Collegiate vs. Toombs County High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:30 PM ET",
@@ -18,68 +39,67 @@
     },
     "2069978": {
       "original_name": "NFHS Network 385: Woodward Academy vs. Lee County High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:30 PM ET",
-      "last_checked_at": "2026-11-28T03:03:06.716Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:36:28.860Z",
+      "last_result": "http_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2,
+      "http_status": 404
     },
     "2069991": {
       "original_name": "NFHS Network 372: North Gwinnett vs. Carrollton High School 2026 GHSA Football Playoffs @ 27 Nov 08:30 PM ET",
-      "last_checked_at": "2026-11-28T03:03:06.598Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:36:35.276Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2069999": {
       "original_name": "NFHS Network 364: Mary Persons High School vs. Dougherty Comprehensive High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:30 PM ET",
-      "last_checked_at": "2026-11-28T03:03:06.326Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:36:28.773Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070006": {
       "original_name": "NFHS Network 357: Colquitt County High School vs. Newton High School 2026 GHSA 7A Football Quarterfinal @ 27 Nov 08:30 PM ET",
-      "last_checked_at": "2026-11-28T03:02:40.621Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:35:46.895Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070011": {
       "original_name": "NFHS Network 352: East Paulding High School vs. Coffee High School 2026 GHSA Football Quarterfinal @ 27 Nov 08:20 PM ET",
-      "last_checked_at": "2026-11-28T03:02:39.227Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:35:46.850Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070015": {
       "original_name": "NFHS Network 348: Christian Heritage School vs. Aquinas High School 2026 GHSA Football Playoffs @ 27 Nov 08:15 PM ET",
-      "last_checked_at": "2026-11-28T03:02:57.358Z",
-      "last_result": "http_error",
+      "last_checked_at": "2026-11-28T03:36:27.275Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1,
-      "http_status": 502
+      "consecutive_failures": 2
     },
     "2070016": {
       "original_name": "NFHS Network 347: Whitefield Academy vs. Holy Innocents' Episcopal School 2026 Football Playoffs @ 27 Nov 08:15 PM ET",
-      "last_checked_at": "2026-11-28T03:02:56.775Z",
-      "last_result": "http_error",
+      "last_checked_at": "2026-11-28T03:36:20.772Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1,
-      "http_status": 502
+      "consecutive_failures": 2
     },
     "2070017": {
       "original_name": "NFHS Network 346: Mitchell County High School vs. Lincoln County High School 2026 Football Playoffs @ 27 Nov 08:15 PM ET",
-      "last_checked_at": "2026-11-28T03:02:55.854Z",
-      "last_result": "video_not_decodable",
+      "last_checked_at": "2026-11-28T03:36:11.273Z",
+      "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070083": {
       "original_name": "NFHS Network 280: Mount Vernon School vs. Lovett School 2026 Football Playoffs @ 27 Nov 08:00 PM ET",
-      "last_checked_at": "2026-11-28T03:02:56.622Z",
+      "last_checked_at": "2026-11-28T03:36:19.274Z",
       "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070088": {
       "original_name": "NFHS Network 275: Eagle's Landing Christian Academy vs. McEachern High School Varsity Boys Basketball @ 27 Nov 08:00 PM ET",
@@ -90,17 +110,17 @@
     },
     "2070106": {
       "original_name": "NFHS Network 257: Dodge County High School vs. Commerce High School 2026 Football Playoffs @ 27 Nov 08:00 PM ET",
-      "last_checked_at": "2026-11-28T03:02:54.732Z",
+      "last_checked_at": "2026-11-28T03:36:10.854Z",
       "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070109": {
       "original_name": "NFHS Network 254: Greater Atlanta Christian School vs. Prince Avenue Christian School 2026 GHSA Football Quarterfinal @ 27 Nov 08:00 PM ET",
-      "last_checked_at": "2026-11-28T03:02:48.622Z",
+      "last_checked_at": "2026-11-28T03:36:03.273Z",
       "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     },
     "2070117": {
       "original_name": "NFHS Network 246: Groves High School vs. West Forsyth High School Varsity Boys Basketball @ 27 Nov 08:00 PM ET",
@@ -111,17 +131,17 @@
     },
     "2070123": {
       "original_name": "NFHS Network 240: Appling County High School vs Pierce County High School WBYZ- Quarterfinal Round- Class AAA State Playoffs @ 27 Nov 08:00 PM ET",
-      "last_checked_at": "2026-11-28T03:02:46.732Z",
+      "last_checked_at": "2026-11-28T03:35:54.852Z",
       "last_result": "network_error",
       "last_video_at": null,
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     }
   },
-  "last_run_at": "2026-11-28T03:03:06.896Z",
+  "last_run_at": "2026-11-28T03:36:35.276Z",
   "last_run_checks": 16,
   "last_run_outcomes": {
-    "video_not_decodable": 7,
-    "network_error": 6,
-    "http_error": 3
+    "network_error": 13,
+    "http_error": 2,
+    "video_not_decodable": 1
   }
 }
